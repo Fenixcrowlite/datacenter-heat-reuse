@@ -1,0 +1,17 @@
+{
+  "annual_warm45_native.csv.gz": {
+    "source_file": "Warm45_Storage100_v2_MATLAB_NATIVE.csv",
+    "source_sha256": "07d1d7f19d92ce34d5b3e5a44a2131234a4a2e7991e21f018b197137ed0eb370",
+    "gzip_sha256": "44d2e1e898713ecac1cb53b33d20c649bfd4be86bcda06b4d16624c04822aeac"
+  },
+  "annual_liquid35_lowtemp.csv.gz": {
+    "source_file": "best_scenario_v2_timeseries.csv",
+    "source_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+    "gzip_sha256": "4b0306ae16f184a852b4a9d03e5ff70a676bc89b10866aa6855499a1f131aebb"
+  },
+  "annual_summary_v2.csv.gz": {
+    "source_file": "scenario_summary_v2.csv",
+    "source_sha256": "7a045379372081ffe68b5a2233e38868ac0062db41e6e3b98b9179b9ebca0192",
+    "gzip_sha256": "3e2674815810bbc0d4002daf0cc51fa44355c55ad1de98b64b2531be30feff90"
+  }
+}

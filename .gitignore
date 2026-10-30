@@ -1,0 +1,14 @@
+.superpowers/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+runtime/
+dist/
+build/
+*.egg-info/
+node_modules/
+.DS_Store
