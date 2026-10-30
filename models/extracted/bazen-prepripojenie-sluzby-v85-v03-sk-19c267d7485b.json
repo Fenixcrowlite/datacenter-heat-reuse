@@ -1,0 +1,377 @@
+{
+  "name": "Bazen_Prepripojenie_Sluzby_v85_v03_SK",
+  "id": "bazen-prepripojenie-sluzby-v85-v03-sk",
+  "sha256": "19c267d7485b11a9c833ab25c2dc6914186f36dd8702f4be356654c4c1bcb5eb",
+  "blocks": [
+    {
+      "sid": "4::28",
+      "name": "T",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "19"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::29",
+      "name": "stav",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "20",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::1",
+      "name": "u",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "-1",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 245, 320, 285]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[3 4]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 256, 480, 274]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::30",
+      "name": "Tnovy",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "21"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::31",
+      "name": "stav_novy",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "22",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::5",
+      "name": "y",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "-5",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Presmerovanie_v85_do_bazena",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[305, 87, 510, 223]",
+        "ZOrder": "4",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Teplota_vody",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[60, 22, 130, 58]",
+        "ZOrder": "2",
+        "InitialCondition": "16",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Termostat",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[60, 84, 130, 116]",
+        "ZOrder": "3",
+        "InitialCondition": "1",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "V85_certifikovana_dodavka_sluzby",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 172, 220, 218]",
+        "ZOrder": "1",
+        "VariableName": "profil_v85"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "Zaznam_bilancie_v85_a_bazen",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[600, 148, 780, 202]",
+        "ZOrder": "5",
+        "VariableName": "spolu_v85_bazen",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "4::28#out:1",
+      "destinations": [
+        "4::25#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::29#out:1",
+      "destinations": [
+        "4::25#in:2"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::1#out:1",
+      "destinations": [
+        "4::25#in:3"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:2",
+      "destinations": [
+        "4::30#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:3",
+      "destinations": [
+        "4::31#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:4",
+      "destinations": [
+        "4::5#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::26#out:1",
+      "destinations": [
+        "4::27#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:1",
+      "destinations": [
+        "4::26#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "4#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "4#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "4#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "2#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:2",
+      "destinations": [
+        "3#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:3",
+      "destinations": [
+        "5#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "11",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "krok_bazen_v85"
+      ],
+      "source": "function [Tnovy,stav_novy,y] = krok_bazen_v85(T,stav,u)\n%#codegen\n% Vstup: [Q_HP_sluzba_v85_W, STOP, aktivita, plachta, T_vzduch, RH].\n% Len presmerovanie uz vyrobeneho tepla v85: nie nove teplo z DC!\nC=997*500*4182; dt=900; A=312.5; cp=4182;\nQv85=max(0,u(1)); stop=u(2)>0.5;\naktivita=max(0,u(3)); plachta=min(1,max(0,u(4)));\nTa=u(5);RH=min(1,max(0,u(6)));\nps=0.61094*exp(17.625*T/(T+243.04));\npa=RH*0.61094*exp(17.625*Ta/(Ta+243.04));\nmv=max(0,4e-5*A*(ps-pa)*aktivita*(1-0.9*plachta));\nQvypar=mv*2440000;\nQkonv=3*A*(T-Ta)*(1-0.75*plachta);\nQrad=0.95*5.670374419e-8*A*((T+273.15)^4-(Ta-2+273.15)^4)*(1-0.75*plachta);\nQkonstr=800*(T-20);\nQdop=mv*cp*(T-15);\nQstraty=Qvypar+Qkonv+Qrad+Qkonstr+Qdop+2000;\nstav_novy=stav;\nif T<=27.35\n    stav_novy=1;\nelseif T>=27.65\n    stav_novy=0;\nend\nQpool=0;\nif ~stop && stav_novy>0.5 && T<27.75\n    Qsafe=max(0,C*(27.75-T)/dt+Qstraty);\n    Qpool=min([Qv85,150000,Qsafe]);\nend\n% Zostavajuca sluzba je stale dostupna povodnej vetve.\nQdh=Qv85-Qpool;\nTnovy=T+(Qpool-Qstraty)*dt/C;\ny=zeros(1,9);\ny(1)=Tnovy;y(2)=Qpool;y(3)=Qdh;y(4)=Qstraty;\ny(5)=Qv85;y(6)=double(stop);y(7)=stav_novy;\ny(8)=Qvypar;y(9)=Qv85-(Qpool+Qdh);\nend\n",
+      "xml": "simulink/stateflow/chart_11.xml",
+      "sha256": "5d16b64e95a24c7fb1160fa6715be0521773cfd498c94be01e269d9251e9087c"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "T",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "stav",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "Tnovy",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "stav_novy",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "y",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/bazen-prepripojenie-sluzby-v85-v03-sk-19c267d7485b.json",
+  "copies": [
+    "primary/matlab/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx"
+  ]
+}

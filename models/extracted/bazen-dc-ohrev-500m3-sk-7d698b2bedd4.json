@@ -1,0 +1,581 @@
+{
+  "name": "Bazen_DC_Ohrev_500m3_SK",
+  "id": "bazen-dc-ohrev-500m3-sk",
+  "sha256": "7d698b2bedd4469e74fb5648f9be0e7e18f7a0e51826066c92307fa69c3e3a33",
+  "blocks": [
+    {
+      "sid": "11::1",
+      "name": "T_voda",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::28",
+      "name": "aktivita",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::29",
+      "name": "plachta",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "20",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 245, 320, 285]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[3 4]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 256, 480, 274]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::5",
+      "name": "Q_straty",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::30",
+      "name": "Q_vypar",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "21",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "11::31",
+      "name": "Q_konstrukcia",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "22",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Aktivita_bazena",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 287, 175, 323]",
+        "ZOrder": "2",
+        "VariableName": "aktivita_bazena"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "Dostupny_tepelny_vykon",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 142, 175, 178]",
+        "ZOrder": "1",
+        "VariableName": "teplo_dostupne"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "8",
+      "name": "Energeticka_bilancia",
+      "type": "Sum",
+      "properties": {
+        "Position": "[680, 130, 720, 180]",
+        "ZOrder": "8",
+        "Inputs": "+-"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Krycia_plachta",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 352, 175, 388]",
+        "ZOrder": "3",
+        "VariableName": "krycia_plachta"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Pozadovana_teplota",
+      "type": "Constant",
+      "properties": {
+        "Position": "[35, 37, 175, 73]",
+        "ZOrder": "4",
+        "Value": "28"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "17",
+      "name": "Priebeh_teploty",
+      "type": "Scope",
+      "properties": {
+        "Position": "[1105, 134, 1150, 176]",
+        "ZOrder": "17",
+        "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"Style\":{\"PlotType\":\"Auto\"}}}}",
+        "WasSavedAsWebScope": "on",
+        "Floating": "off",
+        "NumInputPorts": "1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "Regulacna_odchylka",
+      "type": "Sum",
+      "properties": {
+        "Position": "[240, 35, 270, 85]",
+        "ZOrder": "5",
+        "Inputs": "+-"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "9",
+      "name": "Tepelna_kapacita_vody",
+      "type": "Gain",
+      "properties": {
+        "Position": "[755, 128, 910, 172]",
+        "ZOrder": "9",
+        "Gain": "1/(997*500*4182)"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "11",
+      "name": "Tepelne_straty",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[350, 277, 565, 393]",
+        "ZOrder": "11",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "10",
+      "name": "Teplota_vody",
+      "type": "Integrator",
+      "properties": {
+        "Position": "[940, 122, 990, 168]",
+        "ZOrder": "10",
+        "InitialCondition": "16"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "6",
+      "name": "Termostat_s_hysterezou",
+      "type": "Relay",
+      "properties": {
+        "Position": "[320, 26, 465, 84]",
+        "ZOrder": "6",
+        "OnSwitchValue": "0.2",
+        "OffSwitchValue": "-0.2"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "7",
+      "name": "Vykon_do_bazena",
+      "type": "Product",
+      "properties": {
+        "Position": "[520, 128, 555, 177]",
+        "ZOrder": "7",
+        "Inputs": "**"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "13",
+      "name": "Zaznam_ohrevu",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[600, 215, 760, 245]",
+        "ZOrder": "13",
+        "VariableName": "sim_tepelny_vykon",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "16",
+      "name": "Zaznam_podlozia",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[655, 405, 805, 435]",
+        "ZOrder": "16",
+        "VariableName": "sim_podlozie",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "14",
+      "name": "Zaznam_strat",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[640, 315, 800, 345]",
+        "ZOrder": "14",
+        "VariableName": "sim_tepelne_straty",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "12",
+      "name": "Zaznam_teploty",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[1100, 70, 1250, 100]",
+        "ZOrder": "12",
+        "VariableName": "sim_teplota_vody",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "15",
+      "name": "Zaznam_vyparu",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[650, 360, 800, 390]",
+        "ZOrder": "15",
+        "VariableName": "sim_vypar",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "11::1#out:1",
+      "destinations": [
+        "11::25#in:1"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::28#out:1",
+      "destinations": [
+        "11::25#in:2"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::29#out:1",
+      "destinations": [
+        "11::25#in:3"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::25#out:2",
+      "destinations": [
+        "11::5#in:1"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::25#out:3",
+      "destinations": [
+        "11::30#in:1"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::25#out:4",
+      "destinations": [
+        "11::31#in:1"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::26#out:1",
+      "destinations": [
+        "11::27#in:1"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "11::25#out:1",
+      "destinations": [
+        "11::26#in:1"
+      ],
+      "xml": "simulink/systems/system_11.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "5#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "10#out:1",
+      "destinations": [
+        "12#in:1",
+        "17#in:1",
+        "5#in:2",
+        "11#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:1",
+      "destinations": [
+        "6#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "7#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "6#out:1",
+      "destinations": [
+        "7#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:1",
+      "destinations": [
+        "8#in:1",
+        "13#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "11#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "11#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "11#out:1",
+      "destinations": [
+        "8#in:2",
+        "14#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "8#out:1",
+      "destinations": [
+        "9#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "9#out:1",
+      "destinations": [
+        "10#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "11#out:2",
+      "destinations": [
+        "15#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "11#out:3",
+      "destinations": [
+        "16#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "11",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "strata"
+      ],
+      "source": "function [Q_straty,Q_vypar,Q_konstrukcia] = strata(T_voda,aktivita,plachta)\n\n\n%#codegen\n\n\n% Fyzikalne rovnice, jednotky: W, degC, kg/s, Pa/kPa.\n\n\nA=312.5; h=3; UA=800; cp=4182;\n\n\npvoda=0.61094*exp(17.625*T_voda/(T_voda+243.04));\n\n\npvzduch=0.60*0.61094*exp(17.625*29/(29+243.04));\n\n\nmvypar=max(0,4e-5*A*(pvoda-pvzduch)*aktivita*(1-0.90*plachta));\n\n\nQ_vypar=mvypar*2440000;\n\n\nQ_konv=3*A*(T_voda-29)*(1-0.75*plachta);\n\n\nQ_rad=0.95*5.670374419e-8*A*((T_voda+273.15)^4-(27+273.15)^4)*(1-0.75*plachta);\n\n\nQ_konstrukcia=UA*(T_voda-20);\n\n\nQ_doplnanie=mvypar*cp*(T_voda-15);\n\n\nQ_straty=Q_vypar+Q_konv+Q_rad+Q_konstrukcia+Q_doplnanie+2000;\n\n\nend",
+      "xml": "simulink/stateflow/chart_11.xml",
+      "sha256": "63586385ed0a6789589d5fdbd6bbbec0de0eae35f930656a3027e31008c3a432"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "T_voda",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "Q_straty",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "aktivita",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "plachta",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "Q_vypar",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "Q_konstrukcia",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/bazen-dc-ohrev-500m3-sk-7d698b2bedd4.json",
+  "copies": [
+    "primary/matlab/pool_500m3/Bazen_DC_Ohrev_500m3_SK.slx"
+  ]
+}

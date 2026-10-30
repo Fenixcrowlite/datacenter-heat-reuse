@@ -1,0 +1,388 @@
+{
+  "name": "DCHR_Charge_Memory_Stateflow_v62",
+  "id": "dchr-charge-memory-stateflow-v62",
+  "sha256": "a8e58aa21dfd2bcb54fceaa7201edbbde66527b5044a4a75af60c2d69da77161",
+  "blocks": [
+    {
+      "sid": "3::113",
+      "name": "horizon_input",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "93"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::114",
+      "name": "provenance_input",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "94",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::110",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 230, 320, 270]",
+        "ZOrder": "90",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::109",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 3",
+        "Position": "[180, 100, 230, 160]",
+        "ZOrder": "89",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[2 2]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::111",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 241, 480, 259]",
+        "ZOrder": "91"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::115",
+      "name": "trace",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "95"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Compiled_Memory_Trace",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[720, 90, 920, 130]",
+        "ZOrder": "4",
+        "VariableName": "charge_trace_v62",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Correlated_Charge_Memory",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[300, 42, 620, 253]",
+        "ZOrder": "3",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "Chart",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Exact_Operand_Provenance",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 160, 210, 200]",
+        "ZOrder": "2",
+        "VariableName": "charge_cfg_v62",
+        "SampleTime": "1",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "Physical_Horizons",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 50, 210, 90]",
+        "ZOrder": "1",
+        "VariableName": "charge_steps_v62",
+        "SampleTime": "1",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "3::113#out:1",
+      "destinations": [
+        "3::109#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::114#out:1",
+      "destinations": [
+        "3::109#in:2"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::109#out:2",
+      "destinations": [
+        "3::115#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::110#out:1",
+      "destinations": [
+        "3::111#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::109#out:1",
+      "destinations": [
+        "3::110#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "3#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "3#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "4#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "FLOOR_CHARGE\nen:\ntrace=charge_memory_kernel_v62(horizon_input,provenance_input,retained_memory,0);\nretained_memory=trace;\ndu:\ntrace=charge_memory_kernel_v62(horizon_input,provenance_input,retained_memory,0);\nretained_memory=trace;",
+      "position": "[60 80 280 230]",
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "label": "CORRELATED_CONTACT\nen:\ntrace=charge_memory_kernel_v62(horizon_input,provenance_input,retained_memory,1);\nretained_memory=trace;\ndu:\ntrace=charge_memory_kernel_v62(horizon_input,provenance_input,retained_memory,1);\nretained_memory=trace;",
+      "position": "[380 80 280 230]",
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "label": "TANK_CHARGE\nen:\ntrace=charge_memory_kernel_v62(horizon_input,provenance_input,retained_memory,2);\nretained_memory=trace;\ndu:\ntrace=charge_memory_kernel_v62(horizon_input,provenance_input,retained_memory,2);\nretained_memory=trace;",
+      "position": "[700 80 280 230]",
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "label": "y=charge_memory_kernel_v62(step,cfg,previous,stage)",
+      "position": "[60 460 320 90]",
+      "xml": "simulink/stateflow/chart_18.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "",
+      "properties": {
+        "labelPosition": "[200 60 0 0]",
+        "fontSize": "12",
+        "midPoint": "[100 50]",
+        "dataLimits": "[100 202.4 20 80]",
+        "subviewer": "18",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 1.4142 1.4142 0 100 20 0 0]"
+      },
+      "destination": {
+        "SSID": "11",
+        "intersection": "[1 0 -1 0.5 200 80 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "label": "[horizon_input(1)==1]",
+      "properties": {
+        "labelString": "[horizon_input(1)==1]",
+        "labelPosition": "[363.502 189.782 115.969 16]",
+        "fontSize": "12",
+        "midPoint": "[356 195]",
+        "dataLimits": "[340 380 192.6 197.4]",
+        "subviewer": "18",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "11",
+        "intersection": "[2 1 0 0.5 340 195 0 0]"
+      },
+      "destination": {
+        "SSID": "12",
+        "intersection": "[4 -1 0 0.5 380 195 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "label": "[horizon_input(1)==2]",
+      "properties": {
+        "labelString": "[horizon_input(1)==2]",
+        "labelPosition": "[681.384 192.153 115.969 16]",
+        "fontSize": "12",
+        "midPoint": "[676 195]",
+        "dataLimits": "[660 700 192.6 197.4]",
+        "subviewer": "18",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "12",
+        "intersection": "[2 1 0 0.5 660 195 0 0]"
+      },
+      "destination": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.5 700 195 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "charge_memory_kernel_v62",
+        "flow",
+        "plusiv",
+        "minusiv",
+        "muliv",
+        "diviv",
+        "out"
+      ],
+      "source": "function y=charge_memory_kernel_v62(step,cfg,previous,stage)\n%#codegen\n% Fixed-size compiled correlated charge memory. See v62 schema/derivation.\n% Original binary operands define the exact manifold; no scalar event reset.\nassert(all(isfinite(cfg))&&all(isfinite(step)),'v62 finite input required');\nassert(step(1)==stage,'v62 phase mismatch');\nassert(cfg(2)>0&&cfg(3)>0&&cfg(3)<=1&&cfg(4)>=0&&cfg(5)>0,'v62 ODE domain');\nassert(cfg(13)>0&&cfg(14)>0&&cfg(15)>0&&cfg(16)>0&&cfg(17)>0&&cfg(18)>0,'v62 equipment domain');\nassert(cfg(20)>=0&&cfg(21)>=0&&cfg(21)<=cfg(22),'v62 auxiliary/age domain');\nassert(cfg(25)>0&&cfg(25)<cfg(26)&&cfg(26)<cfg(23),'v62 event time domain');\nassert(all(cfg(27:31)==0|cfg(27:31)==1)&&cfg(27)==1&&cfg(30)==0,'v62 tie domain');\nassert(cfg(24)==62,'v62 schema version');\nif stage>0\n    assert(all(cfg==previous(1:31)),'v62 immutable manifold provenance');\n    assert(previous(55)==1&&previous(56)==0&&previous(57)==62,'v62 memory authorization');\nend\nP=@(v)[v v];\nC=P(cfg(5));Ta=P(cfg(6));F=plusiv(P(cfg(7)),P(cfg(8)));d=P(cfg(9));\nstar=muliv(C,minusiv(minusiv(F,Ta),d));cap=muliv(C,minusiv(P(cfg(19)),Ta));\nTe=minusiv(minusiv(P(cfg(11)),P(cfg(12))),P(cfg(13)));\na=muliv(P(cfg(14)),plusiv(Te,P(273.15)));\nlf=minusiv(plusiv(F,P(cfg(10))),Te);\nl0=minusiv(plusiv(plusiv(Ta,d),P(cfg(10))),Te);\nassert(a(1)>0&&lf(1)>0&&star(1)>cfg(1)&&cap(1)>star(2),'v62 thermal domain');\nB=muliv(P(cfg(3)),P(cfg(2)));k=-P(cfg(4));\nassert(minusiv(B,muliv(P(cfg(4)),cap))*[1;0]>0,'v62 increasing whole trajectory required');\n% Certify incoming/outgoing sides using the compiled flow, not host port data.\n[elo,~]=flow(P(cfg(1)),P(cfg(25)),k,B);\n[ehi,~]=flow(P(cfg(1)),P(cfg(26)),k,B);\nassert(elo(2)<star(1)&&ehi(1)>star(2),'v62 event bracket not certified');\n% The host exact-rational adapter certifies equivalent ties; compiled checks\n% strict non-ties and interval equality consistency, never chooses a tie by eps.\nlimits=zeros(5,2);limits(1,:)=P(cfg(2));limits(2,:)=P(cfg(16));\nlimits(3,:)=muliv(P(cfg(15)),d);\nlimits(4,:)=muliv(muliv(P(cfg(17)),P(cfg(12))),plusiv(P(1),diviv(lf,a)));\nlimits(5,:)=P(cfg(18));\nfor j=1:5\n    if cfg(26+j)==1\n        assert(limits(j,1)<=cfg(2)&&limits(j,2)>=cfg(2),'v62 inconsistent equivalent tie');\n    else\n        assert(limits(j,1)>cfg(2),'v62 strict request limiter unresolved');\n    end\nend\nif stage==0\n    assert(step(2)==0&&previous(57)==0,'v62 initial memory required');t=P(0);\nelseif stage==1\n    assert(previous(34)==0&&step(2)==0,'v62 contact sequence');t=cfg(25:26)';\nelse\n    assert(stage==2&&(previous(34)==1||previous(34)==2),'v62 outgoing sequence');\n    assert(step(2)>cfg(26)&&step(2)>previous(36)&&step(2)<=cfg(23),'v62 physical horizon must advance');\n    t=P(step(2));\nend\n[en,integral]=flow(P(cfg(1)),t,k,B);\nif stage==1\n    % Contact has the symbolic exact star, while root enclosure is retained.\n    en=star;\nelseif stage==2\n    assert(en(1)>star(2),'v62 outgoing branch unresolved');\nend\nassert(en(1)>=0&&en(2)<cap(1),'v62 TES bounds');\nheat=muliv(P(cfg(2)),t);source=P(0);\n% Global-time rectangles include the uncertain event window. The continuous\n% max(floor,Ttank+approach) water law avoids a scalar branch handoff.\nfor j=1:128\n    t0=muliv(t,diviv(P(j-1),P(128)));t1=muliv(t,diviv(P(j),P(128)));\n    [e0,~]=flow(P(cfg(1)),t0,k,B);[e1,~]=flow(P(cfg(1)),t1,k,B);\n    ecell=[e0(1) e1(2)];lift=plusiv(l0,diviv(ecell,C));lift=[max(lf(1),lift(1)) max(lf(2),lift(2))];\n    rate=muliv(P(cfg(2)),diviv(a,plusiv(a,lift)));\n    source=plusiv(source,muliv(rate,diviv(t,P(128))));\nend\nwork=minusiv(heat,source);standing=muliv(P(cfg(4)),integral);\nchargeLoss=muliv(minusiv(P(1),P(cfg(3))),heat);aux=muliv(P(cfg(20)),work);\nlaw=minusiv(minusiv(minusiv(plusiv(P(cfg(1)),heat),en),standing),chargeLoss);\nassert(source(1)>=0&&work(1)>=0&&standing(1)>=0&&chargeLoss(1)>=0,'v62 nonnegative ports');\nassert(law(1)<=0&&law(2)>=0,'v62 first law enclosure');\nage=plusiv(cfg(21:22)',t);\nif stage>0,assert(age(1)>=previous(39)&&age(2)>=previous(40),'v62 HP clock reset');end\ntemp=plusiv(Ta,diviv(en,C));hot=[max(F(1),temp(1)+cfg(9)) max(F(2),temp(2)+cfg(9))];\nif stage>0,waterFlow=diviv(P(cfg(2)),d);else,waterFlow=diviv(P(cfg(2)),minusiv(F,temp));end\nif cfg(29)==1&&stage>0\n    % Exact host certificate q=H*d; same d expression, no subtractive decorrelation.\n    assert(waterFlow(1)<=cfg(15)&&waterFlow(2)>=cfg(15),'v62 finite hot-water tie');\nelse\n    assert(waterFlow(1)>=0&&waterFlow(2)<=cfg(15),'v62 finite hot-water capacity');\nend\ny=zeros(64,1);y(1:31)=cfg;y(32:33)=star';y(34)=stage;y(35:36)=t';\ny(37:38)=en';y(39:40)=age';y(41:42)=heat';y(43:44)=source';y(45:46)=work';\ny(47:48)=standing';y(49:50)=chargeLoss';y(51:52)=aux';y(53:54)=law';\ny(55)=1;y(56)=0;y(57)=62;y(58:59)=cap';y(60:61)=waterFlow';y(62:63)=hot';y(64)=128;\nend\nfunction [en,integral]=flow(initial,t,k,B)\nif all(t==0),en=initial;integral=[0 0];return;end\nx=muliv(k,t);assert(max(abs(x))<=1,'v62 outward span exceeds one');\nv=plusiv(muliv(k,initial),B);f1=[1 1];f2=[.5 .5];term=[1 1];\nfor ii=1:24,term=diviv(muliv(term,x),[ii+1 ii+1]);f1=plusiv(f1,term);f2=plusiv(f2,diviv(term,[ii+2 ii+2]));end\nfac=[1 1];for ii=2:26,fac=muliv(fac,[ii ii]);end\ntail=diviv([3 3],fac);f1=plusiv(f1,[-tail(2) tail(2)]);f2=plusiv(f2,[-tail(2) tail(2)]);\nen=plusiv(initial,muliv(muliv(v,t),f1));integral=plusiv(muliv(initial,t),muliv(muliv(v,muliv(t,t)),f2));\nend\nfunction z=plusiv(x,y)\nif all(x==0),z=y;elseif all(y==0),z=x;else,z=out([x(1)+y(1) x(2)+y(2)]);end\nend\nfunction z=minusiv(x,y)\nif all(y==0),z=x;else,z=out([x(1)-y(2) x(2)-y(1)]);end\nend\nfunction z=muliv(x,y)\nif all(x==0)||all(y==0),z=[0 0];return;end\nt=[x(1)*y(1) x(1)*y(2) x(2)*y(1) x(2)*y(2)];z=out([min(t) max(t)]);\nend\nfunction z=diviv(x,y)\nassert(y(1)>0,'v62 positive denominator required');\nif all(x==0),z=[0 0];return;end\nt=[x(1)/y(1) x(1)/y(2) x(2)/y(1) x(2)/y(2)];z=out([min(t) max(t)]);\nend\nfunction z=out(t)\nassert(all(isfinite(t)),'v62 arithmetic overflow');z=[t(1)-2*eps(t(1)) t(2)+2*eps(t(2))];\nassert(all(isfinite(z))&&z(1)<=z(2),'v62 expansion overflow');\nend\n",
+      "xml": "simulink/stateflow/chart_18.xml",
+      "sha256": "34bc2db6e3aa5b968787768497e0c3c16e5ba762a5d5a6a337d10ae84ae04bd0"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "step",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "cfg",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "previous",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "stage",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "y",
+      "properties": {
+        "scope": "FUNCTION_OUTPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "horizon_input",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "provenance_input",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "trace",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    },
+    {
+      "id": null,
+      "name": "retained_memory",
+      "properties": {
+        "scope": "LOCAL_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_18.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dchr-charge-memory-stateflow-v62-a8e58aa21dfd.json",
+  "copies": [
+    "primary/matlab/simulink/DCHR_Charge_Memory_Stateflow_v62.slx"
+  ]
+}

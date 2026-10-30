@@ -1,0 +1,15 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.yaml text eol=lf
+Dockerfile text eol=lf
+*.slx binary
+*.mat binary
+*.gz binary
+*.pdf binary
+*.pptx binary
+*.png binary
+*.zip binary

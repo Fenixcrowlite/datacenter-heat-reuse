@@ -1,0 +1,377 @@
+{
+  "name": "DC_Bazen_Alokacia_Rok_v02_SK",
+  "id": "dc-bazen-alokacia-rok-v02-sk",
+  "sha256": "09714792c62e22a540ae2ec956259aae08908b6f032b0405ae9a97542e6ab0f4",
+  "blocks": [
+    {
+      "sid": "4::28",
+      "name": "T",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "19"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::29",
+      "name": "stav",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "20",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::1",
+      "name": "u",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "-1",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 245, 320, 285]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[3 4]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 256, 480, 274]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::5",
+      "name": "Tnovy",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::30",
+      "name": "termostat",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "21",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::31",
+      "name": "meranie",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "22",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "1",
+      "name": "Rocny_profil_DC_a_bazena",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[40, 160, 220, 210]",
+        "ZOrder": "1",
+        "VariableName": "profil_roka"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Teplota_vody_pred_krokom",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[85, 40, 150, 80]",
+        "ZOrder": "2",
+        "InitialCondition": "16",
+        "SampleTime": "3600"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Termostat_pred_krokom",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[85, 95, 150, 135]",
+        "ZOrder": "3",
+        "InitialCondition": "1",
+        "SampleTime": "3600"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Tok_tepla_DC_Bazen",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[300, 86, 505, 234]",
+        "ZOrder": "4",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "Zaznam_rocnej_bilancie",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[590, 150, 770, 200]",
+        "ZOrder": "5",
+        "VariableName": "rok_signaly",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "4::28#out:1",
+      "destinations": [
+        "4::25#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::29#out:1",
+      "destinations": [
+        "4::25#in:2"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::1#out:1",
+      "destinations": [
+        "4::25#in:3"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:2",
+      "destinations": [
+        "4::5#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:3",
+      "destinations": [
+        "4::30#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:4",
+      "destinations": [
+        "4::31#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::26#out:1",
+      "destinations": [
+        "4::27#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::25#out:1",
+      "destinations": [
+        "4::26#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "4#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "4#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "4#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "2#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:2",
+      "destinations": [
+        "3#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:3",
+      "destinations": [
+        "5#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "11",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "tok_dc_bazen"
+      ],
+      "source": "function [Tnovy,termostat,meranie] = tok_dc_bazen(T,stav,u)\n%#codegen\n% Vsetky vykony vo W; jeden krok = jedna hodina. 500 m3 vody.\n% u: [QDC, Tzdroj, aktivita, plachta, QDH_zad, QTES_zad, povolene, STOP, Tvzduch, RH]\ndt=3600; C=997*500*4182; cp=4182; A=312.5; UA=800;\nqdc=max(0,u(1)); ts=u(2); aktivita=max(0,u(3)); plachta=min(1,max(0,u(4)));\nqdh_p=max(0,u(5)); qtes_p=max(0,u(6));\npovolene=(u(7)>0.5); stop=(u(8)>0.5);\ntair=u(9); rh=min(1,max(0,u(10)));\npv=0.61094*exp(17.625*T/(T+243.04));\npa=rh*0.61094*exp(17.625*tair/(tair+243.04));\nmpar=max(0,4e-5*A*(pv-pa)*aktivita*(1-0.90*plachta));\nQvypar=mpar*2440000;\nQkonv=3*A*(T-tair)*(1-0.75*plachta);\nQrad=0.95*5.670374419e-8*A*((T+273.15)^4-(tair-2+273.15)^4)*(1-0.75*plachta);\nQkonstr=UA*(T-20);\nQdop=mpar*cp*(T-15);\nQstraty=Qvypar+Qkonv+Qrad+Qkonstr+Qdop+2000;\n% Dvojpolohovy termostat + nezavisla teplotna poistka (28 C).\ntermostat=stav;\nif T<=27.35\n    termostat=1;\nelseif T>=27.65\n    termostat=0;\nend\nQpool=0; Qzdroj=0; Pel=0; Qdh=0; Qtes=0; Qodpad=qdc; rezim=0; cop=0;\nif ~stop\n    if povolene && termostat>0.5 && T<27.75\n        % Nad 27.75 C nedovolime dalsi ohrev, aj pri chybe merania.\n        % Maximalny vykon pre 1h krok vratane vypocitanych strat:\n        Qbezpecne=max(0,(27.75-T)*C/dt + Qstraty);\n        Qziad=min(150000,Qbezpecne);\n        Qhxmax=min([qdc,150000,max(0,8500*(ts-T-3))]);\n        if Qhxmax>=0.70*Qziad && Qhxmax>0\n            Qpool=min(Qziad,Qhxmax);\n            Qzdroj=Qpool;\n            rezim=1; % priamy vymennik\n        elseif ts>=5 && qdc>0\n            % Zjednoduseny Carnotov COP s rezervou pristupovych teplot.\n            Tevap=ts-5+273.15;\n            Tcond=max(34,T+8)+273.15;\n            cop=min(6,max(2.5,0.43*Tcond/max(5,Tcond-Tevap)));\n            Qmaxzdroj=qdc/(1-1/cop);\n            Qpool=min([Qziad,150000,Qmaxzdroj,35000*cop]);\n            Pel=Qpool/cop; Qzdroj=Qpool-Pel;\n            rezim=2; % tepelne cerpadlo\n        end\n    end\n    Qdh=min(qdh_p,max(0,qdc-Qzdroj));\n    Qtes=min(qtes_p,max(0,qdc-Qzdroj-Qdh));\n    Qodpad=max(0,qdc-Qzdroj-Qdh-Qtes);\nend\nTnovy=T+(Qpool-Qstraty)*dt/C;\n% Teplotny strop so samostatnou kontrolou - nie tvrdenie o certifikacii.\nmeranie=zeros(1,12);\nmeranie(1)=Tnovy; meranie(2)=Qpool; meranie(3)=Qstraty;\nmeranie(4)=Qzdroj; meranie(5)=Pel; meranie(6)=Qdh;\nmeranie(7)=Qtes; meranie(8)=Qodpad; meranie(9)=rezim;\nmeranie(10)=cop; meranie(11)=Qvypar; meranie(12)=qdc;\nend\n",
+      "xml": "simulink/stateflow/chart_11.xml",
+      "sha256": "3ebe5cd123c6876340deae991f44d9ff75fd3b90e7af7e25def057210f001096"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "T",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "stav",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "Tnovy",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "termostat",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "meranie",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dc-bazen-alokacia-rok-v02-sk-09714792c62e.json",
+  "copies": [
+    "primary/matlab/pool_dc_integration_v02/DC_Bazen_Alokacia_Rok_v02_SK.slx"
+  ]
+}

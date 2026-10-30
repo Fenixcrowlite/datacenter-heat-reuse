@@ -1,0 +1,2470 @@
+{
+  "name": "DC_Bazen_Dvojita_Ochrana_v07_SK",
+  "id": "dc-bazen-dvojita-ochrana-v07-sk",
+  "sha256": "102321d3269d08e499341898e92a1ad234f23e817881a7ab4e2a3cb7d554819e",
+  "blocks": [
+    {
+      "sid": "14::1",
+      "name": "T1lag",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::28",
+      "name": "T2lag",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::32",
+      "name": "prev",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "23",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::29",
+      "name": "raw",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "20",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 245, 320, 285]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 4",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[4 4]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 256, 480, 274]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::5",
+      "name": "safe",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::30",
+      "name": "latched",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "21",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "14::31",
+      "name": "flags",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "22",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "sid": "20::1",
+      "name": "core",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::28",
+      "name": "Tpool",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::29",
+      "name": "raw",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "20",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::30",
+      "name": "Tit",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "21",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 230, 320, 270]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 5",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[4 2]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 241, 480, 259]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "20::5",
+      "name": "y",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "sid": "25::1",
+      "name": "Tit",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "sid": "25::28",
+      "name": "raw",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "sid": "25::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 230, 320, 270]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "sid": "25::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 6",
+        "Position": "[180, 100, 230, 160]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[2 2]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "sid": "25::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 241, 480, 259]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "sid": "25::5",
+      "name": "y",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "sid": "5::28",
+      "name": "T",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "19"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::29",
+      "name": "stav",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "20",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::1",
+      "name": "u",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "-1",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 245, 320, 285]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[3 4]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 256, 480, 274]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::5",
+      "name": "ziad",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::30",
+      "name": "straty",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "21",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "5::31",
+      "name": "stav_novy",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "22",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "sid": "6::113",
+      "name": "ziad",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "93"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::114",
+      "name": "u",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "94",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::115",
+      "name": "T",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "95",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::116",
+      "name": "E",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "96",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::110",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 230, 320, 270]",
+        "ZOrder": "90",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::109",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 3",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "89",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[4 2]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::111",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 241, 480, 259]",
+        "ZOrder": "91"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "6::117",
+      "name": "rezim",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "97"
+      },
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "sid": "7::28",
+      "name": "T",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "19"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::29",
+      "name": "E",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "20",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::30",
+      "name": "ziad",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "21",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::31",
+      "name": "straty",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "22",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::32",
+      "name": "rezim",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 246, 40, 264]",
+        "ZOrder": "23",
+        "Port": "5"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::1",
+      "name": "u",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 281, 40, 299]",
+        "ZOrder": "-1",
+        "Port": "6"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 230, 320, 270]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 1",
+        "Position": "[180, 107, 230, 248]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[6 2]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 241, 480, 259]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::5",
+      "name": "y",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "14",
+      "name": "Bezpecnostny_gate_bazena",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[260, 311, 480, 444]",
+        "ZOrder": "13",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "6",
+      "name": "Dispecer_Stateflow",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[525, 47, 750, 228]",
+        "ZOrder": "6",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "Chart",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "Dopyt_bazena_a_straty",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[280, 46, 455, 194]",
+        "ZOrder": "5",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Energia_TES_pred_krokom",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[55, 85, 120, 115]",
+        "ZOrder": "3",
+        "InitialCondition": "0.45*3.6e9",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "20",
+      "name": "Fyzikalny_ventil_a_IT_chladenie",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[1060, 357, 1305, 513]",
+        "ZOrder": "18",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "9",
+      "name": "Nova_energia_TES",
+      "type": "Selector",
+      "properties": {
+        "Position": "[1100, 105, 1160, 135]",
+        "ZOrder": "9",
+        "InputPortWidth": "39",
+        "IndexOptions": "Index vector (dialog)",
+        "Indices": "2",
+        "OutputSizes": "1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "8",
+      "name": "Nova_teplota",
+      "type": "Selector",
+      "properties": {
+        "Position": "[1100, 35, 1160, 65]",
+        "ZOrder": "8",
+        "InputPortWidth": "39",
+        "IndexOptions": "Index vector (dialog)",
+        "Indices": "1",
+        "OutputSizes": "1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "22",
+      "name": "Nova_teplota_IT",
+      "type": "Selector",
+      "properties": {
+        "Position": "[1370, 567, 1435, 603]",
+        "ZOrder": "20",
+        "InputPortWidth": "39",
+        "IndexOptions": "Index vector (dialog)",
+        "Indices": "28",
+        "OutputSizes": "1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "13",
+      "name": "Pamat_zablokovania_bazena",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[45, 375, 125, 405]",
+        "ZOrder": "12",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "25",
+      "name": "Redukcia_IT_zataze",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[280, 720, 490, 820]",
+        "ZOrder": "22",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "7",
+      "name": "Rozdelovac_energie_DC_TES_Bazen",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[825, 82, 1050, 283]",
+        "ZOrder": "7",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "18",
+      "name": "Snimac_1_oneskorenie_15min",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[30, 552, 135, 588]",
+        "ZOrder": "16",
+        "InitialCondition": "16",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "19",
+      "name": "Snimac_2_oneskorenie_30min",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[30, 612, 135, 648]",
+        "ZOrder": "17",
+        "InitialCondition": "16",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "24",
+      "name": "Surove_merania_v07",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[20, 712, 235, 758]",
+        "ZOrder": "21",
+        "VariableName": "profil_merani_v07",
+        "OutputAfterFinalValue": "Holding final value"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "21",
+      "name": "Tepelny_buffer_IT",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[1060, 567, 1165, 603]",
+        "ZOrder": "19",
+        "InitialCondition": "30",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Teplota_bazena_pred_krokom",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[55, 35, 120, 65]",
+        "ZOrder": "2",
+        "InitialCondition": "16",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Termostat_pred_krokom",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[55, 145, 120, 175]",
+        "ZOrder": "4",
+        "InitialCondition": "1",
+        "SampleTime": "900"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "10",
+      "name": "Vysledny_tok_v04",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[1120, 215, 1300, 255]",
+        "ZOrder": "10",
+        "VariableName": "tok_v07",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "15",
+      "name": "Zaznam_zabezpecenia",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[550, 364, 730, 396]",
+        "ZOrder": "14",
+        "VariableName": "interlock_v07",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "14::1#out:1",
+      "destinations": [
+        "14::25#in:1"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::28#out:1",
+      "destinations": [
+        "14::25#in:2"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::32#out:1",
+      "destinations": [
+        "14::25#in:3"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::29#out:1",
+      "destinations": [
+        "14::25#in:4"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::25#out:2",
+      "destinations": [
+        "14::5#in:1"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::25#out:3",
+      "destinations": [
+        "14::30#in:1"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::25#out:4",
+      "destinations": [
+        "14::31#in:1"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::26#out:1",
+      "destinations": [
+        "14::27#in:1"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "14::25#out:1",
+      "destinations": [
+        "14::26#in:1"
+      ],
+      "xml": "simulink/systems/system_14.xml"
+    },
+    {
+      "source": "20::1#out:1",
+      "destinations": [
+        "20::25#in:1"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "20::28#out:1",
+      "destinations": [
+        "20::25#in:2"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "20::29#out:1",
+      "destinations": [
+        "20::25#in:3"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "20::30#out:1",
+      "destinations": [
+        "20::25#in:4"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "20::25#out:2",
+      "destinations": [
+        "20::5#in:1"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "20::26#out:1",
+      "destinations": [
+        "20::27#in:1"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "20::25#out:1",
+      "destinations": [
+        "20::26#in:1"
+      ],
+      "xml": "simulink/systems/system_20.xml"
+    },
+    {
+      "source": "25::1#out:1",
+      "destinations": [
+        "25::25#in:1"
+      ],
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "source": "25::28#out:1",
+      "destinations": [
+        "25::25#in:2"
+      ],
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "source": "25::25#out:2",
+      "destinations": [
+        "25::5#in:1"
+      ],
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "source": "25::26#out:1",
+      "destinations": [
+        "25::27#in:1"
+      ],
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "source": "25::25#out:1",
+      "destinations": [
+        "25::26#in:1"
+      ],
+      "xml": "simulink/systems/system_25.xml"
+    },
+    {
+      "source": "5::28#out:1",
+      "destinations": [
+        "5::25#in:1"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::29#out:1",
+      "destinations": [
+        "5::25#in:2"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::1#out:1",
+      "destinations": [
+        "5::25#in:3"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::25#out:2",
+      "destinations": [
+        "5::5#in:1"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::25#out:3",
+      "destinations": [
+        "5::30#in:1"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::25#out:4",
+      "destinations": [
+        "5::31#in:1"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::26#out:1",
+      "destinations": [
+        "5::27#in:1"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "5::25#out:1",
+      "destinations": [
+        "5::26#in:1"
+      ],
+      "xml": "simulink/systems/system_5.xml"
+    },
+    {
+      "source": "6::113#out:1",
+      "destinations": [
+        "6::109#in:1"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "6::114#out:1",
+      "destinations": [
+        "6::109#in:2"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "6::115#out:1",
+      "destinations": [
+        "6::109#in:3"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "6::116#out:1",
+      "destinations": [
+        "6::109#in:4"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "6::109#out:2",
+      "destinations": [
+        "6::117#in:1"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "6::110#out:1",
+      "destinations": [
+        "6::111#in:1"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "6::109#out:1",
+      "destinations": [
+        "6::110#in:1"
+      ],
+      "xml": "simulink/systems/system_6.xml"
+    },
+    {
+      "source": "7::28#out:1",
+      "destinations": [
+        "7::25#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::29#out:1",
+      "destinations": [
+        "7::25#in:2"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::30#out:1",
+      "destinations": [
+        "7::25#in:3"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::31#out:1",
+      "destinations": [
+        "7::25#in:4"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::32#out:1",
+      "destinations": [
+        "7::25#in:5"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::1#out:1",
+      "destinations": [
+        "7::25#in:6"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:2",
+      "destinations": [
+        "7::5#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::26#out:1",
+      "destinations": [
+        "7::27#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:1",
+      "destinations": [
+        "7::26#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "5#in:1",
+        "6#in:3",
+        "7#in:1",
+        "18#in:1",
+        "20#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "5#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:3",
+      "destinations": [
+        "4#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:1",
+      "destinations": [
+        "6#in:1",
+        "7#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "6#in:4",
+        "7#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:2",
+      "destinations": [
+        "7#in:4"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "6#out:1",
+      "destinations": [
+        "7#in:5"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "8#out:1",
+      "destinations": [
+        "2#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "9#out:1",
+      "destinations": [
+        "3#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "14#out:2",
+      "destinations": [
+        "13#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "14#out:3",
+      "destinations": [
+        "15#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "14#out:1",
+      "destinations": [
+        "5#in:3",
+        "6#in:2",
+        "7#in:6"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "18#out:1",
+      "destinations": [
+        "19#in:1",
+        "14#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "19#out:1",
+      "destinations": [
+        "14#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "13#out:1",
+      "destinations": [
+        "14#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:1",
+      "destinations": [
+        "20#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "21#out:1",
+      "destinations": [
+        "20#in:4",
+        "25#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "20#out:1",
+      "destinations": [
+        "8#in:1",
+        "9#in:1",
+        "10#in:1",
+        "22#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "22#out:1",
+      "destinations": [
+        "21#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "24#out:1",
+      "destinations": [
+        "25#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "25#out:1",
+      "destinations": [
+        "14#in:4",
+        "20#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_135.xml"
+    },
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "label": "BEZ_ZDROJA\nen,du:\nrezim=0;",
+      "position": "[60 157 250 90]",
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "PRIAMY_VYMENNIK\nen,du:\nrezim=1;",
+      "position": "[350 157 250 90]",
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "TEPELNE_CERPADLO\nen,du:\nrezim=2;",
+      "position": "[640 157 250 90]",
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "CERPAJ_Z_TES\nen,du:\nrezim=3;",
+      "position": "[60 317 250 90]",
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "IT_BEZPECNE_ODSTAVENIE\nen,du:\nrezim=4;",
+      "position": "[350 317 250 90]",
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "m=volba_rezimu_v04_sk(req,inputs,waterTemperature,storedEnergy)",
+      "position": "[115 542 390 65]",
+      "xml": "simulink/stateflow/chart_68.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "113",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "125",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "135",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_135.xml"
+    },
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "45",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "57",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+        "labelPosition": "[435.77 72.671 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[495.0488 23.4512]",
+        "dataLimits": "[44 767.4 20.191 157]",
+        "subviewer": "68",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "17",
+        "intersection": "[2 1 0 0 44 79 0 0]"
+      },
+      "destination": {
+        "SSID": "14",
+        "intersection": "[1 0 -1 0.5 765 157 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "",
+      "properties": {
+        "labelPosition": "[51.409 60.952 0 0]",
+        "fontSize": "12",
+        "midPoint": "[36 58]",
+        "dataLimits": "[23.809 38.743 43 72.904]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0.6476 0.7619 0 36 43 0 0]"
+      },
+      "destination": {
+        "SSID": "17",
+        "intersection": "[1 -0.6476 -0.7619 0 30.8188 72.9045 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+        "labelPosition": "[250.642 67.457 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[314.0809 59.4191]",
+        "dataLimits": "[44 477.4 59.435 157]",
+        "subviewer": "68",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "17",
+        "intersection": "[2 1 0 0 44 79 0 0]"
+      },
+      "destination": {
+        "SSID": "13",
+        "intersection": "[1 0 -1 0.5 475 157 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+        "labelPosition": "[103.724 108.734 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[134.1775 94.3225]",
+        "dataLimits": "[44 187.4 79 157]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "17",
+        "intersection": "[2 1 0 0 44 79 0 0]"
+      },
+      "destination": {
+        "SSID": "12",
+        "intersection": "[1 0 -1 0.5 185 157 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+        "labelPosition": "[132.496 144.607 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[148.2224 160.2776]",
+        "dataLimits": "[44 187.4 79 317]",
+        "subviewer": "68",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "17",
+        "intersection": "[2 1 0 0 44 79 0 0]"
+      },
+      "destination": {
+        "SSID": "15",
+        "intersection": "[1 0 -1 0.5 185 317 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+        "labelPosition": "[271.864 202.737 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[320.5662 132.9338]",
+        "dataLimits": "[44 477.4 79 317]",
+        "subviewer": "68",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "17",
+        "intersection": "[2 1 0 0 44 79 0 0]"
+      },
+      "destination": {
+        "SSID": "16",
+        "intersection": "[1 0 -1 0.5 475 317 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+        "labelPosition": "[361.137 283.625 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[191.2816 265.485]",
+        "dataLimits": "[9.208 640 168.97 364.4]",
+        "subviewer": "68",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "14",
+        "intersection": "[4 -1 0 0.867 640 168.97 0 0]"
+      },
+      "destination": {
+        "SSID": "15",
+        "intersection": "[4 -1 0 0.5 60 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+        "labelPosition": "[195.787 256.849 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[112.2361 265.485]",
+        "dataLimits": "[24.895 350 168.97 364.4]",
+        "subviewer": "68",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.867 350 168.97 0 0]"
+      },
+      "destination": {
+        "SSID": "15",
+        "intersection": "[4 -1 0 0.5 60 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+        "labelPosition": "[493.278 259.994 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[402.2361 265.485]",
+        "dataLimits": "[314.895 640 168.97 364.4]",
+        "subviewer": "68",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "14",
+        "intersection": "[4 -1 0 0.867 640 168.97 0 0]"
+      },
+      "destination": {
+        "SSID": "16",
+        "intersection": "[4 -1 0 0.5 350 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+        "labelPosition": "[571.919 394.078 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[471 218.515]",
+        "dataLimits": "[14.903 927.097 199.6 235.03]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "14",
+        "intersection": "[2 1 0 0.867 890 235.03 0 0]"
+      },
+      "destination": {
+        "SSID": "12",
+        "intersection": "[4 -1 0 0.5 60 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+        "labelPosition": "[53.957 301.913 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[15.95 282]",
+        "dataLimits": "[15.765 60 199.6 362]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "15",
+        "intersection": "[4 -1 0 0.5 60 362 0 0]"
+      },
+      "destination": {
+        "SSID": "12",
+        "intersection": "[4 -1 0 0.5 60 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+        "labelPosition": "[236.917 396.933 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[112.2361 298.515]",
+        "dataLimits": "[24.895 350 199.6 395.03]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "16",
+        "intersection": "[4 -1 0 0.133 350 395.03 0 0]"
+      },
+      "destination": {
+        "SSID": "12",
+        "intersection": "[4 -1 0 0.5 60 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==0]",
+        "labelPosition": "[373.233 314.512 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[326 218.515]",
+        "dataLimits": "[27.703 624.297 199.6 235.03]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "13",
+        "intersection": "[2 1 0 0.867 600 235.03 0 0]"
+      },
+      "destination": {
+        "SSID": "12",
+        "intersection": "[4 -1 0 0.5 60 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+        "labelPosition": "[292.611 248.459 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[286.2003 242.2003]",
+        "dataLimits": "[265 350 199.6 317]",
+        "subviewer": "68",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "15",
+        "intersection": "[1 0 -1 0.82 265 317 0 0]"
+      },
+      "destination": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.5 350 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+        "labelPosition": "[416.637 222.455 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[400.4255 211.4255]",
+        "dataLimits": "[265 640 199.6 317]",
+        "subviewer": "68",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "15",
+        "intersection": "[1 0 -1 0.82 265 317 0 0]"
+      },
+      "destination": {
+        "SSID": "14",
+        "intersection": "[4 -1 0 0.5 640 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+        "labelPosition": "[348.318 280.737 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[305.95 282]",
+        "dataLimits": "[305.765 350 199.6 362]",
+        "subviewer": "68",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "16",
+        "intersection": "[4 -1 0 0.5 350 362 0 0]"
+      },
+      "destination": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.5 350 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+        "labelPosition": "[331.544 198.812 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[326 202]",
+        "dataLimits": "[310 350 199.6 204.4]",
+        "subviewer": "68",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "12",
+        "intersection": "[2 1 0 0.5 310 202 0 0]"
+      },
+      "destination": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.5 350 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+        "labelPosition": "[472.463 202.922 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[471 202]",
+        "dataLimits": "[310 640 199.6 204.4]",
+        "subviewer": "68",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "12",
+        "intersection": "[2 1 0 0.5 310 202 0 0]"
+      },
+      "destination": {
+        "SSID": "14",
+        "intersection": "[4 -1 0 0.5 640 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==1]",
+        "labelPosition": "[675.577 294.196 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[616 218.515]",
+        "dataLimits": "[317.703 914.297 199.6 235.03]",
+        "subviewer": "68",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "14",
+        "intersection": "[2 1 0 0.867 890 235.03 0 0]"
+      },
+      "destination": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.5 350 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+        "labelPosition": "[583.238 250.689 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[576.2003 242.2003]",
+        "dataLimits": "[555 640 199.6 317]",
+        "subviewer": "68",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "16",
+        "intersection": "[1 0 -1 0.82 555 317 0 0]"
+      },
+      "destination": {
+        "SSID": "14",
+        "intersection": "[4 -1 0 0.5 640 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==2]",
+        "labelPosition": "[620.412 198.881 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[616 202]",
+        "dataLimits": "[600 640 199.6 204.4]",
+        "subviewer": "68",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "13",
+        "intersection": "[2 1 0 0.5 600 202 0 0]"
+      },
+      "destination": {
+        "SSID": "14",
+        "intersection": "[4 -1 0 0.5 640 202 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+        "labelPosition": "[35.945 271.852 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[15.95 282]",
+        "dataLimits": "[15.765 60 202 364.4]",
+        "subviewer": "68",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "12",
+        "intersection": "[4 -1 0 0.5 60 202 0 0]"
+      },
+      "destination": {
+        "SSID": "15",
+        "intersection": "[4 -1 0 0.5 60 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+        "labelPosition": "[321.121 273.129 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[305.95 282]",
+        "dataLimits": "[305.765 350 202 364.4]",
+        "subviewer": "68",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "13",
+        "intersection": "[4 -1 0 0.5 350 202 0 0]"
+      },
+      "destination": {
+        "SSID": "16",
+        "intersection": "[4 -1 0 0.5 350 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+        "labelPosition": "[262.531 312.437 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[286.2003 321.7997]",
+        "dataLimits": "[265 350 247 364.4]",
+        "subviewer": "68",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "12",
+        "intersection": "[3 0 1 0.18 265 247 0 0]"
+      },
+      "destination": {
+        "SSID": "16",
+        "intersection": "[4 -1 0 0.5 350 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==3]",
+        "labelPosition": "[347.912 471.457 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[326 378.515]",
+        "dataLimits": "[27.703 624.297 359.6 395.03]",
+        "subviewer": "68",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "16",
+        "intersection": "[2 1 0 0.867 600 395.03 0 0]"
+      },
+      "destination": {
+        "SSID": "15",
+        "intersection": "[4 -1 0 0.5 60 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "label": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+      "properties": {
+        "labelString": "[volba_rezimu_v04_sk(ziad,u,T,E)==4]",
+        "labelPosition": "[330.328 348.995 205.953 16]",
+        "fontSize": "12",
+        "midPoint": "[326 362]",
+        "dataLimits": "[310 350 359.6 364.4]",
+        "subviewer": "68",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "15",
+        "intersection": "[2 1 0 0.5 310 362 0 0]"
+      },
+      "destination": {
+        "SSID": "16",
+        "intersection": "[4 -1 0 0.5 350 362 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "bezpecnostne_meranie_v06"
+      ],
+      "source": "function [safe,latched,flags] = bezpecnostne_meranie_v06(T1lag,T2lag,prev,raw)\n%#codegen\n% V06: 2 meracie vetvy s vlastnym oneskorenim, bez pristupu k T_true.\n% raw: 1:11 prevadzka, 12/13 bias senzorov, 14 flow, 15 E-STOP,\n% 16 manual reset, 17 stuck valve, 18 rejection cooling availability.\nsafe=zeros(1,11);\nfor k=1:11,safe(k)=raw(k);end\nt1=T1lag+raw(12);\nt2=T2lag+raw(13);\nvalid=isfinite(t1)&&isfinite(t2);\nmismatch=valid&&(abs(t1-t2)>0.35);\nhot=valid&&((t1>=27.70)||(t2>=27.70));\nflowFault=raw(14)<0.5;\nestop=raw(15)>0.5;\nfault=(~valid)||mismatch||hot||flowFault||estop;\nlatched=double(prev>0.5);\nresetOK=0;\n% Failure dominates simultaneous reset request.\nif fault\n    latched=1;\nelseif raw(16)>0.5 && latched>0.5 && max(t1,t2)<=27.65\n    latched=0;resetOK=1;\nend\nif latched>0.5,safe(9)=0;end\nflags=zeros(1,10);\nflags(1)=latched;flags(2)=double(mismatch);\nflags(3)=double(hot);flags(4)=double(flowFault);\nflags(5)=double(estop);flags(6)=double(~valid);\nflags(7)=resetOK;flags(8)=t1;flags(9)=t2;\nflags(10)=safe(9);\nend\n",
+      "xml": "simulink/stateflow/chart_113.xml",
+      "sha256": "557ccb137856158ccebe12b487e176b2ba38508457bc633c6ede0ca2120baf6e"
+    },
+    {
+      "names": [
+        "fyzikalne_ochrany_v07"
+      ],
+      "source": "function y=fyzikalne_ochrany_v07(core,Tpool,raw,Tit)\n%#codegen\n% Separatne dve uzatvaracie vetvy HX: fyzicky unik len pri dvoch poruchach.\n% REJECT A =180 kW, REJECT B=150 kW; oba su scenarove hodnoty.\n% raw 17 primary stuck, 19 secondary stuck, 18 main reject availability,\n% 20 backup reject availability. raw 22 = Q_IT_load_avoided (W).\ndt=900; Cw=997*500*4182; Cit=8e6;\nQcmd=max(0,core(4));\nQrejectCmd=max(0,core(17));\nQdc=max(0,core(18));\nprimaryFault=raw(17)>0.5;\nbackupFault=raw(19)>0.5;\nleak=0;\nif primaryFault && backupFault && Qcmd<=1e-7\n    drive=max(0,raw(2)-Tpool-3);\n    leak=min([25000,QrejectCmd,4500*drive]);\nend\nQremaining=max(0,QrejectCmd-leak);\nmainCap=180000*min(1,max(0,raw(18)));\nbackupCap=150000*min(1,max(0,raw(20)));\nQrejectA=min(Qremaining,mainCap);\nQrejectB=min(max(0,Qremaining-QrejectA),backupCap);\nQreject=QrejectA+QrejectB;\nQunhandled=max(0,Qremaining-Qreject);\npassive=max(0,2000*(Tit-30));\nTitNext=max(30,Tit+dt*(Qunhandled-passive)/Cit);\ny=zeros(1,39);\nfor k=1:25,y(k)=core(k);end\ny(1)=core(1)+dt*leak/Cw;\ny(4)=Qcmd+leak;\ny(6)=core(6)+leak;\ny(17)=Qreject;\n% Include accumulated, not-dissipated heat explicitly in closure\ny(22)=Qdc-(y(6)+core(14)+Qreject+Qunhandled);\ny(24)=y(4)-(y(6)+core(7));\ny(26)=leak;\ny(27)=Qunhandled;\ny(28)=TitNext;\ny(29)=double(TitNext>=42); \ny(30)=QrejectCmd;\ny(31)=Qreject;\ny(32)=double((Qcmd<=1e-7)&&(leak>0));\ny(33)=y(22);\ny(34)=QrejectA;\ny(35)=QrejectB;\ny(36)=max(0,raw(22)); % avoided modeled waste heat\ny(37)=double(primaryFault);\ny(38)=double(backupFault);\ny(39)=Qremaining-(QrejectA+QrejectB+Qunhandled);\nend\n",
+      "xml": "simulink/stateflow/chart_125.xml",
+      "sha256": "00e7350db86fe98773992cac6fc7f4a442d579f89d60ba75a278f902829a1252"
+    },
+    {
+      "names": [
+        "uprava_zataze_IT_v07"
+      ],
+      "source": "function y=uprava_zataze_IT_v07(Tit,raw)\n%#codegen\n% Nova ochrana; redukcia zataze IT pri strate OBOCH chladiacich vetiev.\n% 21 vstupov, Q_DC je dostupne odpadove teplo [W], nie elektricka energia.\n% 21: povolena automaticka redukcia IT zataze [0/1].\ny=zeros(1,22);\nfor k=1:21\n    y(k)=raw(k);\nend\nshed=0;\nif (raw(18)<0.5) && (raw(20)<0.5) && raw(21)>0.5 && Tit>=38\n    shed=0.70*max(0,raw(1)); % scenarovy okamzity pokles o 70%\n    y(1)=max(0,raw(1)-shed);\nend\ny(22)=shed;\nend\n",
+      "xml": "simulink/stateflow/chart_135.xml",
+      "sha256": "a752e00ad9fa3d86eb4f1f0dbd811a06e86ac960a1ff8b9ba3ed03f986afcf6c"
+    },
+    {
+      "names": [
+        "alokuj_teplo_v04_sk"
+      ],
+      "source": "function y = alokuj_teplo_v04_sk(T,E,ziad,straty,rezim,u)\n%#codegen\n% Stav T [C], energia TES E[J], ziad/straty [W], rezim Stateflow 0..4.\n% Tepelny zdroj DC: len skutocne dostupny tok, nikdy IT nominal.\ndt=900; C=997*500*4182;\nEmax=900*3.6e6; % 900 kWh\neta_c=0.93; eta_d=0.91;\nQdc=max(0,u(1)); Tdc=u(2); Qdhneed=max(0,u(3));\nTES_ok=u(10)>0.5;\nQtesloss=0.002*max(0,E)/86400;\nQdirect=0; QhpPool=0; QhpDH=0; Qcharge=0; Qdis=0;\nQhpSrc=0; Pel=0; Paux=0; cop=0;\nif (rezim==1) && u(11)>0.5 && u(9)>0.5\n    % 5 K approach; konduktancia je predpoklad, nie navrh doskoveho HX.\n    Qhxmax=max(0,8500*(Tdc-T-5));\n    Qdirect=min([ziad,Qdc,150000,Qhxmax]);\nend\nQleft=max(0,Qdc-Qdirect);\nif rezim==1 || rezim==2\n    % T kondenzatora 52 C, T vyparnika Tdc-5 C; Carnot * 0.43.\n    % Bez manufacturer COP(Tsource,Tsink,PLR) = iba scenar.\n    Tevap=Tdc-5; Tcond=52;\n    cop=min(6,max(2.5,0.43*(Tcond+273.15)/max(5,Tcond-Tevap)));\n    QhpCap=min([200000,55000*cop,Qleft/max(1e-9,1-1/cop)]);\n    % Minimalna priorita tepelnej siete: rezervuj max 50 kW.\n    minDH=min(Qdhneed,min(50000,QhpCap));\n    QhpPool=min(max(0,ziad-Qdirect),max(0,QhpCap-minDH));\n    QhpDH=min(Qdhneed,QhpCap-QhpPool);\n    spare=max(0,QhpCap-QhpPool-QhpDH);\n    extraPool=min(max(0,ziad-Qdirect-QhpPool),spare);\n    QhpPool=QhpPool+extraPool;\n    spare=max(0,QhpCap-QhpPool-QhpDH);\n    % Nabijame TES az po aktualnom bazene a obsluhe siete.\n    if TES_ok && E<Emax && spare>0\n        room=max(0,(Emax-E+Qtesloss*dt)/(eta_c*dt));\n        Qcharge=min([spare,70000,room]);\n    end\n    QhpOut=QhpPool+QhpDH+Qcharge;\n    Pel=QhpOut/cop;\n    QhpSrc=QhpOut-Pel;\n    if QhpOut>0,Paux=1500;end\nend\nif Qdirect>0,Paux=Paux+500;end\nQpool=Qdirect+QhpPool;\nQdhShort=max(0,Qdhneed-QhpDH);\nif TES_ok && QdhShort>0 && E>0\n    transferable=max(0,(E-Qtesloss*dt)*eta_d/dt);\n    Qdis=min([QdhShort,80000,transferable]);\n    if Qdis>0,Paux=Paux+250;end\nend\n% TES nesmie sucasne nabijat a vybijat.\nif Qdis>0 && Qcharge>0\n    Qcharge=0;\n    QhpOut=QhpPool+QhpDH;\n    Pel=QhpOut/cop;\n    QhpSrc=QhpOut-Pel;\nend\nQdh=QhpDH+Qdis;\nQreject=max(0,Qdc-Qdirect-QhpSrc);\nEnext=max(0,min(Emax,E+dt*(eta_c*Qcharge-Qdis/eta_d-Qtesloss)));\nTnext=T+dt*(Qpool-straty)/C;\nqsourceResidual=Qdc-(Qdirect+QhpSrc+Qreject);\nqhpResidual=(QhpPool+QhpDH+Qcharge)-(QhpSrc+Pel);\nqpoolResidual=Qpool-(Qdirect+QhpPool);\nqdhResidual=Qdh-(QhpDH+Qdis);\ny=zeros(1,25);\ny(1)=Tnext;\ny(2)=Enext;\ny(3)=ziad;\ny(4)=Qpool;\ny(5)=straty;\ny(6)=Qdirect;\ny(7)=QhpPool;\ny(8)=QhpDH;\ny(9)=Qcharge;\ny(10)=Qdis;\ny(11)=Qdh;\ny(12)=max(0,Qdhneed-Qdh);\ny(13)=max(0,ziad-Qpool);\ny(14)=QhpSrc;\ny(15)=Pel;\ny(16)=Paux;\ny(17)=Qreject;\ny(18)=Qdc;\ny(19)=cop;\ny(20)=rezim;\ny(21)=Qtesloss;\ny(22)=qsourceResidual;\ny(23)=qhpResidual;\ny(24)=qpoolResidual;\ny(25)=qdhResidual;\nend\n",
+      "xml": "simulink/stateflow/chart_45.xml",
+      "sha256": "12343eef83ca67a801fe3ffbca06006a4f96a93e7b5c2914d99b7f730cc054e1"
+    },
+    {
+      "names": [
+        "vypocitaj_dopyt_bazena_sk"
+      ],
+      "source": "function [ziad,straty,stav_novy] = vypocitaj_dopyt_bazena_sk(T,stav,u)\n%#codegen\n% u [Qdc_W,Tdc_C,Qdh_W,Tair_C,RH,aktivita,plachta,IT_ok,BAZEN_ok,TES_ok,HX_ok].\n% Vykony W, teploty C, krok 900 s, objem 500 m3.\nA=312.5; C=997*500*4182; dt=900; cp=4182;\nTa=u(4);rh=min(1,max(0,u(5)));\nactivity=max(0,u(6));cover=min(1,max(0,u(7)));\npv=0.61094*exp(17.625*T/(T+243.04));\npa=rh*0.61094*exp(17.625*Ta/(Ta+243.04));\nmv=max(0,4e-5*A*(pv-pa)*activity*(1-0.9*cover));\nQevap=mv*2440000;\nQconv=3*A*(T-Ta)*(1-0.75*cover);\nQrad=0.95*5.670374419e-8*A*((T+273.15)^4-(Ta-2+273.15)^4)*(1-0.75*cover);\nQkonstr=800*(T-20);\nQmakeup=mv*cp*(T-15);\nstraty=Qevap+Qconv+Qrad+Qkonstr+Qmakeup+2000;\nstav_novy=stav;\nif T<=27.35,stav_novy=1;elseif T>=27.65,stav_novy=0;end\nif u(9)<0.5\n    stav_novy=0;\nend\nziad=0;\nif stav_novy>0.5 && T<27.75 && u(9)>0.5\n    Qsafe=max(0,(27.75-T)*C/dt+straty);\n    Qset=max(0,(27.58-T)*C/dt+straty);\n    ziad=min([150000,Qsafe,Qset]);\nend\nend\n",
+      "xml": "simulink/stateflow/chart_57.xml",
+      "sha256": "7b250650cdb185ad4f8b444868083d5f507c487c9212daa8e0f86d14bca36f1b"
+    },
+    {
+      "names": [
+        "volba_rezimu_v04_sk"
+      ],
+      "source": "function m=volba_rezimu_v04_sk(req,inputs,waterTemperature,storedEnergy)\n% Opravena lokálna symbolika funkcie Stateflow, bez tienovania chart dat.\nm=0;\nif inputs(8)<0.5\n    m=4; % IT zastavene\nelseif inputs(1)<=1e-6\n    if storedEnergy>100000 && inputs(10)>0.5 && inputs(3)>0\n        m=3; % TES-only\n    end\nelseif inputs(11)>0.5 && inputs(9)>0.5 && req>0 && inputs(2)>waterTemperature+5\n    m=1; % priamy HX bazena, TC sluzba siete\nelse\n    m=2; % TC\nend\nend\n",
+      "xml": "simulink/stateflow/chart_68.xml",
+      "sha256": "c88ebc8127ca0587f955a6a76448a100f737bdb944f8aa3e7de2a007dc12778f"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "T1lag",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "safe",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "T2lag",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "prev",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "raw",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "latched",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "flags",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_113.xml"
+    },
+    {
+      "id": null,
+      "name": "core",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "name": "y",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "name": "Tpool",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "name": "raw",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "name": "Tit",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_125.xml"
+    },
+    {
+      "id": null,
+      "name": "Tit",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_135.xml"
+    },
+    {
+      "id": null,
+      "name": "y",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_135.xml"
+    },
+    {
+      "id": null,
+      "name": "raw",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_135.xml"
+    },
+    {
+      "id": null,
+      "name": "T",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "E",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "ziad",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "straty",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "rezim",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "y",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_45.xml"
+    },
+    {
+      "id": null,
+      "name": "T",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "name": "stav",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "name": "ziad",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "name": "straty",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "name": "stav_novy",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_57.xml"
+    },
+    {
+      "id": null,
+      "name": "req",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "inputs",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "waterTemperature",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "storedEnergy",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "m",
+      "properties": {
+        "scope": "FUNCTION_OUTPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "ziad",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "T",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "E",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    },
+    {
+      "id": null,
+      "name": "rezim",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_68.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dc-bazen-dvojita-ochrana-v07-sk-102321d3269d.json",
+  "copies": [
+    "primary/matlab/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx"
+  ]
+}

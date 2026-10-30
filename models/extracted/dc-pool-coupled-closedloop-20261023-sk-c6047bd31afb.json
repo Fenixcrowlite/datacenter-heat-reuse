@@ -1,0 +1,1307 @@
+{
+  "name": "DC_Pool_Coupled_ClosedLoop_20261023_SK",
+  "id": "dc-pool-coupled-closedloop-20261023-sk",
+  "sha256": "c6047bd31afb2daeab376a3847518cb8eebccd4f320030ebf65debf0e72b51a6",
+  "blocks": [
+    {
+      "sid": "12::1",
+      "name": "SrcAvail",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::28",
+      "name": "Dhdemand",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::29",
+      "name": "Activity",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "20",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::30",
+      "name": "Cover",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "21",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::31",
+      "name": "Tprev",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 246, 40, 264]",
+        "ZOrder": "22",
+        "Port": "5"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::32",
+      "name": "Eprev",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 281, 40, 299]",
+        "ZOrder": "23",
+        "Port": "6"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::33",
+      "name": "Hprev",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 316, 40, 334]",
+        "ZOrder": "24",
+        "Port": "7"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::34",
+      "name": "Mode",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 351, 40, 369]",
+        "ZOrder": "25",
+        "Port": "8"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::35",
+      "name": "SourceTemp",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 386, 40, 404]",
+        "ZOrder": "26",
+        "Port": "9"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::36",
+      "name": "COPpool",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 426, 40, 444]",
+        "ZOrder": "27",
+        "Port": "10"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::37",
+      "name": "P",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 461, 40, 479]",
+        "ZOrder": "28",
+        "Port": "11"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 640, 320, 680]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 110, 230, 430]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[11 15]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 651, 480, 669]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::5",
+      "name": "Tnext",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::38",
+      "name": "Enext",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "29",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::39",
+      "name": "Hnext",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "30",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::40",
+      "name": "Qpool",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 206, 480, 224]",
+        "ZOrder": "31",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::41",
+      "name": "QsrcPool",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 246, 480, 264]",
+        "ZOrder": "32",
+        "Port": "5"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::42",
+      "name": "Wpool",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 281, 480, 299]",
+        "ZOrder": "33",
+        "Port": "6"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::43",
+      "name": "Qdh",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 316, 480, 334]",
+        "ZOrder": "34",
+        "Port": "7"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::44",
+      "name": "QsrcDh",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 351, 480, 369]",
+        "ZOrder": "35",
+        "Port": "8"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::45",
+      "name": "Wdh",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 386, 480, 404]",
+        "ZOrder": "36",
+        "Port": "9"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::46",
+      "name": "Qgas",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 426, 480, 444]",
+        "ZOrder": "37",
+        "Port": "10"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::47",
+      "name": "Qcharge",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 461, 480, 479]",
+        "ZOrder": "38",
+        "Port": "11"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::48",
+      "name": "Qdischarge",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 496, 480, 514]",
+        "ZOrder": "39",
+        "Port": "12"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::49",
+      "name": "Qloss",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 531, 480, 549]",
+        "ZOrder": "40",
+        "Port": "13"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "12::50",
+      "name": "COPdh",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 566, 480, 584]",
+        "ZOrder": "41",
+        "Port": "14"
+      },
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Activity",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[40, 217, 190, 243]",
+        "ZOrder": "3",
+        "VariableName": "cl_activity_series"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "26",
+      "name": "COPdh",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 729, 1000, 751]",
+        "ZOrder": "26",
+        "VariableName": "cl_COPdh",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "10",
+      "name": "COPpool",
+      "type": "Constant",
+      "properties": {
+        "Position": "[40, 776, 180, 804]",
+        "ZOrder": "10",
+        "Value": "cl_cop_pool"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Cover",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[40, 282, 190, 308]",
+        "ZOrder": "4",
+        "VariableName": "cl_cover_series"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "12",
+      "name": "DC_bazen_spatna_vazba",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[380, 158, 620, 677]",
+        "ZOrder": "12",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Dhdemand",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[40, 157, 190, 183]",
+        "ZOrder": "2",
+        "VariableName": "cl_dh_series"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "14",
+      "name": "Enext",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 129, 1000, 151]",
+        "ZOrder": "14",
+        "VariableName": "cl_Enext",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "6",
+      "name": "Eprev",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[160, 485, 230, 515]",
+        "ZOrder": "6",
+        "SampleTime": "300"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "15",
+      "name": "Hnext",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 179, 1000, 201]",
+        "ZOrder": "15",
+        "VariableName": "cl_Hnext",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "7",
+      "name": "Hprev",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[160, 550, 230, 580]",
+        "ZOrder": "7",
+        "InitialCondition": "1",
+        "SampleTime": "300"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "8",
+      "name": "Mode",
+      "type": "Constant",
+      "properties": {
+        "Position": "[40, 651, 180, 679]",
+        "ZOrder": "8",
+        "Value": "cl_mode"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "11",
+      "name": "P",
+      "type": "Constant",
+      "properties": {
+        "Position": "[40, 836, 180, 864]",
+        "ZOrder": "11",
+        "Value": "cl_params"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "23",
+      "name": "Qcharge",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 579, 1000, 601]",
+        "ZOrder": "23",
+        "VariableName": "cl_Qcharge",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "19",
+      "name": "Qdh",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 379, 1000, 401]",
+        "ZOrder": "19",
+        "VariableName": "cl_Qdh",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "24",
+      "name": "Qdischarge",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 629, 1000, 651]",
+        "ZOrder": "24",
+        "VariableName": "cl_Qdischarge",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "22",
+      "name": "Qgas",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 529, 1000, 551]",
+        "ZOrder": "22",
+        "VariableName": "cl_Qgas",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "25",
+      "name": "Qloss",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 679, 1000, 701]",
+        "ZOrder": "25",
+        "VariableName": "cl_Qloss",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "16",
+      "name": "Qpool",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 229, 1000, 251]",
+        "ZOrder": "16",
+        "VariableName": "cl_Qpool",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "20",
+      "name": "QsrcDh",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 429, 1000, 451]",
+        "ZOrder": "20",
+        "VariableName": "cl_QsrcDh",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "17",
+      "name": "QsrcPool",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 279, 1000, 301]",
+        "ZOrder": "17",
+        "VariableName": "cl_QsrcPool",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "9",
+      "name": "SourceTemp",
+      "type": "Constant",
+      "properties": {
+        "Position": "[40, 716, 180, 744]",
+        "ZOrder": "9",
+        "Value": "cl_source_temp"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "SrcAvail",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[40, 92, 190, 118]",
+        "ZOrder": "1",
+        "VariableName": "cl_source_series"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "13",
+      "name": "Tnext",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 79, 1000, 101]",
+        "ZOrder": "13",
+        "VariableName": "cl_Tnext",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "Tprev",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[160, 415, 230, 445]",
+        "ZOrder": "5",
+        "InitialCondition": "16",
+        "SampleTime": "300"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "21",
+      "name": "Wdh",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 479, 1000, 501]",
+        "ZOrder": "21",
+        "VariableName": "cl_Wdh",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "18",
+      "name": "Wpool",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 329, 1000, 351]",
+        "ZOrder": "18",
+        "VariableName": "cl_Wpool",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "12::1#out:1",
+      "destinations": [
+        "12::25#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::28#out:1",
+      "destinations": [
+        "12::25#in:2"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::29#out:1",
+      "destinations": [
+        "12::25#in:3"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::30#out:1",
+      "destinations": [
+        "12::25#in:4"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::31#out:1",
+      "destinations": [
+        "12::25#in:5"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::32#out:1",
+      "destinations": [
+        "12::25#in:6"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::33#out:1",
+      "destinations": [
+        "12::25#in:7"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::34#out:1",
+      "destinations": [
+        "12::25#in:8"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::35#out:1",
+      "destinations": [
+        "12::25#in:9"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::36#out:1",
+      "destinations": [
+        "12::25#in:10"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::37#out:1",
+      "destinations": [
+        "12::25#in:11"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:2",
+      "destinations": [
+        "12::5#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:3",
+      "destinations": [
+        "12::38#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:4",
+      "destinations": [
+        "12::39#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:5",
+      "destinations": [
+        "12::40#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:6",
+      "destinations": [
+        "12::41#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:7",
+      "destinations": [
+        "12::42#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:8",
+      "destinations": [
+        "12::43#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:9",
+      "destinations": [
+        "12::44#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:10",
+      "destinations": [
+        "12::45#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:11",
+      "destinations": [
+        "12::46#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:12",
+      "destinations": [
+        "12::47#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:13",
+      "destinations": [
+        "12::48#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:14",
+      "destinations": [
+        "12::49#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:15",
+      "destinations": [
+        "12::50#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::26#out:1",
+      "destinations": [
+        "12::27#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "12::25#out:1",
+      "destinations": [
+        "12::26#in:1"
+      ],
+      "xml": "simulink/systems/system_12.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "12#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "12#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "12#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "12#in:4"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:1",
+      "destinations": [
+        "12#in:5"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "6#out:1",
+      "destinations": [
+        "12#in:6"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:1",
+      "destinations": [
+        "12#in:7"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "8#out:1",
+      "destinations": [
+        "12#in:8"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "9#out:1",
+      "destinations": [
+        "12#in:9"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "10#out:1",
+      "destinations": [
+        "12#in:10"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "11#out:1",
+      "destinations": [
+        "12#in:11"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:1",
+      "destinations": [
+        "13#in:1",
+        "5#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:2",
+      "destinations": [
+        "14#in:1",
+        "6#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:3",
+      "destinations": [
+        "15#in:1",
+        "7#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:4",
+      "destinations": [
+        "16#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:5",
+      "destinations": [
+        "17#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:6",
+      "destinations": [
+        "18#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:7",
+      "destinations": [
+        "19#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:8",
+      "destinations": [
+        "20#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:9",
+      "destinations": [
+        "21#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:10",
+      "destinations": [
+        "22#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:11",
+      "destinations": [
+        "23#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:12",
+      "destinations": [
+        "24#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:13",
+      "destinations": [
+        "25#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "12#out:14",
+      "destinations": [
+        "26#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_30.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "30",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [],
+      "source": "function [Tnext,Enext,Hnext,Qpool,QsrcPool,Wpool,Qdh,QsrcDh,Wdh,Qgas,Qcharge,Qdischarge,Qloss,COPdh] = ...\n dc_pool_coupled_step_SK(SrcAvail,Dhdemand,Activity,Cover,Tprev,Eprev,Hprev,Mode,SourceTemp,COPpool,P)\n%#codegen\n% Single 300 s Simulink sample. All thermal powers at I/O in MW except states.\n% Mode 0=No pool, 1=direct HX, 2=pool HP. Pool temperature C; TES energy MWh.\n% Simultaneous source allocation is PHYSICALLY SHARED; no external replay.\nCp=P(1); A=P(2); UA=P(3); MaxPoolW=P(4)*1e6;\nTon=P(5); Toff=P(6); Tmax=P(7); dt=P(8);\netaC=P(9); Tdh=P(10); MaxDH=P(11);\nTEScap=P(12); QchargeMax=P(13); QdischargeMax=P(14);\netaCharge=P(15); etaDischarge=P(16); leakPerHour=P(17);\nCOPmin=P(18); COPmax=P(19);\n% Matching reduced evaporation model from the original parallel pool scenario.\nQlossW=0;\nQpoolW=0; QsourcePoolW=0; WpoolW=0;\nHnext=Hprev;\nif Mode>0.5\n  pv=0.61094*exp(17.625*Tprev/(Tprev+243.04));\n  pa=0.6*0.61094*exp(17.625*29/(29+243.04));\n  mEvap=max(0,4e-5*A*(pv-pa)*Activity*(1-0.90*Cover));\n  qEvap=mEvap*2440000;\n  qConv=3*A*(Tprev-29)*(1-0.75*Cover);\n  qRad=0.95*5.670374419e-8*A*((Tprev+273.15)^4-(27+273.15)^4)*(1-0.75*Cover);\n  qGround=UA*(Tprev-20);\n  qMakeup=mEvap*4182*(Tprev-15);\n  QlossW=qEvap+qConv+qRad+qGround+qMakeup+2000;\n  if Tprev<=Ton, Hnext=1;end\n  if Tprev>=Toff, Hnext=0;end\n  heatAllowed=(Mode>1.5 || SourceTemp>=Tprev+3);\n  if Hnext>0.5 && heatAllowed\n    qSafe=max(0,(Tmax-Tprev)*Cp/dt+QlossW);\n    QpoolW=min(MaxPoolW,qSafe);\n    if Mode>1.5\n      qPoolCap=max(0,SrcAvail*1e6)*COPpool/(COPpool-1);\n      QpoolW=min(QpoolW,qPoolCap);\n      WpoolW=QpoolW/COPpool;\n      QsourcePoolW=QpoolW-WpoolW;\n    else\n      QpoolW=min(QpoolW,max(0,SrcAvail*1e6));\n      QsourcePoolW=QpoolW;\n    end\n  end\nend\nTnext=Tprev+(QpoolW-QlossW)*dt/Cp;\nQpool=QpoolW/1e6;QsrcPool=QsourcePoolW/1e6;\nWpool=WpoolW/1e6;Qloss=QlossW/1e6;\n% Allocate only the remainder to the district heat pump at THE SAME step.\nremainder=max(0,SrcAvail-QsrcPool);\nTdhK=Tdh+273.15;TsourceK=SourceTemp+273.15;\nlift=max(1,TdhK-TsourceK);\nCOPdh=min(COPmax,max(COPmin,etaC*TdhK/lift));\npossible=min(MaxDH,remainder*COPdh/(COPdh-1));\nEavailable=Eprev*max(0,1-leakPerHour*dt/3600);\nQdh=0;Qgas=0;Qcharge=0;Qdischarge=0;\nif possible>=Dhdemand\n    Qdh=Dhdemand;\n    if TEScap>0\n        room=max(0,TEScap-Eavailable);\n        Qcharge=min(min(possible-Dhdemand,QchargeMax),room/(etaCharge*dt/3600));\n    end\n    Qdh=Qdh+Qcharge;\n    Enext=Eavailable+etaCharge*Qcharge*dt/3600;\nelse\n    Qdh=possible;\n    deficit=max(0,Dhdemand-possible);\n    if TEScap>0\n        Qdischarge=min(min(deficit,QdischargeMax),Eavailable*etaDischarge/(dt/3600));\n    end\n    Enext=max(0,Eavailable-Qdischarge*dt/3600/etaDischarge);\n    Qgas=max(0,deficit-Qdischarge);\nend\nWdh=Qdh/COPdh;\nQsrcDh=Qdh-Wdh;\nend\n",
+      "xml": "simulink/stateflow/chart_30.xml",
+      "sha256": "5928d6e4884e01d965133d19299b4cab175c0f9dd57fb38ba60dd7bb4e6f0101"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "SrcAvail",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Tnext",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Dhdemand",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Activity",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Cover",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Tprev",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Eprev",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Hprev",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Mode",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "SourceTemp",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "COPpool",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "P",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Enext",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Hnext",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Qpool",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "QsrcPool",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Wpool",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Qdh",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "QsrcDh",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Wdh",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Qgas",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Qcharge",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Qdischarge",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "Qloss",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    },
+    {
+      "id": null,
+      "name": "COPdh",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_30.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dc-pool-coupled-closedloop-20261023-sk-c6047bd31afb.json",
+  "copies": [
+    "primary/calibration/closed_loop_simulink_20261023/DC_Pool_Coupled_ClosedLoop_20261023_SK.slx"
+  ]
+}

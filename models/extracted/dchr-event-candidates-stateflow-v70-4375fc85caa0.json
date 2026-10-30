@@ -1,0 +1,1265 @@
+{
+  "name": "DCHR_Event_Candidates_Stateflow_v70",
+  "id": "dchr-event-candidates-stateflow-v70",
+  "sha256": "4375fc85caa024f7b277604f846d43ee4d888c5d104783f3967e9b60e8d85ea3",
+  "blocks": [
+    {
+      "sid": "3::113",
+      "name": "horizon_input",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "93"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::114",
+      "name": "policy_input",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "94",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::110",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 230, 320, 270]",
+        "ZOrder": "90",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::109",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 3",
+        "Position": "[180, 100, 230, 160]",
+        "ZOrder": "89",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[2 2]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::111",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 241, 480, 259]",
+        "ZOrder": "91"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::115",
+      "name": "trace",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "95"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Numeric_Trace",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[750, 70, 930, 120]",
+        "ZOrder": "4",
+        "VariableName": "interval_trace_v66",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "Physical_Input",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 30, 220, 80]",
+        "ZOrder": "1",
+        "VariableName": "dispatch_input_v66",
+        "SampleTime": "1",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Policy_Provenance",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 140, 220, 190]",
+        "ZOrder": "2",
+        "VariableName": "dispatch_cfg_v66",
+        "SampleTime": "1",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Six_Mode_Interval_Dispatch",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[300, 32, 650, 243]",
+        "ZOrder": "3",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "Chart",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "3::113#out:1",
+      "destinations": [
+        "3::109#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::114#out:1",
+      "destinations": [
+        "3::109#in:2"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::109#out:2",
+      "destinations": [
+        "3::115#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::110#out:1",
+      "destinations": [
+        "3::111#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::109#out:1",
+      "destinations": [
+        "3::110#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "3#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "3#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "4#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "IDLE\nen:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==0);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;\ndu:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==0);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;",
+      "position": "[108 285 270 320]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "HEAT_RECOVERY\nen:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==1);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;\ndu:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==1);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;",
+      "position": "[408 285 270 320]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "STORAGE_CHARGE\nen:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==2);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;\ndu:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==2);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;",
+      "position": "[708 285 270 320]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "STORAGE_DISCHARGE\nen:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==3);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;\ndu:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==3);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;",
+      "position": "[1008 285 270 320]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "BACKUP\nen:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==4);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;\ndu:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==4);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;",
+      "position": "[1308 285 270 320]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "UNMET_DEMAND\nen:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==5);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;\ndu:\ncore=interval_dispatch_kernel_v70(horizon_input,policy_input,retained_memory);\nassert(core(115)==5);\ntrace=[core;event_candidates_v70(horizon_input,policy_input,core)];\nretained_memory=core;",
+      "position": "[1608 285 270 320]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "y=interval_dispatch_kernel_v70(u,cfg,old)",
+      "position": "[108 755 380 90]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "mode=interval_mode_v66(u,cfg,memory)",
+      "position": "[528 755 300 90]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "z=event_candidates_v70(u,cfg,plant_trace)",
+      "position": "[898 755 380 90]",
+      "xml": "simulink/stateflow/chart_66.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+        "labelPosition": "[1080.3 174.183 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1121.6915 48.8085]",
+        "dataLimits": "[86 1745.4 20.074 285]",
+        "subviewer": "66",
+        "executionOrder": "6"
+      },
+      "source": {
+        "SSID": "27",
+        "intersection": "[2 1 0 0 86 235 0 0]"
+      },
+      "destination": {
+        "SSID": "26",
+        "intersection": "[1 0 -1 0.5 1743 285 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+        "labelPosition": "[885.078 176.858 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[934.2062 86.2938]",
+        "dataLimits": "[86 1445.4 64.439 285]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "27",
+        "intersection": "[2 1 0 0 86 235 0 0]"
+      },
+      "destination": {
+        "SSID": "25",
+        "intersection": "[1 0 -1 0.5 1443 285 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+        "labelPosition": "[688.91 184.662 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[746.7293 123.7707]",
+        "dataLimits": "[86 1145.4 108.794 285]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "27",
+        "intersection": "[2 1 0 0 86 235 0 0]"
+      },
+      "destination": {
+        "SSID": "24",
+        "intersection": "[1 0 -1 0.5 1143 285 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+        "labelPosition": "[499.846 184.076 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[559.2705 161.2295]",
+        "dataLimits": "[86 845.4 152.82 285]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "27",
+        "intersection": "[2 1 0 0 86 235 0 0]"
+      },
+      "destination": {
+        "SSID": "23",
+        "intersection": "[1 0 -1 0.5 843 285 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+        "labelPosition": "[318.447 188.532 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[371.8657 198.6343]",
+        "dataLimits": "[86 545.4 196.204 285]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "27",
+        "intersection": "[2 1 0 0 86 235 0 0]"
+      },
+      "destination": {
+        "SSID": "22",
+        "intersection": "[1 0 -1 0.5 543 285 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "",
+      "properties": {
+        "labelPosition": "[90.172 217.172 0 0]",
+        "fontSize": "12",
+        "midPoint": "[78 220]",
+        "dataLimits": "[64.989 82.103 205 229.343]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0.7071 0.7071 0 78 205 0 0]"
+      },
+      "destination": {
+        "SSID": "27",
+        "intersection": "[4 -0.7071 -0.7071 0 72.3431 229.3431 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+        "labelPosition": "[129.423 242.559 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[184.8151 235.6849]",
+        "dataLimits": "[86 245.4 233.831 285]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "27",
+        "intersection": "[2 1 0 0 86 235 0 0]"
+      },
+      "destination": {
+        "SSID": "21",
+        "intersection": "[1 0 -1 0.5 243 285 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+        "labelPosition": "[1249.127 912.767 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[989 517.5]",
+        "dataLimits": "[20.993 1957.007 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "26",
+        "intersection": "[2 1 0 0.9531 1878 590 0 0]"
+      },
+      "destination": {
+        "SSID": "21",
+        "intersection": "[4 -1 0 0.5 108 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+        "labelPosition": "[1043.314 841.971 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[839 517.5]",
+        "dataLimits": "[34.18 1643.82 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "25",
+        "intersection": "[2 1 0 0.9531 1578 590 0 0]"
+      },
+      "destination": {
+        "SSID": "21",
+        "intersection": "[4 -1 0 0.5 108 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+        "labelPosition": "[837.28 770.816 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[689 517.5]",
+        "dataLimits": "[47.328 1330.672 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "24",
+        "intersection": "[2 1 0 0.9531 1278 590 0 0]"
+      },
+      "destination": {
+        "SSID": "21",
+        "intersection": "[4 -1 0 0.5 108 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+        "labelPosition": "[630.9 698.976 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[539 517.5]",
+        "dataLimits": "[60.397 1017.603 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "23",
+        "intersection": "[2 1 0 0.9531 978 590 0 0]"
+      },
+      "destination": {
+        "SSID": "21",
+        "intersection": "[4 -1 0 0.5 108 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==0]",
+        "labelPosition": "[422.752 645.639 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[389 517.5]",
+        "dataLimits": "[73.267 704.733 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "22",
+        "intersection": "[2 1 0 0.9531 678 590 0 0]"
+      },
+      "destination": {
+        "SSID": "21",
+        "intersection": "[4 -1 0 0.5 108 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+        "labelPosition": "[1312.605 732.368 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1139 517.5]",
+        "dataLimits": "[334.18 1943.82 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "26",
+        "intersection": "[2 1 0 0.9531 1878 590 0 0]"
+      },
+      "destination": {
+        "SSID": "22",
+        "intersection": "[4 -1 0 0.5 408 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+        "labelPosition": "[1122.777 692.459 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[989 517.5]",
+        "dataLimits": "[347.328 1630.672 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "25",
+        "intersection": "[2 1 0 0.9531 1578 590 0 0]"
+      },
+      "destination": {
+        "SSID": "22",
+        "intersection": "[4 -1 0 0.5 408 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+        "labelPosition": "[932.7 652.805 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[839 517.5]",
+        "dataLimits": "[360.397 1317.603 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "24",
+        "intersection": "[2 1 0 0.9531 1278 590 0 0]"
+      },
+      "destination": {
+        "SSID": "22",
+        "intersection": "[4 -1 0 0.5 408 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+        "labelPosition": "[741.422 599.474 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[689 517.5]",
+        "dataLimits": "[373.267 1004.733 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "23",
+        "intersection": "[2 1 0 0.9531 978 590 0 0]"
+      },
+      "destination": {
+        "SSID": "22",
+        "intersection": "[4 -1 0 0.5 408 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==1]",
+        "labelPosition": "[395.782 438.359 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[389 445]",
+        "dataLimits": "[378 408 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "21",
+        "intersection": "[2 1 0 0.5 378 445 0 0]"
+      },
+      "destination": {
+        "SSID": "22",
+        "intersection": "[4 -1 0 0.5 408 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+        "labelPosition": "[541.446 446.362 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[539 445]",
+        "dataLimits": "[378 708 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "21",
+        "intersection": "[2 1 0 0.5 378 445 0 0]"
+      },
+      "destination": {
+        "SSID": "23",
+        "intersection": "[4 -1 0 0.5 708 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+        "labelPosition": "[690.274 445.956 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[689 445]",
+        "dataLimits": "[378 1008 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "21",
+        "intersection": "[2 1 0 0.5 378 445 0 0]"
+      },
+      "destination": {
+        "SSID": "24",
+        "intersection": "[4 -1 0 0.5 1008 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+        "labelPosition": "[840.012 445.709 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[839 445]",
+        "dataLimits": "[378 1308 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "21",
+        "intersection": "[2 1 0 0.5 378 445 0 0]"
+      },
+      "destination": {
+        "SSID": "25",
+        "intersection": "[4 -1 0 0.5 1308 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+        "labelPosition": "[989.92 445.563 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[989 445]",
+        "dataLimits": "[378 1608 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "21",
+        "intersection": "[2 1 0 0.5 378 445 0 0]"
+      },
+      "destination": {
+        "SSID": "26",
+        "intersection": "[4 -1 0 0.5 1608 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+        "labelPosition": "[1429.604 694.849 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1289 517.5]",
+        "dataLimits": "[647.328 1930.672 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "26",
+        "intersection": "[2 1 0 0.9531 1878 590 0 0]"
+      },
+      "destination": {
+        "SSID": "23",
+        "intersection": "[4 -1 0 0.5 708 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+        "labelPosition": "[1240.132 655.235 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1139 517.5]",
+        "dataLimits": "[660.397 1617.603 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "25",
+        "intersection": "[2 1 0 0.9531 1578 590 0 0]"
+      },
+      "destination": {
+        "SSID": "23",
+        "intersection": "[4 -1 0 0.5 708 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+        "labelPosition": "[1050.767 616.298 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[989 517.5]",
+        "dataLimits": "[673.267 1304.733 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "24",
+        "intersection": "[2 1 0 0.9531 1278 590 0 0]"
+      },
+      "destination": {
+        "SSID": "23",
+        "intersection": "[4 -1 0 0.5 708 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==2]",
+        "labelPosition": "[694.684 438.616 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[689 445]",
+        "dataLimits": "[678 708 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "22",
+        "intersection": "[2 1 0 0.5 678 445 0 0]"
+      },
+      "destination": {
+        "SSID": "23",
+        "intersection": "[4 -1 0 0.5 708 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+        "labelPosition": "[840.696 446.067 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[839 445]",
+        "dataLimits": "[678 1008 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "22",
+        "intersection": "[2 1 0 0.5 678 445 0 0]"
+      },
+      "destination": {
+        "SSID": "24",
+        "intersection": "[4 -1 0 0.5 1008 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+        "labelPosition": "[990.108 445.753 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[989 445]",
+        "dataLimits": "[678 1308 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "22",
+        "intersection": "[2 1 0 0.5 678 445 0 0]"
+      },
+      "destination": {
+        "SSID": "25",
+        "intersection": "[4 -1 0 0.5 1308 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+        "labelPosition": "[1139.955 445.582 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1139 445]",
+        "dataLimits": "[678 1608 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "22",
+        "intersection": "[2 1 0 0.5 678 445 0 0]"
+      },
+      "destination": {
+        "SSID": "26",
+        "intersection": "[4 -1 0 0.5 1608 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+        "labelPosition": "[1543.369 656.216 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1439 517.5]",
+        "dataLimits": "[960.397 1917.603 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "26",
+        "intersection": "[2 1 0 0.9531 1878 590 0 0]"
+      },
+      "destination": {
+        "SSID": "24",
+        "intersection": "[4 -1 0 0.5 1008 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+        "labelPosition": "[1354.492 617.256 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1289 517.5]",
+        "dataLimits": "[973.267 1604.733 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "25",
+        "intersection": "[2 1 0 0.9531 1578 590 0 0]"
+      },
+      "destination": {
+        "SSID": "24",
+        "intersection": "[4 -1 0 0.5 1008 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==3]",
+        "labelPosition": "[993.867 439.749 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[989 445]",
+        "dataLimits": "[978 1008 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "23",
+        "intersection": "[2 1 0 0.5 978 445 0 0]"
+      },
+      "destination": {
+        "SSID": "24",
+        "intersection": "[4 -1 0 0.5 1008 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+        "labelPosition": "[1140.38 445.861 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1139 445]",
+        "dataLimits": "[978 1308 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "23",
+        "intersection": "[2 1 0 0.5 978 445 0 0]"
+      },
+      "destination": {
+        "SSID": "25",
+        "intersection": "[4 -1 0 0.5 1308 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+        "labelPosition": "[1290.024 445.619 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1289 445]",
+        "dataLimits": "[978 1608 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "23",
+        "intersection": "[2 1 0 0.5 978 445 0 0]"
+      },
+      "destination": {
+        "SSID": "26",
+        "intersection": "[4 -1 0 0.5 1608 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+        "labelPosition": "[1656.575 617.761 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1589 517.5]",
+        "dataLimits": "[1273.267 1904.733 442.6 590]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "26",
+        "intersection": "[2 1 0 0.9531 1878 590 0 0]"
+      },
+      "destination": {
+        "SSID": "25",
+        "intersection": "[4 -1 0 0.5 1308 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==4]",
+        "labelPosition": "[1293.203 439.992 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1289 445]",
+        "dataLimits": "[1278 1308 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "4"
+      },
+      "source": {
+        "SSID": "24",
+        "intersection": "[2 1 0 0.5 1278 445 0 0]"
+      },
+      "destination": {
+        "SSID": "25",
+        "intersection": "[4 -1 0 0.5 1308 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+        "labelPosition": "[1440.218 445.717 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1439 445]",
+        "dataLimits": "[1278 1608 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "24",
+        "intersection": "[2 1 0 0.5 1278 445 0 0]"
+      },
+      "destination": {
+        "SSID": "26",
+        "intersection": "[4 -1 0 0.5 1608 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "label": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+      "properties": {
+        "labelString": "[interval_mode_v66(horizon_input,policy_input,retained_memory)==5]",
+        "labelPosition": "[1592.844 441.477 373.906 16]",
+        "fontSize": "12",
+        "midPoint": "[1589 445]",
+        "dataLimits": "[1578 1608 442.6 447.4]",
+        "subviewer": "66",
+        "executionOrder": "5"
+      },
+      "source": {
+        "SSID": "25",
+        "intersection": "[2 1 0 0.5 1578 445 0 0]"
+      },
+      "destination": {
+        "SSID": "26",
+        "intersection": "[4 -1 0 0.5 1608 445 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "interval_dispatch_kernel_v70",
+        "interval_service_core_v66",
+        "service_difference_v66",
+        "retained_restart_v64",
+        "capacity_history",
+        "flow",
+        "plusiv",
+        "minusiv",
+        "muliv",
+        "diviv",
+        "out"
+      ],
+      "source": "function y=interval_dispatch_kernel_v70(u,cfg,old)\n%#codegen\nassert(all(isfinite(u))&&all(isfinite(cfg)),'v66 finite domain');\np=cfg(36:60);assert(old(180)==0||old(180)==66,'v66 memory schema');\nif old(180)>0,assert(all(old(181:205)==p),'v66 immutable policy');end\nif u(1)==0\n    assert(old(179)==0,'v66 prefix cannot resume after service');\n    assert(p(1)==cfg(5)&&p(2)==cfg(6)&&p(3)==cfg(19)&&p(5)==cfg(35)&& ...\n        p(6)==cfg(4)&&p(7)==cfg(3)&&p(9)==cfg(18)&&p(11)==cfg(16)&& ...\n        all(p(12:18)==cfg([11 12 13 14 15 9 10]))&&p(19)==cfg(7)&&p(20)==cfg(8)&& ...\n        p(21)==cfg(20)&&p(23)==cfg(34),'v66 prefix equipment mismatch');\n    step=[u(2);u(3);u(4)];\n    legacy=retained_restart_v64(step,cfg(1:35),old(1:114),u(2));\n    y=old;y(1:114)=legacy;y(115)=0;\n    if legacy(55)==1&&u(2)>0,y(115)=2;end\n    y(174:175)=cfg(1);y(176:177)=legacy(35:36);y(178)=1;y(180)=66;y(181:205)=p;\nelse\n    y=interval_service_core_v66(u,p,old);\nend\nend\nfunction y=interval_service_core_v66(u,p,old)\n%#codegen\n% u=[kind,phase,horizon,restart,dt,demand,sourceCapacity,HPenable,chargeEnable,E0,latch0,age0].\n% p=[C,Ta,Tmax,cutoff,restart,lambda,etaC,etaD,chargeLimit,disLimit,\n%    HPnameplate,sourceIn,glide,evapApproach,factor,hotCapacity,chargeApproach,\n%    condApproach,delivery,directApproach,aux,minON,minOFF,boiler,stopTemperature].\n% Engineering sampled controller: conservative scalar service from retained hulls.\nassert(all(isfinite(u))&&all(isfinite(p))&&all(isfinite(old)),'v66 finite domain');\nassert(all(p([1 7 8 13 14 16 17 18])>0)&&p(7)<=1&&p(8)<=1&& ...\n    p(6)>=0&&all(p([9 10 11 21 22 23 24])>=0),'v66 equipment domain');\nassert(p(2)>-273.15&&p(2)<p(4)&&p(4)<p(5)&&p(5)<p(25)&&p(25)<p(3)&& ...\n    p(19)<=p(4)&&p(15)>0&&p(15)<=1,'v66 temperature policy');\nassert(u(1)==1&&u(5)>0&&u(6)>=0&&u(7)>=0&&all(u(8:9)==0|u(8:9)==1), ...\n    'v66 service input domain');\nP=@(x)[x x];C=P(p(1));Ta=P(p(2));dt=P(u(5));lam=P(p(6));\ncap=muliv(C,minusiv(P(p(3)),Ta));cut=muliv(C,minusiv(P(p(4)),Ta));\nrestart=muliv(C,minusiv(P(p(5)),Ta));stop=muliv(C,minusiv(P(p(25)),Ta));\ny=old;\nif old(180)==0\n    assert(u(10)>=0&&u(10)<cap(1)&&ismember(u(11),[0 1])&&u(12)>=0,'v66 initial domain');\n    initial=P(u(10));on=u(11);age=P(u(12));y(174:175)=initial';\n    y(176:177)=0;\nelse\n    assert(old(180)==66,'v66 memory schema');\n    assert(all(old(181:205)==p),'v66 immutable policy');\n    initial=old(37:38)';on=old(55);age=old(39:40)';\n    assert(old(178)==0||old(114)==6,'v66 incomplete prefix handoff');\nend\nassert(initial(1)>=0&&initial(1)<=initial(2)&&initial(2)<cap(2)&& ...\n    age(1)>=0&&age(1)<=age(2),'v66 retained memory bounds');\nassert(u(3)>y(177),'v66 physical clock must advance');\n% dt is the authoritative held physical duration. The supplied cumulative\n% horizon is a rounded label, certified at the cumulative-clock scale.\n% Subtracting two large rounded labels cannot certify dt at eps(dt).\nnextClock=plusiv(y(176:177)',dt);\nassert(nextClock(1)<=u(3)&&nextClock(2)>=u(3),'v66 physical interval mismatch');\nTe=minusiv(minusiv(P(p(12)),P(p(13))),P(p(14)));\na=muliv(P(p(15)),plusiv(Te,P(273.15)));\nfloor=plusiv(P(p(19)),P(p(20)));\nlf=minusiv(plusiv(floor,P(p(18))),Te);\nassert(Te(1)>-273.15&&a(1)>0&&lf(1)>0,'v66 refrigerant domain');\nsourceCap=muliv(P(u(7)),P(p(13)));\nsourceHeat=muliv(sourceCap,plusiv(P(1),diviv(lf,a)));\nhotHeat=muliv(P(p(16)),P(p(17)));\nhpLimit=max(0,min([p(11) sourceHeat(1) hotHeat(1)]));\nroom=minusiv(P(cap(1)),P(initial(2)));\nchargeBound=0;\nif u(9)==1&&initial(2)<stop(1)&&room(1)>0\n    z=diviv(room,muliv(P(p(7)),dt));\n    chargeBound=min(p(9),max(0,z(1)/2)); % leave a conservative capacity margin\nend\n% A sampled charge must stay below the thermal stop for the ENTIRE\n% held interval. E(t)<=E.upper+etaC*qcharge*dt because loss>=0.\n% If the proposed charge cannot be certified, withhold it for this sample.\n% This permits early sampled OFF; it does not choose an event-root midpoint.\nstopRoom=minusiv(P(stop(1)),P(initial(2)));\ngrowth=muliv(muliv(P(p(7)),P(chargeBound)),dt);\nif chargeBound>0&&growth(2)>=stopRoom(1),chargeBound=0;end\nwant=u(6)+chargeBound;assert(isfinite(want),'v66 request overflow');\nhpCandidate=min(want,hpLimit);reason=0;newOn=on;\nif on==0\n    if u(8)==1&&hpCandidate>0&&age(1)>=p(23)&&initial(2)<=restart(1)\n        newOn=1;reason=1;\n    end\nelse\n    if hpCandidate==0\n        newOn=0;reason=3; % no source/capacity/sink: safety OFF overrides ON dwell\n    elseif u(8)==0\n        assert(age(1)>=p(22),'v66 ON dwell not certified');newOn=0;reason=2;\n    end\nend\nif newOn==0,hpCandidate=0;end\ndirect=min(u(6),hpCandidate);\nz=service_difference_v66(P(hpCandidate),P(direct));charge=min(chargeBound,max(0,z(1)));\nremaining=service_difference_v66(P(u(6)),P(direct));\n% E(t)>=Elo-lambda*Ehi*dt-discharge*dt/etaD for a decreasing TES.\nlossBudget=muliv(muliv(lam,P(initial(2))),dt);\navailable=minusiv(minusiv(P(initial(1)),P(cut(2))),lossBudget);\ndisBound=0;\nif charge==0&&available(1)>0\n    z=diviv(muliv(P(p(8)),available),dt);disBound=min(p(10),max(0,z(1)));\nend\ndis=min(disBound,max(0,remaining(1)));\nremaining=service_difference_v66(remaining,P(dis));boiler=min(p(24),max(0,remaining(1)));\nunmet=max(0,u(6)-direct-dis-boiler);served=direct+dis+boiler;\nq=plusiv(P(direct),P(charge));B=minusiv(muliv(P(p(7)),P(charge)),diviv(P(dis),P(p(8))));\n[en,integral]=flow(initial,dt,-lam,B);\nassert(en(1)>=0&&en(2)<cap(1),'v66 interval capacity termination');\nassert(dis==0||min(initial(1),en(1))>=cut(2),'v66 certified discharge cutoff');\nassert(charge*dis==0,'v66 exclusive TES ports');\nassert(charge==0||en(2)<stop(1),'v66 held thermal stop');\nsrc=P(0);srcRate=P(0);hotRate=P(0);\nif q(2)>0\n    for j=1:128\n        t0=muliv(dt,diviv(P(j-1),P(128)));t1=muliv(dt,diviv(P(j),P(128)));\n        [e0,~]=flow(initial,t0,-lam,B);[e1,~]=flow(initial,t1,-lam,B);\n        hull=[min(e0(1),e1(1)) max(e0(2),e1(2))];\n        tank=plusiv(Ta,diviv(hull,C));\n        hot=plusiv(tank,P(p(17)));hot=[max(floor(1),hot(1)) max(floor(2),hot(2))];\n        lift=minusiv(plusiv(hot,P(p(18))),Te);\n        rate=muliv(q,diviv(a,plusiv(a,lift)));\n        assert(rate(2)<=sourceCap(2),'v66 finite source capacity');\n        waterGlide=minusiv(hot,tank);waterGlide(1)=max(waterGlide(1),p(17));\n        water=diviv(q,waterGlide);\n        % Correlation hot=tank+approach proves denominator>=approach exactly.\n        water(2)=min(water(2),diviv(q,P(p(17)))*[0;1]);\n        assert(water(2)<=p(16),'v66 finite water capacity');\n        src=plusiv(src,muliv(rate,diviv(dt,P(128))));\n        srcRate=[min(srcRate(1),rate(1)) max(srcRate(2),rate(2))];\n        hotRate=[min(hotRate(1),water(1)) max(hotRate(2),water(2))];\n    end\nend\nfunction z=service_difference_v66(x,y)\n% Error-free TwoSum residual for finite, normal engineering powers. Retain\n% a singleton only when binary64 subtraction is provably exact; otherwise\n% keep the outward interval. No tolerance-based service normalization.\nz=minusiv(x,y);\nif x(1)==x(2)&&y(1)==y(2)&&max(abs([x y]))<realmax/4&& ...\n        (x(1)==0||abs(x(1))>=realmin)&&(y(1)==0||abs(y(1))>=realmin)\n    b=-y(1);s=x(1)+b;bb=s-x(1);error=(x(1)-(s-bb))+(b-bb);\n    if error==0,z=[s s];end\nend\nend\nheat=muliv(q,dt);work=minusiv(heat,src);\nstanding=muliv(lam,integral);closs=muliv(minusiv(P(1),P(p(7))),muliv(P(charge),dt));\ndloss=muliv(minusiv(diviv(P(1),P(p(8))),P(1)),muliv(P(dis),dt));\nif p(8)==1,dloss=P(0);end % exact unit-efficiency identity, not a clipped loss\nassert(all([heat src work standing closs dloss]>=0),'v66 nonnegative ports');\nif newOn==on,nextAge=plusiv(age,dt);else,nextAge=dt;end\nmode=0;\nif unmet>0,mode=5;elseif boiler>0,mode=4;elseif dis>0,mode=3;\nelseif charge>0,mode=2;elseif direct>0,mode=1;end\ny(37:38)=en';y(39:40)=nextAge';y(55)=newOn;\nports=[heat;src;work;standing;closs;muliv(P(p(21)),work)];\nfor j=1:6,ix=41+2*(j-1);y(ix:ix+1)=plusiv(y(ix:ix+1)',ports(j,:))';end\nservedIV=plusiv(plusiv(P(direct),P(dis)),P(boiler));\nincrements=[dloss;muliv(servedIV,dt);muliv(P(boiler),dt);muliv(P(direct),dt);muliv(P(dis),dt);muliv(P(unmet),dt)];\nfor j=1:6,ix=140+2*(j-1);y(ix:ix+1)=plusiv(y(ix:ix+1)',increments(j,:))';end\nlaw=minusiv(minusiv(minusiv(minusiv(plusiv(plusiv(y(174:175)',y(41:42)'),y(144:145)'), ...\n    y(142:143)'),en),y(47:48)'),plusiv(y(49:50)',y(140:141)'));\nassert(law(1)<=0&&law(2)>=0,'v66 global first law enclosure');\ny(53:54)=law';y(115)=mode;y(116:117)=initial';y(118:119)=old(176:177);\ny(120:127)=[direct+charge;direct;charge;dis;boiler;unmet;served;u(5)];\ny(128:139)=reshape([heat;src;work;standing;closs;dloss]',12,1);\ny(154:155)=srcRate';y(156:157)=hotRate';y(158:159)=plusiv(Ta,diviv(en,C))';\ny(160:161)=initial';y(162:163)=age';y(164:171)=[on;reason;chargeBound;disBound;cap(1);cut(2);restart(1);u(6)-served-unmet];\ny(172:173)=law';y(176:177)=plusiv(y(176:177)',dt)';y(179)=old(179)+1;y(180)=66;y(181:205)=p;\nassert(y(176)<=u(3)&&u(3)<=y(177),'v66 sampled physical horizon enclosure');\nassert(abs(y(171))<=32*eps(max(1,u(6))),'v66 demand closure');\nend\nfunction y=retained_restart_v64(step,cfg,previous,stage)\n%#codegen\n% Retained interval restart; no capacity-root midpoint or scalar inventory reset.\nassert(all(isfinite(cfg))&&all(isfinite(step)),'v64 finite input required');\nassert(cfg(35)>cfg(6)&&cfg(35)<cfg(19),'v64 thermal hysteresis domain');\nassert(step(1)==stage,'v64 phase mismatch');\nif stage>0\n    assert(previous(112)==64&&previous(113)==cfg(35),'v64 restart provenance');\nend\nif stage<=4\n    y=zeros(114,1);y(1:80)=capacity_history(step,cfg(1:34),previous(1:80),stage);\n    y(112)=64;y(113)=cfg(35);y(114)=stage;return;\nend\nassert(all(cfg(1:31)==previous(1:31))&&all(cfg(32:34)==previous(65:67)),'v64 immutable provenance');\nassert(step(3)==1,'v64 explicit restart continuation required');\nassert(step(2)>previous(36)&&step(2)<=cfg(23),'v64 restart horizon must advance');\nP=@(v)[v v];C=P(cfg(5));Ta=P(cfg(6));q=P(cfg(2));k=-P(cfg(4));B=muliv(P(cfg(3)),q);\ncap=previous(58:59)';star=previous(32:33)';\ny=previous;\nif stage==5\n    assert(previous(34)==4&&previous(55)==0,'v64 restart sequence');\n    assert(previous(72)==1&&previous(70)>=cfg(34),'v64 OFF dwell not certified');\n    temp=plusiv(Ta,diviv(previous(37:38)',C));\n    assert(temp(2)<=cfg(35),'v64 thermal restart not certified');\n    assert(previous(37)>star(2),'v64 restart floor branch unsupported');\n    y(81)=previous(36);y(82:83)=previous(37:38);\n    y(84:95)=previous(41:52);y(96:97)=previous(70:71);\nelseif stage==6\n    assert(previous(34)==5||previous(34)==6,'v64 continuation sequence');\n    assert(previous(55)==1&&previous(80)==1,'v64 continuation authorization');\nelse\n    assert(false,'v64 unsupported phase');\nend\nt=minusiv(P(step(2)),P(y(81)));initial=y(82:83)';\n[en,integ]=flow(initial,t,k,B);\nassert(en(1)>star(2)&&en(2)<cap(1),'v64 recharge capacity or branch crossing');\nTe=minusiv(minusiv(P(cfg(11)),P(cfg(12))),P(cfg(13)));\na=muliv(P(cfg(14)),plusiv(Te,P(273.15)));\nl0=minusiv(plusiv(plusiv(Ta,P(cfg(9))),P(cfg(10))),Te);\nsrc=P(0);\nfor j=1:128\n    t0=muliv(t,diviv(P(j-1),P(128)));t1=muliv(t,diviv(P(j),P(128)));\n    [e0,~]=flow(initial,t0,k,B);[e1,~]=flow(initial,t1,k,B);\n    lift=plusiv(l0,diviv([e0(1) e1(2)],C));\n    rate=muliv(q,diviv(a,plusiv(a,lift)));\n    assert(rate(2)<=cfg(17)*cfg(12),'v64 finite source capacity');\n    src=plusiv(src,muliv(rate,diviv(t,P(128))));\nend\nheat=muliv(q,t);work=minusiv(heat,src);\ny(41:42)=plusiv(y(84:85)',heat)';y(43:44)=plusiv(y(86:87)',src)';\ny(45:46)=plusiv(y(88:89)',work)';y(47:48)=plusiv(y(90:91)',muliv(P(cfg(4)),integ))';\ny(49:50)=plusiv(y(92:93)',muliv(minusiv(P(1),P(cfg(3))),heat))';\ny(51:52)=plusiv(y(94:95)',muliv(P(cfg(20)),work))';\nlaw=minusiv(minusiv(minusiv(plusiv(P(cfg(1)),y(41:42)'),en),y(47:48)'),y(49:50)');\nassert(law(1)<=0&&law(2)>=0,'v64 first law enclosure');\nassert(all(y(41:52)>=0),'v64 nonnegative ports');\nwater=diviv(q,P(cfg(9)));\nif cfg(29)==1\n    assert(water(1)<=cfg(15)&&water(2)>=cfg(15),'v64 exact water tie');\nelse\n    assert(water(2)<=cfg(15),'v64 finite water capacity');\nend\ny(34)=stage;y(35:36)=step(2);y(37:38)=en';y(39:40)=t';y(53:54)=law';\ny(55)=1;y(60:61)=water';y(62:63)=plusiv(plusiv(Ta,diviv(en,C)),P(cfg(9)))';\ny(70:71)=0;y(72)=0;y(73)=4;y(80)=1;\ny(98:99)=plusiv(Ta,diviv(initial,C))';y(100:101)=t';\ny(102:103)=initial';y(104:105)=heat';y(106:107)=src';y(108:109)=work';\ny(110:111)=muliv(P(cfg(4)),integ)';y(112)=64;y(113)=cfg(35);y(114)=stage;\nend\nfunction y=capacity_history(step,cfg,previous,stage)\n%#codegen\n% Fixed-size compiled correlated charge memory. See v63 schema/derivation.\n% Original binary operands define the exact manifold; no scalar event reset.\nassert(all(isfinite(cfg))&&all(isfinite(step)),'v63 finite input required');\nassert(step(1)==stage,'v63 phase mismatch');\nassert(numel(cfg)==34&&cfg(34)>0,'v63 OFF dwell domain');\nassert(step(3)==0,'v63 restart unsupported: OFF dwell and restart integration required');\nassert(cfg(2)>0&&cfg(3)>0&&cfg(3)<=1&&cfg(4)>=0&&cfg(5)>0,'v63 ODE domain');\nassert(cfg(13)>0&&cfg(14)>0&&cfg(15)>0&&cfg(16)>0&&cfg(17)>0&&cfg(18)>0,'v63 equipment domain');\nassert(cfg(20)>=0&&cfg(21)>=0&&cfg(21)<=cfg(22),'v63 auxiliary/age domain');\nassert(cfg(25)>0&&cfg(25)<cfg(26)&&cfg(26)<cfg(23),'v63 event time domain');\nassert(all(cfg(27:31)==0|cfg(27:31)==1)&&cfg(27)==1&&cfg(30)==0,'v63 tie domain');\nassert(cfg(24)==63,'v63 schema version');\nif stage>0\n    assert(all(cfg(1:31)==previous(1:31))&&all(cfg(32:34)==previous(65:67)),'v63 immutable manifold provenance');\n    assert(previous(56)==0&&previous(57)==63,'v63 memory authorization');\nend\nP=@(v)[v v];\nC=P(cfg(5));Ta=P(cfg(6));F=plusiv(P(cfg(7)),P(cfg(8)));d=P(cfg(9));\nstar=muliv(C,minusiv(minusiv(F,Ta),d));cap=muliv(C,minusiv(P(cfg(19)),Ta));\nTe=minusiv(minusiv(P(cfg(11)),P(cfg(12))),P(cfg(13)));\na=muliv(P(cfg(14)),plusiv(Te,P(273.15)));\nlf=minusiv(plusiv(F,P(cfg(10))),Te);\nl0=minusiv(plusiv(plusiv(Ta,d),P(cfg(10))),Te);\nassert(a(1)>0&&lf(1)>0&&star(1)>cfg(1)&&cap(1)>star(2),'v63 thermal domain');\nB=muliv(P(cfg(3)),P(cfg(2)));k=-P(cfg(4));\nassert(minusiv(B,muliv(P(cfg(4)),cap))*[1;0]>0,'v63 increasing whole trajectory required');\n% Certify incoming/outgoing sides using the compiled flow, not host port data.\n[elo,~]=flow(P(cfg(1)),P(cfg(25)),k,B);\n[ehi,~]=flow(P(cfg(1)),P(cfg(26)),k,B);\nassert(elo(2)<star(1)&&ehi(1)>star(2),'v63 event bracket not certified');\n% The host exact-rational adapter certifies equivalent ties; compiled checks\n% strict non-ties and interval equality consistency, never chooses a tie by eps.\nlimits=zeros(5,2);limits(1,:)=P(cfg(2));limits(2,:)=P(cfg(16));\nlimits(3,:)=muliv(P(cfg(15)),d);\nlimits(4,:)=muliv(muliv(P(cfg(17)),P(cfg(12))),plusiv(P(1),diviv(lf,a)));\nlimits(5,:)=P(cfg(18));\nfor j=1:5\n    if cfg(26+j)==1\n        assert(limits(j,1)<=cfg(2)&&limits(j,2)>=cfg(2),'v63 inconsistent equivalent tie');\n    else\n        assert(limits(j,1)>cfg(2),'v63 strict request limiter unresolved');\n    end\nend\n[clo,~]=flow(P(cfg(1)),P(cfg(32)),k,B);\n[chi,~]=flow(P(cfg(1)),P(cfg(33)),k,B);\nassert(cfg(26)<cfg(32)&&cfg(32)<cfg(33)&&cfg(33)<cfg(23),'v63 capacity event ordering');\nassert(clo(2)<cap(1)&&chi(1)>cap(2),'v63 capacity bracket not certified');\nif stage==0\n    assert(step(2)==0&&previous(57)==0,'v63 initial memory required');t=P(0);\nelseif stage==1\n    assert(previous(34)==0&&step(2)==0,'v63 contact sequence');t=cfg(25:26)';\nelseif stage==2\n    assert(stage==2&&(previous(34)==1||previous(34)==2),'v63 outgoing sequence');\n    assert(step(2)>cfg(26)&&step(2)>previous(36)&&step(2)<=cfg(23),'v63 physical horizon must advance');\n    t=P(step(2));\n    assert(t(2)<cfg(32),'v63 active horizon crosses capacity event');\nelseif stage==3\n    assert(previous(34)==2&&step(2)==0,'v63 capacity contact sequence');\n    t=cfg(32:33)';\nelse\n    assert(stage==4&&(previous(34)==3||previous(34)==4),'v63 passive sequence');\n    assert(step(2)>cfg(33)&&step(2)>previous(36)&&step(2)<=cfg(23),'v63 passive physical horizon must advance');\n    t=cfg(32:33)';\nend\n[en,integral]=flow(P(cfg(1)),t,k,B);\nif stage==1\n    % Contact has the symbolic exact star, while root enclosure is retained.\n    en=star;\nelseif stage==2\n    assert(en(1)>star(2),'v63 outgoing branch unresolved');\nend\nif stage>=3,en=cap;end\nassert(en(1)>=0&&(stage>=3||en(2)<cap(1)),'v63 TES bounds');\nheat=muliv(P(cfg(2)),t);source=P(0);\n% Global-time rectangles include the uncertain event window. The continuous\n% max(floor,Ttank+approach) water law avoids a scalar branch handoff.\nfor j=1:128\n    t0=muliv(t,diviv(P(j-1),P(128)));t1=muliv(t,diviv(P(j),P(128)));\n    [e0,~]=flow(P(cfg(1)),t0,k,B);[e1,~]=flow(P(cfg(1)),t1,k,B);\n    ecell=[e0(1) e1(2)];lift=plusiv(l0,diviv(ecell,C));lift=[max(lf(1),lift(1)) max(lf(2),lift(2))];\n    rate=muliv(P(cfg(2)),diviv(a,plusiv(a,lift)));\n    source=plusiv(source,muliv(rate,diviv(t,P(128))));\nend\nwork=minusiv(heat,source);standing=muliv(P(cfg(4)),integral);\nchargeLoss=muliv(minusiv(P(1),P(cfg(3))),heat);aux=muliv(P(cfg(20)),work);\noffage=P(0);ready=0;latch=1;\nif stage>=3,latch=0;end\nif stage==4\n    offage=minusiv(P(step(2)),cfg(32:33)');\n    assert(offage(1)>0,'v63 OFF clock unresolved');\n    [en,~]=flow(cap,offage,k,P(0));\n    if cfg(4)>0,standing=plusiv(standing,minusiv(cap,en));end\n    if cfg(4)==0,en=cap;end\n    assert(en(1)>=0&&en(2)<=cap(2),'v63 passive TES bounds');\n    if offage(1)>=cfg(34),ready=1;elseif offage(2)>=cfg(34),ready=2;end\nend\nlaw=minusiv(minusiv(minusiv(plusiv(P(cfg(1)),heat),en),standing),chargeLoss);\nassert(source(1)>=0&&work(1)>=0&&standing(1)>=0&&chargeLoss(1)>=0,'v63 nonnegative ports');\nassert(law(1)<=0&&law(2)>=0,'v63 first law enclosure');\nage=plusiv(cfg(21:22)',t);\nif stage>0,assert(age(1)>=previous(39)&&age(2)>=previous(40),'v63 HP clock reset');end\nif stage==4,t=P(step(2));end\ntemp=plusiv(Ta,diviv(en,C));hot=[max(F(1),temp(1)+cfg(9)) max(F(2),temp(2)+cfg(9))];\nif stage>0,waterFlow=diviv(P(cfg(2)),d);else,waterFlow=diviv(P(cfg(2)),minusiv(F,temp));end\nif stage>=3\n    waterFlow=P(0);hot=P(0);\nelseif cfg(29)==1&&stage>0\n    % Exact host certificate q=H*d; same d expression, no subtractive decorrelation.\n    assert(waterFlow(1)<=cfg(15)&&waterFlow(2)>=cfg(15),'v63 finite hot-water tie');\nelse\n    assert(waterFlow(1)>=0&&waterFlow(2)<=cfg(15),'v63 finite hot-water capacity');\nend\nif stage>=3,waterFlow=P(0);hot=P(0);end\ny=zeros(80,1);y(1:31)=cfg(1:31);y(32:33)=star';y(34)=stage;y(35:36)=t';\ny(37:38)=en';y(39:40)=age';y(41:42)=heat';y(43:44)=source';y(45:46)=work';\ny(47:48)=standing';y(49:50)=chargeLoss';y(51:52)=aux';y(53:54)=law';\ny(55)=latch;y(56)=0;y(57)=63;y(58:59)=cap';y(60:61)=waterFlow';y(62:63)=hot';y(64)=128;y(65:67)=cfg(32:34);y(68:69)=cfg(32:33);y(70:71)=offage';y(72)=ready;\ny(73)=3;y(74:75)=cfg(21:22);y(76:77)=cfg(25:26);y(78:79)=cap';y(80)=0;\nend\nfunction [en,integral]=flow(initial,t,k,B)\nif all(t==0),en=initial;integral=[0 0];return;end\nx=muliv(k,t);assert(max(abs(x))<=2,'v68 outward span exceeds two');\nv=plusiv(muliv(k,initial),B);f1=[1 1];f2=[.5 .5];term=[1 1];\nfor ii=1:24,term=diviv(muliv(term,x),[ii+1 ii+1]);f1=plusiv(f1,term);f2=plusiv(f2,diviv(term,[ii+2 ii+2]));end\nfac=[1 1];for ii=2:26,fac=muliv(fac,[ii ii]);end\n% On the outward evaluation interval |x|<=2, e^2<8.\n% Tail for both phi1 and phi2 is <=8*2^25/26!.\ntail=diviv([268435456 268435456],fac);f1=plusiv(f1,[-tail(2) tail(2)]);f2=plusiv(f2,[-tail(2) tail(2)]);\nen=plusiv(initial,muliv(muliv(v,t),f1));integral=plusiv(muliv(initial,t),muliv(muliv(v,muliv(t,t)),f2));\nend\nfunction z=plusiv(x,y)\nif all(x==0),z=y;elseif all(y==0),z=x;else,z=out([x(1)+y(1) x(2)+y(2)]);end\nend\nfunction z=minusiv(x,y)\nif all(y==0),z=x;elseif x(1)==x(2)&&y(1)==y(2)&&x(1)==y(1),z=[0 0];else,z=out([x(1)-y(2) x(2)-y(1)]);end\nend\nfunction z=muliv(x,y)\nif all(x==0)||all(y==0),z=[0 0];return;end\nt=[x(1)*y(1) x(1)*y(2) x(2)*y(1) x(2)*y(2)];z=out([min(t) max(t)]);\nend\nfunction z=diviv(x,y)\nassert(y(1)>0,'v63 positive denominator required');\nif all(x==0),z=[0 0];return;end\nt=[x(1)/y(1) x(1)/y(2) x(2)/y(1) x(2)/y(2)];z=out([min(t) max(t)]);\nend\nfunction z=out(t)\nassert(all(isfinite(t)),'v63 arithmetic overflow');z=[t(1)-2*eps(t(1)) t(2)+2*eps(t(2))];\nassert(all(isfinite(z))&&z(1)<=z(2),'v63 expansion overflow');\nend\n",
+      "xml": "simulink/stateflow/chart_66.xml",
+      "sha256": "5fe54d57b2d92cabd6e481895f38d69e10b6d90d43e8a87727bc8d122a6ede03"
+    },
+    {
+      "names": [
+        "interval_mode_v66"
+      ],
+      "source": "function mode=interval_mode_v66(u,cfg,memory)\ny=interval_dispatch_kernel_v70(u,cfg,memory);mode=y(115);\nend",
+      "xml": "simulink/stateflow/chart_66.xml",
+      "sha256": "c7f11e67cc1b102e15871ed413ca434bec7f8471363341fe8090cc054602e5aa"
+    },
+    {
+      "names": [
+        "event_candidates_v70",
+        "certify_event_root_v70",
+        "flow",
+        "plusiv",
+        "minusiv",
+        "muliv",
+        "diviv",
+        "out"
+      ],
+      "source": "function z=event_candidates_v70(u,cfg,plant_trace)\n%#codegen\n% Mode-conditioned prospective held-segment candidates. No event consumption.\n% 1:45 root records, 46:51 forcing per candidate; 52:54 enablement;\n% 55:60 HP/direct/charge/discharge/B; 61:62 held boundary; 63:66 latch,\n% effective latch, potential charge, reason; 67 pair ordering;\n% 68:73 stop/cut/restart hulls; 74:77 incoming E/age; 78 schema.\nz=zeros(78,1);if u(1)==0,return;end\nassert(u(4)==0||u(4)==1,'v70 strict event flag');\np=cfg(36:60);E=plant_trace(160:161)';age=plant_trace(162:163)';P=@(x)[x x];\nC=P(p(1));Ta=P(p(2));lam=p(6);H=u(5);\nstop=muliv(C,minusiv(P(p(25)),Ta));cut=muliv(C,minusiv(P(p(4)),Ta));restart=muliv(C,minusiv(P(p(5)),Ta));\nTe=minusiv(minusiv(P(p(12)),P(p(13))),P(p(14)));a=muliv(P(p(15)),plusiv(Te,P(273.15)));\nfloor=plusiv(P(p(19)),P(p(20)));lift=minusiv(plusiv(floor,P(p(18))),Te);\nsource=muliv(muliv(P(u(7)),P(p(13))),plusiv(P(1),diviv(lift,a)));\nhot=muliv(P(p(16)),P(p(17)));limit=max(0,min([p(11) source(1) hot(1)]));\npotential=max(0,min(p(9),limit-min(u(6),limit)));\n% This is a prospective earliest segment, before sampled whole-horizon\n% withholding. Stop/restart roots must refer to this allocation, not v66 ports.\nchargeEligible=u(9)==1&&E(2)<stop(1)&&potential>0;\nrequest=u(6);if chargeEligible,request=request+potential;end\non=plant_trace(164);effective=on;reason=0;\nif on==0\n    if u(8)==1&&request>0&&limit>0&&age(1)>=p(23)&&E(2)<=restart(1)\n        effective=1;reason=1;\n    end\nelseif request==0||limit==0\n    effective=0;reason=3;\nelseif u(8)==0\n    assert(age(1)>=p(22),'v70 ON dwell not certified');effective=0;reason=2;\nend\nhp=0;if effective==1,hp=min(request,limit);end\ndirect=min(u(6),hp);charge=0;\nif chargeEligible,charge=min(potential,max(0,hp-direct));end\ndis=0;if charge==0&&E(1)>cut(2),dis=min(p(10),max(0,u(6)-direct));end\nB=minusiv(muliv(P(p(7)),P(charge)),diviv(P(dis),P(p(8))));\nrestartSink=u(6)>0||(u(9)==1&&potential>0);\nz(52:54)=[charge>0;dis>0;effective==0&&u(8)==1&&limit>0&&restartSink];\nz(55:60)=[hp;direct;charge;dis;B'];z(61:62)=H;z(63:66)=[on;effective;potential;reason];\nz(68:73)=[stop';cut';restart'];z(74:77)=[E';age'];z(78)=70;\nif z(52)==1\n    z(46:47)=B';d=minusiv(B,muliv(P(lam),stop));\n    if d(1)>0,z(1:15)=certify_event_root_v70(E,B,lam,stop,1,H,0,[0 0]);end\nend\nif z(53)==1\n    z(48:49)=B';z(16:30)=certify_event_root_v70(E,B,lam,cut,-1,H,0,[0 0]);\nend\nif z(54)==1\n    z(50:51)=B';d=minusiv(B,muliv(P(lam),restart));\n    if E(2)<=restart(1)||d(2)<0\n        z(31:45)=certify_event_root_v70(E,B,lam,restart,-1,H,p(23),age);\n    end\nend\n% Restart readiness is meaningful only before the cutoff changes forcing.\n% Compare only interior/reached enabled events. 1=cutoff first, 2=restart\n% first, 3=unresolved pair, 0=no competing reachable event.\nif z(53)==1&&z(54)==1&&ismember(z(16),[1 3])&&ismember(z(31),[1 3])\n    if z(26)<z(40),z(67)=1;\n    elseif z(41)<z(25),z(67)=2;\n    else,z(67)=3;end\nend\nif u(4)==1\n    assert(all(z([1 16 31])~=2)&&all(z([12 27 42])~=2)&&z(67)~=3,'v70 unresolved enabled event ordering');\nend\nend\nfunction z=certify_event_root_v70(E,B,lambda,target,direction,horizon,dwell,age)\n%#codegen\n% Held affine trajectory certificate. This returns a bracket, never a state reset.\n% z=[status,tlo,thi,E(tlo).lo,hi,E(thi).lo,hi,wait.lo,hi,\n%    ready.lo,hi,ordering,direction,target.lo,hi].\n% status: 0 no crossing in horizon, 1 strict interior bracket,\n% 2 unresolved contact/horizon, 3 already on the reached side.\n% ordering: 0 no event, 1 ready strictly before horizon,\n% 2 ordering unresolved, 3 ready strictly after horizon.\nassert(all(isfinite([E B lambda target direction horizon dwell age])), 'v67 finite root domain');\nassert(E(1)>=0&&E(1)<=E(2)&&B(1)<=B(2)&&target(1)>=0&&target(1)<=target(2)&& ...\n    lambda>=0&&horizon>0&&lambda*horizon<=1&&ismember(direction,[-1 1])&& ...\n    dwell>=0&&age(1)>=0&&age(1)<=age(2),'v67 root domain');\nP=@(x)[x x];z=zeros(15,1);z(13)=direction;z(14:15)=target';\nwait=minusiv(P(dwell),age);wait=max(0,wait);z(8:9)=wait';\nbefore=@(v) (direction==1&&v(2)<target(1))||(direction==-1&&v(1)>target(2));\nafter=@(v) (direction==1&&v(1)>target(2))||(direction==-1&&v(2)<target(1));\nreached=(direction==1&&E(1)>=target(2))||(direction==-1&&E(2)<=target(1));\nif reached\n    z(1)=3;z(4:7)=[E';E'];z(10:11)=wait';\nelseif ~before(E)\n    z(1)=2;z(2:3)=[0;horizon];z(12)=2;return;\nelse\n    % Derivative sign at both ends certifies monotonicity on the entire\n    % reachable segment. Equilibria and unresolved monotonicity are refused.\n    d0=minusiv(B,muliv(P(lambda),E));d1=minusiv(B,muliv(P(lambda),target));\n    if direction==1\n        assert(d0(1)>0&&d1(1)>0,'v67 increasing root not certified');\n    else\n        assert(d0(2)<0&&d1(2)<0,'v67 decreasing root not certified');\n    end\n    endpoint=flow(E,P(horizon),lambda,B);\n    if before(endpoint)\n        z(1)=0;z(2:3)=horizon;z(4:7)=[endpoint';endpoint'];return;\n    elseif ~after(endpoint)\n        z(1)=2;z(2:3)=[0;horizon];z(4:7)=[E';endpoint'];z(12)=2;return;\n    end\n    % Search for the latest certainly-before and earliest certainly-after\n    % witnesses independently. Ambiguous evaluations never choose a side.\n    lo=0;right=horizon;\n    for j=1:48\n        mid=lo+(right-lo)/2;v=flow(E,P(mid),lambda,B);\n        if before(v),lo=mid;else,right=mid;end\n    end\n    left=0;hi=horizon;\n    for j=1:48\n        mid=left+(hi-left)/2;v=flow(E,P(mid),lambda,B);\n        if after(v),hi=mid;else,left=mid;end\n    end\n    elo=flow(E,P(lo),lambda,B);ehi=flow(E,P(hi),lambda,B);\n    assert(before(elo)&&after(ehi)&&0<=lo&&lo<hi&&hi<horizon,'v67 root witnesses');\n    z(1)=1;z(2:3)=[lo;hi];z(4:7)=[elo';ehi'];\n    z(10:11)=[max(lo,wait(1));max(hi,wait(2))];\nend\nif z(11)<horizon,z(12)=1;elseif z(10)>horizon,z(12)=3;else,z(12)=2;end\nend\nfunction en=flow(initial,t,lambda,B)\nif all(t==0),en=initial;return;end\nP=@(v)[v v];k=-P(lambda);x=muliv(k,t);\nassert(max(abs(x))<=2,'v68 outward root span');\nv=plusiv(muliv(k,initial),B);f1=P(1);term=P(1);\nfor j=1:24,term=diviv(muliv(term,x),P(j+1));f1=plusiv(f1,term);end\nfac=P(1);for j=2:26,fac=muliv(fac,P(j));end\n% Expanded arguments have a separate proven numerical domain.\n% e^2<8 gives |tail(phi1)|<=8*2^25/26!.\ntail=diviv(P(268435456),fac);f1=plusiv(f1,[-tail(2) tail(2)]);\nen=plusiv(initial,muliv(muliv(v,t),f1));\nend\nfunction z=plusiv(x,y)\nif all(x==0),z=y;elseif all(y==0),z=x;else,z=out([x(1)+y(1) x(2)+y(2)]);end\nend\nfunction z=minusiv(x,y)\nif all(y==0),z=x;elseif x(1)==x(2)&&y(1)==y(2)&&x(1)==y(1),z=[0 0];else,z=out([x(1)-y(2) x(2)-y(1)]);end\nend\nfunction z=muliv(x,y)\nif all(x==0)||all(y==0),z=[0 0];return;end\nt=[x(1)*y(1) x(1)*y(2) x(2)*y(1) x(2)*y(2)];z=out([min(t) max(t)]);\nend\nfunction z=diviv(x,y)\nassert(y(1)>0,'v67 positive root denominator');\nif all(x==0),z=[0 0];return;end\nt=[x(1)/y(1) x(1)/y(2) x(2)/y(1) x(2)/y(2)];z=out([min(t) max(t)]);\nend\nfunction z=out(t)\nassert(all(isfinite(t)),'v67 root arithmetic overflow');z=[t(1)-2*eps(t(1)) t(2)+2*eps(t(2))];\nassert(all(isfinite(z))&&z(1)<=z(2),'v67 root expansion overflow');\nend\n",
+      "xml": "simulink/stateflow/chart_66.xml",
+      "sha256": "d7916bd3c4709a9046d185825f311e2bfce7c6fd19117ee50b378ea7bcdc6c83"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "cfg",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "old",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "y",
+      "properties": {
+        "scope": "FUNCTION_OUTPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "cfg",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "memory",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "mode",
+      "properties": {
+        "scope": "FUNCTION_OUTPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "u",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "cfg",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "plant_trace",
+      "properties": {
+        "scope": "FUNCTION_INPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "z",
+      "properties": {
+        "scope": "FUNCTION_OUTPUT_DATA",
+        "dataType": "Inherit: From definition in chart"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "horizon_input",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "policy_input",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "trace",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "retained_memory",
+      "properties": {
+        "scope": "LOCAL_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    },
+    {
+      "id": null,
+      "name": "core",
+      "properties": {
+        "scope": "LOCAL_DATA",
+        "dataType": "double"
+      },
+      "xml": "simulink/stateflow/chart_66.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dchr-event-candidates-stateflow-v70-4375fc85caa0.json",
+  "copies": [
+    "primary/matlab/simulink/DCHR_Event_Candidates_Stateflow_v70.slx"
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "name": "IT_Independent_HeatRejection_20261023_SK",
+  "id": "it-independent-heatrejection-20261023-sk",
+  "sha256": "8dfe80d6977a1d69035b592427d7d02b5fcbb9f71f9a0ce7bb71bbc7ad83ec96",
+  "blocks": [
+    {
+      "sid": "7::1",
+      "name": "IT_MW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::28",
+      "name": "Reuse_MW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::29",
+      "name": "CoolerCap_MW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "20",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::30",
+      "name": "PumpOK",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "21",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::31",
+      "name": "Tprev",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 246, 40, 264]",
+        "ZOrder": "22",
+        "Port": "5"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::32",
+      "name": "P",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 281, 40, 299]",
+        "ZOrder": "23",
+        "Port": "6"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 315, 320, 355]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 107, 230, 248]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[6 6]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 326, 480, 344]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::5",
+      "name": "Tnext",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::33",
+      "name": "Qrejected_MW",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "24",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::34",
+      "name": "Residual_MW",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "25",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::35",
+      "name": "Trip",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 206, 480, 224]",
+        "ZOrder": "26",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "7::36",
+      "name": "FlowTrip",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 246, 480, 264]",
+        "ZOrder": "27",
+        "Port": "5"
+      },
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "sid": "3",
+      "name": "CoolerAvailable_MW",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 227, 205, 253]",
+        "ZOrder": "3",
+        "VariableName": "safe_capacity"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "6",
+      "name": "CoolingParams",
+      "type": "Constant",
+      "properties": {
+        "Position": "[155, 500, 290, 530]",
+        "ZOrder": "6",
+        "Value": "safe_params"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "12",
+      "name": "FlowTrip",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 502, 1000, 528]",
+        "ZOrder": "12",
+        "VariableName": "saf_FlowTrip",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "HeatReuse_MW",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 152, 205, 178]",
+        "ZOrder": "2",
+        "VariableName": "safe_reuse"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "IT_MW",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 77, 205, 103]",
+        "ZOrder": "1",
+        "VariableName": "safe_IT"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "7",
+      "name": "Independent_IT_cooling_safety",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[380, 147, 660, 538]",
+        "ZOrder": "7",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "PumpOK",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[35, 302, 205, 328]",
+        "ZOrder": "4",
+        "VariableName": "safe_pump"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "9",
+      "name": "Qrejected_MW",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 202, 1000, 228]",
+        "ZOrder": "9",
+        "VariableName": "saf_Qrejected_MW",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "10",
+      "name": "Residual_MW",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 302, 1000, 328]",
+        "ZOrder": "10",
+        "VariableName": "saf_Residual_MW",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "Tank_Tprev",
+      "type": "UnitDelay",
+      "properties": {
+        "Position": "[155, 420, 225, 450]",
+        "ZOrder": "5",
+        "InitialCondition": "35",
+        "SampleTime": "5"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "8",
+      "name": "Tnext",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 102, 1000, 128]",
+        "ZOrder": "8",
+        "VariableName": "saf_Tnext",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "11",
+      "name": "Trip",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[840, 402, 1000, 428]",
+        "ZOrder": "11",
+        "VariableName": "saf_Trip",
+        "MaxDataPoints": "inf",
+        "SaveFormat": "Timeseries",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "7::1#out:1",
+      "destinations": [
+        "7::25#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::28#out:1",
+      "destinations": [
+        "7::25#in:2"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::29#out:1",
+      "destinations": [
+        "7::25#in:3"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::30#out:1",
+      "destinations": [
+        "7::25#in:4"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::31#out:1",
+      "destinations": [
+        "7::25#in:5"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::32#out:1",
+      "destinations": [
+        "7::25#in:6"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:2",
+      "destinations": [
+        "7::5#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:3",
+      "destinations": [
+        "7::33#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:4",
+      "destinations": [
+        "7::34#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:5",
+      "destinations": [
+        "7::35#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:6",
+      "destinations": [
+        "7::36#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::26#out:1",
+      "destinations": [
+        "7::27#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "7::25#out:1",
+      "destinations": [
+        "7::26#in:1"
+      ],
+      "xml": "simulink/systems/system_7.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "7#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "7#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "7#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "7#in:4"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:1",
+      "destinations": [
+        "7#in:5"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "6#out:1",
+      "destinations": [
+        "7#in:6"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:1",
+      "destinations": [
+        "8#in:1",
+        "5#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:2",
+      "destinations": [
+        "9#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:3",
+      "destinations": [
+        "10#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:4",
+      "destinations": [
+        "11#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:5",
+      "destinations": [
+        "12#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_16.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "16",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [],
+      "source": "function [Tnext,Qrejected_MW,Residual_MW,Trip,FlowTrip] = ...\n it_independent_cooling_step_SK(IT_MW,Reuse_MW,CoolerCap_MW,PumpOK,Tprev,P)\n%#codegen\n% IT safety thermal buffer, independent rejection capacity. Screening, not PLC.\n% P = [rhoVcp_JK, dt_s, normal_T_C, max_T_C]\nC=P(1);dt=P(2);Tnom=P(3);Tmax=P(4);\nqIT=max(0,IT_MW);\nuse=max(0,min(qIT,Reuse_MW));\nqtoReject=qIT-use;\nFlowTrip=double(PumpOK<0.5);\nif PumpOK>=0.5\n  available=max(0,CoolerCap_MW);\n  buffered=max(0,Tprev-Tnom)*C/(dt*1e6);\n  Qrejected_MW=min(available,qtoReject+buffered);\nelse\n  % Flow fault -> heat recovery and rejection cannot protect chips.\n  Qrejected_MW=0;\n  qtoReject=qIT;\nend\nResidual_MW=qtoReject-Qrejected_MW;\nTnext=Tprev+Residual_MW*1e6*dt/C;\nTrip=double(Tnext>Tmax || FlowTrip>0.5);\nend\n",
+      "xml": "simulink/stateflow/chart_16.xml",
+      "sha256": "5db38e37e4489ce7a2aa037ce975378ba9dc1c59d3d11a2c7cefb972f350ac66"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "IT_MW",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "Tnext",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "Reuse_MW",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "CoolerCap_MW",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "PumpOK",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "Tprev",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "P",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "Qrejected_MW",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "Residual_MW",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "Trip",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    },
+    {
+      "id": null,
+      "name": "FlowTrip",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_16.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/it-independent-heatrejection-20261023-sk-8dfe80d6977a.json",
+  "copies": [
+    "primary/calibration/engineering_release_20261023/IT_Independent_HeatRejection_20261023_SK.slx"
+  ]
+}

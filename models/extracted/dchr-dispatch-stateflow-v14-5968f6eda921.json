@@ -1,0 +1,467 @@
+{
+  "name": "DCHR_Dispatch_Stateflow_v14",
+  "id": "dchr-dispatch-stateflow-v14",
+  "sha256": "5968f6eda92110830a1dddab1112dc860b1b86d4b51f97df2157bf8ee2177cfc",
+  "blocks": [
+    {
+      "sid": "3::1",
+      "name": "demand",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "-1"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::28",
+      "name": "potential",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "19",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::26",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 280, 320, 320]",
+        "ZOrder": "17",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::25",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 2",
+        "Position": "[180, 105, 230, 225]",
+        "ZOrder": "16",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[2 5]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::27",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 291, 480, 309]",
+        "ZOrder": "18"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::5",
+      "name": "hp",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "-5"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::29",
+      "name": "backup",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "20",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::30",
+      "name": "unmet",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "21",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "3::31",
+      "name": "mode",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 206, 480, 224]",
+        "ZOrder": "22",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "sid": "4::110",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 100, 320, 140]",
+        "ZOrder": "90",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::112",
+      "name": " Ground ",
+      "type": "Ground",
+      "properties": {
+        "Position": "[20, 111, 40, 129]",
+        "ZOrder": "92"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::109",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 3",
+        "Position": "[180, 100, 230, 140]",
+        "ZOrder": "89",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[1 1]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "4::111",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 111, 480, 129]",
+        "ZOrder": "91"
+      },
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Dispatch_Controller",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[220, 84, 370, 196]",
+        "ZOrder": "3",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "MATLAB Function",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "HP_Potential_MW",
+      "type": "Constant",
+      "properties": {
+        "Position": "[35, 150, 105, 180]",
+        "ZOrder": "2",
+        "Value": "6"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "Heat_Demand_MW",
+      "type": "Constant",
+      "properties": {
+        "Position": "[35, 70, 105, 100]",
+        "ZOrder": "1",
+        "Value": "8"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Operating_Modes",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[460, 80, 650, 210]",
+        "ZOrder": "4",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "Chart",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "3::1#out:1",
+      "destinations": [
+        "3::25#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::28#out:1",
+      "destinations": [
+        "3::25#in:2"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::25#out:2",
+      "destinations": [
+        "3::5#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::25#out:3",
+      "destinations": [
+        "3::29#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::25#out:4",
+      "destinations": [
+        "3::30#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::25#out:5",
+      "destinations": [
+        "3::31#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::26#out:1",
+      "destinations": [
+        "3::27#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "3::25#out:1",
+      "destinations": [
+        "3::26#in:1"
+      ],
+      "xml": "simulink/systems/system_3.xml"
+    },
+    {
+      "source": "4::112#out:1",
+      "destinations": [
+        "4::109#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::110#out:1",
+      "destinations": [
+        "4::111#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    },
+    {
+      "source": "4::109#out:1",
+      "destinations": [
+        "4::110#in:1"
+      ],
+      "xml": "simulink/systems/system_4.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "eML_blk_kernel()",
+      "position": "[18 64.5 118 66]",
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "label": "RECOVERY",
+      "position": "[35 40 115 55]",
+      "xml": "simulink/stateflow/chart_22.xml"
+    },
+    {
+      "id": null,
+      "label": "BACKUP",
+      "position": "[210 40 115 55]",
+      "xml": "simulink/stateflow/chart_22.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "{eML_blk_kernel();}",
+      "properties": {
+        "labelString": "{eML_blk_kernel();}",
+        "labelPosition": "[28.125 13.875 102.544 14.964]",
+        "fontSize": "12",
+        "midPoint": "[23.5747 24.9468]",
+        "dataLimits": "[21.175 25.975 14.625 42.575]",
+        "subviewer": "11",
+        "drawStyle": "SMART",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 0 1 0 23.5747 14.625 0 0]"
+      },
+      "destination": {
+        "SSID": "3",
+        "intersection": "[1 0 -1 0 23.5747 42.5747 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "label": "",
+      "properties": {
+        "labelPosition": "[37.5 98.75 0 0]",
+        "fontSize": "12",
+        "midPoint": "[25 65]",
+        "dataLimits": "[20 35 64.994 69.9]",
+        "subviewer": "22",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 1.4142 1.4142 0 20 65 0 0]"
+      },
+      "destination": {
+        "SSID": "1",
+        "intersection": "[4 -1 0 0.5 35 67.5 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_22.xml"
+    },
+    {
+      "id": null,
+      "label": "[false]",
+      "properties": {
+        "labelString": "[false]",
+        "labelPosition": "[218.199 133.254 33.984 16]",
+        "fontSize": "12",
+        "midPoint": "[176 77.5925]",
+        "dataLimits": "[13.778 338.222 65.1 87.685]",
+        "subviewer": "22",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "2",
+        "intersection": "[2 1 0 0.867 325 87.685 0 0]"
+      },
+      "destination": {
+        "SSID": "1",
+        "intersection": "[4 -1 0 0.5 35 67.5 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_22.xml"
+    },
+    {
+      "id": null,
+      "label": "[true]",
+      "properties": {
+        "labelString": "[true]",
+        "labelPosition": "[179.534 68.005 29.312 16]",
+        "fontSize": "12",
+        "midPoint": "[176 67.5]",
+        "dataLimits": "[150 210 65.1 69.9]",
+        "subviewer": "22",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "1",
+        "intersection": "[2 1 0 0.5 150 67.5 0 0]"
+      },
+      "destination": {
+        "SSID": "2",
+        "intersection": "[4 -1 0 0.5 210 67.5 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_22.xml"
+    }
+  ],
+  "functions": [
+    {
+      "names": [
+        "dispatch"
+      ],
+      "source": "function [hp,backup,unmet,mode] = dispatch(demand,potential)\n%#codegen\nhp=min(max(potential,0),max(demand,0));\nbackup=min(2,max(0,demand-hp));\nunmet=max(0,demand-hp-backup);\nmode=double(unmet>0)*2+double(unmet==0 && backup>0);\nend",
+      "xml": "simulink/stateflow/chart_11.xml",
+      "sha256": "9dc08624f9abeced96816d5ba9b5ed278ec13a1be1611f1ecd46ba14912ce389"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "name": "demand",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "hp",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "potential",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "backup",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "unmet",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    },
+    {
+      "id": null,
+      "name": "mode",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_11.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dchr-dispatch-stateflow-v14-5968f6eda921.json",
+  "copies": [
+    "primary/matlab/simulink/DCHR_Dispatch_Stateflow_v14.slx"
+  ]
+}

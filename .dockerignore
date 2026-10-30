@@ -1,0 +1,12 @@
+.git
+.superpowers
+.venv
+runtime
+dist
+build
+**/__pycache__
+**/node_modules
+**/.env
+**/.env.*
+**/slprj
+*.zip

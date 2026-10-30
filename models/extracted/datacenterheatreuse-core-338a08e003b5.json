@@ -1,0 +1,266 @@
+{
+  "name": "DataCenterHeatReuse_Core",
+  "id": "datacenterheatreuse-core",
+  "sha256": "338a08e003b57a5175c7443d964f34c89f3daabbbc6103a8f6fb3c2944e1c067",
+  "blocks": [
+    {
+      "sid": "1",
+      "name": "IT_Load_MW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[40, 80, 70, 100]",
+        "ZOrder": "1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "2",
+      "name": "Heat_Demand_MW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[40, 210, 70, 230]",
+        "ZOrder": "2",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "10",
+      "name": "Curtailment_Positive",
+      "type": "Saturate",
+      "properties": {
+        "Position": "[850, 55, 950, 105]",
+        "ZOrder": "10",
+        "UpperLimit": "inf",
+        "LowerLimit": "0"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "6",
+      "name": "Direct_Heat_Min",
+      "type": "MinMax",
+      "properties": {
+        "Position": "[620, 92, 680, 143]",
+        "ZOrder": "6",
+        "Inputs": "2"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "8",
+      "name": "Gas_Backup",
+      "type": "Saturate",
+      "properties": {
+        "Position": "[850, 195, 950, 245]",
+        "ZOrder": "8",
+        "UpperLimit": "inf",
+        "LowerLimit": "0"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "HP_Capacity",
+      "type": "Saturate",
+      "properties": {
+        "Position": "[450, 70, 550, 110]",
+        "ZOrder": "5",
+        "UpperLimit": "12",
+        "LowerLimit": "0"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "11",
+      "name": "HP_Electricity",
+      "type": "Gain",
+      "properties": {
+        "Position": "[760, 125, 860, 165]",
+        "ZOrder": "11",
+        "Gain": "0.203992423139"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "7",
+      "name": "Heat_Deficit",
+      "type": "Sum",
+      "properties": {
+        "Position": "[760, 205, 790, 235]",
+        "ZOrder": "7",
+        "Inputs": "+-"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "Heat_Pump_Lift",
+      "type": "Gain",
+      "properties": {
+        "Position": "[290, 70, 400, 110]",
+        "ZOrder": "4",
+        "Gain": "1.25626944902"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "Heat_Recovery",
+      "type": "Gain",
+      "properties": {
+        "Position": "[130, 70, 240, 110]",
+        "ZOrder": "3",
+        "Gain": "0.85"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "9",
+      "name": "Unused_HP_Potential",
+      "type": "Sum",
+      "properties": {
+        "Position": "[760, 65, 790, 95]",
+        "ZOrder": "9",
+        "Inputs": "+-"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "12",
+      "name": "HP_Heat_to_DH_MW",
+      "type": "Outport",
+      "properties": {
+        "Position": "[1030, 125, 1060, 145]",
+        "ZOrder": "12"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "13",
+      "name": "HP_Electric_MW",
+      "type": "Outport",
+      "properties": {
+        "Position": "[1030, 155, 1060, 175]",
+        "ZOrder": "13",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "14",
+      "name": "Gas_Heat_MW",
+      "type": "Outport",
+      "properties": {
+        "Position": "[1030, 215, 1060, 235]",
+        "ZOrder": "14",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "15",
+      "name": "Curtailed_Heat_MW",
+      "type": "Outport",
+      "properties": {
+        "Position": "[1030, 75, 1060, 95]",
+        "ZOrder": "15",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "3#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "4#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "5#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:1",
+      "destinations": [
+        "6#in:1",
+        "9#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "6#in:2",
+        "7#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "6#out:1",
+      "destinations": [
+        "7#in:2",
+        "9#in:2",
+        "11#in:1",
+        "12#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "7#out:1",
+      "destinations": [
+        "8#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "9#out:1",
+      "destinations": [
+        "10#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "11#out:1",
+      "destinations": [
+        "13#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "8#out:1",
+      "destinations": [
+        "14#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "10#out:1",
+      "destinations": [
+        "15#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [],
+  "transitions": [],
+  "functions": [],
+  "data": [],
+  "execution_status": "not_ported",
+  "file": "extracted/datacenterheatreuse-core-338a08e003b5.json",
+  "copies": [
+    "primary/matlab/simulink/DataCenterHeatReuse_Core.slx"
+  ]
+}
