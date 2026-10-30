@@ -49,6 +49,8 @@ class AnnualTests(unittest.TestCase):
         a = run_annual(small, 'Warm45_Storage100')
         b = run_annual(small, 'Warm45_Storage100', {'hp_capacity_MW': 1.0})
         self.assertGreater(b['metrics']['gas_heat_MWh'], a['metrics']['gas_heat_MWh'])
+        higher_pue = run_annual(small, 'Warm45_Storage100', {'pue': 2.0})
+        self.assertGreater(higher_pue['rows'][0]['DC_Total_MW'], a['rows'][0]['DC_Total_MW'])
         for overrides in ({'hp_capacity_MW': math.nan}, {'storage_capacity_MWh': -1}, {'unknown': 5}, {'dt_h': 0}):
             with self.subTest(overrides=overrides), self.assertRaises(ValueError):
                 run_annual(small, 'Warm45_Storage100', overrides)

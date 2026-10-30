@@ -102,6 +102,7 @@ def step(row, energy, c):
     if not all(math.isfinite(v) for v in values.values()) or values['IT_MW'] < 0:
         raise ValueError('Invalid annual input')
     tout, it = values['Tout_C'], values['IT_MW']
+    values['DC_Total_MW'] = c.pue * it
     clamp = lambda x, lo, hi: min(hi, max(lo, x))
     demand = (2. + 18. * clamp((16. - tout) / 28., 0., 1.15)) / .94
     fraction = clamp((16. - tout) / 28., 0., 1.)
