@@ -27,6 +27,20 @@ class PoolTests(unittest.TestCase):
                     self.assertEqual(e['rezim_Stateflow'],a['rezim_Stateflow'])
                 self.assertLess(result['validation']['max_water_residual_W'],1e-5)
 
+    def test_portable_source_forcing_is_not_output_replay(self):
+        first=generate_inputs('zaklad',672)
+        self.assertEqual(len(first),672)
+        self.assertEqual(len(first[0]),12)  # time + 11 independent forcing ports
+        self.assertNotIn('P_aux_W',first[63])
+        self.assertNotIn('E_TES_J',first[63])
+        original=first[63]['Qdc_available_W']
+        first[63]['Qdc_available_W']=-12345
+        self.assertEqual(generate_inputs('zaklad',64)[63]['Qdc_available_W'],original)
+        self.assertEqual(len(generate_inputs('zaklad',673)),673)
+        self.assertEqual(generate_inputs('bez_plachty',64)[63]['plachta'],0)
+        self.assertEqual(generate_inputs('vysoky_dopyt_DH',64)[63]['Qdh_demand_W'],
+                         generate_inputs('zaklad',64)[63]['Qdh_demand_W']+95000)
+
     def test_fresh_simulation_not_replay_and_pool_disable(self):
         inputs=generate_inputs('zaklad',48)
         actual=run_pool(inputs)

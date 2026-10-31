@@ -9,27 +9,36 @@
       "bytes": 464100930,
       "sha256": "3eecbe7e2c7bae487d3c9d083e23520566ae863edac060130aaab424a07c9880",
       "manifest": "source-archive.json",
-      "restore_verification": "PASS"
+      "restore_verification": "PASS",
+      "github_asset_id": 695438937,
+      "github_digest_verified": true
     },
     {
       "filename": "heat-reuse-supplement-2026-10-31.zip",
       "bytes": 72538624,
       "sha256": "56787a7fb97f08aa50dc05c0dd87a52f5653ec1d3cd2e90b045186e15c8538f5",
       "manifest": "source-supplement-2026-10-31.json",
-      "restore_verification": "PASS"
+      "restore_verification": "PASS",
+      "github_asset_id": 695443340,
+      "github_digest_verified": true
     },
     {
       "filename": "heat-reuse-scientific-qa-correction-2026-10-31.zip",
       "bytes": 169500,
       "sha256": "3f78994f2f85790b0e81ea6ede400a397f7a14de0fe96334518267f807d617a6",
       "manifest": "source-qa-correction.json",
-      "restore_verification": "PASS"
+      "restore_verification": "PASS",
+      "github_asset_id": 695444054,
+      "github_digest_verified": true
     }
   ],
   "review_corrections": [
     "Restored 51 scientific QA files excluded by overbroad browser filter",
     "Reject Windows reserved names and trailing aliases before restore"
   ],
-  "publication_status": "pending",
-  "numerical_migration_status": "in_progress"
+  "publication_status": "uploaded_to_draft_release",
+  "numerical_migration_status": "in_progress",
+  "repository_url": "https://github.com/Fenixcrowlite/datacenter-heat-reuse",
+  "repository_private": true,
+  "github_release_id": 429949218
 }

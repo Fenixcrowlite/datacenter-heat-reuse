@@ -14,3 +14,6 @@ heat-reuse = "heat_reuse.__main__:main"
 
 [tool.setuptools.packages.find]
 include = ["heat_reuse*", "tools*"]
+
+[tool.setuptools.package-data]
+heat_reuse = ["pool_v04_forcing_17digit.json.gz"]

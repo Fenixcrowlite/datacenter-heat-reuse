@@ -5,9 +5,11 @@ No archived result is consulted by the simulation. All values are assumptions.
 """
 from __future__ import annotations
 from dataclasses import dataclass, asdict
+import gzip
 import hashlib
 import json
 import math
+from functools import lru_cache
 from pathlib import Path
 
 INPUTS = ('Qdc_available_W','Tdc_C','Qdh_demand_W','Tair_C','RH','aktivita','plachta','IT_ok','BAZEN_ok','TES_ok','HX_ok')
@@ -53,18 +55,48 @@ def configuration(settings):
     return c
 
 
+@lru_cache(maxsize=1)
+def _portable_v04_forcing():
+    """Immutable source-equation input stimulus, not precomputed model outputs.
+
+    This pins the first 672 source inputs to the same binary64 numbers across
+    operating systems. The generated physical outputs still come from run_pool.
+    Beyond the retained 7-day source window, equations are evaluated directly.
+    """
+    path=Path(__file__).with_name('pool_v04_forcing_17digit.json.gz')
+    with gzip.open(path,'rt',encoding='utf-8') as source: payload=json.load(source)
+    if payload.get('schema')!=1 or not isinstance(payload.get('rows'),list) or len(payload['rows'])!=672:
+        raise ValueError('Invalid retained v04 source-forcing profile')
+    expected=set(INPUTS)|{'cas_h'}
+    for k,row in enumerate(payload['rows']):
+        if (not isinstance(row,dict) or set(row)!=expected or
+                not all(isinstance(v,(int,float)) and math.isfinite(v) for v in row.values()) or
+                row['cas_h']!=k/4):
+            raise ValueError('Corrupt or nonfinite v04 source forcing at step '+str(k))
+    return tuple(payload['rows'])
+
+
 def generate_inputs(scenario='zaklad',steps=672):
     if scenario not in SCENARIOS or isinstance(steps,bool) or not isinstance(steps,int) or not 1<=steps<=35040:
         raise ValueError('Invalid pool scenario or step count')
+    # Evaluating platform libm sin/cos independently moved an exact TES-empty
+    # state by 7.45e-9 J on Linux, wrongly toggling a 250 W auxiliary branch.
+    # Keep original binary64 source inputs for the archived seven-day study.
+    # This is input pinning, NEVER replaying archived simulation outputs.
+    portable=_portable_v04_forcing()
     result=[]
     for k in range(steps):
-        h=k/4;day=h/24;active=float(8<=h%24<20)
-        qdc=max(0,170000+30000*math.cos(2*math.pi*day/7)+20000*math.sin(2*math.pi*h/24))
-        ts=30+7*math.cos(2*math.pi*(day-2)/7)
-        qdh=75000+35000*active+25000*(.5+.5*math.cos(2*math.pi*day/7))
-        row=dict(cas_h=h,Qdc_available_W=qdc,Tdc_C=ts,Qdh_demand_W=qdh,
-                 Tair_C=29+.6*math.sin(2*math.pi*day/7),RH=.60+.07*math.sin(2*math.pi*day/7),
-                 aktivita=.5+.5*active,plachta=1-active,IT_ok=1.,BAZEN_ok=1.,TES_ok=1.,HX_ok=1.)
+        h=k/4
+        if k<len(portable):
+            row=dict(portable[k])  # callers may modify inputs, not the cache
+        else:
+            day=h/24;active=float(8<=h%24<20)
+            qdc=max(0,170000+30000*math.cos(2*math.pi*day/7)+20000*math.sin(2*math.pi*h/24))
+            ts=30+7*math.cos(2*math.pi*(day-2)/7)
+            qdh=75000+35000*active+25000*(.5+.5*math.cos(2*math.pi*day/7))
+            row=dict(cas_h=h,Qdc_available_W=qdc,Tdc_C=ts,Qdh_demand_W=qdh,
+                     Tair_C=29+.6*math.sin(2*math.pi*day/7),RH=.60+.07*math.sin(2*math.pi*day/7),
+                     aktivita=.5+.5*active,plachta=1-active,IT_ok=1.,BAZEN_ok=1.,TES_ok=1.,HX_ok=1.)
         if scenario=='vypnuty_bazen' and 60<=h<108:row['BAZEN_ok']=0.
         if scenario=='vypadok_IT_24h' and 72<=h<96:row['IT_ok']=0.
         if scenario=='nulovy_zdroj_24h' and 72<=h<96:row['Qdc_available_W']=0.

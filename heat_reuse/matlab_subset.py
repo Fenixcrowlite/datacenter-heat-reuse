@@ -12,9 +12,35 @@ import operator
 import re
 import struct
 import sys
+from pathlib import Path
 
 
 class UnsupportedMatlab(ValueError):pass
+
+
+class MatlabError(ValueError):
+    """A recoverable MATLAB runtime error with identifier and cause provenance."""
+    def __init__(self,identifier,message,causes=()):
+        self.identifier=str(identifier)
+        self.message=str(message)
+        self.causes=tuple(causes)
+        super().__init__(f'{self.identifier}: {self.message}' if self.identifier else self.message)
+
+
+def _error_record(exc):
+    if isinstance(exc,MatlabError):
+        return {'identifier':exc.identifier,'message':exc.message,'causes':list(exc.causes)}
+    return {'identifier':'MATLAB:runtime','message':str(exc),'causes':[]}
+
+
+def _error_message(template,parts):
+    if not isinstance(template,str):raise UnsupportedMatlab('MATLAB error template must be a string')
+    if not parts:return template
+    try:return template % tuple(parts)
+    except (TypeError,ValueError) as exc:
+        raise UnsupportedMatlab('Unsupported MATLAB message format') from exc
+
+
 
 
 class M:
@@ -220,6 +246,16 @@ class Parser:
             elif self.is_('while'):
                 self.take();condition=self.expression();self.separators()
                 statements=self.statements({'end'});self.take('end');body.append(('while',condition,statements))
+            elif self.is_('try'):
+                self.take();self.separators()
+                protected=self.statements({'catch','end'})
+                caught=None;handler=None
+                if self.is_('catch'):
+                    self.take()
+                    if self.token()[0]=='name':caught=self.take('name')[1]
+                    self.separators()
+                    handler=self.statements({'end'})
+                self.take('end');body.append(('try',protected,caught,handler))
             elif self.is_('for'):
                 self.take();name=self.take('name')[1];self.take('=');values=self.expression();self.separators()
                 statements=self.statements({'end'});self.take('end');body.append(('for',name,values,statements))
@@ -276,13 +312,50 @@ def builtin(name,args):
     if name=='struct':
         if len(args)%2:raise ValueError('Invalid struct fields')
         return {args[i]:args[i+1] for i in range(0,len(args),2)}
+    if name=='MException':
+        if len(args)<2 or not isinstance(args[0],str):
+            raise UnsupportedMatlab('MException requires identifier and message')
+        return {'identifier':args[0],'message':_error_message(args[1],args[2:]),'causes':[]}
+    if name=='addCause':
+        if len(args)!=2 or not isinstance(args[0],dict) or not isinstance(args[1],dict):
+            raise UnsupportedMatlab('addCause requires two MATLAB exception records')
+        value=copy.deepcopy(args[0]);value['causes'].append(copy.deepcopy(args[1]))
+        return value
+    if name in ('throw','rethrow'):
+        if len(args)!=1 or not isinstance(args[0],dict):
+            raise UnsupportedMatlab(name+' requires a MATLAB exception record')
+        error=args[0]
+        if not isinstance(error.get('identifier'),str) or not isinstance(error.get('message'),str):
+            raise UnsupportedMatlab('Malformed MATLAB exception record')
+        raise MatlabError(error['identifier'],error['message'],error.get('causes',()))
     if name=='isreal':return all(not isinstance(v,complex) for v in flat(args[0]))
+    if name=='isnumeric':return all(isinstance(v,(int,float)) and not isinstance(v,bool) for v in flat(args[0]))
+    if name=='isstruct':return isinstance(args[0],dict)
+    if name=='isfield':
+        if len(args)!=2:raise UnsupportedMatlab('isfield requires a struct and a field name')
+        names=args[1]
+        if isinstance(names,M):
+            return M([isinstance(args[0],dict) and isinstance(n,str) and n in args[0]
+                      for n in names.data],names.rows,names.cols)
+        if isinstance(names,list):
+            return [isinstance(args[0],dict) and isinstance(n,str) and n in args[0]
+                    for n in names]
+        if not isinstance(names,str):raise UnsupportedMatlab('isfield field must be a string')
+        return isinstance(args[0],dict) and names in args[0]
+    if name=='isscalar':return len(flat(args[0]))==1
+    if name=='ismissing':return unary(lambda x:x is None or isinstance(x,float) and math.isnan(x),args[0])
+    if name=='string':return unary(str,args[0])
+    if name=='strcmp':return elementwise(operator.eq,*args)
+    if name=='strcmpi':return elementwise(lambda a,b:str(a).casefold()==str(b).casefold(),*args)
     if name=='validateattributes':
         value,classes,attributes=args[:3];values=flat(value)
         for i,attr in enumerate(attributes):
             if attr=='finite' and not all(math.isfinite(v) for v in values):raise ValueError('Nonfinite MATLAB input')
             if attr=='real' and not all(not isinstance(v,complex) for v in values):raise ValueError('Complex MATLAB input')
             if attr=='numel' and len(values)!=attributes[i+1]:raise ValueError('MATLAB input size mismatch')
+            if attr=='scalar' and len(values)!=1:raise ValueError('MATLAB input must be scalar')
+            if attr=='vector' and isinstance(value,M) and min(value.rows,value.cols)!=1:
+                raise ValueError('MATLAB input must be vector')
             if attr=='positive' and not all(v>0 for v in values):raise ValueError('Nonpositive MATLAB input')
             if attr=='nonnegative' and not all(v>=0 for v in values):raise ValueError('Negative MATLAB input')
         return None
@@ -323,7 +396,10 @@ def builtin(name,args):
     if name=='assert':
         if not truth(args[0]):raise ValueError(str(args[1]) if len(args)>1 else 'MATLAB assertion failed')
         return None
-    if name=='error':raise ValueError(' '.join(map(str,args)))
+    if name=='error':
+        if len(args)>=2 and isinstance(args[0],str) and ':' in args[0]:
+            raise MatlabError(args[0],_error_message(args[1],args[2:]))
+        raise MatlabError('MATLAB:runtime',_error_message(str(args[0]),args[1:]) if args else 'Error')
     if name in ('realmax','realmin'):return sys.float_info.max if name=='realmax' else sys.float_info.min
     raise UnsupportedMatlab('Unsupported function '+name)
 
@@ -462,6 +538,14 @@ class Function:
                     try:self.execute(statement[3],env)
                     except _Break:break
                     except _Continue:continue
+            elif kind=='try':
+                try:self.execute(statement[1],env)
+                except (ValueError,ArithmeticError) as exc:
+                    # Unknown interpreter constructs are programmer gaps, not
+                    # physical-model errors that MATLAB catch may conceal.
+                    if isinstance(exc,UnsupportedMatlab) or statement[3] is None:raise
+                    if statement[2] is not None:env[statement[2]]=_error_record(exc)
+                    self.execute(statement[3],env)
             elif kind=='while':
                 count=0
                 while truth(self.eval(statement[1],env)):
@@ -483,12 +567,39 @@ def compile_functions(source):
     return functions
 
 
-def compile_model(model):
+class _LinkedFunctions(dict):
+    def __init__(self,local,public,resolver):
+        super().__init__(local);self.public=public;self.resolver=resolver
+    def get(self,name,default=None):
+        if name in self:return dict.get(self,name)
+        if name in self.public:return self.public[name]
+        return self.resolver(name) if self.resolver else default
+
+
+def compile_model(model,source_root=None):
     """Link chart-public functions while keeping each source's helpers local."""
     modules=[];public={}
     for source in model['functions']:
         functions=compile_functions(source['source']);modules.append(functions)
         if source['names']:public[source['names'][0]]=functions[source['names'][0]]
+    missing=set()
+    def resolve(name):
+        if source_root is None or name in missing:return None
+        if not re.fullmatch(r'[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*',name):return None
+        pieces=name.split('.')
+        root=Path(source_root)
+        if len(pieces)>1:candidates=[root.joinpath(*('+'+p for p in pieces[:-1]),pieces[-1]+'.m')]
+        else:candidates=[root/(name+'.m'),root/'simulink'/(name+'.m')]
+        file=next((p for p in candidates if p.is_file()),None)
+        if file is None:missing.add(name);return None
+        functions=compile_functions(file.read_text(encoding='utf-8-sig'))
+        function=functions.get(pieces[-1])
+        if function is None:raise UnsupportedMatlab('External source has no matching function '+name)
+        public[name]=function
+        namespace=_LinkedFunctions(functions,public,resolve)
+        for local in functions.values():local.functions=namespace
+        return function
     for functions in modules:
-        for name,function in public.items():functions.setdefault(name,function)
+        namespace=_LinkedFunctions(functions,public,resolve)
+        for function in functions.values():function.functions=namespace
     return public
