@@ -30,7 +30,7 @@ a struct; unknown symbols and non-struct access fail closed. There is no Python 
 file-system access, or arbitrary attribute invocation.
 
 Observed local QA in an isolated Windows project directory:
-- 16 non-legacy subset tests pass, 3 legacy fixture tests deselected (fixtures not copied).
+- 17 non-legacy subset tests pass, 3 legacy fixture tests deselected (fixtures not copied).
 - Original MATLAB `+dchr/+components/storage_parameters_v30.m` was executed with the
   original linked `storage_kernel_v30.m` and returned
   `[1,60,1,1,0.9,0.9,0.1,16,2,20]` for explicit synthetic physical input.
@@ -41,3 +41,11 @@ Observed local QA in an isolated Windows project directory:
 Full-repo Linux and Windows verification for this new branch remains pending. The previous
 commit `85297c1` retains its separately documented 33/33 tests per OS. The branch should
 remain unmerged pending CI and independent source review.
+
+- Full original `storage_step_v30.m` was also executed through the linked
+  `storage_parameters_v30.m` and `storage_kernel_v30.m`. At A=30 MWh,
+  the source-calculated next energies were 28.00158577875515 MWh (1 MW charge),
+  26.08776051925611 MWh (1 MW discharge), and 27.145122541078784 MWh
+  (idle); each matched the independent analytic exponential solution.
+  Simultaneous charging/discharging was rejected. This is component-chain
+  parity with its source equations, **not** a native Stateflow model trace.
