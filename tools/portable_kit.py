@@ -11,6 +11,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import stat
 import subprocess
 import tempfile
 import zipfile
@@ -46,11 +47,22 @@ SECRET_BYTES = re.compile(
 )
 def review_source_archive(path):
     with zipfile.ZipFile(path) as source:
-        names = source.namelist()
+        infos = source.infolist()
+        names = [info.filename for info in infos]
         if len(names) != len(set(names)):
             raise ValueError("Duplicate application archive entries")
-        for name in names:
+        if len(infos) > 20000 or sum(info.file_size for info in infos) > 1024 * 1024 * 1024:
+            raise ValueError("Application archive exceeds review size limits")
+        folded = set()
+        for info in infos:
+            name = info.filename
             parts = name.rstrip("/").split("/")
+            key = tuple(part.casefold() for part in parts)
+            if key in folded:
+                raise ValueError("Portable application archive path collision: " + name)
+            folded.add(key)
+            if info.create_system == 3 and stat.S_ISLNK(info.external_attr >> 16):
+                raise ValueError("Symbolic link in application archive: " + name)
             if (name.startswith("/") or "\\" in name or
                     any(part in ("", ".", "..") for part in parts)):
                 raise ValueError("Unsafe application archive path: " + name)
@@ -92,9 +104,6 @@ def build(checkout, archives, destination):
     if destination.exists() or destination.with_suffix(destination.suffix + ".partial").exists():
         raise FileExistsError(destination)
     validator = destination.parent / "verify_portable_kit.py"
-    validator_bytes = Path(__file__).read_bytes()
-    if validator.exists() and validator.read_bytes() != validator_bytes:
-        raise FileExistsError("An unrelated recipient validator exists: " + str(validator))
     sha = subprocess.run(["git", "-C", str(checkout), "rev-parse", "HEAD"],
         capture_output=True, text=True, check=True).stdout.strip()
     branch = subprocess.run(["git", "-C", str(checkout), "branch", "--show-current"],
@@ -114,6 +123,14 @@ def build(checkout, archives, destination):
         subprocess.run(["git", "-C", str(checkout), "archive",
             "--format=zip", "-o", str(code), sha, "--", *include], check=True)
         selected_files = review_source_archive(code)
+        # A reviewer must receive the verifier from the EXACT same commit as
+        # the application, even when this checkout has uncommitted edits.
+        with zipfile.ZipFile(code) as source:
+            if "tools/portable_kit.py" not in source.namelist():
+                raise ValueError("Committed application lacks its offline verifier")
+            validator_bytes = source.read("tools/portable_kit.py")
+        if validator.exists() and validator.read_bytes() != validator_bytes:
+            raise FileExistsError("An unrelated recipient validator exists: " + str(validator))
         code_size, code_sha = digest(code)
         if not zipfile.is_zipfile(code):
             raise ValueError("Git source snapshot is not a ZIP")
@@ -194,6 +211,10 @@ def verify(bundle):
                 raise ValueError("Bundle member hash mismatch: " + member)
         if set(listed) != expected_members:
             raise ValueError("Unexpected files in kit")
+        # The recipient must refuse unsafe nested source trees too, before
+        # creating an extraction directory. This works with NO Git installed.
+        with z.open(CODE_MEMBER) as code:
+            review_source_archive(code)
     return {"commit": manifest["commit"], "assets_verified": 4,
             "source_assets_verified": 3, "format": FORMAT}
 

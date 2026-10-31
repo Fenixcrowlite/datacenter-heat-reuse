@@ -4,13 +4,14 @@ import io
 import json
 from pathlib import Path
 import shutil
+import stat
 import subprocess
 import tempfile
 import unittest
 from unittest import mock
 import zipfile
 
-from tools.portable_kit import ASSETS, build, verify, unpack, MANIFEST_MEMBER
+from tools.portable_kit import ASSETS, build, verify, unpack, MANIFEST_MEMBER, review_source_archive
 
 
 @unittest.skipUnless(shutil.which("git"),
@@ -26,9 +27,12 @@ class PortableKitTests(unittest.TestCase):
                                   check=True, capture_output=True)
         run("init", "-b", "codex/offline-kit-test")
         (repo / "README.md").write_text("Code only; no credentials.", encoding="utf-8")
+        (repo / "tools").mkdir()
+        (repo / "tools/portable_kit.py").write_bytes(
+            (Path(__file__).resolve().parents[1] / "tools/portable_kit.py").read_bytes())
         (repo / "original/synapse/browser/Default/Network").mkdir(parents=True)
         (repo / "original/synapse/browser/Default/Network/Cookies-journal").write_bytes(b"secret-sentinel")
-        run("add", "README.md", "original/synapse")
+        run("add", "README.md", "tools/portable_kit.py", "original/synapse")
         run("-c", "user.name=Kit Test", "-c", "user.email=kit@test.invalid",
             "commit", "-m", "synthetic kit candidate")
         fixtures = {}
@@ -48,9 +52,14 @@ class PortableKitTests(unittest.TestCase):
             self.assertEqual(4, result["assets_verified"])
             with zipfile.ZipFile(bundle) as z:
                 with zipfile.ZipFile(io.BytesIO(z.read("code/repository.zip"))) as code:
-                    self.assertEqual(["README.md"], code.namelist())
-            self.assertEqual((root / "verify_portable_kit.py").read_bytes(),
-                             (Path(__file__).resolve().parents[1] / "tools/portable_kit.py").read_bytes())
+                    self.assertIn("README.md", code.namelist())
+                    self.assertIn("tools/portable_kit.py", code.namelist())
+                    self.assertNotIn("original/synapse/browser/Default/Network/Cookies-journal",
+                                     code.namelist())
+            with zipfile.ZipFile(bundle) as outer:
+                with zipfile.ZipFile(io.BytesIO(outer.read("code/repository.zip"))) as code:
+                    self.assertEqual((root / "verify_portable_kit.py").read_bytes(),
+                                     code.read("tools/portable_kit.py"))
             with mock.patch.dict(ASSETS, fixtures, clear=True):
                 self.assertEqual(3, verify(bundle)["source_assets_verified"])
                 recipient = root / "recipient"
@@ -82,7 +91,7 @@ class PortableKitTests(unittest.TestCase):
             root=Path(tmp)
             bundle, fixtures, _=self.make_kit(root)
             repo=root/"git"
-            (repo/"tools").mkdir()
+            (repo/"tools").mkdir(exist_ok=True)
             (repo/"tools/Cookies-journal").write_bytes(b"no-personal-secrets-ever")
             subprocess.run(["git","-C",str(repo),"add","tools/Cookies-journal"],
                            check=True,capture_output=True)
@@ -111,6 +120,45 @@ class PortableKitTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,"secret signature"):
                     build(repo,root/"sources",root/"refused.zip")
             self.assertFalse((root/"refused.zip").exists())
+
+    def test_validator_comes_from_committed_tree_not_dirty_worktree(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            _,fixtures,_=self.make_kit(root)
+            repo=root/"git"
+            (repo/"tools/portable_kit.py").write_bytes(
+                b"# uncommitted diverging verifier content")
+            with mock.patch.dict(ASSETS,fixtures,clear=True):
+                built=build(repo,root/"sources",root/"dirty.zip")
+            self.assertEqual(4,built["assets_verified"])
+            with zipfile.ZipFile(root/"dirty.zip") as bundle:
+                with zipfile.ZipFile(io.BytesIO(bundle.read("code/repository.zip"))) as code:
+                    committed=code.read("tools/portable_kit.py")
+            self.assertEqual(committed,(root/"verify_portable_kit.py").read_bytes())
+            self.assertNotEqual(committed,(repo/"tools/portable_kit.py").read_bytes())
+
+    def test_application_archive_symlink_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            zpath=root/"nested.zip"
+            link=zipfile.ZipInfo("tools/doclink")
+            link.create_system=3
+            link.external_attr=(stat.S_IFLNK | 0o777)<<16
+            with zipfile.ZipFile(zpath,"w") as z:
+                z.writestr("README.md",b"readme")
+                z.writestr(link,b"../private")
+            with self.assertRaisesRegex(ValueError,"Symbolic link"):
+                review_source_archive(zpath)
+
+    def test_application_case_alias_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            zpath=root/"nested.zip"
+            with zipfile.ZipFile(zpath,"w") as z:
+                z.writestr("tools/Readme.txt",b"x")
+                z.writestr("tools/readme.TXT",b"y")
+            with self.assertRaisesRegex(ValueError,"collision"):
+                review_source_archive(zpath)
 
     def test_duplicate_member_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
