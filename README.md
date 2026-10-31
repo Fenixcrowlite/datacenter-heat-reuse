@@ -12,7 +12,7 @@ With Docker Desktop or Docker Engine running:
 docker compose up --build
 ```
 
-Open **http://localhost:8080**. The application includes English/Slovak UI, parameter changes, new calculations, an interactive heat-flow diagram, time-series charts, original model diagrams, source documents, saved experiments and CSV/JSON export. Change the host port with `HEAT_REUSE_PORT=8085` if necessary.
+Open **http://localhost:8080**. The application includes English/Slovak UI, parameter changes, new calculations, an interactive heat-flow diagram, time-series charts, original model diagrams, source documents, saved experiments and CSV/JSON export. Change the host port with `HEAT_REUSE_PORT=8085` if necessary. The native Python server and Docker Compose bind locally by default. HTTP Host-header validation blocks DNS rebinding, including forged remote Host names. To intentionally use a trusted hostname through a private authenticated reverse proxy, explicitly add it with `HEAT_REUSE_ALLOWED_HOSTS=my.private.hostname`. This is **not** an authentication mechanism and must not be exposed directly to the public internet.
 
 Without Docker, use Python 3.11 or newer from the repository directory:
 
