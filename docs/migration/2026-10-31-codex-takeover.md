@@ -58,3 +58,35 @@ remain unmerged pending CI and independent source review.
   Windows rerun: **17/17 PASS**, three legacy model fixture cases deselected.
   Neither run substitutes for full 33-case repository CI or native v30
   MATLAB/Stateflow trace comparison.
+
+
+## Full PR-branch Python regression (31 October, subsequent checkpoint)
+
+Checked out exact reviewed branch `codex/v30-dynamic-fields-20261031`
+at `d71e51222a9531a4de2e4ae34e6185eaf4ddd5a3` in a **separate,
+clean Git sparse checkout** on Windows. Explicit checkout scope includes
+`heat_reuse`, `tests`, `models/extracted`, `datasets/reference`,
+`original/primary/matlab`, `web`, `tools`, `docs`, `.github`.
+This is a full Python test-suite run, not a restored full research archive.
+
+- Windows 11, Python 3.14: `python -m unittest discover -s tests -v`:
+  **38 tests PASS**, elapsed **117.034 s**.
+- Ubuntu 24.04 WSL, Python 3.12: `python3 -m heat_reuse verify`:
+  **38 tests PASS**, elapsed **88.056 s**; Linux process exit code **0**.
+- Windows saved stderr log
+  `QA_WINDOWS_ALL.stderr.log` SHA256:
+  `fdba1028e535fc333e52161bfd0586b0476b33eb265756910fd9bd377f65035c`.
+- Linux saved stderr log
+  `QA_LINUX_ALL.stderr.log` SHA256:
+  `c4bdca14e6099b97f47f2aa337191cb989a7ca29ebee0b68f3392d9189110439`.
+- Local evidence directory:
+  `C:/Users/Lysda/Desktop/SynapseControlCenter/recovery/DCHR_FULL_VERIFY_20261031/`.
+- The `main` branch was not modified; changes remain in **draft PR #1**.
+
+**Boundaries:** container build and actual HTTP + persisted-volume workflow
+were not successfully executed at this checkpoint. Docker Desktop
+Windows service was observed stopped. GitHub Actions result on the PR
+head was not confirmed by the available read interface.
+Native MATLAB/Stateflow whole-model-v30 golden-trace parity remains
+unverified even though the original v30 storage component chain and
+its analytic equation checks pass on both OSes.
