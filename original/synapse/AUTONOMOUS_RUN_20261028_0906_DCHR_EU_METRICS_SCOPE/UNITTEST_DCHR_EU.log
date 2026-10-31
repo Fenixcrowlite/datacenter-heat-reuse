@@ -1,0 +1,30 @@
+test_01_pue (__main__.MetricsTest.test_01_pue) ... ok
+test_02_erf (__main__.MetricsTest.test_02_erf) ... ok
+test_03_ref (__main__.MetricsTest.test_03_ref) ... ok
+test_04_wue_units (__main__.MetricsTest.test_04_wue_units) ... ok
+test_05_no_float (__main__.MetricsTest.test_05_no_float) ... ok
+test_06_no_bool (__main__.MetricsTest.test_06_no_bool) ... ok
+test_07_no_nan (__main__.MetricsTest.test_07_no_nan) ... ok
+test_08_no_inf (__main__.MetricsTest.test_08_no_inf) ... ok
+test_09_no_negative (__main__.MetricsTest.test_09_no_negative) ... ok
+test_10_no_zero_edc (__main__.MetricsTest.test_10_no_zero_edc) ... ok
+test_11_no_zero_eit (__main__.MetricsTest.test_11_no_zero_eit) ... ok
+test_12_no_it_above_dc (__main__.MetricsTest.test_12_no_it_above_dc) ... ok
+test_13_no_reuse_above_dc (__main__.MetricsTest.test_13_no_reuse_above_dc) ... ok
+test_14_no_res_above_dc (__main__.MetricsTest.test_14_no_res_above_dc) ... ok
+test_15_missing_field (__main__.MetricsTest.test_15_missing_field) ... ok
+test_16_reporting_499 (__main__.MetricsTest.test_16_reporting_499) ... ok
+test_17_reporting_500 (__main__.MetricsTest.test_17_reporting_500) ... ok
+test_18_heat_1000 (__main__.MetricsTest.test_18_heat_1000) ... ok
+test_19_heat_over_1000 (__main__.MetricsTest.test_19_heat_over_1000) ... ok
+test_20_separate_threshold_bases (__main__.MetricsTest.test_20_separate_threshold_bases) ... ok
+test_21_hourly_integration (__main__.MetricsTest.test_21_hourly_integration) ... ok
+test_22_zero_interval (__main__.MetricsTest.test_22_zero_interval) ... ok
+test_23_empty_intervals (__main__.MetricsTest.test_23_empty_intervals) ... ok
+test_24_not_pool_heat (__main__.MetricsTest.test_24_not_pool_heat) ... ok
+test_25_equal_boundaries (__main__.MetricsTest.test_25_equal_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.002s
+
+OK

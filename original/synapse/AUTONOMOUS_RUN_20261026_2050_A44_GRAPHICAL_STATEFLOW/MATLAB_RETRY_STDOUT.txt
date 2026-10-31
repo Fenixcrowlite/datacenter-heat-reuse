@@ -1,0 +1,9 @@
+[Warning: The model name 'DCHR_A44_Graphical_Supervisor' is shadowing another name in the MATLAB workspace or path. Type "which -all DCHR_A44_Graphical_Supervisor" at the command
+line to find the other uses of this name. You should change the name of the model to avoid problems.] 
+[> In build_a44 (line 7)
+In run (line 100)] 
+A44_SCENARIO nominal mismatch=0 counts=[672 0 0 0]
+A44_SCENARIO short_fault mismatch=0 counts=[671 1 0 0]
+A44_SCENARIO sustained_fault mismatch=0 counts=[608 2 48 14]
+A44_SCENARIO interrupted_recovery mismatch=0 counts=[620 6 31 15]
+A44_ALL_PASS 5376

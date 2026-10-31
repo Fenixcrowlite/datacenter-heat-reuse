@@ -1347,6 +1347,7 @@
   "execution_status": "not_ported",
   "file": "extracted/dc-pool-capacity-fault-20261023-sk-ccaf1eea4df5.json",
   "copies": [
+    "obsidian/calibration/capacity_fault_simulink_20261023/DC_Pool_Capacity_Fault_20261023_SK.slx",
     "primary/calibration/capacity_fault_simulink_20261023/DC_Pool_Capacity_Fault_20261023_SK.slx"
   ]
 }

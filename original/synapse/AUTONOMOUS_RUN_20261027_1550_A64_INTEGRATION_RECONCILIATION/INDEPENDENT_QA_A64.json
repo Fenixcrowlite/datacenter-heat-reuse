@@ -1,0 +1,11 @@
+{
+  "decimal_checks": 8107,
+  "html_sha256": "5f8cd1410e4f598fe3e31b0254ae3a6e203e0734d0b674e37c01987f09b6c309",
+  "physical_release": false,
+  "source_kind": "derived_simulation",
+  "status": "PASS",
+  "versions": [
+    "V08",
+    "V09"
+  ]
+}

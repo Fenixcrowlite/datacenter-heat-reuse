@@ -1,0 +1,75 @@
+{Error using build_a41 (line 133)
+Error due to multiple causes.
+
+Error in run (line 100)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - Show complete stack trace
+Caused by:
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_1'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_10'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_11'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_2'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_3'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_4'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_5'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_6'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_7'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_8'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a41 (line 133)
+    Invalid configuration for block 'DCHR_A41_Closed_Loop/Signal_9'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

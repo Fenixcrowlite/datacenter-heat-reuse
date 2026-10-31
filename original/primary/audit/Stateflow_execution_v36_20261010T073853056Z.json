@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "timestamp_utc": "2026-10-10T07:39:34.9328871Z",
+  "command": "addpath('matlab/simulink'); disp(version); disp(ver('stateflow')); disp(license('test','Stateflow')); build_dispatch_stateflow_v36();",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "log_path": "automation/logs/stateflow_v36_console_20261010T073853056Z.log"
+}

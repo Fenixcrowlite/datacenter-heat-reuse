@@ -1,0 +1,21 @@
+{
+  "decimal_checks": 10752,
+  "physical_release": false,
+  "source_kind": "derived_simulation",
+  "v08": {
+    "decimal_checks": 5376,
+    "integrated_closure_J": "-0.0000455409900",
+    "max_state_residual_W": "2.22627666666666666666666666666667E-7",
+    "output_sha256": "3917ad808fffee01d792fee91fa9f177c71063ca7f5054352bdfeaf25fcdaf6e",
+    "rows": 672,
+    "source_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3"
+  },
+  "v09": {
+    "decimal_checks": 5376,
+    "integrated_closure_J": "0.0000353378700",
+    "max_state_residual_W": "2.18048666666666666666666666666667E-7",
+    "output_sha256": "82b3164014e04964eb80d256b1f9439d2ebcfd583972b1258330e04bee97dde1",
+    "rows": 672,
+    "source_sha256": "a1a9a202ffae217845fa52fb1440dcd650236a312677f2d3c6ee1db231e35c37"
+  }
+}

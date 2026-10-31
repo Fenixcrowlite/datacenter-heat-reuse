@@ -1,0 +1,12 @@
+{
+  "event_id": 1249,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "DCHR_A45_python_compressor_lag_coupled_reference",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2200_A45_COMPRESSOR_LAG_REFERENCE",
+  "evidence_sha256": "df4ba4b87256157d175ff8481b9cad7a2c1dadd7425ef09874ec97f0c4293f9f",
+  "manifest_sha256": "205c356e6de555c91109a49fa70cd36b889515fcda93c48adfa8af767e803687",
+  "qa": "12/12 unittest PASS; 18816 Decimal checks PASS; 7x672 synthetic",
+  "physical_release": false,
+  "simulink_integrated": false,
+  "next_step": "A46 isolated Simulink graphical Stateflow + HP lag integration and 7x672 parity"
+}

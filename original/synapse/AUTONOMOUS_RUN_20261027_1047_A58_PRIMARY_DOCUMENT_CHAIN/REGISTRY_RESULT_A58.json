@@ -1,0 +1,13 @@
+{
+  "QA": "25/25 unittest, 4/4 AST, 6/6 independent document SHA PASS",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1047_A58_PRIMARY_DOCUMENT_CHAIN",
+  "event_id": 1305,
+  "evidence_sha256": "b2b2e12e0e493cd936ba5a58c54357b44b6b52f16e0b38408844fce57803b2cb",
+  "handoff_sha256": "8b64d9dec298b9c82165726525b5234df0c164f9069c27819b56fce7f6f4868c",
+  "manifest_sha256": "ae1a5c8aa0e3b00aebc86e45babc5dd264e33e4387bd8e80a35e24069377885b",
+  "next_step": "Obtain asset-specific original calibration certificates, UTC sync records, vendor map and telemetry; independently authenticate issuers and instrument IDs, then run A55+A56+A57+A58 on immutable real inputs before isolated Stateflow testing.",
+  "physical_release": false,
+  "scope": "A58_primary_document_chain_integrity_gate",
+  "synthetic_only": true,
+  "task_id": "scc-3d9d172beb6e1b"
+}

@@ -1,0 +1,12 @@
+{
+  "checks": 1121344,
+  "data_sha256": "2c0cd40d6919679c01316d20fcf7770f7ebfe124543a445a6efa5cbb73e2c339",
+  "limitations": "Independent numeric replay validates model equations and input trace, not real-world HVAC physics.",
+  "negative_controls": 3,
+  "rows": 70080,
+  "scenarios": 8,
+  "schema": "C112_INDEPENDENT_QA_V1",
+  "source_sha256": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e",
+  "status": "PASS",
+  "summary_sha256": "8104d9e18c0debc630c61bcbe926a76bfa1cdc2935af9c71c8ce8455fd7bb72f"
+}

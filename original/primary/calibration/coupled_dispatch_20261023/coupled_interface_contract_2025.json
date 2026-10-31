@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-23",
+  "model": "independent coupled_dispatch research bridge",
+  "simulink_owner": "parallel pool workstream; NO changes performed to their .slx",
+  "time_axis": {
+    "field": "Time",
+    "calendar_year": 2025,
+    "rows": 8760,
+    "UTC_basis": "NASA weather source UTC; Simulink MATLAB datetime naive represents UTC",
+    "local_pool_hours": "Europe/Bratislava timezone including DST, 08:00-20:00"
+  },
+  "units": {
+    "DH_Demand_MW": "MW thermal",
+    "DC_Source_Available_MW": "MW thermal IT source",
+    "Pool_Q_MW": "MW useful heat delivered to pool",
+    "Pool_Source_MW": "MW DC waste heat allocated to pool",
+    "Pool_El_MW": "MW pool heat pump compressor electricity",
+    "Pool_Source_Reserved_MW": "MW max instantaneous (5min) source reservation for each dispatch hour",
+    "DH_Source_MW": "MW DC source actually extracted by district HP",
+    "DH_HP_Q_MW": "MW district HP useful thermal output",
+    "DH_HP_El_MW": "MW district HP compressor electricity",
+    "TES_Charge_MW": "MW TES heat input",
+    "TES_Discharge_MW": "MW TES heat output",
+    "TES_E_MWh": "MWh TES stored energy",
+    "Gas_Q_MW": "MW useful thermal backup",
+    "Pool_T_C": "degrees C (hour-end water temperature)",
+    "Pool_Loss_MW": "MW pool net heat loss",
+    "Pool_Cover": "fraction of substeps covered in hour",
+    "DH_COP": "dimensionless; theoretical Carnot factor surrogate"
+  },
+  "identity_checks": [
+    "DH_Q=DH_HP_Q-TES_Charge+TES_Discharge+Gas_Q",
+    "DH_HP_Q=DH_Source+DH_HP_El",
+    "Pool_Q=Pool_Source+Pool_El",
+    "DH_Source+Pool_Source_Reserved <= DC_Source_Available",
+    "Pool_Source <= Pool_Source_Reserved"
+  ],
+  "safety": {
+    "do_not_replay_Pool_Q_into_unmodified_original_28C_relay": true,
+    "original_pool_slx_has_28.2_off_threshold": true,
+    "coupled_study_control_off_C": 27.6,
+    "hard_model_ceiling_C": 27.8,
+    "legal_design_certified": false,
+    "independent_IT_cooling_required": true
+  },
+  "caveats": [
+    "Exports are outputs, not the inputs for a numerically closed co-simulation.",
+    "Feed source CAPACITY to updated Simulink with a proper feedback loop, not presimulated delivered pool heat.",
+    "For true combined co-simulation, Simulink must feed actual subhourly source draw back into district dispatch.",
+    "Exhaustive year still uses synthetic IT profile, assumed heat capture and pool hall psychrometrics.",
+    "ERF needs an actual heat meter at DC boundary and correct annual measurement perimeter.",
+    "Fixed COP4 for pool HP and theoretical network COP are NOT manufacturer maps"
+  ],
+  "independent_QA": [
+    {
+      "case": "liquid35_without_pool",
+      "rows": 8760,
+      "max_pool_C": 16.0,
+      "max_source_overallocation_MW": 1.0658141036401503e-14,
+      "max_DH_balance_residual_MW": 5.861977570020827e-14,
+      "max_HP_partition_residual_MW": 5.0182080713057076e-14,
+      "max_pool_partition_residual_MW": 0,
+      "TES_min_max_MWh": [
+        0.0,
+        50.0
+      ]
+    },
+    {
+      "case": "liquid35_direct_pool",
+      "rows": 8760,
+      "max_pool_C": 27.6129356107729,
+      "max_source_overallocation_MW": 1.0658141036401503e-14,
+      "max_DH_balance_residual_MW": 5.3290705182007514e-14,
+      "max_HP_partition_residual_MW": 5.0182080713057076e-14,
+      "max_pool_partition_residual_MW": 0,
+      "TES_min_max_MWh": [
+        0.0,
+        50.0
+      ]
+    },
+    {
+      "case": "air25_without_pool",
+      "rows": 8760,
+      "max_pool_C": 16.0,
+      "max_source_overallocation_MW": 1.0658141036401503e-14,
+      "max_DH_balance_residual_MW": 1.0125233984581428e-13,
+      "max_HP_partition_residual_MW": 5.10702591327572e-14,
+      "max_pool_partition_residual_MW": 0,
+      "TES_min_max_MWh": [
+        0.0,
+        50.0
+      ]
+    },
+    {
+      "case": "air25_hp_pool",
+      "rows": 8760,
+      "max_pool_C": 27.6129356107729,
+      "max_source_overallocation_MW": 1.0658141036401503e-14,
+      "max_DH_balance_residual_MW": 9.059419880941277e-14,
+      "max_HP_partition_residual_MW": 5.10702591327572e-14,
+      "max_pool_partition_residual_MW": 1.3877787807814457e-17,
+      "TES_min_max_MWh": [
+        0.0,
+        50.0
+      ]
+    }
+  ]
+}

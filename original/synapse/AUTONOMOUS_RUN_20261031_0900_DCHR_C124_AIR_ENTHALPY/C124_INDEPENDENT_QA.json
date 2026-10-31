@@ -1,0 +1,10 @@
+{
+  "data_sha256": "bc73e47fc74182b782293ab655fd8b8bcea5a4aa7a01f8b1ff4c8f860caf76d0",
+  "max_energy_residual_kJ": 5.820766091346741e-11,
+  "max_mass_residual_kg": 1.0018652574217413e-12,
+  "negative_controls": 4,
+  "rows": 140160,
+  "saturated_quarters": 19710,
+  "scenarios": 4,
+  "status": "PASS"
+}

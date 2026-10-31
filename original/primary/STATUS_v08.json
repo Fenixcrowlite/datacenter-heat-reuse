@@ -1,0 +1,160 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.8",
+  "updated_local": "2026-10-08",
+  "purpose": "Evidence-based milestone tracker; not a background executor.",
+  "milestones": [
+    {
+      "id": "M0",
+      "state": "DONE",
+      "evidence": [
+        "00_Project_Hub.md",
+        "sources/source_catalog.md",
+        "audit/physics_audit_v05.md"
+      ]
+    },
+    {
+      "id": "M1",
+      "state": "IN_PROGRESS",
+      "partial_review": [
+        4,
+        9,
+        20,
+        21
+      ],
+      "total": 31,
+      "fully_closed": [],
+      "core_audited_not_signed_off": [
+        1,
+        17
+      ],
+      "metadata_candidates_analyzed": 24,
+      "high_title_match_candidates": 15,
+      "ambiguous_candidates": 8,
+      "metadata_network_failures": 1,
+      "original_pdfs_local": 7
+    },
+    {
+      "id": "M2",
+      "state": "PENDING"
+    },
+    {
+      "id": "M3",
+      "state": "PENDING"
+    },
+    {
+      "id": "M4",
+      "state": "PENDING"
+    },
+    {
+      "id": "M5",
+      "state": "PENDING"
+    },
+    {
+      "id": "M6",
+      "state": "PENDING"
+    },
+    {
+      "id": "M7",
+      "state": "PENDING"
+    },
+    {
+      "id": "M8",
+      "state": "PENDING"
+    },
+    {
+      "id": "M9",
+      "state": "PENDING"
+    }
+  ],
+  "next": [
+    "M1 continue 31 source primary audits, prioritize №18 Oró, №23 Yuan, №21 Ebrahimi full review",
+    "M1 source №20 exergy symbols Eq 9–20 and unit mismatch require further confirmation",
+    "M2/M3 independent mathematics not complete; 32 source/reference proof checks passed, not paper replications",
+    "MATLAB, Simulink, Stateflow only after M1/M2/M3 validation gate"
+  ],
+  "automatic_progress_task": {
+    "state": "BLOCKED",
+    "reason": "ChatGPT automation active-task limit 5",
+    "fallback": "Manual staged continuation in chat and persistent project stageboard"
+  },
+  "evidence_files": [
+    "MASTER_STAGEBOARD_v06.md",
+    "audit/literature_traceability_v06.csv",
+    "audit/metadata_crossref_v06.csv",
+    "audit/analytical_preflight_v06.json",
+    "audit/Hiltunen_Espoo_2020_primary_source_audit_v06_RU.md",
+    "audit/Ebrahimi_source_audit_v06_RU.md"
+  ],
+  "preflight": {
+    "name": "analytical_preflight_v06",
+    "passed": 9,
+    "failed": 0,
+    "errors": 0,
+    "status": "IDENTITY_TESTS_ONLY"
+  },
+  "paper_audit_summary": {
+    "total": 31,
+    "fully_closed": 0,
+    "core_review_incomplete": [
+      1,
+      17
+    ],
+    "partial_primary": [
+      4,
+      9,
+      21
+    ],
+    "catalog_only": 26,
+    "original_pdfs_local": 6
+  },
+  "additional_preflight": {
+    "name": "sintong_consistency_v06",
+    "passed": 5,
+    "failed": 0,
+    "errors": 0,
+    "status": "SUSPECTED_EQUATION_INCONSISTENCY_NOT_SOURCE_ERROR_CONFIRMED"
+  },
+  "obsidian_sync": {
+    "copied_verified_sha256": 21,
+    "copy_manifest": "integration/obsidian_v06_copy_manifest.json",
+    "vault": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse"
+  },
+  "updated_utc": "2026-10-08T19:07:53.863582+00:00",
+  "notes": "M1 source audit ongoing; v0.7 math/reference prototype is not M2/M3 full gate completion.",
+  "reference_physics_v07": {
+    "state": "PARTIAL_PROTOTYPE_VERIFIED",
+    "reference_tests": 11,
+    "sintong_printed_equation_tests": 9,
+    "random_reference_vectors": 1500,
+    "random_crossflow_vectors": 1000,
+    "synthetic_annual_hours": 8760,
+    "scope": "first law and energy/temperature bounds; no primary paper numerical replication"
+  },
+  "sintong_v07": {
+    "eq17": "visual_verified",
+    "eq22": "visual_verified_sign_issue",
+    "eq24": "visual_verified_MULTIPLICATION_not_division",
+    "scope_note": "Printed Q_DH = Q_DC,cooling + eta_supp*P_comp; not generic efficiency on total Qhot"
+  },
+  "source20_varna": {
+    "review": "PARTIAL_PRIMARY_PDF_AND_PUBLISHER_HTML",
+    "original_pdf": "sources/papers/20_Verzino_Varna_2026.pdf",
+    "page16_table6_checked": true,
+    "gas_volume_unit_discrepancy_confirmed_in_print": true,
+    "printed": {
+      "thermal_energy_MWh_y": 97522,
+      "gas_volume_Sm3": 9122,
+      "gas_specific_kWh_per_Sm3": 10.7
+    },
+    "tests": {
+      "paper_unit_preflight": 8,
+      "gas_dimension": 4
+    },
+    "remaining": [
+      "source eq8-20 detailed exergy sign audit",
+      "raw hourly operator data",
+      "author gas unit clarification"
+    ]
+  }
+}

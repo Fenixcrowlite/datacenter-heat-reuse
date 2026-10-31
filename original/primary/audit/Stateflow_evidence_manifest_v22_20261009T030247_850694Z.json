@@ -1,0 +1,353 @@
+{
+  "version": "0.22",
+  "timestamp_utc": "2026-10-09T03:02:47.850694+00:00",
+  "stateflow_acceptance": "PASS",
+  "scope": "Actual executable-model implementation verification, not independent physical validation",
+  "mutable_ledger": "automation/engineering_progress.md",
+  "mutable_ledger_sha256_at_packaging": "b10dac0d952a09457e965e9cb2791a5b1e5088e1102846ced7f4e87a1e160e72",
+  "excluded_active_receipts": "automation/logs/stateflow_finalize_v22*.log",
+  "supersedes": "audit/Stateflow_evidence_manifest_v22_20261009T030008_883989Z.json",
+  "preserved_baseline_sha256": "5968f6eda92110830a1dddab1112dc860b1b86d4b51f97df2157bf8ee2177cfc",
+  "files": [
+    {
+      "path": "audit/finalize_stateflow_checkpoint_v22.py",
+      "sha256": "fdb7de2d70c0a1f3578f3a41be13da1731c71233f69b122a3f92bcef041d2176",
+      "bytes": 11775
+    },
+    {
+      "path": "audit/inspect_stateflow_archive_v22.py",
+      "sha256": "326a79be63b6c18fe3f00614aa02e69347c73f34b8fdef1b24d04396ae16a6f2",
+      "bytes": 7867
+    },
+    {
+      "path": "audit/stateflow_archive_review_v22_20261009T025711_894696Z.json",
+      "sha256": "9a8efe840cb715f3870aefb79a067b935d9df0b60287e98d67f045cbfef81c3c",
+      "bytes": 3146
+    },
+    {
+      "path": "audit/stateflow_archive_review_v22_20261009T025811_396033Z.json",
+      "sha256": "bd874ce460597639a1ef0c2f0c43d1f467ffe1b1163969f077d6b17b71bd55d4",
+      "bytes": 4120
+    },
+    {
+      "path": "audit/Stateflow_equations_review_v22.md",
+      "sha256": "1faaf90b5c774a9b46a242c5ecab83e79866bbdba2f1248e96bf137e41a37f82",
+      "bytes": 15106
+    },
+    {
+      "path": "audit/Stateflow_evidence_manifest_v22_20261009T030008_883989Z.json",
+      "sha256": "d66f06a55e1139df858d99646e81cabd22d29c9fda25a98743aca7c35d1d2e26",
+      "bytes": 14297
+    },
+    {
+      "path": "audit/Stateflow_independent_QA_v22.md",
+      "sha256": "5f1e27a61d7b5a060f9ef0a21796c7f5302a9e025effbd7300203d6deb84999f",
+      "bytes": 10068
+    },
+    {
+      "path": "audit/stateflow_oracle_selftest_v22_20261009T025224266Z.json",
+      "sha256": "dd2e948f0f876560b39807e6212300f02bee67c2b73a8c30180cf43dc03af601",
+      "bytes": 801
+    },
+    {
+      "path": "audit/stateflow_oracle_selftest_v22_20261009T025307766Z.json",
+      "sha256": "c093d0b5f64aaca58d6c19e49114e97f92db479a53651182bc1336e3980af66a",
+      "bytes": 712
+    },
+    {
+      "path": "audit/stateflow_oracle_selftest_v22_20261009T025503519Z.json",
+      "sha256": "9e8332b2cbc80a11f43558c4e05f0ee1b52a9848b028ee6471c57bd65426c47e",
+      "bytes": 712
+    },
+    {
+      "path": "audit/stateflow_packaging_defect_v22_20261009T030244_445755Z.json",
+      "sha256": "6ac11f046606bc033f6ce0dbc5fa8682f07c5c961692db4855227a128fd40750",
+      "bytes": 813
+    },
+    {
+      "path": "audit/stateflow_qa_vectors_v22.csv",
+      "sha256": "1e9aa2cbac88b2f967a675cc73594f2eb1c2dba0922a79d57b0936cbbfc95551",
+      "bytes": 6565
+    },
+    {
+      "path": "audit/verify_stateflow_structure_v22.py",
+      "sha256": "006905353e47bcc3572aa280eb1263b40196fd7b80dd6ecddbbf79d09cabf75f",
+      "bytes": 6670
+    },
+    {
+      "path": "audit/verify_stateflow_trace_v22.py",
+      "sha256": "70a77ae14527af0e1bf9844510901d68275e96e29ef47733417ca4a058a0cf0f",
+      "bytes": 19079
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v22_20261009T045458.log",
+      "sha256": "ca00994ede039729ae9d8aef3a0f3c8bd5f06844ec8210c90f208f3ba4a2fd05",
+      "bytes": 46289
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v22_topology_20261009T045637.log",
+      "sha256": "a742eabb11c27eb5d41732ff20440dea5b8eb86d4045c47a88e580c5adcb3cb3",
+      "bytes": 46289
+    },
+    {
+      "path": "automation/logs/stateflow_api_v22_20261009T044757.log",
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4",
+      "bytes": 181
+    },
+    {
+      "path": "automation/logs/stateflow_api_v22_retry_20261009T044843.log",
+      "sha256": "0a6b86a4ddb865e63f4f5dcb9e0349fb6161f04a5cd4ec91ee3471d935a6412a",
+      "bytes": 4823
+    },
+    {
+      "path": "automation/logs/stateflow_archive_review_v22_20261009T025711_894696Z.log",
+      "sha256": "fa4704637831e79e70f2a6c39598f2e0d5f49c19b39f731efffe5e47d44573b8",
+      "bytes": 274
+    },
+    {
+      "path": "automation/logs/stateflow_archive_review_v22_20261009T025811_396033Z.log",
+      "sha256": "088ee75efc4e4ad39ad25167e7c1b13989ed9e2cd444f3b4da638c696dfee11c",
+      "bytes": 274
+    },
+    {
+      "path": "automation/logs/stateflow_build_v22_20261009T045117.log",
+      "sha256": "5f9d40d6c02b6d17a5badcd54be6a522cf8199826211279d9ff9a434b69a4abf",
+      "bytes": 346
+    },
+    {
+      "path": "automation/logs/stateflow_build_v22_retry_20261009T045320.log",
+      "sha256": "2fb22ff062e7bc053894ed70dc11c112d059ab5e7c0e2be48e13398bbfe849d8",
+      "bytes": 123
+    },
+    {
+      "path": "automation/logs/stateflow_independent_qa_v22_20261009T025632639Z.log",
+      "sha256": "9ad72b91824bb43512b1349c816d8206a722b50cfa429f02cc8e72665c1ee665",
+      "bytes": 3589
+    },
+    {
+      "path": "automation/logs/stateflow_independent_qa_v22_20261009T025842705Z.log",
+      "sha256": "2040fd9df1b4884cb5f6d2906f1cce65eab2fae7d4a62bea38940e60ccd11a4f",
+      "bytes": 3589
+    },
+    {
+      "path": "automation/logs/stateflow_independent_structure_v22_20261009T025817687Z.log",
+      "sha256": "6a853bb888f6c15a9988428f0436bd89e7050a8455fca71a2f40b7f4939b57a1",
+      "bytes": 441
+    },
+    {
+      "path": "automation/logs/stateflow_oracle_selftest_v22_20261009T025210752Z.log",
+      "sha256": "745711561acd83d1b58a4c303f24b3f8d9bcf28da2c778a50ed52741c2504d05",
+      "bytes": 633
+    },
+    {
+      "path": "automation/logs/stateflow_oracle_selftest_v22_20261009T025224266Z.log",
+      "sha256": "dd2e948f0f876560b39807e6212300f02bee67c2b73a8c30180cf43dc03af601",
+      "bytes": 801
+    },
+    {
+      "path": "automation/logs/stateflow_oracle_selftest_v22_20261009T025307766Z.log",
+      "sha256": "c093d0b5f64aaca58d6c19e49114e97f92db479a53651182bc1336e3980af66a",
+      "bytes": 712
+    },
+    {
+      "path": "automation/logs/stateflow_oracle_selftest_v22_20261009T025503519Z.log",
+      "sha256": "9e8332b2cbc80a11f43558c4e05f0ee1b52a9848b028ee6471c57bd65426c47e",
+      "bytes": 712
+    },
+    {
+      "path": "MASTER_STAGEBOARD_stateflow_v22.md",
+      "sha256": "41d2e3e9bf0fe4ec637f3062a91eac364616bc63377675f42fb4c44610242916",
+      "bytes": 2157
+    },
+    {
+      "path": "matlab/simulink/build_dispatch_stateflow_v22.m",
+      "sha256": "06c09fd7d41c72d6e1a4675421f59a002a92c074b49e48ad60b2c78a6a1a9982",
+      "bytes": 6005
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+      "sha256": "e1d3c1fe69597cd35a8c93a0706bcf81e7ffe8ed7edb0f9e05d9c359afc4f909",
+      "bytes": 107363
+    },
+    {
+      "path": "matlab/simulink/dchr_stateflow_hp_v22.m",
+      "sha256": "08931800592a820c65a07eb6c6f15ea33765e36ba4d10600c8f62c1408c0506f",
+      "bytes": 1418
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_acceptance_v22.m",
+      "sha256": "af8dcaf7f27aefc8c30a3c433f938e375f58378fa8fc57033ebc9d2c54dc1b17",
+      "bytes": 13678
+    },
+    {
+      "path": "matlab/simulink/stateflow_allocate_v22.m",
+      "sha256": "d61e9a44241c9efd8c793e6777612946cbd3b1bbeaef699ba58da1e25d966565",
+      "bytes": 964
+    },
+    {
+      "path": "matlab/simulink/stateflow_choose_mode_v22.m",
+      "sha256": "dd6c8ec93f7c0d112130b1122d1f48646ce84e52b51e019d4a5fed496f7a2da1",
+      "bytes": 620
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/acceptance_summary_v22.json",
+      "sha256": "34720a50ecb3cf3b6b2a491e3c2432353cb7f3b4ce9fc9dc4cf6ab6b3d6df439",
+      "bytes": 625
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/charge_then_shortage_simulation.mat",
+      "sha256": "3d52da3051379b1c5e41ead044a9ca1e9ad240bc961e76a73c73fe485e8260c1",
+      "bytes": 10716
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/empty_then_recover_simulation.mat",
+      "sha256": "7ffc6acb231b429240075629eb67c322cbe2b7f8ebadf7bc588ad54298ce2652",
+      "bytes": 6246
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/full_and_cutoff_simulation.mat",
+      "sha256": "e0110d5b6b6229d9caf5328bc172b3f76c5126ad6544257a290cbc9141d13af1",
+      "bytes": 6300
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/model_structure_v22.json",
+      "sha256": "82da2323e3599ee002c6494705de44626682520eef27b92b3e0c20878dc09f8b",
+      "bytes": 2755
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_charge_room_simulation.mat",
+      "sha256": "d4caadbac83c594c1c9d99ac8071a04c51890e1fa5af8a5c51c3ad5a81be12e3",
+      "bytes": 6061
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_discharge_emptying_simulation.mat",
+      "sha256": "6e86529a05dd0dd8fe54955f05a564baf25e986dd0f87212cfaf8d8b1fb91312",
+      "bytes": 5984
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_full_store_simulation.mat",
+      "sha256": "226e9e6ce4b38bd70a97d2c6f83b26ae19ad369e1a5123687f80085889e3dc52",
+      "bytes": 5995
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_hp_capacity_simulation.mat",
+      "sha256": "b9ab8ac7f8df160baf759c3054dd73149fc61b6992bbb1a528b46df9ecfc96e3",
+      "bytes": 5990
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_loss_boundary_simulation.mat",
+      "sha256": "f4305da74c46615aed1a1b83f9e66fe150a9db582e3e1cdd46200e9ff9747a5c",
+      "bytes": 6005
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_mode_sequence_simulation.mat",
+      "sha256": "18c470afd7e5adfccfbbfd3f6a025537a021fd906ab87e3a1ce271317b62613e",
+      "bytes": 6579
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/qa_zero_store_simulation.mat",
+      "sha256": "7bc2bc81d323af01924947bbcaabdf9101999d99d77ad5f93f98b64abac0f0c9",
+      "bytes": 6033
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/stateflow_assertions_v22.csv",
+      "sha256": "a577efa8c64881b87457b92773191b1fbc42cf111d140197c04228c072f6961f",
+      "bytes": 52952
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/stateflow_independent_qa_v22_20261009T025632639Z.json",
+      "sha256": "9ad72b91824bb43512b1349c816d8206a722b50cfa429f02cc8e72665c1ee665",
+      "bytes": 3589
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/stateflow_independent_structure_v22_20261009T025817687Z.json",
+      "sha256": "7f8c02b6f3f1232afe8107f7868483139d5a29c59e1190600e6dea69e59b429f",
+      "bytes": 6346
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025506909Z/stateflow_trace_v22.csv",
+      "sha256": "c2af116fdf91f3df0aa6ef57d772a129d379b1fadbc6775f5f9404d80a281632",
+      "bytes": 8203
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/acceptance_summary_v22.json",
+      "sha256": "3e0747e73def44bcfca30e491f3a7a6cd188fa47fe1faea228498d39c90b5a2d",
+      "bytes": 625
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/charge_then_shortage_simulation.mat",
+      "sha256": "94bb6cbc17c74ab82ba3c175bfbb54392aa2a81d4a8cb5e15abf9493d7a85a01",
+      "bytes": 10717
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/empty_then_recover_simulation.mat",
+      "sha256": "098965fc3f346770e73103931d8fec088f960df0d39f84720af38f0dfff04073",
+      "bytes": 6246
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/full_and_cutoff_simulation.mat",
+      "sha256": "c13425d7b2be4ac748f1244298d772dab40c91e6b75a6d7b92d73150444e08d4",
+      "bytes": 6303
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/model_structure_v22.json",
+      "sha256": "7d3cd5961b59f691af63c9d86446a1351a3fc038a2645e02ccf15832a1c19c3f",
+      "bytes": 4457
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_charge_room_simulation.mat",
+      "sha256": "5d755a837347d415ffd3ba8d5d1b2735accbd3ea3d18f3e03e9c432c56438945",
+      "bytes": 6060
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_discharge_emptying_simulation.mat",
+      "sha256": "626a312f2204ec98ae34cf9d5c844a8b86023d56097a449b0b91b96548a72651",
+      "bytes": 5987
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_full_store_simulation.mat",
+      "sha256": "4e0c9e8abd1e42c4e970aa8b7cf62062d374d21371bdf7a8c5c3bb0ccb770c10",
+      "bytes": 5995
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_hp_capacity_simulation.mat",
+      "sha256": "0cccfef5e98a46cd5966e28fe327a555de6f3f064f63ae4cf7a7a81bb9ecef94",
+      "bytes": 5986
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_loss_boundary_simulation.mat",
+      "sha256": "3897ec8abda7df38a0707988b45e0d3e24de9fe5e82d5261e93576437cd1c497",
+      "bytes": 6010
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_mode_sequence_simulation.mat",
+      "sha256": "e5c6596264c77ee855ccaa887b1ae0e92c76d926bc8986d4a9d293e80da5da5f",
+      "bytes": 6576
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/qa_zero_store_simulation.mat",
+      "sha256": "3b6aa8a671539cce652cd6a46060197b31718d36042c705029619e1ca6788cdb",
+      "bytes": 6032
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/stateflow_assertions_v22.csv",
+      "sha256": "d2c00b056cd7ac4322ff79cef86dc78c4156c98f7fd9637dd83cf3b6319464e3",
+      "bytes": 53195
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/stateflow_independent_qa_v22.json",
+      "sha256": "2040fd9df1b4884cb5f6d2906f1cce65eab2fae7d4a62bea38940e60ccd11a4f",
+      "bytes": 3589
+    },
+    {
+      "path": "results/stateflow_v22_20261009T025644993Z/stateflow_trace_v22.csv",
+      "sha256": "c2af116fdf91f3df0aa6ef57d772a129d379b1fadbc6775f5f9404d80a281632",
+      "bytes": 8203
+    },
+    {
+      "path": "STATUS_stateflow_v22.json",
+      "sha256": "6cd4748d53df72d8cda9c0a6f881c89a657ce1d3ed06f067ccdb1a277b65d66f",
+      "bytes": 1928
+    }
+  ]
+}

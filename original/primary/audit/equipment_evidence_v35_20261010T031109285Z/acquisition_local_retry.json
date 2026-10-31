@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-10T03:12:00.368562+00:00",
+  "sources": [
+    {
+      "file": "Copeland_AE4_1431_R2.pdf",
+      "url": "https://webapps.copeland.com/online-product-information/Publication/LaunchPDF?Index=AEB&PDF=1431",
+      "resolved_url": "https://webapps.copeland.com/online-product-information/Publication/LaunchPDF?Index=AEB&PDF=1431",
+      "bytes": 1075250,
+      "sha256": "754ec5ea9d6dc2b88ca05e0f18dc81c8b5f51539bcbd91ff1af9930c6194b92d",
+      "status": "DOWNLOADED"
+    },
+    {
+      "file": "EnergyPlus_26_2_plant_loop_heat_pumps.html",
+      "url": "https://energyplus.readthedocs.io/en/v26.2.0/guides/engineering-reference/16.6-plant-loop-heat-pumps.html",
+      "resolved_url": "https://energyplus.readthedocs.io/en/v26.2.0/guides/engineering-reference/16.6-plant-loop-heat-pumps.html",
+      "bytes": 260483,
+      "sha256": "389ada9df67e09d970dc5e802f06a1d02057f6825c1d9d3752b95f87a568f856",
+      "status": "DOWNLOADED"
+    }
+  ]
+}

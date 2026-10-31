@@ -1,0 +1,1465 @@
+{
+  "timestamp_utc": "20261009T212412_569508Z",
+  "passed": 364,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "RK4_temperature_loss_0",
+      "passed": true
+    },
+    {
+      "name": "port_closure_0",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_0",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_1",
+      "passed": true
+    },
+    {
+      "name": "port_closure_1",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_1",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_2",
+      "passed": true
+    },
+    {
+      "name": "port_closure_2",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_2",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_3",
+      "passed": true
+    },
+    {
+      "name": "port_closure_3",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_3",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_4",
+      "passed": true
+    },
+    {
+      "name": "port_closure_4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_4",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_5",
+      "passed": true
+    },
+    {
+      "name": "port_closure_5",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_5",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_6",
+      "passed": true
+    },
+    {
+      "name": "port_closure_6",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_6",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_7",
+      "passed": true
+    },
+    {
+      "name": "port_closure_7",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_7",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_8",
+      "passed": true
+    },
+    {
+      "name": "port_closure_8",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_8",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_9",
+      "passed": true
+    },
+    {
+      "name": "port_closure_9",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_9",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_10",
+      "passed": true
+    },
+    {
+      "name": "port_closure_10",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_10",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_11",
+      "passed": true
+    },
+    {
+      "name": "port_closure_11",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_11",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_12",
+      "passed": true
+    },
+    {
+      "name": "port_closure_12",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_12",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_13",
+      "passed": true
+    },
+    {
+      "name": "port_closure_13",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_13",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_14",
+      "passed": true
+    },
+    {
+      "name": "port_closure_14",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_14",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_15",
+      "passed": true
+    },
+    {
+      "name": "port_closure_15",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_15",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_16",
+      "passed": true
+    },
+    {
+      "name": "port_closure_16",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_16",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_17",
+      "passed": true
+    },
+    {
+      "name": "port_closure_17",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_17",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_18",
+      "passed": true
+    },
+    {
+      "name": "port_closure_18",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_18",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_19",
+      "passed": true
+    },
+    {
+      "name": "port_closure_19",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_19",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_20",
+      "passed": true
+    },
+    {
+      "name": "port_closure_20",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_20",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_21",
+      "passed": true
+    },
+    {
+      "name": "port_closure_21",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_21",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_22",
+      "passed": true
+    },
+    {
+      "name": "port_closure_22",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_22",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_23",
+      "passed": true
+    },
+    {
+      "name": "port_closure_23",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_23",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_24",
+      "passed": true
+    },
+    {
+      "name": "port_closure_24",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_24",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_25",
+      "passed": true
+    },
+    {
+      "name": "port_closure_25",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_25",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_26",
+      "passed": true
+    },
+    {
+      "name": "port_closure_26",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_26",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_27",
+      "passed": true
+    },
+    {
+      "name": "port_closure_27",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_27",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_28",
+      "passed": true
+    },
+    {
+      "name": "port_closure_28",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_28",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_29",
+      "passed": true
+    },
+    {
+      "name": "port_closure_29",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_29",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_30",
+      "passed": true
+    },
+    {
+      "name": "port_closure_30",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_30",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_31",
+      "passed": true
+    },
+    {
+      "name": "port_closure_31",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_31",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_32",
+      "passed": true
+    },
+    {
+      "name": "port_closure_32",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_32",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_33",
+      "passed": true
+    },
+    {
+      "name": "port_closure_33",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_33",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_34",
+      "passed": true
+    },
+    {
+      "name": "port_closure_34",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_34",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_35",
+      "passed": true
+    },
+    {
+      "name": "port_closure_35",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_35",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_36",
+      "passed": true
+    },
+    {
+      "name": "port_closure_36",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_36",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_37",
+      "passed": true
+    },
+    {
+      "name": "port_closure_37",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_37",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_38",
+      "passed": true
+    },
+    {
+      "name": "port_closure_38",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_38",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_39",
+      "passed": true
+    },
+    {
+      "name": "port_closure_39",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_39",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_40",
+      "passed": true
+    },
+    {
+      "name": "port_closure_40",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_40",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_41",
+      "passed": true
+    },
+    {
+      "name": "port_closure_41",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_41",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_42",
+      "passed": true
+    },
+    {
+      "name": "port_closure_42",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_42",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_43",
+      "passed": true
+    },
+    {
+      "name": "port_closure_43",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_43",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_44",
+      "passed": true
+    },
+    {
+      "name": "port_closure_44",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_44",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_45",
+      "passed": true
+    },
+    {
+      "name": "port_closure_45",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_45",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_46",
+      "passed": true
+    },
+    {
+      "name": "port_closure_46",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_46",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_47",
+      "passed": true
+    },
+    {
+      "name": "port_closure_47",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_47",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_48",
+      "passed": true
+    },
+    {
+      "name": "port_closure_48",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_48",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_49",
+      "passed": true
+    },
+    {
+      "name": "port_closure_49",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_49",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_50",
+      "passed": true
+    },
+    {
+      "name": "port_closure_50",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_50",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_51",
+      "passed": true
+    },
+    {
+      "name": "port_closure_51",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_51",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_52",
+      "passed": true
+    },
+    {
+      "name": "port_closure_52",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_52",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_53",
+      "passed": true
+    },
+    {
+      "name": "port_closure_53",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_53",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_54",
+      "passed": true
+    },
+    {
+      "name": "port_closure_54",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_54",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_55",
+      "passed": true
+    },
+    {
+      "name": "port_closure_55",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_55",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_56",
+      "passed": true
+    },
+    {
+      "name": "port_closure_56",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_56",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_57",
+      "passed": true
+    },
+    {
+      "name": "port_closure_57",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_57",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_58",
+      "passed": true
+    },
+    {
+      "name": "port_closure_58",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_58",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_59",
+      "passed": true
+    },
+    {
+      "name": "port_closure_59",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_59",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_60",
+      "passed": true
+    },
+    {
+      "name": "port_closure_60",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_60",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_61",
+      "passed": true
+    },
+    {
+      "name": "port_closure_61",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_61",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_62",
+      "passed": true
+    },
+    {
+      "name": "port_closure_62",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_62",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_63",
+      "passed": true
+    },
+    {
+      "name": "port_closure_63",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_63",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_64",
+      "passed": true
+    },
+    {
+      "name": "port_closure_64",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_64",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_65",
+      "passed": true
+    },
+    {
+      "name": "port_closure_65",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_65",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_66",
+      "passed": true
+    },
+    {
+      "name": "port_closure_66",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_66",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_67",
+      "passed": true
+    },
+    {
+      "name": "port_closure_67",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_67",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_68",
+      "passed": true
+    },
+    {
+      "name": "port_closure_68",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_68",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_69",
+      "passed": true
+    },
+    {
+      "name": "port_closure_69",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_69",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_70",
+      "passed": true
+    },
+    {
+      "name": "port_closure_70",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_70",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_71",
+      "passed": true
+    },
+    {
+      "name": "port_closure_71",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_71",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_72",
+      "passed": true
+    },
+    {
+      "name": "port_closure_72",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_72",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_73",
+      "passed": true
+    },
+    {
+      "name": "port_closure_73",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_73",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_74",
+      "passed": true
+    },
+    {
+      "name": "port_closure_74",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_74",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_75",
+      "passed": true
+    },
+    {
+      "name": "port_closure_75",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_75",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_76",
+      "passed": true
+    },
+    {
+      "name": "port_closure_76",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_76",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_77",
+      "passed": true
+    },
+    {
+      "name": "port_closure_77",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_77",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_78",
+      "passed": true
+    },
+    {
+      "name": "port_closure_78",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_78",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_79",
+      "passed": true
+    },
+    {
+      "name": "port_closure_79",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_79",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_80",
+      "passed": true
+    },
+    {
+      "name": "port_closure_80",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_80",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_81",
+      "passed": true
+    },
+    {
+      "name": "port_closure_81",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_81",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_82",
+      "passed": true
+    },
+    {
+      "name": "port_closure_82",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_82",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_83",
+      "passed": true
+    },
+    {
+      "name": "port_closure_83",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_83",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_84",
+      "passed": true
+    },
+    {
+      "name": "port_closure_84",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_84",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_85",
+      "passed": true
+    },
+    {
+      "name": "port_closure_85",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_85",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_86",
+      "passed": true
+    },
+    {
+      "name": "port_closure_86",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_86",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_87",
+      "passed": true
+    },
+    {
+      "name": "port_closure_87",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_87",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_88",
+      "passed": true
+    },
+    {
+      "name": "port_closure_88",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_88",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_89",
+      "passed": true
+    },
+    {
+      "name": "port_closure_89",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_89",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_90",
+      "passed": true
+    },
+    {
+      "name": "port_closure_90",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_90",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_91",
+      "passed": true
+    },
+    {
+      "name": "port_closure_91",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_91",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_92",
+      "passed": true
+    },
+    {
+      "name": "port_closure_92",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_92",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_93",
+      "passed": true
+    },
+    {
+      "name": "port_closure_93",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_93",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_94",
+      "passed": true
+    },
+    {
+      "name": "port_closure_94",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_94",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_95",
+      "passed": true
+    },
+    {
+      "name": "port_closure_95",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_95",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_96",
+      "passed": true
+    },
+    {
+      "name": "port_closure_96",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_96",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_97",
+      "passed": true
+    },
+    {
+      "name": "port_closure_97",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_97",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_98",
+      "passed": true
+    },
+    {
+      "name": "port_closure_98",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_98",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_99",
+      "passed": true
+    },
+    {
+      "name": "port_closure_99",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_99",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_100",
+      "passed": true
+    },
+    {
+      "name": "port_closure_100",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_100",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_101",
+      "passed": true
+    },
+    {
+      "name": "port_closure_101",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_101",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_102",
+      "passed": true
+    },
+    {
+      "name": "port_closure_102",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_102",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_103",
+      "passed": true
+    },
+    {
+      "name": "port_closure_103",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_103",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_104",
+      "passed": true
+    },
+    {
+      "name": "port_closure_104",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_104",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_105",
+      "passed": true
+    },
+    {
+      "name": "port_closure_105",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_105",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_106",
+      "passed": true
+    },
+    {
+      "name": "port_closure_106",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_106",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_107",
+      "passed": true
+    },
+    {
+      "name": "port_closure_107",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_107",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_108",
+      "passed": true
+    },
+    {
+      "name": "port_closure_108",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_108",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_109",
+      "passed": true
+    },
+    {
+      "name": "port_closure_109",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_109",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_110",
+      "passed": true
+    },
+    {
+      "name": "port_closure_110",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_110",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_111",
+      "passed": true
+    },
+    {
+      "name": "port_closure_111",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_111",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_112",
+      "passed": true
+    },
+    {
+      "name": "port_closure_112",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_112",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_113",
+      "passed": true
+    },
+    {
+      "name": "port_closure_113",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_113",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_114",
+      "passed": true
+    },
+    {
+      "name": "port_closure_114",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_114",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_115",
+      "passed": true
+    },
+    {
+      "name": "port_closure_115",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_115",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_116",
+      "passed": true
+    },
+    {
+      "name": "port_closure_116",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_116",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_117",
+      "passed": true
+    },
+    {
+      "name": "port_closure_117",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_117",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_118",
+      "passed": true
+    },
+    {
+      "name": "port_closure_118",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_118",
+      "passed": true
+    },
+    {
+      "name": "RK4_temperature_loss_119",
+      "passed": true
+    },
+    {
+      "name": "port_closure_119",
+      "passed": true
+    },
+    {
+      "name": "cutoff_capacity_119",
+      "passed": true
+    },
+    {
+      "name": "ambient_offset_counterexample",
+      "passed": true
+    },
+    {
+      "name": "small_rate_coefficients",
+      "passed": true
+    },
+    {
+      "name": "constant_power_semigroup_1.8",
+      "passed": true
+    },
+    {
+      "name": "constant_power_semigroup_-0.625",
+      "passed": true
+    }
+  ],
+  "qualifier": "Reduced-equation QA; all scenario data assumed, no measured physical validation.",
+  "oracle_sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+}

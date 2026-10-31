@@ -1,0 +1,8 @@
+{
+  "suite": "analytical_preflight_v06",
+  "tests_run": 9,
+  "failures": [],
+  "errors": [],
+  "success": true,
+  "qualifier": "Analytical identity tests only; not article replication or MATLAB/Simulink validation."
+}

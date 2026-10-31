@@ -1,0 +1,119 @@
+{
+  "version": "0.29",
+  "review_type": "independent_static_saved_model_and_hand_arithmetic_preflight",
+  "timestamp_utc": "2026-10-09T15:46:43.246068+00:00",
+  "actual_model_sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d",
+  "checks": 20,
+  "passed": 20,
+  "failed": 0,
+  "assertions": [
+    {
+      "name": "saved_model_fixed_preexisting_hash",
+      "passed": true,
+      "detail": "Reads actual saved ZIP bytes; does not execute model."
+    },
+    {
+      "name": "accepted_dispatch_trace_only_from_gate",
+      "passed": true,
+      "detail": "No direct operational chart bypass to accepted trace."
+    },
+    {
+      "name": "TES_feedback_selector_only_from_gate",
+      "passed": true,
+      "detail": "Rejected chart output cannot normally enter TES memory."
+    },
+    {
+      "name": "TES_memory_only_from_selector",
+      "passed": true,
+      "detail": "Feedback uses selected accepted energy."
+    },
+    {
+      "name": "operational_chart_drives_gate",
+      "passed": true,
+      "detail": "Monitor receives actual chart output."
+    },
+    {
+      "name": "input_uses_discrete_zero_order_hold",
+      "passed": true,
+      "detail": "Supports first sampled invalid time rather than interpolation."
+    },
+    {
+      "name": "saved_embedded_stateflow_allocate_v28.m",
+      "passed": true,
+      "detail": "Decoded saved XML script equals production source; actual ZIP inspection independent of MATLAB harness."
+    },
+    {
+      "name": "saved_embedded_stateflow_choose_mode_v28.m",
+      "passed": true,
+      "detail": "Decoded saved XML script equals production source; actual ZIP inspection independent of MATLAB harness."
+    },
+    {
+      "name": "saved_embedded_stateflow_contract_gate_v28.m",
+      "passed": true,
+      "detail": "Decoded saved XML script equals production source; actual ZIP inspection independent of MATLAB harness."
+    },
+    {
+      "name": "saved_adapter_calls_v28_extrinsic",
+      "passed": true,
+      "detail": "Host MATLAB adapter normal-mode scope; no standalone code generation inference."
+    },
+    {
+      "name": "saved_operational_state_IDLE",
+      "passed": true,
+      "detail": "Static existence; dynamic mode execution remains inherited v28 acceptance, not a new v29 six-mode test."
+    },
+    {
+      "name": "saved_operational_state_HEAT_RECOVERY",
+      "passed": true,
+      "detail": "Static existence; dynamic mode execution remains inherited v28 acceptance, not a new v29 six-mode test."
+    },
+    {
+      "name": "saved_operational_state_STORAGE_CHARGE",
+      "passed": true,
+      "detail": "Static existence; dynamic mode execution remains inherited v28 acceptance, not a new v29 six-mode test."
+    },
+    {
+      "name": "saved_operational_state_STORAGE_DISCHARGE",
+      "passed": true,
+      "detail": "Static existence; dynamic mode execution remains inherited v28 acceptance, not a new v29 six-mode test."
+    },
+    {
+      "name": "saved_operational_state_BACKUP",
+      "passed": true,
+      "detail": "Static existence; dynamic mode execution remains inherited v28 acceptance, not a new v29 six-mode test."
+    },
+    {
+      "name": "saved_operational_state_UNMET_DEMAND",
+      "passed": true,
+      "detail": "Static existence; dynamic mode execution remains inherited v28 acceptance, not a new v29 six-mode test."
+    },
+    {
+      "name": "hand_first_tick_energy",
+      "passed": true,
+      "detail": "Fixed-COP=4, source=6 MW, demand=5 MW, charge=3 MW, eta=.9, initial energy=1 MWh, dt=1 h."
+    },
+    {
+      "name": "hand_geometric_feedback_identity",
+      "passed": true,
+      "detail": "Closed form and recurrence agree independently for first two ticks."
+    },
+    {
+      "name": "legacy_linear_oracle_detectably_wrong",
+      "passed": true,
+      "detail": "Legacy linear retention differs by roughly 4.983e-5 MWh already at first tick; new oracle must use exponential."
+    },
+    {
+      "name": "sampling_example_between_ticks",
+      "passed": true,
+      "detail": "Off-grid timestamp .625 h is first sampled at 1 h with dt=.5 h."
+    }
+  ],
+  "dynamic_model_execution_this_review": false,
+  "primary_text_verified_this_review": false,
+  "physical_validation": false,
+  "limitations": [
+    "Static graph and XML prove structure, not dynamic rejection execution.",
+    "Hand arithmetic verifies only the declared fixed-COP loss-first scenario, not a physical tank.",
+    "Monitor mutation evidence must establish Execution phase and time-zero rejection; draft text-only checks were reported to owners."
+  ]
+}

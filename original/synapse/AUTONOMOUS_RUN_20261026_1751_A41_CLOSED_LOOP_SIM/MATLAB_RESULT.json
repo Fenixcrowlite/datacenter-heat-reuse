@@ -1,0 +1,80 @@
+{
+  "status": "STATEFLOW_CLOSED_LOOP_SIM_PASS",
+  "physical_release": false,
+  "samples_per_scenario": 672,
+  "scenarios": {
+    "both": {
+      "samples": 672,
+      "max_abs_diff": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_temperature_C": 30,
+      "critical_steps": 0,
+      "parity": "PASS"
+    },
+    "main_only": {
+      "samples": 672,
+      "max_abs_diff": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_temperature_C": 30,
+      "critical_steps": 0,
+      "parity": "PASS"
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_abs_diff": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_temperature_C": 63.121549659375006,
+      "critical_steps": 8,
+      "parity": "PASS"
+    },
+    "neither": {
+      "samples": 672,
+      "max_abs_diff": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "max_temperature_C": 90.797582373320765,
+      "critical_steps": 294,
+      "parity": "PASS"
+    }
+  },
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1751_A41_CLOSED_LOOP_SIM\\DCHR_A41_Closed_Loop.slx"
+}

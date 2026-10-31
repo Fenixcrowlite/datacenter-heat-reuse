@@ -1,0 +1,18 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_2000_DCHR_C40_NATIVE_EXPORT_HARNESS",
+  "manifest_sha256": "1832689e4abb708789aba400fa401546d3e66c8fdb001f93fb3968479663c820",
+  "matlab_source_sha256": "7ec9e95e54302ec7a1734613c75f4a19d56015c492f38e000fb1ba51bb5119bb",
+  "native_matlab_executed": false,
+  "native_parity_verified": false,
+  "next_step": "When STOP/ownership clear and free RAM >=5 GiB, execute isolated MATLAB R2026a c40_export_warm45_v2; then run c40_compare_native.py against native CSV and validate 8760x22 fields before any Stateflow v85 or physical parity claim.",
+  "physical_validation": false,
+  "primary_source_signoffs": 0,
+  "qa": "16/16 static contract checks, 6/6 comparator self-tests PASS",
+  "resource_gate_free_ram_gib": 1.891,
+  "resource_gate_min_gib": 5.0,
+  "scope": "DCHR_C40_NATIVE_EXPORT_HARNESS",
+  "self_identity_comparisons": 192720,
+  "shared_csv_modified": false,
+  "source_files_modified": false,
+  "stateflow_parity_verified": false
+}

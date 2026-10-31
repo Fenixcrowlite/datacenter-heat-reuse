@@ -1,0 +1,103 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.14",
+  "updated_utc": "2026-10-08T21:55:20.147043+00:00",
+  "kind": "additive_component_checkpoint_status",
+  "inherits_status": "STATUS_v12.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v12.md",
+  "milestone": "M3_PARTIAL_ACTUAL_MATLAB_COMPONENT_REFERENCE_GATE",
+  "delivered": "Strict heat-pump domain and source-constrained actual part-load output",
+  "evidence": [
+    "audit/Heat_pump_domain_and_part_load_v14.md",
+    "audit/heat_pump_reference_tests_v14_20261008T215215_727651Z.json",
+    "audit/heat_pump_vectors_v14_20261008T215215_727651Z.csv",
+    "results/hp_contract_v14_20261008_235235/matlab_heat_pump_contract_v14.json",
+    "audit/Marcinichen_acquisition_v14.md",
+    "audit/Marcinichen_acquisition_v14_20261008T214932788906Z.json",
+    "audit/Marcinichen_acquisition_v14_tests_20261008T214932831440Z.json",
+    "audit/heat_pump_evidence_manifest_v14_20261008T215520_147043Z.json"
+  ],
+  "tests": {
+    "independent_python": {
+      "passed": 16,
+      "failed": 0,
+      "errors": 0
+    },
+    "matlab_runtime": {
+      "passed": 31,
+      "failed": 0,
+      "vectors": 518,
+      "version": "26.1.0.3346908 (R2026a) Update 5",
+      "max_absolute_residual": 7.105427357601002e-15
+    },
+    "acquisition_gate_synthetic_only": {
+      "passed": 7,
+      "failed": 0
+    },
+    "primary_paper_replication": "NOT_PERFORMED",
+    "annual_dispatch_v14": "NOT_INTEGRATED",
+    "simulink_v14": "NOT_BUILT_OR_EXECUTED",
+    "stateflow_v14": "NOT_BUILT_OR_EXECUTED_AVAILABILITY_NOT_CHECKED"
+  },
+  "attempts_retained": [
+    {
+      "log": "automation/logs/matlab_hp_v14_smoke_20261008_235035.log",
+      "result": "FAIL_STARTUP_SANDBOX_FILESYSTEM_INCONSISTENCY"
+    },
+    {
+      "log": "automation/logs/matlab_hp_v14_contract_20261008_235131.log",
+      "result": "FAIL_TEST_HARNESS_STRUCT_INITIALIZATION_FIXED"
+    },
+    {
+      "log": "automation/logs/matlab_hp_v14_contract_20261008_235235.log",
+      "result": "PASS_31_OF_31"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F14-HP-01",
+      "state": "FIXED_IN_NEW_COMPONENT_ONLY",
+      "topic": "Invalid or sub-kelvin lift clamping"
+    },
+    {
+      "id": "F14-HP-02",
+      "state": "FIXED_IN_NEW_COMPONENT_ONLY",
+      "topic": "Upward COP floor can violate Carnot"
+    },
+    {
+      "id": "F14-HP-03",
+      "state": "RESOLVED_IN_NEW_COMPONENT_ONLY",
+      "topic": "Nominal versus actual source-limited output"
+    },
+    {
+      "id": "F14-ROUNDING",
+      "state": "FIXED_AND_REGRESSION_CHECKED",
+      "topic": "Exact COP cutoff rounded by one unit"
+    }
+  ],
+  "prior_v13_evidence": {
+    "newly_executed_this_run": false,
+    "log": "automation/logs/matlab_20261008_234306.log",
+    "observed_passed": 4,
+    "note": "v13 finite-boiler wrapper exists; still calls unchanged legacy HP and storage components."
+  },
+  "research_status": {
+    "full_primary_signoffs": 0,
+    "count_source": "inherited STATUS_v12.json",
+    "marcinichen": "FULL_ORIGINAL_NOT_ACQUIRED",
+    "local_acquisition": "TRANSPORT_BLOCKED_WINERROR_10013",
+    "web_epfl_pdf": "HTTP_429",
+    "web_publisher": "HTTP_403",
+    "metadata_abstract_is_primary_equation_evidence": false
+  },
+  "limitations": [
+    "Scenario Carnot fraction, COP thresholds, reservoir proxies and linear part-load penalty lack calibration",
+    "No cycling, direct-recovery selection, minimum compressor loading, equipment dynamics or auxiliary electricity",
+    "Legacy annual models retain old HP behavior until separately versioned integration",
+    "No Simulink/Stateflow execution or availability claim in this run"
+  ],
+  "next": [
+    "Audit local Sintong original Eq.15-16 IASE/free-cooling flow-ratio domain and Park [38] provenance; derive passive temperature bounds and record page-level evidence. Do not repeat the already corrected v07 Eq.17/24 transcription.",
+    "Integrate heat_pump_step_v14 into a separate finite-boiler/TES/unmet dispatch; compare a deterministic multi-step trace to independent Python before a new Simulink model."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "manifest_files": 29,
+  "bad_hashes": [],
+  "task_state": [
+    "review",
+    "planned",
+    null
+  ],
+  "events": [
+    [
+      1230
+    ]
+  ],
+  "slx_zip_ok": true,
+  "final_handoff_sha256": "47ca8b134cbb72e1c7e202a6b73717d690dc4580c54fe36ae0887d75d98d675c"
+}

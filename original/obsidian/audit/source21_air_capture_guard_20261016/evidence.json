@@ -1,0 +1,36 @@
+{
+  "doi": "10.1016/j.rser.2013.12.007",
+  "printed_page": 626,
+  "pdf_page_one_based": 5,
+  "pdf_sha256": "4aaffa92f30b0d5aa9c7a7e58e5ff8cad3eb05c9f8969b079d6127aab1600a40",
+  "source_temperature_ranges_C": {
+    "rack_exhaust_before_mixing": [
+      35,
+      45
+    ],
+    "crac_return_air": [
+      30,
+      40
+    ],
+    "chiller_return_water": [
+      16,
+      18
+    ]
+  },
+  "source_temperature_midpoints_C": {
+    "rack_exhaust_before_mixing": 40.0,
+    "crac_return_air": 35.0,
+    "chiller_return_water": 17.0
+  },
+  "hypothetical_dh_sink_C": 70.0,
+  "minimum_temperature_lift_from_reported_max_C": {
+    "rack_exhaust_before_mixing": 25.0,
+    "crac_return_air": 30.0,
+    "chiller_return_water": 52.0
+  },
+  "all_three_need_uplift_at_hypothetical_sink": true,
+  "not_a_measured_current_facility": true,
+  "not_a_cop_or_energy_efficiency_estimate": true,
+  "full_primary_source_signoff": false,
+  "physical_model_validation": false
+}

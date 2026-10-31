@@ -1,0 +1,33 @@
+﻿C96 SELFTEST 16/16 PASS
+{
+  "scenarios": 26,
+  "rows": 227760,
+  "hourly_sha256": "12adf23a7d8b4c9096ed0a091660e6406ac6ff8088955cb90da764539deb2b88",
+  "summary_sha256": "e0cc2cf68bb6e38a627d8b22b00cadf9909bfbb0d54a56d3c9069f9bf982370f",
+  "anchors": [
+    {
+      "scenario": "T35.0_F0.5_UA2.0_COP2.2_B0.0",
+      "min_C": 27.796,
+      "low_hours": 0,
+      "hp_MWh": 200.18,
+      "backup_MWh": 0.0,
+      "pump_MWh": 0.75
+    },
+    {
+      "scenario": "T50.0_F2.0_UA10.0_COP4.0_B0.0",
+      "min_C": 27.796,
+      "low_hours": 0,
+      "hp_MWh": 201.65,
+      "backup_MWh": 0.0,
+      "pump_MWh": 0.28
+    },
+    {
+      "scenario": "T35.0_F0.5_UA2.0_COP2.2_B0.05",
+      "min_C": 27.796,
+      "low_hours": 0,
+      "hp_MWh": 200.18,
+      "backup_MWh": 0.0,
+      "pump_MWh": 0.75
+    }
+  ]
+}

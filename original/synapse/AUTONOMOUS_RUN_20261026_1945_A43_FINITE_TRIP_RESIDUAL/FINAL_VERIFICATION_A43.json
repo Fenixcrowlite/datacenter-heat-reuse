@@ -1,0 +1,17 @@
+{
+  "status": "A43_FINAL_QA_PASS",
+  "at": "2026-10-26T19:56:44.695524+01:00",
+  "task": "scc-3d9d172beb6e1b",
+  "events": [
+    1238,
+    1239
+  ],
+  "manifest_files": 28,
+  "manifest_mismatches": [],
+  "model_sha256": "afe6752077d6bea440ac85d7b700fb867879bc38306840a11fc50ba53c91f162",
+  "handoff_sha256": "9a93c883b8adeeef8e95efc25511190bb71a3ba8d54e161b74b78b41ffadb48e",
+  "addendum_sha256": "a91a32a4078e5e3545d21d900a4eef0f3b4b41e5d30f79ff06c3fcf4b95852d2",
+  "errata_sha256": "23930baf33f203113c154491e5292c7dc7c2f23ce1e54465e231792649dcfb7f",
+  "simulator": "Stateflow.EMChart MATLAB Function, not graphical Stateflow chart",
+  "physical_release": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "SYNTHETIC_ONLY_NOT_FIELD_VERIFIED",
+  "release_allowed": false,
+  "sample_count": 32,
+  "source_class": "SYNTHETIC_TEST",
+  "calibration_report_sha256": "7613becf0a17c0645742cd122679a4e822c5d003a0796db052e2d50d46c7f706",
+  "verified_a28_source_hashes": {
+    "calibration_csv_sha256": "e3a574295a4141b922fbd1fc49b3aff5077e7387e8da765a3589a98c25b8dbd1",
+    "calibration_metadata_sha256": "edf20d3505119e270affa7e6ee6d64d5d90733af873ea1f2d64cb02aa26983b9"
+  },
+  "holdout_csv_sha256": "d56ec481aca80b361b55ae5a3003332dead638d95f17336b315d03bef87882cc",
+  "holdout_metadata_sha256": "290219aa3c5730e46197eece030b07907b7d169142e5ffb993fe18bbe04a5278",
+  "meter_certificate_sha256": null,
+  "holdout_start_utc": "2026-10-02T00:00:00+00:00",
+  "holdout_end_utc": "2026-10-02T00:31:00+00:00",
+  "mean_bias_kw": -0.12683626057668818,
+  "mae_kw": 0.15830302644436856,
+  "rmse_kw": 0.18816520193991706,
+  "mean_relative_abs_error_pct": 0.15179637475626584,
+  "max_abs_normalized_residual": 0.1618809811872736,
+  "fraction_abs_normalized_residual_le_2": 1.0,
+  "pointwise_combined_standard_uncertainty_kw": {
+    "min": 1.9009697079464816,
+    "max": 1.9009697079464816,
+    "mean": 1.9009697079464816
+  },
+  "model_energy_kwh_left_rectangle": 53.77328326047939,
+  "meter_energy_kwh_left_rectangle": 53.83815279794315,
+  "energy_difference_kwh": -0.064869537463764,
+  "limits": [
+    "Independent meter identity and calibration issuer are not authenticated by file hash.",
+    "A28 residual covariance and biases are estimates; their estimation uncertainty is omitted.",
+    "Pointwise uncertainty includes sensor residual covariance and declared meter standard uncertainty only.",
+    "Normalized residuals are diagnostic, not confidence intervals or release criteria.",
+    "Time integration uses left rectangles, not a certified revenue-grade energy meter.",
+    "Synthetic inputs are never field validation. No production SCADA or MATLAB changes."
+  ]
+}

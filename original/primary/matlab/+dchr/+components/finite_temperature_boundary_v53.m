@@ -1,0 +1,49 @@
+function b=finite_temperature_boundary_v53(s)
+% Fixed saturation temperatures, variable water flow, maximum heat-capacity rates.
+% Synthetic steady boundary; not a UA/pinch solver or calibrated equipment map.
+names={'source_in_C','source_glide_K','evaporator_approach_K','condenser_approach_K', ...
+    'tank_max_C','delivery_C','charge_approach_K','discharge_approach_K', ...
+    'direct_approach_K','hot_in_C','source_capacity_MW_per_K','hot_capacity_MW_per_K', ...
+    'hp_capacity_MW','cooling_factor','aux_per_compressor','aux_hot_fraction'};
+for k=1:numel(names)
+    v=s.(names{k});
+    if ~isa(v,'double') || ~isreal(v) || ~isscalar(v) || ~isfinite(v)
+        error('DCHR:v53:BoundaryDomain','%s must be a finite real double scalar.',names{k});
+    end
+end
+nonnegative=names([3 4 7 8 9 11 12 13 15 16]);
+for k=1:numel(nonnegative)
+    assert(s.(nonnegative{k})>=0,'DCHR:v53:BoundaryDomain','Negative boundary parameter.');
+end
+assert(s.source_glide_K>0 && s.cooling_factor>0 && s.cooling_factor<=1 && ...
+    s.aux_hot_fraction<=1,'DCHR:v53:BoundaryDomain','Invalid glide/factor/fraction.');
+source_out=s.source_in_C-s.source_glide_K;
+evap=source_out-s.evaporator_approach_K;
+cutoff=s.delivery_C+s.discharge_approach_K;
+hot_out=max(s.tank_max_C+s.charge_approach_K,s.delivery_C+s.direct_approach_K);
+cond=hot_out+s.condenser_approach_K;
+assert(all([s.source_in_C source_out evap s.hot_in_C s.tank_max_C s.delivery_C cutoff hot_out cond]>-273.15) && ...
+    cutoff<s.tank_max_C && s.hot_in_C<hot_out && cond>evap, ...
+    'DCHR:v53:TemperatureDomain','Ordered finite-temperature envelope required.');
+TL=evap+273.15;TH=cond+273.15;lift=TH-TL;
+eer=s.cooling_factor*TL/lift;cop=1+eer;
+etaH=(lift+s.cooling_factor*TL)/TH;
+source_budget=s.source_capacity_MW_per_K*s.source_glide_K;
+hot_budget=s.hot_capacity_MW_per_K*(hot_out-s.hot_in_C);
+capacity=min(s.hp_capacity_MW,hot_budget);
+qH=min(capacity,source_budget*(cop/(cop-1)));
+work=qH/cop;qL=qH-work;aux=s.aux_per_compressor*work;
+counted=qH+s.aux_hot_fraction*aux;reject=(1-s.aux_hot_fraction)*aux;
+assert(all(isfinite([TL TH lift eer cop etaH source_budget hot_budget capacity qH work qL aux counted reject])) && ...
+    eer>0 && cop>1 && etaH>0 && etaH<=1,'DCHR:v53:BoundaryResolution','Unresolved/overflowing boundary.');
+systemCOP=NaN;if work+aux>0,systemCOP=counted/(work+aux);end
+b=struct('source_out_C',source_out,'evaporator_C',evap,'condenser_C',cond, ...
+    'hot_out_C',hot_out,'cutoff_C',cutoff,'TL_K',TL,'TH_K',TH,'lift_K',lift, ...
+    'eer_compressor',eer,'cop_compressor',cop,'heating_factor',etaH, ...
+    'source_budget_MW',source_budget,'hot_budget_MW',hot_budget,'hp_capacity_MW',capacity, ...
+    'rated_heat_MW',qH,'rated_source_MW',qL,'rated_compressor_MW',work, ...
+    'rated_aux_MW',aux,'rated_counted_heat_MW',counted,'rated_aux_rejected_MW',reject, ...
+    'rated_system_cop',systemCOP,'required_source_capacity_MW_per_K',qL/s.source_glide_K, ...
+    'required_hot_capacity_MW_per_K',qH/(hot_out-s.hot_in_C), ...
+    'evidence_class','SYNTHETIC_FIXED_TEMPERATURE_VARIABLE_FLOW_BOUNDARY');
+end

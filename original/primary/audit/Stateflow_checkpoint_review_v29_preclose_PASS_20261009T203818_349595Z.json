@@ -1,0 +1,1105 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:38:18.349595+00:00",
+  "review_type": "independent_preclose_checkpoint_code_mutations_and_preservation_QA",
+  "scope": "Independent read-only preservation and closure-helper bookkeeping/receipt QA. New helper test source and audit/log artifacts only; no production model, status, stageboard or ledger edits. Dynamic model gate artifacts require their separate independent reviewers and finalizer input checks.",
+  "outcome": "PASS",
+  "checks": 241,
+  "passed": 241,
+  "failed": 0,
+  "assertions": [
+    {
+      "name": "preserve_v28_manifest:audit/acquire_TES_sources_v28.py",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/check_TES_derivation_v28.py",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/checkpoint_independent_review_v28_20261009T153417_753381Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/checkpoint_independent_review_v28_20261009T153417_753381Z.md",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/dispatch_reference_vectors_v18.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/finalize_stateflow_checkpoint_v28.py",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/prepare_stateflow_sources_v28.py",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/stateflow_domain_cases_v28.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/Stateflow_exponential_independent_QA_v28.md",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/stateflow_oracle_selftest_v28_20261009T103534330Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/stateflow_oracle_selftest_v28_20261009T103704714Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/stateflow_oracle_selftest_v28_initial.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/stateflow_qa_vectors_v28.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/Stateflow_v28_independent_review_20261009T153008Z.md",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/stateflow_verifier_completeness_selftest_v28_20261009T152913862Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/TES_Cadau_v28_page4.png",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/TES_Cadau_v28_page5.png",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/TES_derivation_checks_v28_20261009T103210_777150Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/TES_source_acquisition_v28_20261009T102911_076286Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/TES_standing_loss_primary_v28.md",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/TES_Stateflow_results_v28.md",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/verify_stateflow_runtime_v24.py",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:audit/verify_stateflow_trace_v28.py",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/checkpoint_independent_review_v28_20261009T153417_753381Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_local_20261009T103521580Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_local_20261009T103521580Z_console.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_local_20261009T103736630Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_local_20261009T103736630Z_console.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_resume_20261009T152756080Z_console.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_resume_local_20261009T152810989Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_acceptance_v28_resume_local_20261009T152810989Z_console.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_build_v28_local_20261009T103130804Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_build_v28_local_20261009T103130804Z_console.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_build_v28_sandbox_20261009T103114054Z_console.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_complete_qa_v28_resume_20261009T153203999Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_oracle_selftest_v28_20261009T103534330Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_oracle_selftest_v28_20261009T103704714Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_partial_qa_v28_20261009T103745453Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_partial_qa_v28_resume_20261009T153122496Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/stateflow_verifier_completeness_selftest_v28_20261009T152913862Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/TES_derivation_checks_v28_20261009T103210_777150Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:automation/logs/TES_source_acquisition_v28_20261009T102911_076286Z.log",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:MASTER_STAGEBOARD_stateflow_v28.md",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/+dchr/+components/storage_step_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/+dchr/simulate_dispatch_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/build_dispatch_stateflow_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/dchr_stateflow_hp_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/run_stateflow_acceptance_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/run_stateflow_loss_experiments_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/run_stateflow_rejections_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/stateflow_allocate_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/stateflow_choose_mode_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:matlab/simulink/stateflow_contract_gate_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/acceptance_summary_v28.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/carnot_fraction_above_one_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/charge_efficiency_above_one_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p25_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p5_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_1_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_2_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_4_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_4_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p25_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p5_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_1_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_2_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_4_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_4_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/continuous_loss_exponent_overflow_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/cop_ceiling_below_floor_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/cop_floor_equal_one_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/discharge_efficiency_above_one_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/execution_receipt_v28_20261009T153241813Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/independent_partial_qa_v28_20261009T153122496Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/independent_qa_v28_20261009T153203999Z.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/infinite_continuous_loss_rate_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/infinite_initial_energy_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/infinite_physical_timestep_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/infinite_sink_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/infinite_source_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/initial_energy_above_capacity_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/legacy_input_charge_then_shortage_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/legacy_input_charge_then_shortage_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/legacy_input_empty_then_recover_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/legacy_input_empty_then_recover_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/legacy_input_full_and_cutoff_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/legacy_input_full_and_cutoff_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/longer_physical_timestep_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/model_structure_v28.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_backup_limit_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_charge_power_limit_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_demand_second_tick_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_demand_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_discharge_power_limit_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_hp_capacity_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_initial_energy_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_part_load_penalty_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_physical_timestep_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_source_second_tick_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_source_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_standing_loss_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_storage_capacity_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/negative_temperature_lift_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_backup_limit_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_continuous_loss_rate_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_demand_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_initial_energy_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_physical_timestep_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_polynomial_coefficient_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/nonfinite_source_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p25_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p5_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_1_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_2_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_4_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_4_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p25_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p5_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_1_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_2_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_4_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_4_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/polynomial_prediction_overflow_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/polynomial_super_carnot_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p25_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p5_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_1p0_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_2p0_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_room_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_charge_room_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_discharge_emptying_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_discharge_emptying_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_full_store_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_full_store_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_high_loss_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_high_loss_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_loss_underflow_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_loss_underflow_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_mode_sequence_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_mode_sequence_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p25_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p5_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_1p0_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_2p0_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_unity_efficiencies_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_unity_efficiencies_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_zero_store_v28_legacy_equivalent_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/qa_zero_store_v28_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/runtime_rejections_v28.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/shorter_physical_timestep_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_absolute_zero_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/build_dispatch_stateflow_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/dchr_stateflow_hp_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/dispatch_reference_vectors_v18.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/run_stateflow_acceptance_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/run_stateflow_loss_experiments_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/run_stateflow_rejections_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/simulate_dispatch_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_allocate_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_choose_mode_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_contract_gate_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_domain_cases_v28.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_qa_vectors_v28.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/source_snapshot/storage_step_v28.m",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/stateflow_assertions_v28.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/stateflow_trace_v28.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/storage_experiment_assertions_v28.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/storage_timestep_experiments_v28.csv",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/unit_part_load_penalty_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/unknown_hp_backend_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/zero_carnot_fraction_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/zero_charge_efficiency_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/zero_discharge_efficiency_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/zero_lift_second_tick_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/zero_physical_timestep_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:results/stateflow_v28_20261009T152826319Z/zero_temperature_lift_start_rejection.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:sources/papers/Cadau_2019_TES_v28_20261009T102911_076286Z.extracted.txt",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:sources/papers/Cadau_2019_TES_v28_20261009T102911_076286Z.pdf",
+      "passed": true
+    },
+    {
+      "name": "preserve_v28_manifest:STATUS_stateflow_v28.json",
+      "passed": true
+    },
+    {
+      "name": "preserve_preclose_model:matlab/simulink/DataCenterHeatReuse_Core.slx",
+      "passed": true
+    },
+    {
+      "name": "preserve_preclose_model:matlab/simulink/DCHR_Dispatch_Stateflow_v14.slx",
+      "passed": true
+    },
+    {
+      "name": "preserve_preclose_model:matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+      "passed": true
+    },
+    {
+      "name": "preserve_preclose_model:matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+      "passed": true
+    },
+    {
+      "name": "preserve_preclose_model:matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx",
+      "passed": true
+    },
+    {
+      "name": "accept_clean_three_way_evidence_classification",
+      "passed": true,
+      "detail": "",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "static_and_synthetic_counts_excluded_from_actual_evidence",
+      "passed": true,
+      "detail": "",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_contradictory_total",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'passed')",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_contradictory_category_total",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'actual_evidence', 'passed')",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_contradictory_section_total",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_unknown_evidence_class",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'integrity', 'unclassified')",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_inconsistent_synthetic_flag",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_reconciled_static_to_actual_inflation",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'specification', 'actual_evidence', 'static_specification')",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_reconciled_synthetic_to_actual_inflation",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'synthetic_reviewer_self_test', 'actual_evidence', 'synthetic_reviewer_self_test')",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_negative_counts",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_fractional_counts",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_missing_actual_evidence_section",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', {'specification', 'integrity', 'saved_model_structure', 'synthetic_reviewer_self_test', 'post_fault_clean_restart'})",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_boolean_counts",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_empty_required_QA_section",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'temporal_evidence', 'Empty QA section')",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_unknown_injected_actual_section",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', {'specification', 'integrity', 'saved_model_structure', 'temporal_evidence', 'unreviewed_extra', 'synthetic_reviewer_self_test', 'post_fault_clean_restart'})",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "accept_actual_QA_without_optional_synthetic_self_test",
+      "passed": true,
+      "detail": "",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "accept_monitor_required_actual_artifact_schema",
+      "passed": true,
+      "detail": "",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_omitted_monitor_runtime_artifact_bindings",
+      "passed": true,
+      "detail": "AssertionError: ('monitor', {'specification', 'saved_model_structure', 'integrity', 'restored_trace', 'fault_rejections', 'baseline_trace'})",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "accept_consistent_explicitly_synthetic_receipt_fixture",
+      "passed": true,
+      "detail": "",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_duplicate_harness_receipt",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_missing_exit_observation",
+      "passed": true,
+      "detail": "KeyError: 'exit_observed'",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_false_exit_observation",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_nonzero_exit",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_wrong_harness_marker",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_wrong_result_path_in_marker",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_duplicate_log_file",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_duplicate_console_file",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_wrong_log_hash",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_wrong_console_hash",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_marker_missing_from_log_file",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    },
+    {
+      "name": "reject_marker_missing_from_console_file",
+      "passed": true,
+      "detail": "AssertionError: ",
+      "evidence_class": "synthetic_reviewer_self_test"
+    }
+  ],
+  "breakdown": {
+    "actual_stored_file_preservation": {
+      "checks": 210,
+      "passed": 210,
+      "failed": 0,
+      "dynamic_execution": false
+    },
+    "synthetic_checkpoint_helper_mutations": {
+      "checks": 31,
+      "passed": 31,
+      "failed": 0,
+      "synthetic_only": true,
+      "actual_model_evidence_checks": 0
+    }
+  },
+  "prior_manifest": "audit/Stateflow_manifest_v28_20261009T153508_918445Z.json",
+  "prior_manifest_sha256": "8c8edb48c7f4002ff9419625fed626e108bb022af715bce242fd8026b700e488",
+  "preserved_model_baselines": [
+    {
+      "path": "matlab/simulink/DataCenterHeatReuse_Core.slx",
+      "sha256": "338a08e003b57a5175c7443d964f34c89f3daabbbc6103a8f6fb3c2944e1c067",
+      "bytes": 46935
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v14.slx",
+      "sha256": "5968f6eda92110830a1dddab1112dc860b1b86d4b51f97df2157bf8ee2177cfc",
+      "bytes": 56327
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+      "sha256": "e1d3c1fe69597cd35a8c93a0706bcf81e7ffe8ed7edb0f9e05d9c359afc4f909",
+      "bytes": 107363
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+      "sha256": "1f1c826f0f61d04bea58c2ab39d607268ac273bad9564e69bec89e361c461389",
+      "bytes": 122385
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx",
+      "sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d",
+      "bytes": 122717
+    }
+  ],
+  "helper_test_report": "audit/Stateflow_checkpoint_helper_tests_v29_20261009T203735_4267595Z.json",
+  "helper_test_report_sha256": "d2fd93fa229be176ef90ffc0d1f55e4feef57e1582b9e46a965bf0aaab04bbbb",
+  "helper_test_source": "audit/test_stateflow_checkpoint_v29.py",
+  "helper_test_source_sha256": "3c4b231c75a77c1f216c347c8afc5ae3941da75758c6f9331e302193565e365a",
+  "finalizer_sha256": "8515504f3c799cc8166277dd2b04060195c5ec7e5340e007a94a54347365162a",
+  "resolved_original_findings": [
+    "Temporal model_version and monitor model_release are distinctly validated.",
+    "Actual evidence, static specification and synthetic self-tests retain distinct classifications and reconciled counts.",
+    "Receipts must include exactly one temporal and one monitor execution, separate closed logs, exact output markers, matching hashes and observed successful exits.",
+    "Required actual QA sections cannot be omitted, emptied or supplemented by unknown inflated sections.",
+    "Exclusive checkpoint output files are checked before writes; --check-only validates inputs without creating checkpoint outputs."
+  ],
+  "historical_provenance_limit": "Original completed temporal output does not by itself prove process exit=0. Root is preserving original artifacts and obtaining fresh observed batch receipts; this peer review does not infer a historic exit.",
+  "dynamic_model_execution_this_review": false,
+  "primary_text_verified_this_review": false,
+  "physical_validation": false,
+  "standalone_codegen": false,
+  "limitations": [
+    "Helper mutation tests are synthetic bookkeeping QA and contribute zero actual model-execution evidence.",
+    "The production model release is 0.28; checkpoint 0.29 is an evidence closure.",
+    "No independent external attestation of local chronology, new primary-source verification, equipment calibration or measured physical validation."
+  ],
+  "next": "After closure, independently verify all v29 manifest files, all 205 prior manifest files and five original saved model hashes; reconcile status evidence-class counts with QA reports and receipts."
+}

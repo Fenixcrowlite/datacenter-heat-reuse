@@ -1,0 +1,11 @@
+﻿{
+  "status": "PASS",
+  "hourly_rows_verified": 227760,
+  "scenario_groups_verified": 26,
+  "LMTD_independent_checks": 12,
+  "negative_corruption_detected": true,
+  "source_signoffs_added": 0,
+  "field_validation": false,
+  "hourly_sha256": "12adf23a7d8b4c9096ed0a091660e6406ac6ff8088955cb90da764539deb2b88",
+  "summary_sha256": "e0cc2cf68bb6e38a627d8b22b00cadf9909bfbb0d54a56d3c9069f9bf982370f"
+}

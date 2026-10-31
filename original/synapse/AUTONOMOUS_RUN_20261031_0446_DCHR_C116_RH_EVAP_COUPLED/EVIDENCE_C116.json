@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c116-rh-evap-coupled-20261031-0446",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED\\C116_TWO_WAY_HOURLY.csv.gz",
+  "artifact_sha256": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED\\C116_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED\\SHA256_MANIFEST_C116.json",
+  "manifest_sha256": "40b5b9698d3ec5b85120c2e8856fbeacd61b94c96101ab2d809f853218549d9d",
+  "next": "Subhour RH/enthalpy coupling and measured equipment/weather calibration; no physical signoffs.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED\\C116_INDEPENDENT_QA.json",
+  "schema": "C116_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED\\C116_SUMMARY.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

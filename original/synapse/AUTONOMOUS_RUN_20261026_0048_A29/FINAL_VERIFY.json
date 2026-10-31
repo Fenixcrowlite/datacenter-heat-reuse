@@ -1,0 +1,22 @@
+{
+  "time_local": "2026-10-26T00:52:36.277507+01:00",
+  "status": "PASS",
+  "checks": {
+    "manifest_13_files": true,
+    "test_28_pass": true,
+    "independent_8_pass": true,
+    "synthetic_no_release": true,
+    "report_sha_matches": true,
+    "raw_a28_pinned": true,
+    "sqlite_ok": true,
+    "single_synapse_event": true,
+    "task_state_preserved": true,
+    "no_root_stop": true,
+    "handoff_exists": true
+  },
+  "passed": 11,
+  "total": 11,
+  "event_id": 1174,
+  "manifest_sha256": "e56e35bbb7c5740dca7a8bbd47d421d46d89b0aea842f7e32cd1d1469fb82abe",
+  "handoff_sha256": "c9d402d9c8c13c887d8b21fdaaf6e6326d080e3be87e3c6c8740b059b8c801d8"
+}

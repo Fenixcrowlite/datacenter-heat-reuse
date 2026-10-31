@@ -1,0 +1,92 @@
+function y = alokuj_teplo_v04_sk(T,E,ziad,straty,rezim,u)
+%#codegen
+% Stav T [C], energia TES E[J], ziad/straty [W], rezim Stateflow 0..4.
+% Tepelny zdroj DC: len skutocne dostupny tok, nikdy IT nominal.
+dt=900; C=997*500*4182;
+Emax=900*3.6e6; % 900 kWh
+eta_c=0.93; eta_d=0.91;
+Qdc=max(0,u(1)); Tdc=u(2); Qdhneed=max(0,u(3));
+TES_ok=u(10)>0.5;
+Qtesloss=0.002*max(0,E)/86400;
+Qdirect=0; QhpPool=0; QhpDH=0; Qcharge=0; Qdis=0;
+QhpSrc=0; Pel=0; Paux=0; cop=0;
+if (rezim==1) && u(11)>0.5 && u(9)>0.5
+    % 5 K approach; konduktancia je predpoklad, nie navrh doskoveho HX.
+    Qhxmax=max(0,8500*(Tdc-T-5));
+    Qdirect=min([ziad,Qdc,150000,Qhxmax]);
+end
+Qleft=max(0,Qdc-Qdirect);
+if rezim==1 || rezim==2
+    % T kondenzatora 52 C, T vyparnika Tdc-5 C; Carnot * 0.43.
+    % Bez manufacturer COP(Tsource,Tsink,PLR) = iba scenar.
+    Tevap=Tdc-5; Tcond=52;
+    cop=min(6,max(2.5,0.43*(Tcond+273.15)/max(5,Tcond-Tevap)));
+    QhpCap=min([200000,55000*cop,Qleft/max(1e-9,1-1/cop)]);
+    % Minimalna priorita tepelnej siete: rezervuj max 50 kW.
+    minDH=min(Qdhneed,min(50000,QhpCap));
+    QhpPool=min(max(0,ziad-Qdirect),max(0,QhpCap-minDH));
+    QhpDH=min(Qdhneed,QhpCap-QhpPool);
+    spare=max(0,QhpCap-QhpPool-QhpDH);
+    extraPool=min(max(0,ziad-Qdirect-QhpPool),spare);
+    QhpPool=QhpPool+extraPool;
+    spare=max(0,QhpCap-QhpPool-QhpDH);
+    % Nabijame TES az po aktualnom bazene a obsluhe siete.
+    if TES_ok && E<Emax && spare>0
+        room=max(0,(Emax-E+Qtesloss*dt)/(eta_c*dt));
+        Qcharge=min([spare,70000,room]);
+    end
+    QhpOut=QhpPool+QhpDH+Qcharge;
+    Pel=QhpOut/cop;
+    QhpSrc=QhpOut-Pel;
+    if QhpOut>0,Paux=1500;end
+end
+if Qdirect>0,Paux=Paux+500;end
+Qpool=Qdirect+QhpPool;
+QdhShort=max(0,Qdhneed-QhpDH);
+if TES_ok && QdhShort>0 && E>0
+    transferable=max(0,(E-Qtesloss*dt)*eta_d/dt);
+    Qdis=min([QdhShort,80000,transferable]);
+    if Qdis>0,Paux=Paux+250;end
+end
+% TES nesmie sucasne nabijat a vybijat.
+if Qdis>0 && Qcharge>0
+    Qcharge=0;
+    QhpOut=QhpPool+QhpDH;
+    Pel=QhpOut/cop;
+    QhpSrc=QhpOut-Pel;
+end
+Qdh=QhpDH+Qdis;
+Qreject=max(0,Qdc-Qdirect-QhpSrc);
+Enext=max(0,min(Emax,E+dt*(eta_c*Qcharge-Qdis/eta_d-Qtesloss)));
+Tnext=T+dt*(Qpool-straty)/C;
+qsourceResidual=Qdc-(Qdirect+QhpSrc+Qreject);
+qhpResidual=(QhpPool+QhpDH+Qcharge)-(QhpSrc+Pel);
+qpoolResidual=Qpool-(Qdirect+QhpPool);
+qdhResidual=Qdh-(QhpDH+Qdis);
+y=zeros(1,25);
+y(1)=Tnext;
+y(2)=Enext;
+y(3)=ziad;
+y(4)=Qpool;
+y(5)=straty;
+y(6)=Qdirect;
+y(7)=QhpPool;
+y(8)=QhpDH;
+y(9)=Qcharge;
+y(10)=Qdis;
+y(11)=Qdh;
+y(12)=max(0,Qdhneed-Qdh);
+y(13)=max(0,ziad-Qpool);
+y(14)=QhpSrc;
+y(15)=Pel;
+y(16)=Paux;
+y(17)=Qreject;
+y(18)=Qdc;
+y(19)=cop;
+y(20)=rezim;
+y(21)=Qtesloss;
+y(22)=qsourceResidual;
+y(23)=qhpResidual;
+y(24)=qpoolResidual;
+y(25)=qdhResidual;
+end

@@ -1,0 +1,26 @@
+{
+  "feedback_RH": {
+    "RH_above65_quarters": 19680.0,
+    "RH_below45_quarters": 0.0,
+    "evap_kg": 199651.01005531105,
+    "final_air_C": 28.46003217061927,
+    "final_pool_C": 31.1843276275641,
+    "max_RH": 0.8595850664584228,
+    "min_RH": 0.5629968691034929,
+    "min_pool_C": 27.838898139048013,
+    "pool_loss_MWh": 198.33802439784267,
+    "quarters": 35040
+  },
+  "fixed_RH": {
+    "RH_above65_quarters": 19345.0,
+    "RH_below45_quarters": 0.0,
+    "evap_kg": 259431.7402785413,
+    "final_air_C": 28.47229048360762,
+    "final_pool_C": 28.042645921649147,
+    "max_RH": 1.0,
+    "min_RH": 0.5630695853354704,
+    "min_pool_C": 27.796575312163807,
+    "pool_loss_MWh": 200.15908361757985,
+    "quarters": 35040
+  }
+}

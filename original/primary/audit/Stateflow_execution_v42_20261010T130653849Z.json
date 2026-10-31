@@ -1,0 +1,7 @@
+﻿{
+    "timestamp_utc":  "2026-10-10T13:07:50.0217812Z",
+    "log_path":  "automation/logs/stateflow_clock_v42_console_20261010T130653849Z.log",
+    "command":  "addpath(\u0027matlab\u0027,\u0027matlab/simulink\u0027); run_stateflow_dwell_probes_v42(\u0027results/stateflow_clock_v42_20261010T130432870Z\u0027,\u0027audit/dwell_probe_spec_v42_20261010T130605_287309Z.json\u0027); export_stateflow_clock_v42(\u0027results/stateflow_clock_v42_20261010T130432870Z\u0027);",
+    "evidence_class":  "observed_matlab_batch_receipt",
+    "exit_code":  0
+}

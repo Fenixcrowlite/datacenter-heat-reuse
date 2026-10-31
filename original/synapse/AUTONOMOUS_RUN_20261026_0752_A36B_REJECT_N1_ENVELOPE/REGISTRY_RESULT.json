@@ -1,0 +1,13 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1210,
+  "scope": "isolated_DCHR_A36B_v07_synthetic_reject_N1_capacity_envelope",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_0752_A36B_REJECT_N1_ENVELOPE",
+  "evidence_sha256": "db1ec79972d27faf6890350ac19bf96a3b5ac8567f11a4befd4f150a58224f4b",
+  "manifest_sha256": "0493cd4f6754759338e5b80914d363b921f11f24364991f6c3a8e638427432f5",
+  "qa": "10/10 unit PASS; 24 scenario combinations (6 load scenarios x 4 reject availability)",
+  "key_finding": "v07 explicitly defines scenario REJECT A=180kW, B=150kW; both OFF needs max 213.6295kW. N-1 main-only 171 unsafe intervals, backup-only 358 unsafe intervals; A+B 0.",
+  "decision": "N1_SYNTHETIC_RISK_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "limits": "scenario capacities not equipment certificates; IT-shedding, TES dynamics and thermal transients not recalculated",
+  "next_step": "Model owner: integrate A/B reject availability, thermal limits, TES SOC and IT-shedding into owned Simulink/Stateflow; verify N-1 safety; obtain real rated capacities"
+}

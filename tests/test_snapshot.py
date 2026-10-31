@@ -45,7 +45,8 @@ class SnapshotTests(unittest.TestCase):
                     restore(root / 'bad.zip', root / 'out')
 
     def test_traversal_refused_before_writing(self):
-        for relative in ('../outside', '/absolute', 'C:/absolute', 'sub/../../outside', 'a\\..\\outside'):
+        for relative in ('../outside', '/absolute', 'C:/absolute', 'sub/../../outside', 'a\\..\\outside',
+                         'nul', 'NUL.txt', 'sub/COM1.csv', 'LPT9', 'trailing.', 'trailing '):
             with self.subTest(relative=relative), tempfile.TemporaryDirectory() as tmp:
                 root = Path(tmp)
                 digest = hashlib.sha256(b'body').hexdigest()
@@ -57,6 +58,17 @@ class SnapshotTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     restore(root / 'bad.zip', root / 'out')
                 self.assertFalse((root / 'outside').exists())
+
+    def test_scientific_qa_source_is_preserved_browser_profile_is_excluded(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);source=root/'source';qa=source/'results/run/qa_source';qa.mkdir(parents=True)
+            (qa/'independent_check.py').write_text('assert 2+2==4',encoding='utf-8')
+            browser=source/'runtime/qa_browser';browser.mkdir(parents=True)
+            (browser/'Local State').write_text('{}',encoding='utf-8')
+            (browser/'Default').mkdir()
+            manifest=snapshot({'primary':source},root/'all.zip')
+            self.assertEqual(['results/run/qa_source/independent_check.py'],[f['path'] for f in manifest['files']])
+            self.assertIn('runtime/qa_browser',[e['path'] for e in manifest['excluded']])
 
     def test_live_sqlite_is_consistent_snapshot(self):
         import sqlite3

@@ -1,0 +1,80 @@
+{
+  "version": "0.66",
+  "timestamp_utc": "2026-10-11T21:38:35.235052+00:00",
+  "inherits": "STATUS_v65.json",
+  "result": "SCOPED_SAMPLED_STOP_GUARD_AND_REPEATED_CYCLES_PASS_EARLIEST_STATEFLOW_OPEN",
+  "new_model": true,
+  "saved_model": "matlab/simulink/DCHR_Interval_Dispatch_Stateflow_v66.slx",
+  "model_sha256": "cc3a4f1f2c58dbe47d519ef8a4e60eb56e99b80b9cf53d01eb40dc8b469ebfd2",
+  "model_executed_this_run": true,
+  "accepted_dispatch_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v57.slx",
+  "accepted_dispatch_sha256": "05714844ca9dc182dc4ab8328c09e928695b0fb3967dfc7194c97b6eab65b387",
+  "accepted_dispatch_version": "0.57",
+  "accepted_sampled_interval_model": "matlab/simulink/DCHR_Interval_Dispatch_Stateflow_v66.slx",
+  "conservative_interval_service_acceptance": true,
+  "coupled_stateflow_acceptance": false,
+  "matlab_metadata": {
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "license_observed": 1,
+    "stateflow_ver": [],
+    "chart_count": 1,
+    "action_language": "MATLAB",
+    "simulation_mode": "normal",
+    "states": [
+      "IDLE",
+      "HEAT_RECOVERY",
+      "STORAGE_CHARGE",
+      "STORAGE_DISCHARGE",
+      "BACKUP",
+      "UNMET_DEMAND"
+    ]
+  },
+  "matlab_passed": 1317,
+  "matlab_failed": 0,
+  "independent_passed": 29497,
+  "independent_failed": 0,
+  "actual_runs": 16,
+  "protocol_ticks": 421,
+  "service_intervals": 401,
+  "required_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_runtime_fault_rejections": 10,
+  "v30_reference_comparisons": 385,
+  "reviewer_selfchecks": 8,
+  "result_directory": "results/stop_guard_v66_final_20261011T213720530Z",
+  "independent_qa": "results/stop_guard_v66_final_20261011T213720530Z/independent_QA_v66_20261011T213829_665690Z.json",
+  "derivation": "audit/Sampled_stop_derivation_v66.md",
+  "saved_v65_stop_overshoot_MWh": [
+    9.701994592696359,
+    9.701994592696368
+  ],
+  "stop_inventory_MWh": 9.6,
+  "repeated_schedule_h": 52,
+  "repeated_cycles_per_resolution": 4,
+  "repeated_dt_h": [
+    0.25,
+    0.5,
+    1
+  ],
+  "general_repeated_earliest_event_stateflow": "OPEN",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Conservative sampled stop guard and repeated sampled cycles only; general repeated exact-event Stateflow remains OPEN. Legacy v57 and sampled v65 acceptance preserved.",
+    "Withholding an entire uncertified charge interval can shut down early and lose delivered service. Timestep service is not monotonic in these fixtures.",
+    "Earliest comparator is separate 120/160-digit engineering mathematics with explicit root ordering threshold; no certified compiled earliest-event switching or source/compressor comparison claimed.",
+    "Inherited correlated v64 prefix, exact host equivalent-limiter certificate, 128-rectangle source/work enclosures and |lambda*dt|<=1 domain remain.",
+    "Fixed refrigerant/water approaches, common tank return and cooling factor are engineering assumptions; equipment calibration, article replication and measured physical validation are untested.",
+    "Same-agent independent algorithms, not independent personnel. Original MAT reopened/exported by MATLAB; standalone generated code and Python HDF5 parsing not accepted.",
+    "Sandbox startup, initial MATLAB JSON vector setup and reviewer indentation/stale-manifest failures preserved in the earlier development evidence folder."
+  ],
+  "next_actionable_task": "Derive certified local thermal-stop/cutoff/restart root brackets for repeated v66 trajectories and integrate one repeated earliest-event cycle into an additive SAME six-mode chart. Carry original inventory/ports/age/clock correlation, certify OFF dwell and ordering against held demand/source boundaries, reject unresolved ordering, and compare original-MAT service and source/work enclosures to the independent v66 event reference. Use the v66 stop witness and repeated dt=0.25/0.5/1 schedules as regression fixtures; preserve v57-v66. Primary calibration and measured validation remain OPEN."
+}

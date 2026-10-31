@@ -1,0 +1,7 @@
+A51_PASS neither_trip0 first=96 comparisons=2640
+A51_PASS backup_only_trip0 first=96 comparisons=2640
+A51_PASS neither_trip2 first=98 comparisons=2640
+A51_PASS backup_only_trip2 first=98 comparisons=2640
+A51_PASS neither_trip4 first=100 comparisons=2640
+A51_PASS backup_only_trip4 first=100 comparisons=2640
+A51_ALL_PASS 15840

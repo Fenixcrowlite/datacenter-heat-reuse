@@ -1,0 +1,143 @@
+{
+  "provenance": "D_SYNTHETIC original v08 -> D_DERIVED conservative instantaneous reference",
+  "source_path": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_measurement_v08\\sim_v08_zdravy_SK.csv",
+  "source_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "samples": 672,
+  "interval_hours": 0.25,
+  "hours": 168.0,
+  "start_hour": 24.0,
+  "reject_150kW": "ASSUMED SENSITIVITY ONLY; NOT A VERIFIED EQUIPMENT RATING",
+  "TES_state": "NOT RECOMPUTED",
+  "pool_temperature": "NOT RECOMPUTED",
+  "HP_COP": "fixed per-baseline-interval ratio; NOT a measured part-load curve",
+  "net_electric_savings": "NOT VALIDATED; fan/pump effects missing",
+  "physical_release_allowed": false,
+  "scenarios": {
+    "baseline": {
+      "energy": {
+        "Q_pool_kWh": 10393.084303,
+        "Q_DH_kWh": 16101.132273,
+        "Q_reject_required_kWh": 6245.686703,
+        "Q_reject_actual_kWh": 6245.686703,
+        "Q_unhandled_kWh": 0.0,
+        "P_HP_proxy_kWh": 4763.524897,
+        "Q_TES_discharge_kWh": 495.955604,
+        "Q_pool_unmet_kWh": 204.029239,
+        "Q_DH_unmet_kWh": 1538.867753
+      },
+      "max_reject_required_kW": 130.648844,
+      "max_balance_residual_W": 4.94765117764473e-10,
+      "unsafe_intervals": 0,
+      "capacity_unknown_intervals": 672,
+      "output": "scenario_baseline.csv",
+      "output_sha256": "7425e6796d18a9b58b2c3b3a80bfb9bd5a871b8f5b09cc0004da59a4583f81bf",
+      "delta_reject_required_kWh": 0.0,
+      "delta_HP_power_proxy_kWh": 0.0
+    },
+    "pool_off": {
+      "energy": {
+        "Q_pool_kWh": 3591.533936,
+        "Q_DH_kWh": 16101.132273,
+        "Q_reject_required_kWh": 12012.146221,
+        "Q_reject_actual_kWh": 12012.146221,
+        "Q_unhandled_kWh": 0.0,
+        "P_HP_proxy_kWh": 3728.434047,
+        "Q_TES_discharge_kWh": 495.955604,
+        "Q_pool_unmet_kWh": 7005.579606,
+        "Q_DH_unmet_kWh": 1538.867753
+      },
+      "max_reject_required_kW": 138.780762,
+      "max_balance_residual_W": 1.0186340659856796e-10,
+      "unsafe_intervals": 0,
+      "capacity_unknown_intervals": 672,
+      "output": "scenario_pool_off.csv",
+      "output_sha256": "477f4aa1977d089032d1184a792004882aeb2c2fb3f0b59dec8815cf7fab6e7c",
+      "delta_reject_required_kWh": 5766.459518,
+      "delta_HP_power_proxy_kWh": -1035.09085
+    },
+    "dh_off": {
+      "energy": {
+        "Q_pool_kWh": 10393.084303,
+        "Q_DH_kWh": 2256.105072,
+        "Q_reject_required_kWh": 17209.926066,
+        "Q_reject_actual_kWh": 17209.926066,
+        "Q_unhandled_kWh": 0.0,
+        "P_HP_proxy_kWh": 1946.806733,
+        "Q_TES_discharge_kWh": 431.885929,
+        "Q_pool_unmet_kWh": 204.029239,
+        "Q_DH_unmet_kWh": 15383.894954
+      },
+      "max_reject_required_kW": 205.497582,
+      "max_balance_residual_W": 1.0186340659856796e-10,
+      "unsafe_intervals": 0,
+      "capacity_unknown_intervals": 672,
+      "output": "scenario_dh_off.csv",
+      "output_sha256": "bff1a3359e199a5157d5893c3497b7657acea3feb5f5f0a377c29251275b29a9",
+      "delta_reject_required_kWh": 10964.239363,
+      "delta_HP_power_proxy_kWh": -2816.718164
+    },
+    "both_off": {
+      "energy": {
+        "Q_pool_kWh": 3591.533936,
+        "Q_DH_kWh": 2256.105072,
+        "Q_reject_required_kWh": 22976.385584,
+        "Q_reject_actual_kWh": 22976.385584,
+        "Q_unhandled_kWh": 0.0,
+        "P_HP_proxy_kWh": 911.715883,
+        "Q_TES_discharge_kWh": 431.885929,
+        "Q_pool_unmet_kWh": 7005.579606,
+        "Q_DH_unmet_kWh": 15383.894954
+      },
+      "max_reject_required_kW": 213.6295,
+      "max_balance_residual_W": 1.0186340659856796e-10,
+      "unsafe_intervals": 0,
+      "capacity_unknown_intervals": 672,
+      "output": "scenario_both_off.csv",
+      "output_sha256": "4fefcbd8bffdbedecf1894a8cfecab4ce052d2252e8c669b95394c5aa9fd99a1",
+      "delta_reject_required_kWh": 16730.698881,
+      "delta_HP_power_proxy_kWh": -3851.809014
+    },
+    "pool40_dh25": {
+      "energy": {
+        "Q_pool_kWh": 7480.284736,
+        "Q_DH_kWh": 5856.105072,
+        "Q_reject_required_kWh": 16748.646501,
+        "Q_reject_actual_kWh": 16748.646501,
+        "Q_unhandled_kWh": 0.0,
+        "P_HP_proxy_kWh": 2172.727601,
+        "Q_TES_discharge_kWh": 431.885929,
+        "Q_pool_unmet_kWh": 3116.828805,
+        "Q_DH_unmet_kWh": 11783.894954
+      },
+      "max_reject_required_kW": 186.289229,
+      "max_balance_residual_W": 1.0186340659856796e-10,
+      "unsafe_intervals": 0,
+      "capacity_unknown_intervals": 672,
+      "output": "scenario_pool40_dh25.csv",
+      "output_sha256": "ce9c2971ebd2c11b0c90de6f25b70d8bd5051d2f73b235130b1d40df66e2f40e",
+      "delta_reject_required_kWh": 10502.959798,
+      "delta_HP_power_proxy_kWh": -2590.797296
+    },
+    "both_off_assumed_reject150": {
+      "energy": {
+        "Q_pool_kWh": 3591.533936,
+        "Q_DH_kWh": 2256.105072,
+        "Q_reject_required_kWh": 22976.385584,
+        "Q_reject_actual_kWh": 20432.958093,
+        "Q_unhandled_kWh": 2543.427491,
+        "P_HP_proxy_kWh": 911.715883,
+        "Q_TES_discharge_kWh": 431.885929,
+        "Q_pool_unmet_kWh": 7005.579606,
+        "Q_DH_unmet_kWh": 15383.894954
+      },
+      "max_reject_required_kW": 213.6295,
+      "max_balance_residual_W": 1.0186340659856796e-10,
+      "unsafe_intervals": 358,
+      "capacity_unknown_intervals": 96,
+      "output": "scenario_both_off_assumed_reject150.csv",
+      "output_sha256": "38d41946eef540ef1c51b63b70c4735f7ede2ac1d7501020dc875614c2b08005",
+      "delta_reject_required_kWh": 16730.698881,
+      "delta_HP_power_proxy_kWh": -3851.809014
+    }
+  }
+}

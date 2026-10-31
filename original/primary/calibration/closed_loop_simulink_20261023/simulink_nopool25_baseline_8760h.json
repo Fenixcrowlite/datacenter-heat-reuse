@@ -1,0 +1,9 @@
+{
+  "scenario": "no_pool_25",
+  "hours": 8760,
+  "DH_HP_heat_MWh": 49733.711673541082,
+  "DH_source_MWh": 36689.754073020282,
+  "DH_HP_el_MWh": 13043.957600520778,
+  "gas_heat_MWh": 7218.85452002309,
+  "max_source_over_MW": 8.8817841970012523E-16
+}

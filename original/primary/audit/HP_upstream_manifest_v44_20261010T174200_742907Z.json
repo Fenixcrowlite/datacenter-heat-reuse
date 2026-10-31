@@ -1,0 +1,147 @@
+{
+  "version": "0.44",
+  "timestamp_utc": "2026-10-10T17:42:00.742886+00:00",
+  "excludes": "Mutable ledgers, this manifest and still-writing finalizer log",
+  "files": [
+    {
+      "path": "audit/finalize_hp_upstream_v44.py",
+      "bytes": 13188,
+      "sha256": "df59766bf6e5dbd764359a5be8d8429bad6fc9506cea372f7f9eb0cfb258ec21"
+    },
+    {
+      "path": "audit/HP_boundary_execution_v44_20261010T173850533Z.json",
+      "bytes": 396,
+      "sha256": "b0be172018157f4ac6ee60ea4cbe4d8cc5ec4518946c93df14c754912c3d3f50"
+    },
+    {
+      "path": "audit/HP_boundary_execution_v44_20261010T173905115Z.json",
+      "bytes": 396,
+      "sha256": "68b82d37bd96c6fe2f4719db5d9be05e1bd1a27cfc85335e15b0ee9bdea6667b"
+    },
+    {
+      "path": "audit/HP_upstream_boundary_derivation_v44.md",
+      "bytes": 5884,
+      "sha256": "e26e2d89a91056029e77cd962d8e24a20316a61bc1a7806c3ddd89769a6db39a"
+    },
+    {
+      "path": "audit/HP_upstream_boundary_results_v44.md",
+      "bytes": 4027,
+      "sha256": "058c940acd1070fff60f4ed1d7dd919ff672e1a0b7c5b0222b73b531f43bad60"
+    },
+    {
+      "path": "audit/hp_upstream_current_v44.txt",
+      "bytes": 49,
+      "sha256": "81ac68fbb23847d5e4ae619d08f722c5d7f8c9b526131600a48208603506bbc8"
+    },
+    {
+      "path": "audit/literature_traceability_v44.csv",
+      "bytes": 13092,
+      "sha256": "4fccdd639d40c0c4818340e241542a72d007d5ff136654b63e076bb6c1a3e96b"
+    },
+    {
+      "path": "audit/prepare_hp_upstream_v44.py",
+      "bytes": 3229,
+      "sha256": "d14f84cb67c10e480a4444c35df04f5d73b9877ac879d2d7ddcd555bcd903040"
+    },
+    {
+      "path": "audit/run_hp_boundary_v44.ps1",
+      "bytes": 892,
+      "sha256": "ca43d06fd5f48cf7af94ec0ca73c80ae0ba1f821bc623a08d82ce597f5fdd067"
+    },
+    {
+      "path": "audit/verify_hp_boundary_v44.py",
+      "bytes": 5758,
+      "sha256": "80a9e6fe7196988d6af49aa57d2717593342938ee9ec6f9881ff15992795247f"
+    },
+    {
+      "path": "automation/logs/hp_acquisition_v44_20261010T173843424Z.log",
+      "bytes": 3129,
+      "sha256": "3bf7a44cedae5c4c3e4431942cb901b7fef8a4f6af735801ba58fbe9849cf56f"
+    },
+    {
+      "path": "automation/logs/hp_boundary_QA_v44_20261010T174039514Z.log",
+      "bytes": 175,
+      "sha256": "eed4ded64e482ef59732cbeacf2bbfcaca53aaf6f1933207bc40f4071d6c1d38"
+    },
+    {
+      "path": "automation/logs/hp_boundary_v44_20261010T173850533Z.log",
+      "bytes": 181,
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4"
+    },
+    {
+      "path": "automation/logs/hp_boundary_v44_20261010T173905115Z.log",
+      "bytes": 74,
+      "sha256": "fdab339769b75f6814fbae689558501535f6934961ac60b299eb9ea8349d19df"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v44.md",
+      "bytes": 1629,
+      "sha256": "66d2ea1f1cbdd9d0edcfd9f26226a902c72859bc71d24d9652d02bc2a2501728"
+    },
+    {
+      "path": "matlab/simulink/export_hp_boundary_v44.m",
+      "bytes": 386,
+      "sha256": "1cef17bdedf4b5ad713dc18736c8585a8a4360ec94ab2636fa4a51a529c7c4b8"
+    },
+    {
+      "path": "matlab/simulink/run_hp_boundary_v44.m",
+      "bytes": 1719,
+      "sha256": "f27caf96b910cff0596091b0e7aaa58dbb1bdeca91cae4a2b5772d808b133685"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/acquisition.json",
+      "bytes": 3266,
+      "sha256": "cd523d9d5f9362c5f5afcff46eff10d67903e3a3421cdd273d2b3d82d55ebaed"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/boundary_v44.json",
+      "bytes": 92946,
+      "sha256": "7202c7e90b40926b0dbabbf74ebe7e44a6bce6c1ae0ff5ee16e5d478220272a2"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/boundary_v44.mat",
+      "bytes": 17285,
+      "sha256": "cbf412c55e995c07e285cb5ccb52ef19eda08cfedf8232eb470f6dc0ce7d42d9"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/independent_QA_v44_20261010T174040_285460Z.json",
+      "bytes": 720986,
+      "sha256": "47b3b542f4b5326b9eed3f492fe9ae868b78e49701d6a49c39c8b133661c1076"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/mat_reexport_v44.json",
+      "bytes": 196579,
+      "sha256": "85afe0435c27cca7b3c872954c449e0b000a26a8a15ed7d6bc605defef6dda90"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/preservation.json",
+      "bytes": 17739,
+      "sha256": "7b774c4e3f34bb49b929bc2f54ba4d6bc9079f0dd998e8c332754f6b3114853d"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/source_observations_v44.json",
+      "bytes": 3213,
+      "sha256": "add5cfcd405fc298f2de1c30ce847e1757f2de59eba8cd11f0e0c55907184cc5"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/source_snapshot/export_hp_boundary_v44.m",
+      "bytes": 386,
+      "sha256": "1cef17bdedf4b5ad713dc18736c8585a8a4360ec94ab2636fa4a51a529c7c4b8"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/source_snapshot/run_hp_boundary_v44.m",
+      "bytes": 1719,
+      "sha256": "f27caf96b910cff0596091b0e7aaa58dbb1bdeca91cae4a2b5772d808b133685"
+    },
+    {
+      "path": "results/hp_upstream_v44_20261010T173843_592523Z/spec.json",
+      "bytes": 40081,
+      "sha256": "ee90a536841b288987345be993d627d32070fd77f3cd06072b94263b0111ea44"
+    },
+    {
+      "path": "STATUS_v44.json",
+      "bytes": 3638,
+      "sha256": "720246c21ba58bad6889a06cbfa333863eeb28ea05853e5ddba338761c411e6f"
+    }
+  ]
+}

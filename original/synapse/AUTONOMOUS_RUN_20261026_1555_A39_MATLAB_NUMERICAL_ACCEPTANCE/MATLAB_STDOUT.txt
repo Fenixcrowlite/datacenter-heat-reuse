@@ -1,0 +1,9 @@
+                      status: 'MATLAB_NUMERICAL_ACCEPTANCE_PASS'
+                       cases: 12
+            samples_per_case: 672
+                 comparisons: 80640
+                   max_error: 2.9104e-11
+          stateflow_executed: 0
+    physical_release_allowed: 0
+
+A39_MATLAB_NUMERICAL_PASS

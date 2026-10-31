@@ -1,0 +1,45 @@
+python.exe : test_bad_shape_rejected (test_correlated_pool_metrology.CovarianceTests.test_bad_shape_rejected) ... ok
+строка:1 знак:227
++ ... tion $d;try{& 'C:\Python314\python.exe' -m unittest -v test_correlate ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_bad_shape_...ejected) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_flow_temperature_covariance_changes_expected_mean (test_correlated_pool_metrology.CovarianceTests.test_flow_temper
+ature_covariance_changes_expected_mean) ... ok
+test_gaussian_product_second_order_positive (test_correlated_pool_metrology.CovarianceTests.test_gaussian_product_secon
+d_order_positive) ... ok
+test_independent_baseline (test_correlated_pool_metrology.CovarianceTests.test_independent_baseline) ... ok
+test_negative_correlation_increases_uncertainty (test_correlated_pool_metrology.CovarianceTests.test_negative_correlati
+on_increases_uncertainty) ... ok
+test_negative_flow_rejected (test_correlated_pool_metrology.CovarianceTests.test_negative_flow_rejected) ... ok
+test_nominal_heat (test_correlated_pool_metrology.CovarianceTests.test_nominal_heat) ... ok
+test_non_psd_three_way_correlations_rejected (test_correlated_pool_metrology.CovarianceTests.test_non_psd_three_way_cor
+relations_rejected) ... ok
+test_nonfinite_covariance_rejected (test_correlated_pool_metrology.CovarianceTests.test_nonfinite_covariance_rejected) 
+... ok
+test_nonsymmetric_covariance_rejected (test_correlated_pool_metrology.CovarianceTests.test_nonsymmetric_covariance_reje
+cted) ... ok
+test_out_of_range_correlation_rejected (test_correlated_pool_metrology.CovarianceTests.test_out_of_range_correlation_re
+jected) ... ok
+test_perfect_common_mode_cancels_delta (test_correlated_pool_metrology.CovarianceTests.test_perfect_common_mode_cancels
+_delta) ... ok
+test_positive_correlation_reduces_difference_uncertainty (test_correlated_pool_metrology.CovarianceTests.test_positive_
+correlation_reduces_difference_uncertainty) ... ok
+test_zero_delta_rejected (test_correlated_pool_metrology.CovarianceTests.test_zero_delta_rejected) ... ok
+test_bad_sample_count (test_correlated_pool_metrology.StorageTests.test_bad_sample_count) ... ok
+test_evidence_tracks_real_original_source (test_correlated_pool_metrology.StorageTests.test_evidence_tracks_real_origin
+al_source) ... ok
+test_fixed_bias_cancels_temporally (test_correlated_pool_metrology.StorageTests.test_fixed_bias_cancels_temporally) ...
+ ok
+test_systematic_flow_does_not_average_away (test_correlated_pool_metrology.StorageTests.test_systematic_flow_does_not_a
+verage_away) ... ok
+test_temporal_correlation_reduces_difference (test_correlated_pool_metrology.StorageTests.test_temporal_correlation_red
+uces_difference) ... ok
+test_uncorrelated_matches_original (test_correlated_pool_metrology.StorageTests.test_uncorrelated_matches_original) ...
+ ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+OK

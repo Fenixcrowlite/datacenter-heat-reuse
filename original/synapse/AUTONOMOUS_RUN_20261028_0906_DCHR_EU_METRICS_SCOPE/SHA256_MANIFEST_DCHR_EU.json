@@ -1,0 +1,13 @@
+{
+  "count": 8,
+  "files": {
+    "DCHR_EU_METRICS_NOTE_SK.md": "12f9aae1c60ba3e9662a301eb92babb63ef3730af799ccad1764d76c77b5af1e",
+    "QA_INDEPENDENT_DCHR_EU.json": "10db5212cd100e67059d51a8a3d2e75064caf81dac0b2c6d22762744fe5286b6",
+    "SYNTHETIC_EU_METRICS_SAMPLE.json": "275d0fa2af75260c4558708347ed9d77b9db56199f946468f0bdc04f704609c2",
+    "UNITTEST_DCHR_EU.log": "678d3d8bf59a001c9e39e7c8beb8914de5c4ced7ad64a8f545d2ec87ce290f4d",
+    "eu_dc_metrics.py": "abcec242e350a891585dc1c06372a76579f716a3bc15e1201afe4b1ebc01236e",
+    "finalize_dchr_eu.py": "7232db01751e7d6b8d32fd3ab3e602bfbb21c642b2d9c6ea6a639070eeb8fc05",
+    "independent_qa.py": "74fb22c6e87e8cd50b4d96050a29527f803010dc136fdc5739a872affab895e0",
+    "test_eu_dc_metrics.py": "7d9df11143b77f437ab171e6d99b968929cb29e14c19c63ba9c0f8f37aabde60"
+  }
+}

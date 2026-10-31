@@ -1,0 +1,674 @@
+{
+  "name": "DCHR_A40_Safety_Controller",
+  "id": "dchr-a40-safety-controller",
+  "sha256": "cdf8a224a3fc83480272cb2dd527ced930d5046e7d53e008d26ef08e3ae8d89c",
+  "blocks": [
+    {
+      "sid": "1::113",
+      "name": "requiredW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 101, 40, 119]",
+        "ZOrder": "93"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::114",
+      "name": "capacityW",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 136, 40, 154]",
+        "ZOrder": "94",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::115",
+      "name": "tempC",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 171, 40, 189]",
+        "ZOrder": "95",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::116",
+      "name": "soc",
+      "type": "Inport",
+      "properties": {
+        "Position": "[20, 206, 40, 224]",
+        "ZOrder": "96",
+        "Port": "4"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::110",
+      "name": " Demux ",
+      "type": "Demux",
+      "properties": {
+        "Position": "[270, 245, 320, 285]",
+        "ZOrder": "90",
+        "Outputs": "1"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::109",
+      "name": " SFunction ",
+      "type": "S-Function",
+      "properties": {
+        "Tag": "Stateflow S-Function 3",
+        "Position": "[180, 102, 230, 203]",
+        "ZOrder": "89",
+        "FunctionName": "sf_sfun",
+        "PortCounts": "[4 4]",
+        "SFunctionDeploymentMode": "off",
+        "EnableBusSupport": "off",
+        "SFcnIsStateOwnerBlock": "off"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::111",
+      "name": " Terminator ",
+      "type": "Terminator",
+      "properties": {
+        "Position": "[460, 256, 480, 274]",
+        "ZOrder": "91"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::117",
+      "name": "mode",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 101, 480, 119]",
+        "ZOrder": "97"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::118",
+      "name": "shedCeilingFraction",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 136, 480, 154]",
+        "ZOrder": "98",
+        "Port": "2"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "1::119",
+      "name": "alarm",
+      "type": "Outport",
+      "properties": {
+        "Position": "[460, 171, 480, 189]",
+        "ZOrder": "99",
+        "Port": "3"
+      },
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "sid": "2",
+      "name": "In1",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 110, 200, 130]",
+        "ZOrder": "3",
+        "VariableName": "required_sig"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "3",
+      "name": "In2",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 175, 200, 195]",
+        "ZOrder": "4",
+        "VariableName": "capacity_sig"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "4",
+      "name": "In3",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 240, 200, 260]",
+        "ZOrder": "5",
+        "VariableName": "temperature_sig"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "5",
+      "name": "In4",
+      "type": "FromWorkspace",
+      "properties": {
+        "Position": "[30, 305, 200, 325]",
+        "ZOrder": "6",
+        "VariableName": "soc_sig"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "6",
+      "name": "Out1",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[630, 137, 760, 163]",
+        "ZOrder": "7",
+        "VariableName": "out_1",
+        "MaxDataPoints": "inf",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "7",
+      "name": "Out2",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[630, 202, 760, 228]",
+        "ZOrder": "8",
+        "VariableName": "out_2",
+        "MaxDataPoints": "inf",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "8",
+      "name": "Out3",
+      "type": "ToWorkspace",
+      "properties": {
+        "Position": "[630, 267, 760, 293]",
+        "ZOrder": "9",
+        "VariableName": "out_3",
+        "MaxDataPoints": "inf",
+        "FixptAsFi": "on",
+        "SampleTime": "-1"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "sid": "1",
+      "name": "Supervisor",
+      "type": "SubSystem",
+      "properties": {
+        "Position": "[340, 72, 530, 253]",
+        "ZOrder": "2",
+        "LibrarySourceProduct": "",
+        "ErrorFcn": "Stateflow.Translate.translate",
+        "PermitHierarchicalResolution": "ExplicitOnly",
+        "TreatAsAtomicUnit": "on",
+        "SFBlockType": "Chart",
+        "ContentPreviewEnabled": "on"
+      },
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "lines": [
+    {
+      "source": "1::113#out:1",
+      "destinations": [
+        "1::109#in:1"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::114#out:1",
+      "destinations": [
+        "1::109#in:2"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::115#out:1",
+      "destinations": [
+        "1::109#in:3"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::116#out:1",
+      "destinations": [
+        "1::109#in:4"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::109#out:2",
+      "destinations": [
+        "1::117#in:1"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::109#out:3",
+      "destinations": [
+        "1::118#in:1"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::109#out:4",
+      "destinations": [
+        "1::119#in:1"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::110#out:1",
+      "destinations": [
+        "1::111#in:1"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "1::109#out:1",
+      "destinations": [
+        "1::110#in:1"
+      ],
+      "xml": "simulink/systems/system_1.xml"
+    },
+    {
+      "source": "2#out:1",
+      "destinations": [
+        "1#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "3#out:1",
+      "destinations": [
+        "1#in:2"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "4#out:1",
+      "destinations": [
+        "1#in:3"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "5#out:1",
+      "destinations": [
+        "1#in:4"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "1#out:1",
+      "destinations": [
+        "6#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "1#out:2",
+      "destinations": [
+        "7#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    },
+    {
+      "source": "1#out:3",
+      "destinations": [
+        "8#in:1"
+      ],
+      "xml": "simulink/systems/system_root.xml"
+    }
+  ],
+  "states": [
+    {
+      "id": null,
+      "label": "NORMAL\nentry: mode=0; shedCeilingFraction=0; alarm=0;",
+      "position": "[45 106 130 80]",
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "DEGRADED\nentry: mode=1; shedCeilingFraction=0.4; alarm=1;",
+      "position": "[260 106 150 80]",
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "TES_FULL\nentry: mode=3; shedCeilingFraction=0; alarm=1;",
+      "position": "[45 271 130 80]",
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "CRITICAL\nentry: mode=2; shedCeilingFraction=0.4; alarm=2;",
+      "position": "[260 271 150 80]",
+      "xml": "simulink/stateflow/chart_24.xml"
+    }
+  ],
+  "transitions": [
+    {
+      "id": null,
+      "label": "[requiredW + 5000 <= capacityW && tempC < 39 && soc < 0.999]",
+      "properties": {
+        "labelString": "[requiredW + 5000 <= capacityW && tempC < 39 && soc < 0.999]",
+        "labelPosition": "[217.5 106 350.234 16]",
+        "fontSize": "12",
+        "midPoint": "[217.5 21.0453]",
+        "dataLimits": "[53.24 379.36 20.938 106]",
+        "subviewer": "24",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "9",
+        "intersection": "[1 0 -1 0.7957 379.36 106 0 0]"
+      },
+      "destination": {
+        "SSID": "8",
+        "intersection": "[1 0 -1 0.0818 55.64 106 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "",
+      "properties": {
+        "labelPosition": "[165 88.5 0 0]",
+        "fontSize": "12",
+        "midPoint": "[66.0347 76.3435]",
+        "dataLimits": "[65.528 112.4 66 106]",
+        "subviewer": "24",
+        "executionOrder": "1"
+      },
+      "source": {
+        "intersection": "[0 1.4142 1.4142 0 110 66 0 0]"
+      },
+      "destination": {
+        "SSID": "8",
+        "intersection": "[1 0 -1 0.5 110 106 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[soc <= 0.98 && requiredW + 5000 <= capacityW && tempC < 39]",
+      "properties": {
+        "labelString": "[soc <= 0.98 && requiredW + 5000 <= capacityW && tempC < 39]",
+        "labelPosition": "[50.32 223.18 350.562 16]",
+        "fontSize": "12",
+        "midPoint": "[19.9958 188.8558]",
+        "dataLimits": "[11.627 58.04 85.368 340.36]",
+        "subviewer": "24",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "11",
+        "intersection": "[4 -1 0 0.133 45 340.36 0 0]"
+      },
+      "destination": {
+        "SSID": "8",
+        "intersection": "[1 0 -1 0.0818 55.64 106 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[soc >= 0.999 && requiredW + 5000 <= capacityW && tempC < 39]",
+      "properties": {
+        "labelString": "[soc >= 0.999 && requiredW + 5000 <= capacityW && tempC < 39]",
+        "labelPosition": "[178.333 193.82 357.234 16]",
+        "fontSize": "12",
+        "midPoint": "[150.919 162.4056]",
+        "dataLimits": "[94.267 260 116.64 271]",
+        "subviewer": "24",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "9",
+        "intersection": "[4 -1 0 0.867 260 116.64 0 0]"
+      },
+      "destination": {
+        "SSID": "11",
+        "intersection": "[1 0 -1 0.3974 96.6667 271 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[requiredW > capacityW + 1e-6 && tempC < 42 && capacityW > 0]",
+      "properties": {
+        "labelString": "[requiredW > capacityW + 1e-6 && tempC < 42 && capacityW > 0]",
+        "labelPosition": "[191.78 202.78 353.844 16]",
+        "fontSize": "12",
+        "midPoint": "[164.3566 179.3566]",
+        "dataLimits": "[123.559 260 132.159 271]",
+        "subviewer": "24",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "11",
+        "intersection": "[1 0 -1 0.6043 123.5593 271 0 0]"
+      },
+      "destination": {
+        "SSID": "9",
+        "intersection": "[4 -1 0 0.643 260 134.5593 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[requiredW > capacityW + 1e-6 && tempC < 42 && capacityW > 0]",
+      "properties": {
+        "labelString": "[requiredW > capacityW + 1e-6 && tempC < 42 && capacityW > 0]",
+        "labelPosition": "[217.5 134.559 353.844 16]",
+        "fontSize": "12",
+        "midPoint": "[213.5 134.5593]",
+        "dataLimits": "[175 260 132.159 136.959]",
+        "subviewer": "24",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "8",
+        "intersection": "[2 1 0 0.357 175 134.5593 0 0]"
+      },
+      "destination": {
+        "SSID": "9",
+        "intersection": "[4 -1 0 0.643 260 134.5593 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[tempC < 39 && capacityW > 0]",
+      "properties": {
+        "labelString": "[tempC < 39 && capacityW > 0]",
+        "labelPosition": "[260 228.5 169.266 16]",
+        "fontSize": "12",
+        "midPoint": "[208.9871 228.5]",
+        "dataLimits": "[208.815 260 132.159 322.441]",
+        "subviewer": "24",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "10",
+        "intersection": "[4 -1 0 0.357 260 322.4407 0 0]"
+      },
+      "destination": {
+        "SSID": "9",
+        "intersection": "[4 -1 0 0.643 260 134.5593 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[tempC >= 42 || capacityW <= 0]",
+      "properties": {
+        "labelString": "[tempC >= 42 || capacityW <= 0]",
+        "labelPosition": "[226.905 219.095 173.484 16]",
+        "fontSize": "12",
+        "midPoint": "[244.5629 197.4371]",
+        "dataLimits": "[175 281.21 167.19 271]",
+        "subviewer": "24",
+        "executionOrder": "2"
+      },
+      "source": {
+        "SSID": "8",
+        "intersection": "[2 1 0 0.7649 175 167.1905 0 0]"
+      },
+      "destination": {
+        "SSID": "10",
+        "intersection": "[1 0 -1 0.1254 278.8095 271 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[soc >= 0.999 && requiredW <= capacityW && tempC < 42 && capacityW > 0]",
+      "properties": {
+        "labelString": "[soc >= 0.999 && requiredW <= capacityW && tempC < 42 && capacityW > 0]",
+        "labelPosition": "[96.667 228.5 415.188 16]",
+        "fontSize": "12",
+        "midPoint": "[96.6667 224.5]",
+        "dataLimits": "[94.267 99.067 186 271]",
+        "subviewer": "24",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "8",
+        "intersection": "[3 0 1 0.6026 96.6667 186 0 0]"
+      },
+      "destination": {
+        "SSID": "11",
+        "intersection": "[1 0 -1 0.3974 96.6667 271 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[tempC >= 42 || capacityW <= 0]",
+      "properties": {
+        "labelString": "[tempC >= 42 || capacityW <= 0]",
+        "labelPosition": "[278.81 228.5 173.484 16]",
+        "fontSize": "12",
+        "midPoint": "[278.8095 224.5]",
+        "dataLimits": "[276.41 281.21 186 271]",
+        "subviewer": "24",
+        "executionOrder": "1"
+      },
+      "source": {
+        "SSID": "9",
+        "intersection": "[3 0 1 0.8746 278.8095 186 0 0]"
+      },
+      "destination": {
+        "SSID": "10",
+        "intersection": "[1 0 -1 0.1254 278.8095 271 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "label": "[tempC >= 42 || capacityW <= 0]",
+      "properties": {
+        "labelString": "[tempC >= 42 || capacityW <= 0]",
+        "labelPosition": "[217.5 271 173.484 16]",
+        "fontSize": "12",
+        "midPoint": "[217.5 236.2801]",
+        "dataLimits": "[156.19 281.21 236.025 271]",
+        "subviewer": "24",
+        "executionOrder": "3"
+      },
+      "source": {
+        "SSID": "11",
+        "intersection": "[1 0 -1 0.8553 156.1905 271 0 0]"
+      },
+      "destination": {
+        "SSID": "10",
+        "intersection": "[1 0 -1 0.1254 278.8095 271 0 0]"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    }
+  ],
+  "functions": [],
+  "data": [
+    {
+      "id": null,
+      "name": "requiredW",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "name": "capacityW",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "name": "tempC",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "name": "soc",
+      "properties": {
+        "scope": "INPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "name": "mode",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "name": "shedCeilingFraction",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    },
+    {
+      "id": null,
+      "name": "alarm",
+      "properties": {
+        "scope": "OUTPUT_DATA",
+        "dataType": "Inherit: Same as Simulink"
+      },
+      "xml": "simulink/stateflow/chart_24.xml"
+    }
+  ],
+  "execution_status": "not_ported",
+  "file": "extracted/dchr-a40-safety-controller-cdf8a224a3fc.json",
+  "copies": [
+    "synapse/AUTONOMOUS_RUN_20261026_1650_A40_STATEFLOW_SUPERVISOR/DCHR_A40_Safety_Controller.slx"
+  ]
+}

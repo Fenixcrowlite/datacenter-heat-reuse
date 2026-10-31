@@ -1,0 +1,22 @@
+{
+  "software_only": true,
+  "passes": [
+    "All four cases exactly 105120 five-minute steps covering 8760h",
+    "All timestamps consecutive and finite for each signal",
+    "Pool temperature <=27.800001C every sample",
+    "TES within 0..50MWh every sample",
+    "Source physical allocation <=available source all steps",
+    "Pool first-law heat partition 1e-8MW tolerance",
+    "District HP first-law heat partition 1e-8MW tolerance",
+    "Source outage case no pool heat 48-72h",
+    "No-pool case no delivered pool heat"
+  ],
+  "not_tested_physically": [
+    "calibration uncertainty of sensors",
+    "meter MPE",
+    "actual electrical PUE boundary",
+    "physical compressor COP/PLR",
+    "flow preservation after pump failure",
+    "third-party standard conformance and legal pool acceptance"
+  ]
+}

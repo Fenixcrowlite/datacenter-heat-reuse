@@ -1,0 +1,106 @@
+{
+  "version": "0.40",
+  "inherits": "STATUS_stateflow_v39.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T12:49:21.176639+00:00",
+  "checkpoint": "Source-relative HP solver repair in actual saved Stateflow v40",
+  "stateflow_acceptance": "PASS_SCOPED_IMPLEMENTATION",
+  "model_version": "0.40",
+  "new_model": true,
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v40.slx",
+  "model_sha256": "eabb893ed5465b754981bb45ad06a1bb4ad1700ce031ce3531737b28ff7392f6",
+  "controller_defect": "v39 false OFF/nonmaximal source-limited HP output repaired in tested fixtures",
+  "result_directory": "results/stateflow_hp_domain_v40_20261010T124559855Z",
+  "independent_qa": "results/stateflow_hp_domain_v40_20261010T124559855Z/independent_QA_v40_20261010T124840_716567Z.json",
+  "matlab_batch_receipts": [
+    "audit/Stateflow_execution_v40_20261010T124441186Z.json",
+    "audit/Stateflow_execution_v40_20261010T124816103Z.json"
+  ],
+  "matlab_batch_exit_code": 0,
+  "scenarios": 33,
+  "completed_scenarios": 33,
+  "completed_intervals": 101,
+  "positive_segments": 151,
+  "harness_checks_passed": 391,
+  "harness_checks_failed": 0,
+  "hp_component_probes": 321,
+  "actual_runtime_fault_rejections": 30,
+  "independent_evidence_checks_passed": 8491,
+  "independent_evidence_checks_failed": 0,
+  "synthetic_reviewer_checks_passed": 3,
+  "synthetic_reviewer_checks_failed": 0,
+  "independent_check_breakdown": {
+    "artifact": {
+      "passed": 129,
+      "failed": 0
+    },
+    "execution": {
+      "passed": 710,
+      "failed": 0
+    },
+    "numeric": {
+      "passed": 1977,
+      "failed": 0
+    },
+    "equation": {
+      "passed": 1027,
+      "failed": 0
+    },
+    "reference": {
+      "passed": 1725,
+      "failed": 0
+    },
+    "repair": {
+      "passed": 19,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 2904,
+      "failed": 0
+    },
+    "synthetic": {
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "implementation_comparisons": {
+    "passed": 1396,
+    "failed": 0
+  },
+  "max_independent_balance_residual_MWh": 4.7683715781454694e-08,
+  "previous_immutable_entries_preserved": 2903,
+  "preservation_exclusions": {
+    "automation/engineering_progress.md": {
+      "reason": "Explicit exclusion in corrected v22 manifest",
+      "old_entry": {
+        "path": "automation/engineering_progress.md",
+        "sha256": "864090fcc8d974e7adf79207f57a37c88a66d9f604d648c110236831df4fca94",
+        "bytes": 10020
+      }
+    },
+    "automation/logs/stateflow_finalize_v22_20261009T050008.log": {
+      "reason": "Explicit exclusion in corrected v22 manifest",
+      "old_entry": {
+        "path": "automation/logs/stateflow_finalize_v22_20261009T050008.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  },
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Scoped numerical implementation acceptance, not measured physical validation or article replication.",
+    "Extreme ratios/subnormal powers and COP near one are numerical fixtures, not plausible equipment sizes.",
+    "Exact v39 binary64 cutoff fixture observed only; comprehensive near-cutoff classification remains unproved.",
+    "Clock residual seeds, nonzero error-bound event ordering, generated code and solver-clock events remain open.",
+    "Host HP/planner executes in normal mode with analytic intra-macro physical segments; no calibrated hydraulics, stratification or cycling losses.",
+    "Independent algorithms and artifact checks in same agent, not independent personnel; synthetic checks separate.",
+    "Stateflow license and saved-chart execution observed; empty ver(Stateflow) does not establish a standalone product version.",
+    "No new primary-source equation/value/signoff; full primary signoffs remain 0/31.",
+    "Inherited Stateflow formal-argument shadow warnings remain in timestamped logs."
+  ],
+  "next": "Audit saved-v40 clock residual seeds, nonzero accumulated error bounds and event ordering near dwell/capacity/cutoff boundaries against independent interval or high-precision timing. Use focused fresh simulations and document any defect before broadening acceptance. Then resume primary-source equipment/parameter traceability; preserve all v38-v40 evidence."
+}

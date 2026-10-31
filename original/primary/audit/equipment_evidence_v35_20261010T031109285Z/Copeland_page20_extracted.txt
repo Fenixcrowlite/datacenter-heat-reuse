@@ -1,0 +1,77 @@
+OCTOBER 2024 
+© 2025 Copeland LP 
+20 
+www.copeland.com 
+BULLETIN AE4-1431 R2 
+Rotation Direction 
+Scroll compressors are directional dependent, i.e. they will 
+compress in one rotational direction only. Three phase 
+scrolls will rotate in either direction depending on power 
+phasing. Since there is a 50/50 chance of connected power 
+being “backwards”, contractors should be warned of this. 
+Appropriate instructions or notices should be provided by 
+the OEM.  
+Verification of proper rotation can be made by observing 
+that the suction pressure drops and the discharge pressure 
+rises when the compressor is energized.  
+There is no negative impact on durability caused by 
+operating three-phase Scroll compressors in the reversed 
+direction for a short period of time (under one hour) but oil 
+may be lost. Oil loss can be prevented during reverse 
+rotation if the tubing is routed at least 6” above the 
+compressor. After several minutes of operation in reverse, 
+the compressor protection system will trip due to high 
+motor temperature. The operator will notice a lack of 
+cooling or heating. However, if allowed to repeatedly 
+restart and run in reverse without correcting the situation, 
+the compressor will be permanently damaged.  
+All three-phase scroll compressors are identically wired 
+internally. Therefore, once the correct phasing is 
+determined for a specific system or installation, connecting 
+properly phased power leads to the identified compressor 
+terminals will ensure proper rotation direction. 
+Starting Sound 
+During the very brief start-up, a clicking sound is audible, 
+resulting from initial contacting of the spirals and is normal. 
+Due to the design of the Copeland Scroll compressors, the 
+internal compression components always start unloaded 
+even if system pressures are not balanced. In addition, 
+since internal compressor pressures are always balanced 
+at start-up, low voltage starting characteristics are 
+excellent for Copeland Scroll compressors. 
+ 
+ 
+Deep Vacuum operation 
+ 
+Vacuum operation! Compressor damage! Copeland 
+Scroll compressors should never be used to evacuate 
+refrigeration or air-conditioning systems 
+ 
+Shell temperature 
+The top shell and discharge line can briefly but repeatedly 
+reach temperatures above 300°F (150°C) if the 
+compressor cycles on its internal protection devices. This 
+only happens under rare circumstances and can be 
+caused by the failure of system components such as the 
+condenser or evaporator fan or loss of charge and 
+depends upon the type of expansion control. Care must be 
+taken to ensure that wiring or other materials that could be 
+damaged by these temperatures do not contact the shell. 
+ 
+Minimum Run Time 
+Copeland recommends a maximum of 10 starts per hour. 
+Recommend stating minimum 2-3 minutes run time is 
+required for adequate oil return. There is no minimum off 
+time because scroll compressors start unloaded, even if 
+the system has unbalanced pressures. 
+ 
+Shut-off sound 
+Scroll compressors incorporate a device that minimizes 
+reverse rotation. The residual momentary reversal of the 
+scrolls at shut off will cause a clicking sound, but it is 
+entirely normal and has no effect on compressor durability. 
+ 
+ 
+ 
+ 
+ 

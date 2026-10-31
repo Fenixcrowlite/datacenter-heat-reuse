@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "manifest_files": 15,
+  "python_tests": 9,
+  "real_stateflow_scenarios": 4,
+  "stateflow_samples": 2688,
+  "independent_mode_comparisons": 2688,
+  "registry_event": 1227,
+  "handoff_sha256": "0a39abfca19327c8bfa795dacaca6ae436d5e48bcb26904c58ff7a7d3607d2a7",
+  "model_sha256": "cdf8a224a3fc83480272cb2dd527ced930d5046e7d53e008d26ef08e3ae8d89c",
+  "jarvice_live_idle": true,
+  "matlab_processes": []
+}

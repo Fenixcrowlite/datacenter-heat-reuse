@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "passed": 28,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "source data SHA",
+      "pass": true,
+      "detail": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25"
+    },
+    {
+      "name": "source model SHA",
+      "pass": true,
+      "detail": "e6a551b359823046c0623b1089920b20be4d5ffc915dade9694dff99b378e582"
+    },
+    {
+      "name": "max DH supply independently recomputed",
+      "pass": true,
+      "detail": "61.9518479386581"
+    },
+    {
+      "name": "four cases present",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "source is synthetic",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "no unsupported savings",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "72.0/NOMINAL_RETURN_35C reference",
+      "pass": true,
+      "detail": "35"
+    },
+    {
+      "name": "72.0/NOMINAL_RETURN_35C independent 100MWh capacity",
+      "pass": true,
+      "detail": "99.9999999999999999"
+    },
+    {
+      "name": "72.0/NOMINAL_RETURN_35C UA geometry",
+      "pass": true,
+      "detail": 0.1509562926640638
+    },
+    {
+      "name": "72.0/NOMINAL_RETURN_35C year3 energy balance",
+      "pass": true,
+      "detail": -3.0620128654845757e-10
+    },
+    {
+      "name": "72.0/NOMINAL_RETURN_35C nonnegative thermal and electric",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "72.0/SUPPLY_GATE_MAX_PLUS_3K reference",
+      "pass": true,
+      "detail": "64.9518479386581"
+    },
+    {
+      "name": "72.0/SUPPLY_GATE_MAX_PLUS_3K independent 100MWh capacity",
+      "pass": true,
+      "detail": "99.99999999999986093100408114855"
+    },
+    {
+      "name": "72.0/SUPPLY_GATE_MAX_PLUS_3K UA geometry",
+      "pass": true,
+      "detail": 0.5524581987616258
+    },
+    {
+      "name": "72.0/SUPPLY_GATE_MAX_PLUS_3K year3 energy balance",
+      "pass": true,
+      "detail": -2.2458834791905247e-09
+    },
+    {
+      "name": "72.0/SUPPLY_GATE_MAX_PLUS_3K nonnegative thermal and electric",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "80.0/NOMINAL_RETURN_35C reference",
+      "pass": true,
+      "detail": "35"
+    },
+    {
+      "name": "80.0/NOMINAL_RETURN_35C independent 100MWh capacity",
+      "pass": true,
+      "detail": "100.000000000000005125"
+    },
+    {
+      "name": "80.0/NOMINAL_RETURN_35C UA geometry",
+      "pass": true,
+      "detail": 0.13097818585497184
+    },
+    {
+      "name": "80.0/NOMINAL_RETURN_35C year3 energy balance",
+      "pass": true,
+      "detail": -5.763922672485933e-11
+    },
+    {
+      "name": "80.0/NOMINAL_RETURN_35C nonnegative thermal and electric",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "80.0/SUPPLY_GATE_MAX_PLUS_3K reference",
+      "pass": true,
+      "detail": "64.9518479386581"
+    },
+    {
+      "name": "80.0/SUPPLY_GATE_MAX_PLUS_3K independent 100MWh capacity",
+      "pass": true,
+      "detail": "99.99999999999992459102337618099722222222"
+    },
+    {
+      "name": "80.0/SUPPLY_GATE_MAX_PLUS_3K UA geometry",
+      "pass": true,
+      "detail": 0.298906594634745
+    },
+    {
+      "name": "80.0/SUPPLY_GATE_MAX_PLUS_3K year3 energy balance",
+      "pass": true,
+      "detail": -4.127258534936118e-10
+    },
+    {
+      "name": "80.0/SUPPLY_GATE_MAX_PLUS_3K nonnegative thermal and electric",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "72.0C ratio",
+      "pass": true,
+      "detail": 5.24960297081836
+    },
+    {
+      "name": "80.0C ratio",
+      "pass": true,
+      "detail": 2.9904004037547702
+    }
+  ],
+  "source_data_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "source_model_sha256": "e6a551b359823046c0623b1089920b20be4d5ffc915dade9694dff99b378e582",
+  "note": "Independent Decimal capacity math; dynamic model was tested separately in C31; no Simulink equivalence asserted."
+}

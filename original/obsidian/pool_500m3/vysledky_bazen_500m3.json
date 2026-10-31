@@ -1,0 +1,113 @@
+{
+  "assumption": "SCENARIO, no measured system parameters",
+  "params": {
+    "V_m3": 500,
+    "rho": 997.0,
+    "cp": 4182.0,
+    "A_m2": 312.5,
+    "T0_C": 16.0,
+    "Tset_C": 28.0,
+    "Tair_C": 29.0,
+    "Twall_C": 27.0,
+    "Tground_C": 20.0,
+    "Tmakeup_C": 15.0,
+    "RH": 0.6,
+    "UA_W_K": 800.0,
+    "hconv_W_m2K": 3.0,
+    "epsilon": 0.95,
+    "hfg_J_kg": 2440000.0,
+    "Q_other_W": 2000.0,
+    "cover_evap": 0.9,
+    "cover_conv_rad": 0.75,
+    "COP": 4.0,
+    "DC_rated_IT_MW": 10.0,
+    "IT_utilization": 0.82,
+    "recoverable_fraction": 0.85,
+    "PUE": 1.2,
+    "source_branch_W": 500000.0
+  },
+  "C_J_K": 2084727000.0,
+  "E_16_to_28_MWh": 6.94909,
+  "holding_open_kW": 52.132448007942585,
+  "holding_covered_kW": 10.765104779754987,
+  "holding_24h_average_kW": 31.448776393848785,
+  "IT_waste_heat_potential_MW": 6.969999999999999,
+  "cases": [
+    {
+      "name": "TC_75kW",
+      "target_h": 98.18274895854117,
+      "T_end_C": 28.12534120573681,
+      "heat_MWh": 9.674999999999718,
+      "loss_MWh": 2.6533260567188552,
+      "source_MWh": 7.256250000000185,
+      "electric_MWh": 2.4187499999999296,
+      "energy_residual_MWh": 2.7000623958883807e-13
+    },
+    {
+      "name": "TC_150kW",
+      "target_h": 47.434248373160436,
+      "T_end_C": 27.941700097397987,
+      "heat_MWh": 10.862499999999917,
+      "loss_MWh": 3.94717093918104,
+      "source_MWh": 8.14687500000013,
+      "electric_MWh": 2.7156249999999793,
+      "energy_residual_MWh": 7.149836278586008e-14
+    },
+    {
+      "name": "TC_300kW",
+      "target_h": 23.410627594960797,
+      "T_end_C": 27.926098923203952,
+      "heat_MWh": 11.525000000000096,
+      "loss_MWh": 4.618705436146021,
+      "source_MWh": 8.64374999999997,
+      "electric_MWh": 2.881250000000024,
+      "energy_residual_MWh": -1.2878587085651816e-13
+    },
+    {
+      "name": "VYMENNIK_150kW",
+      "target_h": 47.434248373160436,
+      "T_end_C": 27.941700097397987,
+      "heat_MWh": 10.862499999999917,
+      "loss_MWh": 3.94717093918104,
+      "source_MWh": 10.862499999999917,
+      "electric_MWh": 0.0,
+      "energy_residual_MWh": 7.149836278586008e-14
+    },
+    {
+      "name": "TC_150kW_bez_krytu",
+      "target_h": 46.85809834853389,
+      "T_end_C": 27.95520128657677,
+      "heat_MWh": 12.012499999999852,
+      "loss_MWh": 5.089352524288537,
+      "source_MWh": 9.009375000000162,
+      "electric_MWh": 3.003124999999963,
+      "energy_residual_MWh": 1.652011860642233e-13
+    },
+    {
+      "name": "TC_150kW_RH40",
+      "target_h": 50.83613998020735,
+      "T_end_C": 27.93253671597265,
+      "heat_MWh": 12.899999999999801,
+      "loss_MWh": 5.989977369366819,
+      "source_MWh": 9.675000000000187,
+      "electric_MWh": 3.2249999999999504,
+      "energy_residual_MWh": 2.1582735598713043e-13
+    },
+    {
+      "name": "TC_150kW_RH80",
+      "target_h": 45.399330665720484,
+      "T_end_C": 28.172880652884512,
+      "heat_MWh": 9.137500000000015,
+      "loss_MWh": 2.088296398653892,
+      "source_MWh": 6.853125000000081,
+      "electric_MWh": 2.284375000000004,
+      "energy_residual_MWh": -2.042810365310288e-14
+    }
+  ],
+  "test": {
+    "balance_residual_MWh": 7.149836278586008e-14,
+    "hp_balance_MWh": -1.91402449445377e-13,
+    "dt60_dt300_final_delta_C": 0.2141168829524247,
+    "first_28C_delta_minutes": 0.6066783536459752
+  }
+}

@@ -1,0 +1,27 @@
+python.exe : test_all_672_and_12 (__main__.IntegratedTests.test_all_672_and_12) ... ok
+строка:1 знак:957
++ ... lit-Path $p); & 'C:\Python314\python.exe' -B test_a38.py 2>&1 | Tee-O ...
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_all_672_an..._and_12) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_both_reject_no_overflow (__main__.IntegratedTests.test_both_reject_no_overflow) ... ok
+test_corrected_reject_delta (__main__.IntegratedTests.test_corrected_reject_delta) ... ok
+test_dc_hp_tes_closure (__main__.IntegratedTests.test_dc_hp_tes_closure) ... ok
+test_fault_gating_pre_24 (__main__.IntegratedTests.test_fault_gating_pre_24) ... ok
+test_full_dc_energy_accounting (__main__.IntegratedTests.test_full_dc_energy_accounting) ... ok
+test_invalid_negative (__main__.IntegratedTests.test_invalid_negative) ... ok
+test_invalid_nonfinite (__main__.IntegratedTests.test_invalid_nonfinite) ... ok
+test_preclip_legacy_thermal_equivalence (__main__.IntegratedTests.test_preclip_legacy_thermal_equivalence) ... ok
+test_provenance_pinned (__main__.IntegratedTests.test_provenance_pinned) ... ok
+test_provenance_tamper_fails_closed (__main__.IntegratedTests.test_provenance_tamper_fails_closed) ... ok
+test_reject_caps_post_fault (__main__.IntegratedTests.test_reject_caps_post_fault) ... ok
+test_release_flags (__main__.IntegratedTests.test_release_flags) ... ok
+test_shedding_sensitivity (__main__.IntegratedTests.test_shedding_sensitivity) ... ok
+test_tes_bounds_and_trace (__main__.IntegratedTests.test_tes_bounds_and_trace) ... ok
+test_tes_clip_is_six (__main__.IntegratedTests.test_tes_clip_is_six) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.275s
+
+OK

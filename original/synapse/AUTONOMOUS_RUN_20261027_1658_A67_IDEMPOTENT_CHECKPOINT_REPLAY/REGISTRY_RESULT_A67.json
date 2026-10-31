@@ -1,0 +1,13 @@
+{
+  "QA": "7/7 unittest; 10/10 real manifest; 2 identical replays; 0 mutations",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1658_A67_IDEMPOTENT_CHECKPOINT_REPLAY",
+  "event_id": 1333,
+  "evidence_sha256": "f475b40213f15b2a1f3f8418478ab3da7323ca1759ac480f6c25e3f425e064fa",
+  "handoff_sha256": "3780c36ac764278981cc7c2af0ae44f940ab3b255b67c61ac181f2bea68393e1",
+  "manifest_sha256": "7c4c6d72710815e4f0eba1d2784ad24c72f3179d25b0f88da6f34fd5de28ad1e",
+  "next_step": "Use a stable checkpoint timestamp in future finalizers; do not rewrite already registered A66 evidence.",
+  "physical_release": false,
+  "scope": "A67_readonly_idempotent_checkpoint_replay",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

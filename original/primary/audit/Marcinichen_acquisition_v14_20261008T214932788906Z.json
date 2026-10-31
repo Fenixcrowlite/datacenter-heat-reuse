@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-08T21:49:32.788906+00:00",
+  "doi": "10.1016/j.applthermaleng.2011.12.008",
+  "url": "https://infoscience.epfl.ch/bitstreams/30ae8dd8-5fc0-481b-8ccd-284d7f125195/download",
+  "channel": "local_python_urllib",
+  "attempts": 1,
+  "primary_text_verified": false,
+  "primary_table_or_equation_match": false,
+  "independent_validation": "NOT_PERFORMED",
+  "status": "TRANSPORT_BLOCKED",
+  "error_type": "PermissionError",
+  "errno": 13,
+  "winerror": 10013,
+  "error": "[WinError 10013] Сделана попытка доступа к сокету методом, запрещенным правами доступа",
+  "finished_utc": "2026-10-08T21:49:32.888251+00:00"
+}

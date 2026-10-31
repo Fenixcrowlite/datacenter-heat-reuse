@@ -1,0 +1,17 @@
+{
+  "actor": "chatgpt-dchr-c106-frost-bypass-20261030-2348",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\C106_BYPASS_HOURLY.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\C106_FINDINGS.md",
+  "hourly_sha256": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\SHA256_MANIFEST_C106.json",
+  "manifest_sha256": "424559fc76b34be2a54324cd6dcddfcedd0d8439bfdb5b11946ecb91fcb3053e",
+  "next": "Obtain HRV manufacturer frost/defrost curves and real weather; compare bypass vs defrost, then couple air/water loads under a shared DC heat cap.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\C106_INDEPENDENT_QA.json",
+  "qa_result": "8/8 selftests; 1971000 independent hourly assertions; 117 annual comparisons; 2/2 negative controls",
+  "schema": "C106_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\C106_SUMMARY.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

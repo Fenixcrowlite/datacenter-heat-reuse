@@ -1,0 +1,40 @@
+{
+  "asset_id": "TEST-LOOP-NOT-REAL",
+  "calibration_ref": "SYNTHETIC-CAL-ONLY",
+  "sensors": {
+    "P_actual_W": {
+      "abs_error_bound": 20.0,
+      "calibration_document_sha256": "6aab3677214039c6c88e7603e445b6dbc71526e946d1998725062933f5185372",
+      "calibration_ref": "SYNTHETIC-CAL-ONLY",
+      "relative_error_bound": 0.0
+    },
+    "P_cmd_W": {
+      "abs_error_bound": 20.0,
+      "calibration_document_sha256": "48b20f357e840a991fa28f14eaa4649d1c1a6e62fc69402dcb9ff8a44445d0fc",
+      "calibration_ref": "SYNTHETIC-CAL-ONLY",
+      "relative_error_bound": 0.0
+    },
+    "Q_net_W": {
+      "abs_error_bound": 5.0,
+      "calibration_document_sha256": "1fcca7f717f15442736cc50a3ba4d237e1f82f54364118ad13c598b41c606f6a",
+      "calibration_ref": "SYNTHETIC-CAL-ONLY",
+      "relative_error_bound": 0.0
+    },
+    "T_C": {
+      "abs_error_bound": 0.0005,
+      "calibration_document_sha256": "b28adafd2b78ac0f76077cd9771701186a94e0d2cf07e23e8f9c108b7e1ac693",
+      "calibration_ref": "SYNTHETIC-CAL-ONLY",
+      "relative_error_bound": 0.0
+    }
+  },
+  "source_csv_sha256": "d988d28032e2c86828cc552ae2d1746c0cc7121fb104bcbd9f8fd20500bd4d74",
+  "source_kind": "synthetic_test",
+  "time_sync": {
+    "clock_uncertainty_s": 0.05,
+    "command_actuation_latency_bound_s": 0.2,
+    "max_abs_clock_offset_s": 0.1,
+    "method": "synthetic_common_clock",
+    "sample_timestamp_uncertainty_s": 0.05
+  },
+  "timebase": "UTC"
+}

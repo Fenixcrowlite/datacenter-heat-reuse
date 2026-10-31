@@ -1,0 +1,44 @@
+DataCenter Heat Reuse v0.3
+Started: 04-Oct-2026 20:31:31
+
+               Test                Passed
+    ___________________________    ______
+
+    {'district_heat_balance'  }    true  
+    {'storage_lower_bound'    }    true  
+    {'storage_upper_bound'    }    true  
+    {'cop_lower_bound'        }    true  
+    {'cop_upper_bound'        }    true  
+    {'hp_source_not_overdrawn'}    true  
+    {'nonnegative_gas'        }    true  
+    {'nonnegative_hp_power'   }    true  
+
+                      Test                      Passed
+    ________________________________________    ______
+
+    {'source_temperature_improves_COP'     }    true  
+    {'lower_DH_supply_improves_COP'        }    true  
+    {'more_recovery_not_worse_for_coverage'}    true  
+    {'storage_not_worse_for_coverage'      }    true  
+
+          Scenario          SourceTemp_C    RecoveryFraction    Storage_MWh    MeanCOP    MeanLift_K    HeatDemand_MWh    ReusedHeat_MWh    Coverage      ERF      ERE_System    HPElectric_MWh    GasHeat_MWh    CurtailedHPHeat_MWh    UsefulExergy_MWh    OpexSaving_EUR    CO2Saving_t    ScreeningLCOH_EUR_MWh    SimplePayback_y
+    ____________________    ____________    ________________    ___________    _______    __________    ______________    ______________    ________    _______    __________    ______________    ___________    ___________________    ________________    ______________    ___________    _____________________    _______________
+
+    "Air25_Fixed70"              25                0.7                0        3.1025           48          59430             46399         0.78074     0.53828     0.76231           14959           13031              24375                8112.9           1.0818e+06        7422.2              49.903                 8.689     
+    "Liquid35_Weather"           35               0.85                0        4.6989       32.038          59430             48881          0.8225     0.56707     0.66731           10617           10549              24605                7823.5            1.654e+06        8847.8              38.485                5.6833     
+    "Warm45_Weather"             45                0.9                0        6.1896       21.982          59430             48173         0.81059     0.55886     0.63867          7851.3           11257              25822                7703.5           1.8912e+06          9242               33.31                4.9705     
+    "Warm45_Storage100"          45                0.9              100        6.2057       21.924          59430             48887         0.82261     0.56714     0.63038          7969.9           10543              24975                7820.2            1.919e+06        9378.5              39.308                6.7223     
+    "Liquid35_LowTempDH"         35               0.85              100        6.4116       20.003          59430             46881         0.78884     0.54387     0.64989          7364.6           12549              22545                6057.2            1.868e+06        9049.2              39.699                6.9057     
+
+            Metric                P05         Median         P95           Mean   
+    _______________________    __________    _________    __________    __________
+
+    "MeanCOP"                      5.4487       6.2488        6.6717        6.1689
+    "Coverage"                    0.77826      0.81932       0.85354       0.81755
+    "OpexSaving_EUR"           1.3167e+06    2.468e+06    3.4393e+06    2.4212e+06
+    "CO2Saving_t"                  8530.8       9417.8         10281        9404.4
+    "ScreeningLCOH_EUR_MWh"        35.021       41.293        46.663        40.925
+    "SimplePayback_y"              3.7507       5.2269        9.7974        5.8079
+
+
+Finished: 04-Oct-2026 20:33:11

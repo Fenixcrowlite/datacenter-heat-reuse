@@ -1,0 +1,279 @@
+{
+  "study": "N+1 independent rejection of full rated IT heat, separate from heat recovery",
+  "evidence_class": "engineering simulation D + model original baseline",
+  "profile": {
+    "rows": 105120,
+    "E_IT_heat_MWh": 71832.833,
+    "E_reused_source_MWh": 38274.674,
+    "E_rejected_MWh": 33558.16,
+    "mean_rejection_MW": 3.8308,
+    "max_IT_heat_MW": 9.7545,
+    "rejection_annual_p95_MW": 7.1395,
+    "all_heat_reuse_stopped_required_cooler_MW_design": 10,
+    "source": "direct_35_8760h.csv actual 105120 Simulink output, IT inferred from availability /0.85"
+  },
+  "cooling_modules_n_plus_1": [
+    {
+      "installed_units": 5,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0,
+      "capacity_after_any_one_outage_MW": 8,
+      "full_IT_10MW_survives_single_failure_after_failover": false,
+      "remaining_deficit_MW": 2,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 5,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.1,
+      "capacity_after_any_one_outage_MW": 7.2,
+      "full_IT_10MW_survives_single_failure_after_failover": false,
+      "remaining_deficit_MW": 2.8,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 5,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.2,
+      "capacity_after_any_one_outage_MW": 6.4,
+      "full_IT_10MW_survives_single_failure_after_failover": false,
+      "remaining_deficit_MW": 3.6,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 6,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0,
+      "capacity_after_any_one_outage_MW": 10,
+      "full_IT_10MW_survives_single_failure_after_failover": true,
+      "remaining_deficit_MW": 0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 6,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.1,
+      "capacity_after_any_one_outage_MW": 9.0,
+      "full_IT_10MW_survives_single_failure_after_failover": false,
+      "remaining_deficit_MW": 1.0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 6,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.2,
+      "capacity_after_any_one_outage_MW": 8.0,
+      "full_IT_10MW_survives_single_failure_after_failover": false,
+      "remaining_deficit_MW": 2.0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 7,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0,
+      "capacity_after_any_one_outage_MW": 12,
+      "full_IT_10MW_survives_single_failure_after_failover": true,
+      "remaining_deficit_MW": 0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 7,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.1,
+      "capacity_after_any_one_outage_MW": 10.8,
+      "full_IT_10MW_survives_single_failure_after_failover": true,
+      "remaining_deficit_MW": 0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 7,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.2,
+      "capacity_after_any_one_outage_MW": 9.6,
+      "full_IT_10MW_survives_single_failure_after_failover": false,
+      "remaining_deficit_MW": 0.4,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 8,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0,
+      "capacity_after_any_one_outage_MW": 14,
+      "full_IT_10MW_survives_single_failure_after_failover": true,
+      "remaining_deficit_MW": 0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 8,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.1,
+      "capacity_after_any_one_outage_MW": 12.6,
+      "full_IT_10MW_survives_single_failure_after_failover": true,
+      "remaining_deficit_MW": 0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    },
+    {
+      "installed_units": 8,
+      "thermal_nominal_per_unit_MW": 2,
+      "design_ambient_derating_fraction": 0.2,
+      "capacity_after_any_one_outage_MW": 11.2,
+      "full_IT_10MW_survives_single_failure_after_failover": true,
+      "remaining_deficit_MW": 0,
+      "efficiency_and_vendor_data": "not known; hypothetical net capacity after ambient derate"
+    }
+  ],
+  "thermal_bridge_transients": [
+    {
+      "cooling_shortage_MW": 2,
+      "full_failover_delay_s": 10,
+      "shortage_energy_kWh": 5.556,
+      "buffer_5K_m3": 0.959,
+      "buffer_2K_m3": 2.398,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 2,
+      "full_failover_delay_s": 30,
+      "shortage_energy_kWh": 16.667,
+      "buffer_5K_m3": 2.878,
+      "buffer_2K_m3": 7.195,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 2,
+      "full_failover_delay_s": 60,
+      "shortage_energy_kWh": 33.333,
+      "buffer_5K_m3": 5.756,
+      "buffer_2K_m3": 14.39,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 2,
+      "full_failover_delay_s": 300,
+      "shortage_energy_kWh": 166.667,
+      "buffer_5K_m3": 28.781,
+      "buffer_2K_m3": 71.952,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 2,
+      "full_failover_delay_s": 900,
+      "shortage_energy_kWh": 500.0,
+      "buffer_5K_m3": 86.342,
+      "buffer_2K_m3": 215.856,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 10,
+      "full_failover_delay_s": 10,
+      "shortage_energy_kWh": 27.778,
+      "buffer_5K_m3": 4.797,
+      "buffer_2K_m3": 11.992,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 10,
+      "full_failover_delay_s": 30,
+      "shortage_energy_kWh": 83.333,
+      "buffer_5K_m3": 14.39,
+      "buffer_2K_m3": 35.976,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 10,
+      "full_failover_delay_s": 60,
+      "shortage_energy_kWh": 166.667,
+      "buffer_5K_m3": 28.781,
+      "buffer_2K_m3": 71.952,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 10,
+      "full_failover_delay_s": 300,
+      "shortage_energy_kWh": 833.333,
+      "buffer_5K_m3": 143.904,
+      "buffer_2K_m3": 359.759,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    },
+    {
+      "cooling_shortage_MW": 10,
+      "full_failover_delay_s": 900,
+      "shortage_energy_kWh": 2500.0,
+      "buffer_5K_m3": 431.711,
+      "buffer_2K_m3": 1079.278,
+      "contingency": "THERMAL only; storage does not preserve flow without separate UPS pumps"
+    }
+  ],
+  "hydraulic": [
+    {
+      "circuit": "IT_FULL_LOAD_10MW_5K",
+      "heat_MW": 10,
+      "water_dT_K": 5,
+      "volume_flow_m3h": 1726.84,
+      "inside_diameter_mm_at_velocity": 552.6,
+      "velocity_assumed_ms": 2.0,
+      "status": "preliminary fluid sizing, no glycol viscosity or pressure losses"
+    },
+    {
+      "circuit": "RECOVERY_FULL_IT_85PCT_5K",
+      "heat_MW": 8.5,
+      "water_dT_K": 5,
+      "volume_flow_m3h": 1467.82,
+      "inside_diameter_mm_at_velocity": 509.5,
+      "velocity_assumed_ms": 2.0,
+      "status": "preliminary fluid sizing, no glycol viscosity or pressure losses"
+    },
+    {
+      "circuit": "POOL_PRIMARY_150KW_3K",
+      "heat_MW": 0.15,
+      "water_dT_K": 3,
+      "volume_flow_m3h": 43.17,
+      "inside_diameter_mm_at_velocity": 87.4,
+      "velocity_assumed_ms": 2.0,
+      "status": "preliminary fluid sizing, no glycol viscosity or pressure losses"
+    },
+    {
+      "circuit": "POOL_SECONDARY_150KW_2K",
+      "heat_MW": 0.15,
+      "water_dT_K": 2,
+      "volume_flow_m3h": 64.76,
+      "inside_diameter_mm_at_velocity": 107.0,
+      "velocity_assumed_ms": 2.0,
+      "status": "preliminary fluid sizing, no glycol viscosity or pressure losses"
+    },
+    {
+      "circuit": "DH_10MW_20K",
+      "heat_MW": 10,
+      "water_dT_K": 20,
+      "volume_flow_m3h": 431.71,
+      "inside_diameter_mm_at_velocity": 276.3,
+      "velocity_assumed_ms": 2.0,
+      "status": "preliminary fluid sizing, no glycol viscosity or pressure losses"
+    },
+    {
+      "circuit": "DH_10MW_10K",
+      "heat_MW": 10,
+      "water_dT_K": 10,
+      "volume_flow_m3h": 863.42,
+      "inside_diameter_mm_at_velocity": 390.8,
+      "velocity_assumed_ms": 2.0,
+      "status": "preliminary fluid sizing, no glycol viscosity or pressure losses"
+    }
+  ],
+  "selection": "At zero derating, 6x2 MW units withstand one unit outage. At 10% derating, 7x2 MW units required to retain >=10MW after one outage.",
+  "failure_isolation": [
+    "heat reuse network stops -> fallback rejects all IT heat",
+    "pool heating disabled -> IT cooling independent",
+    "loss of main electrical supply -> UPS-supported pumps + alternative power generator need site design",
+    "one cooler fails -> second path N+1 with independent valves/headers",
+    "loss of 50% coolant flow -> thermal volume DOES NOT ensure chip flow",
+    "instrument failure -> hardware thermal limit and independent alarms"
+  ],
+  "unverified": [
+    "real IT 10 MW peak meter data and mix of air/liquid loads",
+    "cooler manufacturer capacity at design maximum ambient air temperature",
+    "UPS runtime and power draw, piping layout, valves, coolant chemistry",
+    "hardware transient response and functional safety classification",
+    "cooling PUE overhead, fan and pump CAPEX, exact utility connection"
+  ]
+}

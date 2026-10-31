@@ -1,0 +1,26 @@
+{
+  "data_sha256": "bc73e47fc74182b782293ab655fd8b8bcea5a4aa7a01f8b1ff4c8f860caf76d0",
+  "field_validated": false,
+  "hours": 8760,
+  "limitations": [
+    "C116 pool temperature and evaporation are prescribed; no return coupling.",
+    "Preconditioned supply at 26 C and 55% RH is synthetic, not real weather/coil output.",
+    "Dehumidifier removes vapor enthalpy; no vendor COP, heat recovery or compressor model.",
+    "HVAC thermostat is ideal proportional with capped heat/cooling, no hardware dynamics.",
+    "Instant saturation condensation; no wall thermal mass or sensor lag.",
+    "Mass and moist-air enthalpy conservation are accounting identities, not field validation."
+  ],
+  "quarters": 140160,
+  "room_dry_air_kg": 3540.0,
+  "scenarios": 4,
+  "schema": "C124_SYNTHETIC_15MIN_AIR_ENTHALPY_V1",
+  "selftests": 7,
+  "source_sha256": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf",
+  "source_signoffs_added": 0,
+  "summary_sha256": "9864048528df214966cd677ff6d1df92ff84c5a245a698ee794d9673786b3333",
+  "supply_RH": 0.55,
+  "supply_T_C": 26.0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "vent_dry_air_kg_per_quarter": 885.0
+}

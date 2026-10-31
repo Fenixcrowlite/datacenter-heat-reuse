@@ -1,0 +1,114 @@
+{
+  "as_of": "2026-10-23",
+  "vault": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse\\calibration\\equipment_selection_20261023",
+  "created": 12,
+  "verified": 16,
+  "hub": "CREATED",
+  "conflicts": [
+    "Equipment_Selection_SK.md"
+  ],
+  "files": [
+    {
+      "file": "Equipment_Selection_SK.md",
+      "status": "CONFLICT_NO_OVERWRITE",
+      "verified_identical": false,
+      "sha256": "11c824a5b53bc76a321eed1378415ad9d86d80520483ee4982fd8134d2d9664b"
+    },
+    {
+      "file": "Equipment_Selection_RU.md",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "93268b1a9ce24d7b65a7890bfcb4450f591155fd0c952847e37f0d91d7f71557"
+    },
+    {
+      "file": "Equipment_Selection_EN.md",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "9593a4b4fcd7b1eecd857eae8487b583d23e83ca01c483c1bd226110dd823c09"
+    },
+    {
+      "file": "Equipment_Selection_SK_v02.pdf",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "7435e63609f10f038a6fe1da2ea7b6827705ee30234ac0783658f41639f6aedd"
+    },
+    {
+      "file": "Equipment_Selection_RU_v02.pdf",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "17c9c80f1c224a6627b9dc74d0b9d901928194f5a6ac0ca7a29164765b576313"
+    },
+    {
+      "file": "Equipment_Selection_EN_v02.pdf",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "6244aff1b52994314de4ca7a012b52bc0a9f4087d20947a1ab895ff89144b00a"
+    },
+    {
+      "file": "Module_capacity_tradeoff_SK.md",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "7e1ef1fe4333df98b3b7658ec8d74004f9b2c42eafe9757b8808b55a02150502"
+    },
+    {
+      "file": "Module_capacity_tradeoff_SK.pdf",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "ff28f79ac7b589a3c147a823d7ce8dc47c509caffd23ff79990a13e1eb0d604a"
+    },
+    {
+      "file": "equipment_configurator.html",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "df7e8675ed44e90a44dfeaa5d0bdb03b75e3c669b251df485382be80fba9e1f7"
+    },
+    {
+      "file": "equipment_selection_default.json",
+      "status": "ALREADY_IDENTICAL",
+      "verified_identical": true,
+      "sha256": "32dcd916167b9c6d76d0c8ed3288775f94b8c063c52f8518543d10baac4d27d5"
+    },
+    {
+      "file": "HX_low_grade_heat_default.csv",
+      "status": "ALREADY_IDENTICAL",
+      "verified_identical": true,
+      "sha256": "21b5ebf4e23799c302b060b0f98f5f6d983a58cb8819f55784be1ca0cf34915a"
+    },
+    {
+      "file": "CAPEX_pool_cases_default.csv",
+      "status": "ALREADY_IDENTICAL",
+      "verified_identical": true,
+      "sha256": "30ef69e2484151cabe33ee0de57f4b1f32e6257c18317ca76896646b8c00abf2"
+    },
+    {
+      "file": "screen_equipment_options.py",
+      "status": "ALREADY_IDENTICAL",
+      "verified_identical": true,
+      "sha256": "a7cbaddae25ef23ada022616598940debcf3f02933e98c4b2cff0652f496e032"
+    },
+    {
+      "file": "optimize_module_capacity.py",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "ee072e34603acd69e7a7b89c2ba4859bde4e7d852ecfed32f5373a8dcd69363d"
+    },
+    {
+      "file": "network_module_2MW_Nplus1_screen.csv",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "88a6a03b10bbe5a956b85682bbcc602897c87476e909a939269b553ba0a5119d"
+    },
+    {
+      "file": "network_module_2MW_Nplus1_screen.json",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "fb6c3d3401bbf0b4c18564832903445290c3cb3fd29fcd85da48809c7ce9d228"
+    },
+    {
+      "file": "equipment_v02_qa.json",
+      "status": "COPIED",
+      "verified_identical": true,
+      "sha256": "3c2e815006c10dd3e756f8e8527a6d5d87f11988eb9dac3da44122b44788ed52"
+    }
+  ]
+}

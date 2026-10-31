@@ -1,0 +1,48 @@
+{
+  "dataset": "SYNTHETIC",
+  "model": "DC_Bazen_Alokacia_Rok_v02_SK",
+  "tests": {
+    "annual_csv_rows": 4,
+    "energy_closures": 12,
+    "safety_temperature": 4,
+    "stop_168h": 1,
+    "source_partition": 4,
+    "hourly_cop_limits": 4,
+    "cross_scenario_sense": 2
+  },
+  "results": {
+    "zaklad": {
+      "passed": true,
+      "rows": 8760,
+      "maximum_T_C": 27.75,
+      "dc_W": 1.0186340659856796e-09,
+      "hp_W": 9.094947017729282e-10,
+      "storage_MWh": 1.9539925233402755e-14
+    },
+    "teply_zdroj": {
+      "passed": true,
+      "rows": 8760,
+      "maximum_T_C": 27.75,
+      "dc_W": 1.0186340659856796e-09,
+      "hp_W": 9.058567229658365e-10,
+      "storage_MWh": 8.881784197001252e-16
+    },
+    "vypadok_168h": {
+      "passed": true,
+      "rows": 8760,
+      "maximum_T_C": 27.75,
+      "dc_W": 1.0186340659856796e-09,
+      "hp_W": 9.094947017729282e-10,
+      "storage_MWh": 9.769962616701378e-15
+    },
+    "bez_plachty": {
+      "passed": true,
+      "rows": 8760,
+      "maximum_T_C": 27.75,
+      "dc_W": 1.0186340659856796e-09,
+      "hp_W": 9.094947017729282e-10,
+      "storage_MWh": 0.0
+    }
+  },
+  "status": "PASS"
+}

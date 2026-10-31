@@ -1,0 +1,26 @@
+{
+  "time": "2026-10-26T07:00:49.699135+01:00",
+  "checks": {
+    "manifest_7": true,
+    "event_exactly_one": true,
+    "evidence_sha_matches": true,
+    "sqlite_integrity": true,
+    "live_server_still_same": true,
+    "tests_28_pass": true,
+    "task_review_unowned": true,
+    "no_secrets_in_evidence": true
+  },
+  "all_pass": true,
+  "files_verified": 7,
+  "event_id": 1205,
+  "mismatches": [],
+  "live_status_safe": {
+    "instance_id": "f7ff4791f218458e8db3aafec96c0eab",
+    "pid": 5264,
+    "playing": false,
+    "stopped": false,
+    "index": 0,
+    "scenario_id": "zdravy",
+    "sample_count": 672
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "command": "addpath('matlab/simulink'); export_hp_traceability_v43('results/hp_traceability_v43_20261010T131612_418934Z');",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "log_path": "automation/logs/hp_traceability_v43_console_20261010T131744788Z.log",
+  "timestamp_utc": "2026-10-10T13:17:49.7666903Z"
+}

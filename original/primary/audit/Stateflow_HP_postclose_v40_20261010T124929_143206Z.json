@@ -1,0 +1,666 @@
+{
+  "version": "0.40",
+  "timestamp_utc": "2026-10-10T12:49:29.143117+00:00",
+  "manifest": "audit\\Stateflow_HP_manifest_v40_20261010T124921_176639Z.json",
+  "sealed_entries": 141,
+  "passed": 164,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "scoped_acceptance",
+      "passed": true
+    },
+    {
+      "name": "actual_model_hash",
+      "passed": true
+    },
+    {
+      "name": "baseline_v14_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v24_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v28_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v30_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v32_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v34_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v36_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_v38_present",
+      "passed": true
+    },
+    {
+      "name": "all_QA_pass",
+      "passed": true
+    },
+    {
+      "name": "actual_counts",
+      "passed": true
+    },
+    {
+      "name": "synthetic_counts_separate",
+      "passed": true
+    },
+    {
+      "name": "analytic_counts",
+      "passed": true
+    },
+    {
+      "name": "implementation_check_rows",
+      "passed": true
+    },
+    {
+      "name": "six_actual_modes",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v40_20261010T124441186Z.json_exit",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v40_20261010T124816103Z.json_exit",
+      "passed": true
+    },
+    {
+      "name": "first_law_residual",
+      "passed": true
+    },
+    {
+      "name": "primary_article_replication_not_claimed",
+      "passed": true
+    },
+    {
+      "name": "physical_validation_not_claimed",
+      "passed": true
+    },
+    {
+      "name": "physical_validation_status",
+      "passed": true
+    },
+    {
+      "name": "primary_signoffs_scope",
+      "passed": true
+    },
+    {
+      "name": "audit/finalize_stateflow_hp_domain_v40.py",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_dynamic_range_derivation_v40.md",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_dynamic_range_results_v40.md",
+      "passed": true
+    },
+    {
+      "name": "audit/prepare_stateflow_QA_v40.py",
+      "passed": true
+    },
+    {
+      "name": "audit/prepare_stateflow_v40.py",
+      "passed": true
+    },
+    {
+      "name": "audit/run_stateflow_hp_domain_v40.ps1",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v40_20261010T124433247Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v40_20261010T124441186Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v40_20261010T124816103Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_hp_domain_v40.py",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_hp_spec_v40_20261010T124353_401821Z/cases.json",
+      "passed": true
+    },
+    {
+      "name": "audit/verify_stateflow_hp_domain_v40.py",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_hp_v40_console_20261010T124433247Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_hp_v40_console_20261010T124441186Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_hp_v40_console_20261010T124816103Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_hp_v40_QA_20261010T124840620Z.log",
+      "passed": true
+    },
+    {
+      "name": "MASTER_STAGEBOARD_stateflow_v40.md",
+      "passed": true
+    },
+    {
+      "name": "matlab/+dchr/+components/heat_pump_step_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/build_dispatch_stateflow_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v40.slx",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/dchr_segment_plan_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/dchr_stateflow_hp_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/export_stateflow_resolution_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/run_stateflow_faults_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/run_stateflow_hp_domain_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/stateflow_allocate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/stateflow_choose_mode_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/stateflow_clock_add_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/stateflow_collect_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/stateflow_contract_gate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/stateflow_supervisor_guard_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/above_capacity_state_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/assertions_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/boiler_limit_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/capacity_on_dwell_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/cutoff_above_capacity_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/delayed_nonfinite_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/delayed_source_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/delivery_above_cutoff_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/dt_mismatch_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/event_budget_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/execution_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/fallback_h_0.25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/fallback_h_4_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/hp_components.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/hp_components_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/hp_only_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/independent_QA_v40_20261010T124840_716567Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/insufficient_heat_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/invalid_backend_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/invalid_latch_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/invalid_restart_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/iterator_tick_timer_corruption_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/long_off_dwell_cutoff_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/mat_audit_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/metadata_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/mode_sequence_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_01_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_01_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_02_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_02_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_03_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_03_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_04_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_04_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_05_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_05_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_06_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_06_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_07_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_07_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_08_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_08_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_09_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_09_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_10_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_10_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_11_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/monitor_corruption_11_in_memory_allocation.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_boiler_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_clock_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_demand_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_off_dwell_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_on_dwell_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_rate_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/negative_source_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/physical_off_dwell_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/post_fault_clean_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/pre_fault_clean_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/qa_source/20261010T124840_716567Z/verify_stateflow_hp_domain_v40.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/runtime_faults_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/scale_1e+09_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/small_loss_cycles_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_demand_changes_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_limited_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/build_dispatch_stateflow_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/DCHR_Dispatch_Stateflow_v40.slx",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/dchr_segment_plan_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/dchr_stateflow_hp_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/export_stateflow_resolution_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/heat_pump_step_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/run_stateflow_faults_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/run_stateflow_hp_domain_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/spec/cases.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_allocate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_choose_mode_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_clock_add_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_collect_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_contract_gate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_hp_domain_v40.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_reference_v30.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_reference_v32.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_reference_v34.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_supervisor_guard_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/stateflow_time_tolerance_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/source_snapshot/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/summary_v40.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tes_charge_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tes_discharge_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_120_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_20_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_40_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_60_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_75_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_80_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_81_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/tight_request_90_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_120_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_20_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_40_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_60_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_75_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_80_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_81_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/wide_request_90_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/zero_demand_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/zero_heat_capacity_fault_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_hp_domain_v40_20261010T124559855Z/zero_loss_cycles_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "STATUS_stateflow_v40.json",
+      "passed": true
+    }
+  ]
+}

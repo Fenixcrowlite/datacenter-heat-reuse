@@ -1,0 +1,19 @@
+{
+    "schema":  "C90_SHA256_MANIFEST_V1",
+    "source_C88_sha256":  "07d1d7f19d92ce34d5b3e5a44a2131234a4a2e7991e21f018b197137ed0eb370",
+    "files":  {
+                  "c90_pool_counterfactual.py":  "b365bf24a1a47700184063dbb9ab19acd18f9fc5760443f4dc01aa2cfd79da95",
+                  "qa_c90_independent.py":  "ad9c277cc3ead7035cfd7ead75869b3cedbd835ca96cd3fc1c27c3423b737361",
+                  "c90_recovery_threshold.py":  "a7386aa8aad2362e1f642b6cc3d7b5f56b8ca70013e59eecc082e41f2a718163",
+                  "qa_c90_threshold.py":  "e9fb38d3bb076022c0606ef7ec3ee1b2f43778798cfab11bcea9897af2c97608",
+                  "C90_POOL_HOURLY.csv":  "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+                  "C90_POOL_MONTHLY.csv":  "b9100cc12fd1236874e7f6a015effffdac2eb48a475ddebc6ca405ce3c646bdf",
+                  "C90_POOL_SUMMARY.json":  "980c2244dc8f3246eb95c2d5d4774930245713b07eb4d903f13efd75ba4afd47",
+                  "C90_RECOVERY_THRESHOLDS.json":  "0ee8eb7d48a5fb9ad30b8d513181b312486578bbe4b32e438e9e53fc81f29899",
+                  "C90_RUN_OUTPUT.json":  "7776f59d710f2dc8d5f9b82fc1ddfd2cffcdf880a49dc6dbe7e7dff71829f9bd",
+                  "C90_INDEPENDENT_QA.json":  "71245014304987862efb8cae72e5c5e10af3cfe3641b0338244a55ca9a0718a9",
+                  "C90_THRESHOLD_RUN.txt":  "c5182ce77c54f99bfec3469655266245add12597ac39df909ffbff444b63cb6d",
+                  "C90_THRESHOLD_QA.json":  "7fe10bb68fe7f82850f51b5186cf8e3dd61937ca9ba113f1ecbd074c47b5b605",
+                  "C90_FINDINGS.md":  "34745d94e6c7207944c3ff537f59b46735ba12bd6bde1dfd2132c5bcbdfd494b"
+              }
+}

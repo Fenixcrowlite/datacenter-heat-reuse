@@ -1,0 +1,7 @@
+{
+  "asset_id": "TEST-LOOP-NOT-REAL",
+  "source_kind": "synthetic_test",
+  "sensor_calibration_record": "SYNTHETIC-CAL-ONLY",
+  "original_csv_sha256": "c6165c43bd0dc60e5ef0f5c6c3380a873e84b8a08a50c19908e8416c781c7362",
+  "provenance_notes": "Explicitly synthetic fixture, not real SCADA data"
+}

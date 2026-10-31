@@ -1,0 +1,103 @@
+{
+  "version": "0.12",
+  "category": "independent_reference_property_tests_and_static_matlab_audit",
+  "not_matlab_runtime_validation": true,
+  "not_primary_paper_replication": true,
+  "timestamp_utc": "2026-10-08T21:19:48.571720+00:00",
+  "tests": [
+    {
+      "name": "3000_randomized_first_law_demand_storage_source_boiler",
+      "pass": true,
+      "detail": "seed=12026; 3000 cases; strict 1e-8"
+    },
+    {
+      "name": "reject_negative_demand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_negative_source",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_negative_storage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_overfilled_storage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_cop_one",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_cop_nan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_zero_dt",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_zero_charge_eff",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_negative_loss",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_loss_over_100_percent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "three_static_matlab_risks_located",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "findings": [
+    {
+      "id": "F12-01",
+      "severity": "HIGH",
+      "location": "matlab/+dchr/simulate_system_v2.m",
+      "evidence": "qGas(k)=max(0,qNeed-qDirect-qDis(k));",
+      "issue": "No finite boiler capacity is enforced in this dispatch; a missing capacity parameter prevents credible unmet-load calculations.",
+      "confirmed_static": true
+    },
+    {
+      "id": "F12-02",
+      "severity": "MEDIUM",
+      "location": "matlab/+dchr/+components/storage_step.m",
+      "evidence": "room/(cfg.storage.eta_charge*dt)",
+      "issue": "No explicit positive dt and efficiency input validation; zero values can yield invalid numerical states.",
+      "confirmed_static": true
+    },
+    {
+      "id": "F12-03",
+      "severity": "MEDIUM",
+      "location": "matlab/+dchr/+components/heat_pump.m",
+      "evidence": "lift = max(1,sink_C-source_C);",
+      "issue": "Nonpositive temperature lift is silently converted to 1 K. Model domain/mode selection must be specified.",
+      "confirmed_static": true
+    }
+  ],
+  "source_sha256": {
+    "audit\\reference_physics_v07.py": "ed849540a79f0119a71613e277c1dda80fca9abfab765e5b3e2b7ee79062db9e",
+    "matlab\\+dchr\\simulate_system_v2.m": "7ec9e95e54302ec7a1734613c75f4a19d56015c492f38e000fb1ba51bb5119bb",
+    "matlab\\+dchr\\+components\\storage_step.m": "62077ab766b7974ac091b27db05d947898ce637c7e478d7c44007178e6cf2c68",
+    "matlab\\+dchr\\+components\\heat_pump.m": "6eedcb801e7b7256ea581c5fd2a413f230a9b28403c9a167e9c27f4405076fe2"
+  }
+}

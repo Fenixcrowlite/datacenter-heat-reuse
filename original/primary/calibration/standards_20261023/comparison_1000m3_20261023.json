@@ -1,0 +1,58 @@
+{
+  "input": {
+    "length_m": 25.0,
+    "width_m": 20.0,
+    "depth_m": 2.0,
+    "initial_C": 16.0,
+    "target_C": 27.5,
+    "switch_off_C": 27.8,
+    "standard_max_C": 28.0,
+    "heater_kW": 150.0,
+    "holding_loss_kW": 31.45,
+    "cop": 4.0,
+    "source_C": 35.0,
+    "approach_K": 3.0,
+    "it_capacity_MW": 10.0,
+    "it_utilization": 0.82,
+    "recovery_fraction": 0.85,
+    "pue": 1.52,
+    "hours": 8760
+  },
+  "provenance": {
+    "it_and_COP": "D engineering assumption",
+    "holding_loss": "D synthetic pool model",
+    "PUE_benchmark": "B Uptime 2026",
+    "pool_max": "published Slov-Lex 308/2012 text, consolidation not independently verified"
+  },
+  "pool": {
+    "volume_m3": 1000.0,
+    "water_surface_m2": 500.0,
+    "area_scaled_holding_loss_kW": 50.32,
+    "ideal_heatup_MWh": 13.319089166666666,
+    "constant_loss_heatup_h": 133.6184707731407,
+    "ideal_hp_electric_MWh": 3.3297722916666666,
+    "ideal_hp_dc_source_MWh": 9.989316875,
+    "screening_hold_year_MWh": 440.8032,
+    "screening_annual_heat_MWh": 454.1222891666667,
+    "screening_annual_hp_electric_MWh": 113.53057229166667
+  },
+  "datacentre": {
+    "IT_MW": 8.2,
+    "annual_EIT_MWh": 71832.0,
+    "annual_EDC_MWh": 109184.64,
+    "scenario_recoverable_MW": 6.969999999999999,
+    "scenario_recoverable_annual_MWh": 61057.19999999999,
+    "benchmark_pue_2026": 1.52,
+    "reference_PUE_2026_EDC_MWh": 109184.64,
+    "delta_current_minus_survey_EDC_MWh": 0.0,
+    "pool_HP_source_boundary_ERF_screening": 0.0031194105404844493
+  },
+  "direct_exchange_possible_screening": true,
+  "warnings": [
+    "PUE 1.52 is a 2026 population survey benchmark, not site measurement/mandatory target",
+    "31.45 kW loss is a 312.5 m2 synthetic baseline, scaled linearly by area; NOT measured or valid for changed ambient conditions",
+    "constant COP and losses are screening assumptions; use dynamic pool model for annual simulations",
+    "EU ERF measured at DC boundary; screening result is not a reportable compliance metric",
+    "legal effective version, STN text, equipment and safety still need professional review"
+  ]
+}

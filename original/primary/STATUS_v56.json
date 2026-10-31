@@ -1,0 +1,113 @@
+{
+  "version": "0.56",
+  "timestamp_utc": "2026-10-11T11:14:43.860859+00:00",
+  "inherits": "STATUS_v55.json",
+  "result": "TEN_CHARGE_REGIMES_VERIFIED_EXACT_EVENT_ENDPOINT_BLOCKER_OPEN",
+  "model_version": "0.52",
+  "new_model": false,
+  "saved_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v52.slx",
+  "model_sha256": "3d12602aeebcb80585ecfd16e13b0e9ea9cffe091348883b620923e468954e12",
+  "model_executed_this_run": true,
+  "coupled_stateflow_acceptance": false,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "stateflow_license_observed": true,
+  "stateflow_version": [],
+  "chart_count": 2,
+  "matlab_passed": 727,
+  "matlab_failed": 0,
+  "matlab_main_passed": 694,
+  "matlab_temporal_passed": 33,
+  "component_cases": 146,
+  "component_accepted": 137,
+  "component_domain_rejections": 9,
+  "charge_regime_coverage": [
+    [
+      "FLOOR",
+      "HOT_FLOW"
+    ],
+    [
+      "FLOOR",
+      "NAMEPLATE"
+    ],
+    [
+      "FLOOR",
+      "REQUEST"
+    ],
+    [
+      "FLOOR",
+      "SOURCE"
+    ],
+    [
+      "FLOOR",
+      "TES_PORT"
+    ],
+    [
+      "TANK",
+      "HOT_FLOW"
+    ],
+    [
+      "TANK",
+      "NAMEPLATE"
+    ],
+    [
+      "TANK",
+      "REQUEST"
+    ],
+    [
+      "TANK",
+      "SOURCE"
+    ],
+    [
+      "TANK",
+      "TES_PORT"
+    ]
+  ],
+  "nominal_event_labels": [
+    "BRANCH",
+    "CAPACITY",
+    "LIMIT_HOT_FLOW",
+    "LIMIT_REQUEST"
+  ],
+  "actual_intervals": 13,
+  "actual_positive_segments": 14,
+  "required_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_runtime_fault_rejections": 1,
+  "reference_comparisons": 6,
+  "temporal_macro_transitions": 6,
+  "dwell_latch_changes": 3,
+  "independent_equation_passed": 6695,
+  "independent_release_passed": 650,
+  "independent_failed": 0,
+  "original_binary_records": 85,
+  "original_binary_values": 43148,
+  "original_mats": 7,
+  "reviewer_selfchecks_passed": 7,
+  "exact_endpoint_gap_fraction": "-5/3602879701896397",
+  "defect_status": "COUPLED_EVENT_ENDPOINT_PROTOCOL_OPEN",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "prior_six_mode_acceptance": "STATUS_stateflow_v52.json",
+  "result_directory": "results/charge_regimes_v56_20261011T111230_427402Z",
+  "independent_qa": "results/charge_regimes_v56_20261011T111230_427402Z/independent_QA_v56_20261011T111430_667933Z.json",
+  "release_qa": "results/charge_regimes_v56_20261011T111230_427402Z/release_QA_v56_20261011T111435_176759Z.json",
+  "limitations": [
+    "No new SLX or continuously coupled Stateflow acceptance. Actual saved v52 freshly executes six held-input fixtures and a seven-interval sequence; previously accepted v52 remains unchanged.",
+    "v56 certifies a unique instantaneous minimum, but coefficients, candidate energies and event times are nominal binary64. Branch/limiter equality, propagated endpoint error and variable-power port integrals remain OPEN. Exact equality and unresolved minima reject.",
+    "Actual nominal branch-endpoint replay rejects with DCHR:v55:UnresolvedBranch. The rounded kink energy 5 MWh differs from the exact binary-input kink; exact gap is -5/3602879701896397 K. This is a new-interface prerequisite blocker, not a defect in accepted v52 fixed-temperature scope.",
+    "Charge-only event landscape has no direct-demand/discharge or HP dwell dynamics. Dwell checks and temporal traces in this checkpoint verify held-input saved v52, not a coupled v56 controller.",
+    "Synthetic tank-return variable-flow topology, without calibrated UA, hydraulics, pumps/minimum-flow law or equipment map. No new literature/primary text retrieved; inherited full signoffs remain 0/31. No article replication or measured physical validation.",
+    "Independent exact Fraction algebra, 80-digit Decimal equations, min-envelope RK4, original-MAT binary binding and separate reviewer mutations by the same agent; not independent personnel or a universal numerical-domain proof.",
+    "Stateflow license, two charts and actual normal-mode execution observed; ver(Stateflow) empty, so no installed version claimed. Inherited host planner/64-slot/standalone deployment limits and shadow warnings remain.",
+    "Pre-existing unfinished v56 files and earlier successful/failed evidence preserved. Their incomplete late-harness/reviewer snapshots are superseded by this fresh complete snapshot; prior results were not overwritten."
+  ],
+  "next_actionable_task": "Implement a bounded-error charge propagator and compressor/source energy integrals for all ten charge regimes. Resolve the exact branch/limiter equality endpoint with an explicit one-sided protocol; nominal roots and log1p event times are diagnostics, not controller certificates. Then integrate an additive coupled Stateflow model with demand/cutoff/restart/dwell, strict padding/handoff, six modes, faults, verified-reference comparison and independent original-MAT binary/equation QA. Preserve saved v52 and v53-v56 evidence; do not repeat unchanged annual matrices. Primary equipment calibration remains OPEN."
+}

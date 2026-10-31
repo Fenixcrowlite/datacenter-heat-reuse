@@ -1,0 +1,144 @@
+{
+  "timestamp_utc": "2026-10-10T17:42:21.799647+00:00",
+  "manifest": "audit/HP_upstream_manifest_v44_20261010T174200_742907Z.json",
+  "passed": 34,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "audit/finalize_hp_upstream_v44.py",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_boundary_execution_v44_20261010T173850533Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_boundary_execution_v44_20261010T173905115Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_upstream_boundary_derivation_v44.md",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_upstream_boundary_results_v44.md",
+      "passed": true
+    },
+    {
+      "name": "audit/hp_upstream_current_v44.txt",
+      "passed": true
+    },
+    {
+      "name": "audit/literature_traceability_v44.csv",
+      "passed": true
+    },
+    {
+      "name": "audit/prepare_hp_upstream_v44.py",
+      "passed": true
+    },
+    {
+      "name": "audit/run_hp_boundary_v44.ps1",
+      "passed": true
+    },
+    {
+      "name": "audit/verify_hp_boundary_v44.py",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/hp_acquisition_v44_20261010T173843424Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/hp_boundary_QA_v44_20261010T174039514Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/hp_boundary_v44_20261010T173850533Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/hp_boundary_v44_20261010T173905115Z.log",
+      "passed": true
+    },
+    {
+      "name": "MASTER_STAGEBOARD_v44.md",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/export_hp_boundary_v44.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/run_hp_boundary_v44.m",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/acquisition.json",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/boundary_v44.json",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/boundary_v44.mat",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/independent_QA_v44_20261010T174040_285460Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/mat_reexport_v44.json",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/source_observations_v44.json",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/source_snapshot/export_hp_boundary_v44.m",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/source_snapshot/run_hp_boundary_v44.m",
+      "passed": true
+    },
+    {
+      "name": "results/hp_upstream_v44_20261010T173843_592523Z/spec.json",
+      "passed": true
+    },
+    {
+      "name": "STATUS_v44.json",
+      "passed": true
+    },
+    {
+      "name": "status_matches_QA",
+      "passed": true
+    },
+    {
+      "name": "model_hash_unchanged",
+      "passed": true
+    },
+    {
+      "name": "no_calibration_claim",
+      "passed": true
+    },
+    {
+      "name": "ledger_preserves31_sources",
+      "passed": true
+    },
+    {
+      "name": "ledger_only20_blocker_extended",
+      "passed": true
+    },
+    {
+      "name": "ledger_no_full_signoff",
+      "passed": true
+    }
+  ]
+}

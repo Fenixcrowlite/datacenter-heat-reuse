@@ -1,0 +1,12 @@
+{
+  "evidence_class": "completed_finalizer_log_seal",
+  "supplements": "audit/Stateflow_HP_postclose_manifest_v39_20261010T123745176Z.json",
+  "timestamp_utc": "2026-10-10T12:37:53.6930684Z",
+  "files": [
+    {
+      "bytes": 105,
+      "path": "automation\\logs\\stateflow_hp_v39_finalize_20261010T123656316Z.log",
+      "sha256": "d7261d0557d16d88f54e8e6f5d8e1d7dcc9e9d2d86c0ed84e24287dce830c8ae"
+    }
+  ]
+}

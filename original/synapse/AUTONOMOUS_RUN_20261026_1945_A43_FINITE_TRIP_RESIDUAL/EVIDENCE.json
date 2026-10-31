@@ -1,0 +1,16 @@
+{
+  "status": "A43_SYNTHETIC_SIMULINK_EMCHART_CLOSED_LOOP_PARITY_PASS",
+  "physical_release": false,
+  "hardware_control": false,
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1945_A43_FINITE_TRIP_RESIDUAL",
+  "existing_task_id": "scc-3d9d172beb6e1b",
+  "model_sha256": "afe6752077d6bea440ac85d7b700fb867879bc38306840a11fc50ba53c91f162",
+  "python_source_sha256": "7e2cf8fe09b11ae923726e088825bf73477583e1c2e8888bb42987b130d73af2",
+  "a42_source_sha256": "e6f600bf3533761deaace0d19c731dcc9a2b07919cab86171ab31458d7b0267e",
+  "input_sha256": "a9a88fef53a8211737835d6cd7efe1ba66ce9649eef42724445098f09fcc7f21",
+  "matlab_audit_sha256": "c10530931f046777d238ec9ca427d3356b13b61528be395d1e2d85af85d83744",
+  "simulink_result_sha256": "fec5682e2c072b774824ca096c4ee64e9ea3d96465825b574fbdeffadd9f08ae",
+  "qa": "18/18 Python PASS; 18816 Decimal expressions; MATLAB CSV 4704; executable Simulink EMChart 4704 steps/51744 parity PASS",
+  "caveat": "Synthetic assumptions: 30-min trip, 12% residual heat tau 1h, 60kW/15min REJECT recovery; no graphical Stateflow chart or compressor inertia, no hardware release",
+  "next_step": "A44 independent graphical Stateflow transitions + compressor ramp/lag and measured parameter calibration; no production/hardware changes"
+}

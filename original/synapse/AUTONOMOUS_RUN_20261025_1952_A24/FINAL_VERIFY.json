@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "manifest_files_checked": 15,
+  "tests_passed": 40,
+  "event_ids": [
+    1152,
+    1153
+  ],
+  "event_count_unique": 2,
+  "task_states": {
+    "scc-3d9d172beb6e1b": [
+      "review",
+      "planned"
+    ],
+    "scc-d941595119d699": [
+      "queued",
+      "planned"
+    ]
+  },
+  "handoff_sha256": "4d995f784cebf9eda6d27b28f5ac17fcc6d275e8295f43c109dc3e3ad7530ac9",
+  "lineage_evidence_sha256": "8ce7de1b5eb36fa2e667be843b6a161c043d6f773b036e78b88b844fc47d2232",
+  "acoustic_evidence_sha256": "49576e9e05adefde75c75cdd434d848020107b13964baa0f8b7b51d93ce87b88"
+}

@@ -1,0 +1,37 @@
+{
+  "version": "0.27",
+  "timestamp_utc": "2026-10-09T08:19:21.2829219Z",
+  "matlab_batch_exit_code": 0,
+  "observed_via": "write_stdin session 49492 completion: exit_code=0; MATLAB_EXIT_CODE=0",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "stateflow_license": 1,
+  "log_file": "automation/logs/stateflow_temporal_v27_local_20261009T081736272Z.log",
+  "log_sha256": "8dbffbac7baf1fd2ea965e6aa0ec428461deb5a0ad61e0488f231654b64842b7",
+  "result_directory": "results/stateflow_temporal_v27_20261009T081740297Z",
+  "final_assertions_passed": 80,
+  "final_assertions_failed": 0,
+  "earlier_attempts": [
+    {
+      "log_file": "automation/logs/stateflow_temporal_v27_sandbox_20261009T081029187Z.log",
+      "exit_code": 1,
+      "scope": "sandbox startup failed before MATLAB tests"
+    },
+    {
+      "log_file": "automation/logs/stateflow_temporal_v27_local_20261009T081048363Z.log",
+      "exit_code": 1,
+      "scope": "record assembly failure after first actual case"
+    },
+    {
+      "log_file": "automation/logs/stateflow_temporal_v27_local_20261009T081244188Z.log",
+      "exit_code": 1,
+      "scope": "all timing/prefix checks passed;10 incorrect inner-cause assertions failed"
+    },
+    {
+      "log_file": "automation/logs/stateflow_temporal_v27_local_20261009T081632948Z.log",
+      "exit_code": 1,
+      "scope": "JSON cell schema setup failure before simulation"
+    }
+  ],
+  "primary_paper_replication": false,
+  "physical_validation": false
+}

@@ -1,0 +1,18 @@
+test_duplicate_time (test_sim_energy_audit.AuditTests.test_duplicate_time) ... ok
+test_empty (test_sim_energy_audit.AuditTests.test_empty) ... ok
+test_exceeds_dc (test_sim_energy_audit.AuditTests.test_exceeds_dc) ... ok
+test_gap (test_sim_energy_audit.AuditTests.test_gap) ... ok
+test_hp_source_exceeds_hx (test_sim_energy_audit.AuditTests.test_hp_source_exceeds_hx) ... ok
+test_nan (test_sim_energy_audit.AuditTests.test_nan) ... ok
+test_negative (test_sim_energy_audit.AuditTests.test_negative) ... ok
+test_one_hour_energy_and_boundary (test_sim_energy_audit.AuditTests.test_one_hour_energy_and_boundary) ... ok
+test_truncated (test_sim_energy_audit.AuditTests.test_truncated) ... ok
+test_two_hours (test_sim_energy_audit.AuditTests.test_two_hours) ... ok
+test_valid_curtailed_heat (test_sim_energy_audit.AuditTests.test_valid_curtailed_heat) ... ok
+test_wrong_balance (test_sim_energy_audit.AuditTests.test_wrong_balance) ... ok
+test_wrong_count (test_sim_energy_audit.AuditTests.test_wrong_count) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.192s
+
+OK

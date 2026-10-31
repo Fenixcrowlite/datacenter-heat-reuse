@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-10T02:42:41.191702+00:00",
+  "primary_engineering_documentation": [
+    {
+      "url": "https://bigladdersoftware.com/epx/docs/9-5/engineering-reference/water-thermal-tanks-includes-water-heaters.html",
+      "evidence": "primary_text_verified",
+      "locator": "Mixed Water Thermal Tank / Energy Balance and Water Heater Control Algorithm",
+      "adopted": "constant-coefficient solution/inverse method only; no parameter values"
+    },
+    {
+      "url": "https://www.mathworks.com/help/stateflow/ug/using-temporal-logic-in-state-actions-and-transitions.html",
+      "evidence": "primary_software_text_verified_R2026b_page",
+      "locator": "Define Time Delays / Best Practices for Temporal Logic",
+      "adopted": "timing design caution only; no new temporal API executed"
+    }
+  ],
+  "research_discovery": [
+    {
+      "url": "https://www.mdpi.com/1996-1073/13/17/4339",
+      "doi": "10.3390/en13174339",
+      "evidence": "search_index_only_NOT_full_text_verified",
+      "full_text_attempt": "HTTP 429 via web retrieval",
+      "adopted_equations_or_values": false
+    },
+    {
+      "url": "https://doi.org/10.1016/j.renene.2024.121409",
+      "doi": "10.1016/j.renene.2024.121409",
+      "evidence": "search_index_only_NOT_full_text_verified",
+      "full_text_attempt": "inaccessible Elsevier redirect via web retrieval",
+      "adopted_equations_or_values": false
+    }
+  ],
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "inherited_primary_article": "audit/TES_standing_loss_primary_v28.md"
+}

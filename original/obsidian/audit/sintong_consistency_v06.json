@@ -1,0 +1,19 @@
+{
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "test_vectors": {
+    "eq22_as_extracted_W": -15075.0,
+    "physical_load_positive_W": 15075.0,
+    "generated_HP_MW": 10.0,
+    "eq24_as_extracted_MW": 10.08659793814433,
+    "physically_delivered_MW": 9.7,
+    "free_cooling_tra_star_C": -13.0,
+    "outside_C": 5,
+    "return_C": 35,
+    "seasonal_ratio": 2.857142857142857,
+    "arithmetic_mean_hourly_COP": 3.5
+  },
+  "interpretation": "Detected sign/energy/temperature/KPI formula vulnerabilities in an extracted thesis representation, not proved publication errors. Visual source confirmation required."
+}

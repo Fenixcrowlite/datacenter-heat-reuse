@@ -1,0 +1,60 @@
+function [Tnovy,termostat,meranie] = tok_dc_bazen(T,stav,u)
+%#codegen
+% Vsetky vykony vo W; jeden krok = jedna hodina. 500 m3 vody.
+% u: [QDC, Tzdroj, aktivita, plachta, QDH_zad, QTES_zad, povolene, STOP, Tvzduch, RH]
+dt=3600; C=997*500*4182; cp=4182; A=312.5; UA=800;
+qdc=max(0,u(1)); ts=u(2); aktivita=max(0,u(3)); plachta=min(1,max(0,u(4)));
+qdh_p=max(0,u(5)); qtes_p=max(0,u(6));
+povolene=(u(7)>0.5); stop=(u(8)>0.5);
+tair=u(9); rh=min(1,max(0,u(10)));
+pv=0.61094*exp(17.625*T/(T+243.04));
+pa=rh*0.61094*exp(17.625*tair/(tair+243.04));
+mpar=max(0,4e-5*A*(pv-pa)*aktivita*(1-0.90*plachta));
+Qvypar=mpar*2440000;
+Qkonv=3*A*(T-tair)*(1-0.75*plachta);
+Qrad=0.95*5.670374419e-8*A*((T+273.15)^4-(tair-2+273.15)^4)*(1-0.75*plachta);
+Qkonstr=UA*(T-20);
+Qdop=mpar*cp*(T-15);
+Qstraty=Qvypar+Qkonv+Qrad+Qkonstr+Qdop+2000;
+% Dvojpolohovy termostat + nezavisla teplotna poistka (28 C).
+termostat=stav;
+if T<=27.35
+    termostat=1;
+elseif T>=27.65
+    termostat=0;
+end
+Qpool=0; Qzdroj=0; Pel=0; Qdh=0; Qtes=0; Qodpad=qdc; rezim=0; cop=0;
+if ~stop
+    if povolene && termostat>0.5 && T<27.75
+        % Nad 27.75 C nedovolime dalsi ohrev, aj pri chybe merania.
+        % Maximalny vykon pre 1h krok vratane vypocitanych strat:
+        Qbezpecne=max(0,(27.75-T)*C/dt + Qstraty);
+        Qziad=min(150000,Qbezpecne);
+        Qhxmax=min([qdc,150000,max(0,8500*(ts-T-3))]);
+        if Qhxmax>=0.70*Qziad && Qhxmax>0
+            Qpool=min(Qziad,Qhxmax);
+            Qzdroj=Qpool;
+            rezim=1; % priamy vymennik
+        elseif ts>=5 && qdc>0
+            % Zjednoduseny Carnotov COP s rezervou pristupovych teplot.
+            Tevap=ts-5+273.15;
+            Tcond=max(34,T+8)+273.15;
+            cop=min(6,max(2.5,0.43*Tcond/max(5,Tcond-Tevap)));
+            Qmaxzdroj=qdc/(1-1/cop);
+            Qpool=min([Qziad,150000,Qmaxzdroj,35000*cop]);
+            Pel=Qpool/cop; Qzdroj=Qpool-Pel;
+            rezim=2; % tepelne cerpadlo
+        end
+    end
+    Qdh=min(qdh_p,max(0,qdc-Qzdroj));
+    Qtes=min(qtes_p,max(0,qdc-Qzdroj-Qdh));
+    Qodpad=max(0,qdc-Qzdroj-Qdh-Qtes);
+end
+Tnovy=T+(Qpool-Qstraty)*dt/C;
+% Teplotny strop so samostatnou kontrolou - nie tvrdenie o certifikacii.
+meranie=zeros(1,12);
+meranie(1)=Tnovy; meranie(2)=Qpool; meranie(3)=Qstraty;
+meranie(4)=Qzdroj; meranie(5)=Pel; meranie(6)=Qdh;
+meranie(7)=Qtes; meranie(8)=Qodpad; meranie(9)=rezim;
+meranie(10)=cop; meranie(11)=Qvypar; meranie(12)=qdc;
+end

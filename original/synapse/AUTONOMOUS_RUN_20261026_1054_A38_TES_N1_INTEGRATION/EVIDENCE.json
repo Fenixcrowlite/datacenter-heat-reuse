@@ -1,0 +1,13 @@
+{
+  "scope": "isolated_A38_synthetic_TES_SOC_REJECT_N1_IT_thermal_coupled_672_replay",
+  "qa": "16/16 Python tests PASS; 12 cases x 672 rows; 225792 independent Decimal checks PASS",
+  "finding": "A37B TES saturation adds 61.346161 kWh unhandled heat in no-REJECT scenario; corrected model still predicts unsafe extrapolated temperatures; A37 preclip equivalence verified",
+  "model_status": "PYTHON_SYNTHETIC_VERIFIED_MATLAB_CANDIDATE_UNEXECUTED",
+  "release_status": "PHYSICAL_RELEASE_BLOCKED",
+  "next_step": "Run dchr_a38_replay_acceptance.m in owned MATLAB session, then implement Stateflow transitions; obtain certified REJECT/IT/TES and field data",
+  "physical_release_allowed": false,
+  "matlab_stateflow_executed": false,
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "results_sha256": "a7083a74ec396d67b579ce199d426f71d5cb822889b477d12f9cf839dd6fb0bc",
+  "independent_qa_sha256": "65055f8726dd054c36078eefcf60b5fd31023c9112a92e338c212c46e2403c98"
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.27",
+  "timestamp_utc": "2026-10-09T08:21:20.4893548Z",
+  "manifest_file": "audit/Stateflow_temporal_manifest_v27_20261009T082057_601462Z.json",
+  "manifest_sha256": "8ee77a42ce3b35bb473857744e41204612a5785d6380288be72d96bfba89724d",
+  "checked": 273,
+  "passed": 273,
+  "failed": 0,
+  "mismatches": [],
+  "scope": "Immutable file packaging hashes/sizes only; no repeated numerical test",
+  "mutable_ledgers_excluded": [
+    "automation/engineering_progress.md",
+    "automation/STATEFLOW_ACCEPTANCE.md"
+  ]
+}

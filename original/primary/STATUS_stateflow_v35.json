@@ -1,0 +1,76 @@
+{
+  "version": "0.35",
+  "inherits": "STATUS_stateflow_v34.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T07:32:15.442162+00:00",
+  "checkpoint": "Executed saved-v34 restart/dwell admissibility and dimensional defect audit",
+  "audit_result": "PASS_DEFECT_REPRODUCED",
+  "stateflow_acceptance": "OPEN_DEFECT_NO_NEW_MODEL_ACCEPTANCE",
+  "model_version": "0.34",
+  "new_model": false,
+  "generated_model": "matlab\\simulink\\DCHR_Dispatch_Stateflow_v34.slx",
+  "model_sha256": "628d452296b7f1d3860e669b5922c7873eb5abf80ab5579a4758b650d81a961e",
+  "controller_defect": "OPEN energy-scaled tolerance admits clock corruption and early-age guard at stress scale",
+  "result_directory": "results\\stateflow_admissibility_v35_20261010T072819778Z",
+  "independent_qa": "results\\stateflow_admissibility_v35_20261010T072819778Z\\independent_QA_v35_20261010T073002_065500Z.json",
+  "completion_qa": "audit\\Stateflow_completion_QA_v35_20261010T073215_442162Z.json",
+  "execution_receipt": "audit\\Stateflow_execution_v35_20261010T072815949Z.json",
+  "execution_log": "automation/logs/stateflow_v35_console_20261010T072815949Z.log",
+  "matlab_batch_exit_code": 0,
+  "mat_export_receipt": "audit\\Stateflow_execution_v35_20261010T072949614Z.json",
+  "scenarios": 20,
+  "intervals": 109,
+  "positive_segments": 136,
+  "segment_slots": 6976,
+  "matlab_checks_passed": 1205,
+  "matlab_checks_failed": 0,
+  "actual_clock_fault_trials": 4,
+  "clock_faults_rejected": 3,
+  "clock_faults_incorrectly_accepted": 1,
+  "independent_check_breakdown": {
+    "numeric": {
+      "passed": 10712,
+      "failed": 0
+    },
+    "artifact": {
+      "passed": 10310,
+      "failed": 0
+    },
+    "partition": {
+      "passed": 9,
+      "failed": 0
+    },
+    "defect": {
+      "passed": 141,
+      "failed": 0
+    },
+    "archive": {
+      "passed": 6,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 1347,
+      "failed": 0
+    }
+  },
+  "equation_checks_passed": 27,
+  "equation_checks_failed": 0,
+  "previous_immutable_entries_preserved": 1347,
+  "max_abs_balance_residual_MWh": 4.76837158369658e-08,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "OPEN clock/guard tolerance defect at adversarial numerical capacity scale; this checkpoint accepts defect reproduction only, no corrected model.",
+    "Guard early-age result is a direct component probe, not an observed early transition in a clean Stateflow run; allocator corruption is actual saved-model runtime evidence.",
+    "Extreme capacities are numerical stress tests, not plausible installations; clean prior v34 fixture acceptance remains scoped to its evidence.",
+    "Held source/demand timelines are preserved across .5/.25/.125 h partitions for three finite fixtures only.",
+    "Binding OFF dwell can leave unmet demand from instantaneous TES/backup limits, even with ample energy; source outage can extend OFF indefinitely.",
+    "Copeland guidance is equipment-specific primary documentation; EnergyPlus is primary engineering documentation; no new primary article signoff or parameter calibration.",
+    "Normal-mode host planner, analytic segment offsets at macro solver timestamps; no standalone code generation or solver-clock events.",
+    "No measured or calibrated physical validation, stratification/hydraulics, startup/cycling-loss equipment model or article replication.",
+    "Independent algorithm/artifact QA is not separate human/agent review. Nonfatal Stateflow formal-argument shadow warnings remain visible."
+  ],
+  "next": "Implement additive Stateflow v36 with separate energy, power, temperature, dimensionless and physical-hour tolerances; embed corrected guard/monitor, preserve v34 and v35 counterexamples, execute the six modes and changing-input fixtures, and require clock corruption and early-dwell guards to reject at every tested energy scale. Audit representable time resolution and retain equipment assumptions without calibrated cycling-loss claims."
+}

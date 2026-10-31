@@ -1,0 +1,65 @@
+{
+  "version": "0.32",
+  "inherits": "STATUS_stateflow_v31.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T02:30:36.007723+00:00",
+  "checkpoint": "Executed two-segment Stateflow with segment HP electricity and finite backup",
+  "stateflow_acceptance": "PASS",
+  "model_version": "0.32",
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v32.slx",
+  "model_sha256": "bc9b1f1befb7a58863f7d79a121856ba2d8c73a387fe2b88537c8c9bd0c84a87",
+  "result_directory": "results/stateflow_v32_20261010T022704149Z",
+  "independent_qa": "audit/Stateflow_independent_QA_v32_20261010T022948_982369Z.json",
+  "execution_receipt": "audit/Stateflow_execution_v32_accept_20261010T022650039Z.json",
+  "execution_log": "automation/logs/stateflow_accept_v32_console_20261010T022650039Z.log",
+  "matlab_batch_exit_code": 0,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "scenarios": 65,
+  "intervals": 242,
+  "segments": 484,
+  "positive_duration_segments": 272,
+  "matlab_checks_passed": 13868,
+  "matlab_checks_failed": 0,
+  "runtime_fault_rejections": 23,
+  "equation_checks_passed": 1294,
+  "equation_checks_failed": 0,
+  "independent_check_breakdown": {
+    "actual_numeric": {
+      "passed": 27202,
+      "failed": 0
+    },
+    "static_saved_model": {
+      "passed": 73,
+      "failed": 0
+    },
+    "artifact_runtime_preservation": {
+      "passed": 20312,
+      "failed": 0
+    },
+    "synthetic_reviewer_checks": {
+      "passed": 9,
+      "failed": 0
+    }
+  },
+  "independent_checks_failed": 0,
+  "max_abs_balance_residual_MWh": 3.552713678800501e-15,
+  "previous_immutable_entries_preserved": 597,
+  "standalone_codegen": false,
+  "solver_clock_event_activations": false,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "limitations": [
+    "Two ordered analytic physical segments execute within each macro Simulink timestep; no solver-clock event activation claim.",
+    "Normal-mode host HP planner is required. Standalone generated code remains untested.",
+    "Constant ambient/heat capacity/loss coefficient and assumed screening COP/temperatures; no calibrated, stratified or hydraulic plant validation.",
+    "Capacity fallback can cool until the next sample if the low-load HP hold is unavailable or source-limited; no cycling, hysteresis, dwell or equipment/sensor faults.",
+    "64-ulp capacity-energy/equilibrium recognition handles binary roundoff; this is not a physical controller deadband.",
+    "Fault coverage is 13 finite domain, two delayed finite and eight actual allocator corruption cases; delayed NaN/Inf timing is untested.",
+    "A sample at StopTime represents a complete following interval. Interval mode summarizes segment modes, whose ordered traces remain authoritative.",
+    "Independent algorithm/artifact QA is not separate human/agent review, article replication or measured physical validation. Full primary signoffs remain 0/31.",
+    "Preserved v30 reference helper shadow warnings remain in the logs; no universal partition-invariance or policy superiority claim."
+  ],
+  "next": "Audit capacity-hold HP unavailability/source-limited fallback across macro timesteps; independently derive a justified restart/hysteresis/dwell policy before a new Stateflow version. Preserve v24/v28/v30/v32 and the finite-backup/electricity counterexamples; do not claim universal event-policy superiority."
+}

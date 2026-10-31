@@ -1,0 +1,54 @@
+{
+  "dehum45.66_hvac15": {
+    "condensate_kg": 11088.864179219958,
+    "energy_abs_residual_kJ": 0.0,
+    "high65_quarters": 8760.0,
+    "hvac_abs_kWh": 22971.217040881118,
+    "low45_quarters": 0.0,
+    "mass_abs_residual": 1.2247314273849952e-10,
+    "max_RH": 1.0,
+    "max_T_C": 28.9543858279394,
+    "min_RH": 0.5514542872685867,
+    "min_T_C": 27.54237509266332,
+    "quarters": 35040
+  },
+  "dehum45.66_hvac5": {
+    "condensate_kg": 11063.600682602271,
+    "energy_abs_residual_kJ": 0.0,
+    "high65_quarters": 8760.0,
+    "hvac_abs_kWh": 22922.138595072895,
+    "low45_quarters": 0.0,
+    "mass_abs_residual": 1.2763701207063605e-10,
+    "max_RH": 1.0,
+    "max_T_C": 28.67925786620769,
+    "min_RH": 0.5603184572936516,
+    "min_T_C": 27.57845738384472,
+    "quarters": 35040
+  },
+  "dehum5_hvac15": {
+    "condensate_kg": 34265.12217408719,
+    "energy_abs_residual_kJ": 0.0,
+    "high65_quarters": 18615.0,
+    "hvac_abs_kWh": 33850.57928286873,
+    "low45_quarters": 0.0,
+    "mass_abs_residual": 1.183109166191798e-10,
+    "max_RH": 1.0,
+    "max_T_C": 31.51884155710522,
+    "min_RH": 0.545987819837158,
+    "min_T_C": 27.55075961150467,
+    "quarters": 35040
+  },
+  "dehum5_hvac5": {
+    "condensate_kg": 29428.850135568748,
+    "energy_abs_residual_kJ": 0.0,
+    "high65_quarters": 18614.0,
+    "hvac_abs_kWh": 24134.74741044475,
+    "low45_quarters": 0.0,
+    "mass_abs_residual": 1.20422116722807e-10,
+    "max_RH": 1.0,
+    "max_T_C": 31.613813791283807,
+    "min_RH": 0.545987819837158,
+    "min_T_C": 27.58256965906951,
+    "quarters": 35040
+  }
+}

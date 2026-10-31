@@ -1,0 +1,96 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DataCenter Heat Reuse | Нормативный калькулятор</title>
+<style>
+:root{color-scheme:dark;background:#0c1425;color:#e6edf7;font:15px system-ui,Segoe UI,sans-serif}
+*{box-sizing:border-box}body{max-width:1190px;margin:auto;padding:24px}h1{font-size:1.9rem;margin:0 0 8px}
+p{color:#a6b5cd;line-height:1.55}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:#172338;border:1px solid #32435d;border-radius:12px;padding:16px}
+label{display:block;font-size:.87rem;color:#c7d2e4;margin-bottom:7px}
+input{background:#081324;color:#fff;border:1px solid #61738d;border-radius:6px;padding:9px;width:100%;font-size:1.02rem}
+strong.result{display:block;color:#76e8cc;font-size:1.65rem;margin:10px 0 0}small{color:#a1acc0}
+.warning{border-left:4px solid #ffd36e;background:#382c1a;padding:10px 14px;border-radius:4px;margin:8px 0}
+.good{border-left:4px solid #62ddb1;background:#173a38;padding:10px 14px;border-radius:4px}
+footer{margin-top:22px;color:#aab4c3;font-size:.85rem}a{color:#8fc5ff}button{background:#2363bc;border:0;color:white;border-radius:7px;padding:10px 15px;cursor:pointer;margin:10px 10px 10px 0}
+code{color:#c8d9fa}h2{margin-top:27px;font-size:1.22rem}
+</style></head><body>
+<h1>DataCenter → бассейн: калькулятор сценариев</h1>
+<p>Независимый скрининг с изменяемыми параметрами. Не заменяет динамическую модель Simulink, расчёт теплообменника, паспорта оборудования и проверку требований STN. Данные отраслевых исследований отделены от допущений.</p>
+<h2>Геометрия и тепловая нагрузка бассейна</h2>
+<div class="grid">
+<div class="card"><label>Длина, м (проектная)</label><input id="L" type="number" min=".1" step=".5" value="25"></div>
+<div class="card"><label>Ширина, м (проектная)</label><input id="W" type="number" min=".1" step=".5" value="12.5"></div>
+<div class="card"><label>Глубина, м (проектная)</label><input id="D" type="number" min=".1" step=".1" value="1.6"></div>
+<div class="card"><label>Начальная температура, °C</label><input id="t0" type="number" step=".1" value="16"></div>
+<div class="card"><label>Желаемая температура, °C</label><input id="ts" type="number" step=".1" value="27.5"></div>
+<div class="card"><label>Порог выключения, °C</label><input id="toff" type="number" step=".1" value="27.8"></div>
+<div class="card"><label>Тепловая мощность, кВт</label><input id="qh" type="number" min="0" step="25" value="150"></div>
+<div class="card"><label>Потери эталона 312,5 м², кВт, СИНТЕТИКА</label><input id="ql" type="number" min="0" step="1" value="31.45"></div>
+<div class="card"><label>COP теплового насоса, ДОПУЩЕНИЕ</label><input id="cop" type="number" min="1" step=".2" value="4"></div>
+<div class="card"><label>Температура источника, °C</label><input id="sT" type="number" step="1" value="35"></div>
+<div class="card"><label>Подход теплообменника, K</label><input id="ap" type="number" min=".1" step=".5" value="3"></div>
+</div>
+<h2>Экономический скрининг бассейна</h2>
+<p>Значения по умолчанию: Eurostat, Словакия, 2025, средневзвешенные два полугодия, без возмещаемого НДС. Тарифная категория крупного потребителя здесь используется как сценарий: это не договор на электроэнергию бассейна.</p>
+<div class="grid">
+<div class="card"><label>Цена электроэнергии, €/МВт·ч</label><input id="pE" type="number" min="0" step="1" value="152.07"></div>
+<div class="card"><label>Цена природного газа, €/МВт·ч топлива</label><input id="pG" type="number" min="0" step="1" value="55.63"></div>
+<div class="card"><label>КПД резервного газового котла</label><input id="etaG" type="number" min="0.01" max="1" step=".01" value=".9"></div>
+</div>
+<h2>Дата-центр и сравнение с наблюдаемыми значениями</h2>
+<div class="grid">
+<div class="card"><label>Установленная мощность IT, МВт</label><input id="it" type="number" min=".1" step=".5" value="10"></div>
+<div class="card"><label>Загрузка IT, 0–1, ДОПУЩЕНИЕ</label><input id="ut" type="number" min="0" max="1" step=".01" value=".82"></div>
+<div class="card"><label>PUE проекта, ДОПУЩЕНИЕ</label><input id="pue" type="number" min="1" step=".01" value="1.2"></div>
+<div class="card"><label>Доля рекуперации, 0–1, ДОПУЩЕНИЕ</label><input id="rec" type="number" min="0" max="1" step=".01" value=".85"></div>
+</div><button onclick="preset(false)">Сценарий проекта 500 м³</button><button onclick="preset(true)">Геометрия 25 × 20 × 2 м</button><button onclick="exportJSON()">Экспорт JSON параметров и результатов</button>
+<h2>Расчётные показатели</h2><div class="grid" id="results"></div>
+<h2>Проверка ограничений и качества данных</h2><div id="checks" aria-live="polite"></div>
+<div class="card"><b>Что относится к стандартам, а что нет</b>
+<p>308/2012 Z. z., §8(7): опубликованный текст устанавливает максимальную температуру воды плавательного бассейна 28 °C. Перед заявлением о юридическом соответствии требуется проверка текущей консолидированной редакции. Установленный порог отключения должен быть ниже максимума с запасом на измерительную ошибку.</p>
+<p>STN EN 15288-1+A1 (действует в Словакии с 01.11.2024) относится к безопасности проектирования общественных бассейнов. Геометрия 25 × 12,5 × 1,6 м не объявляется сертифицированной World Aquatics. Для соревнований нужна отдельная проверка актуальных правил.</p>
+<p>PUE отраслевой ориентир 2026: 1,52 (Uptime Institute, n=644). Это не юридический максимум и не замер нашего объекта. PUE определяем по энергозатратам ЦОД/IT, ERF по теплу, реально переданному за границу дата-центра, делённому на энергию всего дата-центра. Электроэнергия компрессора теплового насоса не считается утилизированным серверным теплом.</p></div>
+<footer>Источники: <a href="https://www.iso.org/standard/30134-2" target="_blank">ISO/IEC 30134-2:2026</a> · <a href="https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj" target="_blank">EU 2024/1364</a> · <a href="https://normy.normoff.gov.sk/norma/139372/?lang=en" target="_blank">STN EN 15288-1+A1</a> · <a href="https://static.slov-lex.sk/static/SK/ZZ/2012/308/vyhlasene_znenie.print.html" target="_blank">Slov-Lex 308/2012</a> · <a href="https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/UptimeInstitute.GlobalDataCenterSurvey.2026.pdf?version=0" target="_blank">Uptime 2026</a>. Версия 2026-10-23.</footer>
+<script>
+const $=id=>document.getElementById(id), keys=['L','W','D','t0','ts','toff','qh','ql','cop','sT','ap','it','ut','pue','rec','pE','pG','etaG'];
+let latest={};
+function num(id){return Number($(id).value)}
+function fmt(x,n=2){return Number.isFinite(x)?x.toLocaleString('ru-RU',{maximumFractionDigits:n}):'нет'}
+function addMetric(k,v,unit,n=2){return '<div class="card"><small>'+k+'</small><strong class="result">'+fmt(v,n)+' '+unit+'</strong></div>'}
+function update(){
+ let x=Object.fromEntries(keys.map(k=>[k,num(k)]));let warnings=[];
+ if(x.L<=0||x.W<=0||x.D<=0||x.qh<=0||x.cop<=1||x.pue<1||x.ut<0||x.ut>1||x.rec<0||x.rec>1||x.ql<0||x.ts<x.t0||x.pE<0||x.pG<0||x.etaG<=0||x.etaG>1){$('results').innerHTML='Проверьте диапазоны ввода';$('checks').innerHTML='';return}
+ const V=x.L*x.W*x.D,E=997*V*4182*(x.ts-x.t0)/3.6e9;
+ const loss=x.ql*(x.L*x.W/312.5),net=x.qh-loss,h=net>0?E*1000/net:NaN,IT=x.it*x.ut;
+ const edc=IT*8760*x.pue,esurvey=IT*8760*1.52,src=IT*x.rec;
+ const poolYear=loss*8.76+E,hpsource=poolYear*(1-1/x.cop),erf=Math.min(hpsource,src*8760)/edc;
+ latest={date:'2026-10-23',assumptions:x,outputs:{V_m3:V,Eheat_MWh:E,screening_heatup_h:h,IT_MW:IT,EDC_annual_MWh:edc,EDC_market_reference_MWh:esurvey,pool_year_screening_MWh:poolYear,HP_source_screening_MWh:hpsource,ERF_screening:erf},classification:'ALL CALCULATED OUTPUTS ARE SCENARIO SCREENING, NOT MEASUREMENTS'};
+ $('results').innerHTML=[
+ addMetric('Объём воды',V,'м³'),addMetric('Идеальная энергия нагрева',E,'МВт·ч',3),addMetric('Потери при выбранной площади, сценарий',loss,'кВт',2),
+ addMetric('Нагрев с постоянными потерями',h,'ч'),addMetric('Электроэнергия ТЧ на начальный нагрев',E/x.cop,'МВт·ч',3),
+ addMetric('Мощность IT по загрузке',IT,'МВт'),addMetric('Мощность возможной рекуперации IT',src,'МВт'),
+ addMetric('Энергия ЦОД за год при выбранном PUE',edc,'МВт·ч',0),
+ addMetric('При отраслевом PUE 1,52, та же IT энергия',esurvey,'МВт·ч',0),
+ addMetric('Отличие ЦОД от ориентира 2026',edc-esurvey,'МВт·ч',0),
+ addMetric('Годовой нагрев бассейна, упрощённо',poolYear,'МВт·ч'),
+ addMetric('Электроэнергия ТЧ за год, сценарий',poolYear/x.cop,'МВт·ч'),
+ addMetric('OPEX ТЧ за год, сценарий',poolYear/x.cop*x.pE,'€',0),
+ addMetric('OPEX газового аналога, сценарий',poolYear/x.etaG*x.pG,'€',0),
+ addMetric('Разница OPEX, без CAPEX и насосов',poolYear*(x.pG/x.etaG-x.pE/x.cop),'€',0),
+ addMetric('ERF для одного бассейна, приближение',erf*100,'%',3)
+ ].join('');
+ if(x.toff>28)warnings.push('Порог выключения '+fmt(x.toff)+' °C выше опубликованного предела 28 °C: для реального объекта это недопустимый проектный режим без юридического пересмотра.');
+ if(x.ts>=28)warnings.push('Заданная температура находится на пределе 28 °C: нет запаса на датчик и инерцию.');
+ if(net<=0)warnings.push('Мощности нагрева не хватает даже на принятые постоянные потери.');
+ if(x.L*x.W!==312.5)warnings.push('Потери масштабированы по площади воды относительно 312,5 м². Это приближение, для иной геометрии нужен полный теплобаланс.');
+ if(x.sT<x.ts+x.ap)warnings.push('Прямой теплообменник не проходит простое условие температурного напора; нужна HP/иная температура.');
+ warnings.push('Потери '+fmt(x.ql)+' кВт, загрузка IT, доля рекуперации и COP сейчас сценарные, а не измеренные.');
+ warnings.push('ERF рассчитан ориентировочно. Для отчётности EU нужны годовые измерения энергии на границе дата-центра.');
+ $('checks').innerHTML=warnings.map((w,i)=>'<div class="'+(i<2&&w.includes('выше')?'warning':'good')+'">'+w+'</div>').join('');
+}
+function preset(b){$('L').value='25';$('W').value=b?'20':'12.5';$('D').value=b?'2':'1.6';update()}
+function exportJSON(){
+ const blob=new Blob([JSON.stringify(latest,null,2)],{type:'application/json'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='dc_pool_parameter_scenario.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+keys.forEach(k=>$(k).addEventListener('input',update)); update();
+</script></body></html>

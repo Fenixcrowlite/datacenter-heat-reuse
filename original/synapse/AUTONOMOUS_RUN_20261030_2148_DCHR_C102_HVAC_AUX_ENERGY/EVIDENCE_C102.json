@@ -1,0 +1,17 @@
+{
+  "actor": "chatgpt-dchr-c102-hvac-aux-20261030-2148",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY\\C102_AUX_HOURLY.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY\\C102_FINDINGS.md",
+  "hourly_sha256": "7758cda64fb64840d249cceb9d9fa59d63fc17310d7a4c1a9a32fde46e5f275f",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY\\SHA256_MANIFEST_C102.json",
+  "manifest_sha256": "f845ca4bf0bf48ca7edcb61d11ca512e4c72ffc01608d8413a95eb262744f573",
+  "metadata": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY\\C102_METADATA.json",
+  "next": "Obtain measured weather/flow and vendor curves; full latent cooling psychrometrics; couple air/water constrained heat allocation.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY\\C102_INDEPENDENT_QA.json",
+  "qa_result": "9/9 selftests; 1025013 independent checks; 78840 rows; 2 corruption controls; hot-hour branch",
+  "schema": "C102_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY\\C102_AUX_SUMMARY.csv",
+  "task_id": "scc-2aab24704c2bd0"
+}

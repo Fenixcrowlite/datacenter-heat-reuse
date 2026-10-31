@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "checks": 32928,
+  "cases": [
+    {
+      "scenario": "normalny",
+      "accepted_manual_resets": 0
+    },
+    {
+      "scenario": "rozdiel_senzorov",
+      "accepted_manual_resets": 1
+    },
+    {
+      "scenario": "pomaly_drift_senzora",
+      "accepted_manual_resets": 1
+    },
+    {
+      "scenario": "bez_prietoku",
+      "accepted_manual_resets": 1
+    },
+    {
+      "scenario": "havarijne_tlacidlo",
+      "accepted_manual_resets": 1
+    },
+    {
+      "scenario": "reset_pocas_poruchy",
+      "accepted_manual_resets": 1
+    },
+    {
+      "scenario": "oba_senzory_bias",
+      "accepted_manual_resets": 1
+    }
+  ]
+}

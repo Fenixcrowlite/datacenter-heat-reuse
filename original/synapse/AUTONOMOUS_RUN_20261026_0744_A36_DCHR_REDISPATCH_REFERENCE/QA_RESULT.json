@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 17,
+  "independent_checks_passed": 20833,
+  "scenarios": 6,
+  "rows_per_scenario": 672,
+  "source_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "physical_release_allowed": false,
+  "model_class": "D_SYNTHETIC -> D_DERIVED, instantaneous reference only"
+}

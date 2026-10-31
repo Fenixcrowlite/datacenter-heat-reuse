@@ -1,0 +1,12 @@
+{
+  "assertions": 1419217,
+  "caveat": "Synthetic assumptions; this QA validates arithmetic and accounting, not measured performance.",
+  "hourly_sha256": "8ce8e04be652540eb635afb75958077c716220a26f3471526264985e0862fff4",
+  "negative_dehum_detected": true,
+  "negative_rh_detected": true,
+  "rows_checked": 78840,
+  "scenarios": 9,
+  "schema": "C100_INDEPENDENT_QA_V1",
+  "status": "PASS",
+  "summary_sha256": "16eea24a886be89157614a210495544c49433809885de470551f617bada6fe9a"
+}

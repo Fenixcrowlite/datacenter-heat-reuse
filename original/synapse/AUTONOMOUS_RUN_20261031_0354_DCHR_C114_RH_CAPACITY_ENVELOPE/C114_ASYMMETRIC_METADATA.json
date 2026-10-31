@@ -1,0 +1,46 @@
+{
+  "data_sha256": "fe27a033f3e075ea494bc2b0d1d89a6d79ed40ad2ea6e5b1c2744ac9534df574",
+  "limitations": [
+    "Separate capacity minima computed with other actuator at 1000 kg/h; combined pair verified for full annual endpoint RH band.",
+    "No RH feedback to evaporation, no within-hour RH guarantee, no equipment sizing without actual room/HVAC measurements."
+  ],
+  "rows": [
+    {
+      "dehum_lower_failing_kg_h": 45.64453125,
+      "dehum_search_iterations": 16,
+      "dehum_upper_passing_kg_h": 45.654296875,
+      "humid_lower_failing_kg_h": 29.6875,
+      "humid_search_iterations": 14,
+      "humid_upper_passing_kg_h": 29.697265625,
+      "joint_above_65_h": 0,
+      "joint_below_45_h": 0,
+      "joint_dehumidified_kg_year": 122470.07845513099,
+      "joint_humidified_kg_year": 93199.01847169618,
+      "joint_max_RH": 0.6499593662432898,
+      "joint_min_RH": 0.45005959233422727,
+      "policy": "water_first"
+    },
+    {
+      "dehum_lower_failing_kg_h": 45.64453125,
+      "dehum_search_iterations": 16,
+      "dehum_upper_passing_kg_h": 45.654296875,
+      "humid_lower_failing_kg_h": 29.677734375,
+      "humid_search_iterations": 14,
+      "humid_upper_passing_kg_h": 29.6875,
+      "joint_above_65_h": 0,
+      "joint_below_45_h": 0,
+      "joint_dehumidified_kg_year": 121859.12811448144,
+      "joint_humidified_kg_year": 93154.73553809973,
+      "joint_max_RH": 0.6499593662432898,
+      "joint_min_RH": 0.4500062327123453,
+      "policy": "air_first"
+    }
+  ],
+  "schema": "C114_ASYMMETRIC_CAPACITY_V1",
+  "source_sha256": {
+    "C114_METADATA.json": "9ff6489b946c528597323f4db6a72f32a0654f56636dd74c37f32872637c77eb",
+    "c114_capacity_search.py": "63d10d60983c6a07fcb1240e9854a48db3c42068ea317dae0624fe3e9a0fd97d"
+  },
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

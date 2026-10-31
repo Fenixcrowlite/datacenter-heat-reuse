@@ -1,0 +1,19 @@
+test_backup_switch_delay_and_temperature_trip (test_a42.Acceptance.test_backup_switch_delay_and_temperature_trip) ... ok
+test_counterfactual_conserves_energy (test_a42.Acceptance.test_counterfactual_conserves_energy) ... ok
+test_counterfactual_loads_and_shortfall (test_a42.Acceptance.test_counterfactual_loads_and_shortfall) ... ok
+test_dynamic_cop_and_hp_source (test_a42.Acceptance.test_dynamic_cop_and_hp_source) ... ok
+test_four_scenarios_672_each (test_a42.Acceptance.test_four_scenarios_672_each) ... ok
+test_independent_decimal_energy_balances (test_a42.Acceptance.test_independent_decimal_energy_balances) ... ok
+test_input_provenance_and_no_source_mutation (test_a42.Acceptance.test_input_provenance_and_no_source_mutation) ... ok
+test_invalid_inputs_fail_closed (test_a42.Acceptance.test_invalid_inputs_fail_closed) ... ok
+test_no_hardware_interface_in_source (test_a42.Acceptance.test_no_hardware_interface_in_source) ... ok
+test_reject_and_source_caps (test_a42.Acceptance.test_reject_and_source_caps) ... ok
+test_restart_not_immediate (test_a42.Acceptance.test_restart_not_immediate) ... ok
+test_sensitivity_grid (test_a42.Acceptance.test_sensitivity_grid) ... ok
+test_tes_discharge_limited_by_energy (test_a42.Acceptance.test_tes_discharge_limited_by_energy) ... ok
+test_zero_capacity_interlock_independent_of_sensor_lag (test_a42.Acceptance.test_zero_capacity_interlock_independent_of_sensor_lag) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.312s
+
+OK

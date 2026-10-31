@@ -1,0 +1,16 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1252_DCHR_CONSTRAINED_STORAGE",
+  "baseline_existing_storage_mwh": 100,
+  "manifest_sha256": "f7ceeea44367a539456f8429fcecf5854256db021c9f2c3b7b582016c6f2f15f",
+  "next_step": "Integrate storage dispatch with the original 100 MWh Simulink baseline, validate actual HP COP and electrical nameplate limits, temperature dynamics and hourly tariffs, then independently verify net economics.",
+  "primary_source_signoffs": 0,
+  "production_modified": false,
+  "qa": "20/20 unit tests; 39 annual energy balances; 26280 independent Decimal hour steps PASS",
+  "real_gas_savings_claimed": false,
+  "reference_year3_extra_electric_mwh": 2399.183431,
+  "reference_year3_thermal_coverage_mwh": 1910.036878,
+  "scope": "DCHR_CONSTRAINED_SEASONAL_STORAGE_SENSITIVITY",
+  "source_csv_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e",
+  "synthetic_not_metered": true
+}

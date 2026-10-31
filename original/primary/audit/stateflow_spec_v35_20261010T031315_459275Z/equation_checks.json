@@ -1,0 +1,114 @@
+{
+  "passed": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "on_0.0_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.0_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.0_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.0_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.0_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.0_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_1e-08_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_1e-08_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_1e-08_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_1e-08_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_1e-08_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_1e-08_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.1_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.1_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.1_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.1_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.1_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.1_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.7_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.7_0.05_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.7_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.7_0.25_RK4",
+      "passed": true
+    },
+    {
+      "name": "on_0.7_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "off_0.7_0.75_RK4",
+      "passed": true
+    },
+    {
+      "name": "baseline_on_bound",
+      "passed": true
+    },
+    {
+      "name": "max_demand_reserve",
+      "passed": true
+    },
+    {
+      "name": "instantaneous_step_overload",
+      "passed": true
+    }
+  ]
+}

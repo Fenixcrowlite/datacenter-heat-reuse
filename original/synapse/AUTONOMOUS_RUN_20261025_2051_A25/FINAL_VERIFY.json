@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-25T19:57:27.596529+00:00",
+  "status": "PASS",
+  "artifact_hashes_verified": 6,
+  "source_hashes_verified": 13,
+  "mutation_tests": "20/20 PASS",
+  "compile": "PASS",
+  "event_id": 1157,
+  "task_id": "scc-3d9d172beb6e1b",
+  "task_status": "review",
+  "task_stage": "planned",
+  "registry_tasks": 207,
+  "registry_last_event": 1157,
+  "receipt": "MISSING_IN_BOUNDED_SEARCH",
+  "source_class": "D_SYNTHETIC"
+}

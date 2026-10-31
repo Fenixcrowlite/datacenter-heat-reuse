@@ -27,7 +27,7 @@ class ServerTests(unittest.TestCase):
         with urlopen(request) as r:return json.load(r)
 
     def test_real_calculation_persistence_and_export(self):
-        self.assertEqual(2,len(self.get('/api/models')['models']))
+        self.assertTrue({'annual-v2','pool-v04','stateflow-v85'}<={m['id'] for m in self.get('/api/models')['models']})
         result=self.run_model({'model_id':'pool-v04','steps':32,'config':{'pool_enabled':False}})
         self.assertEqual('PYTHON_COMPUTED',result['source_kind'])
         self.assertEqual(0,result['metrics']['pool_heat_MWh'])

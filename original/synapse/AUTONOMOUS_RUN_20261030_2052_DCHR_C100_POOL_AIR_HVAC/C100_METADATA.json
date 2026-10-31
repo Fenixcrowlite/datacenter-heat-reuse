@@ -1,0 +1,54 @@
+{
+  "assumptions": {
+    "HRV_sensible_eff": [
+      0.0,
+      0.5,
+      0.8
+    ],
+    "dehum_condenser_fraction_to_air": 0.5,
+    "dehum_kWh_per_kg": 0.5,
+    "dry_air_density_kg_m3": 1.18,
+    "flow_m3_h": 3000.0,
+    "indoor_RH_controlled": 0.55,
+    "indoor_air_C": 29.0,
+    "night_cover_evap_multiplier": 0.15,
+    "outdoor_RH_assumed": [
+      0.4,
+      0.7,
+      0.9
+    ],
+    "pool_water_C": 28.0
+  },
+  "excluded": [
+    "fan and filter electricity",
+    "cooling and free cooling",
+    "humidifier energy and water treatment",
+    "supply/exhaust imbalance",
+    "dynamic indoor humidity and temperature",
+    "actual HRV frost/condensation",
+    "vendor dehumidifier performance",
+    "real pool source and source allocations"
+  ],
+  "field_validated": false,
+  "hourly_rows": 78840,
+  "hourly_sha256": "8ce8e04be652540eb635afb75958077c716220a26f3471526264985e0862fff4",
+  "interpretation": "Air-side ledger is separate from C96 water heating; pool evaporation latent already charged to water. Condenser air heat credit is not credited to pool.",
+  "limits": [
+    "C88 outdoor temperature is synthetic, not measured.",
+    "Outdoor RH held constant per scenario, not meteorological data.",
+    "HRV is sensible-only; dehumidifier electricity is assumed.",
+    "Humidification mass is reported but its energy is not included.",
+    "These results cannot establish physical feasibility or total building energy."
+  ],
+  "manufacturer_dehumidifier": false,
+  "measured_outdoor_RH": false,
+  "measured_weather": false,
+  "scenarios": 9,
+  "schema": "C100_POOL_AIR_HVAC_SIDECAR_V1",
+  "source_C88_sha256": "07d1d7f19d92ce34d5b3e5a44a2131234a4a2e7991e21f018b197137ed0eb370",
+  "source_C93_sha256": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+  "source_signoffs_added": 0,
+  "summary_sha256": "16eea24a886be89157614a210495544c49433809885de470551f617bada6fe9a",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

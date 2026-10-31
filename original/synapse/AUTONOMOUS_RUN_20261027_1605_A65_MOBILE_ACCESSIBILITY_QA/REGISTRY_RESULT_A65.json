@@ -1,0 +1,14 @@
+{
+  "QA": "8/8 unittest; 3/3 isolated Chrome; 60/60 cells preserved",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1605_A65_MOBILE_ACCESSIBILITY_QA",
+  "event_id": 1328,
+  "evidence_sha256": "c112e7aa77d8a6ffb1ac2bfff30391603bf44e19d37ef1275a0f018353bbad6f",
+  "handoff_sha256": "566dd9843ace36f9898578662c56c595bbdb70cf730b3f2d4a05eb15a9d14a38",
+  "manifest_sha256": "cea95ebd5ab515bc621e18a89f8d1d459cd47feb1eee3bab3aa9973da716fb8a",
+  "mobile_report": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1605_A65_MOBILE_ACCESSIBILITY_QA\\mobile_comparison.html",
+  "next_step": "Review the responsive offline report on actual mobile hardware; obtain calibrated measurements before physical validation.",
+  "physical_release": false,
+  "scope": "A65_mobile_A64_offline_report_accessibility",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

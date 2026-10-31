@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "rows": 672,
+  "independent_decimal_checks": 8064,
+  "source_sha_verified": true,
+  "physical_release_allowed": false
+}

@@ -1,0 +1,18 @@
+{
+  "status": "SYNTHETIC_COUPLED_PYTHON_AND_MATLAB_NUMERIC_AUDIT_PASS",
+  "physical_release_allowed": false,
+  "hardware_control": false,
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1850_A42_COUPLED_FAILSAFE",
+  "existing_task_id": "scc-3d9d172beb6e1b",
+  "source_a41_input_sha256": "a9a88fef53a8211737835d6cd7efe1ba66ce9649eef42724445098f09fcc7f21",
+  "python_source_sha256": "e6f600bf3533761deaace0d19c731dcc9a2b07919cab86171ab31458d7b0267e",
+  "matlab_validator_sha256": "589ebbf27c615ba0d71c3838800e8fcaf94e81bae6fcb2f489e8b9c35eae5943",
+  "matlab_audit_sha256": "fda86827aebe3b19b06a3f1ea5219f14017ae581c360e3acc2708e19a2027b6d",
+  "report_sha256": "6fb65a2b9a1e06028e1fdd0ff536728f63ff89eb5e579e7fdfe8a95ea09aadb2",
+  "qa": "14/14 Python unittest PASS; 10752 Decimal balance expressions; MATLAB R2026a 7x672=4704 rows PASS",
+  "cases": 4,
+  "counterfactual_cases": 3,
+  "sensitivity_cases": 9,
+  "caveat": "Synthetic reference, no A42 Simulink/Stateflow model; ideal IT trip, unverified COP/equipment, physical release blocked",
+  "next_step": "A43 isolated Simulink/Stateflow model, finite IT trip delay and residual heat, 7x672 Python/MATLAB parity; source equipment parameters"
+}

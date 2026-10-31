@@ -2275,6 +2275,7 @@
   "execution_status": "not_ported",
   "file": "extracted/dc-bazen-fyzikalne-poruchy-v06-sk-88141f9e16a8.json",
   "copies": [
+    "obsidian/pool_500m3/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx",
     "primary/matlab/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx"
   ]
 }

@@ -1,0 +1,58 @@
+{
+  "air_150kW": {
+    "RH_above65_quarters": 17885.0,
+    "air_heat_MWh": 26.143441941164077,
+    "air_unmet_MWh": 0.0,
+    "cap_saturated_quarters": 0.0,
+    "final_air_C": 28.473459310696764,
+    "final_pool_C": 28.0,
+    "max_RH": 0.745653489279496,
+    "max_pool_C": 28.0,
+    "min_pool_C": 28.0,
+    "pool_heat_MWh": 123.3752665868737,
+    "pool_unmet_MWh": 0.0,
+    "quarters": 35040
+  },
+  "noheat_7d": {
+    "RH_above65_quarters": 540.0,
+    "air_heat_MWh": 0.0,
+    "air_unmet_MWh": 2.50657897841837,
+    "cap_saturated_quarters": 672.0,
+    "final_air_C": 25.941837209336477,
+    "final_pool_C": 25.467440707024018,
+    "max_RH": 0.7898823253319881,
+    "max_pool_C": 27.99795362292088,
+    "min_pool_C": 25.467440707024018,
+    "pool_heat_MWh": 0.0,
+    "pool_unmet_MWh": 184.00683706371387,
+    "quarters": 672
+  },
+  "water_10kW_7d": {
+    "RH_above65_quarters": 643.0,
+    "air_heat_MWh": 0.01798550894116482,
+    "air_unmet_MWh": 2.4071507294365517,
+    "cap_saturated_quarters": 644.0,
+    "final_air_C": 25.904859056271093,
+    "final_pool_C": 27.694604972948703,
+    "max_RH": 0.7932576772826647,
+    "max_pool_C": 28.0,
+    "min_pool_C": 27.64984380318783,
+    "pool_heat_MWh": 1.6423433470388706,
+    "pool_unmet_MWh": 25.143827606883683,
+    "quarters": 672
+  },
+  "water_150kW": {
+    "RH_above65_quarters": 17885.0,
+    "air_heat_MWh": 26.143441941164077,
+    "air_unmet_MWh": 0.0,
+    "cap_saturated_quarters": 0.0,
+    "final_air_C": 28.473459310696764,
+    "final_pool_C": 28.0,
+    "max_RH": 0.745653489279496,
+    "max_pool_C": 28.0,
+    "min_pool_C": 28.0,
+    "pool_heat_MWh": 123.3752665868737,
+    "pool_unmet_MWh": 0.0,
+    "quarters": 35040
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "actor": "chatgpt-dchr-c128-delayed-priority-20261031-1153",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY\\C128_DELAYED_PRIORITY.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY\\C128_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY\\SHA256_MANIFEST_C128.json",
+  "manifest_sha256": "82222690a524d19ffe8cce8024d669654139280f34028cce491506eaa4fdfe5b",
+  "negative_controls": 9,
+  "next": "Finite actuator slew-rate and explicit electrical COP, with robust cap/delay sensitivity; no shared runtime edits.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY\\C128_INDEPENDENT_QA.json",
+  "regression": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY\\C128_REGRESSION_QA.json",
+  "rows": 6720,
+  "scenarios": 10,
+  "sha256": "971d43ce842083469e11ddc1262ccb83a43d9c6e35db9343602b0e7d9c8d70c4",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

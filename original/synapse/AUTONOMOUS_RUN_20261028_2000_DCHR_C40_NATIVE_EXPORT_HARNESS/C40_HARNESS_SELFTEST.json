@@ -1,0 +1,11 @@
+{
+  "c37_reference_sha256": "bbe8f22ff33fce9b77450967ecd8f8e59a7950ce78c6f16fcec3f2b098b4dbb9",
+  "interpretation": "Comparator functionality only, not MATLAB/Stateflow or physical validation.",
+  "native_matlab_executed": false,
+  "native_parity_verified": false,
+  "observed_local": "2026-10-28T19:59:23+01:00",
+  "scope": "DCHR_C40_NATIVE_EXPORT_HARNESS_SELFTEST",
+  "self_identity_comparisons": 192720,
+  "self_tests": 6,
+  "status": "PASS"
+}

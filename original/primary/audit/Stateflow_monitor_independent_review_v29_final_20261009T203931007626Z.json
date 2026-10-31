@@ -1,0 +1,108 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:39:31.007626+00:00",
+  "review_scope": "Final independent executed runtime-monitor evidence QA after guarded cleanup repair; preserved v28 model, checkpoint v29",
+  "verdict": "PASS",
+  "result_directory": "results/stateflow_monitor_v29_20261009T203631630Z",
+  "verifier_report": "audit/stateflow_monitor_independent_qa_v29_20261009T203848726Z.json",
+  "verifier_report_sha256": "345f02c0d5a72d74f459ec00bb30f9676be4fabd3b8b4af416160bd7ea3f04e1",
+  "verifier_log": "automation/logs/stateflow_monitor_independent_qa_v29_20261009T203848726Z.log",
+  "matlab_execution_log": "automation/logs/stateflow_monitor_v29_fixed_local_20261009T203624213Z.log",
+  "matlab_execution_log_sha256": "7203eb89bf7892f2153966bf28fb9d3379eda9dc4eca384f79c76a7cff3163fc",
+  "summary_sha256": "7dcb57ba1d33fc055fbbc6b65174e0b6e4d80fbc42d96b57e85defbc4e351d20",
+  "model_sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d",
+  "actual_evidence_checks_passed": 775,
+  "actual_evidence_checks_failed": 0,
+  "synthetic_reviewer_self_tests_passed": 45,
+  "static_specification_checks_passed": 6,
+  "supplementary_actual_review_checks": {
+    "passed": 6,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "thirteen_exact_successful_per_case_console_markers",
+        "passed": true
+      },
+      {
+        "name": "unmutated_executed_baseline_console_marker",
+        "passed": true
+      },
+      {
+        "name": "restored_executed_baseline_console_marker",
+        "passed": true
+      },
+      {
+        "name": "completed_monitor_output_console_marker",
+        "passed": true
+      },
+      {
+        "name": "v24_prior_baseline_preserved_hash",
+        "passed": true
+      },
+      {
+        "name": "no_cleanup_deleted_object_warning_in_final_execution_log",
+        "passed": true
+      }
+    ]
+  },
+  "logical_corruption_cases": 13,
+  "captured_runtime_rejections": 13,
+  "per_case_exception_rejections": 13,
+  "planned_mutated_simulation_attempts": 26,
+  "accepted_invalid_dispatch_samples": 0,
+  "runtime_identifier": "Stateflow:Runtime",
+  "rejection_phase": "Execution",
+  "first_error_time_h": 0,
+  "stop_event_time_h": 0,
+  "clean_baseline_simulations": 2,
+  "intervals_per_baseline": 2,
+  "baseline_and_restored_trace_sha256": "2324b21db861964dc6e14faf060c4dbf9a38d4620a44cd00be34971143e4e052",
+  "equation_anchors": {
+    "HP_fixed_COP_scenario": "COP=4; Q_H=8 MW; W=Q_H/COP=2 MW; Q_source=Q_H-W=6 MW; demand=5 MW; charge=3 MW.",
+    "TES_passive_assumption": "dE/dt=-lambda E; lambda=0.01 h^-1, dt=1 h, ambient-referenced scalar energy.",
+    "TES_loss_first_recurrence": "r=exp(-0.01); E[n+1]=r E[n]+2.7 MWh; E[0]=1 MWh.",
+    "TES_closed_form": "E[n]=r^n+2.7(1-r^n)/(1-r) MWh; active forcing remains loss-first approximate.",
+    "actual_E1_MWh": 3.69004983374917,
+    "actual_E2_MWh": 6.35333322442951,
+    "reported_max_abs_system_residual_MWh": 1.11022302462516e-15,
+    "parameter_evidence": "Declared engineering scenario assumptions, no measured calibration or article equations."
+  },
+  "findings": [
+    {
+      "severity": "INHERITED_LIMITATION",
+      "message": "Nonfatal allocator output y shadows chart output y during compilation."
+    }
+  ],
+  "limitations": [
+    "Captured MAT files are identified as MAT containers and hashed, not independently decoded; runtime JSON and traces are parsed independently.",
+    "Execution chronology and before/after labels remain local runner evidence without external attestation.",
+    "Mutations test implementation contracts; no equipment faults, physical validation, source replication or standalone code generation.",
+    "Only fixed-COP two-interval charging baselines rerun here; six-mode dispatch acceptance remains inherited v28 evidence.",
+    "Passive exponential retention exact only for constant coefficient ambient-referenced scalar energy; active ports remain loss-first approximate."
+  ],
+  "primary_text_verified_this_review": false,
+  "primary_paper_replication": false,
+  "independent_physical_validation": false,
+  "unfinished_prior_directory": {
+    "path": "results/stateflow_monitor_v29_20261009T154831124Z",
+    "finding": "Empty directory and old console only version/license; no rejection acceptance evidence."
+  },
+  "files_changed": [
+    "audit/verify_stateflow_gate_evidence_v29.py"
+  ],
+  "verifier_changes": "Independent complete case anchors; runtime IDs and flags; exact mutation artifacts; saved diagnostic/raw JSON consistency; MAT hash/header; before/final source manifests and bindings; local per-case paths. Five further synthetic self-tests reject correctly rehashed but semantically wrong artifact payloads and a wrong independently anchored spec mutation.",
+  "next_action": "Finalize checkpoint v29 using this final monitor evidence plus independently reviewed final temporal evidence; preserve prior run and its documented cleanup defect.",
+  "matlab_batch_exit_code_observed_by_root": 0,
+  "verifier_sha256": "a04f6c9f7a49086f0578392d23c970ad48da36a02359837487174207cbdac6db",
+  "current_runner_sha256": "af75b32b8d46b230a50b2f29566db484a747a71526346e5a0377ead75dcff275",
+  "historical_review_with_teardown_defect": "audit/Stateflow_monitor_independent_review_v29_20261009T203652583838Z.json",
+  "resolved_defects": [
+    {
+      "file": "matlab/simulink/run_stateflow_monitor_faults_v29.m",
+      "function": "restore_helper",
+      "historical_defect": "Invalid or deleted object cleanup warning after model closure in previous completed run.",
+      "repair_by_root": "Guard helper restoration with bdIsLoaded(mdl); close-before-restore becomes a no-op.",
+      "verification": "Final complete MATLAB log contains no onCleanup/deleted-object warning; all 13 monitor cases plus restored baseline pass."
+    }
+  ]
+}

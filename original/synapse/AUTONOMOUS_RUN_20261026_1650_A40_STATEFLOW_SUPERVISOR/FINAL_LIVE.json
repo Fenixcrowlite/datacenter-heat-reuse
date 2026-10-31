@@ -1,0 +1,23 @@
+{
+  "time_local": "2026-10-26T17:08:39.672856+01:00",
+  "ram_available_gib": 8.005,
+  "gpu_csv": "619, 8188, 0",
+  "matlab_process_pids": [],
+  "jarvice_pid": 11572,
+  "jarvice_live_idle": true,
+  "jarvice_heartbeat_age_s": 8.7,
+  "jarvice_status": "idle",
+  "worktree_directory_counts": {
+    "jarvice": 342,
+    "task_repos": 17
+  },
+  "stop_flags_checked": 5,
+  "stop_flags_found": [],
+  "task_state": [
+    "review",
+    "planned",
+    null
+  ],
+  "event_id": 1227,
+  "manifest_verified_files": 15
+}

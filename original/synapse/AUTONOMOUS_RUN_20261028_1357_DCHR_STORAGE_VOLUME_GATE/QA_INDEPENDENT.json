@@ -1,0 +1,9 @@
+{
+  "cases_checked": 64,
+  "classification": "independent numerical QA, not physical validation",
+  "decimal_retention_checks": 3,
+  "geometry_reconstructions": 56,
+  "reference_volume_m3": 305485.75415340223,
+  "status": "PASS",
+  "temperature_infeasible_cases": 8
+}

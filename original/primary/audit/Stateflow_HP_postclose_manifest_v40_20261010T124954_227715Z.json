@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-10-10T12:49:54.227715+00:00",
+  "model_release": "0.40",
+  "scope": "Completed packaging artifacts only",
+  "files": [
+    {
+      "path": "audit/check_stateflow_hp_checkpoint_v40.py",
+      "bytes": 3150,
+      "sha256": "7ca6a5f777b0567fb037d8be35092042c96e3aa01555bc196df7f33f89baf835"
+    },
+    {
+      "path": "audit/seal_stateflow_hp_v40.py",
+      "bytes": 2017,
+      "sha256": "a2bce2c251f98114e3967947c117c09b013ac9dde78736ed117030fbe0a972af"
+    },
+    {
+      "path": "audit/Stateflow_HP_manifest_v40_20261010T124921_176639Z.json",
+      "bytes": 31065,
+      "sha256": "3aa5e08272138bdf338697ddf7876bcce408bfeb264c2f55c1b1e430490957d4"
+    },
+    {
+      "path": "audit/Stateflow_HP_postclose_v40_20261010T124929_143206Z.json",
+      "bytes": 21007,
+      "sha256": "49825b81579a76d72344be85b4d23a490fe36e23b9988227ec16aed5f47860ca"
+    },
+    {
+      "path": "automation/logs/stateflow_hp_v40_finalize_20261010T124921093Z.log",
+      "bytes": 105,
+      "sha256": "b910238717762fb0ebd71e283bcfcf2bf7551cc00e12aa3607c56fb87d8ccb4b"
+    },
+    {
+      "path": "automation/logs/stateflow_hp_v40_postclose_20261010T124929036Z.log",
+      "bytes": 133,
+      "sha256": "77e62108649b2c00f2fded853922b6b39fd18b44d6fb3fc9bd9b92f92efccf25"
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "timestamp_utc": "2026-10-10T08:01:41.962733+00:00",
+  "evidence_class": "postclose_packaging_only",
+  "passed": 101,
+  "failed": 3,
+  "checks": [
+    {
+      "name": "MASTER_STAGEBOARD_stateflow_v37.md",
+      "passed": true
+    },
+    {
+      "name": "STATUS_stateflow_v37.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_completion_QA_v37_20261010T080123_118491Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075553155Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075603382Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075700550Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075753048Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\TES_resolution_derivation_v37.md",
+      "passed": true
+    },
+    {
+      "name": "audit\\TES_resolution_results_v37.md",
+      "passed": true
+    },
+    {
+      "name": "audit\\check_stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "audit\\finalize_stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "audit\\run_stateflow_v37.ps1",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v37_20261010T075547_199176Z\\baseline_vectors.csv",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v37_20261010T075547_199176Z\\cases.json",
+      "passed": true
+    },
+    {
+      "name": "audit\\verify_stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_v37_QA_20261010T075715354Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_v37_QA_20261010T075836125Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_v37_console_20261010T075553155Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_v37_console_20261010T075603382Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_v37_console_20261010T075700550Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_v37_console_20261010T075753048Z.log",
+      "passed": true
+    },
+    {
+      "name": "matlab\\simulink\\export_stateflow_numeric_metadata_v37.m",
+      "passed": true
+    },
+    {
+      "name": "matlab\\simulink\\export_stateflow_resolution_v37.m",
+      "passed": true
+    },
+    {
+      "name": "matlab\\simulink\\run_stateflow_resolution_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\assertions_v37.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\band_gap_128_ulp_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\band_gap_1_ulp_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\band_gap_256_ulp_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\band_gap_32_ulp_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\band_gap_64_ulp_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\band_gap_65_ulp_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\boiler_limit_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_0_n_1024_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_0_n_128_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_0_n_16_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_0_n_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_1e+06_n_1024_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_1e+06_n_128_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_1e+06_n_16_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_age_1e+06_n_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_changing_demand_n_1024_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\clock_nonadvancing_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\execution_v37.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\hp_components.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\hp_components_v37.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\hp_only_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\hp_runtime_1e-300_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\hp_runtime_1e-309_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\independent_QA_v37_20261010T075716_638996Z.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\independent_QA_v37_20261010T075836_225950Z.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\insufficient_heat_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\mat_audit_v37.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\metadata_source\\export_stateflow_numeric_metadata_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\numeric_metadata_v37.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\qa_source\\20261010T075836_225950Z\\verify_stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\DCHR_Dispatch_Stateflow_v36.slx",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\build_dispatch_stateflow_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\dchr_segment_plan_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\dchr_stateflow_hp_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\export_stateflow_admissibility_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\export_stateflow_resolution_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\heat_pump_step_v14.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\run_stateflow_admissibility_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\run_stateflow_dimensional_faults_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\run_stateflow_faults_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\run_stateflow_resolution_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\spec\\baseline_vectors.csv",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\spec\\cases.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_allocate_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_choose_mode_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_collect_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_contract_gate_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_reference_v30.py",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_reference_v32.py",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_reference_v34.py",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_supervisor_guard_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\stateflow_time_tolerance_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\source_snapshot\\verify_stateflow_resolution_v37.py",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\summary_v37.json",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\tes_charge_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\tes_discharge_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_resolution_v37_20261010T075607048Z\\zero_demand_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "unchanged_saved_model",
+      "passed": true
+    },
+    {
+      "name": "actual_v36_not_new_model",
+      "passed": true
+    },
+    {
+      "name": "open_defects_no_corrected_acceptance",
+      "passed": true
+    },
+    {
+      "name": "QA_counts",
+      "passed": true
+    },
+    {
+      "name": "equation_count",
+      "passed": true
+    },
+    {
+      "name": "preservation_count",
+      "passed": true
+    },
+    {
+      "name": "scenario_count",
+      "passed": true
+    },
+    {
+      "name": "runtime_outcomes",
+      "passed": true
+    },
+    {
+      "name": "completed_interval_count",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075603382Z.json_exit0",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075603382Z.json_closed_log",
+      "passed": false
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075700550Z.json_exit0",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075700550Z.json_closed_log",
+      "passed": false
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075753048Z.json_exit0",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v37_20261010T075753048Z.json_closed_log",
+      "passed": false
+    },
+    {
+      "name": "unchanged_primary_claims",
+      "passed": true
+    },
+    {
+      "name": "concrete_v38_handoff",
+      "passed": true
+    }
+  ]
+}

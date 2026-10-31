@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-10-10T23:15:08.5714239Z",
+  "exit_code": 1,
+  "evidence_class": "observed_matlab_batch_receipt",
+  "command": "addpath('matlab','matlab/simulink'); review_padding_references_v51('results/stateflow_padding_v51_20261010T230758_239448Z'); inspect_padding_origin_v51('results/stateflow_padding_v51_20261010T230758_239448Z'); run_annual_sensitivity_v51('results/stateflow_padding_v51_20261010T230758_239448Z'); export_annual_sensitivity_v51('results/stateflow_padding_v51_20261010T230758_239448Z'); export_annual_sensitivity_binary_v51('results/stateflow_padding_v51_20261010T230758_239448Z'); export_padding_identity_v51('results/stateflow_padding_v51_20261010T230758_239448Z');",
+  "log_path": "automation/logs/stateflow_padding_v51_20261010T231339799Z.log"
+}

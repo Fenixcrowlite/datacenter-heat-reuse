@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checks": 24,
+  "check_names": [
+    "row_count",
+    "unique_grid",
+    "grid_completeness",
+    "sha_matches_metadata",
+    "synthetic_disclosure",
+    "no_source_signoffs",
+    "8760_each",
+    "all_finite",
+    "temperature_bounded",
+    "annual_balance",
+    "COP_4",
+    "HX_extraction",
+    "zero_recovery_zero_HP",
+    "zero_backup_zero_use",
+    "balance_residual",
+    "hours_range",
+    "more_humidity_less_evap",
+    "more_cover_leak_more_evap",
+    "C92_HP_anchor_0.1",
+    "C92_temp_anchor_0.1",
+    "C92_HP_anchor_0.25",
+    "C92_temp_anchor_0.25",
+    "script_sha_pin",
+    "metadata_pins"
+  ],
+  "matrix_sha256": "f3c51367003a28ce5d02655eefe027f95bc3e1e89e47dfabfe4e23ded0d6ee33",
+  "script_sha256": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+  "scenario_count": 54,
+  "total_hourly_integrations": 473040,
+  "worst_min_temp_C": 16.032492024632923,
+  "max_backup_MWh": 254.86445563502377,
+  "HP_heat_MWh_range": [
+    0.0,
+    267.46604693710754
+  ],
+  "evap_kg_range": [
+    4287.190691749872,
+    356068.0959455395
+  ]
+}

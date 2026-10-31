@@ -1,0 +1,8 @@
+{
+  "baseline": "C127",
+  "baseline_sha256": "428c52fb8c2749cb2769632cb317e0d6c2e6268225b9e9f04e624ad48c4a056a",
+  "matched_numeric_fields": 6720,
+  "matched_quarters": 1344,
+  "max_abs_difference": 0.0,
+  "status": "PASS"
+}

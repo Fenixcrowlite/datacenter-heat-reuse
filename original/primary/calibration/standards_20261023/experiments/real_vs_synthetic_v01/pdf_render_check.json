@@ -1,0 +1,56 @@
+[
+  {
+    "language": "SK",
+    "file": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\experiments\\real_vs_synthetic_v01\\Kalibracia_a_normy_SK.pdf",
+    "pages": 2,
+    "bytes": 109367,
+    "page_checks": [
+      {
+        "index": 1,
+        "chars": 2583,
+        "outside_bounds": []
+      },
+      {
+        "index": 2,
+        "chars": 912,
+        "outside_bounds": []
+      }
+    ]
+  },
+  {
+    "language": "RU",
+    "file": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\experiments\\real_vs_synthetic_v01\\Kalibracia_a_normy_RU.pdf",
+    "pages": 2,
+    "bytes": 92589,
+    "page_checks": [
+      {
+        "index": 1,
+        "chars": 2302,
+        "outside_bounds": []
+      },
+      {
+        "index": 2,
+        "chars": 865,
+        "outside_bounds": []
+      }
+    ]
+  },
+  {
+    "language": "EN",
+    "file": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\experiments\\real_vs_synthetic_v01\\Kalibracia_a_normy_EN.pdf",
+    "pages": 2,
+    "bytes": 87744,
+    "page_checks": [
+      {
+        "index": 1,
+        "chars": 2391,
+        "outside_bounds": []
+      },
+      {
+        "index": 2,
+        "chars": 916,
+        "outside_bounds": []
+      }
+    ]
+  }
+]

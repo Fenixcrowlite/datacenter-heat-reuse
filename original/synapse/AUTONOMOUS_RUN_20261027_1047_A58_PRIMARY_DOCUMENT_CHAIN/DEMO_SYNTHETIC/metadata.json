@@ -1,0 +1,1 @@
+{"asset_id": "TEST-LOOP-NOT-REAL", "source_kind": "synthetic_test", "sensor_calibration_record": "SYNTHETIC-CAL-ONLY", "original_csv_sha256": "d988d28032e2c86828cc552ae2d1746c0cc7121fb104bcbd9f8fd20500bd4d74", "provenance_notes": "Generated for unit tests; not real telemetry"}

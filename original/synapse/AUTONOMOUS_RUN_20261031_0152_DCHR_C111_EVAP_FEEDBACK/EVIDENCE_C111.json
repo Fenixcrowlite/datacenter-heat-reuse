@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c111-evap-feedback-20261031-0152",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK\\C111_COUPLED_HOURLY.csv.gz",
+  "artifact_sha256": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK\\C111_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK\\SHA256_MANIFEST_C111.json",
+  "manifest_sha256": "d3e5453fb3abc43a5cfbdb728a180f07d6eb9455cf20865b3057c73431502721",
+  "next": "Add finite room humidity dynamics and bounded dehumidifier; then vendor COP/return temperatures and real source signoffs.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK\\C111_INDEPENDENT_QA.json",
+  "schema": "C111_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK\\C111_SUMMARY.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,17 @@
+test_a54_provenance_not_promoted (test_a55.A55Tests.test_a54_provenance_not_promoted) ... ok
+test_calibration_record_mismatch_rejected (test_a55.A55Tests.test_calibration_record_mismatch_rejected) ... ok
+test_insufficient_samples_rejected (test_a55.A55Tests.test_insufficient_samples_rejected) ... ok
+test_missing_provenance_rejected (test_a55.A55Tests.test_missing_provenance_rejected) ... ok
+test_no_compressor_excitation_rejected (test_a55.A55Tests.test_no_compressor_excitation_rejected) ... ok
+test_nonfinite_measurement_rejected (test_a55.A55Tests.test_nonfinite_measurement_rejected) ... ok
+test_nonmonotonic_timestamps_rejected (test_a55.A55Tests.test_nonmonotonic_timestamps_rejected) ... ok
+test_real_claim_does_not_certify (test_a55.A55Tests.test_real_claim_does_not_certify) ... ok
+test_residual_drift_rejected (test_a55.A55Tests.test_residual_drift_rejected) ... ok
+test_source_tampering_rejected (test_a55.A55Tests.test_source_tampering_rejected) ... ok
+test_synthetic_recovers_three_parameters (test_a55.A55Tests.test_synthetic_recovers_three_parameters) ... ok
+test_wrong_energy_sign_rejected (test_a55.A55Tests.test_wrong_energy_sign_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.425s
+
+OK

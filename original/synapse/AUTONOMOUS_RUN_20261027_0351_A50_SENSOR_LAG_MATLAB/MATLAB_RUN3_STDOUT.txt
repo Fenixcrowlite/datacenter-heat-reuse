@@ -1,0 +1,7 @@
+A50_PASS neither_lag0 trip=98 comparisons=2640
+A50_PASS neither_lag1 trip=98 comparisons=2640
+A50_PASS neither_lag4 trip=98 comparisons=2640
+A50_PASS backup_only_lag0 trip=98 comparisons=2640
+A50_PASS backup_only_lag1 trip=98 comparisons=2640
+A50_PASS backup_only_lag4 trip=103 comparisons=2640
+A50_ALL_PASS 15840

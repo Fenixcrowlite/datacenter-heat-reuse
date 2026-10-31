@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 16,
+  "a27_sha256": "f2eb54a2e83d1ee0a4d8972be96d7a26b0b665da97719074ed203ef824e2bfb7",
+  "source_class": "SYNTHETIC_TEST",
+  "field_calibration_verified": false
+}

@@ -1,0 +1,13 @@
+﻿duty_nameplate_MW,reserve_MW,installed_total_MW,modules_2MW_total,max_model_hp_MW,limited_hours,HP_heat_delivered_MWh,additional_gas_due_capacity_MWh,HP_electricity_MWh,CAPEX_assumed_EUR_per_kW,CAPEX_total_EUR,gross_heat_energy_saving_EUR_y,annual_aux_pumps_EUR_y,annual_fixed_maintenance_EUR_y,net_benefit_EUR_y,NPV_20y_6percent_EUR,payback_simple_y,model_warning
+6,2,8,4,10.372,4220.33,37570.27,10303.08,7664.05,700,5600000,1156968,38062,112000,1006907,5949140,5.56,clipped HP output; TES/gas redispatch approximated not independently rerun
+6,2,8,4,10.372,4220.33,37570.27,10303.08,7664.05,1000,8000000,1156968,38062,160000,958907,2998584,8.34,clipped HP output; TES/gas redispatch approximated not independently rerun
+6,2,8,4,10.372,4220.33,37570.27,10303.08,7664.05,1400,11200000,1156968,38062,224000,894907,-935491,12.52,clipped HP output; TES/gas redispatch approximated not independently rerun
+8,2,10,5,10.372,3230.08,45309.42,2563.93,9242.78,700,7000000,1395294,47577,140000,1207717,6852416,5.8,clipped HP output; TES/gas redispatch approximated not independently rerun
+8,2,10,5,10.372,3230.08,45309.42,2563.93,9242.78,1000,10000000,1395294,47577,200000,1147717,3164220,8.71,clipped HP output; TES/gas redispatch approximated not independently rerun
+8,2,10,5,10.372,3230.08,45309.42,2563.93,9242.78,1400,14000000,1395294,47577,280000,1067717,-1753373,13.11,clipped HP output; TES/gas redispatch approximated not independently rerun
+10,2,12,6,10.372,22.0,47870.62,2.74,9765.24,700,8400000,1474165,57092,168000,1249073,5926765,6.72,clipped HP output; TES/gas redispatch approximated not independently rerun
+10,2,12,6,10.372,22.0,47870.62,2.74,9765.24,1000,12000000,1474165,57092,240000,1177073,1500931,10.19,clipped HP output; TES/gas redispatch approximated not independently rerun
+10,2,12,6,10.372,22.0,47870.62,2.74,9765.24,1400,16800000,1474165,57092,336000,1081073,-4400182,15.54,clipped HP output; TES/gas redispatch approximated not independently rerun
+12,2,14,7,10.372,0.0,47873.35,0.0,9765.8,700,9800000,1474249,66608,196000,1211642,4097433,8.09,clipped HP output; TES/gas redispatch approximated not independently rerun
+12,2,14,7,10.372,0.0,47873.35,0.0,9765.8,1000,14000000,1474249,66608,280000,1127642,-1066040,12.42,clipped HP output; TES/gas redispatch approximated not independently rerun
+12,2,14,7,10.372,0.0,47873.35,0.0,9765.8,1400,19600000,1474249,66608,392000,1015642,-7950671,19.3,clipped HP output; TES/gas redispatch approximated not independently rerun

@@ -1,0 +1,159 @@
+{
+  "updated": "2026-10-08T18:21:05.745050+00:00",
+  "evidence_not_validation": true,
+  "results": [
+    {
+      "nr": 1,
+      "status": "ALREADY_PRESENT",
+      "doi": "10.1016/j.energy.2017.08.078",
+      "url": "",
+      "filename": "01_Wahlroos_Espoo_2017.pdf"
+    },
+    {
+      "nr": 2,
+      "status": "FETCH_ERROR",
+      "doi": "10.1016/j.rser.2017.10.058",
+      "url": "https://research.aalto.fi/files/16978018/1_s2.0_S1364032117314314_main.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "nr": 3,
+      "status": "FETCH_ERROR",
+      "doi": "10.1016/j.scs.2018.10.023",
+      "url": "https://research.aalto.fi/files/29723097/ELEC_parssinen_et_al_waste_heat_sustainability.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "nr": 4,
+      "status": "ALREADY_PRESENT",
+      "doi": "10.3390/en13143551",
+      "url": "",
+      "filename": "04_Hiltunen_Espoo_2020.pdf"
+    },
+    {
+      "nr": 5,
+      "status": "REJECTED_NON_PDF_OR_TOO_LARGE",
+      "doi": "10.1016/j.energy.2021.120916",
+      "url": "https://aaltodoc.aalto.fi/handle/123456789/108644"
+    },
+    {
+      "nr": 6,
+      "status": "FETCH_ERROR",
+      "doi": "10.1016/j.energy.2020.119468",
+      "url": "https://research.aalto.fi/files/53718540/ENG_Khosravi_et_al_Waste_heat_recovery_Energy.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "nr": 7,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 8,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 9,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 10,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 11,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 12,
+      "status": "FETCH_ERROR",
+      "doi": "10.1016/j.energy.2022.125215",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360544222021053/pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "nr": 13,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 14,
+      "status": "NO_OA_PDF_URL",
+      "doi": "10.1016/j.applthermaleng.2015.09.111",
+      "url": ""
+    },
+    {
+      "nr": 15,
+      "status": "FETCH_ERROR",
+      "doi": "10.1016/j.applthermaleng.2023.121283",
+      "url": "https://openresearch.lsbu.ac.uk/download/8ae893ed45223aab0ac7a2bf59d3fc1c8d95b570e61b53eda2cf90664953a7ab/1659190/1-s2.0-S1359431123013121-main.pdf",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>"
+    },
+    {
+      "nr": 16,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 17,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 18,
+      "status": "NO_OA_PDF_URL",
+      "doi": "10.1016/j.scs.2018.12.012",
+      "url": ""
+    },
+    {
+      "nr": 19,
+      "status": "UNVERIFIED_DOI_SKIPPED",
+      "doi": "",
+      "url": ""
+    },
+    {
+      "nr": 20,
+      "status": "FETCH_ERROR",
+      "doi": "10.3390/en19030800",
+      "url": "https://www.mdpi.com/1996-1073/19/3/800/pdf?version=1770130275",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "nr": 21,
+      "status": "ALREADY_PRESENT",
+      "doi": "10.1016/j.rser.2013.12.007",
+      "url": "",
+      "filename": "21_Ebrahimi_2014.pdf"
+    },
+    {
+      "nr": 22,
+      "status": "NO_OA_PDF_URL",
+      "doi": "10.1016/j.rser.2023.113777",
+      "url": ""
+    },
+    {
+      "nr": 23,
+      "status": "NO_OA_PDF_URL",
+      "doi": "10.1016/j.rser.2025.115863",
+      "url": ""
+    },
+    {
+      "nr": 24,
+      "status": "NO_OA_PDF_URL",
+      "doi": "10.1016/j.applthermaleng.2018.06.036",
+      "url": ""
+    }
+  ]
+}

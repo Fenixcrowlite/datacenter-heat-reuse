@@ -1,0 +1,16 @@
+
+const ids=['src','hotD','pool','poolD','power','U','foul','energy','elec','gas','eta','capA','capB','cop','omA','omB','r','years'];const $=x=>document.getElementById(x);const original=Object.fromEntries(ids.map(k=>[k,$(k).value]));const fmt=(v,n=1)=>Number.isFinite(v)?v.toLocaleString('ru-RU',{maximumFractionDigits:n}):'—';let current={};
+function update(){const v=Object.fromEntries(ids.map(k=>[k,Number($(k).value)]));if(v.hotD<=0||v.poolD<=0||v.power<=0||v.U<=0||v.foul<1||v.eta<=0||v.eta>1||v.cop<=1||v.r<0||v.years<=0){$('warnings').innerHTML='<div class="warn">Неправильные параметры</div>';return}
+const a=v.src-(v.pool+v.poolD),b=v.src-v.hotD-v.pool;const feasible=a>0&&b>0;const lm=feasible?(Math.abs(a-b)<1e-9?a:(a-b)/Math.log(a/b)):NaN;const UA=v.power/lm*v.foul;const area=UA*1000/v.U;
+const f1=v.power*1000*3600/(997*4182*v.hotD),f2=v.power*1000*3600/(997*4182*v.poolD);const hours=v.energy*1000/v.power;const pA=f1/3600*70/.6+f2/3600*80/.6;const pB=f1*(1-1/v.cop)/3600*70/.6+f2/3600*80/.6;const pumpCostA=(pA*hours/1000+.25*8.76)*v.elec;const pumpCostB=(pB*hours/1000+.25*8.76)*v.elec;
+const scale=v.energy/250.125;const grossA=(v.energy-103.372369171984*scale)*v.gas/v.eta-(-21.271262471*scale)*v.elec;const grossB=(v.energy-78.13377655*scale)*v.gas/v.eta-(-20.7609*scale+v.energy/v.cop)*v.elec;const PV=v.r===0?v.years:(1-Math.pow(1+v.r,-v.years))/v.r;
+const netA=feasible?(grossA-pumpCostA-v.capA*v.omA):NaN,netB=grossB-pumpCostB-v.capB*v.omB,npvA=feasible?(-v.capA+netA*PV):NaN,npvB=-v.capB+netB*PV;
+current={date:'2026-10-23',inputs:v,outputs:{feasible,LMtd_K:lm,UA_design_kW_K:UA,area_m2:area,hot_flow_m3h:f1,pool_flow_m3h:f2,pumpA_kW:pA,pumpB_kW:pB,netA,netB,npvA,npvB},warnings:['CAPEX, U, hydraulic losses and COP are assumed','No dynamic Simulink re-run on changed inputs']};
+const m=[['LMTD',lm,'K'],['UA с запасом',UA,'кВт/K'],['Оценочная площадь',area,'м²'],['Первичный расход',f1,'м³/ч'],['Вторичный расход',f2,'м³/ч'],['Насосы прямого контура',pA,'кВт'],['Порог COP электроэнергии/газа',v.elec*v.eta/v.gas,'']];
+$('out').innerHTML=m.map(z=>'<div class="item"><small>'+z[0]+'</small><b class="metric">'+fmt(z[1],2)+' '+z[2]+'</b></div>').join('');
+$('rows').innerHTML=[['Прямой 35°C',v.capA,netA,npvA],['Отдельный HP',v.capB,netB,npvB]].map(z=>'<tr><td>'+z[0]+'</td><td>'+fmt(z[1],0)+'€</td><td>'+fmt(z[2],0)+'€/год</td><td>'+fmt(z[3],0)+'€</td></tr>').join('');
+const warnings=[];if(!feasible)warnings.push('Невозможен прямой теплообмен для заданных 4 конечных температур.');if(v.src<=32)warnings.push('Низкий температурный напор: HX резко увеличивается или недоступен.');warnings.push('Сценарные U= '+fmt(v.U)+' Вт/(м²K) и 70/80 кПа ещё должен проверить производитель.');warnings.push('При изменении параметров динамика и диспечеризация только приближены; этот калькулятор не заменяет MATLAB.');$('warnings').innerHTML=warnings.map(w=>'<div class="'+(!feasible?'warn':'ok')+'">'+w+'</div>').join('');
+}
+function restore(){ids.forEach(k=>$(k).value=original[k]);update()}
+function exportScenario(){const b=new Blob([JSON.stringify(current,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='dc_equipment_scenario.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+ids.forEach(k=>$(k).addEventListener('input',update));update();

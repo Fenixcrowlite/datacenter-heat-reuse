@@ -1,0 +1,11 @@
+{
+  "annual_reference_hours": 140160,
+  "asymmetric_rows": 2,
+  "field_validated": false,
+  "negative_controls": 3,
+  "numeric_checks": 94,
+  "reference": "independent closed-form room mixing, no C112.step",
+  "schema": "C114_INDEPENDENT_QA_V1",
+  "status": "PASS",
+  "symmetric_rows": 10
+}

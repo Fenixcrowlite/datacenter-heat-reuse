@@ -1,0 +1,4187 @@
+{
+  "version": "0.28",
+  "timestamp_utc": "2026-10-09T15:29:14.119464+00:00",
+  "scheme": "exponential_loss_first",
+  "rate_semantics": "continuous inverse-hour decay coefficient, not hourly fraction",
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "verifier_sha256": "5cd94934ab043a442adf0e18655b1a1a8f97568a419bfcd2b8d273015b84f5d7",
+  "self_test": {
+    "checks": 1029,
+    "passed": 1029,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_exp_vectors_verify",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_corruption_Mode",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_corruption_HP_Source_Used_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_corruption_Storage_E_After_Loss_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_corruption_Storage_E_Next_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_corruption_Storage_Standing_Loss_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_corruption_Gas_Heat_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_actual_interval",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_actual_interval",
+        "passed": true
+      },
+      {
+        "name": "synthetic_complete_supplemental_evidence_verifies",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_supplemental_interval",
+        "passed": true
+      },
+      {
+        "name": "independent_hand_charge_state",
+        "passed": true
+      },
+      {
+        "name": "independent_hand_charge_loss",
+        "passed": true
+      },
+      {
+        "name": "independent_hand_backup_discharge_state",
+        "passed": true
+      },
+      {
+        "name": "passive_semigroup_hand",
+        "passed": true
+      },
+      {
+        "name": "legacy_partition_discrepancy_hand",
+        "passed": true
+      },
+      {
+        "name": "zero_rate_continuous_limit",
+        "passed": true
+      },
+      {
+        "name": "charging_split_overestimate_refines",
+        "passed": true
+      },
+      {
+        "name": "synthetic_experiment_series_verifies",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Mode",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Charge_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Discharge_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_After_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Next_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Standing_Loss_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_synthetic_experiment_series_Residual_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_experiment_series_interval",
+        "passed": true
+      },
+      {
+        "name": "reject_experiment_terminal_csv_corruption",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_0",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_0",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_1",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_1",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_2",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_2",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_3",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_3",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_4",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_4",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_5",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_5",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_6",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_6",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_7",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_7",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_8",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_8",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_9",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_9",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_10",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_10",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_11",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_11",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_12",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_12",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_13",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_13",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_14",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_14",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_15",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_15",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_16",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_16",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_17",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_17",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_18",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_18",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_19",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_19",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_20",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_20",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_21",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_21",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_22",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_22",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_23",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_23",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_24",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_24",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_25",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_25",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_26",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_26",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_27",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_27",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_28",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_28",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_29",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_29",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_30",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_30",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_31",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_31",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_32",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_32",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_33",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_33",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_34",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_34",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_35",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_35",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_36",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_36",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_37",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_37",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_38",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_38",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_39",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_39",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_40",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_40",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_41",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_41",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_42",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_42",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_43",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_43",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_44",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_44",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_45",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_45",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_46",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_46",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_47",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_47",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_48",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_48",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_49",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_49",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_50",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_50",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_51",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_51",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_52",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_52",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_53",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_53",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_54",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_54",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_55",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_55",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_56",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_56",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_57",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_57",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_58",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_58",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_59",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_59",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_60",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_60",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_61",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_61",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_62",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_62",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_63",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_63",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_64",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_64",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_65",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_65",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_66",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_66",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_67",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_67",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_68",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_68",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_69",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_69",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_70",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_70",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_71",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_71",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_72",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_72",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_73",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_73",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_74",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_74",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_75",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_75",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_76",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_76",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_77",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_77",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_78",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_78",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_79",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_79",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_80",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_80",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_81",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_81",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_82",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_82",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_83",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_83",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_84",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_84",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_85",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_85",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_86",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_86",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_87",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_87",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_88",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_88",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_89",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_89",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_90",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_90",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_91",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_91",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_92",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_92",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_93",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_93",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_94",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_94",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_95",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_95",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_96",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_96",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_97",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_97",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_98",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_98",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_99",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_99",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_100",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_100",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_101",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_101",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_102",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_102",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_103",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_103",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_104",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_104",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_105",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_105",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_106",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_106",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_107",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_107",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_108",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_108",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_109",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_109",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_110",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_110",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_111",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_111",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_112",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_112",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_113",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_113",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_114",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_114",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_115",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_115",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_116",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_116",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_117",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_117",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_118",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_118",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_119",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_119",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_120",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_120",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_121",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_121",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_122",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_122",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_123",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_123",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_124",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_124",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_125",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_125",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_126",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_126",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_127",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_127",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_128",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_128",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_129",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_129",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_130",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_130",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_131",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_131",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_132",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_132",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_133",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_133",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_134",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_134",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_135",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_135",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_136",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_136",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_137",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_137",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_138",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_138",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_139",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_139",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_140",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_140",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_141",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_141",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_142",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_142",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_143",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_143",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_144",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_144",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_145",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_145",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_146",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_146",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_147",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_147",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_148",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_148",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_149",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_149",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_150",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_150",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_151",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_151",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_152",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_152",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_153",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_153",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_154",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_154",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_155",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_155",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_156",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_156",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_157",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_157",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_158",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_158",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_159",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_159",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_160",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_160",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_161",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_161",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_162",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_162",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_163",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_163",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_164",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_164",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_165",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_165",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_166",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_166",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_167",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_167",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_168",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_168",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_169",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_169",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_170",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_170",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_171",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_171",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_172",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_172",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_173",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_173",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_174",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_174",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_175",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_175",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_176",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_176",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_177",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_177",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_178",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_178",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_179",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_179",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_180",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_180",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_181",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_181",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_182",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_182",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_183",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_183",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_184",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_184",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_185",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_185",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_186",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_186",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_187",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_187",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_188",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_188",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_189",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_189",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_190",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_190",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_191",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_191",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_192",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_192",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_193",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_193",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_194",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_194",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_195",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_195",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_196",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_196",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_197",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_197",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_198",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_198",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_199",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_199",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_200",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_200",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_201",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_201",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_202",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_202",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_203",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_203",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_204",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_204",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_205",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_205",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_206",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_206",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_207",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_207",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_208",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_208",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_209",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_209",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_210",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_210",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_211",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_211",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_212",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_212",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_213",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_213",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_214",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_214",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_215",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_215",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_216",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_216",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_217",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_217",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_218",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_218",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_219",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_219",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_220",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_220",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_221",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_221",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_222",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_222",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_223",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_223",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_224",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_224",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_225",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_225",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_226",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_226",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_227",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_227",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_228",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_228",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_229",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_229",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_230",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_230",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_231",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_231",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_232",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_232",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_233",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_233",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_234",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_234",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_235",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_235",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_236",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_236",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_237",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_237",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_238",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_238",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_239",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_239",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_240",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_240",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_241",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_241",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_242",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_242",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_243",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_243",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_244",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_244",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_245",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_245",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_246",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_246",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_247",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_247",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_248",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_248",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_249",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_249",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_250",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_250",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_251",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_251",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_252",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_252",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_253",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_253",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_254",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_254",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_255",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_255",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_256",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_256",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_257",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_257",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_258",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_258",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_259",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_259",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_260",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_260",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_261",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_261",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_262",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_262",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_263",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_263",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_264",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_264",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_265",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_265",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_266",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_266",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_267",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_267",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_268",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_268",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_269",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_269",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_270",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_270",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_271",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_271",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_272",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_272",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_273",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_273",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_274",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_274",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_275",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_275",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_276",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_276",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_277",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_277",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_278",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_278",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_279",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_279",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_280",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_280",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_281",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_281",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_282",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_282",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_283",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_283",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_284",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_284",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_285",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_285",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_286",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_286",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_287",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_287",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_288",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_288",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_289",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_289",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_290",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_290",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_291",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_291",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_292",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_292",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_293",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_293",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_294",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_294",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_295",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_295",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_296",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_296",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_297",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_297",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_298",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_298",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_299",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_299",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_300",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_300",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_301",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_301",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_302",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_302",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_303",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_303",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_304",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_304",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_305",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_305",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_306",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_306",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_307",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_307",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_308",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_308",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_309",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_309",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_310",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_310",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_311",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_311",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_312",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_312",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_313",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_313",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_314",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_314",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_315",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_315",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_316",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_316",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_317",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_317",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_318",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_318",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_319",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_319",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_320",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_320",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_321",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_321",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_322",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_322",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_323",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_323",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_324",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_324",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_325",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_325",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_326",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_326",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_327",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_327",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_328",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_328",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_329",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_329",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_330",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_330",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_331",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_331",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_332",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_332",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_333",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_333",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_334",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_334",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_335",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_335",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_336",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_336",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_337",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_337",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_338",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_338",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_339",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_339",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_340",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_340",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_341",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_341",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_342",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_342",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_343",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_343",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_344",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_344",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_345",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_345",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_346",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_346",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_347",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_347",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_348",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_348",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_349",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_349",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_350",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_350",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_351",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_351",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_352",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_352",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_353",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_353",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_354",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_354",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_355",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_355",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_356",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_356",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_357",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_357",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_358",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_358",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_359",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_359",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_360",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_360",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_361",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_361",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_362",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_362",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_363",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_363",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_364",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_364",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_365",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_365",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_366",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_366",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_367",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_367",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_368",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_368",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_369",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_369",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_370",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_370",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_371",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_371",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_372",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_372",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_373",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_373",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_374",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_374",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_375",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_375",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_376",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_376",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_377",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_377",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_378",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_378",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_379",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_379",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_380",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_380",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_381",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_381",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_382",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_382",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_383",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_383",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_384",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_384",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_385",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_385",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_386",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_386",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_387",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_387",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_388",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_388",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_389",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_389",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_390",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_390",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_391",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_391",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_392",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_392",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_393",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_393",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_394",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_394",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_395",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_395",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_396",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_396",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_397",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_397",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_398",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_398",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_399",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_399",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_400",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_400",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_401",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_401",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_402",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_402",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_403",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_403",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_404",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_404",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_405",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_405",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_406",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_406",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_407",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_407",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_408",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_408",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_409",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_409",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_410",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_410",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_411",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_411",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_412",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_412",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_413",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_413",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_414",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_414",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_415",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_415",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_416",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_416",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_417",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_417",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_418",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_418",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_419",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_419",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_420",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_420",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_421",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_421",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_422",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_422",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_423",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_423",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_424",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_424",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_425",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_425",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_426",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_426",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_427",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_427",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_428",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_428",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_429",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_429",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_430",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_430",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_431",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_431",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_432",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_432",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_433",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_433",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_434",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_434",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_435",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_435",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_436",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_436",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_437",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_437",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_438",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_438",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_439",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_439",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_440",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_440",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_441",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_441",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_442",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_442",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_443",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_443",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_444",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_444",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_445",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_445",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_446",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_446",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_447",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_447",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_448",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_448",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_449",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_449",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_450",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_450",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_451",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_451",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_452",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_452",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_453",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_453",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_454",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_454",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_455",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_455",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_456",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_456",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_457",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_457",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_458",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_458",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_459",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_459",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_460",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_460",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_461",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_461",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_462",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_462",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_463",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_463",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_464",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_464",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_465",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_465",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_466",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_466",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_467",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_467",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_468",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_468",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_469",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_469",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_470",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_470",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_471",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_471",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_472",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_472",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_473",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_473",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_474",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_474",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_475",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_475",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_476",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_476",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_477",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_477",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_478",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_478",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_479",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_479",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_480",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_480",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_481",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_481",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_482",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_482",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_483",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_483",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_484",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_484",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_485",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_485",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_486",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_486",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_487",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_487",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_488",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_488",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_489",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_489",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_490",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_490",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_491",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_491",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_492",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_492",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_493",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_493",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_494",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_494",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_495",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_495",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_496",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_496",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_497",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_497",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_498",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_498",
+        "passed": true
+      },
+      {
+        "name": "random_first_law_SOC_499",
+        "passed": true
+      },
+      {
+        "name": "random_increased_loss_cannot_improve_unmet_499",
+        "passed": true
+      }
+    ],
+    "synthetic_only": true,
+    "randomized_algebraic_cases": 500,
+    "seed": 28009,
+    "vector_intervals": 58,
+    "vector_scenarios": 16,
+    "max_abs_random_residual_MWh": 7.105427357601002e-15
+  },
+  "generic_rejection_schema_self_test": {
+    "checks": 10,
+    "passed": 10,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_complete_negative_schema",
+        "passed": true
+      },
+      {
+        "name": "synthetic_matlab_wrapped_negative_schema",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_rejected",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_tick",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_expected_identifier",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_case",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_case",
+        "passed": true
+      }
+    ],
+    "synthetic_only": true
+  },
+  "failed": 0
+}

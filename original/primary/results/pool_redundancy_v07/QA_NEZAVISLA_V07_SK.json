@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": 129251,
+  "scenario_count": 8,
+  "scenarios": [
+    {
+      "scenario": "zdravy",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.0,
+      "T_IT_max_C": 30
+    },
+    {
+      "scenario": "primarny_ventil_zaseknuty",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.0,
+      "T_IT_max_C": 30
+    },
+    {
+      "scenario": "oba_ventily_zaseknute",
+      "rows": 672,
+      "leak_MWh": 0.4899585832601419,
+      "unhandled_MWh": 0.0,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.0,
+      "T_IT_max_C": 30
+    },
+    {
+      "scenario": "hlavny_REJECT_off_zalozny_ok",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "rejected_backup_MWh": 0.07966002562175799,
+      "IT_heat_avoided_MWh": 0.0,
+      "T_IT_max_C": 30
+    },
+    {
+      "scenario": "oba_REJECT_off_bez_shedding",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.07966002562175799,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.0,
+      "T_IT_max_C": 47.06054994986449
+    },
+    {
+      "scenario": "oba_REJECT_off_so_shedding",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.04988881510151885,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.15212458968568401,
+      "T_IT_max_C": 40.32937313088389
+    },
+    {
+      "scenario": "spolocny_bias_senzorov",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.0,
+      "T_IT_max_C": 30
+    },
+    {
+      "scenario": "kombinovana_havaria_so_shedding",
+      "rows": 672,
+      "leak_MWh": 0.14601555075283754,
+      "unhandled_MWh": 0.03902982671147272,
+      "rejected_backup_MWh": 0.0,
+      "IT_heat_avoided_MWh": 0.06969179567487525,
+      "T_IT_max_C": 39.257240475012324
+    }
+  ],
+  "models_sha256": {
+    "matlab/simulink/DCHR_Electrical_Dispatch_Stateflow_v85.slx": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+    "matlab/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx": "0d9a59466a0284ca6bb61d6756222dccafc2ac7aa683ae41de35ce6d72f94ee0",
+    "matlab/pool_safety_v05/DC_Bazen_Bezpecnost_v05_SK.slx": "b4fc4ca430b15174d756ed9fad6d986ab9700c66663c11fc55df49d9171d8d71",
+    "matlab/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx": "88141f9e16a862695caebf1702423e0b4118f6f375f81bf88264bf83335833c3",
+    "matlab/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx": "102321d3269d08e499341898e92a1ad234f23e817881a7ab4e2a3cb7d554819e"
+  },
+  "data_provenance": "D synthetic",
+  "safety_statement": "Physical redundant devices and automatic load reduction are hypothetical. Not a safety certification."
+}

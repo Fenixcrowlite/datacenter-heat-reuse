@@ -1,0 +1,51 @@
+{
+  "assumptions": {
+    "COP_assumed": [
+      2.2,
+      4.0
+    ],
+    "HP_electric_cap_MW": 0.075,
+    "HP_thermal_cap_MW": 0.3,
+    "UA_kW_per_K": [
+      2.0,
+      10.0
+    ],
+    "cold_flow_kg_s": 2.0,
+    "cold_inlet_C": 15.0,
+    "cold_pressure_drop_kPa": 40.0,
+    "cover_multiplier": 0.15,
+    "pool_RH": 0.55,
+    "pump_efficiency": 0.6,
+    "source_flow_kg_s": [
+      0.5,
+      2.0
+    ],
+    "source_inlet_C": [
+      35.0,
+      38.0,
+      50.0
+    ],
+    "source_pressure_drop_kPa": 30.0,
+    "source_return_min_C": 12.0
+  },
+  "field_validated": false,
+  "hourly_rows": 227760,
+  "hourly_sha256": "12adf23a7d8b4c9096ed0a091660e6406ac6ff8088955cb90da764539deb2b88",
+  "limitations": [
+    "Synthetic source heat availability and fixed inlet temperatures.",
+    "UA, flows, pressure drop, pump efficiency and COP are scenario assumptions.",
+    "No measured exchanger, no vendor COP map, no fouling or pressure-drop curves.",
+    "Pumps counted only when HP dispatches; constant assumed differential pressure.",
+    "Pool water only: ventilation/dehumidification excluded.",
+    "Do not interpret numerical balance as physical validation."
+  ],
+  "primary_source_signoffs_added": 0,
+  "scenarios": 26,
+  "schema": "C96_UA_NTU_PUMP_POOL_V1",
+  "summary_sha256": "e0cc2cf68bb6e38a627d8b22b00cadf9909bfbb0d54a56d3c9069f9bf982370f",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "upstream_C90_sha256": "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+  "upstream_C93_sha256": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+  "vendor_COP": false
+}

@@ -1,0 +1,22 @@
+test_calibration_mismatch (test_a59.ImportTests.test_calibration_mismatch) ... ok
+test_deterministic_normalization (test_a59.ImportTests.test_deterministic_normalization) ... ok
+test_duplicate_json_key (test_a59.ImportTests.test_duplicate_json_key) ... ok
+test_duplicate_source_mapping (test_a59.ImportTests.test_duplicate_source_mapping) ... ok
+test_full_pipeline_a55_calibration (test_a59.ImportTests.test_full_pipeline_a55_calibration) ... ok
+test_invalid_trip (test_a59.ImportTests.test_invalid_trip) ... ok
+test_minimum_rows (test_a59.ImportTests.test_minimum_rows) ... ok
+test_missing_channel_in_csv (test_a59.ImportTests.test_missing_channel_in_csv) ... ok
+test_missing_mapping (test_a59.ImportTests.test_missing_mapping) ... ok
+test_mixed_asset (test_a59.ImportTests.test_mixed_asset) ... ok
+test_nan (test_a59.ImportTests.test_nan) ... ok
+test_negative_power (test_a59.ImportTests.test_negative_power) ... ok
+test_no_inferred_channel (test_a59.ImportTests.test_no_inferred_channel) ... ok
+test_non_utc (test_a59.ImportTests.test_non_utc) ... ok
+test_nonmonotonic (test_a59.ImportTests.test_nonmonotonic) ... ok
+test_output_collision (test_a59.ImportTests.test_output_collision) ... ok
+test_unknown_unit (test_a59.ImportTests.test_unknown_unit) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in <variable>s
+
+OK

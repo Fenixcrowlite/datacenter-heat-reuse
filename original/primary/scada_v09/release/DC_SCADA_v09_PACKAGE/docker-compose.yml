@@ -1,0 +1,59 @@
+# Explicit opt-in only. Nothing here is required by the native Python HMI.
+services:
+  broker:
+    image: eclipse-mosquitto:2
+    user: "1883:1883"
+    profiles: ["fuxa"]
+    ports:
+      - "127.0.0.1:18883:1883"
+    volumes:
+      - ./docker/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./docker/acl:/mosquitto/config/acl:ro
+      - ./docker/runtime/passwords:/mosquitto/config/passwords:ro
+      - mosquitto_data:/mosquitto/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: ["ALL"]
+    mem_limit: 128m
+    restart: "no"
+  fuxa:
+    image: frangoteam/fuxa:latest
+    profiles: ["fuxa"]
+    ports:
+      - "127.0.0.1:1881:1881"
+    volumes:
+      - fuxa_appdata:/usr/src/app/FUXA/server/_appdata
+      - fuxa_db:/usr/src/app/FUXA/server/_db
+    depends_on:
+      - broker
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: ["ALL"]
+    mem_limit: 512m
+    restart: "no"
+  grafana:
+    image: grafana/grafana:latest
+    profiles: ["grafana"]
+    ports:
+      - "127.0.0.1:3001:3000"
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_SECURITY_ADMIN_PASSWORD__FILE: /run/secrets/grafana_admin_password
+    secrets:
+      - grafana_admin_password
+    volumes:
+      - grafana_data:/var/lib/grafana
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: ["ALL"]
+    mem_limit: 256m
+    restart: "no"
+volumes:
+  mosquitto_data:
+  fuxa_appdata:
+  fuxa_db:
+  grafana_data:
+secrets:
+  grafana_admin_password:
+    file: ./docker/runtime/grafana_admin_password

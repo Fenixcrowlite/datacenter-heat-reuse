@@ -1,0 +1,94 @@
+schema_version: 3
+project: data_center_heat_reuse
+rule: "Every parameter must be classified as A measured, B literature, C manufacturer, D scenario, or derived."
+
+literature_anchors:
+  esp_2017:
+    class: B
+    source: "Wahlroos et al. 2017, Energy 140, DOI 10.1016/j.energy.2017.08.078"
+    values:
+      waste_heat_case_MW: "20-60"
+      system_operational_cost_saving_percent: "0.6-7.3"
+      utilization_hours_percent: ">95"
+    use: [annual_dispatch, utilization, operating_cost_sanity_check]
+
+  espoo_2021:
+    class: B
+    source: "Hiltunen & Syri 2021, Energy 231, 120916"
+    values:
+      role: "low-temperature waste heat + heat pumps in coal phase-out scenarios"
+      recommendation: "higher-temperature waste heat / liquid cooling is favorable for heat reuse"
+    use: [source_temperature_hypothesis, system_decarbonization]
+
+  frankfurt_2024:
+    class: B
+    source: "Jurgens et al. 2024, International Journal of Sustainable Energy Planning and Management 41"
+    values:
+      heat_demand_GWh_per_year: 144
+      heat_pump_capacity_MWth: 37
+      gas_boiler_capacity_MWth: 20
+      waste_heat_coverage_percent: 97.5
+      co2_reduction_percent: 78
+    use: [topology, sizing_reference, calibration_target]
+
+  varna_2026:
+    class: B
+    source: "Verzino et al. 2026, Energies 19(3), 800"
+    values:
+      storage_type: "thermochemical"
+      network_context: "third-generation district heating"
+      methods: [energy_analysis, exergy_analysis]
+    use: [storage_extension, exergy_extension, CEE_case_reference]
+
+reference_case_v0_3:
+  simulation:
+    step_h: {value: 1, class: D}
+    hours: {value: 8760, class: D}
+    random_seed: {value: 42, class: D}
+  dc:
+    it_capacity_MW: {value: 10, class: D}
+    pue: {value: 1.20, class: D}
+    utilization_mean: {value: 0.82, class: D}
+    recovery_fraction_baseline: {value: 0.85, class: D}
+    source_temperature_C_baseline: {value: 35, class: D}
+  heat_exchanger:
+    effectiveness: {value: 0.97, class: D}
+    approach_K: {value: 3, class: D}
+    max_heat_MW: {value: 20, class: D}
+  heat_pump:
+    max_heat_output_MW: {value: 12, class: D}
+    carnot_efficiency: {value: 0.45, class: D}
+    cop_min: {value: 2.2, class: D}
+    cop_max: {value: 7.0, class: D}
+  district_heating:
+    space_heat_design_MW: {value: 18, class: D}
+    base_hot_water_MW: {value: 2, class: D}
+    network_efficiency: {value: 0.94, class: D}
+    supply_temperature_C: {value: "55-80 weather compensated", class: D}
+    return_temperature_C: {value: "35-50 weather compensated", class: D}
+  economics:
+    electricity_EUR_per_MWh: {value: 100, class: D, warning: "not current Slovak market price"}
+    gas_EUR_per_MWh_fuel: {value: 50, class: D, warning: "not current Slovak market price"}
+    hp_capex_EUR_per_kWth: {value: 650, class: D, warning: "screening only"}
+    storage_capex_EUR_per_kWh: {value: 35, class: D, warning: "screening only"}
+    hx_capex_EUR_per_kW: {value: 80, class: D, warning: "screening only"}
+
+uncertainty_v0_3:
+  note: "Engineering ranges for robustness analysis, not fitted probability distributions."
+  source_temperature_C: {distribution: "truncated normal", center: 45, sigma: 3, bounds: [38, 50], class: D}
+  recovery_fraction: {distribution: uniform, bounds: [0.82, 0.95], class: D}
+  carnot_efficiency: {distribution: uniform, bounds: [0.40, 0.50], class: D}
+  electricity_EUR_per_MWh: {distribution: uniform, bounds: [70, 140], class: D}
+  gas_EUR_per_MWh_fuel: {distribution: uniform, bounds: [40, 80], class: D}
+  grid_tCO2_per_MWh: {distribution: uniform, bounds: [0.08, 0.30], class: D}
+
+calibration_queue:
+  - historical_hourly_weather
+  - real_or_typical_DH_hourly_load
+  - DH_supply_return_temperature_curve
+  - selected_DC_IT_load_and_cooling_telemetry
+  - heat_pump_manufacturer_performance_map
+  - pump_fan_and_heat_exchanger_auxiliary_power
+  - storage_measurements_or_vendor_model
+  - time_dependent_energy_prices
+  - country_year_specific_emission_factors

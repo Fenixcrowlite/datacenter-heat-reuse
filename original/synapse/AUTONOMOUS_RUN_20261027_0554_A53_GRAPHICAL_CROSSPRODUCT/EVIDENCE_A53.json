@@ -1,0 +1,46 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A53_graphical_sensor_trip_crossproduct",
+  "status": "A53_GRAPHICAL_CROSSPRODUCT_PARITY_PASS",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0554_A53_GRAPHICAL_CROSSPRODUCT",
+  "models": {
+    "DCHR_A53_TripDelay_0.slx": "8d0ead5e1ffb4b23be93c7893c8263f5e9474955f287721585b72192427dc9d9",
+    "DCHR_A53_TripDelay_2.slx": "095c7bf568a0ae5a461a883163ad036e06fb91a995d2c4989a02d3263fb4acec",
+    "DCHR_A53_TripDelay_4.slx": "e679915699677d81c6b33fc4eeb31b77675cbd22841869398e58cee627f9af6c"
+  },
+  "source_a51_sha256": {
+    "0": "3691770ae5f531824389035eafe19bafbdbd2e674d109d68c4a92ca8dacd073c",
+    "2": "c78bf64b0b2b1ac4d1436498db6caed535d3a174c7d78656baa02f7016eeeda4",
+    "4": "1c569018b7c8cadcf94845086a01c886c99f3551e7da9b3948aaae1a22021789"
+  },
+  "matlab_result_sha256": "46d354a92642a172630537bb744a95242a4231c65719c687c7fc09565cbeb606",
+  "matlab_executed": true,
+  "numeric_comparisons": 47520,
+  "scenarios": 18,
+  "steps_per_scenario": 240,
+  "python_tests": "10/10 PASS",
+  "trip_indices": {
+    "neither_lag0_trip0": 96,
+    "neither_lag1_trip0": 96,
+    "neither_lag4_trip0": 96,
+    "backup_only_lag0_trip0": 96,
+    "backup_only_lag1_trip0": 96,
+    "backup_only_lag4_trip0": 96,
+    "neither_lag0_trip2": 98,
+    "neither_lag1_trip2": 98,
+    "neither_lag4_trip2": 98,
+    "backup_only_lag0_trip2": 98,
+    "backup_only_lag1_trip2": 98,
+    "backup_only_lag4_trip2": 103,
+    "neither_lag0_trip4": 100,
+    "neither_lag1_trip4": 100,
+    "neither_lag4_trip4": 100,
+    "backup_only_lag0_trip4": 100,
+    "backup_only_lag1_trip4": 100,
+    "backup_only_lag4_trip4": 105
+  },
+  "synthetic_only": true,
+  "physical_release": false,
+  "limitations": "Graphical Stateflow synthetic simulation; no real sensor, PLC, safety certification, or primary-source signoffs.",
+  "next_step": "A54: independent sensitivity/uncertainty and protection envelope from A53, primary-source signoffs and physical protection validation remain BLOCKED; do not infer certified safe thresholds."
+}

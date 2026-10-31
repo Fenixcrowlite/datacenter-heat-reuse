@@ -1,0 +1,12 @@
+{
+  "event_id": 1253,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A46_isolated_Simulink_EMChart_compressor_lag_parity",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2255_A46_INTEGRATION",
+  "evidence_sha256": "f0e159eb465cb15a5f6a1e8d1845d8687d5032b4bb787982fd82aebeb24f7226",
+  "manifest_sha256": "c3362b1a2c7bc627fb4c86111dc76b85479506f95d34c0569e47209cf16db336",
+  "qa": "MATLAB 7x672 PASS, 51744 numeric parity, 4/4 independent Python QA, SLX ZIP PASS",
+  "graphical_stateflow_controlling": false,
+  "physical_release": false,
+  "next_step": "A47 replace EMChart internal FSM with externally connected graphical Stateflow A44-equivalent supervisor; 7x672 closed-loop parity and transitions"
+}

@@ -1,0 +1,70 @@
+{
+  "reason": "Scientific QA directories were incorrectly classified as browser profiles; included in additive correction archive with original root/path mappings",
+  "corrected_exclusions": [
+    {
+      "root": "primary",
+      "path": "results/annual_dispatch_v48_20261010T182553_348909Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/annual_sensitivity_v50_20261010T225436_641700Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/hp_annual_v47_20261010T181354_797146Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/period_v46_20261010T180131_369483Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/reporting_v45_20261010T175127_627392Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_clock_v41_20261010T125341508Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_clock_v41_20261010T125630995Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_clock_v42_20261010T130432870Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_hp_domain_v39_20261010T123256940Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_hp_domain_v40_20261010T124559855Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_protocol_v52_resume_20261011T060454_763418Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_resolution_v37_20261010T075607048Z/qa_source"
+    },
+    {
+      "root": "primary",
+      "path": "results/stateflow_v38_20261010T081205294Z/qa_source"
+    }
+  ],
+  "files_staged": 51
+}

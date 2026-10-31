@@ -1,0 +1,13 @@
+{
+  "conservation_and_limits_checked_per_hour": true,
+  "hourly_rows_checked": 157680,
+  "hourly_sha256": "e8f69bc656858bba9eb262d22997198098f238f7f0fb856e4c24f8e8ea42af56",
+  "negative_controls": 4,
+  "physical_validation": false,
+  "production_changed": false,
+  "scenario_groups_checked": 18,
+  "schema": "C94_INDEPENDENT_QA_V1",
+  "status": "PASS",
+  "summary_groups_checked": 18,
+  "summary_sha256": "60c7f267413265e4e6fefd223fc0d3396ce68fe57b5a699eb5690ac4479e736d"
+}

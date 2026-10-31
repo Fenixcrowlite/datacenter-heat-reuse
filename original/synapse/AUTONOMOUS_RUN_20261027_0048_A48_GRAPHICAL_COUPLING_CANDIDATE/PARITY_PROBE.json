@@ -1,0 +1,47 @@
+{
+  "kind": "A47_GRAPHICAL_PREINTEGRATION_PARITY",
+  "source_sha256": {
+    "A44": "c55dc5a1d4311104e675aebd6045e19883f95f27ea33db42d155edbdffe12307",
+    "A46": "a26fa2f0ca04555c20b806417efff390d0b605bc2a82b0ac1459fa860f6c2e49"
+  },
+  "physical_release": false,
+  "cases": {
+    "both": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    },
+    "main_only": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    },
+    "backup_only": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    },
+    "neither": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    },
+    "CF_both": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    },
+    "CF_backup_only": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    },
+    "CF_neither": {
+      "steps": 672,
+      "mismatches": 0,
+      "first_three": []
+    }
+  },
+  "total_steps": 4704,
+  "mismatches": 0
+}

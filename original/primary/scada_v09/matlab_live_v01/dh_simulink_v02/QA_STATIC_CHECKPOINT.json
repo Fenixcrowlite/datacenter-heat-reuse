@@ -1,0 +1,30 @@
+{
+  "status": "STATIC_AND_INDEPENDENT_PILOT_QA_PASS",
+  "count": 18,
+  "checks": {
+    "source_sha256_unchanged": "PASS",
+    "no_STOP_changed": "PASS",
+    "source_remains_outside_destination": "PASS",
+    "two_timeline_cases": "PASS",
+    "feedback_signal_delayed": "PASS",
+    "feedback_is_causally_delayed": "PASS",
+    "stateflow_pump_heat_balance": "PASS",
+    "enforced_model_dh_off": "PASS",
+    "residual_absolute": "PASS",
+    "no_v85_file_reference": "PASS",
+    "guard_has_memory_threshold": "PASS",
+    "v04_saved_run_672_samples": "PASS",
+    "pilot_balance": "PASS",
+    "pilot_off_at_96h": "PASS",
+    "independent_two_node_first_law": "PASS",
+    "pump_power_positive_only_with_flow": "PASS",
+    "feedback_dependent_on_temperature": "PASS",
+    "zero_demand_no_stale_request": "PASS"
+  },
+  "source_sha256": "0D9A59466A0284CA6BB61D6756222DCCAFC2AC7AA683AE41DE35CE6D72F94EE0",
+  "new_simulink_run_verified": false,
+  "new_slx_generated": false,
+  "blocked_by_ram_at_check": true,
+  "existing_run_used": "ca74c32211a44b6d9e83cd61d96cf59f",
+  "warning": "The new MATLAB block-diagram builder has not completed Simulink compilation or a real run. Pilot output is a separate approximate source."
+}

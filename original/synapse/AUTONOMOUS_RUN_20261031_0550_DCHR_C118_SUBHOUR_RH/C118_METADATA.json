@@ -1,0 +1,54 @@
+{
+  "field_validated": false,
+  "hourly_sha256": "27220733cb23e36d797ccb1805d062407744634f973ad785eccc3f3ba861b6e0",
+  "hourly_source_rows": 52560,
+  "indoor_C": 29.0,
+  "limitations": [
+    "One-way forcing sensitivity only: hourly C116 pool evaporation and equipment actions are frozen.",
+    "Pulse patterns are adversarial synthetic redistributions, not measured quarter-hour loads.",
+    "Fixed 29C air, 3000 m3 room, constant ventilation and coil supply within each hour.",
+    "No controller retuning or dynamic room enthalpy; quarter-hour saturation drain is an alternative to C116 endpoint clip.",
+    "Not vendor sizing, real-time control validation, or 31-source physical signoff."
+  ],
+  "output_rows": 210240,
+  "patterns": {
+    "back_loaded": [
+      0.0,
+      0.0,
+      0.0,
+      4.0
+    ],
+    "double_pulse": [
+      2.0,
+      0.0,
+      2.0,
+      0.0
+    ],
+    "flat": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "front_loaded": [
+      4.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "quarter_hours": 0.25,
+  "room_dry_air_kg": 3540.0,
+  "schema": "C118_SYNTHETIC_SUBHOUR_RH_V1",
+  "selftests": 8,
+  "source_sha256": {
+    "C104": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C106": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C116": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "6ea88dba94ee54155380a224bf07649ace30d6681d3625b2e520a53bc65f8e7d",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "vent_dry_air_kg_h": 3540.0
+}

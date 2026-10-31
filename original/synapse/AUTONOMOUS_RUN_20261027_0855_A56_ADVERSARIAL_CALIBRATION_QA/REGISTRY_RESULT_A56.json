@@ -1,0 +1,13 @@
+{
+  "event_id": 1297,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A56_independent_adversarial_calibration_quality_gate",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0855_A56_ADVERSARIAL_CALIBRATION_QA",
+  "evidence_sha256": "cf688d2723c3fb402012c2ea2b5512620acc8c5fdc4065ee83997d8edae50f1c",
+  "manifest_sha256": "3d828308ff041a92d425a81acea984ecf63e99739651e54f67f3b2d8709a82c3",
+  "handoff_sha256": "89dda4de3ab94917acc3940d93e6fc85bb2faadfe353ac0352ebff014e431d55",
+  "QA": "11/11 unittest PASS, 2/2 AST PASS, 3/3 adversarial A55 acceptance gaps closed",
+  "synthetic_only": true,
+  "physical_release": false,
+  "next_step": "Obtain asset-specific calibrated time-aligned telemetry and sensor uncertainty records, verify source provenance independently, then rerun A55+A56 and Stateflow uncertainty scenarios. No physical release."
+}

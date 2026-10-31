@@ -1,0 +1,13 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1217,
+  "scope": "isolated_DCHR_A37B_v04_TES_SOC_dynamic_charge_saturation_and_REJECT_redirect",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1037_A37B_DCHR_TES_SOC_REDIRECT",
+  "evidence_sha256": "24e174ec1a380a3c7c8780d24ce016e4840949bcc729a4fb85ce7271d029f589",
+  "manifest_sha256": "f22a24fba9d9e07d319091b326377abfd652330b78ce5bfed7b7a285bcad2585",
+  "qa": "11/11 unit PASS; original v08 TES baseline within 5.01e-6 J; 672 steps / 8064 independent Decimal checks PASS",
+  "key_finding": "A36 fixed TES charge overfills synthetic 900kWh storage: 6 intervals clipped after hour 69; 75.688kWh charge curtailed; +61.346kWh reject; 14.342kWh HP power proxy reduction.",
+  "decision": "TES_SOC_REDIRECT_SYNTHETIC_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "limits": "synthetic v04 parameters, fixed COP proxy, no full HP/TES/Stateflow feedback, no hardware control",
+  "next_step": "Owner integrate A37B TES SOC and A37 N-1 IT thermal logic in isolated MATLAB/Stateflow, validate equipment parameters and full dynamic energy closure."
+}

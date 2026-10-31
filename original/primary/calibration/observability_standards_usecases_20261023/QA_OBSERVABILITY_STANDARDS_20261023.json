@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-23",
+  "scenario_year": 2025,
+  "chart_png_and_svg": 20,
+  "KPI": 34,
+  "standards": 56,
+  "signal_contract_fields": 14,
+  "validated_300s_intervals": 420480,
+  "usecases": 36,
+  "software_PASS": 22,
+  "physically_BLOCKED": 14,
+  "pdf_visual_coordinate_checks": [
+    {
+      "language": "SK",
+      "pages": 14,
+      "words": 2598,
+      "bytes": 1549748,
+      "clipped_words": 0
+    },
+    {
+      "language": "RU",
+      "pages": 15,
+      "words": 2620,
+      "bytes": 1563049,
+      "clipped_words": 0
+    },
+    {
+      "language": "EN",
+      "pages": 14,
+      "words": 2613,
+      "bytes": 1547736,
+      "clipped_words": 0
+    }
+  ],
+  "dash_JS_syntax": "PASSED",
+  "svg_xml_parse": "PASSED",
+  "certified_site_compliance": false,
+  "site_telemetry_measured": false,
+  "QA_scope": "Executed simulation artifacts; no hardware standards certification"
+}

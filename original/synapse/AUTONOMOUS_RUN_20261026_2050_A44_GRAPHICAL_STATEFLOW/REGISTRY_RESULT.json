@@ -1,0 +1,13 @@
+{
+  "event_id": 1243,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A44_isolated_graphical_stateflow_supervisor",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2050_A44_GRAPHICAL_STATEFLOW",
+  "evidence_sha256": "198d024e2ecc3301e79732ceb2b65c8d89d55975ec32b5dafe97aa585eb09c21",
+  "manifest_sha256": "89ea0096552e83fdb376c2850289a97a2c41eaf52ca55847e5f40d3cbf9b2977",
+  "model_sha256": "c55dc5a1d4311104e675aebd6045e19883f95f27ea33db42d155edbdffe12307",
+  "qa": "8/8 Python PASS; graphical Stateflow 4x672 samples; 5376/5376 state-alarm comparisons PASS",
+  "physical_release": false,
+  "compressor_lag_integrated": false,
+  "next_step": "A45 connect graphical chart to A43 closed-loop thermal system; implement HP compressor startup lag with energy balances; rerun 7x672, independent QA"
+}

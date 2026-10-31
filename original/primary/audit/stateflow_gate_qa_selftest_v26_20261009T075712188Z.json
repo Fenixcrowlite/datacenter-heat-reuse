@@ -1,0 +1,84 @@
+{
+  "version": "0.26",
+  "timestamp_utc": "2026-10-09T07:57:12.492026+00:00",
+  "scope": "Independent audit of executed v24 runtime-monitor fault evidence, v26.\n\nNo MATLAB production algorithm is imported. A two-interval fixed-COP hand\ncase anchors accepted traces; rejection diagnostics and hashes anchor fault\nprovenance. This is implementation QA, not physical or primary-paper validation.\n",
+  "primary_text_verified": false,
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "spec_sha256": "0eb17483d19b9f181356c3ca019587d50371ab785c74f56d1f28db9d807da6b7",
+  "verifier_sha256": "07348628075afe1e539c406f944e0eb00a3bd5a75e54b167d39fd58c73320a46",
+  "synthetic_verifier_self_test": {
+    "checks": 16,
+    "passed": 16,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_valid_schema",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_mutation",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_rejected",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_restored_source",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_failure_report_sha256",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_synthetic_report",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_case",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_case",
+        "passed": true
+      },
+      {
+        "name": "synthetic_hand_case_passes",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_E_Next_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Mode",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_System_Balance_Residual_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_Discharge_MW",
+        "passed": true
+      }
+    ]
+  },
+  "checks": 16,
+  "passed": 16,
+  "failed": 0
+}

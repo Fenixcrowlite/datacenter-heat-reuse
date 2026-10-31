@@ -1,0 +1,32 @@
+{
+  "calibration_ready": false,
+  "comparisons": 5376,
+  "independent_integral_checks": 10,
+  "max_abs_differences": {
+    "E_TES_J": 48.984914004802704,
+    "P_HP_W": 0.010027168500528205,
+    "Q_DC_W": 0.004979949997505173,
+    "Q_DH_W": 0.03637776258983649,
+    "Q_pool_W": 0.03401420920272358,
+    "Q_reject_W": 0.0416814372947556,
+    "T_pool_C": 1.949530314959702e-08,
+    "time_s": 0.0
+  },
+  "physical_release": false,
+  "rows_each": 672,
+  "source_sha256": [
+    "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+    "a1a9a202ffae217845fa52fb1440dcd650236a312677f2d3c6ee1db231e35c37"
+  ],
+  "status": "PASS_SIMULATION_AGREEMENT_NOT_PHYSICAL_VALIDATION",
+  "thresholds": {
+    "E_TES_J": 50.0,
+    "P_HP_W": 0.05,
+    "Q_DC_W": 0.05,
+    "Q_DH_W": 0.05,
+    "Q_pool_W": 0.05,
+    "Q_reject_W": 0.05,
+    "T_pool_C": 1e-06,
+    "time_s": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-10-10T08:19:30.779040+00:00",
+  "evidence_class": "closure_bindings_only",
+  "model_sha256": "fe60aaee835973195ccb94b323f516e7c1a6f413f5016f9b9f4d319251d297b2",
+  "actual_independent_checks": 128974,
+  "synthetic_reviewer_checks": 3,
+  "receipts": [
+    "audit\\Stateflow_execution_v38_20261010T080956210Z.json",
+    "audit\\Stateflow_execution_v38_20261010T081200211Z.json",
+    "audit\\Stateflow_execution_v38_20261010T081444238Z.json",
+    "audit\\Stateflow_execution_v38_20261010T081459530Z.json"
+  ],
+  "result_directory": "results\\stateflow_v38_20261010T081205294Z",
+  "qa": "results\\stateflow_v38_20261010T081205294Z\\independent_QA_v38_20261010T081552_920975Z.json",
+  "passed": true,
+  "status_sha256": "91c021f8a1dcaa2dc7c230d1467d240c5b05c1fbb5f6bcba240b6803a6491bdc"
+}

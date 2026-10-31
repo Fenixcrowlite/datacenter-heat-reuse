@@ -1,0 +1,255 @@
+{
+  "date": "2026-10-23",
+  "version": "equipment_screen_v01",
+  "not_vendor_quotation": true,
+  "input_vars": {
+    "heat_kw": 150,
+    "pool_return_c": 27.5,
+    "pool_rise_k": 2,
+    "primary_drop_k": 3,
+    "fouling_factor": 1.25,
+    "U_w_m2k": 1500,
+    "primary_head_kpa": 70,
+    "pool_head_kpa": 80,
+    "pump_efficiency": 0.6,
+    "output_tag": "test150_final"
+  },
+  "source_confidence": {
+    "Eurostat_2025_SK": "published statistics B",
+    "NASA_POWER_2025": "external gridded reanalysis B",
+    "Carrier_or_Oilon": "product series exists, operating point not vendor verified C",
+    "HX_U_and_pressure_loss": "engineer D assumed",
+    "CAPEX": "engineer scenario D, not price offer"
+  },
+  "profile": {
+    "annual_hours": 8760,
+    "DC_source_MW_mean": 6.97,
+    "DC_source_MW_p95": 7.699,
+    "DC_source_MW_max": 8.291,
+    "DH_HP_output_MW_mean": 5.477,
+    "DH_HP_output_MW_p95": 9.396,
+    "DH_HP_output_MW_max": 10.372,
+    "DH_HP_electric_MW_max": 2.116,
+    "gas_MW_peak": 10.627,
+    "source_capacity_at_COP_4_8_MW": 10.473,
+    "thermal_nominal_module_count_2MW_to_cover_model_peak": 6,
+    "N_plus_1_2MW_modules": 7,
+    "note": "Nominal ranges are NOT outputs at 35°C source and 70°C sink. Vendor selection must certify operating point."
+  },
+  "pool_HX_nominal_calculation": {
+    "source_in_C": 35,
+    "source_out_C": 32,
+    "pool_return_C": 27.5,
+    "pool_supply_C": 29.5,
+    "Q_design_kW": 150,
+    "hot_flow_m3h": 43.1711202473993,
+    "pool_flow_m3h": 64.75668037109895,
+    "lmtd_K": 4.983,
+    "U_assumed_W_m2K": 1500,
+    "fouling_area_factor": 1.25,
+    "thermal_feasible": true,
+    "UA_clean_kW_K": 30.101,
+    "UA_design_kW_K": 37.626,
+    "transfer_area_m2": 25.084
+  },
+  "electricity_price_EUR_MWh": 152.07260273972602,
+  "gas_price_EUR_MWh": 55.63479452054794,
+  "gas_heating_cost_per_MWh_EUR": 61.816,
+  "HP_COP_break_even_energy_only": 2.46,
+  "annual_source_pool_useful_heat_MWh": 250.125,
+  "alternatives": {
+    "A_DIRECT_35C_TITANIUM_HX": {
+      "equipment": "Gasketed titanium plate HX custom engineered, clean primary VFD TPE, treated pool side SPECK BADU, 2 x isolation valves and calibrated temperature/flow meters",
+      "source_C": 35,
+      "sink_C": 27.5,
+      "rated_useful_kW": 150,
+      "model_verified_pool_MWh": 250.1249999999992,
+      "gross_economic_benefit_EUR_year": 12306.501204404962,
+      "capex_scenarios_EUR": [
+        45000,
+        75000,
+        110000
+      ],
+      "uncertainty": "Titanium HX must be custom-selected from real four-port conditions; Pahlen MFT680 200 kW @ 60K is NOT suitable evidence.",
+      "budgets": [
+        {
+          "CAPEX_budget_EUR": 45000,
+          "fixed_OandM_EUR_year": 900.0,
+          "pump_and_control_kW": 4.047,
+          "pump_energy_MWh_year": 8.522,
+          "pump_electricity_EUR_year": 1296.003,
+          "gross_simulink_energy_opex_benefit_EUR_year": 12306.501,
+          "net_after_pumps_and_maintenance_EUR_year": 10110.498,
+          "simple_payback_years": 4.451,
+          "annualized_CAPEX_EUR_year": 3923.305,
+          "NPV20y_6percent_EUR": 70966.619,
+          "cash_positive": true,
+          "economic_screen": "screening BUDGET, not an actual equipment quote"
+        },
+        {
+          "CAPEX_budget_EUR": 75000,
+          "fixed_OandM_EUR_year": 1500.0,
+          "pump_and_control_kW": 4.047,
+          "pump_energy_MWh_year": 8.522,
+          "pump_electricity_EUR_year": 1296.003,
+          "gross_simulink_energy_opex_benefit_EUR_year": 12306.501,
+          "net_after_pumps_and_maintenance_EUR_year": 9510.498,
+          "simple_payback_years": 7.886,
+          "annualized_CAPEX_EUR_year": 6538.842,
+          "NPV20y_6percent_EUR": 34084.667,
+          "cash_positive": true,
+          "economic_screen": "screening BUDGET, not an actual equipment quote"
+        },
+        {
+          "CAPEX_budget_EUR": 110000,
+          "fixed_OandM_EUR_year": 2200.0,
+          "pump_and_control_kW": 4.047,
+          "pump_energy_MWh_year": 8.522,
+          "pump_electricity_EUR_year": 1296.003,
+          "gross_simulink_energy_opex_benefit_EUR_year": 12306.501,
+          "net_after_pumps_and_maintenance_EUR_year": 8810.498,
+          "simple_payback_years": 12.485,
+          "annualized_CAPEX_EUR_year": 9590.301,
+          "NPV20y_6percent_EUR": -8944.278,
+          "cash_positive": true,
+          "economic_screen": "screening BUDGET, not an actual equipment quote"
+        }
+      ]
+    },
+    "B_POOL_HP_25C": {
+      "equipment": "Oilon ChillHeat P series or Carrier AquaSnap 61WH; nominal range only, candidate not point-selected; with corrosion-resistant pool isolation HX and variable-speed pumps",
+      "source_C": 25,
+      "sink_C": 30,
+      "rated_useful_kW": 150,
+      "model_verified_pool_MWh": 250.1249999999992,
+      "pool_compressor_energy_MWh_at_COP4": 62.5312499999998,
+      "gross_economic_benefit_EUR_year": 4279.764536303118,
+      "budget_scenarios_EUR": [
+        100000,
+        170000,
+        250000
+      ],
+      "uncertainty": "COP4 is original unverified surrogate; manufacturer performance at 25/30 and seasonal part-load must be obtained.",
+      "budgets": [
+        {
+          "CAPEX_budget_EUR": 100000,
+          "fixed_OandM_EUR_year": 2500.0,
+          "pump_and_control_kW": 3.698,
+          "pump_energy_MWh_year": 7.939,
+          "pump_electricity_EUR_year": 1207.309,
+          "gross_simulink_energy_opex_benefit_EUR_year": 4279.765,
+          "net_after_pumps_and_maintenance_EUR_year": 572.456,
+          "simple_payback_years": 174.686,
+          "annualized_CAPEX_EUR_year": 8718.456,
+          "NPV20y_6percent_EUR": -93433.978,
+          "cash_positive": true,
+          "economic_screen": "screening BUDGET, not an actual equipment quote"
+        },
+        {
+          "CAPEX_budget_EUR": 170000,
+          "fixed_OandM_EUR_year": 4250.0,
+          "pump_and_control_kW": 3.698,
+          "pump_energy_MWh_year": 7.939,
+          "pump_electricity_EUR_year": 1207.309,
+          "gross_simulink_energy_opex_benefit_EUR_year": 4279.765,
+          "net_after_pumps_and_maintenance_EUR_year": -1177.544,
+          "simple_payback_years": null,
+          "annualized_CAPEX_EUR_year": 14821.375,
+          "NPV20y_6percent_EUR": -183506.34,
+          "cash_positive": false,
+          "economic_screen": "screening BUDGET, not an actual equipment quote"
+        },
+        {
+          "CAPEX_budget_EUR": 250000,
+          "fixed_OandM_EUR_year": 6250.0,
+          "pump_and_control_kW": 3.698,
+          "pump_energy_MWh_year": 7.939,
+          "pump_electricity_EUR_year": 1207.309,
+          "gross_simulink_energy_opex_benefit_EUR_year": 4279.765,
+          "net_after_pumps_and_maintenance_EUR_year": -3177.544,
+          "simple_payback_years": null,
+          "annualized_CAPEX_EUR_year": 21796.139,
+          "NPV20y_6percent_EUR": -286446.183,
+          "cash_positive": false,
+          "economic_screen": "screening BUDGET, not an actual equipment quote"
+        }
+      ]
+    },
+    "C_USE_DH_70C_POOL_HX": {
+      "equipment": "Isolated pool titanium/316L plate HX supplied from district network at 70C. Pool disinfection/filtration independent.",
+      "source_C": 70,
+      "sink_C": 27.5,
+      "rated_useful_kW": 150,
+      "gross_energy_benefit_EUR_year": null,
+      "uncertainty": "No independent closed-loop marginal dispatch with pool on DH supply: OPEX/NPV UNSOLVED. HX surface low vs 35C but DH marginal generation/distribution cost required.",
+      "budget_scenarios_EUR": [
+        25000,
+        45000,
+        75000
+      ]
+    }
+  },
+  "CAPEX_NPV0_limit_EUR": {
+    "A_DIRECT_35": 102724.67,
+    "B_HP_25": 27387.509
+  },
+  "sources": [
+    {
+      "name": "Pahlen Maxi Flo titanium",
+      "url": "https://www.pahlen.com/products/pool-heating/heat-exchangers/maxi-flo-titanium/",
+      "limitation": "200kW at 60K difference NOT at 35C"
+    },
+    {
+      "name": "Carrier 61XWH ZE",
+      "url": "https://www.carrier.com/commercial/en/eu/products/heating/water-to-water-heat-pumps/61xwhze/",
+      "limitation": "up to 85C & nominal range, no selected 35→70 COP"
+    },
+    {
+      "name": "Oilon ChillHeat P",
+      "url": "https://oilon.com/en-us/products/oilon-chillheat-p-30-p-450/",
+      "limitation": "up to 120C, rating at conditions TBD"
+    },
+    {
+      "name": "Carrier 61WH R290 SK reseller",
+      "url": "https://www.climaport.sk/produkty/aquasnap-61wh/",
+      "limitation": "50-824kW range & 78C limit, safety R290"
+    },
+    {
+      "name": "Speck BADU pool pumps",
+      "url": "https://speck-bombas.com/catalogo/badu-21-80/",
+      "limitation": "rated maxima NOT duty point curve"
+    },
+    {
+      "name": "Grundfos TPE clean-water loops",
+      "url": "https://api.grundfos.com/literature/Grundfosliterature-5840195.pdf",
+      "limitation": "not for direct chlorinated pool water without material review"
+    },
+    {
+      "name": "Siemens SITRANS TS500",
+      "url": "https://www.siemens.com/global/en/products/automation/process-instrumentation/temperature-measurement/sensor-sitrans-ts500.html",
+      "limitation": "SIL options do NOT certify the complete safety chain"
+    },
+    {
+      "name": "Danish Energy Agency technology catalogue 2026",
+      "url": "https://ens.dk/node/3449",
+      "limitation": "general representative investments not binding quotes"
+    },
+    {
+      "name": "10MW Kalundborg real project",
+      "url": "https://smart-cities-marketplace.ec.europa.eu/insights/solutions/waste-water-heat-source-kalundborg-denmark",
+      "limitation": "2017 project €7.25m; very different location/design"
+    }
+  ],
+  "explicit_missing": [
+    "HX full manufacturer thermal rating & pressure drop at W35/32 and pool27.5/29.5",
+    "Pool water quality and wetted materials",
+    "Equipment CAPEX signed quotes",
+    "DC and pool VFD pump heads/hydraulic curves",
+    "Actual district HP product COP 25/35 to 70C",
+    "Pool HP COP 25C to 30C and N+1 approach",
+    "Independent IT chilling N+1 at full IT design load",
+    "Electrical grid connection and siting",
+    "Life-cycle commissioning, owner labor, taxes",
+    "Official engineering sign-off"
+  ]
+}

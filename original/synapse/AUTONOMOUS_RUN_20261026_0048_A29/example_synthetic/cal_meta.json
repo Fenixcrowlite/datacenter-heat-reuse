@@ -1,0 +1,1 @@
+{"source_class": "SYNTHETIC_TEST", "units": {"flow": "m3/h", "hot": "degC", "cold": "degC"}, "sample_period_s": 60, "max_skew_s": 1}

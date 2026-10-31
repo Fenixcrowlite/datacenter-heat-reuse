@@ -1,0 +1,50 @@
+{
+  "assumptions": {
+    "COP_clamp": [
+      2.0,
+      6.0
+    ],
+    "HP_electric_cap_MW": 0.075,
+    "HP_thermal_cap_MW": 0.3,
+    "backup_capacity_MW": [
+      0.0,
+      0.05
+    ],
+    "carnot_efficiency_assumed": 0.35,
+    "cover_multiplier": 0.15,
+    "pinch_at_source_outlet_K": 2.0,
+    "relative_humidity": 0.55,
+    "sink_condenser_C": 38.0,
+    "source_evaporator_approach_K": 8.0,
+    "source_flow_kg_s": [
+      0.5,
+      2.0,
+      8.0
+    ],
+    "source_inlet_C": [
+      18.0,
+      25.0,
+      35.0
+    ],
+    "source_min_outlet_C": 12.0
+  },
+  "hourly_rows": 157680,
+  "hourly_sha256": "e8f69bc656858bba9eb262d22997198098f238f7f0fb856e4c24f8e8ea42af56",
+  "limitations": [
+    "Temperature/flow are scenario assumptions, not DC measurements.",
+    "COP uses bounded Carnot-efficiency proxy, not vendor performance map.",
+    "Source heat cap is synthetic HX_rejected_MW and assumed flow cooling envelope.",
+    "No exchanger UA/LMTD, fouling, pressure drop, or real source return measurements.",
+    "Only water loop modeled; air ventilation/dehumidification excluded.",
+    "Do not treat this as actual heat recoverability or ASHRAE signoff."
+  ],
+  "measured": false,
+  "primary_source_signoffs_added": 0,
+  "scenarios": 18,
+  "schema": "C94_SYNTHETIC_HX_TEMPERATURE_ENVELOPE_V1",
+  "summary_sha256": "60c7f267413265e4e6fefd223fc0d3396ce68fe57b5a699eb5690ac4479e736d",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "upstream_C90_data_sha256": "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+  "upstream_C93_script_sha256": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923"
+}

@@ -1,0 +1,37 @@
+{
+  "annual": {
+    "CurtailedHPHeat_MWh": 24975.449497856644,
+    "GasHeat_MWh": 10542.548227788948,
+    "HPElectric_MWh": 7969.875645449754,
+    "HeatDemand_MWh": 59429.976769255336,
+    "ReusedHeat_MWh": 48887.42854146639
+  },
+  "coverage": 0.8226055468821438,
+  "hours": 8760,
+  "oracle_validation": {
+    "hourly_comparisons": 192720,
+    "max_absolute_field_error": 8.526512829121202e-14,
+    "max_storage_state_error_MWh": 3.907985046680551e-13,
+    "oracle_rows": 8760
+  },
+  "output_file": "Warm45_Storage100_v2_PYTHON_REPLAY.csv",
+  "output_sha256": "bbe8f22ff33fce9b77450967ecd8f8e59a7950ce78c6f16fcec3f2b098b4dbb9",
+  "physical_validation": false,
+  "primary_source_signoffs": 0,
+  "scenario": "Warm45_Storage100",
+  "scope": "DCHR_C37_V2_PYTHON_REPLAY",
+  "simulation_engine": "Python port of MATLAB source; MATLAB NOT run",
+  "source_model": "dchr.simulate_system_v2, energy-only 100 MWh, no physical stratification",
+  "source_v1_csv_sha256": "7be9f2e92c0df89ca5f74796f36f7c6f0f0eb190551399e23d2710f9436bbdc0",
+  "source_v2_oracle_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "source_v2_summary_sha256": "7a045379372081ffe68b5a2233e38868ac0062db41e6e3b98b9179b9ebca0192",
+  "summary_errors_MWh": {
+    "CurtailedHPHeat_MWh": 5.820766091346741e-11,
+    "GasHeat_MWh": 4.729372449219227e-11,
+    "HPElectric_MWh": 1.646185410209e-10,
+    "HeatDemand_MWh": 1.2369127944111824e-09,
+    "ReusedHeat_MWh": 1.1932570487260818e-09
+  },
+  "synthetic_data": true,
+  "v85_stateflow_parity": false
+}

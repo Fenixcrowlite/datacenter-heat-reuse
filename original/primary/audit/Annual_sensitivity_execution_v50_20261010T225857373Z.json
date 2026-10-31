@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-10-10T22:59:26.2014694Z",
+  "log_path": "automation/logs/annual_sensitivity_v50_20261010T225857373Z.log",
+  "exit_code": 0,
+  "command": "addpath('matlab'); export_annual_sensitivity_v50('results/annual_sensitivity_v50_20261010T225436_641700Z'); inspect_annual_sensitivity_defects_v50('results/annual_sensitivity_v50_20261010T225436_641700Z');",
+  "evidence_class": "observed_matlab_batch_receipt"
+}

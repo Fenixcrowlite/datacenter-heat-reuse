@@ -1,0 +1,42 @@
+{
+  "version": "0.22",
+  "inherits": "STATUS_v21.json",
+  "checkpoint": "Executable six-mode Stateflow dispatch acceptance",
+  "timestamp_utc": "2026-10-09T03:02:47.850694+00:00",
+  "stateflow_acceptance": "PASS",
+  "matlab_batch_exit_code": 0,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "scenarios": 10,
+  "intervals": 39,
+  "matlab_checks_passed": 476,
+  "matlab_checks_failed": 0,
+  "independent_qa_checks": 2860,
+  "independent_qa_failures": 0,
+  "independent_archive_checks_passed": 18,
+  "independent_structure_checks_passed": 67,
+  "modes_observed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "max_abs_balance_residual_MWh": 7.771561172376096e-16,
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+  "result_directory": "results/stateflow_v22_20261009T025644993Z",
+  "primary_source_signoffs": 0,
+  "total_sources": 31,
+  "primary_paper_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "standalone_codegen": false,
+  "limitations": [
+    "Normal-mode MATLAB HP adapter; standalone generated-code deployment not tested.",
+    "Loss-first one-node TES with linear standing retention; time-partition dependence remains.",
+    "No hysteresis, minimum dwell, equipment faults, compressor cycling/ramping or sensor model.",
+    "Reservoir temperature proxies; no calibrated equipment, hydraulic/network/auxiliary or fuel model.",
+    "Stateflow emits nonfatal formal-parameter shadow warnings; local function scopes are intentional.",
+    "No new primary-source equation verification, paper replication, annual model or measured-system validation."
+  ],
+  "next": "Audit a primary-text TES standing-loss model and derive an exact/exponential reference with timestep convergence before extending Stateflow; preserve v22's declared loss-first linear-retention baseline. Faults/hysteresis remain later control work."
+}

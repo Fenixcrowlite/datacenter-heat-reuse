@@ -1,0 +1,3383 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:35:36.131433+00:00",
+  "scope": "Independent audit of executed v28 runtime-monitor fault evidence, v29.\n\nNo MATLAB production algorithm is imported. A two-interval fixed-COP hand\ncase anchors accepted traces; rejection diagnostics and hashes anchor fault\nprovenance. This is implementation QA, not physical or primary-paper validation.\n",
+  "primary_text_verified": false,
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "spec_sha256": "98f38f2b47bd807dfb3da6abd2b052ba402e68eabeee630ad17915d8fb8c99c7",
+  "verifier_sha256": "648f9b6480bd381381e8937c7388580b9992c2e8df0de4e56eb179338e78f182",
+  "specification": {
+    "checks": 6,
+    "passed": 6,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "specified_existing_v28_model",
+        "passed": true
+      },
+      {
+        "name": "specified_existing_v28_helper",
+        "passed": true
+      },
+      {
+        "name": "independently_declared_fixed_COP_anchor",
+        "passed": true
+      },
+      {
+        "name": "thirteen_unique_monitor_cases",
+        "passed": true
+      },
+      {
+        "name": "complete_independently_anchored_mutations_and_assertions",
+        "passed": true
+      },
+      {
+        "name": "independent_exponential_retention_gate_case",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "static_specification"
+  },
+  "synthetic_verifier_self_test": {
+    "checks": 40,
+    "passed": 40,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_valid_schema",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_mutation",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_rejected",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_restored_source",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_failure_report_sha256",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_synthetic_report",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_actual_identifier",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_capture_errors",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_case",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_case",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_error_phase",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_error_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_stop_event_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_stop_event",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_error_message",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_diagnostic_tree",
+        "passed": true
+      },
+      {
+        "name": "reject_captured_failed_tick_output",
+        "passed": true
+      },
+      {
+        "name": "synthetic_hand_case_passes",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_E_Next_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Mode",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_System_Balance_Residual_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_Discharge_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_obsolete_linear_retention_anchor",
+        "passed": true
+      },
+      {
+        "name": "synthetic_artifact_binding_passes",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_diagnostic_file",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_raw_trace_times_file",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_mutation_source_file",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_captured_simulation_file",
+        "passed": true
+      },
+      {
+        "name": "reject_crosscase_or_external_artifact_path",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_mutation_source",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_raw_trace_times",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_captured_simulation",
+        "passed": true
+      }
+    ],
+    "synthetic_only": true,
+    "evidence_class": "synthetic_reviewer_self_test"
+  },
+  "fault_rejections": {
+    "checks": 345,
+    "passed": 345,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "exact_independently_specified_fault_set",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:rejected",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:restored_source",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:rejected",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:restored_source",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:rejected",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:restored_source",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:rejected",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:restored_source",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:rejected",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:restored_source",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:rejected",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:restored_source",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:rejected",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:restored_source",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:rejected",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:restored_source",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:rejected",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:restored_source",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:rejected",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:restored_source",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:rejected",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:restored_source",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:rejected",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:restored_source",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:specified_mutation_executed",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:specific_expected_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:rejected",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:restored_source",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_runtime_rejection",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:actual_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:actual_cause_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:capture_errors_enabled",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_actual_execution_phase",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_first_tick_error_time",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_first_tick_stop_time",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_diagnostic_error_stop",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_exact_runtime_contract_gate",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_exact_assertion",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_runtime_assertion_identifier",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_diagnostic_tree_runtime_gate",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:no_captured_accepted_dispatch_samples",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:nonempty_actual_failure_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:actual_runtime_contract_gate_in_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:exact_assertion_in_actual_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:diagnostic_hash_matches_saved_file",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:diagnostic_not_compilation_failure",
+        "passed": true
+      },
+      {
+        "name": "summary_cases_matches_independent_case_count",
+        "passed": true
+      },
+      {
+        "name": "summary_rejected_matches_independent_case_count",
+        "passed": true
+      },
+      {
+        "name": "summary_expected_gate_observed_matches_independent_case_count",
+        "passed": true
+      },
+      {
+        "name": "summary_accepted_invalid_traces_matches_independent_case_count",
+        "passed": true
+      },
+      {
+        "name": "summary_captured_runtime_rejections_matches_independent_case_count",
+        "passed": true
+      },
+      {
+        "name": "summary_compilation_failures_matches_independent_case_count",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "actual_evidence"
+  },
+  "runtime_artifact_bindings": {
+    "checks": 182,
+    "passed": 182,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "false_system_residual:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_system_residual:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_next_energy:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "negative_backup_flow:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "wrong_active_mode:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_standing_loss:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "unallocated_hp_heat:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "simultaneous_tes_ports:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_useful_heat:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "nonfinite_dispatch:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "undefined_nonintegral_mode:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "backup_above_capacity:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "tes_state_above_capacity:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:failure_report:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:failure_report:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:diagnostic:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:diagnostic:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:diagnostic:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:raw_trace_times:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:raw_trace_times:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:raw_trace_times:saved_JSON_matches_embedded_summary",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:mutation_source:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:mutation_source:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:saved_exact_independent_mutation_of_original_helper",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_simulation:expected_local_artifact",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:captured_simulation:saved_bytes_match_reported_hash",
+        "passed": true
+      },
+      {
+        "name": "false_exponential_retention:saved_captured_simulation_is_MAT_container",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "actual_evidence"
+  },
+  "saved_model_structure": {
+    "checks": 9,
+    "passed": 9,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "stateflow_allocate_v28:saved_script_exactly_matches_current_source",
+        "passed": true
+      },
+      {
+        "name": "stateflow_choose_mode_v28:saved_script_exactly_matches_current_source",
+        "passed": true
+      },
+      {
+        "name": "stateflow_contract_gate_v28:saved_script_exactly_matches_current_source",
+        "passed": true
+      },
+      {
+        "name": "saved_HP_adapter_calls_v28_host_component",
+        "passed": true
+      },
+      {
+        "name": "Thermal_Dispatch_connected_to_Runtime_Contract_Gate",
+        "passed": true
+      },
+      {
+        "name": "Runtime_Contract_Gate_connected_to_Dispatch_Trace",
+        "passed": true
+      },
+      {
+        "name": "Runtime_Contract_Gate_connected_to_Next_TES_Energy",
+        "passed": true
+      },
+      {
+        "name": "Next_TES_Energy_connected_to_TES_Energy_Memory",
+        "passed": true
+      },
+      {
+        "name": "ungated_dispatch_cannot_bypass_accepted_trace",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "actual_evidence"
+  },
+  "provenance_limit": "Saved-model scripts and stored source snapshots are independently parsed/hashed. Runtime JSON and mutation artifacts are parsed and bound to summary/file hashes; captured MAT containers are hashed, not decoded. Before/after labels and simulation chronology remain local runner evidence without external attestation.",
+  "baseline_trace": {
+    "checks": 48,
+    "passed": 48,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "baseline:exactly_two_accepted_intervals",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Time_h:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Mode:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:HP_Request_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:HP_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:HP_Electric_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:HP_Source_Used_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:COP:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_E_Start_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_E_After_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_E_Next_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:HP_Direct_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_Charge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_Discharge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Gas_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Unmet_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_Standing_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_Charge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Storage_Discharge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:Supplied_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:System_Balance_Residual_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:recomputed_TES_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:recomputed_system_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_0:reported_residual_matches_recomputed",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Time_h:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Mode:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:HP_Request_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:HP_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:HP_Electric_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:HP_Source_Used_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:COP:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_E_Start_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_E_After_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_E_Next_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:HP_Direct_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_Charge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_Discharge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Gas_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Unmet_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_Standing_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_Charge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Storage_Discharge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:Supplied_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:System_Balance_Residual_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:recomputed_TES_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:recomputed_system_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "baseline:tick_1:reported_residual_matches_recomputed",
+        "passed": true
+      },
+      {
+        "name": "baseline:actual_TES_feedback_memory",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "actual_evidence"
+  },
+  "baseline_trace_sha256": "2324b21db861964dc6e14faf060c4dbf9a38d4620a44cd00be34971143e4e052",
+  "restored_trace": {
+    "checks": 48,
+    "passed": 48,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "restored:exactly_two_accepted_intervals",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Time_h:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Mode:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:HP_Request_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:HP_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:HP_Electric_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:HP_Source_Used_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:COP:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_E_Start_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_E_After_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_E_Next_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:HP_Direct_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_Charge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_Discharge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Gas_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Unmet_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_Standing_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_Charge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Storage_Discharge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:Supplied_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:System_Balance_Residual_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:recomputed_TES_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:recomputed_system_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_0:reported_residual_matches_recomputed",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Time_h:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Mode:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:HP_Request_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:HP_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:HP_Electric_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:HP_Source_Used_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:COP:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_E_Start_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_E_After_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_E_Next_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:HP_Direct_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_Charge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_Discharge_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Gas_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Unmet_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_Standing_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_Charge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Storage_Discharge_Loss_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:Supplied_Heat_MW:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:System_Balance_Residual_MWh:independent_anchor",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:recomputed_TES_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:recomputed_system_closure_MWh",
+        "passed": true
+      },
+      {
+        "name": "restored:tick_1:reported_residual_matches_recomputed",
+        "passed": true
+      },
+      {
+        "name": "restored:actual_TES_feedback_memory",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "actual_evidence"
+  },
+  "restored_trace_sha256": "2324b21db861964dc6e14faf060c4dbf9a38d4620a44cd00be34971143e4e052",
+  "integrity": {
+    "checks": 143,
+    "passed": 143,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "preserved_v28_model_has_preexisting_immutable_hash",
+        "passed": true
+      },
+      {
+        "name": "reported_before_hash_matches_actual_model",
+        "passed": true
+      },
+      {
+        "name": "reported_after_hash_matches_actual_model",
+        "passed": true
+      },
+      {
+        "name": "reported_model_path_matches_actual_model",
+        "passed": true
+      },
+      {
+        "name": "independent_case_spec_hash_matches_actual",
+        "passed": true
+      },
+      {
+        "name": "unmutated_baseline_executed",
+        "passed": true
+      },
+      {
+        "name": "restored_baseline_executed",
+        "passed": true
+      },
+      {
+        "name": "embedded_source_restored",
+        "passed": true
+      },
+      {
+        "name": "saved_model_modified_false",
+        "passed": true
+      },
+      {
+        "name": "actual_runner_path",
+        "passed": true
+      },
+      {
+        "name": "actual_runner_sha256",
+        "passed": true
+      },
+      {
+        "name": "allocation_source_before_matches_actual",
+        "passed": true
+      },
+      {
+        "name": "allocation_source_after_matches_actual",
+        "passed": true
+      },
+      {
+        "name": "simulink_executed",
+        "passed": true
+      },
+      {
+        "name": "stateflow_executed",
+        "passed": true
+      },
+      {
+        "name": "stateflow_license",
+        "passed": true
+      },
+      {
+        "name": "normal_simulation_scope",
+        "passed": true
+      },
+      {
+        "name": "scope_standalone_codegen_false",
+        "passed": true
+      },
+      {
+        "name": "scope_primary_paper_replication_false",
+        "passed": true
+      },
+      {
+        "name": "scope_equipment_validation_false",
+        "passed": true
+      },
+      {
+        "name": "reported_saved_model_release",
+        "passed": true
+      },
+      {
+        "name": "snapshot_manifest_present",
+        "passed": true
+      },
+      {
+        "name": "snapshot_manifest_is_local_expected_artifact",
+        "passed": true
+      },
+      {
+        "name": "snapshot_manifest_hash_matches_saved_bytes",
+        "passed": true
+      },
+      {
+        "name": "manifest_declares_sources_and_snapshots_unchanged",
+        "passed": true
+      },
+      {
+        "name": "complete_unique_source_snapshot_closure",
+        "passed": true
+      },
+      {
+        "name": "manifest_declares_created_before_simulations",
+        "passed": true
+      },
+      {
+        "name": "source_snapshot_complete",
+        "passed": true
+      },
+      {
+        "name": "source_snapshots_unchanged",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:before_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:after_hash_matches_actual_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:snapshot_recorded_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:snapshot_matches_before_and_current_source",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:declared_unchanged",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:snapshot_inside_evidence_directory",
+        "passed": true
+      },
+      {
+        "name": "before_manifest_is_local_expected_artifact",
+        "passed": true
+      },
+      {
+        "name": "before_manifest_hash_matches_saved_bytes",
+        "passed": true
+      },
+      {
+        "name": "before_manifest_complete_unique_source_closure",
+        "passed": true
+      },
+      {
+        "name": "audit/stateflow_monitor_fault_cases_v29.json:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/heat_pump_step_v14.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/+components/storage_step_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/+dchr/simulate_dispatch_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/default_config_v2.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/build_dispatch_stateflow_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/dchr_stateflow_hp_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/run_stateflow_monitor_faults_v29.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_allocate_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_choose_mode_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "matlab/simulink/stateflow_contract_gate_v28.m:before_manifest_matches_final_preexecution_snapshot",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_is_local_expected_artifact",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_hash_matches_actual_file",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_has_exact_model_release_and_hash",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_has_exact_chart_and_clock",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_saved_embedded_sources_match",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_contract_gate_drives_feedback_and_trace",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_exact_stateflow_allocate_v28",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_exact_stateflow_choose_mode_v28",
+        "passed": true
+      },
+      {
+        "name": "saved_binding_exact_stateflow_contract_gate_v28",
+        "passed": true
+      },
+      {
+        "name": "baseline_trace_file_exists",
+        "passed": true
+      },
+      {
+        "name": "baseline_trace_is_local_expected_artifact",
+        "passed": true
+      },
+      {
+        "name": "baseline_trace_reported_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "restored_trace_file_exists",
+        "passed": true
+      },
+      {
+        "name": "restored_trace_is_local_expected_artifact",
+        "passed": true
+      },
+      {
+        "name": "restored_trace_reported_hash_matches_file",
+        "passed": true
+      },
+      {
+        "name": "restored_trace_numerically_matches_unmutated_baseline",
+        "passed": true
+      },
+      {
+        "name": "no_unexpected_acceptance_artifact",
+        "passed": true
+      },
+      {
+        "name": "reported_clean_and_restored_interval_counts",
+        "passed": true
+      },
+      {
+        "name": "baseline_matlab_reference_matches",
+        "passed": true
+      },
+      {
+        "name": "restored_baseline_matches",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "actual_evidence"
+  },
+  "evidence_summary_sha256": "25a7cf9b70b55962a420f55754014d4ada3c22d2a18934007c247544849bffae",
+  "actual_model_sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d",
+  "checks": 821,
+  "passed": 821,
+  "failed": 0,
+  "actual_evidence_checks": 775,
+  "actual_evidence_passed": 775,
+  "actual_evidence_failed": 0,
+  "synthetic_reviewer_self_test_checks": 40,
+  "synthetic_reviewer_self_test_passed": 40,
+  "synthetic_reviewer_self_test_failed": 0,
+  "static_specification_checks": 6,
+  "static_specification_passed": 6,
+  "static_specification_failed": 0
+}

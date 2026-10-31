@@ -1,0 +1,10 @@
+{
+  "checks": "COP(T), thermal=electric+recovered, buffer conservation, source cap, state balance, per-scenario continuity, recomputed summaries",
+  "data_sha256": "315e5a40d129fb442059c1dd4c60bde0f6bff780865e6b2857dc58e20ddc280f",
+  "independent": true,
+  "negative_controls": 9,
+  "rows": 4032,
+  "scenarios": 6,
+  "status": "PASS",
+  "summary_sha256": "563ea4dde0714ecfb34275c44717cd9d4d984fd7b293baf03ea06839337d5e1c"
+}

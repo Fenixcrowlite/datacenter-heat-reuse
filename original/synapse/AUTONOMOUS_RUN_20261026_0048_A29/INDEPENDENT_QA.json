@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 8,
+  "sample_count": 32,
+  "independent_energy_kwh": 53.77328326047939,
+  "independent_rmse_kw": 0.18816520193991706,
+  "independent_pointwise_u_mean_kw": 1.9009697078960974,
+  "release_allowed": false
+}

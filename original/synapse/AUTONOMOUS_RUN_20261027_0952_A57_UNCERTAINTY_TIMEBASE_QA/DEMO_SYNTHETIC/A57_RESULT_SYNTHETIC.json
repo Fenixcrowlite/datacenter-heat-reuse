@@ -1,0 +1,30 @@
+{
+  "a56_sha256": "0834471ae3505906167192769da7ba5baf9cabd2baac55352fb480f607e4358c",
+  "asset_id": "TEST-LOOP-NOT-REAL",
+  "capacity": {
+    "baseline_J_per_K": 7999999.999999993,
+    "lower_J_per_K": 7456187.499999735,
+    "uncertain_intervals": 0,
+    "upper_J_per_K": 8621500.000001838,
+    "usable_intervals": 64
+  },
+  "compressor_tau": {
+    "baseline_s": 299.9999999999997,
+    "lower_s": 206.95832324518278,
+    "uncertain_intervals": 0,
+    "upper_s": 538.2928086909359,
+    "usable_intervals": 47
+  },
+  "csv_sha256": "d988d28032e2c86828cc552ae2d1746c0cc7121fb104bcbd9f8fd20500bd4d74",
+  "error_model": "conservative supplied absolute/relative worst-case bounds; independent per-sample bound; NOT confidence intervals",
+  "independent_calibration_verified": false,
+  "interval_time_error_bound_s": 0.2,
+  "metadata_sha256": "1c4284a09b17ee48182aeb248ae5641447e1ff79ba681ee231aecb54a8dac81e",
+  "physical_release": false,
+  "safe_operating_limits_certified": false,
+  "source_kind": "synthetic_test",
+  "status": "SYNTHETIC_QA_ONLY",
+  "time_sync_method": "synthetic_common_clock",
+  "timebase": "UTC",
+  "uncertainty_sha256": "5a1b4767fc80954edfae3f839ac1be6f56cd859dba6b620929f269910112396f"
+}

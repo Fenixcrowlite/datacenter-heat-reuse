@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-11T06:17:29.319314+00:00",
+  "manifest": "audit/Endpoint_protocol_manifest_v52_20261011T061728_555057Z.json",
+  "release_files": 552,
+  "preserved_artifacts": 1312,
+  "passed": 1867,
+  "failed": 0,
+  "model_sha256": "3d12602aeebcb80585ecfd16e13b0e9ea9cffe091348883b620923e468954e12"
+}

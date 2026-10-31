@@ -1,0 +1,40 @@
+{
+  "files": {
+    "C118_FINDINGS.md": {
+      "bytes": 4723,
+      "sha256": "ef32cb126faf4f0eb58af2b3d42b66d4372756d46abdda03049cb565baa471cd"
+    },
+    "C118_INDEPENDENT_QA.json": {
+      "bytes": 764,
+      "sha256": "545332661c1342d46ccdc63cf1d2e32571939033cd2cf924115d66c0bdfc91ee"
+    },
+    "C118_METADATA.json": {
+      "bytes": 1663,
+      "sha256": "8074c6c1315fc9c2874ef7059a8b1d85b3e5b90454f9dfb52abc9c67bc7f1626"
+    },
+    "C118_SUBHOUR_STRESS.csv.gz": {
+      "bytes": 8510968,
+      "sha256": "27220733cb23e36d797ccb1805d062407744634f973ad785eccc3f3ba861b6e0"
+    },
+    "C118_SUMMARY.csv": {
+      "bytes": 4130,
+      "sha256": "6ea88dba94ee54155380a224bf07649ace30d6681d3625b2e520a53bc65f8e7d"
+    },
+    "c118_subhour_rh.py": {
+      "bytes": 10987,
+      "sha256": "a2fa7fb4d45f3c020813c6cd67059e1fad11c380a558afc5e4235f15e4e693ce"
+    },
+    "finalize_c118.py": {
+      "bytes": 4743,
+      "sha256": "1785d9a585dfe8cb152cfe9341b9773c5b213c4bfc1482491610e78ac593b17a"
+    },
+    "qa_c118_independent.py": {
+      "bytes": 6755,
+      "sha256": "51c422035fd64435335c9b25ec1becdab31152b88ee109edb13f252bd3262531"
+    }
+  },
+  "qa": "PASS",
+  "schema": "C118_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

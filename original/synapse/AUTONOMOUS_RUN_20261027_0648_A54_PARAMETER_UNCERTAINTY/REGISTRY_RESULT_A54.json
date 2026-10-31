@@ -1,0 +1,14 @@
+{
+  "event_id": 1289,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A54_synthetic_parameter_uncertainty",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0648_A54_PARAMETER_UNCERTAINTY",
+  "result_sha256": "b113a3d091085d118942f5ac0dda1e3d94963e9f7710d78275207308be544575",
+  "evidence_sha256": "c2051aef7c336df9207f0326c53d11129f878d2193e45cfc0f200c2d1d76e673",
+  "manifest_sha256": "443990193774e7b7596598bd3d6964cf6f071eaa48c9e00b3b922d5e54fd1c2e",
+  "handoff_sha256": "bb0bc8e2da300b3bc28bb8ce1b660a3b0acc7381dd3248446816eb02ee29398a",
+  "qa": "144 cases x 240 samples independent Decimal ledger, 18 A52 anchors, 8/8 Python tests",
+  "matlab_A54_executed": false,
+  "physical_release": false,
+  "next_step": "A55: select measured thermal mass, compressor dynamics and residual heat bounds from primary equipment data; then test interval robustness in graphical Stateflow. Do not approve hardware or certify temperature limits from synthetic sweeps."
+}

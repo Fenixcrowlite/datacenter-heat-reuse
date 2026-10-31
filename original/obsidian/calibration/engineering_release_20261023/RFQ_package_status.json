@@ -1,0 +1,47 @@
+{
+  "status": "DRAFTS_CREATED_NOT_SENT",
+  "source_date": "2026-10-23",
+  "vendors": [
+    {
+      "name": "Carrier / CLIMAPORT",
+      "email": "kupcik@climaport.sk",
+      "url": "https://carrier-eshop.sk/2020/06/09/kto-je-kto-climaport-obchodne-oddelenie/",
+      "caveat": "Slovakia contact published in 2020; current assignment unverified"
+    },
+    {
+      "name": "Oilon ChillHeat",
+      "email": "Chillheat.Sales@oilon.com",
+      "url": "https://oilon.com/en-gb/products/oilon-chillheat-p-30-p-450/",
+      "caveat": "P-series <=450kW B0/W35; ask about S-series and larger plant"
+    },
+    {
+      "name": "Alfa Laval Slovakia",
+      "email": "",
+      "url": "https://www.alfalaval.sk/produkty-a-riesenia/prenos-tepla/doskove-vymenniky-tepla/plate-heat-exchangers/",
+      "caveat": "Contact page, no verified recipient"
+    },
+    {
+      "name": "Guntner",
+      "email": "",
+      "url": "https://guntner.com/applications/data-centers",
+      "caveat": "Manufacturer sizing and local ambient design required"
+    },
+    {
+      "name": "Kelvion",
+      "email": "",
+      "url": "https://www.kelvion.com/industry-solutions/data-center",
+      "caveat": "Manufacturer site offers custom recoolers"
+    }
+  ],
+  "documents": [
+    "RFQ_Carrier_EN.md",
+    "RFQ_Oilon_EN.md",
+    "RFQ_AlfaLaval_EN.md",
+    "RFQ_DryCooler_EN.md"
+  ],
+  "caveats": [
+    "Do not claim to represent STU or a specific operator without authorization.",
+    "Non-binding technical feasibility, no pricing confirmed or offers received.",
+    "Do not expose user contact identity unless authorized."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "0.21",
+  "inherits": "STATUS_v20.json",
+  "checkpoint": "Wahlroos 2017 Source01 Table1 original article price audit",
+  "source_id": 1,
+  "article_table_checks_passed": 18,
+  "article_table_checks_total": 18,
+  "month_prices_verified": 12,
+  "primary_source_signoffs": 0,
+  "total_sources": 31,
+  "source_agreement": "PARTIAL_TABLE1_ONLY",
+  "upstream_ref20_thesis": "NOT_VERIFIED",
+  "independent_physical_validation": "NOT_TESTED",
+  "artifacts": [
+    "audit/audit_source01_table1_v21.py",
+    "audit/verify_source01_table1_v21.py",
+    "audit/evidence_source01_v21/table1_checks_v21.json",
+    "audit/evidence_source01_v21/table1_prices_v21.csv",
+    "audit/evidence_source01_v21/source01_original_page07_v21.png",
+    "audit/literature_traceability_v21.csv",
+    "audit/run_notes_v21.md"
+  ],
+  "sha256": {
+    "evidence": "c3e5dedeebb04256bfdca14211795a5d912f2698430207cecfe81c6f6f55911c",
+    "traceability": "14fbd7f4e2fda6cfd01668dd6eda528f30e3a87b76f213422d846ecb9e4b5942"
+  },
+  "next": "Obtain and inspect Stenberg 2015 Aalto thesis original; verify derivation of proposed monthly procurement prices, assumptions and any mismatch. No 31/31 signoff."
+}

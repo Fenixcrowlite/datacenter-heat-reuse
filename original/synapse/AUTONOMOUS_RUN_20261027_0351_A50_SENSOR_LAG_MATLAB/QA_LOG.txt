@@ -1,0 +1,12 @@
+test_coverage (__main__.A50Acceptance.test_coverage) ... ok
+test_numeric_tolerances (__main__.A50Acceptance.test_numeric_tolerances) ... ok
+test_real_model (__main__.A50Acceptance.test_real_model) ... ok
+test_reference_csv_integrity (__main__.A50Acceptance.test_reference_csv_integrity) ... ok
+test_source_immutable (__main__.A50Acceptance.test_source_immutable) ... ok
+test_status (__main__.A50Acceptance.test_status) ... ok
+test_trip_timing (__main__.A50Acceptance.test_trip_timing) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.022s
+
+OK

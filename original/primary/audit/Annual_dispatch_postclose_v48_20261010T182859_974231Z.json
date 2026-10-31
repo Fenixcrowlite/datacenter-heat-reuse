@@ -1,0 +1,1221 @@
+{
+  "timestamp_utc": "2026-10-10T18:28:59.974271+00:00",
+  "manifest": "audit/Annual_dispatch_manifest_v48_20261010T182837_571775Z.json",
+  "sealed_files": 297,
+  "passed": 303,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "audit/Annual_dispatch_derivation_v48.md",
+      "passed": true
+    },
+    {
+      "name": "audit/Annual_dispatch_execution_v48_20261010T182408990Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Annual_dispatch_execution_v48_20261010T182418715Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Annual_dispatch_execution_v48_20261010T182602227Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Annual_dispatch_results_v48.md",
+      "passed": true
+    },
+    {
+      "name": "audit/finalize_annual_dispatch_v48.py",
+      "passed": true
+    },
+    {
+      "name": "audit/prepare_annual_dispatch_v48.py",
+      "passed": true
+    },
+    {
+      "name": "audit/run_annual_dispatch_v48.ps1",
+      "passed": true
+    },
+    {
+      "name": "audit/verify_annual_dispatch_v48.py",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/annual_dispatch_independent_v48_20261010T182721994Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/annual_dispatch_v48_20261010T182408990Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/annual_dispatch_v48_20261010T182418715Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/annual_dispatch_v48_20261010T182602227Z.log",
+      "passed": true
+    },
+    {
+      "name": "MASTER_STAGEBOARD_v48.md",
+      "passed": true
+    },
+    {
+      "name": "matlab/+dchr/simulate_system_v48.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/export_annual_dispatch_v48.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/run_annual_dispatch_v48.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_0.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_0.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_0_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_0_ports.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_2.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_2.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_20.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_20.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_20_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_20_ports.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_2_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_cap_2_ports.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_dispatch_v48.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/annual_dispatch_v48.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/boiler_limit_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/boiler_limit_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/boiler_limit_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/hp_only_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/hp_only_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/hp_only_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/independent_QA_v48_20261010T182722_145809Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/insufficient_heat_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/insufficient_heat_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/insufficient_heat_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_0.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_0_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_0_ports.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_2.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_20.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_20_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_20_ports.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_2_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/annual_cap_2_ports.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/boiler_limit_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/boiler_limit_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/hp_only_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/hp_only_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/insufficient_heat_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/insufficient_heat_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_cutoff.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_cutoff_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_cutoff_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_cutoff_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_source_limited.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_source_limited_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_source_limited_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_source_limited_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_zero_penalty.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_zero_penalty_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_zero_penalty_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/matched_zero_penalty_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/report.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/saved_v42_48h_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/saved_v42_48h_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/tes_charge_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/tes_charge_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/tes_discharge_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/tes_discharge_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/zero_demand_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/mat_reopen/zero_demand_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_cutoff.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_cutoff.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_cutoff_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_cutoff_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_cutoff_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_cutoff_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_source_limited.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_source_limited.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_source_limited_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_source_limited_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_source_limited_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_source_limited_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_zero_penalty.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_zero_penalty.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_zero_penalty_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_zero_penalty_legacy.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_zero_penalty_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/matched_zero_penalty_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/qa_source/20261010T182722_145809Z/verify_annual_dispatch_v48.py",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/saved_v42_48h_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/saved_v42_48h_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/saved_v42_48h_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/audit/Annual_dispatch_execution_v48_20261010T182408990Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/audit/Annual_dispatch_execution_v48_20261010T182418715Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/audit/prepare_annual_dispatch_v48.py",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/audit/run_annual_dispatch_v48.ps1",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/audit/verify_annual_dispatch_v48.py",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/dc_source.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/dh_temperature.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/exergy_heat.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/heat_exchanger.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/heat_pump.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/heat_pump_step_v14.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/heat_pump_step_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/heat_pump_step_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/part_load_cop.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_event_kernel_v31.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_step.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_step_v16.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_step_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/+components/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/adapt_dispatch_energy_v46.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/compute_energy_metrics_v45.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/compute_metrics.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/compute_metrics_v2.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/compute_service_comparison_v46.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/heat_demand.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/heat_pump_capability.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/make_inputs.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_dispatch_v16.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_dispatch_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_dispatch_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_system.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_system_v13.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_system_v2.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/+dchr/simulate_system_v48.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/default_config.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/default_config_v2.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/export_annual_dispatch_v48.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/export_hp_annual_v47.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/export_period_evidence_v46.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_annual_dispatch_v48.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_component_contract_v12.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_dispatch_contract_v13.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_dispatch_contract_v16.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_dispatch_crosscheck_v18.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_experiment.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_experiment_v2.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_frankfurt_validation_v4.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_full_study_v3.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_heat_pump_contract_v14.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_hp_annual_audit_v47.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_period_experiment_v46.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_sensitivity.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_sensitivity_v2.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_tests_v2.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_tests_v3.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/run_uncertainty_v3.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v14.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v22.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/build_simulink_model.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/DCHR_Dispatch_Stateflow_v42.slx",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_segment_plan_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_segment_plan_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_segment_plan_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_segment_plan_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_segment_plan_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_segment_plan_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v22.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_hp_boundary_v44.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_hp_traceability_v43.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_reporting_v45.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_admissibility_v35.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_admissibility_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_clock_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_dwell_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_fallback_mat_v33.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_mat_audit_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_mat_audit_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_mat_audit_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_numeric_metadata_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_numeric_metadata_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_resolution_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_resolution_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_stateflow_resolution_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/export_TES_event_mat_audit_v31.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/probe_stateflow_clock_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_hp_boundary_v44.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_hp_traceability_v43.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_reporting_v45.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v22.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_admissibility_v35.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_admissibility_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_clock_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_dimensional_faults_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_dwell_probes_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_fallback_v33.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_faults_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_gate_faults_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_hp_domain_v39.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_hp_domain_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_loss_experiments_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_monitor_faults_v26.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_monitor_faults_v29.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_rejections_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_rejections_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_resolution_v37.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_temporal_acceptance_v27.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_stateflow_temporal_acceptance_v29.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/run_TES_event_comparison_v31.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v22.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_allocate_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v22.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_clock_add_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_clock_add_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_clock_add_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_collect_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_collect_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_collect_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_collect_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_collect_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_collect_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v24.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v28.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v32.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_dwell_ready_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_dwell_wait_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v34.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v38.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v42.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/stateflow_time_tolerance_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/source_snapshot/matlab/simulink/validate_dispatch_v14.m",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/spec.json",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/tes_charge_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/tes_charge_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/tes_charge_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/tes_discharge_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/tes_discharge_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/tes_discharge_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/zero_demand_dispatch.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/zero_demand_segments.csv",
+      "passed": true
+    },
+    {
+      "name": "results/annual_dispatch_v48_20261010T182553_348909Z/zero_demand_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "STATUS_v48.json",
+      "passed": true
+    },
+    {
+      "name": "zero_failures",
+      "passed": true
+    },
+    {
+      "name": "reported_counts",
+      "passed": true
+    },
+    {
+      "name": "actual_scope",
+      "passed": true
+    },
+    {
+      "name": "repair_scope",
+      "passed": true
+    },
+    {
+      "name": "handoff_saved",
+      "passed": true
+    },
+    {
+      "name": "progress_saved",
+      "passed": true
+    }
+  ]
+}

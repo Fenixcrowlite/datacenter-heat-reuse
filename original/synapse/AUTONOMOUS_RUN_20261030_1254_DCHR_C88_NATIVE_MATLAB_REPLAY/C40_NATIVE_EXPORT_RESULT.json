@@ -1,0 +1,1 @@
+{"scope":"DCHR_C40_NATIVE_MATLAB_EXPORT","scenario":"Warm45_Storage100","hours":8760,"gas_MWh":10542.548227788948,"hp_electric_MWh":7969.875645449587,"random_seed":42,"synthetic_data":true,"stateflow_v85_parity":false,"physical_validation":false,"primary_sources_signed":0}

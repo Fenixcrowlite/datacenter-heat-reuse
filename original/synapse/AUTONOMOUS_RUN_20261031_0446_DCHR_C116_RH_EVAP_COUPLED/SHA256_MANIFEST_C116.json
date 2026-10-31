@@ -1,0 +1,40 @@
+{
+  "files": {
+    "C116_FINDINGS.md": {
+      "bytes": 2174,
+      "sha256": "65f9ad62dda5c5aafe7f6ee59395d0fdb024eff053476863ab93b855b962a892"
+    },
+    "C116_INDEPENDENT_QA.json": {
+      "bytes": 1308,
+      "sha256": "992f814178e2f3e4f4fddae6385ae00e2878a903b510528232c4f304d01d62d5"
+    },
+    "C116_METADATA.json": {
+      "bytes": 1746,
+      "sha256": "88c75ed40a14aeb6ddc14d0766ea3dd939726978a795723fbf4482a46703c8ff"
+    },
+    "C116_SUMMARY.csv": {
+      "bytes": 2359,
+      "sha256": "9f24bb96943b306d05f2d8cc8adee3c34980336acc3280508110682568d82d26"
+    },
+    "C116_TWO_WAY_HOURLY.csv.gz": {
+      "bytes": 4941983,
+      "sha256": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+    },
+    "c116_two_way_coupling.py": {
+      "bytes": 9267,
+      "sha256": "54217d21cc124ca07adf631e5442b2a805b4b1cc38783a7fe2eca65ae063263b"
+    },
+    "finalize_c116.py": {
+      "bytes": 4345,
+      "sha256": "434f1e4d3bc4b746b524fe5a9878b97628b40e78934b2c8b02fb5770ae0f6426"
+    },
+    "qa_c116_independent.py": {
+      "bytes": 6189,
+      "sha256": "dc2b70d9e069dbbe1ca1d04eee2c071b7c9104219cc9dea0f76602c5259799c8"
+    }
+  },
+  "qa": "PASS",
+  "schema": "C116_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

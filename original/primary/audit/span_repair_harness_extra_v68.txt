@@ -1,0 +1,46 @@
+% Boundary witnesses are checked against the actual preserved v67r2 model.
+% A caught expected legacy failure is defect evidence, not corrected acceptance.
+legacy_defects={};legacy='DCHR_Event_Brackets_Stateflow_v67r2';
+load_system(fullfile(root,'matlab','simulink',[legacy '.slx']));
+for id={'span_equal_one','span_near_one','span_delayed'}
+    cc=spec.cases(strcmp({spec.cases.id},id{1}));ii=cc.input;rr=repmat(cc.cfg(:)',size(ii,1),1);
+    ticks=(0:size(ii,1)-1)';mw=get_param(legacy,'ModelWorkspace');
+    assignin(mw,'dispatch_input_v66',[ticks ii]);assignin(mw,'dispatch_cfg_v66',[ticks rr]);
+    identifier='';message='';
+    try,sim(legacy,'StopTime',num2str(size(ii,1)-1),'ReturnWorkspaceOutputs','on');
+    catch e,identifier=e.identifier;message=getReport(e,'extended','hyperlinks','off');end
+    expectedFailure=~strcmp(id{1},'span_near_one');
+    record([id{1} '_legacy_actual_defect_or_control'], ...
+        (expectedFailure&&~isempty(identifier)&&contains(message,'v63 outward span exceeds one'))|| ...
+        (~expectedFailure&&isempty(message)));
+    vp=[];
+    if size(ii,1)>1
+        assignin(mw,'dispatch_input_v66',[ticks(1:2) ii(1:2,:)]);
+        assignin(mw,'dispatch_cfg_v66',[ticks(1:2) rr(1:2,:)]);
+        oo=sim(legacy,'StopTime','1','ReturnWorkspaceOutputs','on');
+        vp=reshape(oo.interval_trace_v66.Data,256,[])';
+        ix=find(cellfun(@(r)strcmp(r.id,id{1}),runs));
+        % Expanded tail changes enclosures; compare retained exact trajectory
+        % independently instead of requiring byte-identical new/old widths.
+        record('legacy_delayed_prefix_completed',size(vp,1)==2&&all(vp(:,180)==66));
+    end
+    legacy_defects{end+1}=struct('id',id{1},'model',legacy,'identifier',identifier,'message',message, ...
+        'expected_guard','v63 outward span exceeds one','input',ii,'cfg',cc.cfg,'valid_prefix',vp);
+end
+close_system(legacy,0);
+% Isolate the same defect in the host root function. Exact-binary powers of
+% two make lambda*H exactly one; the previous representable H is strictly <1.
+for H=[8,8-eps(8)/2,8-eps(8)]
+    identifier='';message='';legacy_output=[];
+    try,legacy_output=certify_event_root_v67([8 8],[0 0],.125,[4 4],-1,H,0,[0 0]);
+    catch e,identifier=e.identifier;message=getReport(e,'extended','hyperlinks','off');end
+    expectedFailure=H==8;
+    record(sprintf('legacy_root_span_%.17g',H), ...
+        (expectedFailure&&contains(message,'v67 outward root span'))||(~expectedFailure&&isempty(identifier)));
+    legacy_defects{end+1}=struct('id',sprintf('host_span_%.17g',H),'model','host_v67', ...
+        'identifier',identifier,'message',message,'horizon',H,'output',legacy_output);
+    v=certify_event_root_v68([8 8],[0 0],.125,[4 4],-1,H,0,[0 0]);
+    probes{end+1}=struct('id',sprintf('repaired_span_%.17g',H),'E',[8 8],'B',[0 0],'lambda',.125, ...
+        'target',[4 4],'direction',-1,'horizon',H,'dwell',0,'age',[0 0],'output',v');
+    record(sprintf('repaired_root_span_%.17g',H),v(1)==1&&v(12)==1);
+end

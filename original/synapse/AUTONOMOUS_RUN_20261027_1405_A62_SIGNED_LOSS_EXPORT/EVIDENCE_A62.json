@@ -1,0 +1,16 @@
+{
+  "a61_validator_sha256": "b2bf8e38eb45da96fb3d822e8b2d64b2d9ef63095f3a200099409bf5b9f121e1",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1405_A62_SIGNED_LOSS_EXPORT",
+  "ast": "4/4 PASS",
+  "decimal_checks": "10752/10752 PASS",
+  "next_step": "Offline SCADA analysis may consume A62 signed-loss schema; keep A60 immutable. Acquire calibrated real telemetry and independently validate physical equipment before any release.",
+  "physical_release": false,
+  "real_measurements": false,
+  "rows_exported": 1344,
+  "scope": "A62_signed_pool_loss_and_discrete_energy_export",
+  "source_kind": "derived_simulation",
+  "status": "VERIFIED_SIMULATION_SCHEMA_V2",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "12/12 PASS",
+  "upstream_files_modified": false
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "rows": 8064,
+  "cases": 12,
+  "decimal_invariant_checks": 225792,
+  "provenance": "SHA-checked A36, A37B and v08; independent Decimal recurrence",
+  "release": "BLOCKED_SYNTHETIC_NOT_MATLAB_STATEFLOW",
+  "case_stats": {
+    "both/no_shed": {
+      "alarms": 0,
+      "max_temperature_C": "30.0"
+    },
+    "both/ideal_40pct": {
+      "alarms": 0,
+      "max_temperature_C": "30.0"
+    },
+    "both/ramp15k_40pct": {
+      "alarms": 0,
+      "max_temperature_C": "30.0"
+    },
+    "main_only/no_shed": {
+      "alarms": 30,
+      "max_temperature_C": "46.45633992036866"
+    },
+    "main_only/ideal_40pct": {
+      "alarms": 0,
+      "max_temperature_C": "30.0"
+    },
+    "main_only/ramp15k_40pct": {
+      "alarms": 0,
+      "max_temperature_C": "30.0"
+    },
+    "backup_only/no_shed": {
+      "alarms": 197,
+      "max_temperature_C": "61.45609967962574"
+    },
+    "backup_only/ideal_40pct": {
+      "alarms": 0,
+      "max_temperature_C": "30.0"
+    },
+    "backup_only/ramp15k_40pct": {
+      "alarms": 0,
+      "max_temperature_C": "33.168424659375006"
+    },
+    "neither/no_shed": {
+      "alarms": 576,
+      "max_temperature_C": "136.45609967962574"
+    },
+    "neither/ideal_40pct": {
+      "alarms": 576,
+      "max_temperature_C": "93.86283798199773"
+    },
+    "neither/ramp15k_40pct": {
+      "alarms": 576,
+      "max_temperature_C": "93.86283798199773"
+    }
+  }
+}

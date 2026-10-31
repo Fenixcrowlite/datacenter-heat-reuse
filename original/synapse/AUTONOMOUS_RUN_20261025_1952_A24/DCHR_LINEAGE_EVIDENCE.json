@@ -1,0 +1,87 @@
+{
+  "schema": "dchr.v07_to_scada_v08_lineage.v1",
+  "status": "PASS_STATIC_LINEAGE_NO_MATLAB_REEXECUTION",
+  "source_class": "D_SYNTHETIC",
+  "cases": [
+    {
+      "scenario": "zdravy",
+      "records": 672,
+      "raw_D_sha256": "0abc642590801f5e73d6464c6f3d0df5bf9ed9bc4cf698cdde3871c3a573d118",
+      "stage_sha256": "3d6e7617b3243dc5ddf4ee94061cdf406fb035ed0dbdae95db38ad549386595a",
+      "v07_sha256": "fbe3667c505d2d043dbd2a4be943ffd7440fceacae7ec3f3e31d8f538eb14cde",
+      "v08_csv_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+      "pool_MWh": 10.393084303276645
+    },
+    {
+      "scenario": "primarny_ventil_zaseknuty",
+      "records": 672,
+      "raw_D_sha256": "46ca7a6e62bbefbadfd3c340360ce5943b654e24428db1fb8a0979a0f3a862d1",
+      "stage_sha256": "11cad9a56801bbb9a2e9456a880e863ac61d9b5940740e87d9c0506064036d9e",
+      "v07_sha256": "57e62ef43a2d6d59474dfe29a494b4fd61186a5d2b1e4ba3cf6e84b0708f836d",
+      "v08_csv_sha256": "040913b5f798a38379b49ddd1a2065da27688b3844e090898097d85975ce4f26",
+      "pool_MWh": 9.731448884282973
+    },
+    {
+      "scenario": "oba_ventily_zaseknute",
+      "records": 672,
+      "raw_D_sha256": "124db51fda2bf8633b873b82d96cb2dd0709c14f156450c56b806f3e3442f687",
+      "stage_sha256": "87f103c1ff5e66b935628e5b03b21fe8d6b40f05bd6346912de99a506191df15",
+      "v07_sha256": "d4c51102a42df0af8eed45216bf23c739b41ef1e989198dc440061f96a2f031a",
+      "v08_csv_sha256": "722928f106561f0646ebd00bca4717a48d5999fa5ef6998e658320c7497e7c51",
+      "pool_MWh": 9.8726233513461
+    },
+    {
+      "scenario": "hlavny_REJECT_off_zalozny_ok",
+      "records": 672,
+      "raw_D_sha256": "ee6e746b30d76c5222579952af9f0496810dad03e50df0db4dfd3fb84149e99d",
+      "stage_sha256": "5b6daa2adb2b596aa43016a5879d739c86bb593c163337591cdeb82cb726205d",
+      "v07_sha256": "fc88cf8e267b5dbf34cce70959e293e6a6bc4c6368a169387f6f4779fd52420a",
+      "v08_csv_sha256": "415cd088f27a5284265be43105241986329e1548e8eccd0e290a1d9c20013c6a",
+      "pool_MWh": 10.393084303276645
+    },
+    {
+      "scenario": "oba_REJECT_off_bez_shedding",
+      "records": 672,
+      "raw_D_sha256": "95aa546605d984be6b5ab3bc00502d90a1cde8d897c574dce6fd282c996efbd7",
+      "stage_sha256": "66d085f7888ad52c5b2c3af22ec25546bfaa64cfb4999077b8a032e87b181a16",
+      "v07_sha256": "96fe081606c73ee196108b2cc745ed690d8898cd4e3e1785259ceba873509205",
+      "v08_csv_sha256": "7cf5c842076a235e8b61275a2593c48234600efc84496d6482a19d401ec1f2ce",
+      "pool_MWh": 10.393084303276645
+    },
+    {
+      "scenario": "oba_REJECT_off_so_shedding",
+      "records": 672,
+      "raw_D_sha256": "6d49e7682d3fc112125225793692dbf7f19d51347ca305ef9e6ba7ccd249d5a9",
+      "stage_sha256": "f7bef58157160573d47da5d6ebf14a4e86c4cea987a9f0cdb5ecb5dfcbe20d64",
+      "v07_sha256": "24abd721c4c023ca543944dd1a49d5f997937d186875c3f6076b542100246c5d",
+      "v08_csv_sha256": "fa38f052bd766f4616755444f0b8ece43ba26b4348edea6b150e37e7ba1714ca",
+      "pool_MWh": 10.393079616111079
+    },
+    {
+      "scenario": "spolocny_bias_senzorov",
+      "records": 672,
+      "raw_D_sha256": "3971c7c8d70634e224ca73ea35a4863fdc96def7dc243ed3b030e4468bcbc8e0",
+      "stage_sha256": "8a21d01b876faef25991ad4c830678af08060d7ba99a9b0983bfe16eccdfd616",
+      "v07_sha256": "af12856a87447817cfe9cd18da4a447435e89c20d0096bc876d0745f793b0097",
+      "v08_csv_sha256": "52f1bfcd80666550c2bf1f7881a54f742efff18ace16bcd5321794883c3cf088",
+      "pool_MWh": 10.393084303276645
+    },
+    {
+      "scenario": "kombinovana_havaria_so_shedding",
+      "records": 672,
+      "raw_D_sha256": "e7443f9135cb82b90ad7c0535f33385a89f0626451be910417daeb93abbaca93",
+      "stage_sha256": "689b6d459f7dfc041cf3d3e0c0e6aa7e03fbfc6063567325b7e40cd39863e8d1",
+      "v07_sha256": "27f9ca0a0c3758b1e8b6cacc0bb82d1e8ec206a4408eb0e845de9fd3bd3abcf3",
+      "v08_csv_sha256": "971b3c0167040b75d928806004201b77f224972b438125af75bed2887947b674",
+      "pool_MWh": 10.146446980236837
+    }
+  ],
+  "rows_verified": 5376,
+  "model_sha256": {
+    "matlab/simulink/DCHR_Electrical_Dispatch_Stateflow_v85.slx": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+    "matlab/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx": "102321d3269d08e499341898e92a1ad234f23e817881a7ab4e2a3cb7d554819e",
+    "matlab/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx": "55add54b3181982ba878776493db2dba8879a583a35fb179f9c3a9c05d560e82"
+  },
+  "generating_matlab_script_sha256": "e225953ff5372887b62e47f59a8eeddee7d4553db9bf8ef44fefd0168c50e25e",
+  "limits": "Static on-disk lineage and numeric checks only. Does not prove MATLAB execution receipt, real measurements, physical accuracy or independent sensors."
+}

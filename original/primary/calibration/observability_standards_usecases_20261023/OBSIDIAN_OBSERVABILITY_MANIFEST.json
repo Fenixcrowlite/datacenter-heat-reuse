@@ -1,0 +1,313 @@
+{
+  "destination": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse\\calibration\\observability_standards_usecases_20261023",
+  "total": 61,
+  "verified": 61,
+  "conflicts": [],
+  "files": [
+    {
+      "file": "00_Observability_Standards_UseCases_SK.md",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "00_Observability_Standards_UseCases_RU.md",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "Engineering_Dashboard_2026.html",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "Standards_Graphs_Usecases_SK.pdf",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "Standards_Graphs_Usecases_RU.pdf",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "Standards_Graphs_Usecases_EN.pdf",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "kpi_catalog_2025.csv",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "kpi_catalog_2025.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "monthly_kpis_2025.csv",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "standards_traceability_2026.csv",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "standards_traceability_2026.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "use_case_catalog_2026.csv",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "use_case_catalog_2026.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "use_case_test_results_2026.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "signal_dictionary_300s.csv",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "signal_dictionary_300s.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "machine_validation_gates.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "requirements_tests_metrics_traceability.csv",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "requirements_tests_metrics_traceability.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "graph_manifest.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "QA_OBSERVABILITY_STANDARDS_20261023.json",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/01_pool_warmup.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/01_pool_warmup.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/02_monthly_energy.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/02_monthly_energy.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/03_monthly_HP_electric.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/03_monthly_HP_electric.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/04_load_duration.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/04_load_duration.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/05_IT_heat_allocation.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/05_IT_heat_allocation.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/06_pool_geometry_sensitivity.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/06_pool_geometry_sensitivity.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/07_HP_capacity_gas.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/07_HP_capacity_gas.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/08_COP_reference.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/08_COP_reference.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/09_pool_temperature_distribution.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/09_pool_temperature_distribution.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/10_recovery_dispatch_week.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/10_recovery_dispatch_week.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/11_thermal_storage.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/11_thermal_storage.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/12_weather_monthly.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/12_weather_monthly.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/13_gas_pool_comparison.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/13_gas_pool_comparison.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/14_independent_cooling_Nplus1.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/14_independent_cooling_Nplus1.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/150_cooling_fault.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/150_cooling_fault.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/151_cooling_fault.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/151_cooling_fault.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/17_hydraulic.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/17_hydraulic.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/18_scenario_COP_lift.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/18_scenario_COP_lift.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/19_heat_pump_energy.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/19_heat_pump_energy.svg",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/20_metric_provenance.png",
+      "status": "COPIED",
+      "identical": true
+    },
+    {
+      "file": "charts/20_metric_provenance.svg",
+      "status": "COPIED",
+      "identical": true
+    }
+  ]
+}

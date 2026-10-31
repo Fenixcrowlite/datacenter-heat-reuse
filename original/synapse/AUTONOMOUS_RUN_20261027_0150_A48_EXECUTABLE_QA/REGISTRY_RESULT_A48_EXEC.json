@@ -1,0 +1,13 @@
+{
+  "event_id": 1265,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A48_graphical_coupled_executable_acceptance",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0150_A48_EXECUTABLE_QA",
+  "model_sha256": "063f9afb5816cd4f6bed415256293eee67b328718b141c29d84853ddafab25cb",
+  "evidence_sha256": "b04e46d7bb9487b36e571c4fafbac0537ef5e107a3f4e492fe413c0958a89c90",
+  "manifest_sha256": "542d4336859e1609ab1e359de044e223dfdfafcaec84b390ba446176c3c3fec1",
+  "handoff_sha256": "17f7b9a0ba482822ce4f67776e588ede8a5b19015720d92252c33b5630493dc8",
+  "qa": "MATLAB R2026a 7x672, 51744/51744 numerical parity; 10/10 independent Python tests; graphical Stateflow verified",
+  "physical_release": false,
+  "next_step": "A49: independent fault-injection/property-based validation of transitions, sensor latency and energy balances against a separately derived model; retain physical signoff gate."
+}

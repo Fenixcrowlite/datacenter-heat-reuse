@@ -1,0 +1,18 @@
+python.exe : test_corrupted_artifact_rejected (test_a67.GateTests.test_corrupted_artifact_rejected) ... ok
+строка:1 знак:613
++ ... ocation $d; & 'C:\Python314\python.exe' -m unittest -v test_a67 2>&1  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_corrupted_...ejected) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_duplicate_event_rejected (test_a67.GateTests.test_duplicate_event_rejected) ... ok
+test_event_digest_rejected (test_a67.GateTests.test_event_digest_rejected) ... ok
+test_evidence_provenance_rejected (test_a67.GateTests.test_evidence_provenance_rejected) ... ok
+test_missing_file_rejected (test_a67.GateTests.test_missing_file_rejected) ... ok
+test_path_traversal_rejected (test_a67.GateTests.test_path_traversal_rejected) ... ok
+test_valid_replay_twice (test_a67.GateTests.test_valid_replay_twice) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in <variable>s
+
+OK

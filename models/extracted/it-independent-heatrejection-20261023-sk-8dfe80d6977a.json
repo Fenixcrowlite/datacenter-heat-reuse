@@ -633,6 +633,7 @@
   "execution_status": "not_ported",
   "file": "extracted/it-independent-heatrejection-20261023-sk-8dfe80d6977a.json",
   "copies": [
+    "obsidian/calibration/engineering_release_20261023/IT_Independent_HeatRejection_20261023_SK.slx",
     "primary/calibration/engineering_release_20261023/IT_Independent_HeatRejection_20261023_SK.slx"
   ]
 }

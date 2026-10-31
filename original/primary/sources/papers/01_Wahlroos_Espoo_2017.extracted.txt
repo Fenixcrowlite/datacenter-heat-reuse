@@ -1,0 +1,1520 @@
+
+### PAGE 1
+This is an electronic reprint of the original article.
+This reprint may differ from the original in pagination and typographic detail.
+Powered by TCPDF (www.tcpdf.org)
+This material is protected by copyright and other intellectual property rights, and duplication or sale of all or 
+part of any of the repository collections is not permitted, except that material may be duplicated by you for 
+your research use or educational purposes in electronic or print form. You must obtain permission for any 
+other use. Electronic or print copies may not be offered, whether for sale or otherwise to anyone who is not 
+an authorised user.
+Wahlroos, Mikko; Pärssinen, Matti; Manner, Jukka; Syri, Sanna
+Utilizing data center waste heat in district heating – Impacts on energy efficiency and
+prospects for low-temperature district heating networks
+Published in:
+Energy
+DOI:
+10.1016/j.energy.2017.08.078
+Published: 01/12/2017
+Document Version
+Publisher's PDF, also known as Version of record
+Published under the following license:
+CC BY-NC-ND
+Please cite the original version:
+Wahlroos, M., Pärssinen, M., Manner, J., & Syri, S. (2017). Utilizing data center waste heat in district heating –
+Impacts on energy efficiency and prospects for low-temperature district heating networks. Energy, 140, 1228-
+1238. https://doi.org/10.1016/j.energy.2017.08.078
+
+
+### PAGE 2
+Utilizing data center waste heat in district heating e Impacts on
+energy efﬁciency and prospects for low-temperature district heating
+networks
+Mikko Wahlroos a, *, 1, Matti P€arssinen b, **, 1, Jukka Manner b, Sanna Syri a
+a Department of Mechanical Engineering, Aalto University, School of Engineering, P.O. Box 14100, FIN-00076, Aalto, Finland
+b Department of Communications and Networking, Aalto University, School of Electrical Engineering, P.O. Box 13000, FIN-00076, Aalto, Finland
+a r t i c l e
+i n f o
+Article history:
+Received 1 November 2016
+Received in revised form
+11 August 2017
+Accepted 16 August 2017
+Available online 29 August 2017
+Keywords:
+District heating
+Data center
+Energy efﬁciency
+Waste heat utilization
+Load proﬁle
+a b s t r a c t
+Data centers seek solutions to increase energy efﬁciency and lower costs by novel methods. Waste heat
+utilization is considered to be one of the major trends in the near future, especially in the Nordic
+countries, where heat demand is high. In this paper, waste heat utilization was analyzed from the per-
+spectives of both the data center and district heating network operators. Timing of the data center waste
+heat production was considered based on an existing data center load proﬁle. For the district heating
+network operator, the system level effects of increased waste heat utilization were quantiﬁed by
+simulating district heating production in the city of Espoo, Finland, with actual plant and heat demand
+data for 2013 and 2015. Results showed that with high shares of waste heat in the district heating system,
+i.e. 20e60 MW, the system level operational cost savings were 0.6e7.3% in the case study. Utilizing waste
+heat decreased utilization hours of both combined heat and power plants and heat-only boilers. The
+analysis showed that pricing of the procured waste heat affects the utilization level of waste heat, but
+operational hours of waste heat utilization were over 95% in all scenarios.
+© 2017 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND
+license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+1. Introduction
+The
+energy efﬁciency of
+data
+centers
+(DC)
+is
+becoming
+increasingly more important as the number of DCs is rapidly
+growing. It is estimated that DCs already accounted for 1.1e1.5% of
+the world's total electricity consumption in 2010 [1]. DCs require
+vast amounts of cooling energy. The electricity consumed in a DC
+almost completely converts to heat. However, most of the heat is
+not utilized, even though different solutions already exist. Global
+warming creates an increasing amount of cooling demand at the
+same time as power density/ﬂoor space in DC is increasing and a
+demand for processing power is rising faster than processing
+technology is advancing [2]. With rapid increase in the capacity and
+size of DCs, there is a continuous increase in the energy
+consumption and related CO2 emissions [2].
+The cold climate in Nordic countries is extremely suitable for
+DCs, by providing the much-needed cooling energy. Furthermore,
+there is a high demand for heat in these countries, and industrial
+waste heat is already utilized in different processes and district
+heating (DH) on a large scale, especially in Finland and Sweden
+(waste heat in DH 3.3% in 2015 [3] in Finland and 8% in 2014 in
+Sweden [4]). DH with highly efﬁcient combined heat and power
+(CHP) is exceptionally common in Finland and Sweden. Current
+solutions and DC projects in the Nordic countries for utilizing waste
+heat have been studied for example in Wahlroos et al. [5].
+In the current DH network supply, temperatures are typically
+around 75e120 C, depending on the outside temperature [6]. As
+the housing stock is becoming better insulated, DH networks are
+striving towards lower temperatures, which would enable feeding
+lower quality heat to the DH network. To comply with the EU
+regulations, for example, Finland is aiming at near zero energy
+buildings (nZEB) in the new building stock by the year 2020. The
+very low energy demand of the new buildings is particularly suit-
+able for low-temperature heat supply and enabling the move to 4th
+generation DH systems [6]. Therefore, there may be even more
+potential utilizing the waste heat from DCs in the future. If the
+* Corresponding author.
+** Corresponding author.
+E-mail addresses: mikko.wahlroos@aalto.ﬁ(M. Wahlroos), matti.a.parssinen@
+aalto.ﬁ(M. P€arssinen), jukka.manner@aalto.ﬁ(J. Manner), sanna.syri@aalto.ﬁ
+(S. Syri).
+1 Mikko
+Wahlroos and
+Matti
+P€arssinen
+have
+equally contributed
+to the
+manuscript.
+Contents lists available at ScienceDirect
+Energy
+journal homepage: www.elsevier.com/locate/energy
+https://doi.org/10.1016/j.energy.2017.08.078
+0360-5442/© 2017 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Energy 140 (2017) 1228e1238
+
+
+### PAGE 3
+supply temperature of the DH network can be decreased to as low
+as 50 C, lower quality heat would be easier to feed into the system.
+Typically, waste heat from DC is low quality (<85 C), and thus it
+cannot be utilized in current networks to its full extent.
+It has been suggested that excess waste heat from thermal po-
+wer plants could satisfy the whole heat demand for buildings in
+Europe [7]. For the waste heat utilization to be realized, the busi-
+ness case has to be mutually attractive; i.e., there has to be eco-
+nomic potential for both the heat provider and the DH operator.
+Even though there have been many studies on DC waste heat uti-
+lization, many of the projects have not been realized, as the real
+economic incentive has been lacking from either party.
+The overall aim of this paper was to improve the sustainability of
+a DC and investigate when waste heat is available, if it can be
+trusted as a reliable source of heat, and how it impacts DH pro-
+duction as a whole. Secondly, how DC waste heat utilization affects
+other heat production units in a DH network was studied.
+The sub targets of the research were 1) form a waste heat supply
+proﬁle of a sample DC, 2) conduct simulation to the Espoo DH
+network with actual plants, operating costs, and different waste
+heat levels, and 3) investigate waste heat utilization and pricing
+impact on heat production in a DH network.
+2. Related work
+2.1. Green data center
+According to Deng et al. [8], to become a green DC, two main
+inﬂuencing factors need addressing: renewable energy usage and
+energy efﬁciency. Goiri et al. [9] have studied the implementation
+of solar panels with DCs and the scheduling of power demand with
+variable renewable generation to minimize the use of electrical grid
+to supply power. Oro et al. [10] have studied strategies for inte-
+grating renewable energy in DCs and suggested that electricity
+consumption in DCs should be dynamically modeled to truly un-
+derstand the potential for increased energy efﬁciency. To have a
+green image, DC operators have different strategies for procuring
+renewable electricity. An operator can produce their own electricity
+on-site or off-site by solar or wind power. In addition, or as an
+alternative, they can purchase electricity certiﬁed as green energy
+(green certiﬁcates, a guarantee of origin, power purchase agree-
+ments, etc.).
+According to Bertoldi [11], making DCs more energy efﬁcient
+requires a concerted effort to optimize power distribution, cooling
+infrastructure, information technology (IT) equipment, and IT
+output. Pedram et al. [12] have suggested that the economics of
+operating a DC is comprised by four main factors that contribute to
+the Total Cost of Ownership (TCO) of a DC. The factors are resiliency,
+downtime, ﬁnancial considerations, and vertical scalability.
+Weller-McCormack [13] has suggested that ICT sustainability is
+not a high priority for most ICT departments. The single most
+important reason ICT managers and leaders do not prioritize sus-
+tainability or feel they have a compelling reason to do so, is the lack
+of visibility regarding actual power consumption [13]. Only one in
+seven include the cost of ICT power consumption in their ICT
+budgets. The report indicated that the lowest awareness index
+score comes from the energy efﬁciency metrics.
+Pakbaznia et al. [14] have explained that there are two main
+systems for DC air conditioning: the Heating Ventilation Air
+Conditioner (HVAC) and Computer Room Air Conditioner (CRAC). In
+computing, and especially in enterprise DCs, HVAC systems control
+the temperature, humidity, air ﬂow, and air ﬁltering. HVAC must be
+planned for and operated along with other DC components, such as
+computing hardware, cabling, data storage, ﬁre protection, physical
+security systems, and power. Cooling is performed by the CRAC
+unit. Hot air transfers its heat to a cold substance, typically cold
+water or air, while passing through a pipe in the CRAC unit. When
+cold enough, the air enters a room via CRAC fans. The heated sub-
+stance is directed to a chiller for cooling.
+Energy-efﬁciency targets have recently increased for the mod-
+ern new DC sites. It is also a part of the image of a company which
+DC operators want to emphasize. The energy consumption proﬁle
+of DCs differs signiﬁcantly from that of a conventional ofﬁce or a
+commercial building; the electricity consumption of IT systems is
+remarkably high. According to a large Finnish DC operator,
+Telia(formerly Sonera) [15], the operation of their new DC gener-
+ates 200 GWh of heat annually. Hence, the possibilities to provide
+the waste heat to a DH grid should be examined in order to reach
+the energy-efﬁciency targets.
+Lu et al. [16] have calculated DC energy efﬁciency and the po-
+tential for waste heat capturing based on real production data.
+Results have shown that, in fact, waste heat could be captured from
+97% of the total power consumed. Lu et al. have concluded that
+waste heat of a 1 MW DC (operating at half of its nominal load)
+could fulﬁll the heat demand for an over 30,000 m2 non-domestic
+building annually.
+Nomenclature
+CHP
+Combined Heat and Power
+COP
+Coefﬁcient of Performance
+CPU
+Central Processing Unit
+CRAC
+Computer Room Air Conditioner
+CUE
+Carbon Usage Effectiveness
+DC
+Data Center
+DCE
+Data Center Efﬁciency
+DH
+District Heating
+DHW
+Domestic Hot Water
+EOC
+Environmentally Opportunistic Computing
+EPC
+Energy Proportionality Coefﬁcient
+ERE
+Energy Reuse Effectiveness
+ESX
+VMware Elastic Sky X server
+FVER
+Fixed to Variable Energy Ratio
+HOB
+Heat Only Boilers
+HVAC
+Heating Ventilation Air Conditioner
+IT
+Information Technology
+LTDH
+Low Temperature District Heating
+nZEB
+near Zero Energy Building
+PDE
+Power Density Efﬁciency
+PUE
+Power Usage Effectiveness
+RCI
+Rack Cooling Index
+REF
+Renewable Energy Factor
+RTI
+Return Temperature Index
+SHI and RHI Supply and Return Heat Indexes
+sPUE
+System Power Usage Effectiveness
+TCI
+Thermal Correlation Index
+TE
+Thermodynamic Efﬁciency
+WUE
+Water Usage Effectiveness
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1229
+
+
+### PAGE 4
+Marcinichen et al. [17] have suggested that utilizing DC waste
+heat in a nearby power plant could increase the energy efﬁciency of
+the power plant by up to 2.2% as well as cut CO2 emissions; while
+Ebrahimi et al. [18] have proposed that retroﬁtting absorption
+cooling machines to utilize waste heat could have payback in less
+than a half year in a 10 MW DC. Kupiainen [19] has calculated that
+DC utilizing free cooling in combination with a heat pump, rather
+than a refrigeration machine, would result in a lifetime savings of
+280,000V in 20 years compared to the reference case. According to
+Stenberg [20], investing in a heat pump in DC, which produces
+cooling energy and where 75 C waste heat is sold to a DH network,
+could have a payback time of less than two years. Sorvari [21] has
+suggested that hot-water cooled servers could satisfy almost the
+whole heat demand for 60,000 m2 of rental cottages and spa in
+Northern Finland.
+2.2. Energy efﬁciency and waste heat reuse metrics
+The Green Grid has speciﬁed 4 characteristics of efﬁcient DC
+metrics: 1) intuitive metric name, 2) scalability to techno-
+economical changes, 3) scientiﬁc accuracy, and 4) the granularity
+to provide data-driven decisions [22]. Lajevardi et al. [23] have
+suggested that measuring the performance of an energy efﬁciency
+metric is the ﬁrst step in energy efﬁciency improvement. It allows
+tracking the improvements, changes, comparisons between tech-
+nologies, and benchmarking against average industry performance.
+According to Nada et al. [2], the assessment of metrics - against
+intended goals and values of their effectiveness in terms of
+reporting, targets, education, analysis, and decision support e is
+needed.
+A vast number of energy efﬁciency metrics that measure energy
+consumption exists, aimed at reducing the total consumption of
+electricity in the DC. In the following paragraphs, there are exam-
+ples of such metrics. The key energy efﬁciency metrics in the
+domain of heating, ventilation, and air conditioning (HVAC) in a DC
+include Thermal Correlation Index (TCI) [24], Rack Cooling Index
+(RCI) [23], Return Temperature Index (RTI) [23], Supply and Return
+Heat Indexes (SHI) and (RHI) [23], Power Density Efﬁciency (PDE)
+[23], and Thermodynamic Efﬁciency (TE) [25]. Generic data center
+energy efﬁciency metrics include, for example, Power Usage
+Effectiveness (PUE) [23], Data Center Efﬁciency (DCE) [23], System
+Power Usage Effectiveness (sPUE) [2], and Fixed-to-Variable Energy
+Ratio (FVER) [2].
+Metrics for utilization of renewables and decreasing CO2 emis-
+sions include Water Usage Effectiveness (WUE) [26], Carbon Usage
+Effectiveness (CUE) [26] and Renewable Energy Factor Ref [26].
+Energy Proportionality Coefﬁcient (EPC) is an important system-
+level, energy efﬁciency metric.
+The most widely adopted energy efﬁciency benchmark metric is
+PUE. PUE is deﬁned as the ratio of total power used by a building
+site, divided by the amount of power used by the IT equipment [23].
+PUE is overly simpliﬁed and does not provide the technical base for
+proper engineering analysis [22]. For example, Fiandrino et al. [27]
+have suggested that existing, widely adopted energy efﬁciency
+metrics do not distinguish DC communication systems from the
+computing servers, as both are IT equipment.
+All of the aforementioned metrics give a statistical window to
+energy efﬁciency and the use of renewables aiming to support
+objective decision making. Nonetheless, they do not address the
+beneﬁt of waste heat capturing and reuse. According to Zimmer-
+mann et al. [28], Energy Reuse Effectiveness (ERE) has been
+designed to measure the beneﬁts achieved by introducing waste
+heat reuse from a DC. Energy reuse has a direct impact on the en-
+ergy efﬁciency of a DC. ERE is a variant of PUE and can be calculated
+from the equation:
+ERE ¼ PDataCenter þ PCooling  PReuse
+PIT
+:
+(1)
+In Equation (1), PDataCenter and PCooling together denote the total
+power consumption of a DC. The PReuse denotes the power supplied
+to a secondary application, for example DH. PIT denotes the power
+usage of IT equipment. ERE was the primary energy efﬁciency
+metric for the purposes of this paper. Adaptation of ERE in the in-
+dustry is based on implemented waste heat recovery solutions. As
+PUE is still the de facto benchmark metric, the implication is that a
+majority of DCs do not reuse waste heat.
+3. Potential for data center energy reuse and requirements
+3.1. Data center load proﬁles
+Waste heat generation was simulated based on the load proﬁle
+of a DC in Espoo. Data for the proﬁle was measured from actual DC
+production systems. The selected DC represents a typical service
+provider proﬁle with multiple customers utilizing a shared infra-
+structure and services. No direct free cooling is used. Figs. 1e5
+describe ﬁve aspects of a DC load, which together form the DC
+load proﬁle. The data was taken from the same one-week period
+from three different management systems.
+Fig. 1 shows the load-balanced server backup trafﬁc, measured
+from the router link. Backup trafﬁc was sequential and at its peak
+from 9 p.m. to 7 a.m. Fig. 2 presents the service trafﬁc in/out of the
+DC. Measures were taken from the Internet routers' ports. In Fig. 2,
+the Bits/s In (in green) actually means the trafﬁc leaving the DC, and
+the Bits/s Out (in blue) means trafﬁc coming into the DC. Service
+trafﬁc was highest during 7 a.m.e10 p.m. Weekends show lower
+service trafﬁc compared to the business days. From Fig. 1 data
+combined with Fig. 2 data, it can be concluded that the combination
+of service trafﬁc and backup trafﬁc form a uniform trafﬁc proﬁle,
+equally spread across each hour of the day.
+Fig. 3 illustrates the power usages of 4 VMware Elastic Sky X
+(ESX) servers. The role of these servers is to host the virtual servers
+of customers. The power consumption is stable. Fig. 4 illustrates
+volatility on each of the server central processing unit (CPU) utili-
+zation percentage. The minimum and maximum were in the 20%
+range. The conclusion from Fig. 3 together with Fig. 4 data was that
+power consumption and payload processing were also uniformly
+spread across each hour of the day.
+The combined results of all Figs. 1e4, imply that the DC is
+operating every hour of the day with similar load proﬁle and power
+consumption. Altogether, this suggests that the DC as a whole is a
+stable source of waste heat each hour of the day. This implication is
+supported by Fiandrino et al. [27], which suggests that neither
+computing servers nor network switches are energy-proportional.
+Many servers consume up to 66% of their peak power consumption
+when idle. For network switches, this ratio can reach 85%.
+In a DC, load balancing is achieved with virtualization and
+Fig. 1. Load balanced backup trafﬁc. Y-axis represents trafﬁc in bits per second (bps)
+from DC and x-axis time in weekdays.
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1230
+
+
+### PAGE 5
+network-level load balancing. In addition, multiple customers with
+several different services and user groups ensure that each hour of
+the day, ESXs and networking equipment operate at a stable power
+consumption level. During night-time the backup trafﬁc creates
+load to compensate for the otherwise lower service usage. The
+conclusion is that DCs can be considered a steady waste heat
+source. It is possible to use Fig. 5 as an assumption for simulation of
+waste heat production of a DC. Fig. 5 provides evidence that IT
+electricity consumption correlates strongly with HVAC electricity
+consumption. Based on the insight from a sample DC operator, part
+of the ﬂuctuation in IT electricity consumption is caused by
+renewing the equipment and increasing or decreasing physical
+capacity. The ﬂuctuation in the overall electricity consumption is
+positively correlated with average monthly outside air tempera-
+ture. Positive correlation is higher when the average monthly
+outside air temperature is above 10 C. Below that point, the elec-
+tricity consumption is varying more as a function of facility and IT-
+equipment electricity consumption and can be considered to be
+almost constant. In all situations, the IT-electricity consumption can
+be reused.
+3.2. Statistical analysis
+Fig. 5 was plotted into scattered charts in order to evaluate the
+distribution of observed data. The data was normally distributed.
+Two-tailed Pearson correlation signiﬁcance test was selected based
+on the distribution and wide usability of t-test.
+For IT- and HVAC energy consumption, t1 ¼ 7:91897; and for
+total energy consumption and outside temperature, t2 ¼ 2:82625.
+The p < 0.05 was considered signiﬁcant. Both t-values result with
+52 of freedom p < 0.00001. The Pearson correlation coefﬁcient was
+signiﬁcantly positive.
+Fig. 6 and Fig. 7 gave evidence that there is a temperature range
+where energy consumption is close to constant. Fig. 6 shows the
+moving average (n ¼ 4) of total electricity consumption. Regular
+regression analysis with linear least squares resulted in data ﬁtting
+line y ¼ 1000:9x þ 168994. The conclusion was that the total en-
+ergy consumption increases as the outside temperature increases.
+The moving average is ﬂuctuating at a low range until the tem-
+perature reaches 17 C. Fig. 7 illustrates that the outside average
+temperatures above 10 C have the strongest positive correlation
+with electricity consumption.
+3.3. Requirements for data center waste heat utilization in DH
+network
+Considering waste heat reuse in DH networks, the main
+Fig. 2. Service trafﬁc. Y-axis represents trafﬁc in bits per second (bps) from DC and x-
+axis time in weekdays.
+Fig. 3. Shared ESX server power consumption. Y-axis represents power usage (W) and
+x-axis time (day-month). Colors represent four different ESX servers. (For interpreta-
+tion of the references to colour in this ﬁgure legend, the reader is referred to the web
+version of this article.)
+Fig. 4. Shared ESX server CPU usage. Y-axis represents CPU usage (%) and x-axis time
+(day-month). Colors represent four different server CPUs. (For interpretation of the
+references to colour in this ﬁgure legend, the reader is referred to the web version of
+this article.)
+Fig. 5. Monthly electricity consumption of actual DC and average monthly outside
+temperatures in Espoo [29]. Left y-axis represents power consumption (kWh), right y-
+axis represents monthly average outdoor temperature (C) and x-axis time in months.
+Fig. 6. Moving average of observations with subset of four. Y-axis represents total
+power consumption (kWh) and x-axis monthly average outdoor temperature (C).
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1231
+
+
+### PAGE 6
+deciding factors are the location of the DC, price of waste heat, and
+quality of waste heat. In this paper, the quality of heat referred to
+both the temperature of waste heat and timing of waste heat
+availability. DH demand is highest in the wintertime, while in
+summertime, DH is required mainly on heating domestic hot water
+(DHW). Therefore, it is important to analyze whether waste heat is
+available when it is truly needed.
+Almost all of the waste heat can be recovered as has been sug-
+gested, for example, in Refs. [16] and [17]. As it was analyzed in
+previous sections, it was estimated that waste heat would be
+available on a rather constant load. However, DCs are operating on a
+totally different timescale compared to, for example, new heat
+production plant investments. DCs are typically committed to
+contracts and clients on a 1- to 5-year time scale, but heat pro-
+duction unit investments typically have technical lifetimes of
+15e40 years. This may lead to problems in contracts as DCs may not
+be able to commit themselves to long-term contracts on supplying
+waste heat. De facto, DCs are rarely operating on full nominal ca-
+pacity, and therefore nominal capacity is not an appropriate metric
+to analyze waste heat availability.
+The temperature of captured waste heat depends on the loca-
+tion where it is captured and on cooling technology. In air-cooled
+DCs, waste heat can generally be captured between 25 C and
+35 C. In liquid cooling solutions, waste heat can be captured closer
+to processors, where operating temperatures are higher and thus
+the captured waste heat is of a higher temperature, e.g. 50e60 C.
+The best locations for capturing waste heat have been discussed in
+Refs. [18] and [30].
+Waste heat from DCs is typically low temperature, but heat
+pumps can be used to increase the temperature. If heat pumps are
+integrated to DCs, they can, in addition, produce cooling energy for
+the server room. However, it is still rare that heat pumps are used as
+the only source for cooling energy. If heat pumps are used as the
+primary method to supply cooling energy, it is necessary that waste
+heat can be fed, for example, to the DH system.
+Connecting DC waste heat to DH has been discussed in Refs. [5],
+[30]. Waste heat is typically recovered from hot aisles to the
+ventilation system. Through the ventilation system, low-grade
+waste heat, e.g. 35 C, can be directed to the heat exchanger or
+heat pump. Stream temperatures are ﬁtted depending on the
+desired temperature for the DH network. In order to conduct heat
+transfer, heat pumps are connected to both the supply (e.g. 75 C)
+and the return side of the DH network (e.g. 40 C). Cooled waste
+heat (e.g. 20e25 C) can then be directed back to the cooling system
+of the DC.
+The coefﬁcient of performance (COP) of the heat pumps in DCs
+typically range between 3.0 and 6.3 [30] and the COP decreases
+when the desired temperature is increased. One important ques-
+tion in using a heat pump is who will make the investment. Heat
+pumps
+are
+heavy
+investments
+and
+increase
+the
+electricity
+consumption; therefore, if the investment is made by a DC operator,
+there must be long-term prospects for being able to sell the heat. If
+the heat pump is not integrated into the DC, the investment is
+typically done by the DH operator.
+Buying waste heat from external sources may have huge bene-
+ﬁts for DH network operators. With buying waste, the DH network
+operator can reduce production costs by replacing more expensive
+peak load production. In addition, peak load production is typically
+produced by fossil fuels, and therefore utilizing waste heat may
+reduce emissions of heat production. In the best scenarios, there is
+even the possibility that utilizing waste heat can replace the need
+for investing in new heat production capacity, but in these cases,
+the source of waste heat must be reliable.
+4. Modeling the Espoo district heating network and increased
+utilization of waste heat
+4.1. Modeled scenarios
+In the case analysis, the DH network of the city of Espoo in
+Southern Finland was simulated. Simulations were conducted us-
+ing EnergyPRO software by EMD International A/S [31]. EnergyPRO
+was suitable for analysis, as it is possible to analyze techno-
+economic operation in a system with both individual CHP plants
+and heat-only boilers (HOB). EnergyPro also accounts for electricity
+sales from the spot markets; thus, it can be conveniently used to
+analyze a DH network with several CHP plants with different fuels.
+EnergyPRO is an input/output model, taking into account e.g.
+heat production plant characteristics, fuel prices, electricity prices,
+heat demand, ambient temperature, and DH network tempera-
+tures. EnergyPRO calculates the optimal DH operation strategy by
+minimizing the total operational costs of heat production on the
+basis of existing plants in the DH system. EnergyPRO takes into
+account the sales from electricity generated by CHP plants which
+reduce the total operational costs. Simulations were carried out by
+using hourly resolution and simulating one year at a time. Two
+years with different characteristics were selected for the simula-
+tions, 2013 and 2015. The reason for two separate years was to
+analyze cases with different outside temperatures and electricity
+prices.
+Currently, there is approximately 8e15 MW of waste heat in
+Espoo, and a minor share of it comes from DCs. The purpose of the
+analysis was to calculate how an increased amount of waste heat
+would affect the operation of other production plants, such as CHP
+and HOB. Waste heat capacities and load patterns were analyzed
+based on an existing operational DC. The DC in question was small,
+0.4 MW nominal capacity, but DC capacity was scaled by either 10-
+fold in moderate scenarios or 25-fold in high scenarios to simulate a
+system with a higher share of waste heat with a similar load
+pattern. Waste heat was simulated in EnergyPRO either as a single
+aggregated heat production plant or utilized waste heat was sub-
+tracted directly from heat demand depending on the scenarios in
+question (discussed below).
+All of the scenarios were modeled from the perspective of DH
+network and investments into waste heat utilization equipment
+were not considered. It was assumed that the temperature of waste
+heat from DCs was high enough to be able to feed waste heat
+directly to the supply side of the DH network, without priming the
+heat.
+4.1.1. Reference scenarios
+In reference scenarios, it was estimated that there was no waste
+heat utilized in the DH network, but DH and electricity were pro-
+duced with existing plants in the Espoo DH network in 2015. In the
+reference scenarios, waste heat from existing DCs was excluded.
+Fig. 7. Observations near 10 C outdoor average temperature. Y-axis represents total
+power consumption (kWh) and x-axis monthly average outdoor temperature (C).
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1232
+
+
+### PAGE 7
+4.1.2. Marginal cost scenarios
+Marginal cost scenarios considered the case where the DH
+network operator is buying waste heat from external sources, i.e.
+DCs. The question of waste heat procurement costs was considered
+in marginal cost scenarios, as it is highly important for proﬁtability
+from the viewpoints of both the DH network operator and the DC
+operator. The monthly pricing structure for waste heat is presented
+in Table 1. The pricing structure has been proposed in Ref. [20], and
+it is based on the actual marginal costs of heat production and DH
+producer interviews in Finland. The DH network operator would
+buy the waste heat if the procurement costs are below the marginal
+production costs of other technologies in each hour. The purpose
+was to analyze if there are hours when waste heat will not be
+utilized on proposed prices.
+In the marginal cost scenarios, it was assumed that there is a
+constant load of waste heat throughout the year. In these scenarios,
+DC waste heat was simulated in EnergyPRO as an aggregated pro-
+duction unit. The capacity of waste heat in different marginal cost
+scenarios are presented in Table 2.
+4.1.3. 100%-utilization scenario
+In 100% utilization scenarios, it was assumed that all available
+waste heat would be utilized regardless of the cost of waste heat. In
+some cases, the contracts between the operators may not allow
+declining on waste heat supply, and thus all waste heat will be fed
+to the system. In addition, a monthly ﬂuctuating load from the DCs
+was estimated according to the load pattern of the DC presented in
+Section 3. As the DC heat would be utilized in any case, the waste
+heat load was subtracted directly from the DH heat demand.
+The differences in the simulated scenarios are summarized in
+Table 2 below. The reason for different loads in different years was
+due to the load proﬁle of the actual DC analyzed in Section 3. In
+2015, DC lost one of its clients; therefore, the IT load slightly
+decreased, which affected the waste heat production.
+4.2. District heating network in the city of Espoo
+The network operator in Espoo is Fortum, who is operating DH
+networks in many different cities in Finland and Sweden. Espoo DH
+network also includes the networks in the municipalities of Kirk-
+konummi and Masala. The net production in the Espoo DH network
+was 2190 GWh in 2014 [32]. The current plants of Fortum in the
+Espoo DH network are presented in Table A.1 in Appendix A. For-
+tum operates various plants with different technologies, ranging
+from large-scale coal-ﬁred CHP to heat pumps and biomass plants.
+Baseload heat production is typically coal-ﬁred CHP plants or nat-
+ural gas-ﬁred CHP plants. Most of the capacity in Espoo is natural
+gas-based
+HOBs.
+Fortum
+also
+procures
+heat
+from
+external
+producers. At the end of 2015, Fortum ﬁnished building a thermal
+DH storage (20,000 m2 hot water tank) which can store 800 MWh
+of energy. The storage was not considered in the current scenarios,
+as it was not effectively used during the year 2015.
+In October 2016, Fortum announced that they have a letter of
+intent to utilize waste heat from Telia's 24 MW DC in Pit€aj€anm€aki,
+Helsinki, which is under construction [33]. Pit€aj€anm€aki is located
+close to the Espoo border, where Fortum already has DH trans-
+mission capacity with Helen (DH network operator in Helsinki).
+Fortum has already proved the concept of utilizing DC waste heat in
+their network. It has been estimated that 200 GWh of heat could be
+recovered from the DC, which would satisfy almost 10% of the DH
+demand in Espoo annually.
+Assumed characteristics of CHP and HOB plants are presented in
+Table A.2. CHP plant efﬁciencies were calculated based on a lower
+heating value of the fuel. Minimum operation hours for CHP were
+set at 168 h, i.e. operation of CHP plants were decided on a weekly
+basis and plants. Plants would operate for at least 168 if turned on
+and would stay turned off for at least 168 consecutive hours.
+Regarding the DH network characteristics, constant supply and
+return water temperatures were assumed based on the average
+annual temperatures. Return water temperature was set at 49 C,
+and supply water temperature was set at 87 C. In reality, DH
+temperatures depend on the outside temperature, and when the
+temperature is colder, supply temperatures are higher. However, in
+the simulations, constant DH network temperatures resulted only
+in a small error.
+Actual DH demand for 2013, and a normalized demand for 2015,
+were obtained from Fortum. The actual temperatures for Espoo
+were obtained from Fortum for 2013, and the outside temperature
+for 2015 was adopted from the Finnish Meteorological Institute
+open access-data base [29]. The hourly heat demand and temper-
+atures for the year 2013 are presented in Fig. 8. The load in the
+Espoo DH network varied between 50 MW and 780 MW in 2013 (on
+average 253 MW).
+In the largest Finnish cities, DH is typically produced with CHP
+plants; thus electricity production and prices are affecting the merit
+order of the DH production units. DH production costs are affected
+by plant technology, technology and prices of different fuels, which
+typically represent the major share of the total variable costs. Fuel
+costs of different fuels alongside the fuel taxes, electricity tax and
+distribution costs, and Elspot electricity prices in Finland are pre-
+sented in Table A.3. In 2015, coal CHP was effectively cheaper than
+natural gas and thus coal was widely used for baseload CHP
+production.
+Hourly Finnish system prices for electricity derived from
+NordPool Elspot, presented in Fig. 9, were used in the simulations.
+In 2013, the average day-ahead Elspot price was 41 V/MWh, while
+the average price was only 30 V/MWh in 2015. The difference in
+electricity prices will highly affect the operation of CHP plants and
+therefore the merit order of the heat production units.
+4.3. Restrictions in simulations
+It was assumed that DCs are capable of producing waste heat
+with sufﬁcient temperature to be fed to the supply side of the DH
+network. Costs for DC operators for priming the heat to a certain
+temperature (above 75 C) were excluded. In reality, this is not
+typically the case as heat pumps are far less efﬁcient in high tem-
+peratures, typically making the investments not proﬁtable.
+The possibility for supplying waste heat to return water was not
+considered in the simulations. In practice, waste heat could be
+supplied to the return side of the DH network when the tempera-
+ture is lower. However, the quality of waste heat has to be improved
+for the requirements of the network, and this will cause extra costs
+Table 1
+Pricing of waste heat in the marginal cost sce-
+narios (adopted from Ref. [20]).
+Waste heat procurement costs (V/MWh)
+January
+40.2
+February
+40.4
+March
+38.6
+April
+27
+May
+19.2
+June
+16
+July
+13.8
+August
+14.6
+September
+19.2
+October
+24
+November
+32.8
+December
+38
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1233
+
+
+### PAGE 8
+for the DH network operator. It has been discussed with DH pro-
+ducers and suggested in Ref. [20] that the price for feeding waste
+heat to the return side could be half of the price compared to
+feeding waste heat to the supply side of the DH network.
+4.4. Results of the modeling
+In Fig. 10, the annual simulated electricity and heat production
+in the 2013 Moderate Marginal cost scenario are presented. Coal
+CHP (in black) was used as a baseload production, and it was used
+when the electricity price is high enough, which is basically almost
+all of the wintertime. In summertime, CHP plants were started only
+a few times due to the restrictions in the minimum operation hours
+(168 h). Natural gas-ﬁred CHP plants (natural gas in yellow) were
+running approximately 30% of the time. On top of the natural gas,
+the heat pump production (in red) and utilized waste heat (in pink)
+are presented.
+In Table 3 operational hours of the plants in marginal cost sce-
+narios are presented. It is clearly visible that utilization of CHP
+plants decreased in all of the scenarios. The biggest impact was in
+2013, when increased utilization of waste heat had the conse-
+quence
+of
+heavily
+decreasing
+coal
+CHP
+production
+during
+summertime. Simultaneously, heat pump production increased as
+it was no longer economical to start CHP plants. The major differ-
+ences between 2013 and 2015 were in the utilization of CHP.
+Increasing waste heat production decreased CHP production in all
+of the scenarios, but CHP has far less operational hours in 2015, due
+to lower electricity prices. In 2015, on the other hand, heat pumps
+were operational during almost all hours, due to low electricity
+prices.
+Utilized waste heat, on an hourly basis, in marginal cost sce-
+narios is presented in Fig.11. During most hours, the waste heat was
+utilized to its full capacity. During some hours, the waste heat was
+not utilized, and most of the time, non-utilization hours were only a
+few consecutive hours. In 2015, when the electricity prices were
+lower, waste heat was utilized during 99% of the hours while in
+2013, waste heat was utilized less, i.e. 95% in moderate and high
+scenarios. With the current pricing system, most of the heat was
+utilized even if the waste heat had a high capacity. This suggests
+that proposed pricing structure was at least favorable for the DH
+network operator.
+In 100%-utilization scenarios, where waste heat was subtracted
+directly from demand, there were some differences to marginal
+pricing scenarios. In the marginal cost scenarios, there were certain
+points where waste heat was not utilized; but in the 100%-utili-
+zation scenarios, these hours were satisﬁed with waste heat. The
+effects of utilizing 100% of the waste heat affected operations of
+CHP and heat pumps (only in 2013) the most by decreasing their
+utilization rates even further. On a few occasions in the scenarios,
+waste heat production satisﬁed the entire DH demand and pro-
+duced surplus heat. Without the possibilities to store the heat, the
+excess waste heat could not be utilized.
+One of the most important issues in utilizing waste heat is the
+potential savings in heat production costs. As it was discussed,
+waste heat utilization decreased the operation of CHP and therefore
+proﬁts from electricity sales will decreased. This is more apparent
+in 2015, when low electricity prices resulted in less proﬁt already in
+the reference scenario. In Table 4, the savings in heat production
+costs in different marginal cost scenarios are presented. The results
+showed that increased waste heat will result in savings in total
+production costs, e.g. 12.2% savings in the High scenario in 2013.
+Even if the proﬁts from electricity decreased, the total operational
+costs decreased in all of the scenarios and even more when waste
+heat was utilized to a further extent. The results showed that uti-
+lizing waste heat affected operations of other production units, but
+increased utilization was proﬁtable in any case from the systems
+perspective.
+5. Discussion and further research
+5.1. Discussion on waste heat availability and green data center
+The waste heat availability in all DCs is dependent on power
+consumption; in the sample DC this was at least 60e80% of the
+Table 2
+Differences in simulated scenarios.
+Reference
+Marginal cost
+100%-Utilization
+Produced waste heat fed to DH network
+0%
+Depending on marginal production costs of the system
+100%
+Cost of waste heat
+e
+Seasonal pricing
+(13.8e40.4 V/MWh)
+0V
+(100% will be utilized regardless of the price)
+Amount of waste heat
+e
+Constant load
+2013 e Moderate: 23.4 MW
+2013 e High: 58.5 MW
+2015 e Moderate: 18.7 MW
+2015 e High: 46.8 MW
+Monthly shifting load
+2013 e Moderate: 20e28 MW
+2013 e High: 50e70 MW
+2015 e Moderate: 15e20 MW
+2015 e High: 38e50 MW
+Fig. 8. Simulated hourly (x-axis) district heat load (MW) and outside temperature in
+Espoo in 2013.
+Fig. 9. Monthly average Elspot prices (V/MWh) for Finland in 2013 and 2015 [34].
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1234
+
+
+### PAGE 9
+maximum as presented in Fig. 5, regardless of the amount of service
+workload. By investing in a waste heat reuse system, DCs can
+become more energy efﬁcient. Green DC can be obtained with
+outdated high energy consuming equipment by utilizing on-site or
+off-site renewable energy sources combined with waste heat reuse.
+The DC industry is highly competitive; customers may drop off,
+leading to lower overall capacity and the amount of waste heat may
+decrease. This can be veriﬁed in Fig. 6; however, the impact is small
+as new customers also come in during the same time period. Risk of
+variance in availability of waste heat can also be pooled. DH oper-
+ators need many DCs to mitigate risk. An analogy can be drawn
+from risk mitigation through investment portfolio management.
+This would require DH operators to pool their contracts. None-
+theless, a DH network cannot rely solely on the waste heat from
+DCs.
+5.2. Pricing structure of waste heat
+As the case study showed, the proposed pricing structure was
+proﬁtable from the DH network operator's point of view, as waste
+Fig. 10. Simulated heat and electricity production in Moderate Marginal cost scenario in 2013. Upper part of the ﬁgure denotes the hourly heat load of individual plants (MW) and
+the lower part of the ﬁgure denotes electricity load (MW) by CHP plants during the simulated year.
+Table 3
+Operational hours of individual plants in marginal cost scenarios (not full-load
+hours).
+Plants
+2013
+2015
+Ref
+Moderate
+High
+Ref
+Moderate
+High
+CHP
+Suomenoja 1
+82%
+66%
+62%
+63%
+61%
+53%
+Suomenoja 2
+9%
+6%
+4%
+2%
+2%
+0%
+Suomenoja 6
+39%
+36%
+28%
+52%
+43%
+35%
+HOB
+Kivenlahti
+0%
+0%
+0%
+0%
+0%
+0%
+Suomenoja 7
+0%
+0%
+0%
+0%
+0%
+0%
+Tapiola
+0%
+0%
+0%
+4%
+4%
+3%
+Suomenoja 3
+51%
+46%
+35%
+65%
+58%
+56%
+Vermo
+1%
+1%
+0%
+3%
+2%
+2%
+Kaupunginkallio
+0%
+0%
+0%
+0%
+0%
+0%
+Otaniemi
+14%
+12%
+9%
+28%
+25%
+21%
+Juvanmalmi
+9%
+15%
+12%
+11%
+10%
+15%
+Kalaj€arvi
+3%
+4%
+4%
+4%
+4%
+4%
+Vermo 2 natural gas
+22%
+20%
+13%
+24%
+31%
+25%
+Masala
+12%
+18%
+16%
+15%
+13%
+15%
+Kirkkonummi
+6%
+10%
+7%
+8%
+10%
+9%
+Vermo 2 bio-oil
+0%
+0%
+0%
+0%
+0%
+0%
+Kivenlahti Pellets
+0%
+0%
+0%
+0%
+0%
+0%
+Other
+Suomenoja heat pump
+79%
+93%
+92%
+99%
+99%
+98%
+Waste heat
+e
+96%
+95%
+e
+99%
+99%
+0
+10
+20
+30
+40
+50
+60
+70
+1
+367
+733
+1099
+1465
+1831
+2197
+2563
+2929
+3295
+3661
+4027
+4393
+4759
+5125
+5491
+5857
+6223
+6589
+6955
+7321
+7687
+8053
+8419
+Waste heat load (MW)
+2013 MODERATE
+2013 HIGH
+2015 MODERATE
+2015 HIGH
+Fig. 11. Waste heat load proﬁle in the marginal cost simulations. X-axis denotes hours of one year (8760) and y-axis denotes utilized waste heat load (MW) in different scenarios.
+Table 4
+Cost savings in marginal cost scenarios compared to the reference scenarios.
+Marginal cost scenarios
+2013
+2015
+Moderate
+High
+Moderate
+High
+Total production costs
+5.5%
+12.2%
+4.0%
+9.9%
+Proﬁts from sold electricity
+17.1%
+26.3%
+7.7%
+24.1%
+Savings in total
+0.6%
+6.3%
+3.2%
+7.3%
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1235
+
+
+### PAGE 10
+heat had a high utilization rate in all of the scenarios. It must be
+pointed out that these values and results did not represent the
+actual operation of plants or heat prices in the Espoo DH network,
+but they were results of simulations of the network on certain as-
+sumptions. Nevertheless, the pricing structure must be mutually
+beneﬁcial so that the interest to sell and buy exists for respective
+parties. For a DH producer, it is most important to get the waste
+heat when the heat demand is at its highest; therefore, heat is
+typically more valuable during high heat demand periods, if there is
+no solution for storing the heat. However, the DC operators will
+produce heat constantly, and they are operating based on the
+processing demand. The pricing structure must be transparent and
+above all predictable to analyze beneﬁts and proﬁts in the long
+term. In further research, different pricing structures and their ef-
+fects should be analyzed, e.g. ﬁxed pricing and hourly pricing.
+Furthermore, the effects of different pricing structures should be
+analyzed to see how they affect investments in DCs.
+5.3. Prospects for low-temperature district heating networks
+Low-temperature district heating networks (LTDH) are a rather
+new concept, especially in Finland, where supply water tempera-
+tures have been high. LTDH have been studied and implemented,
+for example, in Denmark and Germany, where the heat demand is
+not as high as in Finland, and therefore overall temperatures in the
+DH networks are lower. In the LTDH supply, water temperature can
+be less than 50 C and the return temperature close to 20 C. LTDH
+could be well utilized in newly built housing areas with nZEBs.
+LTDHs would allow smaller networks to be highly efﬁcient
+where low quality heat could be utilized more efﬁciently. If the
+supply water temperatures are below 50 C, waste heat from DCs
+could be directly fed to the LTDH network without the heat pump,
+especially from DCs with modern cooling technologies, which
+allow high waste heat recovery temperatures. LTDH would allow
+distributed heat generation and an open two-way heat network,
+where consumers can become prosumers of heat (both producing
+and consuming heat). Syri et al. [35] have studied the possibilities
+for open DH supply and marginal cost-based DH in Espoo, and the
+results show that marginal cost-based DH would increase the
+proﬁtability of utilizing waste heat and the total operating costs of
+DH production.
+The concept of environmentally opportunistic computing (EOC)
+has been discussed [36]. EOC servers are not located in a centralized
+DC, but they are integrated into apartments, ofﬁce buildings etc.
+EOC waste heat would be captured and distributed through an in-
+built network to the nodes where the heat demand exists. EOC can
+be considered as a local, distributed heat network, and in that
+sense, they act as “DH networks”. However, the concept of EOC
+should be implemented with the concept of LTDH.
+Table 5 presents the beneﬁts of LTDH networks and the current
+barriers slowing down the development. One key issue in LTDHs is
+the improved prospects for heat storages. Thermal storages are
+highly efﬁcient if the temperature is lower, as the heat losses
+decrease in lower temperatures [37].
+6. Conclusions
+To conclude, the combined load proﬁle of service trafﬁc, backup
+trafﬁc, power consumption, and payload processing are equally
+spread across each hour of the day making DC a reliable source of
+heat. From the perspective of a DH network operator, utilizing
+waste heat in a DH network is beneﬁcial on a system level. Waste
+heat utilization saved total operational costs of the simulated DH
+system by 0.6%e7.3%, depending on the waste heat utilization level
+(18.7 MW - 58.5 MW). However, the proﬁtability was tightly linked
+to the pricing structure and electricity prices of the simulated years.
+Utilizing waste heat improves the energy efﬁciency of a data
+center. With efﬁcient use of waste heat, it is possible to achieve
+better ERE values. Waste heat is an inevitable by-product of a DC
+and in any case must be managed; thus making utilization an
+economically, environmentally and technically sustainable prac-
+tice. Regardless of the current energy efﬁciency of a DC, utilizing
+waste heat improves the energy efﬁciency. Energy efﬁciency of DCs
+is benchmarked globally and therefore sustainable DCs have a
+competitive advantage. Customers and regulators are becoming
+aware of the ever increasing power consumption of DCs and are
+increasingly demanding actions to reduce power usage and CO2
+emissions.
+For the DH system, utilizing waste heat decreases operational
+hours of other units in the DH network. During low price electricity
+hours, waste heat mainly replaces HOB as CHP plants are hardly
+used in any case. However, cheap waste heat may decrease elec-
+tricity production of CHP plants, which may affect supply in elec-
+tricity markets and thus increase electricity prices. Emission
+reductions for DH systems depends on which fuel and technology is
+replaced by waste heat. In the Espoo case, most of the replaced heat
+was fossil fuel based production, and thus waste heat utilization
+decreases CO2 emissions of the DH production and improves en-
+ergy efﬁciency on a system level. However, it must be noted that
+priming waste heat with heat pumps consumes electricity and
+therefore the overall environmental impact depends on the emis-
+sion factor of the electricity in question. To further study the
+proﬁtability of waste heat, it is recommended to investigate waste
+heat pricing structure and analyze the potential of LTDH networks
+to maximize the potential of the low-quality heat from DCs.
+Acknowledgements
+This work was supported by the Fortum Foundation Scholar-
+ships (grant numbers 201500047, 201600076) and the STEEM
+project of Aalto Energy Efﬁciency Programme. The authors would
+also like to thank Dr. Aira Hast from Aalto University for her help in
+the modeling part in this work and Dr. Suvi Haimi from University
+of Helsinki for proof reading the article.
+Table 5
+Beneﬁts and barriers of LTDH networks [37].
+Beneﬁts of LTDH
+Current barriers
+ Reduced losses in DH network
+ High-temperature heat demand
+ Higher COP values for heat pumps
+ Short cut faults
+ Improved power-to-heat ratios in steam CHP plants
+ Legionella bacteria growth at low water temperatures
+ Greater utilization of low-temperature industrial waste
+heat
+ Possible bottlenecks in DH network capacity due to insufﬁcient temperature difference between supply and
+return
+ More efﬁcient use of heat storages
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1236
+
+
+### PAGE 11
+Appendix A
+References
+[1] Koomey J. Growth in data center electricity use 2005 to 2010. Oakland, CA:
+Analytics Press; 2011.
+[2] Nada N, Elgelany A. Green technology, cloud computing and data centers: the
+need for integrated energy efﬁciency framework and effective metric. Int J
+Adv Comput Sci Appl 2014;5(5):89e93.
+[3] Finnish Energy Industries, Energiavuosi 2015-kaukol€amp€o (Energy year 2015
+-district heating). [Online]. Available: http://energia.ﬁ/tilastot-ja-julkaisut,
+Accessed 19 April 2016, [In Finnish].
+[4] Svensk Fj€arrv€arme, Industriell spillv€arme (Industrial waste heat), 2016. [On-
+line].
+Available:
+http://www.svenskfjarrvarme.se/Medlem/Fokusomraden-/
+Energitillforsel-och-produktion/Spillvarme/,
+Accessed
+22
+April
+2016,
+[In
+Swedish].
+[5] Wahlroos M, Syri S, Kankaala S, Sekki T, Huuskonen S. Striving towards sus-
+tainable and energy efﬁcient Otaniemi campus - the case of demand side
+management in district heating. In: 11th conference on sustainable devel-
+opment of energy. Lisbon: Water and Environment Systems; 2016. p. 1e14.
+[6] Lund H, M€oller B, Mathiesen BV, Dyrelund A. The role of district heating in
+future renewable energy systems. Energy Mar. 2010;35(3):1381e90.
+[7] Connolly D, et al. Heat Roadmap Europe: combining district heating with heat
+savings to decarbonise the EU energy system. Energy Policy Feb. 2014;65:
+475e89.
+[8] Deng W, Liu F, Jin H, Li B, Li D. Harnessing renewable energy in cloud data-
+centers: opportunities and challenges. IEEE Netw Feb. 2014;28(1):48e55.
+[9] I. Goiri, et al. Matching renewable energy supply and demand in green
+datacenters, new res. Chall. Mob. Opportunistic delay-toler. NetworksEnergy-
+Table A.1
+Heat production units in DH network of Espoo in 2015 [32] [35].
+Plant
+Boilers
+Heat output (MW)
+Electricity output (MW)
+Main fuel
+Suomenoja 1
+1
+162
+75
+Coal
+Suomenoja 2
+1
+213
+234
+Natural gas
+Suomenoja 6
+1
+80
+49
+Natural gas
+Suomenoja 3
+1
+70
+e
+Coal
+Suomenoja 7
+1
+35
+e
+Natural gas
+Kivenlahti
+2
+65
+e
+Heavy Fuel Oil
+Tapiola
+2
+160
+e
+Natural gas
+Vermo
+2
+80
+e
+Natural gas
+Kaupunginkallio
+2
+80
+e
+Light Fuel Oil
+Otaniemi
+3
+120
+e
+Natural gas
+Juvanmalmi
+1
+15
+e
+Natural gas
+Kalaj€arvi
+2
+5
+e
+Light Fuel Oil
+Vermo
+2
+45
+e
+Natural gas
+Masala
+2
+5
+e
+Natural gas
+Kirkkonummi
+4
+31
+e
+Natural gas
+Conﬁdential external heat
+e
+12
+e
+e
+Suomenoja heat pumps
+e
+40
+e
+Electricity
+Vermo
+1
+35
+e
+Bio-oil
+Kivenlahti pellets
+1
+40
+e
+Wood pellets
+Table A.2
+Characteristics and costs for CHP plants and HOB used in simulation
+CHP
+HOB
+Costs
+Start-up cost
+2500V
+0V
+Variable operating and maintenance cost
+4 V/MWhel
+5 V/MWhheat
+Other characteristics
+Total efﬁciency
+90%
+85%
+Allowed load (of full capacity)
+40-100%
+0-100%
+Minimum operation hours
+One week (168 h)
+No minimum operational hours
+Start-up time
+4 h
+1 h
+Shut-down period
+4 h
+1 h
+Annual maintenance period
+July
+No annual maintenance
+Heat rejection
+Possible when electricity price is high
+No heat rejection needed
+Table A.3
+Fuel, electricity and tax prices of different fuels as of September 2015. VAT is excluded [34,38e40].
+Fuel and technology
+Fuel costs (V/MWhfuel)
+Taxes (V/MWhfuel)
+Total costs (V/MWhfuel)
+Coal (CHP)
+9
+16
+25
+Natural gas (HOB)
+28
+17
+45
+Natural gas (CHP)
+28
+14
+42
+Light Fuel Oil (HOB)
+42
+19
+61
+Heavy Fuel Oil (HOB)
+35
+20
+55
+Wood Pellet (HOB)
+47
+0
+47
+Biodiesel (HOB)
+42
+48
+90
+Electricity spot prices 2015 (Nord Pool Elspot)
+0-150 V/MWhel (on average 30 V/MWhel)
+Electricity tax and distribution costs
+39 V/MWhel
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1237
+
+
+### PAGE 12
+Aware data cent. Archit Infrastruct Commun Feb. 2015;25(Part B):520e34.
+[10] Oro E, Depoorter V, Garcia A, Salom J. Energy efﬁciency and renewable energy
+integration in data centres. Strategies and modelling review. Renew Sustain
+Energy Rev Feb. 2015;42:429e45.
+[11] Bertoldi P. A market transformation programme for improving energy efﬁ-
+ciency in data centres. In: Presented at the 2014 ACEEE summer study on
+energy efﬁciency in buildings; 2014. 9.14-9.26.
+[12] Pedram M. Energy-efﬁcient datacenters. IEEE Trans Comput.-Aided Des Integr
+Circuits Syst October 2012;31(10):1465e84.
+[13] Weller-McCormack T. ICT sustainability: the global benchmark 2011. Fujitsu.
+September 2011.
+[14] Pakbaznia E, Pedram M. Minimizing data center cooling and server power
+costs. In: Proceedings of the 2009 ACM/IEEE international symposium on Low
+power electronics and design, San Francisco, CA, USA; 2009. p. 145e50.
+[15] ZDNet. Finland's largest, greenest multi-tenant datacentre on the way before.
+2017.
+10-Jul-2015.
+[Online].
+Available:
+http://www.zdnet.com/article/
+ﬁnlands-largest-greenest-multi-tenant-datacentre-on-the-way-before-2017/.
+[Accessed 25 April 2016].
+[16] Lu T, Lü X, Remes M, Viljanen M. Investigation of air management and energy
+performance in a data center in Finland: case study. Energy Build Dec.
+2011;43(12):3360e72.
+[17] Marcinichen JB, Olivier JA, Thome JR. On-chip two-phase cooling of data-
+centers: cooling system and energy recovery evaluation, 13th Braz. Congr
+Therm Sci Eng Aug. 2012;41:36e51.
+[18] Ebrahimi K, Jones GF, Fleischer AS. Thermo-economic analysis of steady state
+waste heat recovery in data centers using absorption refrigeration. Appl En-
+ergy Feb. 2015;139:384e97.
+[19] Kupiainen
+M.
+L€amp€opumppu
+konesalin
+j€a€ahdytyksess€a
+ja
+l€amm€ontalteenotossa (Data centre cooling and heat recovery with a heat
+pump). Bachelor’s thesis. Mikkeli, Finland: MAMK University of Applied Sci-
+ences; 2014 [In Finnish].
+[20] Stenberg S-Å. Tietokonesalien hukkal€amm€on hy€odynt€amismahdollisuuksien
+teknis-taloudellinen optimointi (Technical and economical optimization of
+data center waste heat utilization). Master’s thesis. Espoo, Finland: Aalto
+University; 2015 [In Finnish].
+[21] Sorvari J. Konesalin ylij€a€am€al€amm€on hy€odynt€aminen Levin Koutalaella (Uti-
+lization of waste heat from data center in Koutalaki Levi). Master’s thesis.
+Espoo, Finland: Aalto University; 2015 [In Finnish].
+[22] Uddin M, Alsaqour R, Shah A, Saba T. Power usage effectiveness metrics to
+measure efﬁciency and performance of data centers. Appl Math Inf Sci Sep.
+2014:2207e16.
+[23] B. Lajevardi, K. R. Haapala, and J. F. Junker, An energy efﬁciency metric for data
+center assessment, in 2014 industrial and systems engineering research
+conference, pp. 1e8.
+[24] Bash C, Forman G. Cool job allocation: measuring the power savings of placing
+jobs at cooling-efﬁcient locations in the data center. In: 2007 USENIX annual
+technical conference on proceedings of the USENIX annual technical confer-
+ence, Santa clara, CA; 2007. p. 1e6.
+[25] Beitelmal AH, Fabris D. Servers and data centers energy performance metrics.
+Energy Build Sep. 2014;80:562e9.
+[26] Jeong S, Kim YW. A holistic investigation method for data center resource
+efﬁciency. In: 2014 int. Conf. Inf. Commun. Technol. Converg. ICTC; Oct. 2014.
+p. 548e51.
+[27] Fiandrino C, Kliazovich D, Bouvry P, Zomaya A. Performance and energy ef-
+ﬁciency metrics for communication systems of cloud computing data centers.
+IEEE Trans Cloud Comput 2015;99. 1e1.
+[28] Zimmermann S, Meijer I, Tiwari MK, Paredes S, Michel B, Poulikakos D.
+Aquasar: a hot water cooled data center with direct energy reuse, 2nd Int.
+Meet. Clean. Combust. CM0901-Detail. Chem Models Clean Combust Jul.
+2012;43(1):237e45.
+[29] Finnish Meteorological Institute. The Finnish Meteorological Institute's open
+data [Online]. Available: https://en.ilmatieteenlaitos.ﬁ/open-data. [Accessed
+19 October 2016].
+[30] Davies GF, Maidment GG, Tozer RM. Using data centres for combined heating
+and cooling: an investigation for London. Appl Therm Eng Feb. 2016;94:
+296e304.
+[31] EMD International A/S. EnergyPRO [Online]. Available: http://www.emd.dk/
+energypro/. [Accessed 8 April 2015].
+[32] Finnish Energy Industries. District heating in Finland 2014. 2014 [Online].
+Available: http://energia.ﬁ/sites/default/ﬁles/dokumentit/tilastot-ja-julkaisut/
+district_heating_in_ﬁnland_2014_web_.pdf. [Accessed 3 December 2015].
+[33] T&T, 200 GWh palvelinten hukkal€amp€o€a talteen vuodessa - Soneran data-
+keskus l€ammitt€a€a kohta Espoota (200 GWh of server waste heat to be
+recovered in a year - Sonera data center will soon heat the city of Espoo).
+[Online].
+Available:
+http://www.tekniikkatalous.ﬁ/tekniikka/energia/200-
+gwh-palvelinten-hukkalampoa-talteen-vuodessa-soneran-datakeskus-lam-
+mittaa-kohta-espoota-6593184, Accessed 24 October 2016, [In Finnish].
+[34] Nord pool spot, historical market data. 2015 [Online]. Available: http://www.
+nordpoolspot.com/historical-market-data/. [Accessed 7 January 2016].
+[35] Syri S, Makela H, Rinne S, Wirgentius N. Open district heating for Espoo city
+with marginal cost based pricing. In: Eur. Energy mark. Eem 2015 12th int.
+Conf. On; May 2015. p. 1e5.
+[36] Zachary Woodruff J, Brenner P, Buccellato APC, Go DB. Environmentally
+opportunistic computing: a distributed waste heat reutilization approach to
+energy-efﬁcient buildings and data centers. Energy Build Feb. 2014;69:41e50.
+[37] IEA DHC. Annex X ﬁnal report toward 4th generation district heating: expe-
+rience and potential of low-temperature district heating. Sep-2014 [Online].
+Available:
+http://energia.ﬁ/sites/default/ﬁles/iea_annex_x_ﬁnal_report_
+2014_-_toward_4th_generation_district_heating.pdf. [Accessed 20 January
+2016].
+[38] Finnish petroleum and biofuels association, prices and taxes. 2015 [Online].
+Available:
+http://www.oil.ﬁ/en/1-prices-and-taxes.
+[Accessed
+7
+January
+2016].
+[39] Statistics Finland. Energy prices. 2015 [Online]. Available: http://www.stat.ﬁ/
+til/ehi/tau_en.html. [Accessed 7 January 2016].
+[40] Customs Finland. Excise taxation customer bulletin 21, energy taxation. May-
+2015.
+M. Wahlroos et al. / Energy 140 (2017) 1228e1238
+1238

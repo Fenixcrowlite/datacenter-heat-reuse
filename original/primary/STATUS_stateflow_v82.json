@@ -1,0 +1,100 @@
+{
+  "version": "0.82",
+  "timestamp_utc": "2026-10-13T10:29:50.956978+00:00",
+  "inherits": "STATUS_v81.json",
+  "result": "SAVED_V80_REFRIGERANT_APPROACH_SENSITIVITY_ACCEPTED_CALIBRATION_OPEN",
+  "new_model": false,
+  "saved_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v80.slx",
+  "saved_model_version": "0.80",
+  "model_sha256": "f7032682f4d6c338a99f1425311a807254c3022ba8527dba5f616f53b0ac66be",
+  "model_executed_this_run": true,
+  "trace_schema": 75,
+  "reporting_api_version": "0.76",
+  "matlab_passed": 128,
+  "matlab_failed": 0,
+  "independent_passed": 14765,
+  "independent_failed": 0,
+  "complete_saved_model_runs": 42,
+  "held_intervals": 78,
+  "positive_segments": 78,
+  "interior_events": 0,
+  "required_actual_final_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "monotonic_comparisons_passed": 48,
+  "monotonic_comparisons_failed": 0,
+  "reviewer_selfchecks": 4,
+  "matlab_metadata": {
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "license_observed": 1,
+    "chart_count": 1,
+    "action_language": "MATLAB",
+    "simulation_mode": "normal",
+    "states": [
+      "IDLE",
+      "HEAT_RECOVERY",
+      "STORAGE_CHARGE",
+      "STORAGE_DISCHARGE",
+      "BACKUP",
+      "UNMET_DEMAND"
+    ]
+  },
+  "result_directory": "results/hp_approach_v82_20261013T101754_139297Z",
+  "independent_qa": "results/hp_approach_v82_20261013T101754_139297Z/independent_QA_v82_20261013T102754_069653Z.json",
+  "derivation": "audit/HP_approach_derivation_v82.md",
+  "results": "audit/HP_approach_results_v82.md",
+  "primary_article_replication": false,
+  "upstream_performance_supplement_acquired": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "limitations": [
+    "Synthetic reduced constant-cooling-factor HP and ambient-reference TES; no equipment calibration, article replication, measured physical validation, annual or generated-code acceptance. Full primary signoffs remain 0/31.",
+    "Checkpoint 0.82 is an executed sensitivity experiment; saved model remains 0.80, thermal kernel/trace schema 75 and reporting API 0.76. No new SLX or production equation change.",
+    "Approach values, eta=0.5, source coefficient, temperature/glide and auxiliary settings are engineering assumptions. The 2025 commercial-device correlation supplement is not acquired.",
+    "No independent compressor-electricity capacity is enforced. Increased source-limited condenser service at larger approaches comes from added compressor work, not extra waste heat. This is a model-boundary limitation, not a numerical dispatch defect.",
+    "Independent QA is same-agent algorithmic independence: exact Fraction algebra and 120/160-digit exp/log trajectories call no production MATLAB solver. MATLAB reopens MAT for binary export; no independent personnel or independent MAT-parser claim.",
+    "The 36 comparison schedules remain below the hot-water floor and contain no interior events. Six standard fixtures cover final modes. No general nonlinear/variable-source-map sensitivity is proved.",
+    "Restricted startup, first batch JSON cell/struct failure, and first QA single-row-shape failures are retained. The reviewer shape repair is separately hash-sealed; production outputs, equations and tolerances were unchanged."
+  ],
+  "next_actionable_task": "Acquire the reference62 primary supplement or inspect the author-group-linked 2022 predecessor DOI 10.1016/j.applthermaleng.2022.118194 as separately labelled primary evidence. Do not substitute predecessor coefficients for the 2025 fit. Trace compressor electrical rating, refrigerant axes, admissible map domain and auxiliary thermal destinations before adding a separate explicit electrical-power capacity backend. Preserve accepted v80 and v81-v82 evidence; no repeated monitor tests without a new hypothesis.",
+  "representative_results": [
+    {
+      "id": "fixed_output_T30_e1_h1",
+      "delivered_MWh": "0.250",
+      "source_MWh": "0.2152325076053889590307945728792322648937075191885099821206359525653057665096062040484248900409970731654795278139781170124632869425510821547280069651504151725062",
+      "compressor_MWh": "0.0347674923946110409692054271207677351062924808114900178793640474346942334903937959515751099590029268345204721860218829875367130574489178452719930348495848274938",
+      "unmet_MWh": "0.00",
+      "heating_COP": "7.190624999999999526304842826599876085917154947916666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666682"
+    },
+    {
+      "id": "fixed_output_T30_e10_h10",
+      "delivered_MWh": "0.250",
+      "source_MWh": "0.1935711406690850429046252459655368957352278430548156787070791244950810307807003595184925386657436877356623807289937589389754700668743565824765520816981967925212",
+      "compressor_MWh": "0.05642885933091495709537475403446310426477215694518432129292087550491896921929964048150746133425631226433761927100624106102452993312564341752344791830180320747878",
+      "unmet_MWh": "0.00",
+      "heating_COP": "4.430357142857142586459910186628500620524088541666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666"
+    },
+    {
+      "id": "source_limited_T30_e1_h1",
+      "delivered_MWh": "0.0580767289247853327194270889322069706395268440246582031250",
+      "source_MWh": "0.04999999999999988826288339955814072880727684752381505015164667097357562370487952663931950192680574131855476306523307410495924569316643402230421491010755163086404",
+      "compressor_MWh": "0.00807672892478544445654368937406624183224999650084315297335332902642437629512047336068049807319425868144523693476692589504075430683356597769578508989244836913596",
+      "unmet_MWh": "0.941923271075214674219466814975021407008171081542968750",
+      "heating_COP": "7.190624999999999526304842826599876085917154947916666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666672"
+    },
+    {
+      "id": "source_limited_T30_e10_h10",
+      "delivered_MWh": "0.06457574180114503126226566109835403040051460266113281250",
+      "source_MWh": "0.04999999999999983992155811280853680449603655199644824903985853857940876683242565492235098709021844704997345962649958030020189890741201239232974040156358159805448",
+      "compressor_MWh": "0.01457574180114519134070754828981722590447805066468456346014146142059123316757434507764901290978155295002654037350041969979810109258798760767025959843641840194552",
+      "unmet_MWh": "0.9354242581988549964933099545305594801902770996093750",
+      "heating_COP": "4.430357142857142586459910186628500620524088541666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666665"
+    }
+  ]
+}

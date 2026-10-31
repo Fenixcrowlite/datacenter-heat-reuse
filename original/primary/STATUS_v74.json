@@ -1,0 +1,83 @@
+{
+  "version": "0.74",
+  "timestamp_utc": "2026-10-12T08:03:27.669746+00:00",
+  "inherits": "STATUS_v73.json",
+  "result": "BOUNDED_HELD_SCHEDULE_ADAPTER_ACCEPTED_QA_PASS",
+  "new_model": false,
+  "saved_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v73r2.slx",
+  "saved_model_version": "0.73r2",
+  "model_executed_this_run": true,
+  "corrected_model_accepted": false,
+  "inherited_model_acceptance_preserved": true,
+  "model_sha256": "4f90f180b8fe8f3956543a6dfff9635276b3c140e2deebaed06cc4b8a9e88610",
+  "baseline_model_hashes": {
+    "v73r2": "4f90f180b8fe8f3956543a6dfff9635276b3c140e2deebaed06cc4b8a9e88610",
+    "v66": "cc3a4f1f2c58dbe47d519ef8a4e60eb56e99b80b9cf53d01eb40dc8b469ebfd2",
+    "v57": "05714844ca9dc182dc4ab8328c09e928695b0fb3967dfc7194c97b6eab65b387"
+  },
+  "matlab_passed": 475,
+  "matlab_failed": 0,
+  "independent_passed": 60818,
+  "independent_failed": 0,
+  "reviewer_selfchecks": 7,
+  "required_actual_final_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "probe_scenarios": 18,
+  "complete_accepted_schedules": 12,
+  "accepted_runs_including_valid_prefixes": 14,
+  "completed_held_intervals": 382,
+  "positive_event_segments": 394,
+  "interior_events": 12,
+  "actual_runtime_rejections": 6,
+  "actual_baseline_comparisons": 14,
+  "matlab_metadata": {
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "license_observed": 1,
+    "stateflow_ver": [],
+    "chart_count": 1,
+    "action_language": "MATLAB",
+    "simulation_mode": "normal",
+    "states": [
+      "IDLE",
+      "HEAT_RECOVERY",
+      "STORAGE_CHARGE",
+      "STORAGE_DISCHARGE",
+      "BACKUP",
+      "UNMET_DEMAND"
+    ]
+  },
+  "result_directory": "results/held_schedule_v74_20261012T075732_044061Z",
+  "independent_qa": "results/held_schedule_v74_20261012T075732_044061Z/independent_QA_v74_20261012T080104_224129Z.json",
+  "derivation": "audit/Held_schedule_derivation_v74.md",
+  "results": "audit/Held_schedule_results_v74.md",
+  "source_code": [
+    "matlab/+dchr/adapt_held_schedule_v74.m",
+    "matlab/+dchr/report_held_schedule_v74.m",
+    "matlab/run_held_schedule_v74.m"
+  ],
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "comparison_scope": "12 saved-v66 schedules; 2 saved-v57 schedules, including equal delivered-service control",
+  "development_failures_preserved": [
+    "results/held_schedule_v74_20261012T075130_241955Z",
+    "results/held_schedule_v74_20261012T075425_611845Z",
+    "results/held_schedule_v74_20261012T075732_044061Z/independent_QA_v74_20261012T080041_388993Z.json"
+  ],
+  "limitations": [
+    "Synthetic 48-hour operating motifs and short controls only, not an annual weather/demand representation or measured validation. No new primary source signoff; 0/31 remain.",
+    "Actual unchanged saved v73r2 executes normal-mode analytic event segments inside protocol calls, not solver-clock thermal event firing. No new SLX or generated-code acceptance.",
+    "Binary held durations are authoritative; cumulative labels follow canonical binary64 cumsum and must lie in saved physical-clock hulls. General span/clock/order/dwell/segment refusals remain; no hidden retry or subdivision.",
+    "v66 sampled policy and v57 fixed maximum-tank condenser/fixed return boundary are materially different. Seasonal delivered service and final inventories differ; no cost/efficiency ranking. v57 cannot represent independent enable commands or variable timesteps in this adapter.",
+    "Same-agent algorithmic independence using exact-binary Fraction and 120/160-digit closed exp/log equations. MAT reopening/export is performed by MATLAB, not an independent HDF5 reader or independent personnel.",
+    "Finite normal engineering arithmetic only; arbitrary-scale, subnormal and overflow acceptance remain untested. Integrated electricity/service is a boundary diagnostic, not calibrated total primary-energy efficiency."
+  ],
+  "next_actionable_task": "Resume primary equipment-map evidence and boundary audit using audit/HP_upstream_boundary_results_v44.md: obtain and verify source20 upstream [62] primary text and performance-correlation supplement (DOI 10.1016/j.tsep.2025.103513), distinguish actual coefficients/domains from metadata, and document any access blocker. Trace refrigerant versus water axes, compressor/auxiliary power and admissible source/hot flow ranges before designing a separate calibrated backend. Preserve accepted v57/v66/v73r2 and v74 schedule evidence; do not interpret the synthetic comparison as calibrated or annual performance."
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp_utc": "2026-10-10T03:11:38.156560+00:00",
+  "sources": [
+    {
+      "file": "Copeland_AE4_1431_R2.pdf",
+      "url": "https://webapps.copeland.com/online-product-information/Publication/LaunchPDF?Index=AEB&PDF=1431",
+      "status": "FAILED",
+      "error": "<urlopen error [WinError 10013] \u0421\u0434\u0435\u043b\u0430\u043d\u0430 \u043f\u043e\u043f\u044b\u0442\u043a\u0430 \u0434\u043e\u0441\u0442\u0443\u043f\u0430 \u043a \u0441\u043e\u043a\u0435\u0442\u0443 \u043c\u0435\u0442\u043e\u0434\u043e\u043c, \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u043d\u044b\u043c \u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u0434\u043e\u0441\u0442\u0443\u043f\u0430>"
+    },
+    {
+      "file": "EnergyPlus_26_2_plant_loop_heat_pumps.html",
+      "url": "https://energyplus.readthedocs.io/en/v26.2.0/guides/engineering-reference/16.6-plant-loop-heat-pumps.html",
+      "status": "FAILED",
+      "error": "<urlopen error [WinError 10013] \u0421\u0434\u0435\u043b\u0430\u043d\u0430 \u043f\u043e\u043f\u044b\u0442\u043a\u0430 \u0434\u043e\u0441\u0442\u0443\u043f\u0430 \u043a \u0441\u043e\u043a\u0435\u0442\u0443 \u043c\u0435\u0442\u043e\u0434\u043e\u043c, \u0437\u0430\u043f\u0440\u0435\u0449\u0435\u043d\u043d\u044b\u043c \u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u0434\u043e\u0441\u0442\u0443\u043f\u0430>"
+    }
+  ]
+}

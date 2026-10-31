@@ -1,0 +1,52 @@
+{
+  "status": "SYNTHETIC_COUNTERFACTUAL_NOT_MEASURED",
+  "inputs": "pool=60kW, district=100kW, TES discharge request=20kW, hours 24..96",
+  "physical_release_allowed": false,
+  "cases": {
+    "both": {
+      "samples": 672,
+      "max_T_C": 30.0,
+      "trip_steps": 0,
+      "unhandled_kWh": 0.0,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 4308.836381494551,
+      "IT_generated_kWh": 28560.0,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 1.1920928955078125e-07,
+      "sha256": "ae7a642ade6eea1b1c383de0672e8a720bc375827454e85fbe4d58a450a2cabb",
+      "fault_period_unmet_kWh": 0.0,
+      "fault_period_it_kWh": 11270.548925000001
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_T_C": 30.0,
+      "trip_steps": 3,
+      "unhandled_kWh": 0.0,
+      "unmet_user_kWh": 253.00000000000006,
+      "hp_electric_kWh": 4236.550667208837,
+      "IT_generated_kWh": 28117.23353,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 1.1920928955078125e-07,
+      "sha256": "adfab44a6119f6bcf361ed89224b56a18ea1bbdf2b193df30b78b67e75aa3f66",
+      "fault_period_unmet_kWh": 253.0,
+      "fault_period_it_kWh": 10827.782455
+    },
+    "neither": {
+      "samples": 672,
+      "max_T_C": 30.0,
+      "trip_steps": 289,
+      "unhandled_kWh": 0.0,
+      "unmet_user_kWh": 11520.0,
+      "hp_electric_kWh": 1017.4078100659789,
+      "IT_generated_kWh": 17083.442342500002,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 1.1920928955078125e-07,
+      "sha256": "2f54477bad01918225334e5c9c551ce75fb1707830f1fc92810e23d5e7789fd7",
+      "fault_period_unmet_kWh": 11520.0,
+      "fault_period_it_kWh": 0.0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "manifest_files": 25,
+  "sha256_verified": 25,
+  "event_id": 1218,
+  "exact_event_count": 1,
+  "sqlite_quick_check": "ok",
+  "task_status": "review",
+  "task_stage": "planned",
+  "active_worker_pid": null,
+  "matlab_executed": false,
+  "unit_tests": 16,
+  "decimal_checks": 225792,
+  "cases": 12,
+  "intervals_per_case": 672,
+  "physical_release_allowed": false
+}

@@ -1,0 +1,10 @@
+{
+  "failures": [],
+  "failed": 0,
+  "manifest_sha256": "d98427cab45224caf8ffb8c759833b6f72530bef675a9e1b56a8701f98358aa1",
+  "scope": "Post-finalization immutable artifact hash and size verification only; no repeated numerical simulation",
+  "checks": 115,
+  "manifest_file": "audit/Stateflow_evidence_manifest_v26_20261009T080121_129319Z.json",
+  "timestamp_utc": "2026-10-09T08:01:56.1399758Z",
+  "passed": 115
+}

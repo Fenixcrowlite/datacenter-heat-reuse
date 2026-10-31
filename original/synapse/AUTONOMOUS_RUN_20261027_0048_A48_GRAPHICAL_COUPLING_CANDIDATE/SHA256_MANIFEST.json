@@ -1,0 +1,8 @@
+{
+  "prepare_a48.py": "eb3886a124e2fdd67056d0bfdd1b2fe859ddb35548b4009c8cab99785a6e3eda",
+  "build_a48.m": "24a38b3052c02ac76fe8f928c3ab917fd6b7c3f09301c858ac10dde898194762",
+  "test_a48.py": "1a5ffee5d81763f0762f38c9bc7070d035538ef324b341cd8b9143517570cbdc",
+  "SOURCE_CANDIDATE.json": "0340cca0ac672b0e395352754956c69d4bfad45bee110edc34608aa2a3c60825",
+  "PARITY_PROBE.json": "bd8b8bb7d3d9913e19af0eca45b4db064b6bd4aa3eb0efb8d73e34e1fd61db15",
+  "EVIDENCE.json": "578b20d439c40c70bb886dd14054476862d544e5f46b84cab9cbbba1b8956de6"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "A44_GRAPHICAL_STATEFLOW_OPEN_LOOP_PARITY_PASS",
+  "physical_release": false,
+  "hardware_control": false,
+  "compressor_lag_integrated": false,
+  "model_sha256": "c55dc5a1d4311104e675aebd6045e19883f95f27ea33db42d155edbdffe12307",
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2050_A44_GRAPHICAL_STATEFLOW\\DCHR_A44_Graphical_Supervisor.slx",
+  "existing_task_id": "scc-3d9d172beb6e1b",
+  "comparisons": 5376,
+  "scenarios": 4,
+  "samples_per_scenario": 672,
+  "state_count": 4,
+  "transition_count": 7,
+  "python_tests": "8/8 PASS",
+  "upstream": "A43 unchanged, not integrated",
+  "next_step": "A45 connect graphical chart to A43 closed-loop thermal system; implement HP compressor startup lag with energy balances; rerun 7x672, independent QA"
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "file": "DC_Pool_Capacity_Fault_20261023_SK.slx",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "dc_pool_coupled_step_capacity_SK.m",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "build_capacity_fault_simulink_SK.m",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "run_capacity_fault_annual_SK.m",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "capacity_fault_simulink_2025.csv",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "capacity_fault_simulink_2025.json",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Carrier_2025_nominal_vs_Nplus1_options.csv",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Carrier_2025_rated_vs_simulated_economics.json",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Nplus1_Carrier_Selection_SK.md",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Nplus1_Carrier_Selection_RU.md",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Nplus1_Carrier_Selection_EN.md",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Nplus1_Carrier_Selection_SK.pdf",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Nplus1_Carrier_Selection_RU.pdf",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "Nplus1_Carrier_Selection_EN.pdf",
+    "status": "COPIED",
+    "identical": true
+  },
+  {
+    "file": "nplus1_pdf_qa.json",
+    "status": "COPIED",
+    "identical": true
+  }
+]

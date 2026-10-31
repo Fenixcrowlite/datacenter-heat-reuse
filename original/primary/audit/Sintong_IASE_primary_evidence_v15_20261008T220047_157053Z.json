@@ -1,0 +1,46 @@
+{
+  "timestamp_utc": "2026-10-08T22:00:47.157053+00:00",
+  "source": "sources/papers/09_Sintong_Stockholm_2023.pdf",
+  "source_sha256": "8149370d2df0c5899c844095f3890fea112c3d81eaff6671cb3cf0f3da9185f5",
+  "pages": [
+    {
+      "pdf_page_1based": 23,
+      "pdf_index_0based": 22,
+      "role": "A2 IASE context",
+      "text": "audit/Sintong_p23_IASE_v15_20261008T220047_157053Z.txt",
+      "render": "audit/Sintong_p23_IASE_v15_20261008T220047_157053Z.png",
+      "text_sha256": "dad4549525c262c83702d8b734d0eff6015ea074b7c50bcdede09628867c9de6",
+      "render_sha256": "a703e0f15fec380b83666d174c92cd199c898e1bbec7b351ed1f4e953a647cbd"
+    },
+    {
+      "pdf_page_1based": 30,
+      "pdf_index_0based": 29,
+      "role": "Eq15-16 and operating criterion",
+      "text": "audit/Sintong_p30_IASE_v15_20261008T220047_157053Z.txt",
+      "render": "audit/Sintong_p30_IASE_v15_20261008T220047_157053Z.png",
+      "text_sha256": "280ade7a768448c9ac1aafb4bb7a518557e2ba8f0eec2c9c99f313d0933e2759",
+      "render_sha256": "f6a7c26b0ae147a3e5e4a333cb52135e03e168e9c4c0d362c948b8bbff6d1942"
+    },
+    {
+      "pdf_page_1based": 31,
+      "pdf_index_0based": 30,
+      "role": "Fig14 two-stream schematic",
+      "text": "audit/Sintong_p31_IASE_v15_20261008T220047_157053Z.txt",
+      "render": "audit/Sintong_p31_IASE_v15_20261008T220047_157053Z.png",
+      "text_sha256": "0ea7e98b35e93328b36a317607ccac5ef94b9e27ee225f8cf343ff76b9dcd09b",
+      "render_sha256": "e6b0d8d76416d0caf4fecfa244f4b495058fcd530443d6ffe6db75f6da51a42d"
+    },
+    {
+      "pdf_page_1based": 70,
+      "pdf_index_0based": 69,
+      "role": "Reference38",
+      "text": "audit/Sintong_p70_IASE_v15_20261008T220047_157053Z.txt",
+      "render": "audit/Sintong_p70_IASE_v15_20261008T220047_157053Z.png",
+      "text_sha256": "ba283abe54238942204e332b7ee575ee54d95b9928d938107ba22f77be555e8e",
+      "render_sha256": "c8e381d202c416c4c5512a16143c54f6f97923e34f1820e92a85c9011e01c50e"
+    }
+  ],
+  "category": "local_primary_page_extraction_and_render",
+  "visual_review_required": true,
+  "paper_replication": false
+}

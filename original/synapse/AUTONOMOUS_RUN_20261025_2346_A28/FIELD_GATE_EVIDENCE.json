@@ -1,0 +1,78 @@
+{
+  "status": "SYNTHETIC_ONLY_NOT_FIELD_VERIFIED",
+  "source_class": "SYNTHETIC_TEST",
+  "release_allowed": false,
+  "csv_sha256": "b306b081f99656b9b79158100540be5fed47b934c29537d29a2ef7adff453290",
+  "metadata_sha256": "f6fad55aa22bb2aa42304c155a0947bab21094aee0ce20a338ec910b73abfbef",
+  "sample_count": 32,
+  "time_start_utc": "2026-10-01T00:00:00+00:00",
+  "time_end_utc": "2026-10-01T00:31:00+00:00",
+  "max_sensor_skew_s": 0.0,
+  "residual_bias": {
+    "flow": 0.010079613687910105,
+    "hot": 0.0016495604747480686,
+    "cold": 0.0055105712062915035
+  },
+  "residual_sample_covariance": [
+    [
+      0.007090113799981093,
+      5.467306862248369e-05,
+      -8.849686820356431e-05
+    ],
+    [
+      5.467306862248369e-05,
+      0.0012854324375978351,
+      -8.021640036222619e-05
+    ],
+    [
+      -8.849686820356431e-05,
+      -8.021640036222619e-05,
+      0.0007950404157590945
+    ]
+  ],
+  "residual_sample_correlation": [
+    [
+      1.0,
+      0.01811015718160521,
+      -0.03727405962720368
+    ],
+    [
+      0.01811015718160521,
+      1.0,
+      -0.07934945326913877
+    ],
+    [
+      -0.03727405962720368,
+      -0.07934945326913877,
+      1.0
+    ]
+  ],
+  "residual_standard_deviation": {
+    "flow": 0.08420281349207456,
+    "hot": 0.03585292788040936,
+    "cold": 0.028196461050264705
+  },
+  "autocorrelation_diagnostic": {
+    "flow": {
+      "lag1_sample_autocorrelation": 0.7538103542843532,
+      "ar1_heuristic_n_eff": 4.491972945453025
+    },
+    "hot": {
+      "lag1_sample_autocorrelation": 0.827357602865198,
+      "ar1_heuristic_n_eff": 3.0232488154762143
+    },
+    "cold": {
+      "lag1_sample_autocorrelation": 0.9167368846949945,
+      "ar1_heuristic_n_eff": 1.3900810857428454
+    }
+  },
+  "certificate_hashes": {},
+  "limits": [
+    "Residuals are measured minus matched references, not process-value covariance.",
+    "Mean residual bias is systematic and must not be divided by sqrt(n).",
+    "Lag-1 effective sample size is an AR(1) heuristic, not a confidence interval.",
+    "Certificate file hashes do not authenticate issuer, traceability or accuracy.",
+    "Field candidate requires independent review and holdout heat-meter validation.",
+    "No SCADA/MATLAB production files or controls changed."
+  ]
+}

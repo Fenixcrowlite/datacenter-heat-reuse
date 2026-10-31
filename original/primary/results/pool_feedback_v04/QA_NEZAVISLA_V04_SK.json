@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "checks": 65493,
+  "cases": [
+    {
+      "case": "zaklad",
+      "modes": [
+        1,
+        2
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "vypnuty_bazen",
+      "modes": [
+        1,
+        2
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "vypadok_IT_24h",
+      "modes": [
+        1,
+        2,
+        4
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "nulovy_zdroj_24h",
+      "modes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "teplejsi_zdroj",
+      "modes": [
+        1
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "bez_plachty",
+      "modes": [
+        1,
+        2
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "TES_vypnute",
+      "modes": [
+        1,
+        2
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    },
+    {
+      "case": "vysoky_dopyt_DH",
+      "modes": [
+        1,
+        2
+      ],
+      "rows": 672,
+      "Tmax_C": 27.58
+    }
+  ],
+  "source": "RAW_SIMULINK_CSV",
+  "old_v85_sha256": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7"
+}

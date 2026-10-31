@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "browser": "isolated headless Chrome",
+  "cards_rendered": 6,
+  "svg_polylines": 7,
+  "source_kind": "derived_simulation",
+  "physical_release": false,
+  "shared_browser_untouched": true
+}

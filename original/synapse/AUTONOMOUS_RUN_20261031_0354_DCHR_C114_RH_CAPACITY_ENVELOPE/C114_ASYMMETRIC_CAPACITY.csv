@@ -1,0 +1,3 @@
+policy,dehum_lower_failing_kg_h,dehum_upper_passing_kg_h,humid_lower_failing_kg_h,humid_upper_passing_kg_h,joint_min_RH,joint_max_RH,joint_below_45_h,joint_above_65_h,dehum_search_iterations,humid_search_iterations,joint_dehumidified_kg_year,joint_humidified_kg_year
+water_first,45.64453125,45.654296875,29.6875,29.697265625,0.45005959233422727,0.6499593662432898,0,0,16,14,122470.07845513099,93199.01847169618
+air_first,45.64453125,45.654296875,29.677734375,29.6875,0.4500062327123453,0.6499593662432898,0,0,16,14,121859.12811448144,93154.73553809973

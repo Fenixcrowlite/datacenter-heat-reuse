@@ -1,0 +1,46 @@
+{
+  "crosscheck": "C92 RH=.55, cover=.15, no backup, recovery=.10/.25 agrees within 1e-8",
+  "hourly_steps_per_scenario": 8760,
+  "limitations": [
+    "RH, cover effectiveness and recovery fractions are hypothetical, not measurements.",
+    "COP fixed at 4; no source/sink temperature feasibility, pinch, or heat pump map.",
+    "Ventilation/dehumidification and air-side heating not coupled to this water-only model.",
+    "1h explicit Euler, single fully mixed pool, assumed occupancy and 29C air temperature.",
+    "No real pool classification, energy meter data, tariffs or source signoffs."
+  ],
+  "matrix_sha256": "f3c51367003a28ce5d02655eefe027f95bc3e1e89e47dfabfe4e23ded0d6ee33",
+  "parameter_grid": {
+    "backup_capacity_MW": [
+      0.0,
+      0.05
+    ],
+    "hypothetical_HX_recovery_fraction": [
+      0.0,
+      0.1,
+      0.25
+    ],
+    "night_cover_multiplier": [
+      0.05,
+      0.15,
+      0.35
+    ],
+    "relative_humidity": [
+      0.45,
+      0.55,
+      0.65
+    ]
+  },
+  "pins": {
+    "C90_input_sha256": "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+    "C91_script_sha256": "964cb181227db7c5af93e8632e352919ab28b030de69c934412dc798bb7264b4",
+    "C92_reference_json_sha256": "319c78a11b3ea7c3c86fb7096c48094f8ed95f44e68afa324f7b7d3695ff30a1",
+    "C92_script_sha256": "242554e2f5f4cd3c08d31d340630a0cad20d505420b29662c21bea7464dd5990"
+  },
+  "reference": "ASHRAE Handbook 2023, HVAC Applications, Chapter 6, Eq. 2 (see C92)",
+  "scenarios": 54,
+  "schema": "C93_POOL_UNCERTAINTY_MATRIX_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "validated_real_facility": false
+}

@@ -1,0 +1,143 @@
+{
+  "version": "0.73",
+  "model_revision": "r2",
+  "timestamp_utc": "2026-10-12T07:44:02.667485+00:00",
+  "inherits": "STATUS_v72.json",
+  "result": "SCOPED_NUMERICAL_REPAIRS_AND_SYMBOLIC_PASSIVE_CONTACT_ACCEPTED_QA_PASS",
+  "new_model": true,
+  "saved_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v73r2.slx",
+  "saved_model_version": "0.73r2",
+  "model_sha256": "4f90f180b8fe8f3956543a6dfff9635276b3c140e2deebaed06cc4b8a9e88610",
+  "model_executed_this_run": true,
+  "corrected_model_accepted": true,
+  "accepted_dispatch_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v57.slx",
+  "accepted_sampled_interval_model": "matlab/simulink/DCHR_Interval_Dispatch_Stateflow_v66.slx",
+  "accepted_scoped_earliest_event_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v73r2.slx",
+  "matlab_passed": 2804,
+  "matlab_failed": 0,
+  "independent_passed": 112144,
+  "independent_failed": 0,
+  "actual_probe_scenarios": 58,
+  "accepted_probe_scenarios": 47,
+  "accepted_runs_including_valid_prefixes": 50,
+  "completed_held_intervals": 1226,
+  "positive_event_segments": 1316,
+  "interior_events": 90,
+  "required_actual_final_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_runtime_rejections": 11,
+  "v30_reference_comparisons": 34,
+  "reviewer_selfchecks": 10,
+  "symbolic_passive_contact_macro_calls": 34,
+  "repaired_prior_defect_classes": [
+    "PASSIVE_INTERVAL_WRAPPING",
+    "INCLUSIVE_ON_DWELL_EQUALITY",
+    "SOURCE_LIMIT_PROOF_DEPENDENCY",
+    "CORRELATED_WORK_NONNEGATIVITY"
+  ],
+  "findings": [
+    {
+      "id": "passive_service_lambda_0p2",
+      "classification": "REPAIRED_PASSIVE_WRAPPING_TESTED",
+      "held_intervals": 256,
+      "time_h": "256",
+      "exact_final_inventory": "1.742784871299810531730914915014106088764797479073201334344214775731956098039333052266565286682887387312357228306866088458358951448777942633636344098219981043423E-22",
+      "final_inventory_hull": [
+        1.7427848712945104e-22,
+        1.7427848713052615e-22
+      ]
+    },
+    {
+      "id": "passive_service_lambda_1p0",
+      "classification": "REPAIRED_PASSIVE_WRAPPING_TESTED",
+      "held_intervals": 80,
+      "time_h": "80",
+      "exact_final_inventory": "5.414554163536245516936385072050082263513309293519186078846065205773957613826737130960200405142027813155033452735637425342889303001371689022178431370536750979360E-35",
+      "final_inventory_hull": [
+        5.414554163530887e-35,
+        5.414554163541299e-35
+      ]
+    },
+    {
+      "id": "disable_exact_dwell",
+      "classification": "REPAIRED_INCLUSIVE_ON_DWELL_TESTED",
+      "exact_age": "0.250",
+      "age_hi": 0.25,
+      "age_residual": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "source_limited",
+      "classification": "REPAIRED_SOURCE_LIMIT_PROOF_TESTED",
+      "selected_power": "0.1181116887472745957676778516542981378734111785888671875",
+      "exact_source_power": "0.09999999999999977372233715057662537854793290476291291473957703599985374918463856240259057254704086599259908527334700160010609590739824540194343521678767526412696",
+      "source_capacity": "0.1000000000000000020816681711721685132943093776702880859375",
+      "margin": "2.2835933102059554313474637647290737517119792296400014625081536143759740942745295913400740091472665299839989390409260175459805656478321232473587304E-16"
+    },
+    {
+      "id": "rounded_source_water_tie",
+      "classification": "REPAIRED_SOURCE_LIMIT_PROOF_TESTED",
+      "selected_power": "0.9999999999999975575093458246556110680103302001953125",
+      "exact_source_power": "0.8466562544370275970034881559921670908388405239232204910732106090207096876104094913604364148086912330910824192054821174026199268421804206846496307696398340510716",
+      "source_capacity": "0.846656254437029576198625591132440604269504547119140625",
+      "margin": "1.9791951374351402735134306640231959201339267893909792903123895905086395635851913087669089175807945178825973800731578195793153503692303601659489284E-15"
+    },
+    {
+      "id": "source_below_tie",
+      "classification": "REPAIRED_SOURCE_LIMIT_PROOF_TESTED",
+      "selected_power": "0.9999999999990880628075728964176960289478302001953125",
+      "exact_source_power": "0.8466562544362575676258547652468503378590434503286152368847720274812694360374182972041729777814483386844703912228029598528311949078957008254541862261654767964578",
+      "source_capacity": "0.8466562544362594977531699669270892627537250518798828125",
+      "margin": "1.9301273152016802389248946816015512675756152279725187305639625817027958270222185516613155296087771970401471688050921042991745458137738345232035422E-15"
+    },
+    {
+      "id": "restart_band_2m42",
+      "classification": "REPAIRED_POSITIVE_CORRELATED_WORK_TESTED",
+      "exact_first_work": "1.686167130365515487681891755926150802698131502530132291168700270344994008887595529563785238807249757914813841003253861724360536325774857266899200353781716044256E-14",
+      "work_hull": [
+        1.294680429165434e-14,
+        2.034497817260087e-14
+      ]
+    }
+  ],
+  "matlab_metadata": {
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "license_observed": 1,
+    "stateflow_ver": [],
+    "chart_count": 1,
+    "action_language": "MATLAB",
+    "simulation_mode": "normal",
+    "states": [
+      "IDLE",
+      "HEAT_RECOVERY",
+      "STORAGE_CHARGE",
+      "STORAGE_DISCHARGE",
+      "BACKUP",
+      "UNMET_DEMAND"
+    ]
+  },
+  "result_directory": "results/earliest_repair_v73r2_20261012T073823_950801Z",
+  "independent_qa": "results/earliest_repair_v73r2_20261012T073823_950801Z/independent_QA_v73_20261012T074352_249993Z.json",
+  "derivation": "audit/Earliest_dispatch_derivation_v73.md",
+  "results": "audit/Earliest_dispatch_results_v73.md",
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "limitations": [
+    "Scoped synthetic normal-mode implementation acceptance only; analytic event segments execute inside macro Stateflow protocol calls, not at solver-clock thermal events. No generated-code acceptance.",
+    "Public lambda*heldDt<=1 and sixteen-segment limits remain. Generic unresolved boundary/root/dwell/collision decisions still reject. Symbolic passive contact applies only to retained STOP, B=0, lambda>0 and the declared log1p domain.",
+    "Compensated ON-age certificate is optional and invalidated by uncertain event segments. Source limiting is conservative with eight ulps of allocation room. Arbitrary-scale, subnormal, overflow and arbitrary-policy acceptance are untested.",
+    "Same-agent algorithmic independence using exact binary Fraction and 120/160-digit closed exp/log/source equations, not independent personnel. Original MAT reopening/export uses MATLAB; no independent HDF5 reader.",
+    "Original v72 numerical witnesses repaired in the executed scope. This does not establish equipment calibration, measured performance, primary article replication or a full annual earliest-event simulation. Full primary signoffs remain 0/31."
+  ],
+  "next_actionable_task": "Develop an additive held-boundary input/reporting adapter for the saved v73r2 earliest-event model. Begin with a bounded representative seasonal schedule and source/demand/enable changes, preserve held physical timestamps and uncertainty hulls, explicitly surface collision/span/segment/clock refusals, and independently audit service/source/work/TES/backup/unmet aggregation from original MAT. Compare identical schedules with verified v57/v66 and equal delivered-service reporting before any full annual claim. Primary calibration, article replication and measured validation remain OPEN."
+}

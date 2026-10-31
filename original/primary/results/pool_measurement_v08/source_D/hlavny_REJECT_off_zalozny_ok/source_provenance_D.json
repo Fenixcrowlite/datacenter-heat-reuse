@@ -1,0 +1,21 @@
+{
+  "dataset_id": "synthetic_replay_v07_hlavny_REJECT_off_zalozny_ok",
+  "provenance": "D",
+  "source_uri": "synthetic:v07_20261023/hlavny_REJECT_off_zalozny_ok",
+  "measurement_method": "SIMULINK v07 recorded virtual sensors; no real measurements; IT power and flow demonstration placeholders",
+  "expected_step_seconds": 900,
+  "units": {
+    "Q_DC_available_W": "W",
+    "T_DC_C": "C",
+    "Q_DH_request_W": "W",
+    "T_air_C": "C",
+    "RH": "1",
+    "T_pool_sensor1_C": "C",
+    "T_pool_sensor2_C": "C",
+    "pool_flow_m3h": "m3/h",
+    "P_IT_W": "W",
+    "Q_REJECT_measured_W": "W",
+    "main_reject_ok": "1",
+    "backup_reject_ok": "1"
+  }
+}

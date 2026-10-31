@@ -1,0 +1,8 @@
+{
+  "capacity_exact_J_per_K": "8000000",
+  "energy_residual_max_abs_J": "0E-10",
+  "intervals": 64,
+  "oracle_pass": true,
+  "physical_release": false,
+  "source_kind": "synthetic_test"
+}

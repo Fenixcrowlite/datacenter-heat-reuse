@@ -1,0 +1,142 @@
+{
+  "timestamp_utc": "2026-10-08T22:04:04.084833+00:00",
+  "kind": "post_gate_immutable_evidence_snapshot",
+  "packaging_checks": "PASS",
+  "scientific_test_rerun": false,
+  "mutable_ledger_snapshot_note": "Progress ledger is append-only; later entries intentionally change its hash",
+  "prior_immutable_hashes_checked": 27,
+  "files": {
+    "MASTER_STAGEBOARD_v15.md": {
+      "bytes": 2576,
+      "sha256": "6651b63c26bab5cc83f2a575e24a66f4011a97f579353dfbb834ebd18cb82854"
+    },
+    "STATUS_v15.json": {
+      "bytes": 4314,
+      "sha256": "f1da8b4f56d220a1d784bc3fc2ad587198c7608ab7e33f6216352c7e8ced42e9"
+    },
+    "audit/Park_IASE_evidence_v15_20261008T220137Z.json": {
+      "bytes": 2803,
+      "sha256": "e1c3f2938eee1872f04900b82e92cdeaa46219bbf141fb39f9a22f0cffb4ebcd"
+    },
+    "audit/Park_IASE_provenance_v15.md": {
+      "bytes": 3973,
+      "sha256": "3c7a89fe5d7257007347d6eefee3c3ad4632315011a2803cc810ec477f13530d"
+    },
+    "audit/Park_acquisition_v15_20261008T215837_580374Z.json": {
+      "bytes": 632,
+      "sha256": "e5dcfe4fe6fd24b1b9887a1d98930629e56cf3631b4a75e288d58bd919109ce4"
+    },
+    "audit/Sintong_IASE_domain_audit_v15.md": {
+      "bytes": 8728,
+      "sha256": "2cbe707b009aa81498944bdfc9bd36aef74329040d5830a9f72c01360d0b729b"
+    },
+    "audit/Sintong_IASE_domain_comparison_v15_20261008T220043_794544Z.csv": {
+      "bytes": 10837,
+      "sha256": "10d02b0e6fdd042f66a5e9b758e72ea2a9021d80ccad32fd280cf92fd8063fad"
+    },
+    "audit/Sintong_IASE_independent_review_v15.md": {
+      "bytes": 10570,
+      "sha256": "f9ce20fbc2e1229cebabc7596dd537eef95988014598fa58c5677012cee8f9b0"
+    },
+    "audit/Sintong_IASE_primary_evidence_v15_20261008T220047_157053Z.json": {
+      "bytes": 2133,
+      "sha256": "1ab779da8bbdbf53a96e28c107d0250c7c8e242c1f5dbafabdac7f2316ac7ae2"
+    },
+    "audit/Sintong_IASE_tests_v15_20261008T220043_794544Z.json": {
+      "bytes": 1728,
+      "sha256": "2ecac3dccceb4bb54248b8f66f0dea995d0506c7e6886fade199236e259fba82"
+    },
+    "audit/Sintong_IASE_visual_review_v15_20261008T220404_084833Z.json": {
+      "bytes": 927,
+      "sha256": "26f59330add331231c676d75e2f76503d57e3a65fbdddc842f9569039b1ae378"
+    },
+    "audit/Sintong_p23_IASE_v15_20261008T220047_157053Z.png": {
+      "bytes": 170284,
+      "sha256": "a703e0f15fec380b83666d174c92cd199c898e1bbec7b351ed1f4e953a647cbd"
+    },
+    "audit/Sintong_p23_IASE_v15_20261008T220047_157053Z.txt": {
+      "bytes": 889,
+      "sha256": "dad4549525c262c83702d8b734d0eff6015ea074b7c50bcdede09628867c9de6"
+    },
+    "audit/Sintong_p24_IASE_visual_v15.png": {
+      "bytes": 192023,
+      "sha256": "6a4f26650114a5652a680b85d953dd9896102897b7216885f01bffbddac8c7f3"
+    },
+    "audit/Sintong_p30_IASE_v15_20261008T220047_157053Z.png": {
+      "bytes": 172949,
+      "sha256": "f6a7c26b0ae147a3e5e4a333cb52135e03e168e9c4c0d362c948b8bbff6d1942"
+    },
+    "audit/Sintong_p30_IASE_v15_20261008T220047_157053Z.txt": {
+      "bytes": 2183,
+      "sha256": "280ade7a768448c9ac1aafb4bb7a518557e2ba8f0eec2c9c99f313d0933e2759"
+    },
+    "audit/Sintong_p30_IASE_visual_v15.png": {
+      "bytes": 172949,
+      "sha256": "f6a7c26b0ae147a3e5e4a333cb52135e03e168e9c4c0d362c948b8bbff6d1942"
+    },
+    "audit/Sintong_p31_IASE_v15_20261008T220047_157053Z.png": {
+      "bytes": 175114,
+      "sha256": "e6b0d8d76416d0caf4fecfa244f4b495058fcd530443d6ffe6db75f6da51a42d"
+    },
+    "audit/Sintong_p31_IASE_v15_20261008T220047_157053Z.txt": {
+      "bytes": 1110,
+      "sha256": "0ea7e98b35e93328b36a317607ccac5ef94b9e27ee225f8cf343ff76b9dcd09b"
+    },
+    "audit/Sintong_p31_IASE_visual_v15.png": {
+      "bytes": 175114,
+      "sha256": "e6b0d8d76416d0caf4fecfa244f4b495058fcd530443d6ffe6db75f6da51a42d"
+    },
+    "audit/Sintong_p56_IASE_visual_v15.png": {
+      "bytes": 140653,
+      "sha256": "6a7167121945f5961013d6c5beaa534b34fcc55de5feeb7fee96b73426db4e13"
+    },
+    "audit/Sintong_p70_IASE_v15_20261008T220047_157053Z.png": {
+      "bytes": 252490,
+      "sha256": "c8e381d202c416c4c5512a16143c54f6f97923e34f1820e92a85c9011e01c50e"
+    },
+    "audit/Sintong_p70_IASE_v15_20261008T220047_157053Z.txt": {
+      "bytes": 3205,
+      "sha256": "ba283abe54238942204e332b7ee575ee54d95b9928d938107ba22f77be555e8e"
+    },
+    "audit/extract_sintong_iase_evidence_v15.py": {
+      "bytes": 2874,
+      "sha256": "1e2fbc7cc1857891739162abe14190d79f896675ad49d53819e250e380f845ba"
+    },
+    "audit/finalize_checkpoint_v15.py": {
+      "bytes": 14864,
+      "sha256": "6f5dcff1b99128ba34f0f4ebe833c5fa1f2d8f928b13380d1d73bd09b01e8f0b"
+    },
+    "audit/sintong_iase_domain_v15.py": {
+      "bytes": 4957,
+      "sha256": "642a57683d2ee3e48b5dd8c8a18a9c6979a17ce98d6b801dd9433e46143d6e67"
+    },
+    "audit/test_sintong_iase_domain_v15.py": {
+      "bytes": 11865,
+      "sha256": "a051730cccb28c94f2f79baf3cec1256491f84552fc201a364cb5b04250e9200"
+    },
+    "automation/engineering_progress.md": {
+      "bytes": 7257,
+      "sha256": "e649346ba094d10b676786d9c4080b1e97e022d47965c61645f89603b9059a20"
+    },
+    "automation/logs/Park_provenance_checks_v15_20261008T220228_867073Z.log": {
+      "bytes": 650,
+      "sha256": "d2d180ab91557597bc34bb85ce1630358a4ec6c23cab53da175e3b32da587e0c"
+    },
+    "automation/logs/Sintong_IASE_extraction_v15_20261008T220047_157053Z.log": {
+      "bytes": 362,
+      "sha256": "2ebb3ac691fdc01735254a10e3ad2adbe15d4fa4a252a41c7ff96a763d5a74a8"
+    },
+    "automation/logs/Sintong_IASE_tests_v15_20261008T220043_794544Z.log": {
+      "bytes": 2023,
+      "sha256": "a65eca683abd618584aa12ec11c9abf52e3d28bece79929301552e18ab6cdc0a"
+    },
+    "automation/logs/checkpoint_v15_20261008T220404_084833Z.log": {
+      "bytes": 308,
+      "sha256": "c47fd1f16e8339ae5f085216048f338415d791793d339c260a17b5a100a25d6b"
+    },
+    "sources/papers/09_Sintong_Stockholm_2023.pdf": {
+      "bytes": 2567616,
+      "sha256": "8149370d2df0c5899c844095f3890fea112c3d81eaff6671cb3cf0f3da9185f5"
+    }
+  }
+}

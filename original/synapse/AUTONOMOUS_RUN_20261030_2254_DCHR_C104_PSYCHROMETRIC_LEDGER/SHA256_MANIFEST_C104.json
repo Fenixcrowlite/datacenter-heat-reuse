@@ -1,0 +1,52 @@
+{
+  "files": {
+    "C104_FINDINGS.md": {
+      "bytes": 6621,
+      "sha256": "7c6655f2ef0d13cbf565245f23d365fe87b54cdcea10223f5952c8c40b40f736"
+    },
+    "C104_INDEPENDENT_QA.json": {
+      "bytes": 601,
+      "sha256": "49cc4c06c3ee966d3ef19b4ae2f798a3fd33b1d7c7724350874a45721e9cbefd"
+    },
+    "C104_METADATA.json": {
+      "bytes": 1561,
+      "sha256": "b848412d1e8b94409a951ca6c34a9ebe2a14f80c98c742e624ab02bf5c9316f6"
+    },
+    "C104_PHYSICAL_SUMMARY.csv": {
+      "bytes": 2909,
+      "sha256": "e389de893a34a3ce4bacf6d8ca50bc72634d4634cc08ccea78fff027dddaceb4"
+    },
+    "C104_PSYCHROMETRIC_HOURLY.csv.gz": {
+      "bytes": 5340010,
+      "sha256": "15547bfd196152440ec1870af182ef20a79ab1004790cf71d1de9869b447228d"
+    },
+    "C104_PSYCHROMETRIC_SUMMARY.csv": {
+      "bytes": 2909,
+      "sha256": "1aa45c1bd88da9eadab2a57ed9a48a2ba442624e11dca0251b1d1d5c6e826e0b"
+    },
+    "C104_SUMMARY_QA.json": {
+      "bytes": 210,
+      "sha256": "9e970b4230d8956be4ad93b9015dcd91eb4f1b1984217f1821b53d64815eb886"
+    },
+    "c104_physical_summary.py": {
+      "bytes": 2886,
+      "sha256": "3f18d88b9204d3350260d00eee7b703801571a8141123e36460cbb59c41cf58b"
+    },
+    "c104_psychrometric.py": {
+      "bytes": 9175,
+      "sha256": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600"
+    },
+    "qa_c104_independent.py": {
+      "bytes": 6207,
+      "sha256": "27e0ca1db238377e72cc5ffc6bc06f4b3daa64883682889c710411c196758068"
+    },
+    "qa_c104_summary.py": {
+      "bytes": 2183,
+      "sha256": "ba0426ff87f6eb0639084e0a83388bddeddac0c07b81d43c20a34620654c106d"
+    }
+  },
+  "qa": "17/17 selftest; 2207520 independent row checks; 2 negative controls; 81 annual comparisons; dimensional schema gate",
+  "schema": "C104_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

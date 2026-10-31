@@ -1,0 +1,11 @@
+{
+  "scope": "isolated_DCHR_A37_v07_N1_IT_thermal_inertia_sensitivity",
+  "qa": "16/16 unit PASS; 8064 trace rows, 104832 independent Decimal checks PASS; 4 A36B energy crosschecks",
+  "source_v07_sha256": "00e7350db86fe98773992cac6fc7f4a442d579f89d60ba75a278f902829a1252",
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "key_finding": "v07 thermal law: backup-only no-shed max 61.46C; hypothetical 40% IT shedding with 15kW/step ramp-up max 33.17C; neither reject available still max 93.86C, all 576 post-fault intervals alarm.",
+  "decision": "N1_THERMAL_RISK_SYNTHETIC_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "limits": "synthetic capacities and curtailment assumptions, no actual IT service model, TES/HP feedback, equipment safety, or real hardware control",
+  "next_step": "Owner to integrate thermal law, real shedding response, TES SOC and REJECT A/B faults into isolated MATLAB/Stateflow; obtain equipment ratings and field validation.",
+  "physical_release_allowed": false
+}

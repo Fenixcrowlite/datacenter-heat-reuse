@@ -1,0 +1,45 @@
+{
+  "files": {
+    "C94_FINDINGS.md": {
+      "bytes": 4490,
+      "sha256": "70d75706936c4a037062611cddeae0dd9d413e3618fbbd15d13bd0c6e9ba3faf"
+    },
+    "C94_HOURLY.csv": {
+      "bytes": 31930373,
+      "sha256": "e8f69bc656858bba9eb262d22997198098f238f7f0fb856e4c24f8e8ea42af56"
+    },
+    "C94_INDEPENDENT_QA.json": {
+      "bytes": 487,
+      "sha256": "a752abd78a17230921b54345a3970621a0c219554011f3c8d045c99ad696b836"
+    },
+    "C94_METADATA.json": {
+      "bytes": 1698,
+      "sha256": "6ea733cf7af0c5c406d42d0c8636175fa958bf417e886f91c31fbaacc99a4eaf"
+    },
+    "C94_QA_LOG.txt": {
+      "bytes": 1138,
+      "sha256": "f082b19dc9cdc80d465810ef81a63912e8e657e2236bd265ad570aca4237aa9d"
+    },
+    "C94_RUN_LOG.txt": {
+      "bytes": 6992,
+      "sha256": "5ba92341c201dce87175825a28db616a19a647e6b13ce888b551c6b614db3aaf"
+    },
+    "C94_SUMMARY.csv": {
+      "bytes": 3360,
+      "sha256": "60c7f267413265e4e6fefd223fc0d3396ce68fe57b5a699eb5690ac4479e736d"
+    },
+    "c94_hx_temperature_envelope.py": {
+      "bytes": 8693,
+      "sha256": "f24e8a6fea875c4deaf43dce9777520c84c9c5aaf8b7d67ac757451afce395cd"
+    },
+    "qa_c94_independent.py": {
+      "bytes": 4828,
+      "sha256": "98c289c29fea573d9bef61a63dcd8f85eee5df02941d02e62c667c283142871f"
+    }
+  },
+  "qa": "12/12 self, 157680/157680 independent hourly, 18/18 groups PASS",
+  "schema": "C94_SHA256_MANIFEST_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

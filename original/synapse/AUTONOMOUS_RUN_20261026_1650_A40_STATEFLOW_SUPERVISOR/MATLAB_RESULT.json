@@ -1,0 +1,38 @@
+{
+  "status": "STATEFLOW_SIM_PASS",
+  "samples": 672,
+  "mode_counts": [
+    226,
+    153,
+    36,
+    257
+  ],
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1650_A40_STATEFLOW_SUPERVISOR\\DCHR_A40_Safety_Controller.slx",
+  "physical_release": false,
+  "scenario_mode_counts": {
+    "main_only": [
+      226,
+      153,
+      36,
+      257
+    ],
+    "both": [
+      276,
+      0,
+      0,
+      396
+    ],
+    "backup_only": [
+      189,
+      166,
+      207,
+      110
+    ],
+    "neither": [
+      96,
+      0,
+      576,
+      0
+    ]
+  }
+}

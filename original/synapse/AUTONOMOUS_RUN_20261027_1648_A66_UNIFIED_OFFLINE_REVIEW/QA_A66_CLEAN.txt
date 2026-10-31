@@ -1,0 +1,20 @@
+python.exe : test_exact_delta_identity (test_a66.Integrity.test_exact_delta_identity) ... ok
+строка:1 знак:247
++ ... ocation $d; & 'C:\Python314\python.exe' -m unittest -v test_a66 2>&1  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_exact_delt...dentity) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_five_channels_two_scenarios (test_a66.Integrity.test_five_channels_two_scenarios) ... ok
+test_hash_tamper_rejected (test_a66.Integrity.test_hash_tamper_rejected) ... ok
+test_identity_tamper_rejected (test_a66.Integrity.test_identity_tamper_rejected) ... ok
+test_no_external_assets (test_a66.Integrity.test_no_external_assets) ... ok
+test_output_matches_inputs (test_a66.Integrity.test_output_matches_inputs) ... ok
+test_output_single_file (test_a66.Integrity.test_output_single_file) ... ok
+test_physical_release_tamper_rejected (test_a66.Integrity.test_physical_release_tamper_rejected) ... ok
+test_sources_and_provenance (test_a66.Integrity.test_sources_and_provenance) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in <variable>s
+
+OK

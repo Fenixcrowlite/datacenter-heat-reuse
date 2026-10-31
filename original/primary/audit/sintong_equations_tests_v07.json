@@ -1,0 +1,8 @@
+{
+  "paper": "Sintong 2023 pp.32-33",
+  "tests": 9,
+  "status": "PASS",
+  "failed": [],
+  "errors": [],
+  "meaning": "Printed-formula verification incl. 1000 random crossflow trials; no independent paper replication"
+}

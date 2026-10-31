@@ -1,0 +1,39 @@
+{
+  "files": {
+    "C125_FINDINGS.md": {
+      "bytes": 1948,
+      "sha256": "54a089d2409a958ed6c8066ff4772a6a0a7a3f77f97e7cfad11a1a6a7ec64505"
+    },
+    "C125_INDEPENDENT_QA.json": {
+      "bytes": 403,
+      "sha256": "428b5489c0a54fe18f0c5f66215780d0179006d26e759138ccbe384759a0e344"
+    },
+    "C125_METADATA.json": {
+      "bytes": 1108,
+      "sha256": "ce62b731d825c1e3febd683ee61e68d23213e4d493c99657a6dffb1b66021ef5"
+    },
+    "C125_POOL_AIR_QUARTER.csv.gz": {
+      "bytes": 10033498,
+      "sha256": "f43c92e3a9bc3ee7ae61952ec7148ab01fc02eed296dc1c8687592779e292173"
+    },
+    "C125_SUMMARY.json": {
+      "bytes": 756,
+      "sha256": "29d37b3449e123b8a63348d9063e43be8e8d29d5d97306e30817fb7f062360bc"
+    },
+    "c125_pool_air_replay.py": {
+      "bytes": 6847,
+      "sha256": "4762f5d9206f0e4dea986028a711e50ab4ac2720a6db09ccd38c09bb1035ace6"
+    },
+    "finalize_c125.py": {
+      "bytes": 7627,
+      "sha256": "f3c222b6cf251ae5e487e69f999ef978da8aab51e4744e6264a1c7608b217f4e"
+    },
+    "qa_c125_independent.py": {
+      "bytes": 4494,
+      "sha256": "7bebe5c6118f696a9e6b54529a34b68bd4e84b9cd31652e97d8e98693cc7ef2a"
+    }
+  },
+  "qa": "PASS",
+  "schema": "C125_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,94 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.11",
+  "updated_local": "2026-10-08",
+  "kind": "additive_checkpoint_status",
+  "inherits_status": "STATUS_v10.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v10.md",
+  "literature_matrix": "audit/literature_traceability_v10.csv",
+  "milestones": [
+    {
+      "id": "M0",
+      "state": "DONE"
+    },
+    {
+      "id": "M1",
+      "state": "IN_PROGRESS",
+      "total": 31,
+      "fully_closed": 0,
+      "original_pdfs_local": 7,
+      "partial_primary": [
+        4,
+        9,
+        20,
+        21
+      ],
+      "core_audited_not_signed_off": [
+        1,
+        17
+      ]
+    },
+    {
+      "id": "M2",
+      "state": "PENDING"
+    },
+    {
+      "id": "M3",
+      "state": "PENDING"
+    },
+    {
+      "id": "M4",
+      "state": "PENDING"
+    },
+    {
+      "id": "M5",
+      "state": "PENDING"
+    },
+    {
+      "id": "M6",
+      "state": "PENDING"
+    },
+    {
+      "id": "M7",
+      "state": "PENDING"
+    },
+    {
+      "id": "M8",
+      "state": "PENDING"
+    },
+    {
+      "id": "M9",
+      "state": "PENDING"
+    }
+  ],
+  "source21_ebrahimi": {
+    "state": "PARTIAL_PRIMARY_INTERNAL_REFERENCE_RECHECKED",
+    "fully_signed_off": false,
+    "primary_pdf_sha256": "4aaffa92f30b0d5aa9c7a7e58e5ff8cad3eb05c9f8969b079d6127aab1600a40",
+    "v11_pdf_text_hash_checks": {
+      "passed": 11,
+      "failed": 0
+    },
+    "marcinichen_2012": {
+      "doi_candidate": "10.1016/j.applthermaleng.2011.12.008",
+      "original_fulltext_inspected": false,
+      "acquisition_blocker": "Official EPFL PDF HTTP 429"
+    },
+    "evidence": [
+      "audit/Marcinichen_reference_crosscheck_v11_RU.md",
+      "audit/test_ebrahimi_marcinichen_crossref_v11.py",
+      "audit/ebrahimi_marcinichen_crossref_tests_v11.json"
+    ]
+  },
+  "verification_categories": {
+    "mathematical_identity": "NOT_TESTED_IN_V11",
+    "primary_match": "EBRAHIMI_INTERNAL_ONLY",
+    "independent_validation": "NOT_PERFORMED"
+  },
+  "next": [
+    "Obtain full original Marcinichen 2012 and check Table 9/10 conflict",
+    "Continue primary audits of #8 or #9 and pursue #18/#23",
+    "Do not use 90 C as pumped-only source temperature"
+  ],
+  "notes": "This file adds to STATUS_v10.json; previous detailed research status and logs remain authoritative for earlier stages. No source fully signed off."
+}

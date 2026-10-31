@@ -1,0 +1,38 @@
+{
+  "version": "0.28",
+  "timestamp_utc": "2026-10-09T15:36:45.010747+00:00",
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "postclose_review_all_pass",
+      "passed": true
+    },
+    {
+      "name": "close_console_matches_manifest",
+      "passed": true
+    },
+    {
+      "name": "close_console_actual_counts_match_status",
+      "passed": true
+    },
+    {
+      "name": "manifest_still_matches_postclose_review",
+      "passed": true
+    },
+    {
+      "name": "excluded_close_console_is_saved",
+      "passed": true
+    }
+  ],
+  "postclose_review": "audit/checkpoint_postclose_review_v28_20261009T153620_535575Z.json",
+  "postclose_review_sha256": "eed8fdbf8e95656a9f3ae36d88738b6f52e958ba84c0d941aa9255cc77d581fc",
+  "finalizer_console_log": "automation/logs/stateflow_checkpoint_close_20261009T153508705Z.log",
+  "finalizer_console_log_sha256": "c270f8acdb092860a6ace3a820b892ada4515a4d34536039068bb2d627dafe35",
+  "finalizer_console_log_bytes": 316,
+  "finalizer_console_intentionally_outside_immutable_manifest": true,
+  "manifest": "audit/Stateflow_manifest_v28_20261009T153508_918445Z.json",
+  "manifest_sha256": "8c8edb48c7f4002ff9419625fed626e108bb022af715bce242fd8026b700e488",
+  "previous_checkpoints_unchanged": true,
+  "additional_Stateflow_simulations": 0
+}

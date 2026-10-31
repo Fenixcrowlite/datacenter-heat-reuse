@@ -1,0 +1,9 @@
+{Error: File: C:\Users\Lysda\Desktop\SynapseControlCenter\recovery\AUTONOMOUS_RUN_20261027_0351_A50_SENSOR_LAG_MATLAB\run_a50.m Line: 61 Column: 21
+Using parentheses '()' directly after parentheses '()' is disallowed. Assign the result of the parentheses operation to a temporary variable before using another parentheses
+operation.
+
+Error in run (line 100)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

@@ -1,0 +1,33 @@
+{
+  "pdf": [
+    {
+      "lang": "SK",
+      "pages": 2,
+      "bytes": 116191,
+      "chars": 4036,
+      "clipped": 0
+    },
+    {
+      "lang": "RU",
+      "pages": 2,
+      "bytes": 126680,
+      "chars": 5266,
+      "clipped": 0
+    },
+    {
+      "lang": "EN",
+      "pages": 2,
+      "bytes": 112576,
+      "chars": 4468,
+      "clipped": 0
+    }
+  ],
+  "HTML_JS": "VALIDATED_NODE_CHECK",
+  "Simulink_failure_cases": 6,
+  "unsafe_conditions_detected": 4,
+  "annual_source_rows": 105120,
+  "FMEA_rows": 18,
+  "RFQ_drafts": 4,
+  "physical_vendor_duty_point_verified": false,
+  "operating_safety_certified": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "A45_PYTHON_COMPRESSOR_LAG_REFERENCE_QA_PASS",
+  "task_id": "scc-3d9d172beb6e1b",
+  "physical_release": false,
+  "simulink_integrated": false,
+  "matlab_executed": false,
+  "scenarios": 7,
+  "steps_per_scenario": 672,
+  "python_tests": "12/12 PASS",
+  "decimal_balance_checks": 18816,
+  "max_temp_C": {
+    "both": 30.0,
+    "main_only": 30.0,
+    "backup_only": 67.804362159375,
+    "neither": 67.804362159375,
+    "CF_both": 30.0,
+    "CF_backup_only": 45.13374359416649,
+    "CF_neither": 45.13374359416649
+  },
+  "upstream_a43_sha256": "7e2cf8fe09b11ae923726e088825bf73477583e1c2e8888bb42987b130d73af2",
+  "next_step": "A46 isolated Simulink graphical Stateflow + HP lag integration and 7x672 parity"
+}

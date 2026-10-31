@@ -1,0 +1,387 @@
+{
+  "status": "A49_INDEPENDENT_LEDGER_AND_FAULT_INJECTION_PASS",
+  "synthetic_only": true,
+  "physical_release": false,
+  "matlab_a49_executed": false,
+  "baseline": {
+    "both": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    "main_only": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "first_trip_index": 98,
+      "tripped_steps": 15,
+      "pending_steps": 4,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    "neither": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "first_trip_index": 98,
+      "tripped_steps": 287,
+      "pending_steps": 2,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    "CF_both": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    "CF_backup_only": {
+      "samples": 672,
+      "max_temperature_C": 45.13374359416649,
+      "first_trip_index": 98,
+      "tripped_steps": 5,
+      "pending_steps": 2,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    "CF_neither": {
+      "samples": 672,
+      "max_temperature_C": 45.13374359416649,
+      "first_trip_index": 98,
+      "tripped_steps": 287,
+      "pending_steps": 2,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    }
+  },
+  "randomized_trials": [
+    {
+      "case": "both",
+      "lag_steps": 0,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "main_only",
+      "lag_steps": 0,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "backup_only",
+      "lag_steps": 0,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 74.02163479851562,
+      "first_trip_index": 100,
+      "tripped_steps": 15,
+      "pending_steps": 8,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "neither",
+      "lag_steps": 0,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 34.75072828258556,
+      "first_trip_index": 96,
+      "tripped_steps": 64,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "both",
+      "lag_steps": 1,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "main_only",
+      "lag_steps": 1,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "backup_only",
+      "lag_steps": 1,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 44.221151075355515,
+      "first_trip_index": 96,
+      "tripped_steps": 9,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "neither",
+      "lag_steps": 1,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 67.804362159375,
+      "first_trip_index": 98,
+      "tripped_steps": 62,
+      "pending_steps": 2,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "both",
+      "lag_steps": 2,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "main_only",
+      "lag_steps": 2,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "backup_only",
+      "lag_steps": 2,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 72.33413479851562,
+      "first_trip_index": 101,
+      "tripped_steps": 19,
+      "pending_steps": 6,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "neither",
+      "lag_steps": 2,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 90.94141546884961,
+      "first_trip_index": 100,
+      "tripped_steps": 60,
+      "pending_steps": 4,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "both",
+      "lag_steps": 4,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "main_only",
+      "lag_steps": 4,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "backup_only",
+      "lag_steps": 4,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 72.33413479851562,
+      "first_trip_index": 105,
+      "tripped_steps": 20,
+      "pending_steps": 10,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "neither",
+      "lag_steps": 4,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 34.75072828258556,
+      "first_trip_index": 96,
+      "tripped_steps": 64,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "both",
+      "lag_steps": 0,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "main_only",
+      "lag_steps": 0,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "backup_only",
+      "lag_steps": 0,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 42.891420632300694,
+      "first_trip_index": 96,
+      "tripped_steps": 12,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "neither",
+      "lag_steps": 0,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 67.804362159375,
+      "first_trip_index": 98,
+      "tripped_steps": 62,
+      "pending_steps": 2,
+      "max_reported_flow_residual_W": 1.4551915228366852e-11
+    },
+    {
+      "case": "both",
+      "lag_steps": 1,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "main_only",
+      "lag_steps": 1,
+      "trip_delay_steps": 0,
+      "compressor_tau_s": 0.0,
+      "samples": 160,
+      "max_temperature_C": 30.0,
+      "first_trip_index": null,
+      "tripped_steps": 0,
+      "pending_steps": 0,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "backup_only",
+      "lag_steps": 1,
+      "trip_delay_steps": 2,
+      "compressor_tau_s": 1800.0,
+      "samples": 160,
+      "max_temperature_C": 67.804362159375,
+      "first_trip_index": 98,
+      "tripped_steps": 17,
+      "pending_steps": 4,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "case": "neither",
+      "lag_steps": 1,
+      "trip_delay_steps": 4,
+      "compressor_tau_s": 7200.0,
+      "samples": 160,
+      "max_temperature_C": 90.94141546884961,
+      "first_trip_index": 100,
+      "tripped_steps": 60,
+      "pending_steps": 4,
+      "max_reported_flow_residual_W": 2.9103830456733704e-11
+    }
+  ],
+  "mutation_probes_detected": [
+    "IT_W",
+    "TES_J",
+    "TEMPERATURE_C",
+    "SENSOR_C",
+    "REJECT_W"
+  ],
+  "zero_cap_trip_indices": {
+    "lag0_delay0": 96,
+    "lag0_delay2": 98,
+    "lag0_delay4": 100,
+    "lag1_delay0": 96,
+    "lag1_delay2": 98,
+    "lag1_delay4": 100,
+    "lag4_delay0": 96,
+    "lag4_delay2": 98,
+    "lag4_delay4": 100
+  },
+  "independent_equations": [
+    "IT",
+    "HP",
+    "USER",
+    "TES",
+    "TEMPERATURE",
+    "SENSOR_DELAY",
+    "REJECT_RAMP",
+    "HP_LAG"
+  ],
+  "limitations": [
+    "No hardware or manufacturer validation",
+    "A49 Python-only; A48 Simulink remains validated only on seven baseline scenarios",
+    "Fault injection changes synthetic demand/parameters, not live equipment"
+  ]
+}

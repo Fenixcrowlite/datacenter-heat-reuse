@@ -1,0 +1,33 @@
+{
+  "asset_id": "TEST-LOOP-NOT-REAL",
+  "calibration_ref": "SYNTHETIC-CAL-ONLY",
+  "first_utc": "2026-10-27T00:00:00+00:00",
+  "integrated_energy_kWh": {
+    "P_actual_W": 39.99755438873025,
+    "P_cmd_W": 48.333333333333336,
+    "Q_net_W": 0.9666666666666667,
+    "Q_residual_W": 5.8
+  },
+  "integration": "trapezoidal_on_observed_intervals_no_final_extrapolation",
+  "last_utc": "2026-10-27T00:29:00+00:00",
+  "median_step_s": 60.0,
+  "observed_hours": 0.48333333333333334,
+  "physical_release": false,
+  "provenance_notes": "Explicitly synthetic fixture, not real SCADA data",
+  "rows": 30,
+  "schema": "a69.1",
+  "source_hashes": {
+    "metadata.json": "dd1208ad1bbf3661cf7fd58e967c1731ecd9586202a54c5c13b2c0a854db000c",
+    "provenance.json": "9a3ef37f9b0914dead8cbbacf12cb96ee4a94e8d1b53ba2dcf2c6df74f9e2ff1",
+    "telemetry.csv": "c6165c43bd0dc60e5ef0f5c6c3380a873e84b8a08a50c19908e8416c781c7362"
+  },
+  "source_kind": "synthetic_test",
+  "temperature_first_C": 30.0,
+  "temperature_last_C": 30.435,
+  "trip_rows": 6,
+  "trip_starts": 1,
+  "warnings": [
+    "CALIBRATION_AND_TIME_SYNC_NOT_INDEPENDENTLY_VERIFIED",
+    "TRIPPED_STATES_PRESENT"
+  ]
+}

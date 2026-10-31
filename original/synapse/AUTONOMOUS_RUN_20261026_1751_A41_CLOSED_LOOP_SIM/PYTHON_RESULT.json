@@ -1,0 +1,47 @@
+{
+  "status": "SYNTHETIC_CLOSED_LOOP_PYTHON_REFERENCE",
+  "physical_release": false,
+  "matlab_simulink_executed": false,
+  "samples": 672,
+  "dt_seconds": 900,
+  "fault_index": 96,
+  "recovery_index": 384,
+  "backup_switch_delay_steps": 2,
+  "source_a36_sha256": "4fefcbd8bffdbedecf1894a8cfecab4ce052d2252e8c669b95394c5aa9fd99a1",
+  "a38_sha256": "415201a65f4c08bbb59955db0d7744928d833cbaf34d73fd5be0cebf8d02232d",
+  "a40_sha256": "76e02a755e29fd65670c2b746899f0a1b65be1ea22f4a8272125bab006925a7c",
+  "cases": {
+    "both": {
+      "max_T_C": 30.0,
+      "critical_steps": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 0.0,
+      "max_energy_residual_W": 1.0186340659856796e-10,
+      "trace_sha256": "fda04ab39b595d9f1a237a06be959240af2a953a462e90f507be7c2d61fdee1a"
+    },
+    "main_only": {
+      "max_T_C": 30.0,
+      "critical_steps": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 189.605065,
+      "max_energy_residual_W": 1.0186340659856796e-10,
+      "trace_sha256": "4783b36aa04188fdb6f64df2b989e76129bca820089c4ccc276c75b43ed9934a"
+    },
+    "backup_only": {
+      "max_T_C": 63.121549659375006,
+      "critical_steps": 8,
+      "unhandled_kWh": 83.37433250000001,
+      "shed_kWh": 670.4978725351374,
+      "max_energy_residual_W": 1.0186340659856796e-10,
+      "trace_sha256": "31d2de56bee3663deb55e49ba7e431b74bd2c6c4022dab6a82ebfc6bdf8f82ba"
+    },
+    "neither": {
+      "max_T_C": 90.79758237332076,
+      "critical_steps": 294,
+      "unhandled_kWh": 5992.262359150419,
+      "shed_kWh": 4469.039269,
+      "max_energy_residual_W": 1.0186340659856796e-10,
+      "trace_sha256": "0bb93d27d6d934c945b1d4b58a8e7d185d906f672bc36c401a88736499d8b9a1"
+    }
+  }
+}

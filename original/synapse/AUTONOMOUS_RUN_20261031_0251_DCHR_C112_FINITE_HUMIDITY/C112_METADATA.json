@@ -1,0 +1,46 @@
+{
+  "RH_setpoint": 0.55,
+  "control_caps_kg_h": {
+    "balanced20": {
+      "dehum": 20.0,
+      "humid": 20.0
+    },
+    "ideal": {
+      "dehum": 1000000000.0,
+      "humid": 1000000000.0
+    },
+    "limited5": {
+      "dehum": 5.0,
+      "humid": 5.0
+    },
+    "no_humid10": {
+      "dehum": 10.0,
+      "humid": 0.0
+    }
+  },
+  "field_validated": false,
+  "hourly_sha256": "2c0cd40d6919679c01316d20fcf7770f7ebfe124543a445a6efa5cbb73e2c339",
+  "indoor_air_C": 29.0,
+  "limitations": [
+    "One-way humidity overlay: pool temperature, evaporation, ventilation supply and heat allocation replay immutable C111/C106; humidity DOES NOT feed back to evaporation or COP.",
+    "C104 outdoor coil dehumidifies to 55% RH target when outdoor is wetter; coil capacity unlimited and not recalculated for actual room humidity.",
+    "Well-mixed room, fixed 29 C, constant ventilation, exact first-order hourly solution; endpoint saturation condensation is a simplified clip.",
+    "No latent condensation heat recovery, no fan changes, no HVAC heat rebalance; only dehumidifier and humidifier electricity is recalculated.",
+    "No equipment datasheets, no measured air volumes, no physical validation or MATLAB integration."
+  ],
+  "room_dry_air_kg": 3540.0,
+  "rows": 70080,
+  "scenarios": 8,
+  "schema": "C112_FINITE_ROOM_HUMIDITY_V1",
+  "selftests": 21,
+  "source_sha256": {
+    "C104": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C106": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C111": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "8104d9e18c0debc630c61bcbe926a76bfa1cdc2935af9c71c8ce8455fd7bb72f",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "vent_dry_air_kg_h": 3540.0
+}

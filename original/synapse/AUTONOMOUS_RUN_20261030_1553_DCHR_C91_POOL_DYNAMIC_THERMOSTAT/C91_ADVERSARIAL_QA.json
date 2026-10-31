@@ -1,0 +1,14 @@
+{
+  "schema": "C91_ADVERSARIAL_QA_V1",
+  "passed": 8,
+  "checks": [
+    "stop_flag_rejected",
+    "negative_source",
+    "fraction_above_one",
+    "fraction_below_zero",
+    "nan_source",
+    "bad_pool_temperature",
+    "pinned_source_drift",
+    "restored_source_pin"
+  ]
+}

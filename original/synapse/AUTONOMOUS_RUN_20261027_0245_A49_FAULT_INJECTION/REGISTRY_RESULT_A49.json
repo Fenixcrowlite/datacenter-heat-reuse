@@ -1,0 +1,14 @@
+{
+  "event_id": 1269,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A49_independent_fault_injection_and_ledger",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0245_A49_FAULT_INJECTION",
+  "evidence_sha256": "a70bc02b05516ceebfb2e2584202e72d58fab9469822db29d87596218b2cf406",
+  "manifest_sha256": "7e3c141e5e0060116a52c3b02b1343060467248f421fb60c22947e06ef01a62c",
+  "handoff_sha256": "67f35ed14c45181dc1e2b2b505f1dfec07cdd3dd63c09cb89bbfe7063027d3df",
+  "result_sha256": "f05d42aeb61722ae7c5d432b667eda69d64578a870e3ae48183806674955ccea",
+  "qa": "9/9 PASS; 7x672 baseline; 24x160 seeded variations; 5 mutations caught; 9 zero-capacity checks",
+  "matlab_a49_executed": false,
+  "physical_release": false,
+  "next_step": "A50: run selected sensor-lag and trip-delay fault injections against graphical A48 Stateflow in MATLAB, compare with independent A49 trace ledger; retain 31-source physical signoff gate."
+}

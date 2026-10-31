@@ -1,0 +1,75 @@
+{
+  "dates": {
+    "weather": "2025 hourly NASA POWER",
+    "prices": "2025-S1/S2, 2026-S1 official Eurostat",
+    "PUE": "2026 Uptime benchmark",
+    "study": "2026-10-23"
+  },
+  "n_cases": 18,
+  "provider_provenance": {
+    "NASA": "NASA POWER / MERRA-2 gridded reanalysis; not site thermometer",
+    "Eurostat_electric": "nrg_pc_205 SK MWH70000-149999 X_VAT KWH EUR",
+    "Eurostat_gas": "nrg_pc_203 SK GJ100000-999999 X_VAT KWH EUR",
+    "benchmarks": "Uptime average PUE 1.52, capacity weighted 1.36 in 2026",
+    "DC_IT_telemetry": "not available; remains synthetic",
+    "HP_COP_map": "not available; existing theoretical COP surrogate retained"
+  },
+  "pricing": {
+    "2025_S1": {
+      "electric_EUR_MWh": 149.29999999999998,
+      "gas_EUR_MWh": 57.5,
+      "period": "2025-S1",
+      "tax": "X_VAT"
+    },
+    "2025_S2": {
+      "electric_EUR_MWh": 154.79999999999998,
+      "gas_EUR_MWh": 53.8,
+      "period": "2025-S2",
+      "tax": "X_VAT"
+    },
+    "2025_hour_weighted": {
+      "electric_EUR_MWh": 152.07260273972602,
+      "gas_EUR_MWh": 55.63479452054794,
+      "period": "2025 weighted 181/184 days",
+      "tax": "X_VAT"
+    },
+    "2026_S1": {
+      "electric_EUR_MWh": 151.5,
+      "gas_EUR_MWh": 52.8,
+      "period": "2026-S1",
+      "tax": "X_VAT"
+    },
+    "synthetic_baseline": {
+      "electric_EUR_MWh": 100.0,
+      "gas_EUR_MWh": 50.0,
+      "period": "original synthetic 2026",
+      "tax": "engineering placeholders"
+    }
+  },
+  "monthly_pricing_limitation": "Using period-average prices, not actual hourly time-of-use tariffs",
+  "weather_vs_model": {
+    "synthetic_mean_C": 10.4661422394936,
+    "real_reanalysis_2025_mean_C": 12.091845890411,
+    "mean_temperature_bias_synthetic_minus_reanalysis_C": -1.6257,
+    "synthetic_model_demand_MWh": 59429.9767692541,
+    "reanalysis_model_demand_MWh": 56793.6952887537,
+    "demand_difference_MWh": -2636.281,
+    "demand_change_percent": -4.436
+  },
+  "ERF_caution": {
+    "original_model_ERF_synthetic": 0.505212924797709,
+    "source_heat_proxy_synthetic": 0.4029833100967,
+    "original_model_ERF_NASA": 0.488345713826099,
+    "source_heat_proxy_NASA": 0.39007581254207,
+    "warning": "Original metric includes HP-generated heat; proxy subtracts compressor but is NOT a boundary-metered EN 50600-4-6 ERF"
+  },
+  "output": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\experiments\\real_vs_synthetic_v01\\weather_pue_price_sensitivity_18_cases.csv",
+  "limitations": [
+    "2025 NASA reanalysis instead of site metering",
+    "same uncalibrated synthetic IT load across comparisons",
+    "Eurostat average price != negotiated datacentre contract",
+    "no CAPEX, tax recovery, pumping nor district tariff",
+    "no pool dispatch integration yet",
+    "no legal standard full-text validation"
+  ]
+}

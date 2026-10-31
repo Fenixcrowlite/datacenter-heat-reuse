@@ -1,0 +1,9 @@
+Test,Passed
+district_heat_balance,1
+storage_lower_bound,1
+storage_upper_bound,1
+cop_lower_bound,1
+cop_upper_bound,1
+hp_source_not_overdrawn,1
+nonnegative_gas,1
+nonnegative_hp_power,1

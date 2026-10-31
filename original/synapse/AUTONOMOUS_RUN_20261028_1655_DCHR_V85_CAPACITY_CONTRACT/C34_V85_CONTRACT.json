@@ -1,0 +1,294 @@
+{
+  "scope": "DCHR_C34_V85_ACTUAL_STORAGE_CONTRACT",
+  "generated_local": "2026-10-28T16:55:02+01:00",
+  "task": "scc-2aab24704c2bd0",
+  "task_state_observed": {
+    "project": "DataCenter Heat Reuse",
+    "status": "queued",
+    "worker_pid": null
+  },
+  "source_paths": {
+    "slx": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\DCHR_Electrical_Dispatch_Stateflow_v85.slx",
+    "policy": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\electrical_policy_v85.m",
+    "kernel": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\earliest_dispatch_kernel_v75.m",
+    "builder": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\build_electrical_ceiling_v85.m",
+    "spec": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\reachable_cap_v85_20261013T110959_296758Z\\spec.json",
+    "status": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\STATUS_v86.json",
+    "c33": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1601_DCHR_100MWH_TEMP_GATE\\C33_100MWH_GATE_RESULTS.json"
+  },
+  "source_sha256": {
+    "slx": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+    "policy": "ebbdb8ed44d39aea84db7790ceb4dcc18d79cb4c1198e5162c83f3df4f16f436",
+    "kernel": "748f2c5ba2ce69bd7300899ff6fba5c8afd8748e87e6d1bfeaacd8cb925928eb",
+    "builder": "62dbaf5b5490cd9be3f60305d34741e1331e6d1d64fde058d0880611bcd36432",
+    "spec": "3707bac6df5462cc18fd1ad48a5723bbf0ccbb6e90194b518273a25a3fc8f775",
+    "status": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e",
+    "c33": "7e2d77204206788eadbeaa5afeb295240410d04d3d4af7f4358e6608a64d2f90"
+  },
+  "source_model_sha256_expected": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+  "slx_zip_members": 26,
+  "slx_stateflow_members": [
+    "simulink/stateflow/_rels/machine.xml.rels",
+    "simulink/stateflow/chart_118.xml",
+    "simulink/stateflow/machine.xml"
+  ],
+  "capacity_equation": "E_max_MWh = C_MWh_per_K * (T_max_C - T_min_C)",
+  "inventory_temperature_equation": "T_equiv_C = T_min_C + E_MWh / C_MWh_per_K",
+  "capacity_unit_inference": "MWh, if raw p1 is interpreted as MWh/K and state E is MWh; dimensional inference, not a metered water volume",
+  "saved_v85_spec_case_count": 27,
+  "saved_v85_case_capacities_mwh": [
+    10.0
+  ],
+  "saved_v85_cases": [
+    {
+      "id": "zero_demand",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "HP_only",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "TES_charge",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "TES_discharge",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 9,
+      "initial_T_equivalent_C": 65.0
+    },
+    {
+      "id": "boiler_limit",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "insufficient_heat",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "cycles_P1000.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 7.9,
+      "initial_T_equivalent_C": 59.5
+    },
+    {
+      "id": "service_E3.0_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3.0,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "service_E3.0_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3.0,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "service_E4.95_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 4.95,
+      "initial_T_equivalent_C": 44.75
+    },
+    {
+      "id": "service_E4.95_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 4.95,
+      "initial_T_equivalent_C": 44.75
+    },
+    {
+      "id": "service_E8.5_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 8.5,
+      "initial_T_equivalent_C": 62.5
+    },
+    {
+      "id": "service_E8.5_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 8.5,
+      "initial_T_equivalent_C": 62.5
+    },
+    {
+      "id": "charge_E3.0_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3.0,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "charge_E3.0_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3.0,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "charge_E4.95_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 4.95,
+      "initial_T_equivalent_C": 44.75
+    },
+    {
+      "id": "charge_E4.95_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 4.95,
+      "initial_T_equivalent_C": 44.75
+    },
+    {
+      "id": "charge_E8.5_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 8.5,
+      "initial_T_equivalent_C": 62.5
+    },
+    {
+      "id": "charge_E8.5_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 8.5,
+      "initial_T_equivalent_C": 62.5
+    },
+    {
+      "id": "loss_charge_E3.0_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3.0,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "loss_charge_E3.0_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3.0,
+      "initial_T_equivalent_C": 35.0
+    },
+    {
+      "id": "loss_charge_E4.95_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 4.95,
+      "initial_T_equivalent_C": 44.75
+    },
+    {
+      "id": "loss_charge_E4.95_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 4.95,
+      "initial_T_equivalent_C": 44.75
+    },
+    {
+      "id": "loss_charge_E8.5_a1.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 8.5,
+      "initial_T_equivalent_C": 62.5
+    },
+    {
+      "id": "loss_charge_E8.5_a10.0",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 8.5,
+      "initial_T_equivalent_C": 62.5
+    },
+    {
+      "id": "binding_stop",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 9.5,
+      "initial_T_equivalent_C": 67.5
+    },
+    {
+      "id": "zero_ceiling",
+      "C_MWh_per_K": 0.2,
+      "T_min_C": 20,
+      "T_max_C": 70,
+      "E_capacity_MWh": 10.0,
+      "initial_E_MWh": 3,
+      "initial_T_equivalent_C": 35.0
+    }
+  ],
+  "prior_c33_comparison_reference_mwh": 100.0,
+  "same_baseline_proven": false,
+  "source_specific_conclusion": "The inspected saved v85 test specification has 10 MWh thermal envelope in every case, not 100 MWh. The prior C33 100 MWh synthetic storage is a different model assumption; no dynamic equivalence has been demonstrated.",
+  "no_matlab_run": true,
+  "no_model_modifications": true,
+  "primary_source_signoffs": 0,
+  "next_step": "Identify the original model or dataset that actually declares 100 MWh; trace its SOC, temperature and charge/discharge law, then construct identical-boundary replay against C31. Do not label v85 10 MWh cases as 100 MWh baseline."
+}

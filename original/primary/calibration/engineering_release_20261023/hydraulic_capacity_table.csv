@@ -1,0 +1,7 @@
+﻿circuit,heat_MW,water_dT_K,volume_flow_m3h,inside_diameter_mm_at_velocity,velocity_assumed_ms,status
+IT_FULL_LOAD_10MW_5K,10,5,1726.84,552.6,2.0,"preliminary fluid sizing, no glycol viscosity or pressure losses"
+RECOVERY_FULL_IT_85PCT_5K,8.5,5,1467.82,509.5,2.0,"preliminary fluid sizing, no glycol viscosity or pressure losses"
+POOL_PRIMARY_150KW_3K,0.15,3,43.17,87.4,2.0,"preliminary fluid sizing, no glycol viscosity or pressure losses"
+POOL_SECONDARY_150KW_2K,0.15,2,64.76,107.0,2.0,"preliminary fluid sizing, no glycol viscosity or pressure losses"
+DH_10MW_20K,10,20,431.71,276.3,2.0,"preliminary fluid sizing, no glycol viscosity or pressure losses"
+DH_10MW_10K,10,10,863.42,390.8,2.0,"preliminary fluid sizing, no glycol viscosity or pressure losses"

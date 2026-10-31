@@ -1,0 +1,43 @@
+ 
+30
+ 
+𝑃𝐶𝑅𝐴𝐻= 𝑃𝐶𝑅𝐴𝐻
+𝑖𝑑𝑙𝑒+ 𝑃ℎ𝑒𝑎𝑡 
+ 
+ 
+                (Eq. 14) 
+ 
+𝑃𝐶𝑅𝐴𝐻
+𝑖𝑑𝑙𝑒 is CRAH power consumption in idle mode, ranging from 7 to 10 per-
+cent from 𝑃𝑠𝑓
+𝑚𝑎𝑥[22].  
+3.2.3 DC Free Cooling System 
+Free cooling system in this work uses Indirect Air Side Economizer (IASE) 
+model adapted from Park S. et al. [38]. The heat exchange between outdoor 
+temperature (𝑇𝑂𝐴) and the return air from DC exhaust (𝑇𝑅𝐴) generates the sec-
+ondary return air (𝑇𝑅𝐴∗) which can be formulated in the following equations 
+15 and 16 [38]. The 𝑇𝑅𝐴 temperature passing through heat exchanger becomes 
+closer to the 𝑇𝑂𝐴 which has lower temperature than 𝑇𝑅𝐴 during wintertime, 
+and that can lead into lower cooling energy that would otherwise require 
+CRAH to generate the desired cold air supply temperature with chilled water.  
+ 
+𝑇𝑅𝐴∗= 𝑇𝑅𝐴+ ɛ 𝐻𝑋𝑓𝑙𝑜𝑤 𝑟𝑎𝑡𝑖𝑜(
+𝑚̇𝑂𝐴
+𝑚̇𝑅𝐴) 𝑥 (𝑇𝑂𝐴− 𝑇𝑅𝐴) 
+                (Eq. 15) 
+ 
+𝐻𝑋𝑓𝑙𝑜𝑤 𝑟𝑎𝑡𝑖𝑜= (𝑚̇𝑂𝐴+ 𝑚̇𝑅𝐴)/2𝑚̇𝑅𝐴 
+ 
+                (Eq. 16) 
+ 
+𝑇𝑂𝐴 as initial set point defines the operation plan of IASE system in the way 
+that free cooling will be operated when 𝑇𝑅𝐴∗ doesn’t exceed the temperature 
+of cold air supply to DC server racks (𝑇𝑆𝐴). In this model, TSA is set at maxi-
+mum 20⁰C. If 𝑇𝑅𝐴∗ doesn’t meet 𝑇𝑆𝐴 criteria (especially during summer due to 
+higher outdoor temperature), the CRAH cooling system will be activated to 
+help provide the desired cooling needs to DC servers. In configuration A2, the 
+𝑇𝑅𝐴 for free cooling model input refers to the exhaust temperature resulted 
+from the server racks; while in configuration A4, 𝑇𝑅𝐴 is the outlet temperature 
+after waste heat recovery in the heat exchanger (𝑇𝑅𝐴_𝑜𝑢𝑡). The schematic dia-
+gram of the free cooling system can be seen in the following figure 14. 
+ 

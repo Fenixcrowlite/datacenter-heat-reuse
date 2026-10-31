@@ -1,0 +1,31 @@
+{
+  "version": "0.42",
+  "timestamp_utc": "2026-10-10T13:11:22.477101+00:00",
+  "files": [
+    {
+      "path": "audit/seal_stateflow_clock_v42.py",
+      "bytes": 1784,
+      "sha256": "8cea653a6effb00c53b2c67d5201ad91838c96eb804cd4328e7f0073102b9d43"
+    },
+    {
+      "path": "audit/Stateflow_clock_manifest_v42_20261010T131054_029975Z.json",
+      "bytes": 36501,
+      "sha256": "3f11aef75244527bb239d14ba0b4c2cd4bbb5d743ba05439730db1ab2c7adefb"
+    },
+    {
+      "path": "audit/Stateflow_clock_postclose_v42_20261010T131100_414465Z.json",
+      "bytes": 23613,
+      "sha256": "6772f3d9b324561142b8424483cc9a968b67d18b3a9b8fe2414317f8b908202b"
+    },
+    {
+      "path": "automation/logs/stateflow_repair_finalize_20261010T131053947Z.log",
+      "bytes": 126,
+      "sha256": "9eb176f0c5629f5e4de32c64631932e0026acf5a7706fac5ce8d7b4fe79483a9"
+    },
+    {
+      "path": "automation/logs/stateflow_repair_postclose_20261010T131100268Z.log",
+      "bytes": 131,
+      "sha256": "033a80cf5258e690c0af51a7525259e0e17dfa93cd96595f3bbd276b46d78acf"
+    }
+  ]
+}

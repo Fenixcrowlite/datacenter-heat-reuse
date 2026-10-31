@@ -1,0 +1,50 @@
+{
+  "dehum_capacity_kg_h": 45.66,
+  "feedback_gain": 0.75,
+  "field_validated": false,
+  "hourly_sha256": "8eddd1fcd5d5a456deaf4dd8994c38b063089dd0a405dae1e43761ace19b0f4c",
+  "humid_capacity_kg_h": 29.7,
+  "limitations": [
+    "One-way replay of C116 hourly evaporation, not a coupled heat/air simulation.",
+    "Fixed 29 C air, no dynamic enthalpy, equipment startup delay, or sensor lag.",
+    "Predictive mode assumes perfect knowledge of quarter-hour evaporation but is not proven optimal under actuator caps.",
+    "Legacy fixed mode may exceed real capacity; compare fixed_capped to feedback_capped for equal capacity.",
+    "Front-loaded pulses are synthetic stress tests, not measurements. No equipment validation."
+  ],
+  "modes": [
+    "legacy_fixed",
+    "fixed_capped",
+    "feedback_capped",
+    "predictive_capped"
+  ],
+  "output_rows": 140160,
+  "patterns": {
+    "flat": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "front_loaded": [
+      4.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "schema": "C120_SYNTHETIC_15MIN_CONTROLLER_V1",
+  "selftests": 7,
+  "source_hours": 17520,
+  "source_sha256": {
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\c104_psychrometric.py": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\C106_BYPASS_HOURLY.csv.gz": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED\\C116_TWO_WAY_HOURLY.csv.gz": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf",
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH\\c118_subhour_rh.py": "a2fa7fb4d45f3c020813c6cd67059e1fad11c380a558afc5e4235f15e4e693ce"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "5437315621b39af9a083f4739ee91a61a6d8ce6cdc0ed08c24a7ff109e3b67dd",
+  "synthetic": true,
+  "target_RH": 0.55,
+  "task_id": "scc-2aab24704c2bd0"
+}
+

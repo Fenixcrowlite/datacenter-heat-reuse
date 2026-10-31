@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-09T10:32:10.777182+00:00",
+  "suite": "TES_derivation_v28",
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "SI_to_MWh_h_mapping",
+      "passed": true,
+      "lambda_per_h": 0.2,
+      "SI_temperature_result_MWh": 20.109601381069183
+    },
+    {
+      "name": "independent_RK4_power_0.0",
+      "passed": true,
+      "exact_MWh": 6.703200460356394,
+      "RK4_MWh": 6.703200460356418
+    },
+    {
+      "name": "continuous_partition_power_0.0",
+      "passed": true,
+      "whole_MWh": 6.703200460356394,
+      "partitioned_MWh": 6.703200460356393
+    },
+    {
+      "name": "independent_RK4_power_1.8",
+      "passed": true,
+      "exact_MWh": 9.67032004603564,
+      "RK4_MWh": 9.670320046035654
+    },
+    {
+      "name": "continuous_partition_power_1.8",
+      "passed": true,
+      "whole_MWh": 9.67032004603564,
+      "partitioned_MWh": 9.67032004603564
+    },
+    {
+      "name": "independent_RK4_power_-1.25",
+      "passed": true,
+      "exact_MWh": 4.64270074807914,
+      "RK4_MWh": 4.642700748079139
+    },
+    {
+      "name": "continuous_partition_power_-1.25",
+      "passed": true,
+      "whole_MWh": 4.64270074807914,
+      "partitioned_MWh": 4.64270074807914
+    },
+    {
+      "name": "split_bias_power_1.8",
+      "passed": true,
+      "split_MWh": 10.303200460356393,
+      "continuous_MWh": 9.67032004603564,
+      "discrepancy_MWh": 0.6328804143207538
+    },
+    {
+      "name": "split_bias_power_-1.25",
+      "passed": true,
+      "split_MWh": 4.203200460356394,
+      "continuous_MWh": 4.64270074807914,
+      "discrepancy_MWh": -0.43950028772274585
+    },
+    {
+      "name": "zero_rate_limit",
+      "passed": true,
+      "zero_rate_MWh": 13.6
+    },
+    {
+      "name": "legacy_passive_partition_counterexample",
+      "passed": true,
+      "whole_linear_MWh": 6.0,
+      "partitioned_linear_MWh": 6.400000000000001,
+      "continuous_MWh": 6.703200460356394
+    },
+    {
+      "name": "useful_cutoff_reference_counterexample",
+      "passed": true,
+      "unconstrained_useful_MWh": -0.9939617161422003,
+      "wrong_zero_equilibrium_MWh": 0.8187307530779818,
+      "physical_interpretation": "Useful delivery stops at cutoff; ambient sensible energy remains."
+    },
+    {
+      "name": "fraction_rate_conversion",
+      "passed": true,
+      "rate_per_h": 0.2,
+      "resulting_one_hour_loss_fraction": 0.18126924692201818
+    },
+    {
+      "name": "above_one_rate_step_retention",
+      "passed": true,
+      "lambda_dt": 2,
+      "exponential_retention": 0.1353352832366127,
+      "linear_retention": -1
+    }
+  ],
+  "qualifier": "Independent reduced-equation/unit QA only; scenario values, no equipment or article replication.",
+  "source_pdf_sha256": "693b8373e83c5b3cfcc17c449903a4dc320c9df76bb664b99aeab455d7d39dcb",
+  "reviewer_script_sha256": "942020062f8e1a9c8e848c7699b505ea9f4fd17aa6012ac55b018d38da836642"
+}

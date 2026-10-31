@@ -1,0 +1,11 @@
+﻿Parameter_or_claim,Value_or_role,Confidence,Source,Action
+IT capacity,10 MW,D,reference scenario,calibrate
+PUE,1.20,D,reference scenario,calibrate
+source temperature,25/35/45 C,B/D,cooling architecture literature anchors,calibrate
+recovery fraction,0.70/0.85/0.90,D,screening assumption,calibrate
+DH supply schedule,weather compensated,B/D,district-heating integration literature,calibrate
+HP COP,"Carnot surrogate, eta=0.45",D,screening physics,replace with manufacturer map
+storage,0-1000 MWh sweep,D,sensitivity study,optimize
+Frankfurt topology,HP + gas + storage,B,Jurgens et al. 2024,sanity anchor
+annual dispatch,8760 h,B,Espoo/system simulation literature,keep
+economics / EF,scenario values,D,not market data,replace by selected year data

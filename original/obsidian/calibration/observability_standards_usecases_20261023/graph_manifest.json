@@ -1,0 +1,102 @@
+[
+  {
+    "name": "01_pool_warmup",
+    "png": "01_pool_warmup.png",
+    "svg": "01_pool_warmup.svg"
+  },
+  {
+    "name": "02_monthly_energy",
+    "png": "02_monthly_energy.png",
+    "svg": "02_monthly_energy.svg"
+  },
+  {
+    "name": "03_monthly_HP_electric",
+    "png": "03_monthly_HP_electric.png",
+    "svg": "03_monthly_HP_electric.svg"
+  },
+  {
+    "name": "04_load_duration",
+    "png": "04_load_duration.png",
+    "svg": "04_load_duration.svg"
+  },
+  {
+    "name": "05_IT_heat_allocation",
+    "png": "05_IT_heat_allocation.png",
+    "svg": "05_IT_heat_allocation.svg"
+  },
+  {
+    "name": "06_pool_geometry_sensitivity",
+    "png": "06_pool_geometry_sensitivity.png",
+    "svg": "06_pool_geometry_sensitivity.svg"
+  },
+  {
+    "name": "07_HP_capacity_gas",
+    "png": "07_HP_capacity_gas.png",
+    "svg": "07_HP_capacity_gas.svg"
+  },
+  {
+    "name": "08_COP_reference",
+    "png": "08_COP_reference.png",
+    "svg": "08_COP_reference.svg"
+  },
+  {
+    "name": "09_pool_temperature_distribution",
+    "png": "09_pool_temperature_distribution.png",
+    "svg": "09_pool_temperature_distribution.svg"
+  },
+  {
+    "name": "10_recovery_dispatch_week",
+    "png": "10_recovery_dispatch_week.png",
+    "svg": "10_recovery_dispatch_week.svg"
+  },
+  {
+    "name": "11_thermal_storage",
+    "png": "11_thermal_storage.png",
+    "svg": "11_thermal_storage.svg"
+  },
+  {
+    "name": "12_weather_monthly",
+    "png": "12_weather_monthly.png",
+    "svg": "12_weather_monthly.svg"
+  },
+  {
+    "name": "13_gas_pool_comparison",
+    "png": "13_gas_pool_comparison.png",
+    "svg": "13_gas_pool_comparison.svg"
+  },
+  {
+    "name": "14_independent_cooling_Nplus1",
+    "png": "14_independent_cooling_Nplus1.png",
+    "svg": "14_independent_cooling_Nplus1.svg"
+  },
+  {
+    "name": "150_cooling_fault",
+    "png": "150_cooling_fault.png",
+    "svg": "150_cooling_fault.svg"
+  },
+  {
+    "name": "151_cooling_fault",
+    "png": "151_cooling_fault.png",
+    "svg": "151_cooling_fault.svg"
+  },
+  {
+    "name": "17_hydraulic",
+    "png": "17_hydraulic.png",
+    "svg": "17_hydraulic.svg"
+  },
+  {
+    "name": "18_scenario_COP_lift",
+    "png": "18_scenario_COP_lift.png",
+    "svg": "18_scenario_COP_lift.svg"
+  },
+  {
+    "name": "19_heat_pump_energy",
+    "png": "19_heat_pump_energy.png",
+    "svg": "19_heat_pump_energy.svg"
+  },
+  {
+    "name": "20_metric_provenance",
+    "png": "20_metric_provenance.png",
+    "svg": "20_metric_provenance.svg"
+  }
+]

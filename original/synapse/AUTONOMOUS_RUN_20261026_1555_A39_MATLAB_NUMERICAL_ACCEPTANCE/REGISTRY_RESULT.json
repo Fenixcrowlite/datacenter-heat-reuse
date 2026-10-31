@@ -1,0 +1,14 @@
+{
+  "action": "CREATED_EVENT",
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1222,
+  "scope": "isolated_A39_real_MATLAB_R2026a_12x672_numerical_acceptance",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1555_A39_MATLAB_NUMERICAL_ACCEPTANCE",
+  "evidence_sha256": "28cf64793bb0faaad65cbc5e7b5883d404a61f7190725a8b9bc71de59e7536f2",
+  "manifest_sha256": "e57fff77e6edd82c6bb8b233b45fa4f29a12b37a9fcc051ce64e54c3b7622811",
+  "matlab_result_sha256": "449ce63c1bf12d42cd6895a9a6e001a3ca99a4b7100a11bf6da24f2084f9356a",
+  "qa": "MATLAB R2026a 80640 comparisons PASS max error 2.91e-11; Python 10/10 PASS",
+  "status": "MATLAB_NUMERICAL_ACCEPTED_STATEFLOW_NOT_EXECUTED",
+  "release_status": "PHYSICAL_RELEASE_BLOCKED",
+  "next_step": "Build isolated Stateflow controller with TES SOC, REJECT A/B N-1 and IT shedding, test transition guards and 672-step parity; no hardware release"
+}

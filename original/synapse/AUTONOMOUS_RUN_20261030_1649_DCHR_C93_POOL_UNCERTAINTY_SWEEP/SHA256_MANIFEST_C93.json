@@ -1,0 +1,33 @@
+{
+  "files": {
+    "C93_FINDINGS.md": {
+      "bytes": 3004,
+      "sha256": "6a0ba51c0b4918347499082ba75916d1b0b0c0713f59f8c0bd32d48bdf2e1f63"
+    },
+    "C93_INDEPENDENT_QA.json": {
+      "bytes": 1132,
+      "sha256": "aa43acd168f499f58ab9d239d717284bd71a0e279e8f30748f706e1a8c267f77"
+    },
+    "C93_MATRIX_METADATA.json": {
+      "bytes": 1712,
+      "sha256": "944b235844b2a74d2253663ba49b3caa33911aafef50ba69fbbdf8f8533e6d9b"
+    },
+    "C93_SCENARIO_MATRIX.csv": {
+      "bytes": 10682,
+      "sha256": "f3c51367003a28ce5d02655eefe027f95bc3e1e89e47dfabfe4e23ded0d6ee33"
+    },
+    "c93_uncertainty_sweep.py": {
+      "bytes": 10298,
+      "sha256": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923"
+    },
+    "qa_c93_independent.py": {
+      "bytes": 4612,
+      "sha256": "8bf760b601209f6dd97d6cb652cc639b6ee8ba6162fd093aabf65457c434ffd5"
+    }
+  },
+  "qa": "8/8 self + 24/24 independent PASS",
+  "schema": "C93_SHA256_MANIFEST_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

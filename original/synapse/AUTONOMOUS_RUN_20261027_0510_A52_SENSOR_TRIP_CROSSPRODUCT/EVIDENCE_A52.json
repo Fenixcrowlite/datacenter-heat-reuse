@@ -1,0 +1,17 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A52_independent_sensor_trip_sensitivity",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0510_A52_SENSOR_TRIP_CROSSPRODUCT",
+  "result_sha256": "b2ae3e27162c8d9f3193995b6e965831d4f7024c3a6922382487ffb279ace7ea",
+  "scenarios": 18,
+  "samples_each": 240,
+  "independent_energy_ledgers": "18/18 PASS",
+  "python_tests": "8/8 PASS",
+  "first_trip_backup_sensor4_trip4": 105,
+  "first_trip_backup_sensor0_trip4": 100,
+  "worst_synthetic_temperature_C": 90.94141546884961,
+  "matlab_crossproduct_executed": false,
+  "synthetic_only": true,
+  "physical_release": false,
+  "next_step": "A53: run full 18-case sensor-lag x trip-delay matrix in graphical MATLAB/Stateflow (240 steps, 11 channels), compare 47520 values with Python A52, then assess safety margins and independent primary-source evidence; physical deployment BLOCKED."
+}

@@ -1,0 +1,7 @@
+{
+  "command": "addpath('matlab/simulink'); sldiagviewer.diary(['automation/logs/stateflow_v34_diagnostic_' char(datetime('now','Format','yyyyMMdd_HHmmss')) '.log']); build_dispatch_stateflow_v34(); run_stateflow_acceptance_v34('audit/stateflow_spec_v34_20261010T025039_026812Z');",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "log_path": "automation/logs/stateflow_v34_console_20261010T025416269Z.log",
+  "exit_code": 1,
+  "timestamp_utc": "2026-10-10T02:57:40.1969327Z"
+}

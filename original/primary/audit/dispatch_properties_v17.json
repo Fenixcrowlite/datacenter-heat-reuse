@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-08T22:30:02.785329+00:00",
+  "scope": "Python algebraic stress, not physical or MATLAB validation",
+  "cases": 1000,
+  "errors": [],
+  "max_abs_balance_MWh": 1.4432899320127035e-14
+}

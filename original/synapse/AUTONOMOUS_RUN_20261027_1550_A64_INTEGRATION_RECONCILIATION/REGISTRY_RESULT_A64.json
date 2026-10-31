@@ -1,0 +1,14 @@
+{
+  "QA": "12/12 unittest; 8107/8107 independent Decimal; source SHA/provenance PASS",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1550_A64_INTEGRATION_RECONCILIATION",
+  "event_id": 1327,
+  "evidence_sha256": "1ea083c0e186a3ad3d5bb34ba604dd1c932f6af07a6b52138ab87e4c1525ddc6",
+  "handoff_sha256": "a82e353bd022ae085a79d7aab4c2cbff3b9f0fd938a8199d4e9c970d7f3ed5df",
+  "manifest_sha256": "11975d1e8dfa48f5ea49155f6b675b30dc368a94122581f5175b97e37ae9cfbe",
+  "next_step": "Use the isolated A64 report alongside A63; obtain calibrated physical telemetry and verify UTC/channel identity before A55-A58 physical acceptance.",
+  "physical_release": false,
+  "report_html": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1550_A64_INTEGRATION_RECONCILIATION\\OUTPUT\\comparison.html",
+  "scope": "A64_A60_trapezoid_vs_A62_discrete_reconciliation",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

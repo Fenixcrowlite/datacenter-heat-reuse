@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "as_of": "2026-10-23",
+    "owner": "calibration lane; do not overwrite matlab/pool_500m3",
+    "measurement_policy": "never label D scenarios measured",
+    "classes": {
+      "A": "site measured",
+      "B": "published real dataset/research",
+      "C": "manufacturer or independent provider",
+      "D": "scenario only"
+    }
+  },
+  "sources": [
+    {
+      "id": "SK_POOL_308_2012",
+      "type": "legal",
+      "title": "Vyhláška 308/2012 Z.z., §8(7), swimming pool maximum 28 C",
+      "url": "https://static.slov-lex.sk/static/SK/ZZ/2012/308/vyhlasene_znenie.print.html",
+      "value": 28,
+      "unit": "°C",
+      "status": "historical published text; confirm currently effective consolidated version before regulatory compliance claim",
+      "class": "B"
+    },
+    {
+      "id": "STN_EN_15288_1_2024",
+      "type": "design standard",
+      "title": "STN EN 15288-1+A1, public swimming pool design safety, 2024",
+      "url": "https://normy.normoff.gov.sk/norma/139372/?lang=en",
+      "status": "valid scope verified, full text not licensed/not audited",
+      "class": "B"
+    },
+    {
+      "id": "WORLD_AQUATICS_2026",
+      "type": "competition rules",
+      "title": "World Aquatics Competition Regulations February 2026",
+      "url": "https://www.worldaquatics.com/rules/competition-regulations",
+      "status": "applicability depends on selected competition class; 500 m3 training geometry NOT certified",
+      "class": "B"
+    },
+    {
+      "id": "ISO_30134_2_2026",
+      "type": "norm",
+      "title": "ISO/IEC 30134-2:2026 PUE measurement and reporting",
+      "url": "https://www.iso.org/standard/30134-2",
+      "status": "published edition 2026, full normative text not audited",
+      "class": "B"
+    },
+    {
+      "id": "EU_2024_1364",
+      "type": "law",
+      "title": "EU 2024/1364 data centre sustainability PUE, ERF, E_REUSE at boundary",
+      "url": "https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj",
+      "status": "official EU legal act, reporting applicability requires facility assessment",
+      "class": "B"
+    },
+    {
+      "id": "UPTIME_2026",
+      "type": "published survey",
+      "title": "Uptime Institute Global Data Center Survey 2026",
+      "url": "https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/UptimeInstitute.GlobalDataCenterSurvey.2026.pdf?version=0",
+      "value": 1.52,
+      "unit": "PUE",
+      "n": 644,
+      "status": "2026 industry mean, not a requirement or representative of any one site",
+      "class": "B"
+    },
+    {
+      "id": "DOE_POOL",
+      "type": "engineering empirical guidance",
+      "title": "US DOE Better Buildings Pool Efficiency",
+      "url": "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/Pool%20efficiency__0.pdf",
+      "value": "pool covers may save 50-70% pool heating",
+      "status": "guidance, not guaranteed pool-specific saving; account for natatorium HVAC separately",
+      "class": "B"
+    },
+    {
+      "id": "ERA5",
+      "type": "reanalysis",
+      "title": "Copernicus ERA5 hourly meteorological data",
+      "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview",
+      "status": "data source selected; hourly Bratislava series NOT downloaded into project",
+      "class": "B"
+    },
+    {
+      "id": "EUROSTAT_205",
+      "type": "statistics",
+      "title": "Eurostat nonhousehold electricity price, dataset nrg_pc_205",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_205%24defaultview/default/table?lang=en",
+      "status": "price source selected; matching Slovak consumption band and half-year value NOT ingested",
+      "class": "B"
+    }
+  ],
+  "baseline": {
+    "PUE_synthetic": 1.2,
+    "PUE_observed_market_2026": 1.52,
+    "IT_utilization": 0.82,
+    "IT_capacity_MW": 10,
+    "heat_fraction": 0.85,
+    "COP_assumed": 4,
+    "pool_gross_volume_m3": 500,
+    "pool_warm_start_C": 16,
+    "pool_hot_setpoint_C": 28,
+    "pool_control_switch_off_C": 28.2,
+    "pool_holding_loss_kW": 31.45
+  },
+  "flags": [
+    "current pool switch-off 28.2 C is above published 28 C maximum",
+    "existing fixed COP=4 has no temperature-dependent manufacturer map",
+    "source 25/35/45 C values are scenarios",
+    "pool geometry 25x12.5x1.6=500m3 not certified competition geometry",
+    "existing meteorology, tariffs and carbon intensity are placeholders"
+  ]
+}

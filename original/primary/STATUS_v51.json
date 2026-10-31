@@ -1,0 +1,26 @@
+{
+  "version": "0.51",
+  "timestamp_utc": "2026-10-11T06:16:59.481205+00:00",
+  "inherits": "STATUS_v50.json",
+  "result": "UNACCEPTED_HOST_COMPILED_ENDPOINT_HANDOFF_DEFECT",
+  "corrected_model_accepted": false,
+  "accepted_model_version": "0.42",
+  "candidate_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v51.slx",
+  "candidate_model_sha256": "3154e74bdd98e1be6749fd37303f35dc29c792ee93efbc68c8c747afdd42d707",
+  "six_modes_executed": true,
+  "exact_v50_seeds_repaired": 2,
+  "annual_attempts": 9,
+  "annual_completed": 0,
+  "initial_harness_passed": 19,
+  "initial_harness_failed": 4,
+  "reviewed_physical_reference_passed": 23,
+  "result_directory": "results/stateflow_padding_v51_20261010T230758_239448Z",
+  "diagnostic": "results/stateflow_protocol_v52_resume_20261011T060454_763418Z/unaccepted_v51_protocol_diagnostic.json",
+  "limitations": [
+    "No v51 acceptance: all nine annual attempts reject at exact energy handoff.",
+    "Initial reference harness conflated attempted HP request with OFF-latch request. Revised original-MAT physical comparison23/0; failed checks/log/source preserved.",
+    "Empty-matrix export failed after per-scenario MAT/JSON evidence was retained.",
+    "Diagnostic continuity relaxation is temporary/in-memory and explicitly not acceptance."
+  ],
+  "next_actionable_task": "Use explicit canonical endpoint protocol, independently retain ODE/first-law checks; test additive v52."
+}

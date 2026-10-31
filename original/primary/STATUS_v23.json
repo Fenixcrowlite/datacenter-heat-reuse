@@ -1,0 +1,15 @@
+{
+  "version": "0.23",
+  "inherits": "STATUS_v22.json",
+  "checkpoint": "Stenberg bibliography identified; price provenance still blocked",
+  "local_integrity_tests": "6/6 PASS",
+  "upstream_original": "NOT_OBTAINED",
+  "primary_source_signoffs": 0,
+  "total_sources": 31,
+  "independent_physical_validation": "NOT_TESTED",
+  "sha256": {
+    "evidence": "c9b2aca3ac702693c1e966f723aaa9fafab2070724a4b9ce6999e35935ca6d57",
+    "traceability": "5808c451bd89c10cddf06a54a18cddb3d5040a54b8ba5976d7a1278bc8f8c380"
+  },
+  "next": "Acquire Stenberg 2015 original PDF and inspect prices"
+}

@@ -1,0 +1,52 @@
+{
+  "timestamp_utc": "2026-10-10T08:01:23.118491+00:00",
+  "checkpoint": "defect reproduction only",
+  "failed": 0,
+  "bindings": [
+    {
+      "path": "matlab\\simulink\\DCHR_Dispatch_Stateflow_v36.slx",
+      "sha256": "af24d0c3b06f08bf7a12066cbf5bc81b1f968b9917bcb1871550504b6d4396aa",
+      "bytes": 180696
+    },
+    {
+      "path": "results\\stateflow_resolution_v37_20261010T075607048Z\\independent_QA_v37_20261010T075836_225950Z.json",
+      "sha256": "c46e1aeda24c54ed3dc1cfae5938835dfea011e4cc049ab18937684841b8f9ec",
+      "bytes": 1705704
+    },
+    {
+      "path": "audit\\Stateflow_execution_v37_20261010T075603382Z.json",
+      "sha256": "286fa882b26fb236a51a1274b29e3ca7f059f8a2dc6696ebb530554422515bdf",
+      "bytes": 337
+    },
+    {
+      "path": "audit\\Stateflow_execution_v37_20261010T075700550Z.json",
+      "sha256": "6d366bae303186f45f199c831fb97117de7c00e16c4424b0b69ae8ef6251c8e9",
+      "bytes": 390
+    },
+    {
+      "path": "audit\\Stateflow_execution_v37_20261010T075753048Z.json",
+      "sha256": "ba509ba430bd135aed9b65dc1893a3930691d10657bb3f9bb1e3744651fa7bbc",
+      "bytes": 350
+    },
+    {
+      "path": "STATUS_stateflow_v37.json",
+      "sha256": "aabf32c0050bc612ac7264503eb6b677a074beb3ae87e8050dfcae442ddf7caa",
+      "bytes": 4019
+    },
+    {
+      "path": "MASTER_STAGEBOARD_stateflow_v37.md",
+      "sha256": "2499aa5e75322149b479928e8ef2534bf38ce3a8d263adc0a7601c67418e4afa",
+      "bytes": 1398
+    },
+    {
+      "path": "audit\\TES_resolution_results_v37.md",
+      "sha256": "35e052e9858205f72ee53626aa1340ad60520836ded349c31c5532269fdf4b37",
+      "bytes": 5195
+    },
+    {
+      "path": "audit\\TES_resolution_derivation_v37.md",
+      "sha256": "d096faaffbf5ee40c91050c105529123b0e57d29a3f1f6e3d189059a2407eb28",
+      "bytes": 6254
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+test_discrete_stored_energy_matches_input_less_signed_loss (test_a62.TestA62.test_discrete_stored_energy_matches_input_less_signed_loss) ... ok
+test_loss_corruption_rejected_even_with_updated_sha (test_a62.TestA62.test_loss_corruption_rejected_even_with_updated_sha) ... ok
+test_missing_parent (test_a62.TestA62.test_missing_parent) ... ok
+test_no_fake_physical_release (test_a62.TestA62.test_no_fake_physical_release) ... ok
+test_no_fake_real_telemetry (test_a62.TestA62.test_no_fake_real_telemetry) ... ok
+test_no_overwrite (test_a62.TestA62.test_no_overwrite) ... ok
+test_output_hash_matches (test_a62.TestA62.test_output_hash_matches) ... ok
+test_signed_loss_and_original_columns (test_a62.TestA62.test_signed_loss_and_original_columns) ... ok
+test_tampered_a60_hash (test_a62.TestA62.test_tampered_a60_hash) ... ok
+test_tampered_source_hash (test_a62.TestA62.test_tampered_source_hash) ... ok
+test_v08_export (test_a62.TestA62.test_v08_export) ... ok
+test_v09_export (test_a62.TestA62.test_v09_export) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in <variable>s
+
+OK

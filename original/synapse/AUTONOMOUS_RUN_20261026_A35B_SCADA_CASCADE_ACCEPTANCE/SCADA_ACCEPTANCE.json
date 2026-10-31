@@ -1,0 +1,416 @@
+{
+  "time_local": "2026-10-26 06:59:33",
+  "method": "Headless isolated Chrome+Edge, HTTP GET only, no production writes",
+  "tests": [
+    {
+      "name": "chrome:baseline_power_positive",
+      "pass": true,
+      "observed": {
+        "pool": "1",
+        "dh": "1",
+        "off": 0,
+        "time": 0,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 100,
+        "dc_kw": 200,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": false,
+        "banner_hidden": true,
+        "banner": "",
+        "pool_mark": "",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "chrome:baseline_banner_hidden",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "chrome:pool_off_zero_and_pipes_off",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "1",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 0,
+        "dh_flow_kw": 70.4,
+        "dc_kw": 193,
+        "pool_pipe_active": false,
+        "pool_pipe_off": true,
+        "hx_pipe_off": true,
+        "dh_pipe_off": false,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн OFF · ЦО ON · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события и",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": true
+      }
+    },
+    {
+      "name": "chrome:pool_off_explicit_label",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "chrome:dc_remains_source",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "chrome:pool_off_stable_after_poll",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "1",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 0,
+        "dh_flow_kw": 70.4,
+        "dc_kw": 193,
+        "pool_pipe_active": false,
+        "pool_pipe_off": true,
+        "hx_pipe_off": true,
+        "dh_pipe_off": false,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн OFF · ЦО ON · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события и",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": true
+      }
+    },
+    {
+      "name": "chrome:dh_off_zero_and_pipe_off",
+      "pass": true,
+      "observed": {
+        "pool": "1",
+        "dh": "0",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 0,
+        "dc_kw": 193,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": true,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн ON · ЦО OFF · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события и",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "chrome:both_off_zero_but_dc_live",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "0",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 0,
+        "dh_flow_kw": 0,
+        "dc_kw": 193,
+        "pool_pipe_active": false,
+        "pool_pipe_off": true,
+        "hx_pipe_off": true,
+        "dh_pipe_off": true,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн OFF · ЦО OFF · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события ",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": true
+      }
+    },
+    {
+      "name": "chrome:before_onset_original_baseline",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "0",
+        "off": 120,
+        "time": 100,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 70.4,
+        "dc_kw": 193,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": false,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн ПОКА БАЗА · ЦО ПОКА БАЗА · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Трен",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "chrome:reset_restores_base",
+      "pass": true,
+      "observed": {
+        "pool": "1",
+        "dh": "1",
+        "off": 0,
+        "time": 0,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 100,
+        "dc_kw": 200,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": false,
+        "banner_hidden": true,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн ПОКА БАЗА · ЦО ПОКА БАЗА · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Трен",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "chrome:no_non_get_network",
+      "pass": true,
+      "observed": []
+    },
+    {
+      "name": "chrome:no_js_page_errors",
+      "pass": true,
+      "observed": []
+    },
+    {
+      "name": "edge:baseline_power_positive",
+      "pass": true,
+      "observed": {
+        "pool": "1",
+        "dh": "1",
+        "off": 0,
+        "time": 0,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 100,
+        "dc_kw": 200,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": false,
+        "banner_hidden": true,
+        "banner": "",
+        "pool_mark": "",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "edge:baseline_banner_hidden",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "edge:pool_off_zero_and_pipes_off",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "1",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 0,
+        "dh_flow_kw": 70.4,
+        "dc_kw": 193,
+        "pool_pipe_active": false,
+        "pool_pipe_off": true,
+        "hx_pipe_off": true,
+        "dh_pipe_off": false,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн OFF · ЦО ON · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события и",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": true
+      }
+    },
+    {
+      "name": "edge:pool_off_explicit_label",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "edge:dc_remains_source",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "edge:pool_off_stable_after_poll",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "1",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 0,
+        "dh_flow_kw": 70.4,
+        "dc_kw": 193,
+        "pool_pipe_active": false,
+        "pool_pipe_off": true,
+        "hx_pipe_off": true,
+        "dh_pipe_off": false,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн OFF · ЦО ON · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события и",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": true
+      }
+    },
+    {
+      "name": "edge:dh_off_zero_and_pipe_off",
+      "pass": true,
+      "observed": {
+        "pool": "1",
+        "dh": "0",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 0,
+        "dc_kw": 193,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": true,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн ON · ЦО OFF · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события и",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "edge:both_off_zero_but_dc_live",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "0",
+        "off": 0,
+        "time": 100,
+        "pool_power_kw": 0,
+        "dh_flow_kw": 0,
+        "dc_kw": 193,
+        "pool_pipe_active": false,
+        "pool_pipe_off": true,
+        "hx_pipe_off": true,
+        "dh_pipe_off": true,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн OFF · ЦО OFF · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Тренды, события ",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": true
+      }
+    },
+    {
+      "name": "edge:before_onset_original_baseline",
+      "pass": true,
+      "observed": {
+        "pool": "0",
+        "dh": "0",
+        "off": 120,
+        "time": 100,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 70.4,
+        "dc_kw": 193,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": false,
+        "banner_hidden": false,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн ПОКА БАЗА · ЦО ПОКА БАЗА · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Трен",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "edge:reset_restores_base",
+      "pass": true,
+      "observed": {
+        "pool": "1",
+        "dh": "1",
+        "off": 0,
+        "time": 0,
+        "pool_power_kw": 150,
+        "dh_flow_kw": 100,
+        "dc_kw": 200,
+        "pool_pipe_active": true,
+        "pool_pipe_off": false,
+        "hx_pipe_off": false,
+        "dh_pipe_off": false,
+        "banner_hidden": true,
+        "banner": "КАСКАД v02 · WHAT-IF / D_DERIVED · Бассейн ПОКА БАЗА · ЦО ПОКА БАЗА · t=25,00 ч · источник zdravy. * DC, HP, TES, REJECT и IT: исходные v08, без пересчёта. Трен",
+        "pool_mark": "БАССЕЙН OFF",
+        "pool_mark_visible": false
+      }
+    },
+    {
+      "name": "edge:no_non_get_network",
+      "pass": true,
+      "observed": []
+    },
+    {
+      "name": "edge:no_js_page_errors",
+      "pass": true,
+      "observed": []
+    },
+    {
+      "name": "live_server_state_unchanged",
+      "pass": true,
+      "observed": {
+        "before": {
+          "instance_id": "f7ff4791f218458e8db3aafec96c0eab",
+          "pid": 5264,
+          "playing": false,
+          "stopped": false,
+          "index": 0,
+          "scenario_id": "zdravy",
+          "sample_count": 672
+        },
+        "after": {
+          "instance_id": "f7ff4791f218458e8db3aafec96c0eab",
+          "pid": 5264,
+          "playing": false,
+          "stopped": false,
+          "index": 0,
+          "scenario_id": "zdravy",
+          "sample_count": 672
+        }
+      }
+    },
+    {
+      "name": "production_sources_unchanged",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "source_label_synthetic",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "no_tes_soc_invented",
+      "pass": true,
+      "observed": null
+    }
+  ],
+  "passed": 28,
+  "total": 28,
+  "production_source_sha256": {
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\scada_server.py": "8e3e091391ed3046057cf7beec2c7e43e4f92758e437276c8e8e1a8eb226c23e",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\web\\app.js": "c84b34f1e39cddabd4ee149cc22ca65a80c506d6b0dc129c9c52f291c74d14dc",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\web\\index.html": "6e93ceae316c80d0a1cdb4f146019ac22a8f674e02921213f1ad1f13e751abfb"
+  },
+  "server_status_before": {
+    "instance_id": "f7ff4791f218458e8db3aafec96c0eab",
+    "pid": 5264,
+    "playing": false,
+    "stopped": false,
+    "index": 0,
+    "scenario_id": "zdravy",
+    "sample_count": 672
+  },
+  "server_status_after": {
+    "instance_id": "f7ff4791f218458e8db3aafec96c0eab",
+    "pid": 5264,
+    "playing": false,
+    "stopped": false,
+    "index": 0,
+    "scenario_id": "zdravy",
+    "sample_count": 672
+  },
+  "release_allowed": false,
+  "simulation_class": "D_SYNTHETIC"
+}

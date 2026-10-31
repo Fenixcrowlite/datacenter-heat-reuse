@@ -1,0 +1,41 @@
+{
+  "field_validated": false,
+  "files": {
+    "C112_FINDINGS.md": {
+      "bytes": 3362,
+      "sha256": "47ac0fcba200c13cebf43726ec6713ca7856f09dcd3762f847db483c502aa71a"
+    },
+    "C112_INDEPENDENT_QA.json": {
+      "bytes": 534,
+      "sha256": "94b191617039f7526dce20a0e5d600a26f9e9dff5a2171b8c34f0750c6cac4c0"
+    },
+    "C112_METADATA.json": {
+      "bytes": 1868,
+      "sha256": "2124c64a89589a4c0d88043e2ea31883b23242aec6392e55f56440736d565df9"
+    },
+    "C112_ROOM_HUMIDITY_HOURLY.csv.gz": {
+      "bytes": 4163413,
+      "sha256": "2c0cd40d6919679c01316d20fcf7770f7ebfe124543a445a6efa5cbb73e2c339"
+    },
+    "C112_SUMMARY.csv": {
+      "bytes": 2477,
+      "sha256": "8104d9e18c0debc630c61bcbe926a76bfa1cdc2935af9c71c8ce8455fd7bb72f"
+    },
+    "c112_finite_humidity.py": {
+      "bytes": 8952,
+      "sha256": "6dc6c77adc479f9bdbfcc2c5937aee6b8f31b6b02764d93b0ffefab95b84ebc8"
+    },
+    "qa_c112_independent.py": {
+      "bytes": 5850,
+      "sha256": "63a1cc23f5c8188f045ca810fc1e715d4457eeba22fa9def4e1708f86517365d"
+    },
+    "register_c112_evidence.py": {
+      "bytes": 4280,
+      "sha256": "f3867bbd278217f2a0c5c80437eaef46277306899b40239f37dd69847e4c5f4f"
+    }
+  },
+  "qa_status": "PASS",
+  "schema": "C112_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

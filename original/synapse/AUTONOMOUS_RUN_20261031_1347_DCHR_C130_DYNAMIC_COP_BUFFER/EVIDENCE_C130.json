@@ -1,0 +1,18 @@
+{
+  "actor": "chatgpt-dchr-c130-dynamic-cop-buffer-20261031-1347",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER\\C130_DYNAMIC_COP_BUFFER.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER\\C130_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER\\SHA256_MANIFEST_C130.json",
+  "manifest_sha256": "3b1a09225e362f9c24859a664fe0b78011559095ba4a862debfc7f74ba0d96ef",
+  "negative_controls": 9,
+  "next": "Obtain manufacturer COP maps and measured DC waste heat, then implement buffer losses/charge limits and repeat independent balances; no runtime edits.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER\\C130_INDEPENDENT_QA.json",
+  "rows": 4032,
+  "scenarios": 6,
+  "selftests": 8,
+  "sha256": "315e5a40d129fb442059c1dd4c60bde0f6bff780865e6b2857dc58e20ddc280f",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

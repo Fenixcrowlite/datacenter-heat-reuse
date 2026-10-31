@@ -1,0 +1,13 @@
+{
+  "event_id": 1301,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A57_sensor_uncertainty_and_timebase_quality_gate",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0952_A57_UNCERTAINTY_TIMEBASE_QA",
+  "evidence_sha256": "ba30ed14498e030d41dd22d7e07121e546366ac6e2a8d7e5b3268587ce6c3697",
+  "manifest_sha256": "52d1d69dcec0a7d2f9428a055460611686c02be5ff4edf77db14946a7ce65a26",
+  "handoff_sha256": "0ee50a04f845067be30a332ebc36ef63b2e836ce5e352dd39dda49bb405c651d",
+  "QA": "20/20 unittest, 5/5 AST, 64/64 Decimal oracle PASS",
+  "synthetic_only": true,
+  "physical_release": false,
+  "next_step": "Acquire original asset-specific telemetry, sensor accuracy and clock-sync records; independently verify calibration documents and vendor compressor map; rerun A55+A56+A57 before isolated Stateflow uncertainty testing. No physical release."
+}

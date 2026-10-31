@@ -1,0 +1,14 @@
+{
+  "files": {
+    "C130_DYNAMIC_COP_BUFFER.csv.gz": "315e5a40d129fb442059c1dd4c60bde0f6bff780865e6b2857dc58e20ddc280f",
+    "C130_FINDINGS.md": "3c6ca8c1ef68a88869d7fd789d0115c5700015d4d7e7c4dcef9b5177db019ae2",
+    "C130_INDEPENDENT_QA.json": "6df0ed43b1422d07b955782d3407ed421eb22e8baa4a1a9420d2e56f781ba452",
+    "C130_METADATA.json": "b1656e410d0f67c2a7b19f044ebf2cfd10e859144423cfcd4caa5199c1209c53",
+    "C130_SUMMARY.json": "563ea4dde0714ecfb34275c44717cd9d4d984fd7b293baf03ea06839337d5e1c",
+    "c130_dynamic_cop_buffer.py": "e966668804b60e9d73ab6abb91134af6e4d2f167653ab79678a2b94ba01cb375",
+    "finalize_c130.py": "c98062983c5dfd7132a5ca1be52be6f715059165d2e51fac2a04c0295c7fe08d",
+    "qa_c130_independent.py": "eb3cb2c2084c29f76033a31a5dfa0cb6bfa8c31ff67f9aa26c3c2722a1db1314"
+  },
+  "schema": "C130_SHA256_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

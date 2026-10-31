@@ -1,0 +1,35 @@
+﻿id,value,unit,definition,standard,evidence
+E_IT,71832.833,MWh/year,IT thermal energy from assumed model power,ISO/IEC 30134-2:2026,SIMULATED
+E_DC_assumed,97692.65288000001,MWh/year,E_IT × assumed PUE 1.36,ISO/IEC 30134-2:2026,SCENARIO
+PUE_assumed,1.36,1,"E_DC/E_IT, not site metered",ISO/IEC 30134-2:2026,SCENARIO
+E_recovered_source,38274.67381998236,MWh/year,integral DCtoPool+DCtoDistrict,EU 2024/1364,SIMULATED
+E_rejected_IT,33558.15918001764,MWh/year,IT thermal energy minus source reused,first-law accounting,SIMULATED
+Source_utilization,0.6268585846183828,1,extracted / assumed 0.85 × E_IT,,SIMULATED
+ERF_source_proxy,0.3917866153864892,1,source heat extracted / assumed facility energy; NOT ERF,EU 2024/1364,NONREPORTABLE
+ERF_reportable,,1,boundary metered E_REUSE/E_DC,EU 2024/1364,MISSING_METER
+WUE_reportable,,m3/MWh,metered water consumption / IT energy,ISO/IEC 30134-9:2022,MISSING_METER
+REF_reportable,,1,renewable energy / facility energy,EU 2024/1364,MISSING_METER
+Heat_pool_direct,250.125,MWh/year,integral useful pool heat,,SIMULATED
+Heat_pool_HP25,250.125,MWh/year,integral useful pool heat,,SIMULATED
+Electric_pool_HP25,62.53125,MWh/year,compressor power × dt,,SIMULATED
+Heat_district_HP35,47769.078995339354,MWh/year,integral useful district HP output,,SIMULATED
+Electric_district_HP35,9744.530175357,MWh/year,integral district HP compressor,,SIMULATED
+SCOP_district_model,4.902142857142858,1,"season heat / compressor electric, synthetic Carnot only",EN 14511-2 NOT certified,NONCERTIFIED
+Backup_gas_thermal,9189.267221392489,MWh/year,integral useful backup gas heat,,SIMULATED
+Pool_peak_temperature,27.619764350066,degC,max modeled pool water temp,published decree 308/2012,SIMULATED
+Pool_hours_above_28,0.0,h,temperature intervals exceeding 28C,published decree 308/2012,SIMULATED
+Pool_hours_above_internal_limit,0.0,h,intervals above internal threshold,,SIMULATED
+Pool_warmup_to_27p25,44.0833333333333,h,first crossing 27.25C from cold initial state,,SIMULATED
+TES_max_energy,50.0,MWh,max stored thermal energy,,SIMULATED
+Source_overallocation_peak,1.0658141036401503e-14,MW,must be zero; total used source minus available,,QA
+HP_pool_partition_abs_peak,0.0,MW,Qout-Qsource-Welectric,,QA
+HP_district_partition_abs_peak,5.0182080713057076e-14,MW,Qout-Qsource-Welectric,,QA
+Cooling_design_duty,10.0,MW,assumed full IT design heat load,,SCENARIO
+Cooling_thermal_flow_at_5K,1726.844809895972,m3/h,10 MW / rho cp dT,,SCENARIO
+Aux_pump_head_primary,,kPa,site fluid hydraulics / hydraulic calculation required,,NOT_MEASURED
+District_load_peak_derived,18.759878419452853,MW,HP+TES discharge+gas-TES charge,,SIMULATED
+District_demand_annual,56793.695288753814,MWh/year,sum district delivered demand,,SIMULATED
+District_heat_balance_residual,0.0,MW,constructed identity check; independent source QA separately,,QA
+Pool_surface_m2,312.5,m2,25 × 12.5 m assumed rectangular,,SCENARIO
+Pool_volume_m3,500.0,m3,25 ×12.5×1.6m assumed,,SCENARIO
+Thermal_buffer_min_2MW_30s_5K,2.8780746831599533,m3,"ideal water heat buffer, not flow",,SCENARIO

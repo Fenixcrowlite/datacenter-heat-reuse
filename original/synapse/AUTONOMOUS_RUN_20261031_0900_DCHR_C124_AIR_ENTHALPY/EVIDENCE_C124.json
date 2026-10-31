@@ -1,0 +1,15 @@
+{
+  "actor": "chatgpt-dchr-c124-moist-air-20261031-0900",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY\\C124_QUARTER_AIR.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY\\C124_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY\\SHA256_MANIFEST_C124.json",
+  "manifest_sha256": "84c7fc6fdc51b51f822e63c3cab85b831e39fd026da2552aef4774a01e9dd32b",
+  "next": "Replace synthetic supply and dehumidifier heat models with traceable hardware curves; add pool feedback.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY\\C124_INDEPENDENT_QA.json",
+  "schema": "C124_EVIDENCE_V1",
+  "sha256": "bc73e47fc74182b782293ab655fd8b8bcea5a4aa7a01f8b1ff4c8f860caf76d0",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

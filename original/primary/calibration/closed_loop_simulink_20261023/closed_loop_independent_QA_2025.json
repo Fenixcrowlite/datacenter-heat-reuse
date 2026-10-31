@@ -1,0 +1,60 @@
+{
+  "dataset": "MATLAB Simulink generated CSV output",
+  "verified": true,
+  "interval_s": 300,
+  "cases": [
+    {
+      "scenario": "no_pool_35",
+      "N": 105120,
+      "heat_pool_MWh": 0.0,
+      "source_pool_MWh": 0.0,
+      "hp_electric_pool_MWh": 0.0,
+      "gas_MWh": 9085.8949,
+      "peak_T_pool_C": 16.0,
+      "max_DC_overuse_MW": 1.0658141036401503e-14,
+      "max_pool_partition_err_MW": 0,
+      "max_dh_partition_err_MW": 5.0182080713057076e-14,
+      "outage_overlap": 0
+    },
+    {
+      "scenario": "direct_35",
+      "N": 105120,
+      "heat_pool_MWh": 250.125,
+      "source_pool_MWh": 250.125,
+      "hp_electric_pool_MWh": 0.0,
+      "gas_MWh": 9189.2672,
+      "peak_T_pool_C": 27.61976,
+      "max_DC_overuse_MW": 1.0658141036401503e-14,
+      "max_pool_partition_err_MW": 0,
+      "max_dh_partition_err_MW": 5.0182080713057076e-14,
+      "outage_overlap": 0
+    },
+    {
+      "scenario": "heatpump_25",
+      "N": 105120,
+      "heat_pool_MWh": 250.125,
+      "source_pool_MWh": 187.5938,
+      "hp_electric_pool_MWh": 62.5312,
+      "gas_MWh": 7296.9883,
+      "peak_T_pool_C": 27.61976,
+      "max_DC_overuse_MW": 1.0658141036401503e-14,
+      "max_pool_partition_err_MW": 6.938893903907228e-18,
+      "max_dh_partition_err_MW": 5.10702591327572e-14,
+      "outage_overlap": 0
+    },
+    {
+      "scenario": "outage_35",
+      "N": 105120,
+      "heat_pool_MWh": 250.0,
+      "source_pool_MWh": 250.0,
+      "hp_electric_pool_MWh": 0.0,
+      "gas_MWh": 9404.8446,
+      "peak_T_pool_C": 27.61976,
+      "max_DC_overuse_MW": 1.0658141036401503e-14,
+      "max_pool_partition_err_MW": 0,
+      "max_dh_partition_err_MW": 4.973799150320701e-14,
+      "outage_overlap": 0
+    }
+  ],
+  "limitations": "Energy and temperature tested against model equations; NOT site commissioning or equipment certification"
+}

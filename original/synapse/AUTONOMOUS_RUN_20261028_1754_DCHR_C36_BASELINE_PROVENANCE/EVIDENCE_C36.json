@@ -1,0 +1,16 @@
+{
+  "actual_v2_csv_scenario": "Liquid35_LowTempDH",
+  "annual_gas_difference_mwh": 2006.5032633916,
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1754_DCHR_C36_BASELINE_PROVENANCE",
+  "manifest_sha256": "f460e7f950a63d730893eae58c31699518394a9c4b283d9c558cfa93a6653d48",
+  "matlab_executed": false,
+  "max_coverage_v2_scenario": "Warm45_Storage100",
+  "next_step": "Export the Warm45_Storage100 v2 timeseries into a NEW isolated filename, never overwrite best_scenario_v2_timeseries.csv; then compare same-boundary v1/v2/Stateflow 10 MWh and physical stratified tank. No MATLAB run or model parity claimed yet.",
+  "physical_validation": false,
+  "primary_source_signoffs": 0,
+  "qa": "14/14 independent tests PASS; 17520 hourly records replayed, 140160 Decimal dispatch checks; 11 source hashes",
+  "scope": "DCHR_C36_100MWH_PROVENANCE_AND_MISLABEL",
+  "v1_100mwh_source": "d31544ec57480eee4ffb6aecf7fbeef970e3dd99d83df8646d7386883c93ab01",
+  "v2_100mwh_source": "c92e33fed5c2fb14a035ca3b8e49dda51a502e13216ad5de8fce37e7f741e578",
+  "v85_10mwh_parity": false
+}

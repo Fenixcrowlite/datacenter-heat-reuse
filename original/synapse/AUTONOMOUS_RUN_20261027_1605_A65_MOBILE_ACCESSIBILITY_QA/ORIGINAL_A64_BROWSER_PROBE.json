@@ -1,0 +1,18 @@
+{
+  "desktop": {
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "tableCount": 2,
+    "rowCount": 10,
+    "sourceBanner": true,
+    "heading": "A64: porovnanie integr\u00e1cie energie"
+  },
+  "mobile": {
+    "viewport": 390,
+    "scrollWidth": 599,
+    "tableCount": 2,
+    "rowCount": 10,
+    "sourceBanner": true,
+    "heading": "A64: porovnanie integr\u00e1cie energie"
+  }
+}

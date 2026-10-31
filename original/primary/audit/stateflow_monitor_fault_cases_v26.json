@@ -1,0 +1,30 @@
+{
+  "version": "0.26",
+  "scope": "Independent actual-model runtime-monitor fault specification. Mutations are in-memory QA corruption of chart allocation output, not plant/equipment faults or new physics.",
+  "primary_text_verified": false,
+  "engineering_assumption": "Retains v24 loss-first linear TES and v14 fixed-COP polynomial-backend baseline.",
+  "model_file": "matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+  "helper": "stateflow_allocate_v24",
+  "baseline": {
+    "model_dt_h": 1,
+    "stop_time_h": 1,
+    "input_x": [6, 35, 70, 5],
+    "p": [1, 10, 3, 4, 0.9, 0.8, 0.01, 2],
+    "h": [8, 0.45, 1.2, 8, 0, 1, 4, 0, 0],
+    "initial_energy_MWh": 1
+  },
+  "cases": [
+    {"id": "false_system_residual", "mutation": "y(13)=y(13)+.1;", "expected_message": "System first-law failure or false residual."},
+    {"id": "false_next_energy", "mutation": "y(8)=y(8)+.1;", "expected_message": "TES first-law failure."},
+    {"id": "negative_backup_flow", "mutation": "y(5)=-1;", "expected_message": "Negative dispatch/HP port."},
+    {"id": "wrong_active_mode", "mutation": "y(1)=5;", "expected_message": "Active state does not match delivered flows."},
+    {"id": "false_standing_loss", "mutation": "y(9)=y(9)+.1;", "expected_message": "TES loss reporting mismatch."},
+    {"id": "unallocated_hp_heat", "mutation": "y(2)=y(2)-.1;", "expected_message": "Unallocated HP condenser heat."},
+    {"id": "simultaneous_tes_ports", "mutation": "y(4)=.1;", "expected_message": "Simultaneous TES charge and discharge."},
+    {"id": "false_useful_heat", "mutation": "y(12)=y(12)+.1;", "expected_message": "Useful heat mismatch."},
+    {"id": "nonfinite_dispatch", "mutation": "y(13)=NaN;", "expected_message": "Accepted dispatch and parameters must be finite."},
+    {"id": "undefined_nonintegral_mode", "mutation": "y(1)=2.5;", "expected_message": "Undefined mode."},
+    {"id": "backup_above_capacity", "mutation": "y(5)=3;", "expected_message": "TES/backup power limit exceeded."},
+    {"id": "tes_state_above_capacity", "mutation": "y(8)=11;", "expected_message": "TES state outside capacity."}
+  ]
+}

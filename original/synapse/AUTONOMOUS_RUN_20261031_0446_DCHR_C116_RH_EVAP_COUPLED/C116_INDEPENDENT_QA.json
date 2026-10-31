@@ -1,0 +1,53 @@
+{
+  "continuity_checks": 105108,
+  "groups": {
+    "air_first_capacity_C114": {
+      "RHhi": 0.619994760163,
+      "RHlo": 0.459069537859,
+      "evap": 258421.78897050992,
+      "n": 8760,
+      "violations": 0
+    },
+    "air_first_ideal": {
+      "RHhi": 0.55,
+      "RHlo": 0.55,
+      "evap": 258813.29642312205,
+      "n": 8760,
+      "violations": 0
+    },
+    "air_first_limited5": {
+      "RHhi": 0.861043921462,
+      "RHlo": 0.211852875912,
+      "evap": 212148.41675626193,
+      "n": 8760,
+      "violations": 4980
+    },
+    "water_first_capacity_C114": {
+      "RHhi": 0.619584655582,
+      "RHlo": 0.458992735383,
+      "evap": 258746.51404944318,
+      "n": 8760,
+      "violations": 0
+    },
+    "water_first_ideal": {
+      "RHhi": 0.55,
+      "RHlo": 0.55,
+      "evap": 259431.38598734126,
+      "n": 8760,
+      "violations": 0
+    },
+    "water_first_limited5": {
+      "RHhi": 0.862461127081,
+      "RHlo": 0.21174293072,
+      "evap": 212823.98986180627,
+      "n": 8760,
+      "violations": 5009
+    }
+  },
+  "hourly_sha256": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf",
+  "ideal_baseline_checks": 70080,
+  "independent_row_checks": 683280,
+  "negative_controls": 4,
+  "rows": 52560,
+  "status": "PASS"
+}

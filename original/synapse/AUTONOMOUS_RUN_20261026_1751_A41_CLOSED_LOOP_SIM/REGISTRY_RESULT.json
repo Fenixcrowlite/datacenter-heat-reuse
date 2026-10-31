@@ -1,0 +1,14 @@
+{
+  "action": "CREATED_EVENT",
+  "event_id": 1230,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A41_isolated_synthetic_Simulink_Stateflow_TES_IT_feedback",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1751_A41_CLOSED_LOOP_SIM",
+  "evidence_sha256": "db6b642e334d87d20a591be28a41a7023eb110178fb42400737860b1fe1b4f6e",
+  "manifest_sha256": "798edffa582213a221d196324bc17ea24fde7ab1f92e604d40b1befcb4b8dc23",
+  "model_sha256": "190af2be60032c508e7ebeba94572e22057699283fd895ec91b6aeca71fc0d72",
+  "qa": "MATLAB/Stateflow 4x672 PASS; Python 15/15 PASS; 26880 numeric comparisons; 5 delay sensitivities",
+  "status": "STATEFLOW_CLOSED_LOOP_SYNTHETIC_VERIFIED",
+  "release_status": "PHYSICAL_RELEASE_BLOCKED",
+  "next_step": "A42 isolate fully coupled IT/HP/TES plant, fail-safe IT shutdown under REJECT total loss, sensor delay and heat capacity sweep, then physical parameter validation"
+}

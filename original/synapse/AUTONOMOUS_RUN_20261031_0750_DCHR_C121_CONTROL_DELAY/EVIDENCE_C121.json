@@ -1,0 +1,15 @@
+{
+  "actor": "chatgpt-dchr-c121-control-delay-20261031-0750",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY\\C121_DELAY_HOURLY.csv.gz",
+  "artifact_sha256": "d105be559a7eb01cdd92afa7a50073a2eda6687bdf8bc94392f03d165afc63ec",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY\\C121_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY\\SHA256_MANIFEST_C121.json",
+  "manifest_sha256": "220860cda1ef5d5487822e17f223233c39c4f844e5f8ff633da7efb5f3153668",
+  "next": "Add coupled 15-minute air temperature/enthalpy and calibrate actuator power and RH tradeoff.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY\\C121_INDEPENDENT_QA.json",
+  "schema": "C121_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

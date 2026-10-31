@@ -1,0 +1,217 @@
+{
+  "source_v07": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\pool_redundancy_v07\\fyzikalne_ochrany_v07.txt",
+  "source_v07_sha256": "00e7350db86fe98773992cac6fc7f4a442d579f89d60ba75a278f902829a1252",
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "a36_results_sha256": "fa8e2a7ee71edb2378100569cd56fb56b04c31628b921317993b191eeeacf026",
+  "main_reject_synthetic_W": 180000,
+  "backup_reject_synthetic_W": 150000,
+  "disclaimer": "V07 explicitly calls capacities SCENARIO values, NOT certified hardware.",
+  "physical_release_allowed": false,
+  "IT_shedding_and_TES_dynamics": "NOT RECOMPUTED",
+  "scenarios": {
+    "baseline": {
+      "both_available": {
+        "capacity_kW": 330.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 130.648844
+      },
+      "main_only": {
+        "capacity_kW": 180.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 130.648844
+      },
+      "backup_only": {
+        "capacity_kW": 150.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 130.648844
+      },
+      "neither_available": {
+        "capacity_kW": 0.0,
+        "unsafe_intervals": 410,
+        "unsafe_hours": 102.5,
+        "unhandled_kWh": 6245.686703,
+        "max_excess_kW": 130.648844,
+        "max_required_kW": 130.648844
+      }
+    },
+    "pool_off": {
+      "both_available": {
+        "capacity_kW": 330.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 138.780762
+      },
+      "main_only": {
+        "capacity_kW": 180.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 138.780762
+      },
+      "backup_only": {
+        "capacity_kW": 150.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 138.780762
+      },
+      "neither_available": {
+        "capacity_kW": 0.0,
+        "unsafe_intervals": 576,
+        "unsafe_hours": 144.0,
+        "unhandled_kWh": 12012.146221,
+        "max_excess_kW": 138.780762,
+        "max_required_kW": 138.780762
+      }
+    },
+    "dh_off": {
+      "both_available": {
+        "capacity_kW": 330.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 205.497582
+      },
+      "main_only": {
+        "capacity_kW": 180.0,
+        "unsafe_intervals": 52,
+        "unsafe_hours": 13.0,
+        "unhandled_kWh": 158.123202,
+        "max_excess_kW": 25.497582,
+        "max_required_kW": 205.497582
+      },
+      "backup_only": {
+        "capacity_kW": 150.0,
+        "unsafe_intervals": 155,
+        "unsafe_hours": 38.75,
+        "unhandled_kWh": 864.941021,
+        "max_excess_kW": 55.497582,
+        "max_required_kW": 205.497582
+      },
+      "neither_available": {
+        "capacity_kW": 0.0,
+        "unsafe_intervals": 576,
+        "unsafe_hours": 144.0,
+        "unhandled_kWh": 17209.926066,
+        "max_excess_kW": 205.497582,
+        "max_required_kW": 205.497582
+      }
+    },
+    "both_off": {
+      "both_available": {
+        "capacity_kW": 330.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 213.6295
+      },
+      "main_only": {
+        "capacity_kW": 180.0,
+        "unsafe_intervals": 171,
+        "unsafe_hours": 42.75,
+        "unhandled_kWh": 636.609653,
+        "max_excess_kW": 33.6295,
+        "max_required_kW": 213.6295
+      },
+      "backup_only": {
+        "capacity_kW": 150.0,
+        "unsafe_intervals": 358,
+        "unsafe_hours": 89.5,
+        "unhandled_kWh": 2543.427491,
+        "max_excess_kW": 63.6295,
+        "max_required_kW": 213.6295
+      },
+      "neither_available": {
+        "capacity_kW": 0.0,
+        "unsafe_intervals": 576,
+        "unsafe_hours": 144.0,
+        "unhandled_kWh": 22976.385584,
+        "max_excess_kW": 213.6295,
+        "max_required_kW": 213.6295
+      }
+    },
+    "pool40_dh25": {
+      "both_available": {
+        "capacity_kW": 330.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 186.289229
+      },
+      "main_only": {
+        "capacity_kW": 180.0,
+        "unsafe_intervals": 18,
+        "unsafe_hours": 4.5,
+        "unhandled_kWh": 20.489764,
+        "max_excess_kW": 6.289229,
+        "max_required_kW": 186.289229
+      },
+      "backup_only": {
+        "capacity_kW": 150.0,
+        "unsafe_intervals": 91,
+        "unsafe_hours": 22.75,
+        "unhandled_kWh": 361.261846,
+        "max_excess_kW": 36.289229,
+        "max_required_kW": 186.289229
+      },
+      "neither_available": {
+        "capacity_kW": 0.0,
+        "unsafe_intervals": 576,
+        "unsafe_hours": 144.0,
+        "unhandled_kWh": 16748.646501,
+        "max_excess_kW": 186.289229,
+        "max_required_kW": 186.289229
+      }
+    },
+    "both_off_assumed_reject150": {
+      "both_available": {
+        "capacity_kW": 330.0,
+        "unsafe_intervals": 0,
+        "unsafe_hours": 0.0,
+        "unhandled_kWh": 0.0,
+        "max_excess_kW": 0.0,
+        "max_required_kW": 213.6295
+      },
+      "main_only": {
+        "capacity_kW": 180.0,
+        "unsafe_intervals": 171,
+        "unsafe_hours": 42.75,
+        "unhandled_kWh": 636.609653,
+        "max_excess_kW": 33.6295,
+        "max_required_kW": 213.6295
+      },
+      "backup_only": {
+        "capacity_kW": 150.0,
+        "unsafe_intervals": 358,
+        "unsafe_hours": 89.5,
+        "unhandled_kWh": 2543.427491,
+        "max_excess_kW": 63.6295,
+        "max_required_kW": 213.6295
+      },
+      "neither_available": {
+        "capacity_kW": 0.0,
+        "unsafe_intervals": 576,
+        "unsafe_hours": 144.0,
+        "unhandled_kWh": 22976.385584,
+        "max_excess_kW": 213.6295,
+        "max_required_kW": 213.6295
+      }
+    }
+  }
+}

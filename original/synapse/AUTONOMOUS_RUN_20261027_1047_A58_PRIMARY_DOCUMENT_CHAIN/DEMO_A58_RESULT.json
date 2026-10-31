@@ -1,0 +1,21 @@
+{
+  "A57_source_sha256": "309fdf0ab614a0c2f858cde0066cafae5d3f9039fab2eeab85b080d30e19ec1f",
+  "a57_status": "SYNTHETIC_QA_ONLY",
+  "asset_id": "TEST-LOOP-NOT-REAL",
+  "document_count": 6,
+  "document_sha256": {
+    "QA-CAL-P_actual_W": "6aab3677214039c6c88e7603e445b6dbc71526e946d1998725062933f5185372",
+    "QA-CAL-P_cmd_W": "48b20f357e840a991fa28f14eaa4649d1c1a6e62fc69402dcb9ff8a44445d0fc",
+    "QA-CAL-Q_net_W": "1fcca7f717f15442736cc50a3ba4d237e1f82f54364118ad13c598b41c606f6a",
+    "QA-CAL-T_C": "b28adafd2b78ac0f76077cd9771701186a94e0d2cf07e23e8f9c108b7e1ac693",
+    "QA-TIME": "c7e2791f8ccc616ed78df4ccea26ed05fef9503c040d99b140d324ed08ce077c",
+    "QA-VENDOR": "a1cdd210b7cfcb3386f4e6615bf4d8e0b8c1965774788801dfe2ddc39a74402b"
+  },
+  "independent_issuer_authentication": false,
+  "limitations": "SHA checks prove file consistency only; issuer identity, traceable calibration and equipment applicability require independent verification.",
+  "manifest_sha256": "f0df070f5153384f397bdd9760b1545f80f6e7e8005e7bff38c613d00f60521a",
+  "physical_release": false,
+  "safe_operating_limits_certified": false,
+  "source_kind": "synthetic_test",
+  "status": "SYNTHETIC_DOCUMENT_CHAIN_TEST_ONLY"
+}

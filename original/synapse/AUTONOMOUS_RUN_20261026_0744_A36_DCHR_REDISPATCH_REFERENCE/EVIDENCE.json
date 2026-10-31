@@ -1,0 +1,11 @@
+{
+  "scope": "isolated_DCHR_A36_conservative_instantaneous_redispatch",
+  "input": "sim_v08_zdravy_SK.csv (synthetic), 672 x 15min",
+  "source_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "qa": "17/17 unit PASS; 20833 independent CSV checks PASS across 4032 intervals",
+  "key_finding": "both branches OFF at hour 24: required REJECT max 213.6295 kW; illustrative assumed 150 kW reject limit produces 358 unsafe intervals and 2543.427491 kWh unhandled",
+  "limitations": "not TES/Stateflow dynamic, reject rating unverified, HP COP proxy, no real field data",
+  "decision": "ISOLATED_REFERENCE_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "next_step": "Model owner to integrate energy-balanced redispatch with TES SOC, reject hardware limits, HP part-load curves and IT safety in owned Simulink/Stateflow copy; validate against 672 reference samples",
+  "physical_release_allowed": false
+}

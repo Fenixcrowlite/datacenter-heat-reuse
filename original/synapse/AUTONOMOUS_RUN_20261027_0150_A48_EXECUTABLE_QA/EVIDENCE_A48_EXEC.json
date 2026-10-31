@@ -1,0 +1,20 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "status": "A48_GRAPHICAL_STATEFLOW_COUPLED_EXECUTABLE_VERIFIED",
+  "artifact_dir": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0150_A48_EXECUTABLE_QA",
+  "matlab_version": "R2026a",
+  "model_sha256": "063f9afb5816cd4f6bed415256293eee67b328718b141c29d84853ddafab25cb",
+  "matlab_result_sha256": "0d9cd4bf0e6f11e94d78ce6d6795256c62f167f6d019b2107d516a4cde5308e3",
+  "source_builder_sha256": "24a38b3052c02ac76fe8f928c3ab917fd6b7c3f09301c858ac10dde898194762",
+  "matlab_scenarios": 7,
+  "intervals_per_scenario": 672,
+  "numeric_comparisons": 51744,
+  "state_parity_exact": true,
+  "independent_python_tests": "10/10 PASS",
+  "real_graphical_stateflow_chart": true,
+  "coupled_compressor_plant": true,
+  "synthetic_inputs": true,
+  "physical_release": false,
+  "limitations": "Synthetic A45 reference; no independent field measurements, 31 primary-source signoffs remain open; not a hardware safety controller.",
+  "next_step": "A49: independent fault-injection/property-based validation of transitions, sensor latency and energy balances against a separately derived model; retain physical signoff gate."
+}

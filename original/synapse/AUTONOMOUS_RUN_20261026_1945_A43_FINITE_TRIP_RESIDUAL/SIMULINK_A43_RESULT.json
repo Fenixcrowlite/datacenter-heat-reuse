@@ -1,0 +1,137 @@
+{
+  "status": "A43_SIMULINK_EMCHART_CLOSED_LOOP_PARITY_PASS",
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1945_A43_FINITE_TRIP_RESIDUAL\\DCHR_A43_Finite_Trip_Closed_Loop.slx",
+  "samples": 4704,
+  "numeric_comparisons": 51744,
+  "physical_release": false,
+  "graphical_stateflow_chart_built": false,
+  "state_machine_implemented_in_EMChart": true,
+  "scenarios": {
+    "both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    },
+    "main_only": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    },
+    "neither": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    },
+    "CF_both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    },
+    "CF_backup_only": {
+      "samples": 672,
+      "max_temperature_C": 44.53382819151301,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    },
+    "CF_neither": {
+      "samples": 672,
+      "max_temperature_C": 44.53382819151301,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parity": "PASS"
+    }
+  }
+}

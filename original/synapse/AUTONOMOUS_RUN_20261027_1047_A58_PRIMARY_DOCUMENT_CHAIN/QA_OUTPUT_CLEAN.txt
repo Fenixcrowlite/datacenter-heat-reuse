@@ -1,0 +1,30 @@
+test_01_valid_synthetic_bundle_never_releases (test_a58.DocumentChainTests.test_01_valid_synthetic_bundle_never_releases) ... ok
+test_02_modified_document_bytes (test_a58.DocumentChainTests.test_02_modified_document_bytes) ... ok
+test_03_forged_matching_manifest_hash_but_a57_not_updated (test_a58.DocumentChainTests.test_03_forged_matching_manifest_hash_but_a57_not_updated) ... ok
+test_04_manifest_source_hash_drift (test_a58.DocumentChainTests.test_04_manifest_source_hash_drift) ... ok
+test_05_path_traversal (test_a58.DocumentChainTests.test_05_path_traversal) ... ok
+test_06_absolute_path (test_a58.DocumentChainTests.test_06_absolute_path) ... ok
+test_07_missing_document (test_a58.DocumentChainTests.test_07_missing_document) ... ok
+test_08_duplicate_document_id (test_a58.DocumentChainTests.test_08_duplicate_document_id) ... ok
+test_09_missing_calibration_document (test_a58.DocumentChainTests.test_09_missing_calibration_document) ... ok
+test_10_wrong_sensor_unit (test_a58.DocumentChainTests.test_10_wrong_sensor_unit) ... ok
+test_11_changed_calibration_reference (test_a58.DocumentChainTests.test_11_changed_calibration_reference) ... ok
+test_12_expired_calibration (test_a58.DocumentChainTests.test_12_expired_calibration) ... ok
+test_13_issued_after_measurements (test_a58.DocumentChainTests.test_13_issued_after_measurements) ... ok
+test_14_wrong_asset (test_a58.DocumentChainTests.test_14_wrong_asset) ... ok
+test_15_vendor_operating_range_violated (test_a58.DocumentChainTests.test_15_vendor_operating_range_violated) ... ok
+test_16_vendor_units_wrong (test_a58.DocumentChainTests.test_16_vendor_units_wrong) ... ok
+test_17_clock_method_disagrees (test_a58.DocumentChainTests.test_17_clock_method_disagrees) ... ok
+test_18_clock_error_bounds_disagree (test_a58.DocumentChainTests.test_18_clock_error_bounds_disagree) ... ok
+test_19_unauthorized_release (test_a58.DocumentChainTests.test_19_unauthorized_release) ... ok
+test_20_claimed_independent_issuer_auth (test_a58.DocumentChainTests.test_20_claimed_independent_issuer_auth) ... ok
+test_21_duplicate_json_key (test_a58.DocumentChainTests.test_21_duplicate_json_key) ... ok
+test_22_fake_real_source (test_a58.DocumentChainTests.test_22_fake_real_source) ... ok
+test_23_invalid_numeric_nan (test_a58.DocumentChainTests.test_23_invalid_numeric_nan) ... ok
+test_24_mismatched_sensor_error_bound (test_a58.DocumentChainTests.test_24_mismatched_sensor_error_bound) ... ok
+test_25_missing_issuer (test_a58.DocumentChainTests.test_25_missing_issuer) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in <variable>s
+
+OK

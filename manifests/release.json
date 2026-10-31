@@ -1,0 +1,35 @@
+{
+  "source_cutoff": "2026-10-31 C130",
+  "restored_file_paths": 98591,
+  "distinct_contents": 15177,
+  "source_roots": 91,
+  "assets": [
+    {
+      "filename": "heat-reuse-source-2026-10-30.zip",
+      "bytes": 464100930,
+      "sha256": "3eecbe7e2c7bae487d3c9d083e23520566ae863edac060130aaab424a07c9880",
+      "manifest": "source-archive.json",
+      "restore_verification": "PASS"
+    },
+    {
+      "filename": "heat-reuse-supplement-2026-10-31.zip",
+      "bytes": 72538624,
+      "sha256": "56787a7fb97f08aa50dc05c0dd87a52f5653ec1d3cd2e90b045186e15c8538f5",
+      "manifest": "source-supplement-2026-10-31.json",
+      "restore_verification": "PASS"
+    },
+    {
+      "filename": "heat-reuse-scientific-qa-correction-2026-10-31.zip",
+      "bytes": 169500,
+      "sha256": "3f78994f2f85790b0e81ea6ede400a397f7a14de0fe96334518267f807d617a6",
+      "manifest": "source-qa-correction.json",
+      "restore_verification": "PASS"
+    }
+  ],
+  "review_corrections": [
+    "Restored 51 scientific QA files excluded by overbroad browser filter",
+    "Reject Windows reserved names and trailing aliases before restore"
+  ],
+  "publication_status": "pending",
+  "numerical_migration_status": "in_progress"
+}

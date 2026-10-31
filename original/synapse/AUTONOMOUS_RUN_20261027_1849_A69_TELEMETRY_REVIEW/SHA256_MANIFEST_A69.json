@@ -1,0 +1,19 @@
+{
+  "A69_TECHNICAL_SK.md": "e478f3bc5b82e2a4f2092c16d0829ee9416cfa25ff52a4a6402561513809c366",
+  "BROWSER_QA_A69.json": "4461f266856a1c84ef3c51d32b0747ac3f6c042461fbba02e16e1eb73550063e",
+  "CHECKPOINT_A69.json": "0eb2c80b085d24a53dfc7d87d1183160f557f05b39f6ec7d4748ca0e786ed560",
+  "EVIDENCE_A69.json": "bc8a8423a7f744b41d6370b3c5e83791b148b4fb6c9ca16c74c6341e67df4e2d",
+  "FIXTURE/metadata.json": "dd1208ad1bbf3661cf7fd58e967c1731ecd9586202a54c5c13b2c0a854db000c",
+  "FIXTURE/provenance.json": "9a3ef37f9b0914dead8cbbacf12cb96ee4a94e8d1b53ba2dcf2c6df74f9e2ff1",
+  "FIXTURE/telemetry.csv": "c6165c43bd0dc60e5ef0f5c6c3380a873e84b8a08a50c19908e8416c781c7362",
+  "INDEPENDENT_QA_A69.json": "028cbcb0a2f14f4bbb0c7a8fed791e8128cc35284132251208ebd5ebf583ffd2",
+  "OUTPUT_SYNTHETIC/review.html": "51ae8c9e97b2c03b827a6d500c944c0fe9fb1deef5f71a7c386ca70e74608e2d",
+  "OUTPUT_SYNTHETIC/source_receipt.json": "e7a6b42ac313fd373c5b54a832b8b9254bba9ac9634a1aee69ac6f0d0d624313",
+  "OUTPUT_SYNTHETIC/summary.json": "349a30c6a808aa333ca149f0ec9f70016ded2339c81e5ae78cbeb63bcdc1b742",
+  "QA_A69_CANONICAL.txt": "5e8b3fca0b019fe416749161147741189a7f0f4ac8ec77d3e0bbde14d16b8968",
+  "a69_telemetry_review.py": "850ecc0c406afc6caccea1b25a576ba3cbdc155c6ebefce125b9ac151f4f9304",
+  "finalize_a69.py": "5459df0e61288df44169e62f9661ecfd3b4ce851b6db9b466e1afda6dd09e653",
+  "qa_browser_a69.py": "02c5f1b84daf65e9dca04cb9a3c716452ebfe8e2285c270ac845fe979e32024f",
+  "qa_independent_a69.py": "e09ba50d297e4ec1803ee8b967ad9589348aeb070d2166ce3b3690e775076081",
+  "test_a69.py": "f0f03b371b195dc231e96939b9e7cc8b18aeaa03d956af03a64deaa524331acf"
+}

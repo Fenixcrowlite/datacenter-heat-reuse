@@ -2,7 +2,7 @@
 
 A transferable research project for recovering data-centre heat into a swimming pool, thermal storage and district heating. Original MATLAB, Simulink, Stateflow, Python, Slovak and English documents are preserved separately from the portable application.
 
-**Current delivery is in progress.** The annual v2 model and pool v04 have verified Python implementations. Remaining historical Stateflow and fault-model ports are tracked explicitly; an extracted model diagram is not a completed numerical port.
+**Current delivery is in progress.** The annual v2 model, pool v04 and Stateflow v85 have verified Python implementations. Remaining earlier Stateflow and fault-model ports are tracked explicitly; an extracted model diagram is not a completed numerical port.
 
 ## Run
 
@@ -28,10 +28,11 @@ The current verified application uses the Python standard library and does not r
 python -m heat_reuse list
 python -m heat_reuse run annual-v2 --scenario Warm45_Storage100 --output runtime/annual.json
 python -m heat_reuse run pool-v04 --scenario zaklad --output runtime/pool.json
+python -m heat_reuse run stateflow-v85 --scenario HP_only --output runtime/dispatch.json
 python -m heat_reuse verify
 ```
 
-The annual test compares 8,760 hours × 22 numerical fields against a native MATLAB C88 fixture, plus a separate v2 oracle and all five original scenario summaries. The pool test compares all eight original 672-step Simulink v04 scenarios, every exported numerical field and exact dispatcher modes. These are numerical equivalence tests of synthetic scenarios, not measured physical validation.
+The annual test compares 8,760 hours × 22 numerical fields against a native MATLAB C88 fixture, plus a separate v2 oracle and all five original scenario summaries. The pool test compares all eight original 672-step Simulink v04 scenarios, every exported numerical field and exact dispatcher modes. Stateflow v85 additionally passes 28 native cases, 87 retained-state steps and 120,060 full-trace comparisons across all six modes. These are numerical equivalence tests of synthetic scenarios, not measured physical validation.
 
 MATLAB and Python random generators are not assumed identical. The annual model uses preserved source input records. The pool model regenerates the source-defined full-precision input formulas: the original rounded CSV can change exact-zero branches at the last few floating-point bits. Both input provenance and known limitations are retained.
 

@@ -1,0 +1,12 @@
+{
+  "source": 20,
+  "success": true,
+  "attempts": [
+    {
+      "url": "https://www.mdpi.com/1996-1073/19/3/800/pdf-vor",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "bytes": 1978360,
+  "url": "https://mdpi-res.com/d_attachment/energies/energies-19-00800/article_deploy/energies-19-00800.pdf"
+}

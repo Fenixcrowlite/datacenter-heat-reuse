@@ -1,0 +1,112 @@
+{
+  "status": "A50_GRAPHICAL_SENSOR_LAG_PARITY_PASS",
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0351_A50_SENSOR_LAG_MATLAB\\DCHR_A50_Sensor_Lag.slx",
+  "comparisons": 15840,
+  "scenarios": {
+    "neither_lag0": {
+      "samples": 240,
+      "trip_index_zero_based": 98,
+      "max_abs_differences": [
+        0,
+        1.3877787807814457E-17,
+        0,
+        0,
+        0,
+        1.6940658945086007E-21,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        6.9388939039072284E-18
+      ]
+    },
+    "neither_lag1": {
+      "samples": 240,
+      "trip_index_zero_based": 98,
+      "max_abs_differences": [
+        0,
+        1.3877787807814457E-17,
+        0,
+        0,
+        0,
+        1.6940658945086007E-21,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        6.9388939039072284E-18
+      ]
+    },
+    "neither_lag4": {
+      "samples": 240,
+      "trip_index_zero_based": 98,
+      "max_abs_differences": [
+        0,
+        1.3877787807814457E-17,
+        0,
+        0,
+        0,
+        1.6940658945086007E-21,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        6.9388939039072284E-18
+      ]
+    },
+    "backup_only_lag0": {
+      "samples": 240,
+      "trip_index_zero_based": 98,
+      "max_abs_differences": [
+        0,
+        7.4505805969238281E-9,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        2.9103830456733704E-11,
+        0,
+        0,
+        1.4901161193847656E-8
+      ]
+    },
+    "backup_only_lag1": {
+      "samples": 240,
+      "trip_index_zero_based": 98,
+      "max_abs_differences": [
+        0,
+        2.9802322387695312E-8,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        4.4703483581542969E-8
+      ]
+    },
+    "backup_only_lag4": {
+      "samples": 240,
+      "trip_index_zero_based": 103,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        3.7252902984619141E-9
+      ]
+    }
+  },
+  "physical_release": false,
+  "source_a48_unmodified": true,
+  "trip_delay_steps": 2
+}

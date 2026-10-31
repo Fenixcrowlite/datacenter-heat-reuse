@@ -1,0 +1,13 @@
+{
+  "event_id": 1280,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A52_independent_sensor_trip_sensitivity",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0510_A52_SENSOR_TRIP_CROSSPRODUCT",
+  "result_sha256": "b2ae3e27162c8d9f3193995b6e965831d4f7024c3a6922382487ffb279ace7ea",
+  "evidence_sha256": "b36e143f8d674865c7c8f9a2e2fb8de0678127d150bf997343a55e07842cf8ec",
+  "manifest_sha256": "11bb350b8a59160f41bbce7eead72bd5e8f9d3e1c0290a4210617642afb7c7b2",
+  "handoff_sha256": "c910d0eed15a795f944de93e47a9cb99c9c24d281810365ec583afeb75c74cb3",
+  "qa": "18 independent energy audits; Python 8/8 PASS; no MATLAB crossproduct",
+  "physical_release": false,
+  "next_step": "A53: run full 18-case sensor-lag x trip-delay matrix in graphical MATLAB/Stateflow (240 steps, 11 channels), compare 47520 values with Python A52, then assess safety margins and independent primary-source evidence; physical deployment BLOCKED."
+}

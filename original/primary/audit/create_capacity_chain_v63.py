@@ -1,0 +1,33 @@
+"""Create additive v63 sources from the preserved v62 implementation."""
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+def main():
+    src=(ROOT/'matlab/simulink/charge_memory_kernel_v62.m').read_text().replace('v62','v63')
+    src=src.replace("assert(step(1)==stage,'v63 phase mismatch');", "assert(step(1)==stage,'v63 phase mismatch');\nassert(numel(cfg)==34&&cfg(34)>0,'v63 OFF dwell domain');\nassert(step(3)==0,'v63 restart unsupported: OFF dwell and restart integration required');")
+    src=src.replace('cfg(24)==62','cfg(24)==63')
+    src=src.replace('all(cfg==previous(1:31))','all(cfg(1:31)==previous(1:31))&&all(cfg(32:34)==previous(65:67))')
+    src=src.replace("previous(55)==1&&previous(56)==0&&previous(57)==62", "previous(56)==0&&previous(57)==63")
+    src=src.replace("if stage==0\n", "[clo,~]=flow(P(cfg(1)),P(cfg(32)),k,B);\n[chi,~]=flow(P(cfg(1)),P(cfg(33)),k,B);\nassert(cfg(26)<cfg(32)&&cfg(32)<cfg(33)&&cfg(33)<cfg(23),'v63 capacity event ordering');\nassert(clo(2)<cap(1)&&chi(1)>cap(2),'v63 capacity bracket not certified');\nif stage==0\n",1)
+    src=src.replace("else\n    assert(stage==2", "elseif stage==2\n    assert(stage==2",1)
+    src=src.replace("t=P(step(2));\nend", "t=P(step(2));\n    assert(t(2)<cfg(32),'v63 active horizon crosses capacity event');\nelseif stage==3\n    assert(previous(34)==2&&step(2)==0,'v63 capacity contact sequence');\n    t=cfg(32:33)';\nelse\n    assert(stage==4&&(previous(34)==3||previous(34)==4),'v63 passive sequence');\n    assert(step(2)>cfg(33)&&step(2)>previous(36)&&step(2)<=cfg(23),'v63 passive physical horizon must advance');\n    t=cfg(32:33)';\nend",1)
+    src=src.replace("assert(en(1)>=0&&en(2)<cap(1),'v63 TES bounds');", "if stage>=3,en=cap;end\nassert(en(1)>=0&&(stage>=3||en(2)<cap(1)),'v63 TES bounds');")
+    src=src.replace("law=minusiv(minusiv", "offage=P(0);ready=0;latch=1;\nif stage>=3,latch=0;end\nif stage==4\n    offage=minusiv(P(step(2)),cfg(32:33)');\n    assert(offage(1)>0,'v63 OFF clock unresolved');\n    [en,~]=flow(cap,offage,k,P(0));\n    standing=plusiv(standing,minusiv(cap,en));\n    if cfg(4)==0,en=cap;end\n    assert(en(1)>=0&&en(2)<=cap(2),'v63 passive TES bounds');\n    if offage(1)>=cfg(34),ready=1;elseif offage(2)>=cfg(34),ready=2;end\nend\nlaw=minusiv(minusiv",1)
+    src=src.replace("if stage>0,assert(age(1)>=previous(39)&&age(2)>=previous(40),'v63 HP clock reset');end", "if stage>0,assert(age(1)>=previous(39)&&age(2)>=previous(40),'v63 HP clock reset');end\nif stage==4,t=P(step(2));end")
+    src=src.replace("y=zeros(64,1);y(1:31)=cfg;", "if stage>=3,waterFlow=P(0);hot=P(0);end\ny=zeros(80,1);y(1:31)=cfg(1:31);")
+    src=src.replace('y(55)=1;y(56)=0;y(57)=62;', 'y(55)=latch;y(56)=0;y(57)=63;')
+    src=src.replace('y(64)=128;', 'y(64)=128;y(65:67)=cfg(32:34);y(68:69)=cfg(32:33);y(70:71)=offage\';y(72)=ready;\ny(73)=3;y(74:75)=cfg(21:22);y(76:77)=cfg(25:26);y(78:79)=cap\';y(80)=0;')
+    src=src.replace('standing=plusiv(standing,minusiv(cap,en));', 'if cfg(4)>0,standing=plusiv(standing,minusiv(cap,en));end')
+    src=src.replace('if all(y==0),z=x;else,z=out([x(1)-y(2) x(2)-y(1)]);end', 'if all(y==0),z=x;elseif x(1)==x(2)&&y(1)==y(2)&&x(1)==y(1),z=[0 0];else,z=out([x(1)-y(2) x(2)-y(1)]);end')
+    # OFF phases have no instantaneous water port, so gate the active water test.
+    src=src.replace('if cfg(29)==1&&stage>0', 'if stage>=3\n    waterFlow=P(0);hot=P(0);\nelseif cfg(29)==1&&stage>0')
+    (ROOT/'matlab/simulink/charge_memory_kernel_v63.m').write_text(src)
+    b=(ROOT/'matlab/simulink/build_charge_memory_v62.m').read_text().replace('v62','v63').replace('Charge_Memory','Capacity_Chain')
+    b=b.replace("'StopTime','4'", "'StopTime','6'").replace("[(0:4)' repmat(cfg',5,1)]", "[(0:6)' repmat(cfg',7,1)]")
+    b=b.replace("'[2 1]','[31 1]','[64 1]','[64 1]'", "'[3 1]','[34 1]','[80 1]','[80 1]'").replace('zeros(64,1)','zeros(80,1)')
+    b=b.replace("sn={'FLOOR_CHARGE','CORRELATED_CONTACT','TANK_CHARGE'};states=cell(3,1);", "sn={'FLOOR_CHARGE','CORRELATED_CONTACT','TANK_CHARGE','CAPACITY_CONTACT','PASSIVE_COOLING'};states=cell(5,1);")
+    b=b.replace('for j=1:3','for j=1:5').replace('for j=1:2','for j=1:4')
+    b=b.replace('v63 fixed 64-double correlated memory;', 'v63 fixed 80-double correlated capacity chain;')
+    b=b.replace('Three protocol phases', 'Five protocol phases')
+    b=b.replace('BUILT_CHARGE_MEMORY_V62','BUILT_CAPACITY_CHAIN_V63')
+    (ROOT/'matlab/simulink/build_charge_memory_v63.m').write_text(b)
+if __name__=='__main__':main()

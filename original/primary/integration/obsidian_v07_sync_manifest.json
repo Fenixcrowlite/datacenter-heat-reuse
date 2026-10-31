@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-10-08T19:02:41.286509+00:00",
+  "files": [
+    {
+      "path": "MASTER_STAGEBOARD_v07.md",
+      "status": "COPIED"
+    },
+    {
+      "path": "STATUS_v07.json",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/Sintong_primary_source_correction_v07_RU.md",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/Sintong_p32_eq17_visual_v07.png",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/Sintong_p32_eq17_20_visual_v07.png",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/Sintong_p33_eq21_22_visual_v07.png",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/Sintong_p33_eq21_25_visual_v07.png",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/reference_physics_v07.py",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/test_reference_physics_v07.py",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/reference_physics_tests_v07.json",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/sintong_equations_v07.py",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/sintong_equations_tests_v07.json",
+      "status": "COPIED"
+    },
+    {
+      "path": "audit/Independent_First_Law_v07_RU.md",
+      "status": "COPIED"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v22",
+  "checks": {
+    "reference_present": true,
+    "twelve_months": true,
+    "31_registry_entries": true,
+    "zero_full_signoffs": true,
+    "upstream_pdf_not_local": true
+  },
+  "passed": 6,
+  "total": 6,
+  "upstream_thesis_pdf": "NOT_DOWNLOADED",
+  "thesis_prices": "NOT_VERIFIED",
+  "physical_validation": "NOT_TESTED",
+  "full_signoffs": 0
+}

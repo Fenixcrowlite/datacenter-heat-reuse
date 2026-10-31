@@ -1,0 +1,111 @@
+{
+  "created": "2026-10-23",
+  "target": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse\\calibration\\closed_loop_simulink_20261023",
+  "copied": 17,
+  "identical": 17,
+  "conflicts": [],
+  "files": [
+    {
+      "name": "DC_Pool_Coupled_ClosedLoop_20261023_SK.slx",
+      "action": "COPIED",
+      "sha256": "c6047bd31afb2daeab376a3847518cb8eebccd4f320030ebf65debf0e72b51a6",
+      "identical": true
+    },
+    {
+      "name": "DC_Pool_Coupled_Simulink_diagram.png",
+      "action": "COPIED",
+      "sha256": "122c76810a9c7f45acded156a7ef95778cc2cf4ea61ceee805e32eee2699bcce",
+      "identical": true
+    },
+    {
+      "name": "dc_pool_coupled_step_SK.m",
+      "action": "COPIED",
+      "sha256": "5928d6e4884e01d965133d19299b4cab175c0f9dd57fb38ba60dd7bb4e6f0101",
+      "identical": true
+    },
+    {
+      "name": "build_closed_loop_simulink_SK.m",
+      "action": "COPIED",
+      "sha256": "afd3291a53042720657840c15d44482d5c8a7b82a39b853a0067339325e04208",
+      "identical": true
+    },
+    {
+      "name": "run_closed_loop_cases_SK.m",
+      "action": "COPIED",
+      "sha256": "dd3b9403f8951e5ccfff91334feee8954edd2d22391a53e59554a4d7ba48f87d",
+      "identical": true
+    },
+    {
+      "name": "run_nopool25_baseline_SK.m",
+      "action": "COPIED",
+      "sha256": "8f273de97186fd789858666afcbf82e5c167c1744392a348a036de0a529ef8bd",
+      "identical": true
+    },
+    {
+      "name": "manufacturer_cop_reference_SK.m",
+      "action": "COPIED",
+      "sha256": "c599fa2a2dc25b326edb597c385fae8b289715ed63503f0dd4bfe6fe252bc479",
+      "identical": true
+    },
+    {
+      "name": "run_manufacturer_cop_comparison_SK.m",
+      "action": "COPIED",
+      "sha256": "d4d8c4e1db6a48dc11af1d6677c2541fe9f8a202991a3d04ad193161ee9b09ae",
+      "identical": true
+    },
+    {
+      "name": "ClosedLoop_Simulink_Matematika_SK.md",
+      "action": "COPIED",
+      "sha256": "e60989e08309f7cbb004be63578cb2373a1c0972b2e803faf753543f7c0f8afe",
+      "identical": true
+    },
+    {
+      "name": "simulink_closed_loop_summary_168h.json",
+      "action": "COPIED",
+      "sha256": "3d76b79553cab0861634ac2a62972eecef4f08ae5e7ace9814639c63b7ef70a0",
+      "identical": true
+    },
+    {
+      "name": "simulink_closed_loop_summary_8760h.json",
+      "action": "COPIED",
+      "sha256": "66207a14cc672f600bb9736c9757a113b8106be556eb8988e726e2112101b6f5",
+      "identical": true
+    },
+    {
+      "name": "simulink_nopool25_baseline_8760h.json",
+      "action": "COPIED",
+      "sha256": "ef47790a998a269160f03eecefb2bbf3e2d352fbac808cce238b23744f985064",
+      "identical": true
+    },
+    {
+      "name": "closed_loop_independent_QA_2025.json",
+      "action": "COPIED",
+      "sha256": "3eee394857fe900c18a0a06f4e358d29de28ec838d72c66bd4815b627da650c5",
+      "identical": true
+    },
+    {
+      "name": "closed_loop_incremental_opex_2025.json",
+      "action": "COPIED",
+      "sha256": "4284f38d58302a06a8006e5e0473821969f634f78153e7aa7c9af7d1864b22fb",
+      "identical": true
+    },
+    {
+      "name": "manufacturer_certified_points_carrier.csv",
+      "action": "COPIED",
+      "sha256": "16756cfedbfe899a61b0242ac00e23e98ccb437548395d1f13b80f451962e3bc",
+      "identical": true
+    },
+    {
+      "name": "carrier_cop_certified_vs_scenario.csv",
+      "action": "COPIED",
+      "sha256": "5ba660d2c6f3e9a9b6474ca1daa30936800498c7567f234daa5182a6c46936c5",
+      "identical": true
+    },
+    {
+      "name": "carrier_cop_certified_comparison_SK.png",
+      "action": "COPIED",
+      "sha256": "afb89ee415c4c944499eb91f842c94c92c52dc7ad0be445c6a2ec34dc2e5f4c2",
+      "identical": true
+    }
+  ]
+}

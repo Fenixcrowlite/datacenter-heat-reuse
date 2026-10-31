@@ -1,0 +1,100 @@
+{
+  "version": "0.38",
+  "inherits": "STATUS_stateflow_v37.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T08:19:30.779040+00:00",
+  "checkpoint": "Executed versioned Stateflow numerical-domain repair",
+  "stateflow_acceptance": "PASS_SCOPED_IMPLEMENTATION",
+  "model_version": "0.38",
+  "new_model": true,
+  "generated_model": "matlab\\simulink\\DCHR_Dispatch_Stateflow_v38.slx",
+  "model_sha256": "fe60aaee835973195ccb94b323f516e7c1a6f413f5016f9b9f4d319251d297b2",
+  "controller_defect": "v37 clock drift, band-progress and HP slope overflow repaired in tested fixtures; broader numerical domains remain unproved",
+  "result_directory": "results\\stateflow_v38_20261010T081205294Z",
+  "independent_qa": "results\\stateflow_v38_20261010T081205294Z\\independent_QA_v38_20261010T081552_920975Z.json",
+  "matlab_batch_receipts": [
+    "audit\\Stateflow_execution_v38_20261010T080956210Z.json",
+    "audit\\Stateflow_execution_v38_20261010T081200211Z.json",
+    "audit\\Stateflow_execution_v38_20261010T081444238Z.json",
+    "audit\\Stateflow_execution_v38_20261010T081459530Z.json"
+  ],
+  "matlab_batch_exit_code": 0,
+  "scenarios": 80,
+  "completed_scenarios": 69,
+  "domain_runtime_rejections": 11,
+  "completed_intervals": 3725,
+  "positive_segments": 3910,
+  "harness_checks_passed": 2110,
+  "harness_checks_failed": 0,
+  "hp_component_probes": 219,
+  "runtime_fault_rejections": 30,
+  "independent_checks_passed": 128974,
+  "independent_checks_failed": 0,
+  "synthetic_reviewer_checks_passed": 3,
+  "synthetic_reviewer_checks_failed": 0,
+  "independent_check_breakdown": {
+    "artifact": {
+      "passed": 409,
+      "failed": 0
+    },
+    "domain": {
+      "passed": 102,
+      "failed": 0
+    },
+    "numeric": {
+      "passed": 27255,
+      "failed": 0
+    },
+    "clock": {
+      "passed": 27260,
+      "failed": 0
+    },
+    "equation": {
+      "passed": 61080,
+      "failed": 0
+    },
+    "reference": {
+      "passed": 9612,
+      "failed": 0
+    },
+    "HP": {
+      "passed": 1427,
+      "failed": 0
+    },
+    "fault": {
+      "passed": 32,
+      "failed": 0
+    },
+    "archive": {
+      "passed": 4,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 1793,
+      "failed": 0
+    },
+    "synthetic": {
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "max_report_clock_error_h": 5.817381143570185e-11,
+  "max_expansion_error_h": 0.0,
+  "max_independent_balance_residual_MWh": 4.7683715781454694e-08,
+  "previous_immutable_entries_preserved": 1792,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Scoped numerical implementation acceptance only: finite fixtures, not all finite inputs or physical validation.",
+    "80-iteration HP source search and near-COP-cutoff classification retain a domain audit; subnormal tests are numerical stress fixtures, not plausible equipment sizes.",
+    "Compensated clock initial expansion is a supplied exact seed; full adversarial residual/domain and strict event-ordering proof with nonzero error bounds remain open.",
+    "Conservative band domain excludes zero/near-zero cutoff and bands <=128 capacity-scale energy ulps; this is numerical policy, not a physical equipment restriction.",
+    "Normal-mode host planner/HP, bounded analytic segments at macro solver timestamps; standalone code generation and solver-clock events untested.",
+    "No calibrated hydraulics/stratification/startup loss model, article replication or measured-system validation; primary signoffs remain 0/31.",
+    "Independent algorithms/artifact QA in the same agent, not separate human/agent review. Synthetic reviewer checks are separately counted.",
+    "Stateflow license test and actual saved-chart execution pass; ver(Stateflow) lacks a standalone version entry, and none is fabricated. Formal-argument shadow warnings remain in logs."
+  ],
+  "next": "Audit the normalized HP solver near the COP cutoff and across extreme source/output ratios, and verify compensated-clock initial residual/bound and event-guard domains before broadening acceptance. Use independent analytic/exact-input counterexamples rather than repeating the current suite. Then return to primary heat-pump/equipment evidence and physical parameter traceability; no calibrated or article-derived control values are accepted yet. Preserve all prior models/evidence."
+}

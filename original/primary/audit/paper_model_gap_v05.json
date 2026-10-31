@@ -1,0 +1,52 @@
+{
+  "paper": {
+    "consumer_demand_MWh": 144000.0,
+    "heat_input_MWh": 152000.0,
+    "network_losses_fraction_of_input": 0.052,
+    "HP_annual_heat_MWh": 148000.0,
+    "gas_annual_heat_MWh": 4000.0,
+    "storage_MWh": 82.0,
+    "boiler_rated_MW": 20.0,
+    "HP_rated_MW": 37.0,
+    "HP_COP_min_claim": 3.76,
+    "HP_COP_max_claim": 3.9,
+    "source_in_C": 25.0,
+    "source_return_C": 15.0,
+    "network_supply_range_C": [
+      70.0,
+      80.0
+    ],
+    "network_return_C": 50.0
+  },
+  "baseline": {
+    "claimed_demand_or_generation_MWh": 144000.000000006,
+    "HP_annual_heat_MWh": 140993.658627469,
+    "gas_annual_heat_MWh": 3599.99999999337,
+    "storage_MWh": 300.0,
+    "mean_COP": 4.15501074516106,
+    "recovery_fraction": 0.920584795377727
+  },
+  "derived": {
+    "expected_input_from_144_and_5point2pct_MWh": 151898.7341772152,
+    "paper_approx_HP_plus_gas_MWh": 152000.0,
+    "paper_HP_fraction_from_rounded_energy": 0.9736842105263158,
+    "paper_gas_full_load_hours_estimated": 200.0,
+    "paper_HP_full_load_hours_estimated": 4000.0,
+    "paper_144_from_192x75percent_MWh": 144000.0,
+    "water_storage_implied_delta_T_K": 29.38365981844243,
+    "baseline_vs_paper_HP_heat_error_MWh": -7006.341372530995,
+    "baseline_vs_paper_gas_error_MWh": -400.0000000066302,
+    "baseline_vs_paper_network_input_error_MWh": -7999.999999994005
+  },
+  "checks": {
+    "paper_144_is_75pct_of_192": true,
+    "losses_generate_about_152": true,
+    "paper_HP_plus_gas_about_152": true,
+    "model_reproduces_152_heat_generated": false,
+    "model_reproduces_148_HP_heat": false,
+    "model_reproduces_4_gas_heat": false,
+    "model_reproduces_82_storage": false,
+    "model_COP_inside_paper_nominal_range": false
+  },
+  "qualification": "Source Table 3 values rounded. COP min 3.76 conflicts with a subsequent 3.67 typo: requires visual verification."
+}

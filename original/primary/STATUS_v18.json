@@ -1,0 +1,17 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.18",
+  "inherits_status": "STATUS_v17.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v17.md",
+  "test_cases": 1500,
+  "test_failures": 0,
+  "invalid_inputs_rejected": 13,
+  "max_abs_balance_residual_MWh": 4.973799150320701e-14,
+  "scope": "Python algebraic and constraints only",
+  "primary_source_signoffs": 0,
+  "matlab_parity": "NOT_TESTED",
+  "independent_physical_validation": "NOT_TESTED",
+  "stateflow_final": "NOT_VALIDATED",
+  "evidence": ["audit/test_dispatch_properties_v18.py", "audit/dispatch_properties_v18.json", "audit/run_notes_v18.md"],
+  "next": "Deterministic MATLAB v16/Python parity and primary-original audit"
+}

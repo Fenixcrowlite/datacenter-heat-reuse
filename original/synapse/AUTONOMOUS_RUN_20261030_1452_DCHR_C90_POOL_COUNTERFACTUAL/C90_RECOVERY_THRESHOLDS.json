@@ -1,0 +1,886 @@
+{
+  "electric_cap_MW": 0.075,
+  "extra_HP_COP_assumed": 4.0,
+  "heat_cap_MW": 0.3,
+  "not_field_validated": true,
+  "recoverability_not_proven": true,
+  "scenarios": {
+    "covered_100pct": {
+      "pool_water_only": {
+        "annual_demand_MWh": 262.1041408955,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 262.1041408955
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 24.914793369398335,
+            "actual_recovered_source_MWh": 74.744380108195,
+            "delivered_MWh": 99.65917347759334,
+            "energy_coverage_pct": 38.02273902926513,
+            "hours_unmet": 4745,
+            "unmet_MWh": 162.44496741790664
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 43.07330804892167,
+            "actual_recovered_source_MWh": 129.219924146765,
+            "delivered_MWh": 172.29323219568667,
+            "energy_coverage_pct": 65.73464715476563,
+            "hours_unmet": 4745,
+            "unmet_MWh": 89.81090869981331
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 59.878179006545,
+            "actual_recovered_source_MWh": 179.634537019635,
+            "delivered_MWh": 239.51271602618,
+            "energy_coverage_pct": 91.38074477109191,
+            "hours_unmet": 4009,
+            "unmet_MWh": 22.591424869319997
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.19508237896811698,
+        "peak_demand_MW": 0.0520666946
+      },
+      "water_plus_air_HVAC_hypothetical": {
+        "annual_demand_MWh": 422.5530449034,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 422.5530449034
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.26555989684834,
+            "actual_recovered_source_MWh": 96.796679690545,
+            "delivered_MWh": 129.06223958739335,
+            "energy_coverage_pct": 30.543440910927124,
+            "hours_unmet": 8584,
+            "unmet_MWh": 293.49080531600663
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 59.954522119835005,
+            "actual_recovered_source_MWh": 179.863566359505,
+            "delivered_MWh": 239.81808847934002,
+            "energy_coverage_pct": 56.75455220874456,
+            "hours_unmet": 6512,
+            "unmet_MWh": 182.73495642406
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 80.666844117935,
+            "actual_recovered_source_MWh": 242.000532353805,
+            "delivered_MWh": 322.66737647174,
+            "energy_coverage_pct": 76.36138950211685,
+            "hours_unmet": 4716,
+            "unmet_MWh": 99.88566843166
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 97.03599454478167,
+            "actual_recovered_source_MWh": 291.10798363434503,
+            "delivered_MWh": 388.1439781791267,
+            "energy_coverage_pct": 91.8568645666393,
+            "hours_unmet": 3358,
+            "unmet_MWh": 34.409066724273316
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 104.852639933025,
+            "actual_recovered_source_MWh": 314.55791979907497,
+            "delivered_MWh": 419.4105597321,
+            "energy_coverage_pct": 99.25630989784527,
+            "hours_unmet": 826,
+            "unmet_MWh": 3.1424851712999984
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.30452179948628566,
+        "peak_demand_MW": 0.0866735065
+      }
+    },
+    "covered_25pct": {
+      "pool_water_only": {
+        "annual_demand_MWh": 262.1041408955,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 262.1041408955
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 24.914793369398335,
+            "actual_recovered_source_MWh": 74.744380108195,
+            "delivered_MWh": 99.65917347759334,
+            "energy_coverage_pct": 38.02273902926513,
+            "hours_unmet": 4745,
+            "unmet_MWh": 162.44496741790664
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 43.07330804892167,
+            "actual_recovered_source_MWh": 129.219924146765,
+            "delivered_MWh": 172.29323219568667,
+            "energy_coverage_pct": 65.73464715476563,
+            "hours_unmet": 4745,
+            "unmet_MWh": 89.81090869981331
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 59.878179006545,
+            "actual_recovered_source_MWh": 179.634537019635,
+            "delivered_MWh": 239.51271602618,
+            "energy_coverage_pct": 91.38074477109191,
+            "hours_unmet": 4009,
+            "unmet_MWh": 22.591424869319997
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.19508237896811698,
+        "peak_demand_MW": 0.0520666946
+      },
+      "water_plus_air_HVAC_hypothetical": {
+        "annual_demand_MWh": 422.5530449034,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 422.5530449034
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.26555989684834,
+            "actual_recovered_source_MWh": 96.796679690545,
+            "delivered_MWh": 129.06223958739335,
+            "energy_coverage_pct": 30.543440910927124,
+            "hours_unmet": 8584,
+            "unmet_MWh": 293.49080531600663
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 59.954522119835005,
+            "actual_recovered_source_MWh": 179.863566359505,
+            "delivered_MWh": 239.81808847934002,
+            "energy_coverage_pct": 56.75455220874456,
+            "hours_unmet": 6512,
+            "unmet_MWh": 182.73495642406
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 80.666844117935,
+            "actual_recovered_source_MWh": 242.000532353805,
+            "delivered_MWh": 322.66737647174,
+            "energy_coverage_pct": 76.36138950211685,
+            "hours_unmet": 4716,
+            "unmet_MWh": 99.88566843166
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 97.03599454478167,
+            "actual_recovered_source_MWh": 291.10798363434503,
+            "delivered_MWh": 388.1439781791267,
+            "energy_coverage_pct": 91.8568645666393,
+            "hours_unmet": 3358,
+            "unmet_MWh": 34.409066724273316
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 104.852639933025,
+            "actual_recovered_source_MWh": 314.55791979907497,
+            "delivered_MWh": 419.4105597321,
+            "energy_coverage_pct": 99.25630989784527,
+            "hours_unmet": 826,
+            "unmet_MWh": 3.1424851712999984
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.30452179948628566,
+        "peak_demand_MW": 0.0866735065
+      }
+    },
+    "covered_50pct": {
+      "pool_water_only": {
+        "annual_demand_MWh": 262.1041408955,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 262.1041408955
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 24.914793369398335,
+            "actual_recovered_source_MWh": 74.744380108195,
+            "delivered_MWh": 99.65917347759334,
+            "energy_coverage_pct": 38.02273902926513,
+            "hours_unmet": 4745,
+            "unmet_MWh": 162.44496741790664
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 43.07330804892167,
+            "actual_recovered_source_MWh": 129.219924146765,
+            "delivered_MWh": 172.29323219568667,
+            "energy_coverage_pct": 65.73464715476563,
+            "hours_unmet": 4745,
+            "unmet_MWh": 89.81090869981331
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 59.878179006545,
+            "actual_recovered_source_MWh": 179.634537019635,
+            "delivered_MWh": 239.51271602618,
+            "energy_coverage_pct": 91.38074477109191,
+            "hours_unmet": 4009,
+            "unmet_MWh": 22.591424869319997
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.19508237896811698,
+        "peak_demand_MW": 0.0520666946
+      },
+      "water_plus_air_HVAC_hypothetical": {
+        "annual_demand_MWh": 422.5530449034,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 422.5530449034
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.26555989684834,
+            "actual_recovered_source_MWh": 96.796679690545,
+            "delivered_MWh": 129.06223958739335,
+            "energy_coverage_pct": 30.543440910927124,
+            "hours_unmet": 8584,
+            "unmet_MWh": 293.49080531600663
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 59.954522119835005,
+            "actual_recovered_source_MWh": 179.863566359505,
+            "delivered_MWh": 239.81808847934002,
+            "energy_coverage_pct": 56.75455220874456,
+            "hours_unmet": 6512,
+            "unmet_MWh": 182.73495642406
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 80.666844117935,
+            "actual_recovered_source_MWh": 242.000532353805,
+            "delivered_MWh": 322.66737647174,
+            "energy_coverage_pct": 76.36138950211685,
+            "hours_unmet": 4716,
+            "unmet_MWh": 99.88566843166
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 97.03599454478167,
+            "actual_recovered_source_MWh": 291.10798363434503,
+            "delivered_MWh": 388.1439781791267,
+            "energy_coverage_pct": 91.8568645666393,
+            "hours_unmet": 3358,
+            "unmet_MWh": 34.409066724273316
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 104.852639933025,
+            "actual_recovered_source_MWh": 314.55791979907497,
+            "delivered_MWh": 419.4105597321,
+            "energy_coverage_pct": 99.25630989784527,
+            "hours_unmet": 826,
+            "unmet_MWh": 3.1424851712999984
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.30452179948628566,
+        "peak_demand_MW": 0.0866735065
+      }
+    },
+    "covered_dry_air_50pct": {
+      "pool_water_only": {
+        "annual_demand_MWh": 354.08962418100003,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 354.08962418100003
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 26.797870928398336,
+            "actual_recovered_source_MWh": 80.393612785195,
+            "delivered_MWh": 107.19148371359334,
+            "energy_coverage_pct": 30.272415906431714,
+            "hours_unmet": 4745,
+            "unmet_MWh": 246.89814046740668
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 44.95638560792167,
+            "actual_recovered_source_MWh": 134.86915682376502,
+            "delivered_MWh": 179.82554243168667,
+            "energy_coverage_pct": 50.785318222079624,
+            "hours_unmet": 4745,
+            "unmet_MWh": 174.26408174931333
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 63.114635869435,
+            "actual_recovered_source_MWh": 189.343907608305,
+            "delivered_MWh": 252.45854347774,
+            "energy_coverage_pct": 71.29792183593912,
+            "hours_unmet": 4742,
+            "unmet_MWh": 101.63108070326001
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 79.58243531029501,
+            "actual_recovered_source_MWh": 238.747305930885,
+            "delivered_MWh": 318.32974124118005,
+            "energy_coverage_pct": 89.90089500009168,
+            "hours_unmet": 4015,
+            "unmet_MWh": 35.759882939819995
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 88.48942423256668,
+            "actual_recovered_source_MWh": 265.4682726977,
+            "delivered_MWh": 353.9576969302667,
+            "energy_coverage_pct": 99.96274184790404,
+            "hours_unmet": 104,
+            "unmet_MWh": 0.1319272507333336
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 88.52240604525001,
+            "actual_recovered_source_MWh": 265.56721813575,
+            "delivered_MWh": 354.08962418100003,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 88.52240604525001,
+            "actual_recovered_source_MWh": 265.56721813575,
+            "delivered_MWh": 354.08962418100003,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.26537353293795946,
+        "peak_demand_MW": 0.0708271181
+      },
+      "water_plus_air_HVAC_hypothetical": {
+        "annual_demand_MWh": 514.5385281889,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 514.5385281889
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.31241078705334,
+            "actual_recovered_source_MWh": 96.93723236116,
+            "delivered_MWh": 129.24964314821335,
+            "energy_coverage_pct": 25.11952673459713,
+            "hours_unmet": 8713,
+            "unmet_MWh": 385.2888850406867
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 60.95710697282667,
+            "actual_recovered_source_MWh": 182.87132091848002,
+            "delivered_MWh": 243.8284278913067,
+            "energy_coverage_pct": 47.38778818945724,
+            "hours_unmet": 6726,
+            "unmet_MWh": 270.7101002975933
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 82.54555511374,
+            "actual_recovered_source_MWh": 247.63666534122,
+            "delivered_MWh": 330.18222045496,
+            "energy_coverage_pct": 64.17055329503756,
+            "hours_unmet": 4827,
+            "unmet_MWh": 184.35630773394
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 100.67231124258834,
+            "actual_recovered_source_MWh": 302.01693372776504,
+            "delivered_MWh": 402.68924497035334,
+            "energy_coverage_pct": 78.26221418010431,
+            "hours_unmet": 4649,
+            "unmet_MWh": 111.84928321854666
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 117.37838883964167,
+            "actual_recovered_source_MWh": 352.135166518925,
+            "delivered_MWh": 469.5135553585667,
+            "energy_coverage_pct": 91.24944579197701,
+            "hours_unmet": 3751,
+            "unmet_MWh": 45.02497283033335
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 128.634632047225,
+            "actual_recovered_source_MWh": 385.90389614167503,
+            "delivered_MWh": 514.5385281889,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 128.634632047225,
+            "actual_recovered_source_MWh": 385.90389614167503,
+            "delivered_MWh": 514.5385281889,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.3745020862060082,
+        "peak_demand_MW": 0.10543393000000001
+      }
+    },
+    "covered_no_extra": {
+      "pool_water_only": {
+        "annual_demand_MWh": 262.1041408955,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 262.1041408955
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 24.914793369398335,
+            "actual_recovered_source_MWh": 74.744380108195,
+            "delivered_MWh": 99.65917347759334,
+            "energy_coverage_pct": 38.02273902926513,
+            "hours_unmet": 4745,
+            "unmet_MWh": 162.44496741790664
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 43.07330804892167,
+            "actual_recovered_source_MWh": 129.219924146765,
+            "delivered_MWh": 172.29323219568667,
+            "energy_coverage_pct": 65.73464715476563,
+            "hours_unmet": 4745,
+            "unmet_MWh": 89.81090869981331
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 59.878179006545,
+            "actual_recovered_source_MWh": 179.634537019635,
+            "delivered_MWh": 239.51271602618,
+            "energy_coverage_pct": 91.38074477109191,
+            "hours_unmet": 4009,
+            "unmet_MWh": 22.591424869319997
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 65.526035223875,
+            "actual_recovered_source_MWh": 196.578105671625,
+            "delivered_MWh": 262.1041408955,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.19508237896811698,
+        "peak_demand_MW": 0.0520666946
+      },
+      "water_plus_air_HVAC_hypothetical": {
+        "annual_demand_MWh": 422.5530449034,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 422.5530449034
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.26555989684834,
+            "actual_recovered_source_MWh": 96.796679690545,
+            "delivered_MWh": 129.06223958739335,
+            "energy_coverage_pct": 30.543440910927124,
+            "hours_unmet": 8584,
+            "unmet_MWh": 293.49080531600663
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 59.954522119835005,
+            "actual_recovered_source_MWh": 179.863566359505,
+            "delivered_MWh": 239.81808847934002,
+            "energy_coverage_pct": 56.75455220874456,
+            "hours_unmet": 6512,
+            "unmet_MWh": 182.73495642406
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 80.666844117935,
+            "actual_recovered_source_MWh": 242.000532353805,
+            "delivered_MWh": 322.66737647174,
+            "energy_coverage_pct": 76.36138950211685,
+            "hours_unmet": 4716,
+            "unmet_MWh": 99.88566843166
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 97.03599454478167,
+            "actual_recovered_source_MWh": 291.10798363434503,
+            "delivered_MWh": 388.1439781791267,
+            "energy_coverage_pct": 91.8568645666393,
+            "hours_unmet": 3358,
+            "unmet_MWh": 34.409066724273316
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 104.852639933025,
+            "actual_recovered_source_MWh": 314.55791979907497,
+            "delivered_MWh": 419.4105597321,
+            "energy_coverage_pct": 99.25630989784527,
+            "hours_unmet": 826,
+            "unmet_MWh": 3.1424851712999984
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 105.63826122585,
+            "actual_recovered_source_MWh": 316.91478367755,
+            "delivered_MWh": 422.5530449034,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.30452179948628566,
+        "peak_demand_MW": 0.0866735065
+      }
+    },
+    "uncovered_50pct": {
+      "pool_water_only": {
+        "annual_demand_MWh": 378.2508863795,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 378.2508863795
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.324775049610004,
+            "actual_recovered_source_MWh": 96.97432514883,
+            "delivered_MWh": 129.29910019844002,
+            "energy_coverage_pct": 34.183422922296586,
+            "hours_unmet": 8760,
+            "unmet_MWh": 248.95178618106
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 64.64955009922001,
+            "actual_recovered_source_MWh": 193.94865029766,
+            "delivered_MWh": 258.59820039688003,
+            "energy_coverage_pct": 68.36684584459317,
+            "hours_unmet": 8760,
+            "unmet_MWh": 119.65268598261997
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 88.914865377545,
+            "actual_recovered_source_MWh": 266.74459613263497,
+            "delivered_MWh": 355.65946151018,
+            "energy_coverage_pct": 94.02739671397518,
+            "hours_unmet": 4009,
+            "unmet_MWh": 22.591424869319997
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 94.562721594875,
+            "actual_recovered_source_MWh": 283.688164784625,
+            "delivered_MWh": 378.2508863795,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 94.562721594875,
+            "actual_recovered_source_MWh": 283.688164784625,
+            "delivered_MWh": 378.2508863795,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 94.562721594875,
+            "actual_recovered_source_MWh": 283.688164784625,
+            "delivered_MWh": 378.2508863795,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 94.562721594875,
+            "actual_recovered_source_MWh": 283.688164784625,
+            "delivered_MWh": 378.2508863795,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.19508237896811698,
+        "peak_demand_MW": 0.0520666946
+      },
+      "water_plus_air_HVAC_hypothetical": {
+        "annual_demand_MWh": 538.6997903874,
+        "fraction_sweep": {
+          "0.00": {
+            "actual_HP_electric_MWh": 0.0,
+            "actual_recovered_source_MWh": 0.0,
+            "delivered_MWh": 0.0,
+            "energy_coverage_pct": 0.0,
+            "hours_unmet": 8760,
+            "unmet_MWh": 538.6997903874
+          },
+          "0.05": {
+            "actual_HP_electric_MWh": 32.324775049610004,
+            "actual_recovered_source_MWh": 96.97432514883,
+            "delivered_MWh": 129.29910019844002,
+            "energy_coverage_pct": 24.002069892296785,
+            "hours_unmet": 8760,
+            "unmet_MWh": 409.40069018895997
+          },
+          "0.10": {
+            "actual_HP_electric_MWh": 64.64955009922001,
+            "actual_recovered_source_MWh": 193.94865029766,
+            "delivered_MWh": 258.59820039688003,
+            "energy_coverage_pct": 48.00413978459357,
+            "hours_unmet": 8760,
+            "unmet_MWh": 280.10158999052
+          },
+          "0.15": {
+            "actual_HP_electric_MWh": 96.8554837956,
+            "actual_recovered_source_MWh": 290.5664513868,
+            "delivered_MWh": 387.4219351824,
+            "energy_coverage_pct": 71.91796657351394,
+            "hours_unmet": 8503,
+            "unmet_MWh": 151.277855205
+          },
+          "0.20": {
+            "actual_HP_electric_MWh": 123.06762110927333,
+            "actual_recovered_source_MWh": 369.20286332782,
+            "delivered_MWh": 492.27048443709333,
+            "energy_coverage_pct": 91.38122813878998,
+            "hours_unmet": 5192,
+            "unmet_MWh": 46.42930595030664
+          },
+          "0.25": {
+            "actual_HP_electric_MWh": 133.84169484531665,
+            "actual_recovered_source_MWh": 401.52508453595,
+            "delivered_MWh": 535.3667793812666,
+            "energy_coverage_pct": 99.38128600277783,
+            "hours_unmet": 941,
+            "unmet_MWh": 3.3330110061333316
+          },
+          "0.50": {
+            "actual_HP_electric_MWh": 134.67494759685,
+            "actual_recovered_source_MWh": 404.02484279055,
+            "delivered_MWh": 538.6997903874,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          },
+          "1.00": {
+            "actual_HP_electric_MWh": 134.67494759685,
+            "actual_recovered_source_MWh": 404.02484279055,
+            "delivered_MWh": 538.6997903874,
+            "energy_coverage_pct": 100.0,
+            "hours_unmet": 0,
+            "unmet_MWh": 0.0
+          }
+        },
+        "max_HP_capacity_feasible": true,
+        "minimum_fraction_for_zero_hourly_deficit": 0.30452179948628566,
+        "peak_demand_MW": 0.0866735065
+      }
+    }
+  },
+  "schema": "C90_TIME_ALIGNED_RECOVERY_THRESHOLD_V1"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "language": "SK",
+    "size_bytes": 74884,
+    "pages": 2,
+    "chars": 2778,
+    "clipped_words": 0,
+    "preview": "preview_closedloop_SK.png"
+  },
+  {
+    "language": "RU",
+    "size_bytes": 80443,
+    "pages": 2,
+    "chars": 3004,
+    "clipped_words": 0,
+    "preview": "preview_closedloop_RU.png"
+  },
+  {
+    "language": "EN",
+    "size_bytes": 70963,
+    "pages": 2,
+    "chars": 3012,
+    "clipped_words": 0,
+    "preview": "preview_closedloop_EN.png"
+  }
+]

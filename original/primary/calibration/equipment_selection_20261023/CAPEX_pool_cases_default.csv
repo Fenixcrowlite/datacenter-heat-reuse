@@ -1,0 +1,7 @@
+﻿alternative,CAPEX_budget_EUR,fixed_OandM_EUR_year,pump_and_control_kW,pump_energy_MWh_year,pump_electricity_EUR_year,gross_simulink_energy_opex_benefit_EUR_year,net_after_pumps_and_maintenance_EUR_year,simple_payback_years,annualized_CAPEX_EUR_year,NPV20y_6percent_EUR,cash_positive,economic_screen
+A_DIRECT_35C_TITANIUM_HX,45000,900.0,4.047,8.522,1296.003,12306.501,10110.498,4.451,3923.305,70966.619,True,"screening BUDGET, not an actual equipment quote"
+A_DIRECT_35C_TITANIUM_HX,75000,1500.0,4.047,8.522,1296.003,12306.501,9510.498,7.886,6538.842,34084.667,True,"screening BUDGET, not an actual equipment quote"
+A_DIRECT_35C_TITANIUM_HX,110000,2200.0,4.047,8.522,1296.003,12306.501,8810.498,12.485,9590.301,-8944.278,True,"screening BUDGET, not an actual equipment quote"
+B_POOL_HP_25C,100000,2500.0,3.698,7.939,1207.309,4279.765,572.456,174.686,8718.456,-93433.978,True,"screening BUDGET, not an actual equipment quote"
+B_POOL_HP_25C,170000,4250.0,3.698,7.939,1207.309,4279.765,-1177.544,,14821.375,-183506.34,False,"screening BUDGET, not an actual equipment quote"
+B_POOL_HP_25C,250000,6250.0,3.698,7.939,1207.309,4279.765,-3177.544,,21796.139,-286446.183,False,"screening BUDGET, not an actual equipment quote"

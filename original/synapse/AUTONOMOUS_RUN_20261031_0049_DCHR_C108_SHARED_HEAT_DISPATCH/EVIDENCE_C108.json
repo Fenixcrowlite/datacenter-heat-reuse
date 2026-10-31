@@ -1,0 +1,18 @@
+{
+  "actor": "chatgpt-dchr-c108-shared-source-20261031-0049",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH\\C108_SHARED_HOURLY.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH\\C108_FINDINGS.md",
+  "hourly_sha256": "7b243871e1ab13abc4c35e6ee8ae9bf85950bc546adf39c5f5383f1d54ac24d4",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH\\SHA256_MANIFEST_C108.json",
+  "manifest_sha256": "64ddc5fe27da8d47fbd9c2290adcf2a5c5b1e31744dfd005510b6be3fe0c1428",
+  "next": "Iteratively couple pool evaporation, humidity/air HVAC and heat dispatch; enforce two-loop return temperatures, then replace assumed COP/UA/weather with measured vendor data.",
+  "provenance": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH\\C108_PROVENANCE_QA.json",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH\\C108_INDEPENDENT_QA.json",
+  "qa_result": "12 selftests; 2207664 independent assertions; 12 annual summaries; 2 negative controls; 19 provenance checks",
+  "schema": "C108_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH\\C108_SUMMARY.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

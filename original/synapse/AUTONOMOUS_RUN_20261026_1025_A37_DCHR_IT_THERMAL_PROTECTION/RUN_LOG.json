@@ -1,0 +1,86 @@
+﻿{
+  "both/no_shed": {
+    "max_T_IT_C": 30.0,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 0.0,
+    "unhandled_kWh": 0.0
+  },
+  "both/ideal_40pct": {
+    "max_T_IT_C": 30.0,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 0.0,
+    "unhandled_kWh": 0.0
+  },
+  "both/ramp15k_40pct": {
+    "max_T_IT_C": 30.0,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 0.0,
+    "unhandled_kWh": 0.0
+  },
+  "main_only/no_shed": {
+    "max_T_IT_C": 46.45634,
+    "first_alarm_hour": 147.75,
+    "alarm_intervals": 30,
+    "shed_kWh": 0.0,
+    "unhandled_kWh": 636.609653
+  },
+  "main_only/ideal_40pct": {
+    "max_T_IT_C": 30.0,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 636.609653,
+    "unhandled_kWh": 0.0
+  },
+  "main_only/ramp15k_40pct": {
+    "max_T_IT_C": 30.0,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 636.609653,
+    "unhandled_kWh": 0.0
+  },
+  "backup_only/no_shed": {
+    "max_T_IT_C": 61.4561,
+    "first_alarm_hour": 24.75,
+    "alarm_intervals": 197,
+    "shed_kWh": 0.0,
+    "unhandled_kWh": 2543.427491
+  },
+  "backup_only/ideal_40pct": {
+    "max_T_IT_C": 30.0,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 2543.427491,
+    "unhandled_kWh": 0.0
+  },
+  "backup_only/ramp15k_40pct": {
+    "max_T_IT_C": 33.168425,
+    "first_alarm_hour": null,
+    "alarm_intervals": 0,
+    "shed_kWh": 2535.053158,
+    "unhandled_kWh": 8.374333
+  },
+  "neither/no_shed": {
+    "max_T_IT_C": 136.4561,
+    "first_alarm_hour": 24.0,
+    "alarm_intervals": 576,
+    "shed_kWh": 0.0,
+    "unhandled_kWh": 22976.385584
+  },
+  "neither/ideal_40pct": {
+    "max_T_IT_C": 93.862838,
+    "first_alarm_hour": 24.0,
+    "alarm_intervals": 576,
+    "shed_kWh": 9540.581456,
+    "unhandled_kWh": 13435.804128
+  },
+  "neither/ramp15k_40pct": {
+    "max_T_IT_C": 93.862838,
+    "first_alarm_hour": 24.0,
+    "alarm_intervals": 576,
+    "shed_kWh": 9501.401155,
+    "unhandled_kWh": 13474.984429
+  }
+}

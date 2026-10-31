@@ -1,0 +1,274 @@
+[
+  {
+    "id": "E_IT",
+    "value": 71832.833,
+    "unit": "MWh/year",
+    "definition": "IT thermal energy from assumed model power",
+    "standard": "ISO/IEC 30134-2:2026",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "E_DC_assumed",
+    "value": 97692.65288000001,
+    "unit": "MWh/year",
+    "definition": "E_IT × assumed PUE 1.36",
+    "standard": "ISO/IEC 30134-2:2026",
+    "evidence": "SCENARIO"
+  },
+  {
+    "id": "PUE_assumed",
+    "value": 1.36,
+    "unit": "1",
+    "definition": "E_DC/E_IT, not site metered",
+    "standard": "ISO/IEC 30134-2:2026",
+    "evidence": "SCENARIO"
+  },
+  {
+    "id": "E_recovered_source",
+    "value": 38274.67381998236,
+    "unit": "MWh/year",
+    "definition": "integral DCtoPool+DCtoDistrict",
+    "standard": "EU 2024/1364",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "E_rejected_IT",
+    "value": 33558.15918001764,
+    "unit": "MWh/year",
+    "definition": "IT thermal energy minus source reused",
+    "standard": "first-law accounting",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Source_utilization",
+    "value": 0.6268585846183828,
+    "unit": "1",
+    "definition": "extracted / assumed 0.85 × E_IT",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "ERF_source_proxy",
+    "value": 0.3917866153864892,
+    "unit": "1",
+    "definition": "source heat extracted / assumed facility energy; NOT ERF",
+    "standard": "EU 2024/1364",
+    "evidence": "NONREPORTABLE"
+  },
+  {
+    "id": "ERF_reportable",
+    "value": null,
+    "unit": "1",
+    "definition": "boundary metered E_REUSE/E_DC",
+    "standard": "EU 2024/1364",
+    "evidence": "MISSING_METER"
+  },
+  {
+    "id": "WUE_reportable",
+    "value": null,
+    "unit": "m3/MWh",
+    "definition": "metered water consumption / IT energy",
+    "standard": "ISO/IEC 30134-9:2022",
+    "evidence": "MISSING_METER"
+  },
+  {
+    "id": "REF_reportable",
+    "value": null,
+    "unit": "1",
+    "definition": "renewable energy / facility energy",
+    "standard": "EU 2024/1364",
+    "evidence": "MISSING_METER"
+  },
+  {
+    "id": "Heat_pool_direct",
+    "value": 250.125,
+    "unit": "MWh/year",
+    "definition": "integral useful pool heat",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Heat_pool_HP25",
+    "value": 250.125,
+    "unit": "MWh/year",
+    "definition": "integral useful pool heat",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Electric_pool_HP25",
+    "value": 62.53125,
+    "unit": "MWh/year",
+    "definition": "compressor power × dt",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Heat_district_HP35",
+    "value": 47769.078995339354,
+    "unit": "MWh/year",
+    "definition": "integral useful district HP output",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Electric_district_HP35",
+    "value": 9744.530175357,
+    "unit": "MWh/year",
+    "definition": "integral district HP compressor",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "SCOP_district_model",
+    "value": 4.902142857142858,
+    "unit": "1",
+    "definition": "season heat / compressor electric, synthetic Carnot only",
+    "standard": "EN 14511-2 NOT certified",
+    "evidence": "NONCERTIFIED"
+  },
+  {
+    "id": "Backup_gas_thermal",
+    "value": 9189.267221392489,
+    "unit": "MWh/year",
+    "definition": "integral useful backup gas heat",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Pool_peak_temperature",
+    "value": 27.619764350066,
+    "unit": "degC",
+    "definition": "max modeled pool water temp",
+    "standard": "published decree 308/2012",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Pool_hours_above_28",
+    "value": 0.0,
+    "unit": "h",
+    "definition": "temperature intervals exceeding 28C",
+    "standard": "published decree 308/2012",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Pool_hours_above_internal_limit",
+    "value": 0.0,
+    "unit": "h",
+    "definition": "intervals above internal threshold",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Pool_warmup_to_27p25",
+    "value": 44.0833333333333,
+    "unit": "h",
+    "definition": "first crossing 27.25C from cold initial state",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "TES_max_energy",
+    "value": 50.0,
+    "unit": "MWh",
+    "definition": "max stored thermal energy",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "Source_overallocation_peak",
+    "value": 1.0658141036401503e-14,
+    "unit": "MW",
+    "definition": "must be zero; total used source minus available",
+    "standard": "",
+    "evidence": "QA"
+  },
+  {
+    "id": "HP_pool_partition_abs_peak",
+    "value": 0.0,
+    "unit": "MW",
+    "definition": "Qout-Qsource-Welectric",
+    "standard": "",
+    "evidence": "QA"
+  },
+  {
+    "id": "HP_district_partition_abs_peak",
+    "value": 5.0182080713057076e-14,
+    "unit": "MW",
+    "definition": "Qout-Qsource-Welectric",
+    "standard": "",
+    "evidence": "QA"
+  },
+  {
+    "id": "Cooling_design_duty",
+    "value": 10.0,
+    "unit": "MW",
+    "definition": "assumed full IT design heat load",
+    "standard": "",
+    "evidence": "SCENARIO"
+  },
+  {
+    "id": "Cooling_thermal_flow_at_5K",
+    "value": 1726.844809895972,
+    "unit": "m3/h",
+    "definition": "10 MW / rho cp dT",
+    "standard": "",
+    "evidence": "SCENARIO"
+  },
+  {
+    "id": "Aux_pump_head_primary",
+    "value": null,
+    "unit": "kPa",
+    "definition": "site fluid hydraulics / hydraulic calculation required",
+    "standard": "",
+    "evidence": "NOT_MEASURED"
+  },
+  {
+    "id": "District_load_peak_derived",
+    "value": 18.759878419452853,
+    "unit": "MW",
+    "definition": "HP+TES discharge+gas-TES charge",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "District_demand_annual",
+    "value": 56793.695288753814,
+    "unit": "MWh/year",
+    "definition": "sum district delivered demand",
+    "standard": "",
+    "evidence": "SIMULATED"
+  },
+  {
+    "id": "District_heat_balance_residual",
+    "value": 0.0,
+    "unit": "MW",
+    "definition": "constructed identity check; independent source QA separately",
+    "standard": "",
+    "evidence": "QA"
+  },
+  {
+    "id": "Pool_surface_m2",
+    "value": 312.5,
+    "unit": "m2",
+    "definition": "25 × 12.5 m assumed rectangular",
+    "standard": "",
+    "evidence": "SCENARIO"
+  },
+  {
+    "id": "Pool_volume_m3",
+    "value": 500.0,
+    "unit": "m3",
+    "definition": "25 ×12.5×1.6m assumed",
+    "standard": "",
+    "evidence": "SCENARIO"
+  },
+  {
+    "id": "Thermal_buffer_min_2MW_30s_5K",
+    "value": 2.8780746831599533,
+    "unit": "m3",
+    "definition": "ideal water heat buffer, not flow",
+    "standard": "",
+    "evidence": "SCENARIO"
+  }
+]

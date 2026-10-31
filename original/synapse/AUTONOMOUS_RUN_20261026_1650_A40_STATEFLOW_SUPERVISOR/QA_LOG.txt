@@ -1,0 +1,20 @@
+python.exe : test_672_rows (__main__.Acceptance.test_672_rows) ... ok
+строка:1 знак:317
++ ... \.venv\Scripts\python.exe';$log=& $py "$d\verify_a40.py" 2>&1 | Out-S ...
++                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_672_rows (...72_rows) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_all_four_stateflow_replays (__main__.Acceptance.test_all_four_stateflow_replays) ... ok
+test_capacity_hysteresis (__main__.Acceptance.test_capacity_hysteresis) ... ok
+test_critical_priority_and_recovery (__main__.Acceptance.test_critical_priority_and_recovery) ... ok
+test_no_external_hardware_blocks (__main__.Acceptance.test_no_external_hardware_blocks) ... ok
+test_oracle_exact_parity (__main__.Acceptance.test_oracle_exact_parity) ... ok
+test_outputs_and_mode_coverage (__main__.Acceptance.test_outputs_and_mode_coverage) ... ok
+test_saved_model_zip_integrity (__main__.Acceptance.test_saved_model_zip_integrity) ... ok
+test_soc_hysteresis (__main__.Acceptance.test_soc_hysteresis) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.037s
+
+OK

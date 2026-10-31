@@ -1,0 +1,12 @@
+{
+  "capacity_rows": 105120,
+  "legacy_C118_rows_crosschecked": 35040,
+  "mass_balance_rows": 140160,
+  "negative_controls": 5,
+  "output_sha256": "8eddd1fcd5d5a456deaf4dd8994c38b063089dd0a405dae1e43761ace19b0f4c",
+  "rows": 140160,
+  "scenario_count": 16,
+  "source_sha_pins": 4,
+  "status": "PASS",
+  "summary_scenarios": 16
+}

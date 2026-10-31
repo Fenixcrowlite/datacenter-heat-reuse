@@ -1,0 +1,11 @@
+{
+  "source_id": 21,
+  "original": "sources/papers/21_Ebrahimi_2014.pdf",
+  "sha256": "4aaffa92f30b0d5aa9c7a7e58e5ff8cad3eb05c9f8969b079d6127aab1600a40",
+  "run_date": "2026-10-08",
+  "primary_pdf_text_checks": {"table6": 4, "tables8_10_11": 8, "failed": 0, "status": "PASS"},
+  "interval_identity_checks": {"passed": 4, "failed": 0, "status": "PASS"},
+  "scope": "12 PDF text assertions + 4 mathematical interval assertions; not complete primary audit or independent validation",
+  "status": "PASS_WITH_UNRESOLVED_SOURCE_DISCREPANCIES",
+  "unresolved": ["Table 10 liquid-pump secondary outlet 45-90 C vs source [12] pumped case about 48 C", "Table 6 aggregate air ranges not a joint design point", "chiller return 35 C vs nearby text 15.5-18.4 C"]
+}

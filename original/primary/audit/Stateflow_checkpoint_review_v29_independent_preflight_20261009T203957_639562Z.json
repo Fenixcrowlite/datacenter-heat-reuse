@@ -1,0 +1,65 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:39:57.639562+00:00",
+  "review_type": "independent_selected_inputs_write_free_finalizer_preflight",
+  "scope": "Check-only preflight of selected actual artifact inputs; no MATLAB/Stateflow execution by this reviewer.",
+  "checks": 3,
+  "passed": 3,
+  "failed": 0,
+  "assertions": [
+    {
+      "name": "check_only_process_exit_zero",
+      "passed": true
+    },
+    {
+      "name": "mutable_ledgers_and_exclusive_outputs_unchanged",
+      "passed": true
+    },
+    {
+      "name": "successful_JSON_result",
+      "passed": true
+    }
+  ],
+  "command": [
+    "C:\\Python314\\python.exe",
+    "audit/finalize_stateflow_checkpoint_v29.py",
+    "--check-only",
+    "--temporal-dir",
+    "results/stateflow_temporal_v29_20261009T203631630Z",
+    "--monitor-dir",
+    "results/stateflow_monitor_v29_20261009T203631630Z",
+    "--temporal-qa",
+    "audit/Stateflow_temporal_independent_QA_v29_20261009T203821597Z.json",
+    "--monitor-qa",
+    "audit/stateflow_monitor_independent_qa_v29_20261009T203848726Z.json",
+    "--receipt",
+    "audit/stateflow_execution_receipt_v29_20261009T203906_272351Z.json",
+    "--peer-review",
+    "audit/Stateflow_checkpoint_review_v29_preclose_PASS_20261009T203818_349595Z.json"
+  ],
+  "finalizer_sha256": "8515504f3c799cc8166277dd2b04060195c5ec7e5340e007a94a54347365162a",
+  "checks_before": {
+    "STATUS_stateflow_v29.json": null,
+    "MASTER_STAGEBOARD_stateflow_v29.md": null,
+    "automation/engineering_progress.md": "122b45f15dfe2b62cee1132620d10636035db3608a920a17e445648bc02cbe96",
+    "automation/STATEFLOW_ACCEPTANCE.md": "5a2444f323481e8191774df225f66ad455d1d7afadf125263985fb5bf396e4ec"
+  },
+  "checks_after": {
+    "STATUS_stateflow_v29.json": null,
+    "MASTER_STAGEBOARD_stateflow_v29.md": null,
+    "automation/engineering_progress.md": "122b45f15dfe2b62cee1132620d10636035db3608a920a17e445648bc02cbe96",
+    "automation/STATEFLOW_ACCEPTANCE.md": "5a2444f323481e8191774df225f66ad455d1d7afadf125263985fb5bf396e4ec"
+  },
+  "finalizer_output": {
+    "check_only": true,
+    "passed": true,
+    "independent_actual_checks": 5499,
+    "separate_synthetic_checks": 88,
+    "separate_static_specification_checks": 107,
+    "prior_files_preserved": 205
+  },
+  "process_exit_code": 0,
+  "dynamic_model_execution_this_review": false,
+  "primary_text_verified_this_review": false,
+  "physical_validation": false
+}

@@ -1,0 +1,798 @@
+{
+  "timestamp_utc": "20261009T214320_065768Z",
+  "evidence_class": "postclose_packaging_only",
+  "manifest_sha256": "ca9bb55cd3d01e321dc4a15c10e05c1babfbad92df94abaf44a01d29c423d796",
+  "passed": 197,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "immutable:audit/finalize_TES_event_v31.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_boundary_event_derivation_v31.md",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_execution_receipt_v31_20261009T213724568Z.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_execution_receipt_v31_local_20261009T213737973Z.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_execution_receipt_v31_local_20261009T214001224Z.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_independent_QA_v31_20261009T214221_956636Z.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_reference_v31.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_results_v31.md",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_spec_v31_20261009T213548_041033Z/cases.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_spec_v31_20261009T213548_041033Z/component_vectors.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_spec_v31_20261009T213548_041033Z/equation_qa.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_spec_v31_20261009T213713_266234Z/cases.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_spec_v31_20261009T213713_266234Z/component_vectors.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/TES_event_spec_v31_20261009T213713_266234Z/equation_qa.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:audit/verify_TES_event_v31.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:automation/logs/TES_event_equations_v31_20261009T213547865Z.log",
+      "passed": true
+    },
+    {
+      "name": "immutable:automation/logs/TES_event_equations_v31_20261009T213713116Z.log",
+      "passed": true
+    },
+    {
+      "name": "immutable:automation/logs/TES_event_independent_QA_v31_20261009T214220584Z.log",
+      "passed": true
+    },
+    {
+      "name": "immutable:automation/logs/TES_event_matlab_v31_20261009T213724568Z.log",
+      "passed": true
+    },
+    {
+      "name": "immutable:automation/logs/TES_event_matlab_v31_local_20261009T213737973Z.log",
+      "passed": true
+    },
+    {
+      "name": "immutable:automation/logs/TES_event_matlab_v31_local_20261009T214001224Z.log",
+      "passed": true
+    },
+    {
+      "name": "immutable:MASTER_STAGEBOARD_stateflow_v31.md",
+      "passed": true
+    },
+    {
+      "name": "immutable:matlab/+dchr/+components/storage_event_kernel_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:matlab/simulink/export_TES_event_mat_audit_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:matlab/simulink/run_TES_event_comparison_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/assertions_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/backup_only_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/backup_only_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/backup_only_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/backup_only_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/backup_only_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/capacity_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/capacity_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/capacity_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/capacity_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/capacity_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/component_domain_v31.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/component_trace_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/event_trace_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/hp_only_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/hp_only_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/hp_only_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/hp_only_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/hp_only_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/policy_comparison_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/saved_v30_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/build_dispatch_stateflow_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/DCHR_Dispatch_Stateflow_v30.slx",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/dchr_stateflow_hp_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/export_stateflow_mat_audit_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/heat_pump_step_v14.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/run_stateflow_acceptance_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/run_stateflow_faults_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/run_TES_event_comparison_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/simulate_dispatch_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/spec/cases.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/spec/component_vectors.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/spec/equation_qa.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_allocate_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_choose_mode_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_contract_gate_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_reference_v30.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_event_kernel_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/source_snapshot/TES_event_reference_v31.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/summary_v31.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/assertions_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/backup_only_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/backup_only_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/backup_only_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/backup_only_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/backup_only_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/capacity_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/capacity_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/capacity_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/capacity_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/capacity_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/component_domain_v31.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/component_trace_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/event_trace_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/hp_only_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/hp_only_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/hp_only_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/hp_only_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/hp_only_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/mat_audit_source/export_TES_event_mat_audit_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/mat_audit_v31.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/policy_comparison_v31.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/saved_v30_trace.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/build_dispatch_stateflow_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/DCHR_Dispatch_Stateflow_v30.slx",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/dchr_stateflow_hp_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/export_stateflow_mat_audit_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/heat_pump_step_v14.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/run_stateflow_acceptance_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/run_stateflow_faults_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/run_TES_event_comparison_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/simulate_dispatch_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/spec/cases.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/spec/component_vectors.csv",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/spec/equation_qa.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_allocate_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_choose_mode_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_contract_gate_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_reference_v30.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_event_kernel_v31.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/source_snapshot/TES_event_reference_v31.py",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/summary_v31.json",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_0p125_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_0p25_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_0p5_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_1p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_2p0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "immutable:STATUS_stateflow_v31.json",
+      "passed": true
+    },
+    {
+      "name": "model_remains_v30",
+      "passed": true
+    },
+    {
+      "name": "no_unexecuted_event_SLX_claim",
+      "passed": true
+    },
+    {
+      "name": "all_observed_gates_pass",
+      "passed": true
+    },
+    {
+      "name": "MATLAB_counts",
+      "passed": true
+    },
+    {
+      "name": "independent_counts",
+      "passed": true
+    },
+    {
+      "name": "coverage",
+      "passed": true
+    },
+    {
+      "name": "nonvalidation_flags",
+      "passed": true
+    },
+    {
+      "name": "preservation_count",
+      "passed": true
+    },
+    {
+      "name": "execution_log_binding",
+      "passed": true
+    },
+    {
+      "name": "receipt_binding",
+      "passed": true
+    },
+    {
+      "name": "next_handoff_logged",
+      "passed": true
+    },
+    {
+      "name": "finite_backup_counterexample_reported",
+      "passed": true
+    },
+    {
+      "name": "observed_successful_closure",
+      "passed": true
+    }
+  ],
+  "note": "Post-close report/script/log created after immutable manifest; no numerical rerun or count inflation."
+}

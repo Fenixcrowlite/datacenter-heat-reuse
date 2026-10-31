@@ -1,0 +1,7 @@
+{
+  "log_path": "automation\\logs\\TES_event_matlab_v31_20261009T213724568Z.log",
+  "timestamp_utc": "2026-10-09T21:37:27.8213478Z",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "command": "addpath('matlab','matlab/simulink'); out=run_TES_event_comparison_v31('audit/TES_event_spec_v31_20261009T213713_266234Z'); export_TES_event_mat_audit_v31(out);",
+  "exit_code": 1
+}

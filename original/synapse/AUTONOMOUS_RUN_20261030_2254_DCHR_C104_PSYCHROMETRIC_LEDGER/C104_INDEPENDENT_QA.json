@@ -1,0 +1,19 @@
+{
+  "anchor_RHout70_HRV50": {
+    "air_external_heat_MWh_th": 48.270923,
+    "baseline_electric_MWh": 150.877246,
+    "coil_cooling_MWh_th": 0.705488,
+    "outdoor_condensate_kg": 198.187469,
+    "total_HVAC_electric_MWh": 151.013315
+  },
+  "assertions": 2207520,
+  "hourly_sha_verified": true,
+  "negative_controls": 2,
+  "notes": "Independent psychrometric formulas; C104 is an alternative, not additive, to C102.",
+  "outdoor_coil_active_hours": 3195,
+  "rows_checked": 78840,
+  "scenarios": 9,
+  "source_sha_verified": true,
+  "status": "PASS",
+  "summary_sha_verified": true
+}

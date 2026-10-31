@@ -1,0 +1,74 @@
+{
+  "errors": [],
+  "external_requests": [],
+  "scenario_checks": 6,
+  "status": "PASS",
+  "viewports": {
+    "1440_v08": {
+      "banner": true,
+      "cells": 30,
+      "identity": "Kontrola: rozdiel = posledný krok + korekcia sklonu. Časová os 167.75 h, diskrétna simulácia 168 h. Zdroj: A64 / V08.",
+      "pool": "20,000398",
+      "rows": 5,
+      "scroll": 1440,
+      "selected": "v08",
+      "svg": 7,
+      "width": 1440
+    },
+    "1440_v09": {
+      "banner": true,
+      "cells": 30,
+      "identity": "Kontrola: rozdiel = posledný krok + korekcia sklonu. Časová os 167.75 h, diskrétna simulácia 168 h. Zdroj: A64 / V09.",
+      "pool": "20,000398",
+      "rows": 5,
+      "scroll": 1440,
+      "selected": "v09",
+      "svg": 7,
+      "width": 1440
+    },
+    "320_v08": {
+      "banner": true,
+      "cells": 30,
+      "identity": "Kontrola: rozdiel = posledný krok + korekcia sklonu. Časová os 167.75 h, diskrétna simulácia 168 h. Zdroj: A64 / V08.",
+      "pool": "20,000398",
+      "rows": 5,
+      "scroll": 320,
+      "selected": "v08",
+      "svg": 7,
+      "width": 320
+    },
+    "320_v09": {
+      "banner": true,
+      "cells": 30,
+      "identity": "Kontrola: rozdiel = posledný krok + korekcia sklonu. Časová os 167.75 h, diskrétna simulácia 168 h. Zdroj: A64 / V09.",
+      "pool": "20,000398",
+      "rows": 5,
+      "scroll": 320,
+      "selected": "v09",
+      "svg": 7,
+      "width": 320
+    },
+    "390_v08": {
+      "banner": true,
+      "cells": 30,
+      "identity": "Kontrola: rozdiel = posledný krok + korekcia sklonu. Časová os 167.75 h, diskrétna simulácia 168 h. Zdroj: A64 / V08.",
+      "pool": "20,000398",
+      "rows": 5,
+      "scroll": 390,
+      "selected": "v08",
+      "svg": 7,
+      "width": 390
+    },
+    "390_v09": {
+      "banner": true,
+      "cells": 30,
+      "identity": "Kontrola: rozdiel = posledný krok + korekcia sklonu. Časová os 167.75 h, diskrétna simulácia 168 h. Zdroj: A64 / V09.",
+      "pool": "20,000398",
+      "rows": 5,
+      "scroll": 390,
+      "selected": "v09",
+      "svg": 7,
+      "width": 390
+    }
+  }
+}

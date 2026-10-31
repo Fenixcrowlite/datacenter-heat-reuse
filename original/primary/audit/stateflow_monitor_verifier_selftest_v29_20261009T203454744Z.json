@@ -1,0 +1,224 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:34:54.913864+00:00",
+  "scope": "Independent audit of executed v28 runtime-monitor fault evidence, v29.\n\nNo MATLAB production algorithm is imported. A two-interval fixed-COP hand\ncase anchors accepted traces; rejection diagnostics and hashes anchor fault\nprovenance. This is implementation QA, not physical or primary-paper validation.\n",
+  "primary_text_verified": false,
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "spec_sha256": "98f38f2b47bd807dfb3da6abd2b052ba402e68eabeee630ad17915d8fb8c99c7",
+  "verifier_sha256": "648f9b6480bd381381e8937c7388580b9992c2e8df0de4e56eb179338e78f182",
+  "specification": {
+    "checks": 6,
+    "passed": 6,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "specified_existing_v28_model",
+        "passed": true
+      },
+      {
+        "name": "specified_existing_v28_helper",
+        "passed": true
+      },
+      {
+        "name": "independently_declared_fixed_COP_anchor",
+        "passed": true
+      },
+      {
+        "name": "thirteen_unique_monitor_cases",
+        "passed": true
+      },
+      {
+        "name": "complete_independently_anchored_mutations_and_assertions",
+        "passed": true
+      },
+      {
+        "name": "independent_exponential_retention_gate_case",
+        "passed": true
+      }
+    ],
+    "synthetic_only": false,
+    "evidence_class": "static_specification"
+  },
+  "synthetic_verifier_self_test": {
+    "checks": 40,
+    "passed": 40,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_valid_schema",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_mutation",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_rejected",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_restored_source",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_failure_report_sha256",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_synthetic_report",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_actual_identifier",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_capture_errors",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_expected_gate_observed",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_compilation_failure_detected",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_case",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_case",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_error_phase",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_error_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_stop_event_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_stop_event",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_error_message",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_captured_diagnostic_tree",
+        "passed": true
+      },
+      {
+        "name": "reject_captured_failed_tick_output",
+        "passed": true
+      },
+      {
+        "name": "synthetic_hand_case_passes",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_E_Next_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Mode",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_System_Balance_Residual_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_Discharge_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_obsolete_linear_retention_anchor",
+        "passed": true
+      },
+      {
+        "name": "synthetic_artifact_binding_passes",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_diagnostic_file",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_raw_trace_times_file",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_mutation_source_file",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_saved_captured_simulation_file",
+        "passed": true
+      },
+      {
+        "name": "reject_crosscase_or_external_artifact_path",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_mutation_source",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_diagnostic",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_raw_trace_times",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_artifact_hash_captured_simulation",
+        "passed": true
+      }
+    ],
+    "synthetic_only": true,
+    "evidence_class": "synthetic_reviewer_self_test"
+  },
+  "checks": 46,
+  "passed": 46,
+  "failed": 0,
+  "actual_evidence_checks": 0,
+  "actual_evidence_passed": 0,
+  "actual_evidence_failed": 0,
+  "synthetic_reviewer_self_test_checks": 40,
+  "synthetic_reviewer_self_test_passed": 40,
+  "synthetic_reviewer_self_test_failed": 0,
+  "static_specification_checks": 6,
+  "static_specification_passed": 6,
+  "static_specification_failed": 0
+}

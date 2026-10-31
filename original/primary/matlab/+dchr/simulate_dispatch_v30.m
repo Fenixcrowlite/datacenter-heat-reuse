@@ -1,0 +1,46 @@
+function out = simulate_dispatch_v30(cfg,input)
+% Numerical dispatch reference, independent of Stateflow chooser/allocator.
+% Shares verified HP/TES components; independent Python QA uses neither.
+p=dchr.components.storage_parameters_v30(cfg);
+A=p(9)*(cfg.storage.initial_temperature_C-p(10));
+boiler=cfg.backup.max_heat_MW;
+validateattributes(boiler,{'numeric'},{'real','finite','scalar','nonnegative'});
+rows=cell(height(input),1);
+for k=1:height(input)
+    x=input(k,:);
+    assert(x.Delivery_C<=cfg.storage.delivery_cutoff_C && ...
+        x.Sink_C>=cfg.storage.max_temperature_C,'DCHR:v30:TemperaturePorts','Invalid delivery/condenser proxy.');
+    preview=dchr.components.storage_step_v30(A,0,0,cfg);
+    request=x.Heat_Demand_MW+min(p(3),preview.charge_bound_MW);
+    hp=dchr.components.heat_pump_step_v14(x.Source_Heat_MW,x.Source_C,x.Sink_C,request,cfg);
+    direct=min(x.Heat_Demand_MW,hp.heat_output_MW);
+    st=dchr.components.storage_step_v30(A,max(0,hp.heat_output_MW-direct), ...
+        max(0,x.Heat_Demand_MW-direct),cfg);
+    gas=min(boiler,max(0,x.Heat_Demand_MW-direct-st.discharge_MW));
+    unmet=max(0,x.Heat_Demand_MW-direct-st.discharge_MW-gas);
+    mode=0;
+    if direct>0,mode=1;end
+    if st.charge_MW>0,mode=2;end
+    if st.discharge_MW>0,mode=3;end
+    if gas>0,mode=4;end
+    if unmet>0,mode=5;end
+    supplied=direct+st.discharge_MW+gas;
+    residual=(hp.source_used_MW+hp.electric_MW+gas)*p(1)+A-supplied*p(1)- ...
+        st.energy_next_MWh-st.standing_loss_MWh-st.charge_loss_MWh-st.discharge_loss_MWh;
+    rows{k}=[mode,direct,st.charge_MW,st.discharge_MW,gas,unmet,st.energy_after_loss_MWh, ...
+        st.energy_next_MWh,st.standing_loss_MWh,st.charge_loss_MWh,st.discharge_loss_MWh, ...
+        supplied,residual,st.temperature_start_C,st.temperature_next_C, ...
+        st.usable_energy_start_MWh,st.usable_energy_next_MWh, ...
+        x.Heat_Demand_MW,hp.heat_output_MW,hp.electric_MW,hp.source_used_MW,request, ...
+        hp.cop_operating,double(hp.available),max(0,x.Source_Heat_MW-hp.source_used_MW),A];
+    A=st.energy_next_MWh;
+end
+names={'Mode','HP_Direct_MW','Storage_Charge_MW','Storage_Discharge_MW','Gas_Heat_MW', ...
+    'Unmet_Heat_MW','Storage_E_After_Loss_MWh','Storage_E_Next_MWh','Storage_Standing_Loss_MWh', ...
+    'Storage_Charge_Loss_MWh','Storage_Discharge_Loss_MWh','Supplied_Heat_MW', ...
+    'System_Balance_Residual_MWh','Storage_T_Start_C','Storage_T_Next_C', ...
+    'Storage_Usable_Start_MWh','Storage_Usable_Next_MWh','Heat_Demand_MW', ...
+    'HP_Heat_MW','HP_Electric_MW','HP_Source_Used_MW','HP_Request_MW','COP','HP_Available', ...
+    'Source_Unused_MW','Storage_E_Start_MWh'};
+out=array2table(vertcat(rows{:}),'VariableNames',names);
+end

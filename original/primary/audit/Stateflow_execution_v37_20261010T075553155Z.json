@@ -1,0 +1,7 @@
+{
+  "evidence_class": "observed_matlab_batch_receipt",
+  "log_path": "automation/logs/stateflow_v37_console_20261010T075553155Z.log",
+  "timestamp_utc": "2026-10-10T07:55:53.8045189Z",
+  "exit_code": 1,
+  "command": "addpath('matlab/simulink'); run_stateflow_resolution_v37('audit/stateflow_spec_v37_20261010T075547_199176Z');"
+}

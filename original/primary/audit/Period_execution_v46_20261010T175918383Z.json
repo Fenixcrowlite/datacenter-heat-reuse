@@ -1,0 +1,7 @@
+{
+  "timestamp_utc": "2026-10-10T17:59:18.9734093Z",
+  "log_path": "automation/logs/period_v46_20261010T175918383Z.log",
+  "exit_code": 1,
+  "evidence_class": "observed_matlab_batch_receipt",
+  "command": "addpath('matlab','matlab/simulink'); run_period_experiment_v46('results/period_v46_20261010T175910_522076Z'); export_period_evidence_v46('results/period_v46_20261010T175910_522076Z');"
+}

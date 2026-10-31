@@ -1,0 +1,16 @@
+{
+  "version": "0.25",
+  "research_inherits": "STATUS_v23.json",
+  "checkpoint": "source04 Hiltunen 2020 partial original numerical audit",
+  "source04_checks_passed": 90,
+  "source04_checks_failed": 0,
+  "source04_review": "PARTIAL_NOT_SIGNED_OFF",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "independent_physical_validation": "NOT_TESTED",
+  "primary_paper_replication": false,
+  "pdf_sha256": "e05f77bfe17ae2f11e7c1d3b3c4dfa283f2e16a2208e602bc5fa8edeb215359f",
+  "evidence_sha256": "d03da06b5d3f434b31359a873ddf8f44665fbdd7694f99e570a3b843b5277486",
+  "traceability_sha256": "5ac7ea52d9fa15a264eea30a46bdfce0e3062f8e2039688b744d1c22724d679d",
+  "next": "independent v25 verification, then original tariff [6]"
+}

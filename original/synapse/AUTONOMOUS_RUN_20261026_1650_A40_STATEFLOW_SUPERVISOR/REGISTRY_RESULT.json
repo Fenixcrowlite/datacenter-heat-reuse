@@ -1,0 +1,14 @@
+{
+  "action": "CREATED_EVENT",
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1227,
+  "scope": "A40_real_Stateflow_4_mode_isolated_synthetic_supervisor",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1650_A40_STATEFLOW_SUPERVISOR",
+  "evidence_sha256": "a8304dc72be7809d6bf92a4ceeafb39a7932eb4f38ccfd38fb1ff59ccc66a986",
+  "manifest_sha256": "7529383d0ae95538a93da81f330c6d93a094dc7168075fd2c2cf88fd8e569da5",
+  "model_sha256": "cdf8a224a3fc83480272cb2dd527ced930d5046e7d53e008d26ef08e3ae8d89c",
+  "qa": "MATLAB/Stateflow R2026a 4x672 PASS, Python 9/9 PASS, oracle 2688/2688 exact modes",
+  "status": "STATEFLOW_OPEN_LOOP_SIM_VERIFIED_CLOSED_LOOP_NOT_DONE",
+  "release_status": "PHYSICAL_RELEASE_BLOCKED",
+  "next_step": "Integrate Stateflow mode into isolated A38 thermal closed loop; dynamic IT shedding and REJECT A/B delays; 672-step energy/thermal parity; do not touch production v85 SLX"
+}

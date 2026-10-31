@@ -1,0 +1,15 @@
+{
+  "holdout_heatmeter_gate.py": "8341a28b222d183738fdbedc0860fe939252433dc975db0a14ceedd818e9df5a",
+  "test_holdout_heatmeter_gate.py": "8383a2d4ba6ea8ae9f4b18e2cdc0ab7ef73aadd17e0cb159d5b399dcbc912881",
+  "independent_crosscheck.py": "ae40805fa62c63c94393b13d74ff28d000007fb70300aa29e1c0818b44b51313",
+  "VALIDACIA_TEPELNEHO_TOKU_SK.md": "c7b2055d13e01e7249273bfc798fb24cd688f46034b54ca3d47f517c2034564d",
+  "TEST_LOG.txt": "9f81de653d1ad8c22931d6653906f72e02944df3eec92a94c2e4933afb9aa6a4",
+  "INDEPENDENT_QA.json": "fcbfffe4a174e55ce055ed32ae800f27ecc2ef4a3cadce7fa2d0e643c55c138c",
+  "register_a29.py": "87870418c86106aae60594733c43727c8295aa49277f5cd95fd28b5b0afbd07e",
+  "example_synthetic/cal.csv": "e3a574295a4141b922fbd1fc49b3aff5077e7387e8da765a3589a98c25b8dbd1",
+  "example_synthetic/cal_meta.json": "edf20d3505119e270affa7e6ee6d64d5d90733af873ea1f2d64cb02aa26983b9",
+  "example_synthetic/cal_report.json": "7613becf0a17c0645742cd122679a4e822c5d003a0796db052e2d50d46c7f706",
+  "example_synthetic/holdout.csv": "d56ec481aca80b361b55ae5a3003332dead638d95f17336b315d03bef87882cc",
+  "example_synthetic/holdout_meta.json": "290219aa3c5730e46197eece030b07907b7d169142e5ffb993fe18bbe04a5278",
+  "example_synthetic/HOLDOUT_EVIDENCE.json": "0d50652abd2980acf118196476a42d494f24d1263f8a29c76edc5b2da2e49aae"
+}

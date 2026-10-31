@@ -1,0 +1,46 @@
+{
+  "timestamp_utc": "2026-10-10T08:02:23.581612+00:00",
+  "evidence_class": "postclose_packaging_only",
+  "files": [
+    {
+      "path": "audit\\check_stateflow_resolution_v37a.py",
+      "sha256": "fd73ddb0b2ccc3ac0908500febe3dc9593d70cadc5c73ec6aa6d0f687560e8ef",
+      "bytes": 3288
+    },
+    {
+      "path": "audit\\check_stateflow_resolution_v37.py",
+      "sha256": "c83224c8aba50c7c3a17f527f86f65a770f682c682726c590e3e6de87a96befa",
+      "bytes": 3080
+    },
+    {
+      "path": "audit\\Stateflow_postclose_v37_20261010T080141_962768Z.json",
+      "sha256": "01c4650a504c8fc26c30c6a4b577584aef22f75219e542a56fe2bf918890928d",
+      "bytes": 13555
+    },
+    {
+      "path": "audit\\Stateflow_postclose_v37_20261010T080158_614943Z.json",
+      "sha256": "2eb12cf2097817cc361cf90e960d508b7740221c5b68c4a710ca06b5b3d9579f",
+      "bytes": 13552
+    },
+    {
+      "path": "automation\\logs\\stateflow_v37_postclose_20261010T080141858Z.log",
+      "sha256": "e4d776d97476059c2e6fc609610ab6a3029cce5b9924530b3e8c48181cb5ee19",
+      "bytes": 754
+    },
+    {
+      "path": "automation\\logs\\stateflow_v37_postclose_20261010T080158506Z.log",
+      "sha256": "d0625397c87fe429defcef5a82c4cfa79e0258df0eb200c3fa9519b41a5a16de",
+      "bytes": 100
+    },
+    {
+      "path": "automation\\logs\\stateflow_v37_finalize_console_20261010T080123014Z.log",
+      "sha256": "35dba3f9931807e4785301b9f6de91a6b958b799cb3a16a32b1e1e7a79810d77",
+      "bytes": 756
+    },
+    {
+      "path": "audit\\Stateflow_manifest_v37_20261010T080123_118491Z.json",
+      "sha256": "03078561c99a3ae2b690ba00048bcd34de1983fe2c925af07cf97d9fb0d2fe5c",
+      "bytes": 19363
+    }
+  ]
+}

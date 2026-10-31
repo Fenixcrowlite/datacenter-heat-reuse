@@ -1,0 +1,26 @@
+[
+  {
+    "lang": "SK",
+    "pages": 2,
+    "words": 532,
+    "size_bytes": 186002,
+    "first_page_rendered": true,
+    "clipped_words": 0
+  },
+  {
+    "lang": "RU",
+    "pages": 2,
+    "words": 472,
+    "size_bytes": 199228,
+    "first_page_rendered": true,
+    "clipped_words": 0
+  },
+  {
+    "lang": "EN",
+    "pages": 2,
+    "words": 503,
+    "size_bytes": 183048,
+    "first_page_rendered": true,
+    "clipped_words": 0
+  }
+]

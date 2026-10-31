@@ -1,0 +1,13 @@
+{
+  "status": "A46_SIMULINK_COMPRESSOR_PARITY_PASS",
+  "task_id": "scc-3d9d172beb6e1b",
+  "scenario_count": 7,
+  "steps_per_scenario": 672,
+  "matlab_python_numeric_comparisons": 51744,
+  "independent_unittest": "4/4 PASS",
+  "model_sha256": "a26fa2f0ca04555c20b806417efff390d0b605bc2a82b0ac1459fa860f6c2e49",
+  "physical_release": false,
+  "graphical_stateflow_controlling": false,
+  "model_uses_stateflow_emchart": true,
+  "next_step": "A47 replace EMChart internal FSM with externally connected graphical Stateflow A44-equivalent supervisor; 7x672 closed-loop parity and transitions"
+}

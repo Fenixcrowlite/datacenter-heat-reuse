@@ -1,0 +1,38 @@
+{
+  "analysis_csv_sha256": "6752002558833f6e2fef743d02200bda0ba2a00ad94166e44fe870ded4a5cf18",
+  "measurement_calibration_ready": false,
+  "metrics": {
+    "E_TES_delta_MWh": 0.4541031344641222,
+    "duration_h": 167.75,
+    "integrated_MWh": {
+      "P_HP_W": 4.756318604110456,
+      "Q_DC_W": 28.51016367125,
+      "Q_DH_W": 16.07613234122622,
+      "Q_pool_W": 10.373083905555289,
+      "Q_reject_W": 6.231801911900653
+    },
+    "integration": "trapezoidal; time from relative cas_h, not UTC",
+    "samples": 672,
+    "temperature_pool_max_C": 27.58,
+    "temperature_pool_min_C": 16.068635804129
+  },
+  "missing_for_A55": [
+    "timestamp_utc",
+    "asset_id",
+    "calibration_ref",
+    "T_C",
+    "Q_net_W",
+    "P_cmd_W",
+    "P_actual_W",
+    "trip_state",
+    "Q_residual_W",
+    "Q_nominal_W"
+  ],
+  "physical_release": false,
+  "schema_version": "a60.1",
+  "source_csv_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "source_kind": "derived_simulation",
+  "source_path": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_measurement_v08\\sim_v08_zdravy_SK.csv",
+  "source_schema": "scada_v08",
+  "warning": "Simulation output only. Relative time, no calibration certificate, no measured compressor step response."
+}

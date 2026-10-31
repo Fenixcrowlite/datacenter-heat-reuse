@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-23",
+  "source": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\engineering_release_20261023",
+  "dest": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse\\calibration\\engineering_release_20261023",
+  "total": 28,
+  "verified_identical": 28,
+  "created": 28,
+  "conflicts": [],
+  "files": [
+    {
+      "name": "Engineering_Release_SK.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "f8535de45c63550e2635622796da8edd0b98a923084d0c6d389f5d1995fe994f"
+    },
+    {
+      "name": "Engineering_Release_RU.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "9f68afbf11a1a4d795d2b41ebcc01f873cf55fa4e3741b8dd31c30e43e5aff2f"
+    },
+    {
+      "name": "Engineering_Release_EN.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "9af968d9f2515e211c9699fbd1683260eb14b6fac8ca3eb0798eb22992c141b4"
+    },
+    {
+      "name": "Engineering_Release_SK.pdf",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "de3bef5fcf9b5f0655052ac792b5fbd7d8172a88b3667b2c6a9fa48be497df53"
+    },
+    {
+      "name": "Engineering_Release_RU.pdf",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "d5994e269c11fbcb99346164026fdc95777888ad1c1f941e535d061bbda46ca0"
+    },
+    {
+      "name": "Engineering_Release_EN.pdf",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "4f0780383172ce0fd03c207bb2b23e37b8e57b56b4668fd5afebe8dbe89d0780"
+    },
+    {
+      "name": "IT_Independent_HeatRejection_20261023_SK.slx",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "8dfe80d6977a1d69035b592427d7d02b5fcbb9f71f9a0ce7bb71bbc7ad83ec96"
+    },
+    {
+      "name": "build_IT_emergency_cooling_SK.m",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "4becd980489bc1d5faf4befc8a1ccd110d767bea8575ca4f57d7dc07817c17ea"
+    },
+    {
+      "name": "it_independent_cooling_step_SK.m",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "5db38e37e4489ce7a2aa037ce975378ba9dc1c59d3d11a2c7cefb972f350ac66"
+    },
+    {
+      "name": "test_IT_cooling_failure_SK.m",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "45117726e6e49f937075d67510e5f5a7b5f8f2be8b54caeb4481dbdc49504285"
+    },
+    {
+      "name": "IT_cooling_failsafe_simulink_results.json",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "76be1de0889eff789d7555cb66ba2604b7725221f67412ac52d680f33f461b38"
+    },
+    {
+      "name": "independent_cooling_design_scenarios.json",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "a2c3895bb8fc4ae5ad0a3b06b62a836456069da50580ae5fb67a7de8588f6c4f"
+    },
+    {
+      "name": "cooling_nplus1_derating.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "aae354327817aa9fec3a6066a0f339c5d25c6d49501b72405f6dc19afe4b6391"
+    },
+    {
+      "name": "cooling_failover_sensitivity.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "d16a78cb6ba2d68591383e322ae0a60085d1d2ae84169356631fc3f5eeec9c9b"
+    },
+    {
+      "name": "cooling_fault_second_scale.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "aa0ee4355448157dd0db20fbe97c988698a54111d67ecb64d499cd4c185a6379"
+    },
+    {
+      "name": "cooling_fault_second_scale.json",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "330585840a3bf5f3118ca74aafa66641052a1e42b6ad17eda6b8cf8512d89222"
+    },
+    {
+      "name": "hydraulic_capacity_table.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "6639c57d02de143ffea2dbe9c0e955410178cdbd0cb9d0299432cbf29f6f7ad1"
+    },
+    {
+      "name": "N7_der10_fail30s.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "646b3386ceeccb4cd9863a932169ed68e2a7587bd002907af86b2be8f9f2f9e0"
+    },
+    {
+      "name": "N7_der10_fail300s.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "e1d3e942b0723bed44469e1cffb37d4a62c11d628020bcc7e77170ba2d34e8a8"
+    },
+    {
+      "name": "RFQ_Carrier_EN.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "35b0f511c18d84a2b58b68278896644baabc96db240537e2a8a55504a5889c25"
+    },
+    {
+      "name": "RFQ_Oilon_EN.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "b0f736c4eef3da07f817620cd0786b66fc05dae54e0152f2e7749d73470ecb9d"
+    },
+    {
+      "name": "RFQ_AlfaLaval_EN.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "0ef08d9f3275c0ce9d877de126dbf1805e375a7a56422f2b93d61482c9efa0d0"
+    },
+    {
+      "name": "RFQ_DryCooler_EN.md",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "72c295864b8a19930c52151f3af50827a5e339e3cc99843cf9677c01c234f22e"
+    },
+    {
+      "name": "vendor_directory_grounded.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "43bd4f2346b15cf2d839ee7674d16e62f4eddcd66b3faae67f327800320bd618"
+    },
+    {
+      "name": "RFQ_package_status.json",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "de7889768992904191df112ea99b403252b05a0f784aa7ea5fd4dcd4b42aa95e"
+    },
+    {
+      "name": "cooling_resilience_calculator.html",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "f7f1f3ca0a8cb55524eaffd6a9a3eaffed1436e82d752edfe630abca54c38cdf"
+    },
+    {
+      "name": "FMEA_engineering_gaps.csv",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "21d25a43542c1e92742995f6d4243339958d3ca272e78b6887ef0356734833d8"
+    },
+    {
+      "name": "QA_ENGINEERING_RELEASE_20261023.json",
+      "action": "COPIED",
+      "identical": true,
+      "sha256": "6021c6495bb666e77c7d48ba26bf8eef236b1962d5ace3fa893aace52d45c2ce"
+    }
+  ]
+}

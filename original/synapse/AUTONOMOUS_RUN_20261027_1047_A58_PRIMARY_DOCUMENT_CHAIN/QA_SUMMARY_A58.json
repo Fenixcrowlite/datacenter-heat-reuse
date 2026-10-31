@@ -1,0 +1,11 @@
+{
+  "ast_parse": "4/4 PASS",
+  "document_sha256": "6/6 PASS",
+  "independent_issuer_authentication": false,
+  "known_gap": "A57 did not require referenced certificate bytes; A58 now does",
+  "physical_release": false,
+  "real_primary_documents": false,
+  "source_kind": "synthetic_test",
+  "tests": "25/25 PASS",
+  "upstream_a57_sha256": "309fdf0ab614a0c2f858cde0066cafae5d3f9039fab2eeab85b080d30e19ec1f"
+}

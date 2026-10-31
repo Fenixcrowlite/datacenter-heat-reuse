@@ -1,0 +1,136 @@
+{
+  "status": "VERIFIED_ANALYTICAL_ASSUMED_CLASS_D_NOT_CALIBRATED",
+  "source_class": "D_SYNTHETIC",
+  "original_uncertainty_source_path": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\pool_measurement_v08\\neistoty_merania_v08_sk.py",
+  "original_uncertainty_source_sha256": "7a9fed58f1c2f2e5e1aee6737a357c072ca2b065c38ba2112390e0018570d64c",
+  "assumptions": {
+    "flow_m3h": 30.0,
+    "hot_C": 30.0,
+    "cold_C": 27.0,
+    "rho_kg_m3": 997.0,
+    "cp_J_kgK": 4182.0,
+    "flow_standard_uncertainty_fraction": 0.05,
+    "each_thermometer_standard_uncertainty_K": 0.2,
+    "joint_gaussian_only_for_exact_product_formula": true
+  },
+  "heat_cases": {
+    "independent": {
+      "temperature_correlation": 0.0,
+      "covariance": [
+        [
+          2.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.04000000000000001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.04000000000000001
+        ]
+      ],
+      "nominal_heat_W": 104236.34999999999,
+      "delta_T_K": 3.0,
+      "u_delta_T_K": 0.28284271247461906,
+      "first_order_standard_uncertainty_W": 11123.971651775559,
+      "gaussian_exact_mean_W": 104236.34999999999,
+      "gaussian_exact_standard_uncertainty_W": 11134.81901822597,
+      "gaussian_product_correction_W": 0.0,
+      "relative_first_order_standard_uncertainty": 0.10671873729054748,
+      "covariance_F_deltaT_m3h_K": 0.0
+    },
+    "shared_temperature_bias_positive_0p9": {
+      "temperature_correlation": 0.9,
+      "covariance": [
+        [
+          2.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.04000000000000001,
+          0.03600000000000001
+        ],
+        [
+          0.0,
+          0.03600000000000001,
+          0.04000000000000001
+        ]
+      ],
+      "nominal_heat_W": 104236.34999999999,
+      "delta_T_K": 3.0,
+      "u_delta_T_K": 0.08944271909999155,
+      "first_order_standard_uncertainty_W": 6068.031972470667,
+      "gaussian_exact_mean_W": 104236.34999999999,
+      "gaussian_exact_standard_uncertainty_W": 6070.021165106453,
+      "gaussian_product_correction_W": 0.0,
+      "relative_first_order_standard_uncertainty": 0.05821416398857661,
+      "covariance_F_deltaT_m3h_K": 0.0
+    },
+    "anti_correlated_temperature_error_negative_0p9": {
+      "temperature_correlation": -0.9,
+      "covariance": [
+        [
+          2.25,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.04000000000000001,
+          -0.03600000000000001
+        ],
+        [
+          0.0,
+          -0.03600000000000001,
+          0.04000000000000001
+        ]
+      ],
+      "nominal_heat_W": 104236.34999999999,
+      "delta_T_K": 3.0,
+      "u_delta_T_K": 0.3898717737923586,
+      "first_order_standard_uncertainty_W": 14514.285328602517,
+      "gaussian_exact_mean_W": 104236.34999999999,
+      "gaussian_exact_standard_uncertainty_W": 14530.08025416423,
+      "gaussian_product_correction_W": 0.0,
+      "relative_first_order_standard_uncertainty": 0.13924399049470285,
+      "covariance_F_deltaT_m3h_K": 0.0
+    }
+  },
+  "pool_storage_cases": {
+    "uncorrelated_15min": {
+      "u_temperature_difference_K": 0.28284271247461906,
+      "u_storage_power_W": 655166.4882767502,
+      "temporal_correlation": 0.0
+    },
+    "highly_correlated_15min": {
+      "u_temperature_difference_K": 0.06324555320336761,
+      "u_storage_power_W": 146499.68043666327,
+      "temporal_correlation": 0.95
+    },
+    "fixed_bias_plus_0p05K_random_each": {
+      "u_temperature_difference_K": 0.07071067811865477,
+      "u_storage_power_W": 163791.62206918755,
+      "temporal_correlation": 0.0
+    }
+  },
+  "averaging_flow_example": {
+    "samples": 96,
+    "systematic_fraction": 0.04,
+    "random_fraction": 0.01,
+    "effective_standard_uncertainty_fraction": 0.04001301871474666
+  },
+  "limits": [
+    "No manufacturer flow meter/thermometer covariance or calibration certificates",
+    "Correlations are illustrative, not estimated from observations",
+    "Gaussian exact product model is conditional on jointly Gaussian errors",
+    "Density, heat capacity, pool volume, heat losses and temporal dynamics are treated fixed",
+    "No real-world heating feasibility or equipment safety is established"
+  ],
+  "next_step": "Obtain paired calibrated flow and supply/return temperature records; estimate covariance and autocorrelation, then validate against independent heat-meter holdout."
+}

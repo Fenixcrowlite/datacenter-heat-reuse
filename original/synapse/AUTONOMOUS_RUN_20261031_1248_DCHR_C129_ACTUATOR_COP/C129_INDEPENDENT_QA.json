@@ -1,0 +1,13 @@
+{
+  "checked": "source cap, FIFO-derived command, slew, priority, bypass, electric+recovered, balances, state continuity, exact C128 ideal-ramp regression",
+  "data_sha256": "7ff9ff587e5c69466153b58644eef75a843f1caceeafcc20b7627e8d2943b7d0",
+  "independent": true,
+  "negative_controls": 11,
+  "ramp_limited_rows": 954,
+  "regression_max_abs_delta": 1.4915713109076023e-10,
+  "regression_numeric_fields": 72576,
+  "regression_rows": 12096,
+  "rows": 22848,
+  "scenarios": 34,
+  "status": "PASS"
+}

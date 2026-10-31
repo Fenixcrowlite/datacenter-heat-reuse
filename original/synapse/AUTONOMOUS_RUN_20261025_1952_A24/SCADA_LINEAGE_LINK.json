@@ -1,0 +1,16 @@
+{
+  "status": "PASS_LIVE_SCADA_SHA_LINK",
+  "scenario_count": 8,
+  "source_class": "D_SYNTHETIC",
+  "source_sha256": {
+    "zdravy": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+    "primarny_ventil_zaseknuty": "040913b5f798a38379b49ddd1a2065da27688b3844e090898097d85975ce4f26",
+    "oba_ventily_zaseknute": "722928f106561f0646ebd00bca4717a48d5999fa5ef6998e658320c7497e7c51",
+    "hlavny_REJECT_off_zalozny_ok": "415cd088f27a5284265be43105241986329e1548e8eccd0e290a1d9c20013c6a",
+    "oba_REJECT_off_bez_shedding": "7cf5c842076a235e8b61275a2593c48234600efc84496d6482a19d401ec1f2ce",
+    "oba_REJECT_off_so_shedding": "fa38f052bd766f4616755444f0b8ece43ba26b4348edea6b150e37e7ba1714ca",
+    "spolocny_bias_senzorov": "52f1bfcd80666550c2bf1f7881a54f742efff18ace16bcd5321794883c3cf088",
+    "kombinovana_havaria_so_shedding": "971b3c0167040b75d928806004201b77f224972b438125af75bed2887947b674"
+  },
+  "limits": "Only verifies current API-reported source SHA; not a Simulink execution receipt."
+}

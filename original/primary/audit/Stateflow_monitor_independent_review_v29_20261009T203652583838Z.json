@@ -1,0 +1,100 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:36:52.600716+00:00",
+  "review_scope": "Independent executed runtime-monitor evidence QA for preserved v28 model, checkpoint v29",
+  "verdict": "PASS_WITH_NONBLOCKING_TEARDOWN_DEFECT",
+  "result_directory": "results/stateflow_monitor_v29_20261009T203316008Z",
+  "verifier_report": "audit/stateflow_monitor_independent_qa_v29_20261009T203535986Z.json",
+  "verifier_report_sha256": "d7a2eafb7a27b360c9152a3a2c97ae4b6ebbc418f93fe31386c50c428a2dcf5e",
+  "verifier_log": "automation/logs/stateflow_monitor_independent_qa_v29_20261009T203535986Z.log",
+  "matlab_execution_log": "automation/logs/stateflow_monitor_v29_resume_local_20261009T203300662Z.log",
+  "matlab_execution_log_sha256": "ef38888a0b477f3b8d4d28ba48601381b92b272b732fddcc41e6a1f94a6f2374",
+  "summary_sha256": "25a7cf9b70b55962a420f55754014d4ada3c22d2a18934007c247544849bffae",
+  "model_sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d",
+  "actual_evidence_checks_passed": 775,
+  "actual_evidence_checks_failed": 0,
+  "synthetic_reviewer_self_tests_passed": 40,
+  "static_specification_checks_passed": 6,
+  "supplementary_actual_review_checks": {
+    "passed": 5,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "thirteen_exact_successful_per_case_console_markers",
+        "passed": true
+      },
+      {
+        "name": "unmutated_executed_baseline_console_marker",
+        "passed": true
+      },
+      {
+        "name": "restored_executed_baseline_console_marker",
+        "passed": true
+      },
+      {
+        "name": "completed_monitor_output_console_marker",
+        "passed": true
+      },
+      {
+        "name": "v24_prior_baseline_preserved_hash",
+        "passed": true
+      }
+    ]
+  },
+  "logical_corruption_cases": 13,
+  "captured_runtime_rejections": 13,
+  "per_case_exception_rejections": 13,
+  "planned_mutated_simulation_attempts": 26,
+  "accepted_invalid_dispatch_samples": 0,
+  "runtime_identifier": "Stateflow:Runtime",
+  "rejection_phase": "Execution",
+  "first_error_time_h": 0,
+  "stop_event_time_h": 0,
+  "clean_baseline_simulations": 2,
+  "intervals_per_baseline": 2,
+  "baseline_and_restored_trace_sha256": "2324b21db861964dc6e14faf060c4dbf9a38d4620a44cd00be34971143e4e052",
+  "equation_anchors": {
+    "HP_fixed_COP_scenario": "COP=4; Q_H=8 MW; W=Q_H/COP=2 MW; Q_source=Q_H-W=6 MW; demand=5 MW; charge=3 MW.",
+    "TES_passive_assumption": "dE/dt=-lambda E; lambda=0.01 h^-1, dt=1 h, ambient-referenced scalar energy.",
+    "TES_loss_first_recurrence": "r=exp(-0.01); E[n+1]=r E[n]+2.7 MWh; E[0]=1 MWh.",
+    "TES_closed_form": "E[n]=r^n+2.7(1-r^n)/(1-r) MWh; active forcing remains loss-first approximate.",
+    "actual_E1_MWh": 3.69004983374917,
+    "actual_E2_MWh": 6.35333322442951,
+    "reported_max_abs_system_residual_MWh": 1.11022302462516e-15,
+    "parameter_evidence": "Declared engineering scenario assumptions, no measured calibration or article equations."
+  },
+  "findings": [
+    {
+      "severity": "NONBLOCKING_IMPLEMENTATION_DEFECT",
+      "file": "matlab/simulink/run_stateflow_monitor_faults_v29.m",
+      "line": 259,
+      "evidence_log_line": 645,
+      "message": "onCleanup restore_helper accesses Invalid or deleted object after model is closed.",
+      "impact": "Warning after completed summary/MONITOR_OUTPUT and independently verified restored-baseline execution; saved v28 and allocation source hashes unchanged.",
+      "next_action": "Make helper restoration execute before model close or skip already-deleted helper in a future versioned harness; preserve this completed evidence."
+    },
+    {
+      "severity": "INHERITED_LIMITATION",
+      "message": "Nonfatal allocator output y shadows chart output y during compilation."
+    }
+  ],
+  "limitations": [
+    "Captured MAT files are identified as MAT containers and hashed, not independently decoded; runtime JSON and traces are parsed independently.",
+    "Execution chronology and before/after labels remain local runner evidence without external attestation.",
+    "Mutations test implementation contracts; no equipment faults, physical validation, source replication or standalone code generation.",
+    "Only fixed-COP two-interval charging baselines rerun here; six-mode dispatch acceptance remains inherited v28 evidence.",
+    "Passive exponential retention exact only for constant coefficient ambient-referenced scalar energy; active ports remain loss-first approximate."
+  ],
+  "primary_text_verified_this_review": false,
+  "primary_paper_replication": false,
+  "independent_physical_validation": false,
+  "unfinished_prior_directory": {
+    "path": "results/stateflow_monitor_v29_20261009T154831124Z",
+    "finding": "Empty directory and old console only version/license; no rejection acceptance evidence."
+  },
+  "files_changed": [
+    "audit/verify_stateflow_gate_evidence_v29.py"
+  ],
+  "verifier_changes": "Independent complete case anchors; runtime IDs and flags; exact mutation artifacts; saved diagnostic/raw JSON consistency; MAT hash/header; before/final source manifests and bindings; local per-case paths.",
+  "next_action": "Finalize checkpoint v29 only with completed monitor and temporal evidence plus independent review; retain limitations and teardown defect."
+}

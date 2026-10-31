@@ -1,0 +1,28 @@
+function [ziad,straty,stav_novy] = vypocitaj_dopyt_bazena_sk(T,stav,u)
+%#codegen
+% u [Qdc_W,Tdc_C,Qdh_W,Tair_C,RH,aktivita,plachta,IT_ok,BAZEN_ok,TES_ok,HX_ok].
+% Vykony W, teploty C, krok 900 s, objem 500 m3.
+A=312.5; C=997*500*4182; dt=900; cp=4182;
+Ta=u(4);rh=min(1,max(0,u(5)));
+activity=max(0,u(6));cover=min(1,max(0,u(7)));
+pv=0.61094*exp(17.625*T/(T+243.04));
+pa=rh*0.61094*exp(17.625*Ta/(Ta+243.04));
+mv=max(0,4e-5*A*(pv-pa)*activity*(1-0.9*cover));
+Qevap=mv*2440000;
+Qconv=3*A*(T-Ta)*(1-0.75*cover);
+Qrad=0.95*5.670374419e-8*A*((T+273.15)^4-(Ta-2+273.15)^4)*(1-0.75*cover);
+Qkonstr=800*(T-20);
+Qmakeup=mv*cp*(T-15);
+straty=Qevap+Qconv+Qrad+Qkonstr+Qmakeup+2000;
+stav_novy=stav;
+if T<=27.35,stav_novy=1;elseif T>=27.65,stav_novy=0;end
+if u(9)<0.5
+    stav_novy=0;
+end
+ziad=0;
+if stav_novy>0.5 && T<27.75 && u(9)>0.5
+    Qsafe=max(0,(27.75-T)*C/dt+straty);
+    Qset=max(0,(27.58-T)*C/dt+straty);
+    ziad=min([150000,Qsafe,Qset]);
+end
+end

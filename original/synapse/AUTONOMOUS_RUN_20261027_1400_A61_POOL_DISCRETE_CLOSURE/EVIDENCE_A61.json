@@ -1,0 +1,31 @@
+{
+  "a60_integral_boundary_bias_kWh": {
+    "v08": -20.0003977213796,
+    "v09": -20.00039770978292
+  },
+  "actual_instrument_data": false,
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1400_A61_POOL_DISCRETE_CLOSURE",
+  "ast": "4/4 PASS",
+  "decimal_state_updates": 1344,
+  "max_residual_W": {
+    "v08": 2.175220288336277e-07,
+    "v09": 2.1603773348033428e-07
+  },
+  "negative_signed_loss_samples": [
+    91,
+    91
+  ],
+  "new_codex_sessions": 0,
+  "next_step": "Add explicit signed Q_pool_loss and discrete-step energy accounting to a future isolated A60 schema revision; keep A60 original immutable. Obtain authenticated real telemetry for A55-A59.",
+  "physical_release": false,
+  "physics_source_sha256": {
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\pool_feedback_v04\\alokuj_teplo_v04_sk.txt": "12343eef83ca67a801fe3ffbca06006a4f96a93e7b5c2914d99b7f730cc054e1",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\pool_feedback_v04\\spusti_scenare_v04_sk.m": "576720dc12d5013d17dcddb190c24bfa11d36828e7ad27e5621d7a9bb1f7f242",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\pool_feedback_v04\\vypocitaj_dopyt_bazena_sk.txt": "7b250650cdb185ad4f8b444868083d5f507c487c9212daa8e0f86d14bca36f1b"
+  },
+  "scope": "A61_discrete_pool_first_law_v08_v09",
+  "shared_source_modified": false,
+  "status": "VERIFIED_DERIVED_SIMULATION_ONLY",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unittest": "16/16 PASS"
+}

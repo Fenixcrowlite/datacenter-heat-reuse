@@ -1,0 +1,21 @@
+{
+    "schema":  "C90_POOL_500M3_EVIDENCE_V1",
+    "task_id":  "scc-2aab24704c2bd0",
+    "actor":  "chatgpt-dchr-c90-pool-500m3-20261030-1452",
+    "scope":  "Isolated CPU-only physical-assumption pool heat model and counterfactual unused-HX recovery thresholds; no shared source changes",
+    "manifest_sha256":  "35f8094145a09077a68da6c18a94dc1a4ea581bd4b6b73098359b8e59d21ef49",
+    "model_sha256":  "b365bf24a1a47700184063dbb9ab19acd18f9fc5760443f4dc01aa2cfd79da95",
+    "qa_sha256":  "ad9c277cc3ead7035cfd7ead75869b3cedbd835ca96cd3fc1c27c3423b737361",
+    "threshold_sha256":  "a7386aa8aad2362e1f642b6cc3d7b5f56b8ca70013e59eecc082e41f2a718163",
+    "threshold_qa_sha256":  "e9fb38d3bb076022c0606ef7ec3ee1b2f43778798cfab11bcea9897af2c97608",
+    "hourly_sha256":  "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+    "summary_sha256":  "980c2244dc8f3246eb95c2d5d4774930245713b07eb4d903f13efd75ba4afd47",
+    "findings_sha256":  "34745d94e6c7207944c3ff537f59b46735ba12bd6bde1dfd2132c5bcbdfd494b",
+    "qa":  "8/8 self-tests, 20/20 independent base QA, 29/29 independent threshold QA, compile PASS",
+    "results":  "500m3 covered 262.10 MWh/y pool water, 160.45 MWh/y separate ventilation; conditional HX rejected fraction 19.51% water, 30.45% water+air",
+    "synthetic":  true,
+    "physical_field_validation":  false,
+    "primary_sources_signed":  0,
+    "production_changed":  false,
+    "next":  "Calibrate pool evaporation, ventilation, real HX rejected source recoverability, dynamic controls, 31 primary sources; Stateflow v85 separately owned"
+}

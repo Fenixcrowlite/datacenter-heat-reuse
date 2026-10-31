@@ -1,0 +1,18 @@
+{
+  "source": "Jurgens et al. 2024, DOI 10.54337/ijsepm.8149, printed p. 65",
+  "source_pdf_sha256": "acd250b7e5033156c85e7aa1a4ab0adad9e087d69361511b116cc8dd065583af",
+  "waste_heat_share_pct": "76.5",
+  "hp_electricity_share_pct": "21",
+  "gas_heat_share_pct": "2.5",
+  "hp_output_share_pct": "97.5",
+  "sum_share_pct": "100.0",
+  "implied_cop_if_same_annual_energy_denominator": 4.642857,
+  "reported_table_cop_min": 3.76,
+  "reported_table_cop_max": 3.9,
+  "reported_narrative_cop_min": 3.67,
+  "implied_cop_inside_table_range": false,
+  "table_narrative_minima_agree": false,
+  "interpretation": "A boundary/denominator reconciliation is required; this is NOT proof the article is wrong.",
+  "full_paper_signoff": false,
+  "physical_validation": false
+}

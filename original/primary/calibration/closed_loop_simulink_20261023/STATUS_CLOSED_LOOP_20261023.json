@@ -1,0 +1,62 @@
+{
+  "as_of": "2026-10-23",
+  "owner": "calibration_closed_loop",
+  "result": "VERIFIED_SOFTWARE_SIMULATION",
+  "not": "NOT_COMMISSIONED_NOT_CERTIFIED",
+  "device": "DESKTOP-M9L3I4M",
+  "software": "MATLAB/Simulink R2026a",
+  "artifacts": [
+    "DC_Pool_Coupled_ClosedLoop_20261023_SK.slx",
+    "ClosedLoop_Simulink_Matematika_SK.md",
+    "ClosedLoop_Report_SK.pdf",
+    "ClosedLoop_Report_RU.pdf",
+    "ClosedLoop_Report_EN.pdf",
+    "simulink_closed_loop_summary_8760h.json",
+    "closed_loop_independent_QA_2025.json",
+    "closed_loop_incremental_opex_2025.json",
+    "carrier_cop_certified_vs_scenario.csv"
+  ],
+  "tests": {
+    "annual_cases": 4,
+    "steps_each": 105120,
+    "total_five_minute_intervals": 420480,
+    "independent_CSV_energy_and_source_QA": "PASS",
+    "outage_24h_pool_heat": "ZERO",
+    "pool_max_C": 27.61976435,
+    "on_off_C": [
+      27.25,
+      27.6
+    ],
+    "model_hard_C": 27.8,
+    "manufacturer_COP_comparison": "4 EUROVENT CERTIFIED POINTS, NO EXTRAPOLATION",
+    "pdf_qa": "SK RU EN PASS 2 pages no clipped words"
+  },
+  "coupled_case_outputs": {
+    "direct_35": {
+      "pool_heat_MWh": 250.125,
+      "gas_DH_MWh": 9189.2672,
+      "incremental_opex_savings_EUR": 12306.5
+    },
+    "hp_25": {
+      "pool_heat_MWh": 250.125,
+      "pool_electricity_MWh": 62.53125,
+      "gas_DH_MWh": 7296.9883,
+      "incremental_opex_savings_EUR": 4279.76
+    }
+  },
+  "evidence": [
+    "NASA POWER gridded weather 2025 Bratislava",
+    "Eurostat Slovakia 2025 non-household industrial energy prices X_VAT",
+    "Eurovent certified Carrier 61XWH-ZE07 W10-7 four reference points",
+    "EU 2024/1364 energy reuse at data center boundary"
+  ],
+  "caveats": [
+    "No site IT telemetry or heat metering",
+    "No manufacturer COP grid at 25/35 C source and 70 C heating",
+    "Original six-mode v85/v86 Stateflow is not integrated into this new separate block",
+    "Full effective Slovak legal text and licensed standards not audited",
+    "Pool hall HVAC, pumps, hydraulics, real sensor uncertainty and independent IT cooling not physically modeled"
+  ],
+  "handoff": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\CALIBRATION_HANDOFF_20261023.md",
+  "next": "Define measurement boundary; add real manufacturer COP(Tsrc,Tsink,PLR) and fail-safe valve/sensor dynamics, port six-mode Stateflow into same linked model as a new version, then measure/corroborate full system standards."
+}

@@ -1,0 +1,21 @@
+ 
+31
+ 
+Figure 14. DC Free Cooling Schematic Diagram 
+3.2.4 DC Waste Heat Capture 
+In case of air-cooled DCs system, the waste heat recovery from the outlet 
+server temperature through hot aisle is modelled with zero capacitance sensi-
+ble heat exchanger model [28]. Given two input parameters which are both 
+mass flow rate and inlet temperatures of hot and cold sides, the other outlet 
+parameters can be estimated by the principle of heat exchanger effectiveness 
+for a fixed value of overall heat transfer coefficient. Waste heat from DC is 
+the hot inlet side of the heat exchanger while the cold side input refers to the 
+outlet of evaporator heat source, and both are used as preliminary input pa-
+rameters. The schematic diagram of the DC waste heat recovery process is 
+depicted in the figure 15. 
+ 
+Figure 15. Heat Exchanger model for DC WHR 
+ 
+Using cross flow heat exchange with both sides unmixed model adapted from 
+[28], the heat exchange effectiveness (ɛ) can be written as of these following 
+equations 17 and 18. The effective heat exchange area (A) used is 38 m² with 

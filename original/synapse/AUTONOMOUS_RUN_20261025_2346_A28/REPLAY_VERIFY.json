@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "event_id": 1170,
+  "action": "EXISTING_EVENT",
+  "event_count": 1,
+  "manifest_files_verified": 10,
+  "one_shot_replay_defect": "original register_a28.py receipt action differs on replay; no DB duplicate",
+  "database_modified": false
+}

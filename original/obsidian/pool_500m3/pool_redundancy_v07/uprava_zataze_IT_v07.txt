@@ -1,0 +1,16 @@
+function y=uprava_zataze_IT_v07(Tit,raw)
+%#codegen
+% Nova ochrana; redukcia zataze IT pri strate OBOCH chladiacich vetiev.
+% 21 vstupov, Q_DC je dostupne odpadove teplo [W], nie elektricka energia.
+% 21: povolena automaticka redukcia IT zataze [0/1].
+y=zeros(1,22);
+for k=1:21
+    y(k)=raw(k);
+end
+shed=0;
+if (raw(18)<0.5) && (raw(20)<0.5) && raw(21)>0.5 && Tit>=38
+    shed=0.70*max(0,raw(1)); % scenarovy okamzity pokles o 70%
+    y(1)=max(0,raw(1)-shed);
+end
+y(22)=shed;
+end

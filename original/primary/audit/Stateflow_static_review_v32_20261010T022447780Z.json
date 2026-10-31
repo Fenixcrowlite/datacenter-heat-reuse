@@ -1,0 +1,299 @@
+{
+  "evidence_class": "static_saved_model_only",
+  "passed": 71,
+  "failed": 2,
+  "checks": [
+    {
+      "name": "Scenario_Input_to_Segment_HP_Plan",
+      "passed": true
+    },
+    {
+      "name": "TES_Energy_Memory_to_Segment_HP_Plan",
+      "passed": true
+    },
+    {
+      "name": "Segment_HP_Plan_to_Execute_Segments",
+      "passed": true
+    },
+    {
+      "name": "Execute_Segments_to_Runtime_Contract_Gate",
+      "passed": true
+    },
+    {
+      "name": "Runtime_Contract_Gate_to_Next_TES_Energy",
+      "passed": true
+    },
+    {
+      "name": "Next_TES_Energy_to_TES_Energy_Memory",
+      "passed": true
+    },
+    {
+      "name": "For Iterator_to_Select_Segment",
+      "passed": true
+    },
+    {
+      "name": "For Iterator_to_Thermal_Dispatch",
+      "passed": true
+    },
+    {
+      "name": "Select_Segment_to_Thermal_Dispatch",
+      "passed": true
+    },
+    {
+      "name": "Thermal_Dispatch_to_Trace",
+      "passed": true
+    },
+    {
+      "name": "Runtime_Contract_Gate_to_Segment_Trace",
+      "passed": true
+    },
+    {
+      "name": "Runtime_Contract_Gate_to_Dispatch_Trace",
+      "passed": true
+    },
+    {
+      "name": "TES_Parameters_to_Execute_Segments",
+      "passed": true
+    },
+    {
+      "name": "TES_Parameters_to_Runtime_Contract_Gate",
+      "passed": true
+    },
+    {
+      "name": "HP_Parameters_to_Segment_HP_Plan",
+      "passed": true
+    },
+    {
+      "name": "HP_Parameters_to_Runtime_Contract_Gate",
+      "passed": true
+    },
+    {
+      "name": "Integration_Step_to_Runtime_Contract_Gate",
+      "passed": true
+    },
+    {
+      "name": "Segment_HP_Plan_to_Runtime_Contract_Gate",
+      "passed": true
+    },
+    {
+      "name": "iterator_limit_two",
+      "passed": true
+    },
+    {
+      "name": "iterator_states_held",
+      "passed": false
+    },
+    {
+      "name": "iterator_one_based",
+      "passed": false
+    },
+    {
+      "name": "outer_energy_memory",
+      "passed": true
+    },
+    {
+      "name": "six_states",
+      "passed": true
+    },
+    {
+      "name": "state_authorization_IDLE",
+      "passed": true
+    },
+    {
+      "name": "state_authorization_HEAT_RECOVERY",
+      "passed": true
+    },
+    {
+      "name": "state_authorization_STORAGE_CHARGE",
+      "passed": true
+    },
+    {
+      "name": "state_authorization_STORAGE_DISCHARGE",
+      "passed": true
+    },
+    {
+      "name": "state_authorization_BACKUP",
+      "passed": true
+    },
+    {
+      "name": "state_authorization_UNMET_DEMAND",
+      "passed": true
+    },
+    {
+      "name": "guard_30",
+      "passed": true
+    },
+    {
+      "name": "guard_29",
+      "passed": true
+    },
+    {
+      "name": "guard_28",
+      "passed": true
+    },
+    {
+      "name": "guard_33",
+      "passed": true
+    },
+    {
+      "name": "guard_31",
+      "passed": true
+    },
+    {
+      "name": "guard_32",
+      "passed": true
+    },
+    {
+      "name": "guard_46",
+      "passed": true
+    },
+    {
+      "name": "guard_41",
+      "passed": true
+    },
+    {
+      "name": "guard_47",
+      "passed": true
+    },
+    {
+      "name": "guard_59",
+      "passed": true
+    },
+    {
+      "name": "guard_49",
+      "passed": true
+    },
+    {
+      "name": "guard_44",
+      "passed": true
+    },
+    {
+      "name": "guard_54",
+      "passed": true
+    },
+    {
+      "name": "guard_39",
+      "passed": true
+    },
+    {
+      "name": "guard_50",
+      "passed": true
+    },
+    {
+      "name": "guard_51",
+      "passed": true
+    },
+    {
+      "name": "guard_55",
+      "passed": true
+    },
+    {
+      "name": "guard_60",
+      "passed": true
+    },
+    {
+      "name": "guard_45",
+      "passed": true
+    },
+    {
+      "name": "guard_34",
+      "passed": true
+    },
+    {
+      "name": "guard_35",
+      "passed": true
+    },
+    {
+      "name": "guard_56",
+      "passed": true
+    },
+    {
+      "name": "guard_61",
+      "passed": true
+    },
+    {
+      "name": "guard_40",
+      "passed": true
+    },
+    {
+      "name": "guard_36",
+      "passed": true
+    },
+    {
+      "name": "guard_42",
+      "passed": true
+    },
+    {
+      "name": "guard_48",
+      "passed": true
+    },
+    {
+      "name": "guard_37",
+      "passed": true
+    },
+    {
+      "name": "guard_38",
+      "passed": true
+    },
+    {
+      "name": "guard_43",
+      "passed": true
+    },
+    {
+      "name": "guard_62",
+      "passed": true
+    },
+    {
+      "name": "guard_57",
+      "passed": true
+    },
+    {
+      "name": "guard_63",
+      "passed": true
+    },
+    {
+      "name": "guard_52",
+      "passed": true
+    },
+    {
+      "name": "guard_53",
+      "passed": true
+    },
+    {
+      "name": "guard_58",
+      "passed": true
+    },
+    {
+      "name": "30_guarded_interstate_transitions",
+      "passed": true
+    },
+    {
+      "name": "six_guarded_initial_choices",
+      "passed": true
+    },
+    {
+      "name": "single_default_junction",
+      "passed": true
+    },
+    {
+      "name": "embedded_stateflow_choose_mode_v32",
+      "passed": true
+    },
+    {
+      "name": "embedded_stateflow_allocate_v32",
+      "passed": true
+    },
+    {
+      "name": "embedded_stateflow_collect_v32",
+      "passed": true
+    },
+    {
+      "name": "embedded_stateflow_contract_gate_v32",
+      "passed": true
+    },
+    {
+      "name": "normal_mode_host_HP",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "actor": "chatgpt-dchr-c92-ashrae-evap-20261030-1603",
+  "comparison_sha256": "319c78a11b3ea7c3c86fb7096c48094f8ed95f44e68afa324f7b7d3695ff30a1",
+  "findings_sha256": "97064fff181aa91372fc2aba24eb5e97de318fad1af1e5d9ae216ac9814710c3",
+  "manifest_sha256": "d576b8e70f2b4bc8863489a7ea850f872c8776880e41474538dcc9153ce20fc7",
+  "next": "Map ASHRAE chapter to source checklist, validate actual occupancy/cover/air speed and measured HX temperature pinch",
+  "physical_field_validation": false,
+  "primary_sources_signed": 0,
+  "production_changed": false,
+  "qa": "7/7 self + 29/29 independent PASS",
+  "qa_sha256": "476b3adbec2385c8c9f40e2ca281694c32569c527849341b89f92e69683189ec",
+  "results": "C91 assumed vs ASHRAE-informed at 25pct hypothetical recovery: HP heat 258.63 vs 201.76 MWh/year; at 10pct: 252.76 vs 197.36 MWh/year",
+  "schema": "C92_ASHRAE_EVAP_EVIDENCE_V1",
+  "scope": "Isolated 2023 ASHRAE equation/activity-factor reference comparison and 8760-hour pool dynamic sensitivity",
+  "script_sha256": "242554e2f5f4cd3c08d31d340630a0cad20d505420b29662c21bea7464dd5990",
+  "source_url": "https://handbook.ashrae.org/Handbooks/A23/SI/A23_Ch06/a23_ch06_si.aspx",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

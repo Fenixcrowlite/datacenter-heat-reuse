@@ -1,0 +1,20 @@
+{
+  "actor": "chatgpt-dchr-eu-metrics-boundary-20261028-0906",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_0906_DCHR_EU_METRICS_SCOPE",
+  "full_primary_signoff": false,
+  "full_primary_signoffs_total": 0,
+  "legal_compliance_certified": false,
+  "manifest_sha256": "0beeab7f889291d59f29bd4bfaaf33acd95a5ba6e6be67b5cbd66d4b33dd2d42",
+  "next_step": "Integrate metered E_DC, E_IT, E_REUSE and water time series with explicit energy boundaries; independently verify the consolidated 2026 EU legislation and national transposition. Keep source #25 unsigned and 0/31 primary signoffs until full original legal text and applicability review. Do not equate pool heat-pump delivery with DC waste heat reused.",
+  "production_modified": false,
+  "qa": "25/25 unittest PASS; 4002/4002 independent rational checks PASS",
+  "scope": "DCHR_EU_METRICS_BOUNDARY_AND_THRESHOLD_PROTOTYPE",
+  "source_matrix_v44_sha256": "4fccdd639d40c0c4818340e241542a72d007d5ff136654b63e076bb6c1a3e96b",
+  "source_status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e",
+  "source_urls": [
+    "https://eur-lex.europa.eu/eli/dir/2023/1791/oj/eng",
+    "https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj/eng"
+  ],
+  "synthetic_sample_only": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,13 @@
+test_backup_sensor_trip_interaction (__main__.Tests.test_backup_sensor_trip_interaction) ... ok
+test_complete_unique_matrix (__main__.Tests.test_complete_unique_matrix) ... ok
+test_cross_parity_with_matlab_a50_sensor (__main__.Tests.test_cross_parity_with_matlab_a50_sensor) ... ok
+test_cross_parity_with_matlab_a51_trip (__main__.Tests.test_cross_parity_with_matlab_a51_trip) ... ok
+test_independent_recompute (__main__.Tests.test_independent_recompute) ... ok
+test_no_reject_sensor_independent (__main__.Tests.test_no_reject_sensor_independent) ... ok
+test_scope_limit (__main__.Tests.test_scope_limit) ... ok
+test_thermal_risk_and_energy_ledger (__main__.Tests.test_thermal_risk_and_energy_ledger) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.671s
+
+OK

@@ -1,0 +1,256 @@
+{
+  "timestamp_utc": "2026-10-10T07:46:27.486567+00:00",
+  "passed": 62,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "three actual MATLAB exits",
+      "passed": true
+    },
+    {
+      "name": "build receipt",
+      "passed": true
+    },
+    {
+      "name": "execution receipt",
+      "passed": true
+    },
+    {
+      "name": "separate export receipt",
+      "passed": true
+    },
+    {
+      "name": "versions",
+      "passed": true
+    },
+    {
+      "name": "all required independent QA sections",
+      "passed": true
+    },
+    {
+      "name": "time passed",
+      "passed": true
+    },
+    {
+      "name": "time counts bound",
+      "passed": true
+    },
+    {
+      "name": "synthetic passed",
+      "passed": true
+    },
+    {
+      "name": "synthetic counts bound",
+      "passed": true
+    },
+    {
+      "name": "numeric passed",
+      "passed": true
+    },
+    {
+      "name": "numeric counts bound",
+      "passed": true
+    },
+    {
+      "name": "faults passed",
+      "passed": true
+    },
+    {
+      "name": "faults counts bound",
+      "passed": true
+    },
+    {
+      "name": "legacy passed",
+      "passed": true
+    },
+    {
+      "name": "legacy counts bound",
+      "passed": true
+    },
+    {
+      "name": "preservation passed",
+      "passed": true
+    },
+    {
+      "name": "preservation counts bound",
+      "passed": true
+    },
+    {
+      "name": "artifact passed",
+      "passed": true
+    },
+    {
+      "name": "artifact counts bound",
+      "passed": true
+    },
+    {
+      "name": "archive passed",
+      "passed": true
+    },
+    {
+      "name": "archive counts bound",
+      "passed": true
+    },
+    {
+      "name": "partition passed",
+      "passed": true
+    },
+    {
+      "name": "partition counts bound",
+      "passed": true
+    },
+    {
+      "name": "equations",
+      "passed": true
+    },
+    {
+      "name": "saved model",
+      "passed": true
+    },
+    {
+      "name": "exact reviewer",
+      "passed": true
+    },
+    {
+      "name": "build_dispatch_stateflow_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "dchr_segment_plan_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "dchr_stateflow_hp_v30.m source binding",
+      "passed": true
+    },
+    {
+      "name": "export_stateflow_admissibility_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "heat_pump_step_v14.m source binding",
+      "passed": true
+    },
+    {
+      "name": "run_stateflow_admissibility_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "run_stateflow_dimensional_faults_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "run_stateflow_faults_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_allocate_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_choose_mode_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_collect_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_contract_gate_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_reference_v30.py source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_reference_v32.py source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_reference_v34.py source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_specification_v36.py source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_supervisor_guard_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_time_tolerance_v36.m source binding",
+      "passed": true
+    },
+    {
+      "name": "storage_kernel_v30.m source binding",
+      "passed": true
+    },
+    {
+      "name": "storage_parameters_v30.m source binding",
+      "passed": true
+    },
+    {
+      "name": "storage_step_v30.m source binding",
+      "passed": true
+    },
+    {
+      "name": "verify_stateflow_v34.py source binding",
+      "passed": true
+    },
+    {
+      "name": "verify_stateflow_v36.py source binding",
+      "passed": true
+    },
+    {
+      "name": "actual MATLAB assertions",
+      "passed": true
+    },
+    {
+      "name": "actual trace counts",
+      "passed": true
+    },
+    {
+      "name": "positive segments",
+      "passed": true
+    },
+    {
+      "name": "six executed modes",
+      "passed": true
+    },
+    {
+      "name": "all actual clock faults rejected",
+      "passed": true
+    },
+    {
+      "name": "all actual general faults rejected",
+      "passed": true
+    },
+    {
+      "name": "all actual dimensional faults rejected",
+      "passed": true
+    },
+    {
+      "name": "executed output receipt binding",
+      "passed": true
+    },
+    {
+      "name": "cleanup not invalid",
+      "passed": true
+    },
+    {
+      "name": "reported residual",
+      "passed": true
+    },
+    {
+      "name": "physical_validation honest",
+      "passed": true
+    },
+    {
+      "name": "article_replication honest",
+      "passed": true
+    }
+  ],
+  "evidence_class": "completion_source_receipt_scope_bindings_not_additional_model_tests"
+}

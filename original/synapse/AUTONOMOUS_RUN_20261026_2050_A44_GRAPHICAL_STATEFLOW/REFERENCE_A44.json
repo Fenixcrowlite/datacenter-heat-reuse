@@ -1,0 +1,46 @@
+{
+  "status": "SYNTHETIC_GRAPHICAL_STATEFLOW_REFERENCE",
+  "physical_release": false,
+  "cases": {
+    "nominal": {
+      "samples": 672,
+      "counts": [
+        672,
+        0,
+        0,
+        0
+      ],
+      "transitions": 0
+    },
+    "short_fault": {
+      "samples": 672,
+      "counts": [
+        671,
+        1,
+        0,
+        0
+      ],
+      "transitions": 2
+    },
+    "sustained_fault": {
+      "samples": 672,
+      "counts": [
+        608,
+        2,
+        48,
+        14
+      ],
+      "transitions": 4
+    },
+    "interrupted_recovery": {
+      "samples": 672,
+      "counts": [
+        620,
+        6,
+        31,
+        15
+      ],
+      "transitions": 11
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1150_DCHR_SEASONAL_MISMATCH",
+  "classification": "SIMULATED_COUNTERFACTUAL_NOT_DISPATCH_FEASIBLE",
+  "curtailed_potential_mwh": 22545.421260603576,
+  "direct_same_hour_gas_displacement_upper_bound_mwh": 0,
+  "gas_heat_mwh": 12549.051491180473,
+  "manifest_sha256": "7201c8d5743298820cea3191954c35dfd624a3b5f3df4d5be8ac3a9f5b35e7de",
+  "next_step": "Implement coupled seasonal thermal-storage sensitivity with actual HP electric demand/COP, MW charge-discharge limits, thermal losses, temperature constraints and independent physical QA; keep baseline immutable.",
+  "overlap_hours": 0,
+  "primary_source_signoffs": 0,
+  "production_modified": false,
+  "qa": "15/15 unittest PASS; 8760/8760 records, 12 months and 120 Decimal counterfactual fields independently PASS",
+  "real_gas_savings_claimed": false,
+  "scope": "DCHR_SEASONAL_HEAT_GAS_MISMATCH_AND_IDEAL_STORAGE_UPPER_BOUND",
+  "source_csv_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e"
+}

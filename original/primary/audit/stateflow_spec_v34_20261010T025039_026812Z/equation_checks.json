@@ -1,0 +1,1654 @@
+{
+  "passed": 412,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "zero_demand_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_demand_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "hp_only_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "hp_only_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "tes_charge_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "tes_charge_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "tes_charge_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "tes_discharge_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "tes_discharge_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "boiler_limit_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "boiler_limit_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "insufficient_heat_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "insufficient_heat_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_endpoint_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_endpoint_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_endpoint_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_endpoint_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "passive_cutoff_crossing_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "passive_cutoff_crossing_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_endpoint_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_endpoint_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_endpoint_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_endpoint_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_endpoint_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_endpoint_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "mode_sequence_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_4_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_5_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_6_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_7_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_8_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_9_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_4_0_10_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_4_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_5_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_6_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_7_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_8_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_4_0_9_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_4_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_4_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_0_4_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_0_5_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_1_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_1_4_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_2_1_5_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_0_4_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_1_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_1_4_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_2_1_5_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_2_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_2_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_2_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_2_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_3_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_1_3_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_2_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_3_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_1_3_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_1_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_1_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_1_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_1_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_1_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_4_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_5_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_6_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_7_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.5_7_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_4_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_5_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_6_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_7_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.5_7_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.5_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_4_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_7_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_8_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_8_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_9_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_10_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_11_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_11_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_12_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_12_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_13_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_14_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_14_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_15_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.25_15_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_4_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_7_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_8_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_8_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_9_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_10_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_11_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_11_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_12_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_12_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_13_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_14_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_14_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_15_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.25_15_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_8_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_9_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_10_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_11_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_12_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_13_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_14_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.25_15_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_7_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_8_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_9_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_9_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_10_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_11_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_12_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_13_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_14_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_15_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_15_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_16_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_17_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_17_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_18_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_19_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_20_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_21_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_22_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_22_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_23_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_24_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_24_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_25_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_26_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_27_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_28_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_29_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_29_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_30_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_31_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "fallback_h_0.125_31_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_7_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_8_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_9_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_9_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_10_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_11_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_12_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_13_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_14_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_14_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_15_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_16_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_16_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_17_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_18_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_19_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_20_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_21_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_22_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_22_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_23_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_24_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_24_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_25_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_26_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_27_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_28_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_29_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_29_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_30_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_31_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "initial_capacity_h_0.125_31_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_6_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_7_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_8_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_9_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_10_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_11_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_12_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_13_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_14_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_15_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_16_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_17_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_18_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_19_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_20_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_21_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_22_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_23_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_24_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_25_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_26_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_27_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_28_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_29_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_30_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_h_0.125_31_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "physical_off_dwell_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "physical_off_dwell_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "physical_off_dwell_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "physical_off_dwell_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "physical_off_dwell_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_on_dwell_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_on_dwell_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_on_dwell_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_on_dwell_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "capacity_on_dwell_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_4_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_demand_changes_5_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_limited_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_limited_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_limited_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "source_limited_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_1_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_2_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_3_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_loss_cycles_3_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_0_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_0_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_1_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_2_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_3_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "small_loss_cycles_3_3_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_2_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "long_off_dwell_cutoff_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_0_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_1_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_1_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_3_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_3_1_RK4",
+      "passed": true
+    },
+    {
+      "name": "zero_on_dwell_3_2_RK4",
+      "passed": true
+    },
+    {
+      "name": "no_charge_hp_only_0_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "no_charge_hp_only_1_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "no_charge_hp_only_2_0_RK4",
+      "passed": true
+    },
+    {
+      "name": "no_charge_hp_only_3_0_RK4",
+      "passed": true
+    }
+  ]
+}

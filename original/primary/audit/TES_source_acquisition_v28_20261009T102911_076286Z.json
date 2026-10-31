@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-09T10:29:11.362617+00:00",
+  "purpose": "public primary TES source acquisition; no publication or credentials",
+  "attempts": [
+    {
+      "url": "https://mdpi-res.com/d_attachment/energies/energies-12-04275/article_deploy/energies-12-04275.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 9078887,
+      "final_url": "https://mdpi-res.com/d_attachment/energies/energies-12-04275/article_deploy/energies-12-04275.pdf",
+      "saved": "sources/papers/Cadau_2019_TES_v28_20261009T102911_076286Z.pdf",
+      "sha256": "693b8373e83c5b3cfcc17c449903a4dc320c9df76bb664b99aeab455d7d39dcb"
+    }
+  ]
+}

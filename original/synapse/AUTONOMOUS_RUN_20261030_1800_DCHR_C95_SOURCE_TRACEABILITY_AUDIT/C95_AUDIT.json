@@ -1,0 +1,25 @@
+{
+  "C94_synthetic": true,
+  "catalog_entries_verified": 31,
+  "catalog_not_formal_signoff": true,
+  "drift_rows": 8,
+  "input_sha256": {
+    "C94_METADATA.json": "6ea733cf7af0c5c406d42d0c8636175fa958bf417e886f91c31fbaacc99a4eaf",
+    "parameter_registry.yaml": "e571b056d3616a3bf11d4bc2d2139f84cb3426c3039f61d881a89bb45beb40f2",
+    "source_catalog.md": "02e6eb9704486cae8aa0ed79745d2e1ac92621a4505134618468d6b7ccecc889",
+    "traceability_matrix_v0_2.csv": "a7b57a88b2042cb90a9c48bb94491a4748d0677ac5fdac2d4c31c0ab2e79ad19"
+  },
+  "matrix_sha256": "03db76f18fd9bfadddb4489d53d6106eef5dc6a3fa68635a035601cf3a40582c",
+  "next": "Resolve C94 vs canonical scenario definitions; request measured source/flow and vendor COP, no source signoffs.",
+  "primary_source_signoffs_added": 0,
+  "qa_internal": "9 explicit assertions PASS; 4 pinned SHA checks; 31 catalog IDs",
+  "schema": "C95_SOURCE_TRACEABILITY_AUDIT_V1",
+  "task_id": "scc-2aab24704c2bd0",
+  "verdict_counts": {
+    "DIFFERENT_DEFINITION": 1,
+    "DIFFERENT_SUBSYSTEM": 1,
+    "OUTSIDE_UNCERTAINTY_RANGE": 2,
+    "SCENARIO_OVERRIDE": 1,
+    "UNTRACED_ASSUMPTION": 3
+  }
+}

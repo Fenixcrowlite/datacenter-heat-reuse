@@ -1,0 +1,235 @@
+{
+  "status": "A43_SYNTHETIC_FINITE_TRIP_REFERENCE",
+  "physical_release": false,
+  "hardware_control": false,
+  "matlab_stateflow_executed": false,
+  "a42_source_sha256": "e6f600bf3533761deaace0d19c731dcc9a2b07919cab86171ab31458d7b0267e",
+  "input_sha256": "a9a88fef53a8211737835d6cd7efe1ba66ce9649eef42724445098f09fcc7f21",
+  "cases": {
+    "both": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "exceed_42_steps": 0,
+      "pending_steps": 0,
+      "tripped_steps": 0,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 0.0,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0,
+      "sha256": "7f197aa9a594ef126d8770b453ecbede09a727571d8c43d33c06b982c44db748"
+    },
+    "main_only": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "exceed_42_steps": 0,
+      "pending_steps": 0,
+      "tripped_steps": 0,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 0.0,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0,
+      "sha256": "516883906cc6a0e0d1f2c018c57af929c7205615d9479c8de6abca9f667aaa5b"
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "exceed_42_steps": 10,
+      "pending_steps": 4,
+      "tripped_steps": 15,
+      "residual_heat_kWh": 53.125077780341904,
+      "unhandled_kWh": 180.14055344592094,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0,
+      "sha256": "04a880b2573066da3a1e80f1908263e59d781b173a1d9ac204b73abc3d053edf"
+    },
+    "neither": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "exceed_42_steps": 8,
+      "pending_steps": 2,
+      "tripped_steps": 287,
+      "residual_heat_kWh": 25.740503420669874,
+      "unhandled_kWh": 120.36483590546933,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0,
+      "sha256": "b6c440a47bf2661979f7511f5c82e3beff337c855339f3430c86c5cda0d2fce2"
+    },
+    "CF_both": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "exceed_42_steps": 0,
+      "pending_steps": 0,
+      "tripped_steps": 0,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 0.0,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0,
+      "sha256": "e7570617e00fbd9365176852b9f7d16b94925d89c092b21cbd10f20306b93667"
+    },
+    "CF_backup_only": {
+      "samples": 672,
+      "max_temperature_C": 44.53382819151301,
+      "exceed_42_steps": 1,
+      "pending_steps": 2,
+      "tripped_steps": 5,
+      "residual_heat_kWh": 25.740503420669874,
+      "unhandled_kWh": 36.483463365068594,
+      "unmet_heat_kWh": 300.95545512356176,
+      "max_balance_W": 0.0,
+      "sha256": "7291dc2e738d0be94cb13224ad728e1a39935c0d678b0a7d68e1cc9e0c5fa07b"
+    },
+    "CF_neither": {
+      "samples": 672,
+      "max_temperature_C": 44.53382819151301,
+      "exceed_42_steps": 1,
+      "pending_steps": 2,
+      "tripped_steps": 287,
+      "residual_heat_kWh": 25.740503420669874,
+      "unhandled_kWh": 36.483463365068594,
+      "unmet_heat_kWh": 11405.10515037801,
+      "max_balance_W": 0.0,
+      "sha256": "e17ae5c509dd4489c9c33f409965b8eef70343f28fe671c6722265c3b2a7be49"
+    }
+  },
+  "sensitivity": {
+    "delay0_residual0": {
+      "samples": 672,
+      "max_temperature_C": 30.0,
+      "exceed_42_steps": 0,
+      "pending_steps": 0,
+      "tripped_steps": 289,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 0.0,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay0_residual0.12": {
+      "samples": 672,
+      "max_temperature_C": 34.75072828258556,
+      "exceed_42_steps": 0,
+      "pending_steps": 0,
+      "tripped_steps": 289,
+      "residual_heat_kWh": 25.4451773299763,
+      "unhandled_kWh": 25.44517732086248,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay0_residual0.25": {
+      "samples": 672,
+      "max_temperature_C": 39.897350588719924,
+      "exceed_42_steps": 0,
+      "pending_steps": 0,
+      "tripped_steps": 289,
+      "residual_heat_kWh": 53.010786104117294,
+      "unhandled_kWh": 53.01078608513017,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay1_residual0": {
+      "samples": 672,
+      "max_temperature_C": 51.229277625,
+      "exceed_42_steps": 3,
+      "pending_steps": 1,
+      "tripped_steps": 288,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 47.1761725,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay1_residual0.12": {
+      "samples": 672,
+      "max_temperature_C": 51.229277625,
+      "exceed_42_steps": 5,
+      "pending_steps": 1,
+      "tripped_steps": 288,
+      "residual_heat_kWh": 25.59295090916828,
+      "unhandled_kWh": 72.76912339739793,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay1_residual0.25": {
+      "samples": 672,
+      "max_temperature_C": 51.760009565625,
+      "exceed_42_steps": 7,
+      "pending_steps": 1,
+      "tripped_steps": 288,
+      "residual_heat_kWh": 53.31864772743392,
+      "unhandled_kWh": 100.49482020291238,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay2_residual0": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "exceed_42_steps": 6,
+      "pending_steps": 2,
+      "tripped_steps": 287,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 94.62433250000001,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay2_residual0.12": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "exceed_42_steps": 8,
+      "pending_steps": 2,
+      "tripped_steps": 287,
+      "residual_heat_kWh": 25.740503420669874,
+      "unhandled_kWh": 120.36483590546933,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay2_residual0.25": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "exceed_42_steps": 10,
+      "pending_steps": 2,
+      "tripped_steps": 287,
+      "residual_heat_kWh": 53.62604879306224,
+      "unhandled_kWh": 148.25038126139444,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay4_residual0": {
+      "samples": 672,
+      "max_temperature_C": 90.94141546884961,
+      "exceed_42_steps": 10,
+      "pending_steps": 4,
+      "tripped_steps": 285,
+      "residual_heat_kWh": 0.0,
+      "unhandled_kWh": 190.32800500000002,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay4_residual0.12": {
+      "samples": 672,
+      "max_temperature_C": 90.94141546884961,
+      "exceed_42_steps": 11,
+      "pending_steps": 4,
+      "tripped_steps": 285,
+      "residual_heat_kWh": 26.031916748868085,
+      "unhandled_kWh": 216.3599217235229,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    },
+    "delay4_residual0.25": {
+      "samples": 672,
+      "max_temperature_C": 90.94141546884961,
+      "exceed_42_steps": 13,
+      "pending_steps": 4,
+      "tripped_steps": 285,
+      "residual_heat_kWh": 54.233159893475175,
+      "unhandled_kWh": 244.5611648406727,
+      "unmet_heat_kWh": 7.275957614183426e-14,
+      "max_balance_W": 0.0
+    }
+  },
+  "assumptions": [
+    "trip latency is hypothetical, 2 x 900 seconds",
+    "post-trip heat starts at 12 percent of last active IT power and decays with tau=3600s",
+    "REJECT recovery limited to 60kW per 900s; fault shutdown instantaneous",
+    "A42 HP/TES dispatch remains instantaneous; compressor inertia not modeled",
+    "no hardware commands, no physical safety certification"
+  ]
+}

@@ -1,0 +1,9 @@
+parameter,C94,canonical,class_C94,class_canonical,verdict,action
+source_inlet_C,"[18.0, 25.0, 35.0]","baseline 35 C; uncertainty [38,50] C",D,D,OUTSIDE_UNCERTAINTY_RANGE,Treat 18/25/35 C as a separate low-grade-source stress test; do not calibrate or merge as canonical.
+carnot_efficiency,0.35,"baseline 0.45; uncertainty [0.4,0.5]",D,D,OUTSIDE_UNCERTAINTY_RANGE,Compare eta 0.35 against registry 0.40-0.50 and vendor COP(T) before plant conclusions.
+COP_clamp,"[2.0, 6.0]","[2.2,7]",D,D,SCENARIO_OVERRIDE,Report 2-6 as C94-specific proxy; do not silently replace reference 2.2-7.
+HP_thermal_cap_MW,0.3,12 MW (district network),D,D,DIFFERENT_SUBSYSTEM,0.3 MW pool-only HP is not the canonical 12 MW district HP; keep separate namespaces.
+source_evaporator_approach_K,8.0,3 K (HX approach),D,D,DIFFERENT_DEFINITION,8 K evaporator inlet assumption and 3 K HX approach are not interchangeable.
+source_flow_kg_s,"[0.5, 2.0, 8.0]",not present in reference_case_v0_3,D,MISSING,UNTRACED_ASSUMPTION,Add pool-specific flow measurement or manufacturer interval to a reviewed parameter registry.
+source_min_outlet_C_and_pinch_K,12.0 C; 2.0 K,not present as a pool-loop contract,D,MISSING,UNTRACED_ASSUMPTION,Obtain return-temperature constraints and HX/evaporator pinch datasheets.
+pool_RH_and_cover,0.55; 0.15,not in district-heating parameter registry,D,MISSING,UNTRACED_ASSUMPTION,Separate indoor pool HVAC/cover assumptions and calibrate with facility schedule.

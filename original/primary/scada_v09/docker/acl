@@ -1,0 +1,6 @@
+# Exporter may publish simulated tags only. Neither account can use PLC topics.
+user scada_exporter
+topic write dchr/v09/sim/#
+
+user fuxa_viewer
+topic read dchr/v09/sim/#

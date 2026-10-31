@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "scenario": "neither",
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "filename": "REF_neither_trip0.csv",
+      "rows": 240
+    },
+    {
+      "scenario": "neither",
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "filename": "REF_neither_trip2.csv",
+      "rows": 240
+    },
+    {
+      "scenario": "neither",
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "filename": "REF_neither_trip4.csv",
+      "rows": 240
+    },
+    {
+      "scenario": "backup_only",
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "filename": "REF_backup_only_trip0.csv",
+      "rows": 240
+    },
+    {
+      "scenario": "backup_only",
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "filename": "REF_backup_only_trip2.csv",
+      "rows": 240
+    },
+    {
+      "scenario": "backup_only",
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "filename": "REF_backup_only_trip4.csv",
+      "rows": 240
+    }
+  ],
+  "synthetic": true,
+  "physical_release": false
+}

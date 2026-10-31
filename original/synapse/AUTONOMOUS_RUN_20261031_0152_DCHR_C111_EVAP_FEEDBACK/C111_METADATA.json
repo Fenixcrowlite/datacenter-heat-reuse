@@ -1,0 +1,30 @@
+{
+  "field_validated": false,
+  "hourly_sha256": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e",
+  "limitations": [
+    "Air RH and temperature held at controlled setpoints 55% and 29 C; HVAC response changes, not room humidity dynamics.",
+    "Fixed C106 HRV bypass decisions and fixed C108 UA/NTU source cap; no new frost or return-water recalculation.",
+    "C93 evaporation and C104 moisture ledger are synthetic with assumed coverage, occupancy and weather.",
+    "No manufacturer COP map or measured equipment data; not a Simulink integration.",
+    "Fixed-vs-dynamic evaporation comparison uses common C93 evaporation law, not C106 original fixed-28C moisture baseline."
+  ],
+  "modes": [
+    "fixed_28C_evap",
+    "dynamic_Tpool_evap"
+  ],
+  "rows": 70080,
+  "scenarios": 8,
+  "schema": "C111_SYNTHETIC_EVAP_HVAC_COUPLING_V1",
+  "selftests": 7,
+  "source_sha256": {
+    "C104": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C106": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C108": "e3695e53d9365b9420d18e44eac0a7ba00223c02b892712dec6f6caff6164417",
+    "C108_DATA": "7b243871e1ab13abc4c35e6ee8ae9bf85950bc546adf39c5f5383f1d54ac24d4",
+    "C93": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "db3faab98034f6358b710d19b49c07bc34cc285188a9d191e04336de68496103",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

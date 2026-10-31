@@ -1,0 +1,8 @@
+{
+  "actor": "chatgpt-dchr-c91-pool-thermostat-20261030-1553",
+  "event_id": 1451,
+  "evidence_sha256": "08705c6fba66938c19ad2ed135baa694f4be5fe1dae8431f4e3f1a534ba6c27a",
+  "manifest_sha256": "3b1be9e13a7c63bd9638974f18f8d59715b7c483d40242e7cb9ef00a5c5a834a",
+  "schema": "SYNAPSE_IDEMPOTENT_EVIDENCE_RECEIPT_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "A44_GRAPHICAL_STATEFLOW_PARITY_PASS",
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2050_A44_GRAPHICAL_STATEFLOW\\DCHR_A44_Graphical_Supervisor.slx",
+  "state_count": 4,
+  "transition_count": 7,
+  "comparisons": 5376,
+  "physical_release": false,
+  "hp_compressor_inertia_integrated": false,
+  "scenarios": {
+    "nominal": {
+      "samples": 672,
+      "mismatch": 0,
+      "mode_counts": [
+        672,
+        0,
+        0,
+        0
+      ]
+    },
+    "short_fault": {
+      "samples": 672,
+      "mismatch": 0,
+      "mode_counts": [
+        671,
+        1,
+        0,
+        0
+      ]
+    },
+    "sustained_fault": {
+      "samples": 672,
+      "mismatch": 0,
+      "mode_counts": [
+        608,
+        2,
+        48,
+        14
+      ]
+    },
+    "interrupted_recovery": {
+      "samples": 672,
+      "mismatch": 0,
+      "mode_counts": [
+        620,
+        6,
+        31,
+        15
+      ]
+    }
+  }
+}

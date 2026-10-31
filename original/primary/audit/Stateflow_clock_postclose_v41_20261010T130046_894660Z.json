@@ -1,0 +1,800 @@
+{
+  "timestamp_utc": "2026-10-10T13:00:46.894707+00:00",
+  "passed": 198,
+  "failed": 0,
+  "manifest": "audit/Stateflow_clock_manifest_v41_20261010T130037_509896Z.json",
+  "checks": [
+    {
+      "name": "audit/check_stateflow_clock_checkpoint_v41.py",
+      "passed": true
+    },
+    {
+      "name": "audit/Clock_uncertainty_derivation_v41.md",
+      "passed": true
+    },
+    {
+      "name": "audit/Clock_uncertainty_results_v41.md",
+      "passed": true
+    },
+    {
+      "name": "audit/finalize_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "audit/prepare_stateflow_clock_supplement_v41.py",
+      "passed": true
+    },
+    {
+      "name": "audit/prepare_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "audit/run_stateflow_clock_v41.ps1",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_clock_spec_v41_20261010T125321_603961Z/cases.json",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_clock_spec_v41_20261010T125321_603961Z/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_clock_spec_v41_20261010T125621_525409Z/cases.json",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_clock_spec_v41_20261010T125621_525409Z/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_clock_spec_v41_20261010T125838_905451Z/cases.json",
+      "passed": true
+    },
+    {
+      "name": "audit/stateflow_clock_spec_v41_20261010T125838_905451Z/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125329468Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125337368Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125526707Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125627238Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125750329Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125844974Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/Stateflow_execution_v41_20261010T125931352Z.json",
+      "passed": true
+    },
+    {
+      "name": "audit/verify_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125329468Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125337368Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125526707Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125627238Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125750329Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125844974Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_console_20261010T125931352Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_QA_20261010T125542659Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_QA_20261010T125602517Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_QA_20261010T125802531Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_QA_20261010T125959203Z.log",
+      "passed": true
+    },
+    {
+      "name": "automation/logs/stateflow_clock_v41_QA_20261010T130008853Z.log",
+      "passed": true
+    },
+    {
+      "name": "MASTER_STAGEBOARD_stateflow_v41.md",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/export_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "matlab/simulink/run_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/assertions_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/execution_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/independent_QA_v41_20261010T125602_608401Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/mat_audit_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/metadata_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/mode_sequence_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_certain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_certain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_exact_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_invalid_budget_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_low_bound_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_negative_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_positive_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_uncertain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_uncertain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/off_uncertain_equal_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_certain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_certain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_exact_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_invalid_budget_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_low_bound_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_negative_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_positive_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_uncertain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_uncertain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/on_uncertain_equal_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/qa_source/20261010T125542_797129Z/stateflow_reference_v34.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/qa_source/20261010T125542_797129Z/verify_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/qa_source/20261010T125602_608401Z/stateflow_reference_v34.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/qa_source/20261010T125602_608401Z/verify_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/build_dispatch_stateflow_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/DCHR_Dispatch_Stateflow_v40.slx",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/dchr_segment_plan_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/dchr_stateflow_hp_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/export_stateflow_resolution_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/heat_pump_step_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/run_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/run_stateflow_faults_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/run_stateflow_hp_domain_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/spec/cases.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/spec/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_allocate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_choose_mode_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_clock_add_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_collect_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_contract_gate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_supervisor_guard_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/stateflow_time_tolerance_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/source_snapshot/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/summary_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/tie_capacity_0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/tie_capacity_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/tie_capacity_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/tie_cutoff_0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/tie_cutoff_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125341508Z/tie_cutoff_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/assertions_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/dedicated_heat_recovery_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/execution_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/independent_QA_v41_20261010T125803_562080Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/independent_QA_v41_20261010T130008_944237Z.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/mat_audit_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/metadata_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/mode_sequence_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_certain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_certain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_exact_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_invalid_budget_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_low_bound_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_negative_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_positive_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_uncertain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_uncertain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/off_uncertain_equal_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_certain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_certain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_exact_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_invalid_budget_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_low_bound_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_negative_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_positive_residual_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_uncertain_after_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_uncertain_before_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/on_uncertain_equal_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/qa_source/20261010T125803_562080Z/stateflow_reference_v34.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/qa_source/20261010T125803_562080Z/verify_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/qa_source/20261010T130008_944237Z/stateflow_reference_v34.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/qa_source/20261010T130008_944237Z/verify_stateflow_clock_v41.py",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/build_dispatch_stateflow_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/DCHR_Dispatch_Stateflow_v40.slx",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/dchr_segment_plan_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/dchr_stateflow_hp_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/export_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/export_stateflow_resolution_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/heat_pump_step_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/run_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/run_stateflow_faults_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/run_stateflow_hp_domain_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/spec/cases.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/spec/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_allocate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_choose_mode_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_clock_add_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_collect_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_contract_gate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_supervisor_guard_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/stateflow_time_tolerance_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/source_snapshot/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/summary_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/tie_capacity_0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/tie_capacity_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/tie_capacity_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/tie_cutoff_0_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/tie_cutoff_1_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125630995Z/tie_cutoff_2_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/assertions_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/dedicated_backup_simulation.mat",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/execution_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/mat_audit_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/metadata_v41.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/build_dispatch_stateflow_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/DCHR_Dispatch_Stateflow_v40.slx",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/dchr_segment_plan_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/dchr_stateflow_hp_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/export_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/export_stateflow_resolution_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/heat_pump_step_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/run_stateflow_clock_v41.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/run_stateflow_faults_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/run_stateflow_hp_domain_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/spec/cases.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/spec/preservation.json",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_allocate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_choose_mode_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_clock_add_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_collect_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_contract_gate_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_supervisor_guard_v40.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/stateflow_time_tolerance_v36.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/storage_kernel_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/storage_parameters_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/source_snapshot/storage_step_v30.m",
+      "passed": true
+    },
+    {
+      "name": "results/stateflow_clock_v41_20261010T125848772Z/summary_v41.json",
+      "passed": true
+    },
+    {
+      "name": "STATUS_stateflow_v41.json",
+      "passed": true
+    },
+    {
+      "name": "open_defect_not_repaired_acceptance",
+      "passed": true
+    },
+    {
+      "name": "ten_unresolved_no_certain_premature",
+      "passed": true
+    },
+    {
+      "name": "independent_actual_QA_counts",
+      "passed": true
+    },
+    {
+      "name": "separate_synthetic_counts",
+      "passed": true
+    },
+    {
+      "name": "four_actual_zero_exit_batches",
+      "passed": true
+    },
+    {
+      "name": "actual_coverage_assertion",
+      "passed": true
+    },
+    {
+      "name": "combined_scenarios",
+      "passed": true
+    },
+    {
+      "name": "no_physical_or_article_claim",
+      "passed": true
+    },
+    {
+      "name": "harness_scenarios",
+      "passed": true
+    },
+    {
+      "name": "harness_completed_scenarios",
+      "passed": true
+    },
+    {
+      "name": "harness_intervals",
+      "passed": true
+    },
+    {
+      "name": "harness_positive_segments",
+      "passed": true
+    },
+    {
+      "name": "harness_harness_passed",
+      "passed": true
+    },
+    {
+      "name": "harness_harness_failed",
+      "passed": true
+    }
+  ]
+}

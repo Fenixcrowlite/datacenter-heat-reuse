@@ -1,0 +1,15 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1655_DCHR_V85_CAPACITY_CONTRACT",
+  "manifest_sha256": "c59c17e3b6d1b0de5bd56adb65a33ec99da82203496febf85d5776ed8a03c22b",
+  "next_step": "Locate the real 100 MWh baseline model/dataset and inspect its SOC and temperature definition; then compare C31 and the actual baseline at identical boundaries. Do not conflate the v85 10 MWh test cases.",
+  "no_matlab_run": true,
+  "previous_c33_assumed_capacity_mwh": 100.0,
+  "primary_source_signoffs": 0,
+  "qa": "166/166 independent checks PASS (Decimal, model ZIP, source SHA, negative controls)",
+  "saved_v85_spec_cases": 27,
+  "saved_v85_test_capacity_mwh": 10.0,
+  "scope": "DCHR_C34_V85_ACTUAL_STORAGE_CONTRACT",
+  "simulink_100mwh_parity_proven": false,
+  "source_model_sha256": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+  "source_spec_sha256": "3707bac6df5462cc18fd1ad48a5723bbf0ccbb6e90194b518273a25a3fc8f775"
+}

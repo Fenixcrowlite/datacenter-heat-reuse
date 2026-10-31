@@ -1,0 +1,43 @@
+function y = fyzikalne_poruchy_v06(core,Ttrue,raw,Tit)
+%#codegen
+% Physical shadow: stuck-open heating path + insufficient IT heat rejection.
+% Qtransfer is diverted FROM allocated DC reject => never double counted.
+% Tunable fault assumptions are deliberately scenario class D.
+dt=900; Cpool=997*500*4182; Cit=8e6;
+leak=0;
+Qcmd=max(0,core(4));
+QrejectCmd=max(0,core(17));
+Qdc=max(0,core(18));
+% Leak only when pump/valve should be shut, source has sufficient temperature,
+% DC reject heat exists and mechanical failure is requested.
+if raw(17)>0.5 && Qcmd<=1e-7 && raw(1)>0.1
+    thermalDrive=max(0,raw(2)-Ttrue-3);
+    leak=min([25000,QrejectCmd,4500*thermalDrive]);
+end
+QrejectBefore=QrejectCmd-leak;
+fraction=max(0,min(1,raw(18)));
+% Installed alternative reject capacity 180 kW at 100% availability,
+% assumed, NOT verified equipment performance.
+QrejectPhys=min(QrejectBefore,180000*fraction);
+Qunhandled=max(0,QrejectBefore-QrejectPhys);
+% Lumped thermal risk indicator for a representative IT cooling buffer.
+% Not a CPU junction temperature or certified plant trip model.
+passive=max(0,2000*(Tit-30));
+TitNext=max(30,Tit+dt*(Qunhandled-passive)/Cit);
+y=zeros(1,33);
+for k=1:25,y(k)=core(k);end
+y(1)=core(1)+dt*leak/Cpool;
+y(4)=core(4)+leak;
+y(6)=core(6)+leak;
+y(17)=QrejectPhys;
+y(22)=Qdc-(y(6)+core(14)+QrejectPhys+Qunhandled);
+y(24)=y(4)-(y(6)+core(7));
+y(26)=leak;
+y(27)=Qunhandled;
+y(28)=TitNext;
+y(29)=double(TitNext>=42);
+y(30)=QrejectCmd;
+y(31)=QrejectPhys;
+y(32)=double((Qcmd<=1e-7)&&(leak>0));
+y(33)=Qdc-(y(6)+core(14)+QrejectPhys+Qunhandled);
+end

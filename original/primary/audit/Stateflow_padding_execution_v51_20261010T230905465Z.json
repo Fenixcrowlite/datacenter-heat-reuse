@@ -1,0 +1,7 @@
+{
+  "command": "addpath('matlab','matlab/simulink'); run_stateflow_padding_v51('results/stateflow_padding_v51_20261010T230758_239448Z');",
+  "exit_code": 1,
+  "log_path": "automation/logs/stateflow_padding_v51_20261010T230905465Z.log",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "timestamp_utc": "2026-10-10T23:13:36.7102699Z"
+}

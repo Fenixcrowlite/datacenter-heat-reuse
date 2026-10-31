@@ -1,0 +1,9 @@
+{
+  "unittest": "11/11 PASS",
+  "ast_parse": "2/2 PASS",
+  "adversarial_regressions": "3/3 A55 accepted, A56 rejected",
+  "A55_sha256": "e65e2ec1e2e7927023637c0bd8f430dcfb1045346666220ede8ecb7ed0e5be91",
+  "real_telemetry": false,
+  "physical_release": false,
+  "source_A55_modified": false
+}

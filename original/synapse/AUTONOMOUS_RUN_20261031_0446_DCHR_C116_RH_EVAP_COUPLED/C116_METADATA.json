@@ -1,0 +1,41 @@
+{
+  "controls": {
+    "capacity_C114": [
+      45.66,
+      29.7
+    ],
+    "ideal": [
+      1000000000.0,
+      1000000000.0
+    ],
+    "limited5": [
+      5.0,
+      5.0
+    ]
+  },
+  "field_validated": false,
+  "hourly_sha256": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf",
+  "limitations": [
+    "Fixed 29 C indoor air and idealized C104 outdoor coil; not a full air enthalpy state model.",
+    "Hourly explicit RH feedback uses start-of-hour RH; no subhour iteration.",
+    "C112 saturation condensate is an endpoint clip; latent condensate heat not recovered.",
+    "C114 capacities are synthetic hourly thresholds, not real vendor sizing.",
+    "Shared source capacity replayed from C111; no re-solving heat exchanger temperature.",
+    "No measured hardware curves, weather validation, MATLAB integration, or primary-source signoffs."
+  ],
+  "rows": 52560,
+  "schema": "C116_TWO_WAY_SYNTHETIC_V1",
+  "source_sha256": {
+    "C104": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C106": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C108": "e3695e53d9365b9420d18e44eac0a7ba00223c02b892712dec6f6caff6164417",
+    "C108_DATA": "7b243871e1ab13abc4c35e6ee8ae9bf85950bc546adf39c5f5383f1d54ac24d4",
+    "C111_SCRIPT": "dba0c4a1d1fc7b568b83e62dea4548c28df0b755720e84f2f5d4c3b4cdfb1395",
+    "C112_SCRIPT": "6dc6c77adc479f9bdbfcc2c5937aee6b8f31b6b02764d93b0ffefab95b84ebc8",
+    "C93": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "9f24bb96943b306d05f2d8cc8adee3c34980336acc3280508110682568d82d26",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,22 @@
+{
+  "artifact_sha256": "27220733cb23e36d797ccb1805d062407744634f973ad785eccc3f3ba861b6e0",
+  "continuity_checks": 210216,
+  "groups": 24,
+  "independent_row_checks": 2733120,
+  "negative_controls": 4,
+  "numerical_crosscheck": {
+    "cases": 60,
+    "max_cond_kg": 0.002860060719006019,
+    "max_vent_kg": 0.0003843820613685725,
+    "max_w_abs": 6.997398160311918e-07
+  },
+  "rows": 210240,
+  "shared_hourly_input_checks": 630720,
+  "source_sha256": {
+    "C104": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C106": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C116": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+  },
+  "status": "PASS",
+  "summary_checks": 168
+}

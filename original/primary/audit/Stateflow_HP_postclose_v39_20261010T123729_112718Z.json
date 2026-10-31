@@ -1,0 +1,833 @@
+{
+  "timestamp_utc": "2026-10-10T12:37:29.112718+00:00",
+  "evidence_class": "postclose_packaging_only",
+  "manifest": "audit\\Stateflow_HP_manifest_v39_20261010T123656_411250Z.json",
+  "passed": 206,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "audit\\finalize_stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\HP_dynamic_range_derivation_v39.md_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\HP_dynamic_range_results_v39.md_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\run_stateflow_hp_domain_v39.ps1_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\run_stateflow_hp_domain_v39_failed_20261010T123233087Z.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_archive_review_v22_20261009T025811_396033Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_checkpoint_helper_tests_v29_20261009T203639_3308646Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_checkpoint_review_v29_independent_preflight_20261009T203957_639562Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_evidence_manifest_v22_20261009T030008_883989Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_execution_receipt_v29_20261009T203906_272351Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v32_accept_20261010T022650039Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v34_20261010T025139568Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v36_20261010T073846396Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T082433381Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T082443156Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123235772Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123246386Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123512674Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_hp_fixture_failure_v39_20261010T082425168Z.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_hp_spec_v39_20261010T082426_955115Z\\cases.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_manifest_v34_20261010T030139_854221Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_monitor_independent_review_v29_final_20261009T203931007626Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_monitor_independent_review_v29_final_20261009T203931007626Z.md_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v30_20261009T211837_392341Z\\cases.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v30_20261009T211837_392341Z\\equation_qa.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v30_20261009T211837_392341Z\\vectors.csv_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v32_20261010T022642_839437Z\\cases.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v32_20261010T022642_839437Z\\equation_qa.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v32_20261010T022642_839437Z\\preservation.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v32_20261010T022642_839437Z\\segments.csv_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v32_20261010T022642_839437Z\\vectors.csv_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v34_20261010T025039_026812Z\\cases.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v34_20261010T025039_026812Z\\equation_checks.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v34_20261010T025039_026812Z\\segments.csv_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_spec_v34_20261010T025039_026812Z\\vectors.csv_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_temporal_independent_QA_v29_20261009T203418393Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_temporal_independent_review_v29_20261009T203418393Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_temporal_independent_review_v29_20261009T203418393Z.md_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\build_dispatch_stateflow_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\dchr_segment_plan_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\dchr_stateflow_hp_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\prepare_stateflow_v38.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\stateflow_allocate_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\stateflow_choose_mode_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\stateflow_clock_add_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\stateflow_collect_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\stateflow_contract_gate_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\stateflow_v38_compile_failure_20261010T080950394Z\\stateflow_supervisor_guard_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "audit\\verify_stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_fixture_failure_v39_20261010T082425168Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_fixture_v39_20261010T082426896Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_console_20261010T082433381Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_console_20261010T082443156Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_console_20261010T123235772Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_console_20261010T123246386Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_console_20261010T123512674Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_QA_20261010T123529414Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "automation\\logs\\stateflow_hp_v39_QA_20261010T123637493Z.log_immutable",
+      "passed": true
+    },
+    {
+      "name": "MASTER_STAGEBOARD_stateflow_v39.md_immutable",
+      "passed": true
+    },
+    {
+      "name": "matlab\\simulink\\run_stateflow_hp_domain_v39.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\boiler_limit_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\execution_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\hp_only_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\insufficient_heat_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\metadata_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\build_dispatch_stateflow_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\DCHR_Dispatch_Stateflow_v38.slx_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\dchr_segment_plan_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\dchr_stateflow_hp_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\export_stateflow_numeric_metadata_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\export_stateflow_resolution_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\heat_pump_step_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\run_stateflow_acceptance_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\run_stateflow_faults_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\run_stateflow_hp_domain_v39.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\spec\\cases.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_allocate_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_choose_mode_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_clock_add_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_collect_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_contract_gate_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_reference_v30.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_reference_v32.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_reference_v34.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_supervisor_guard_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\stateflow_time_tolerance_v36.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\storage_kernel_v30.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\storage_parameters_v30.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\source_snapshot\\storage_step_v30.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tes_charge_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tes_discharge_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_120_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_20_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_40_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_60_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_75_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_80_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_81_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\tight_request_90_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_120_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_20_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_40_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_60_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_75_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_80_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_81_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\wide_request_90_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T082446777Z\\zero_demand_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\assertions_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\boiler_limit_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\execution_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\hp_components.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\hp_components_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\hp_only_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\independent_QA_v39_20261010T123529_576822Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\independent_QA_v39_20261010T123637_591117Z.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\insufficient_heat_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\mat_audit_v38.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\metadata_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\qa_source\\20261010T123529_576822Z\\verify_stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\qa_source\\20261010T123637_591117Z\\verify_stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\build_dispatch_stateflow_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\DCHR_Dispatch_Stateflow_v38.slx_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\dchr_segment_plan_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\dchr_stateflow_hp_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\export_stateflow_numeric_metadata_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\export_stateflow_resolution_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\heat_pump_step_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\run_stateflow_acceptance_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\run_stateflow_faults_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\run_stateflow_hp_domain_v39.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\spec\\cases.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_allocate_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_choose_mode_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_clock_add_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_collect_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_contract_gate_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_hp_domain_v39.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_reference_v30.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_reference_v32.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_reference_v34.py_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_supervisor_guard_v38.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\stateflow_time_tolerance_v36.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\storage_kernel_v30.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\storage_parameters_v30.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\source_snapshot\\storage_step_v30.m_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\summary_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tes_charge_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tes_discharge_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_120_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_20_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_40_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_60_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_75_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_80_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_81_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\tight_request_90_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_120_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_20_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_40_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_60_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_75_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_80_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_81_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\wide_request_90_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\zero_demand_simulation.mat_immutable",
+      "passed": true
+    },
+    {
+      "name": "STATUS_stateflow_v39.json_immutable",
+      "passed": true
+    },
+    {
+      "name": "defect_status_explicit",
+      "passed": true
+    },
+    {
+      "name": "no_new_model",
+      "passed": true
+    },
+    {
+      "name": "saved_model_release",
+      "passed": true
+    },
+    {
+      "name": "saved_model_hash",
+      "passed": true
+    },
+    {
+      "name": "prior_scoped_v38_preserved",
+      "passed": true
+    },
+    {
+      "name": "harness_count",
+      "passed": true
+    },
+    {
+      "name": "zero_harness_failures",
+      "passed": true
+    },
+    {
+      "name": "actual_QA_count",
+      "passed": true
+    },
+    {
+      "name": "separate_synthetic_count",
+      "passed": true
+    },
+    {
+      "name": "zero_evidence_QA_failures",
+      "passed": true
+    },
+    {
+      "name": "controller_FAIL_retained",
+      "passed": true
+    },
+    {
+      "name": "implementation_failure_assertions",
+      "passed": true
+    },
+    {
+      "name": "implementation_pass_assertions",
+      "passed": true
+    },
+    {
+      "name": "scenarios_binding",
+      "passed": true
+    },
+    {
+      "name": "completed_scenarios_binding",
+      "passed": true
+    },
+    {
+      "name": "completed_intervals_binding",
+      "passed": true
+    },
+    {
+      "name": "positive_segments_binding",
+      "passed": true
+    },
+    {
+      "name": "hp_component_probes_binding",
+      "passed": true
+    },
+    {
+      "name": "execution_trace_scope",
+      "passed": true
+    },
+    {
+      "name": "numeric_trace_intervals",
+      "passed": true
+    },
+    {
+      "name": "segment_trace_scope",
+      "passed": true
+    },
+    {
+      "name": "exact_successful_reviewer_snapshot",
+      "passed": true
+    },
+    {
+      "name": "failed_reviewer_retained",
+      "passed": true
+    },
+    {
+      "name": "two_declared_legacy_exclusions",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123246386Z.json_observed_exit",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123246386Z.json_observed_completion",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123512674Z.json_observed_exit",
+      "passed": true
+    },
+    {
+      "name": "audit\\Stateflow_execution_v39_20261010T123512674Z.json_observed_completion",
+      "passed": true
+    },
+    {
+      "name": "automation/engineering_progress.md_handoff",
+      "passed": true
+    },
+    {
+      "name": "MASTER_STAGEBOARD_stateflow_v39.md_handoff",
+      "passed": true
+    },
+    {
+      "name": "audit/HP_dynamic_range_results_v39.md_handoff",
+      "passed": true
+    },
+    {
+      "name": "six_executed_modes",
+      "passed": true
+    },
+    {
+      "name": "90_actual_false_OFF",
+      "passed": true
+    },
+    {
+      "name": "90_matched_service_control",
+      "passed": true
+    },
+    {
+      "name": "120_actual_false_OFF",
+      "passed": true
+    },
+    {
+      "name": "120_matched_service_control",
+      "passed": true
+    },
+    {
+      "name": "no_article_or_physical_claim",
+      "passed": true
+    }
+  ]
+}

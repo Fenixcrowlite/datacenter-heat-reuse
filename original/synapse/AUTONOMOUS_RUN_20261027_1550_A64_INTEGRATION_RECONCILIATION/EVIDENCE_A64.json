@@ -1,0 +1,19 @@
+{
+  "a60_v08_sha256": "6752002558833f6e2fef743d02200bda0ba2a00ad94166e44fe870ded4a5cf18",
+  "a60_v09_sha256": "d9ac2a32795e54eeef0bff9f430306d960c30331b1505cca5e3675dfe669c488",
+  "a62_v08_sha256": "3917ad808fffee01d792fee91fa9f177c71063ca7f5054352bdfeaf25fcdaf6e",
+  "a62_v09_sha256": "82b3164014e04964eb80d256b1f9439d2ebcfd583972b1258330e04bee97dde1",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1550_A64_INTEGRATION_RECONCILIATION",
+  "independent_decimal_checks": "8107/8107 PASS",
+  "next_step": "Use the isolated A64 report alongside A63; obtain calibrated physical telemetry and verify UTC/channel identity before A55-A58 physical acceptance.",
+  "physical_release": false,
+  "pool_delta_v08_kWh": "20.0003977213447875",
+  "pool_delta_v09_kWh": "20.000397709776125",
+  "report_html": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1550_A64_INTEGRATION_RECONCILIATION\\OUTPUT\\comparison.html",
+  "scope": "A64_A60_trapezoid_vs_A62_discrete_reconciliation",
+  "source_kind": "derived_simulation",
+  "status": "VERIFIED_SYNTHETIC_NUMERICAL_COMPARISON",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "12/12 PASS",
+  "upstream_files_modified": false
+}

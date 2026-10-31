@@ -9,6 +9,7 @@
       "execution_status": "not_ported",
       "file": "extracted/dc-pool-capacity-fault-20261023-sk-ccaf1eea4df5.json",
       "copies": [
+        "obsidian/calibration/capacity_fault_simulink_20261023/DC_Pool_Capacity_Fault_20261023_SK.slx",
         "primary/calibration/capacity_fault_simulink_20261023/DC_Pool_Capacity_Fault_20261023_SK.slx"
       ],
       "block_count": 56,
@@ -22,6 +23,7 @@
       "execution_status": "not_ported",
       "file": "extracted/dc-pool-coupled-closedloop-20261023-sk-c6047bd31afb.json",
       "copies": [
+        "obsidian/calibration/closed_loop_simulink_20261023/DC_Pool_Coupled_ClosedLoop_20261023_SK.slx",
         "primary/calibration/closed_loop_simulink_20261023/DC_Pool_Coupled_ClosedLoop_20261023_SK.slx"
       ],
       "block_count": 54,
@@ -35,9 +37,125 @@
       "execution_status": "not_ported",
       "file": "extracted/it-independent-heatrejection-20261023-sk-8dfe80d6977a.json",
       "copies": [
+        "obsidian/calibration/engineering_release_20261023/IT_Independent_HeatRejection_20261023_SK.slx",
         "primary/calibration/engineering_release_20261023/IT_Independent_HeatRejection_20261023_SK.slx"
       ],
       "block_count": 26,
+      "state_count": 1,
+      "function_count": 1
+    },
+    {
+      "name": "DataCenterHeatReuse_Core",
+      "id": "datacenterheatreuse-core",
+      "sha256": "338a08e003b57a5175c7443d964f34c89f3daabbbc6103a8f6fb3c2944e1c067",
+      "execution_status": "not_ported",
+      "file": "extracted/datacenterheatreuse-core-338a08e003b5.json",
+      "copies": [
+        "obsidian/matlab/simulink/DataCenterHeatReuse_Core.slx",
+        "primary/matlab/simulink/DataCenterHeatReuse_Core.slx"
+      ],
+      "block_count": 15,
+      "state_count": 0,
+      "function_count": 0
+    },
+    {
+      "name": "DC_Bazen_Alokacia_Rok_v02_SK",
+      "id": "dc-bazen-alokacia-rok-v02-sk",
+      "sha256": "09714792c62e22a540ae2ec956259aae08908b6f032b0405ae9a97542e6ab0f4",
+      "execution_status": "not_ported",
+      "file": "extracted/dc-bazen-alokacia-rok-v02-sk-09714792c62e.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_dc_integration_v02/DC_Bazen_Alokacia_Rok_v02_SK.slx",
+        "primary/matlab/pool_dc_integration_v02/DC_Bazen_Alokacia_Rok_v02_SK.slx"
+      ],
+      "block_count": 14,
+      "state_count": 1,
+      "function_count": 1
+    },
+    {
+      "name": "DC_Bazen_Fyzikalne_Poruchy_v06_SK",
+      "id": "dc-bazen-fyzikalne-poruchy-v06-sk",
+      "sha256": "88141f9e16a862695caebf1702423e0b4118f6f375f81bf88264bf83335833c3",
+      "execution_status": "not_ported",
+      "file": "extracted/dc-bazen-fyzikalne-poruchy-v06-sk-88141f9e16a8.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx",
+        "primary/matlab/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx"
+      ],
+      "block_count": 63,
+      "state_count": 10,
+      "function_count": 5
+    },
+    {
+      "name": "DC_Bazen_Uzavreta_Regulacia_v04_SK",
+      "id": "dc-bazen-uzavreta-regulacia-v04-sk",
+      "sha256": "0d9a59466a0284ca6bb61d6756222dccafc2ac7aa683ae41de35ce6d72f94ee0",
+      "execution_status": "verified_python_port",
+      "file": "extracted/dc-bazen-uzavreta-regulacia-v04-sk-0d9a59466a02.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx",
+        "primary/matlab/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx",
+        "primary/results/pool_feedback_v04/deliverables_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx"
+      ],
+      "python_model_id": "pool-v04",
+      "block_count": 37,
+      "state_count": 8,
+      "function_count": 3
+    },
+    {
+      "name": "DC_Bazen_Externe_Merania_v08_SK",
+      "id": "dc-bazen-externe-merania-v08-sk",
+      "sha256": "55add54b3181982ba878776493db2dba8879a583a35fb179f9c3a9c05d560e82",
+      "execution_status": "not_ported",
+      "file": "extracted/dc-bazen-externe-merania-v08-sk-55add54b3181.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx",
+        "primary/matlab/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx"
+      ],
+      "block_count": 69,
+      "state_count": 11,
+      "function_count": 6
+    },
+    {
+      "name": "DC_Bazen_Dvojita_Ochrana_v07_SK",
+      "id": "dc-bazen-dvojita-ochrana-v07-sk",
+      "sha256": "102321d3269d08e499341898e92a1ad234f23e817881a7ab4e2a3cb7d554819e",
+      "execution_status": "not_ported",
+      "file": "extracted/dc-bazen-dvojita-ochrana-v07-sk-102321d3269d.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx",
+        "primary/matlab/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx"
+      ],
+      "block_count": 70,
+      "state_count": 11,
+      "function_count": 6
+    },
+    {
+      "name": "DC_Bazen_Bezpecnost_v05_SK",
+      "id": "dc-bazen-bezpecnost-v05-sk",
+      "sha256": "b4fc4ca430b15174d756ed9fad6d986ab9700c66663c11fc55df49d9171d8d71",
+      "execution_status": "not_ported",
+      "file": "extracted/dc-bazen-bezpecnost-v05-sk-b4fc4ca430b1.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_safety_v05/DC_Bazen_Bezpecnost_v05_SK.slx",
+        "primary/matlab/pool_safety_v05/DC_Bazen_Bezpecnost_v05_SK.slx"
+      ],
+      "block_count": 49,
+      "state_count": 9,
+      "function_count": 4
+    },
+    {
+      "name": "Bazen_Prepripojenie_Sluzby_v85_v03_SK",
+      "id": "bazen-prepripojenie-sluzby-v85-v03-sk",
+      "sha256": "19c267d7485b11a9c833ab25c2dc6914186f36dd8702f4be356654c4c1bcb5eb",
+      "execution_status": "not_ported",
+      "file": "extracted/bazen-prepripojenie-sluzby-v85-v03-sk-19c267d7485b.json",
+      "copies": [
+        "obsidian/pool_500m3/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx",
+        "primary/matlab/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx",
+        "primary/results/pool_v85_bridge_v03/deliverable_bundle/Simulink/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx"
+      ],
+      "block_count": 14,
       "state_count": 1,
       "function_count": 1
     },
@@ -53,111 +171,6 @@
       "block_count": 26,
       "state_count": 1,
       "function_count": 1
-    },
-    {
-      "name": "DC_Bazen_Alokacia_Rok_v02_SK",
-      "id": "dc-bazen-alokacia-rok-v02-sk",
-      "sha256": "09714792c62e22a540ae2ec956259aae08908b6f032b0405ae9a97542e6ab0f4",
-      "execution_status": "not_ported",
-      "file": "extracted/dc-bazen-alokacia-rok-v02-sk-09714792c62e.json",
-      "copies": [
-        "primary/matlab/pool_dc_integration_v02/DC_Bazen_Alokacia_Rok_v02_SK.slx"
-      ],
-      "block_count": 14,
-      "state_count": 1,
-      "function_count": 1
-    },
-    {
-      "name": "DC_Bazen_Fyzikalne_Poruchy_v06_SK",
-      "id": "dc-bazen-fyzikalne-poruchy-v06-sk",
-      "sha256": "88141f9e16a862695caebf1702423e0b4118f6f375f81bf88264bf83335833c3",
-      "execution_status": "not_ported",
-      "file": "extracted/dc-bazen-fyzikalne-poruchy-v06-sk-88141f9e16a8.json",
-      "copies": [
-        "primary/matlab/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx"
-      ],
-      "block_count": 63,
-      "state_count": 10,
-      "function_count": 5
-    },
-    {
-      "name": "DC_Bazen_Uzavreta_Regulacia_v04_SK",
-      "id": "dc-bazen-uzavreta-regulacia-v04-sk",
-      "sha256": "0d9a59466a0284ca6bb61d6756222dccafc2ac7aa683ae41de35ce6d72f94ee0",
-      "execution_status": "verified_python_port",
-      "file": "extracted/dc-bazen-uzavreta-regulacia-v04-sk-0d9a59466a02.json",
-      "copies": [
-        "primary/matlab/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx"
-      ],
-      "python_model_id": "pool-v04",
-      "block_count": 37,
-      "state_count": 8,
-      "function_count": 3
-    },
-    {
-      "name": "DC_Bazen_Externe_Merania_v08_SK",
-      "id": "dc-bazen-externe-merania-v08-sk",
-      "sha256": "55add54b3181982ba878776493db2dba8879a583a35fb179f9c3a9c05d560e82",
-      "execution_status": "not_ported",
-      "file": "extracted/dc-bazen-externe-merania-v08-sk-55add54b3181.json",
-      "copies": [
-        "primary/matlab/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx"
-      ],
-      "block_count": 69,
-      "state_count": 11,
-      "function_count": 6
-    },
-    {
-      "name": "DC_Bazen_Dvojita_Ochrana_v07_SK",
-      "id": "dc-bazen-dvojita-ochrana-v07-sk",
-      "sha256": "102321d3269d08e499341898e92a1ad234f23e817881a7ab4e2a3cb7d554819e",
-      "execution_status": "not_ported",
-      "file": "extracted/dc-bazen-dvojita-ochrana-v07-sk-102321d3269d.json",
-      "copies": [
-        "primary/matlab/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx"
-      ],
-      "block_count": 70,
-      "state_count": 11,
-      "function_count": 6
-    },
-    {
-      "name": "DC_Bazen_Bezpecnost_v05_SK",
-      "id": "dc-bazen-bezpecnost-v05-sk",
-      "sha256": "b4fc4ca430b15174d756ed9fad6d986ab9700c66663c11fc55df49d9171d8d71",
-      "execution_status": "not_ported",
-      "file": "extracted/dc-bazen-bezpecnost-v05-sk-b4fc4ca430b1.json",
-      "copies": [
-        "primary/matlab/pool_safety_v05/DC_Bazen_Bezpecnost_v05_SK.slx"
-      ],
-      "block_count": 49,
-      "state_count": 9,
-      "function_count": 4
-    },
-    {
-      "name": "Bazen_Prepripojenie_Sluzby_v85_v03_SK",
-      "id": "bazen-prepripojenie-sluzby-v85-v03-sk",
-      "sha256": "19c267d7485b11a9c833ab25c2dc6914186f36dd8702f4be356654c4c1bcb5eb",
-      "execution_status": "not_ported",
-      "file": "extracted/bazen-prepripojenie-sluzby-v85-v03-sk-19c267d7485b.json",
-      "copies": [
-        "primary/matlab/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx"
-      ],
-      "block_count": 14,
-      "state_count": 1,
-      "function_count": 1
-    },
-    {
-      "name": "DataCenterHeatReuse_Core",
-      "id": "datacenterheatreuse-core",
-      "sha256": "338a08e003b57a5175c7443d964f34c89f3daabbbc6103a8f6fb3c2944e1c067",
-      "execution_status": "not_ported",
-      "file": "extracted/datacenterheatreuse-core-338a08e003b5.json",
-      "copies": [
-        "primary/matlab/simulink/DataCenterHeatReuse_Core.slx"
-      ],
-      "block_count": 15,
-      "state_count": 0,
-      "function_count": 0
     },
     {
       "name": "DCHR_Capacity_Chain_Stateflow_v63",
@@ -501,14 +514,15 @@
       "name": "DCHR_Electrical_Dispatch_Stateflow_v85",
       "id": "dchr-electrical-dispatch-stateflow-v85",
       "sha256": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
-      "execution_status": "not_ported",
+      "execution_status": "verified_python_port",
       "file": "extracted/dchr-electrical-dispatch-stateflow-v85-2a9de22c0c55.json",
       "copies": [
         "primary/matlab/simulink/DCHR_Electrical_Dispatch_Stateflow_v85.slx"
       ],
       "block_count": 12,
       "state_count": 17,
-      "function_count": 11
+      "function_count": 11,
+      "python_model_id": "stateflow-v85"
     },
     {
       "name": "DCHR_Event_Brackets_Stateflow_v67",
@@ -613,8 +627,177 @@
       "block_count": 10,
       "state_count": 9,
       "function_count": 3
+    },
+    {
+      "name": "DCHR_A40_Safety_Controller",
+      "id": "dchr-a40-safety-controller",
+      "sha256": "cdf8a224a3fc83480272cb2dd527ced930d5046e7d53e008d26ef08e3ae8d89c",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a40-safety-controller-cdf8a224a3fc.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261026_1650_A40_STATEFLOW_SUPERVISOR/DCHR_A40_Safety_Controller.slx"
+      ],
+      "block_count": 18,
+      "state_count": 4,
+      "function_count": 0
+    },
+    {
+      "name": "DCHR_A41_Closed_Loop",
+      "id": "dchr-a41-closed-loop",
+      "sha256": "190af2be60032c508e7ebeba94572e22057699283fd895ec91b6aeca71fc0d72",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a41-closed-loop-190af2be6003.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261026_1751_A41_CLOSED_LOOP_SIM/DCHR_A41_Closed_Loop.slx"
+      ],
+      "block_count": 71,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A43_Finite_Trip_Closed_Loop",
+      "id": "dchr-a43-finite-trip-closed-loop",
+      "sha256": "afe6752077d6bea440ac85d7b700fb867879bc38306840a11fc50ba53c91f162",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a43-finite-trip-closed-loop-afe6752077d6.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261026_1945_A43_FINITE_TRIP_RESIDUAL/DCHR_A43_Finite_Trip_Closed_Loop.slx"
+      ],
+      "block_count": 42,
+      "state_count": 1,
+      "function_count": 1
+    },
+    {
+      "name": "DCHR_A44_Graphical_Supervisor",
+      "id": "dchr-a44-graphical-supervisor",
+      "sha256": "c55dc5a1d4311104e675aebd6045e19883f95f27ea33db42d155edbdffe12307",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a44-graphical-supervisor-c55dc5a1d431.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261026_2050_A44_GRAPHICAL_STATEFLOW/DCHR_A44_Graphical_Supervisor.slx"
+      ],
+      "block_count": 14,
+      "state_count": 4,
+      "function_count": 0
+    },
+    {
+      "name": "DCHR_A46_Compressor_Closed_Loop",
+      "id": "dchr-a46-compressor-closed-loop",
+      "sha256": "a26fa2f0ca04555c20b806417efff390d0b605bc2a82b0ac1459fa860f6c2e49",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a46-compressor-closed-loop-a26fa2f0ca04.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261026_2255_A46_INTEGRATION/DCHR_A46_Compressor_Closed_Loop.slx"
+      ],
+      "block_count": 42,
+      "state_count": 1,
+      "function_count": 1
+    },
+    {
+      "name": "DCHR_A48_Graphical_Closed_Loop",
+      "id": "dchr-a48-graphical-closed-loop",
+      "sha256": "063f9afb5816cd4f6bed415256293eee67b328718b141c29d84853ddafab25cb",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a48-graphical-closed-loop-063f9afb5816.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0150_A48_EXECUTABLE_QA/DCHR_A48_Graphical_Closed_Loop.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A50_Sensor_Lag",
+      "id": "dchr-a50-sensor-lag",
+      "sha256": "8edb7f64b9fe27c54be4c5d1223e242feb6f733cde97dce4c044b25729dc5cbe",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a50-sensor-lag-8edb7f64b9fe.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0351_A50_SENSOR_LAG_MATLAB/DCHR_A50_Sensor_Lag.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A51_TripDelay_0",
+      "id": "dchr-a51-tripdelay-0",
+      "sha256": "3691770ae5f531824389035eafe19bafbdbd2e674d109d68c4a92ca8dacd073c",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a51-tripdelay-0-3691770ae5f5.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0450_A51_TRIP_DELAY_GRAPHICAL/DCHR_A51_TripDelay_0.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A51_TripDelay_2",
+      "id": "dchr-a51-tripdelay-2",
+      "sha256": "c78bf64b0b2b1ac4d1436498db6caed535d3a174c7d78656baa02f7016eeeda4",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a51-tripdelay-2-c78bf64b0b2b.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0450_A51_TRIP_DELAY_GRAPHICAL/DCHR_A51_TripDelay_2.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A51_TripDelay_4",
+      "id": "dchr-a51-tripdelay-4",
+      "sha256": "1c569018b7c8cadcf94845086a01c886c99f3551e7da9b3948aaae1a22021789",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a51-tripdelay-4-1c569018b7c8.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0450_A51_TRIP_DELAY_GRAPHICAL/DCHR_A51_TripDelay_4.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A53_TripDelay_0",
+      "id": "dchr-a53-tripdelay-0",
+      "sha256": "8d0ead5e1ffb4b23be93c7893c8263f5e9474955f287721585b72192427dc9d9",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a53-tripdelay-0-8d0ead5e1ffb.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0554_A53_GRAPHICAL_CROSSPRODUCT/DCHR_A53_TripDelay_0.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A53_TripDelay_2",
+      "id": "dchr-a53-tripdelay-2",
+      "sha256": "095c7bf568a0ae5a461a883163ad036e06fb91a995d2c4989a02d3263fb4acec",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a53-tripdelay-2-095c7bf568a0.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0554_A53_GRAPHICAL_CROSSPRODUCT/DCHR_A53_TripDelay_2.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
+    },
+    {
+      "name": "DCHR_A53_TripDelay_4",
+      "id": "dchr-a53-tripdelay-4",
+      "sha256": "e679915699677d81c6b33fc4eeb31b77675cbd22841869398e58cee627f9af6c",
+      "execution_status": "not_ported",
+      "file": "extracted/dchr-a53-tripdelay-4-e67991569967.json",
+      "copies": [
+        "synapse/AUTONOMOUS_RUN_20261027_0554_A53_GRAPHICAL_CROSSPRODUCT/DCHR_A53_TripDelay_4.slx"
+      ],
+      "block_count": 66,
+      "state_count": 6,
+      "function_count": 2
     }
   ],
-  "distinct_binaries": 47,
-  "files": 47
+  "distinct_binaries": 60,
+  "files": 73
 }

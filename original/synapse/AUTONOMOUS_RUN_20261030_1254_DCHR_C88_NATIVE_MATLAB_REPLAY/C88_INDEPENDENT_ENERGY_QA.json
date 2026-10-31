@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": 13,
+  "passed": [
+    "native_csv_report_parity_exist",
+    "synthetic_disclaimer",
+    "native_parity_receipt",
+    "matlab_python_numeric_parity",
+    "schema_23_columns",
+    "8760_hourly_rows",
+    "four_independent_energy_balances",
+    "gas_annual_oracle",
+    "electric_annual_oracle",
+    "annual_time_coverage",
+    "deterministic_start",
+    "negative_heat_balance_test",
+    "final_stop_pause_gate"
+  ],
+  "scenario": "Warm45_Storage100",
+  "source": "native MATLAB R2026a CSV, synthetic input seed=42",
+  "hours": 8760,
+  "numeric_parity_comparisons": 192720,
+  "max_matlab_python_delta": 5.093703236980218e-13,
+  "max_energy_balance_residual_MW": {
+    "heat_balance": 5.1514348342607263e-14,
+    "hx_balance": 1.0963452368173421e-14,
+    "hp_source_balance": 4.085620730620576e-14,
+    "storage_recurrence": 9.947598300641403e-14
+  },
+  "totals_MWh": {
+    "gas_MWh": 10542.548227788939,
+    "hp_electric_MWh": 7969.875645450856,
+    "heat_demand_MWh": 59429.97676926264
+  },
+  "native_csv_sha256": "07d1d7f19d92ce34d5b3e5a44a2131234a4a2e7991e21f018b197137ed0eb370",
+  "limitations": "No Stateflow parity, measured weather, source-signoff, economic calibration or independent field validation."
+}

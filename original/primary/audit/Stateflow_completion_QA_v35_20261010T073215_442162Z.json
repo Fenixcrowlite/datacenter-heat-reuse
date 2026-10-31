@@ -1,0 +1,260 @@
+{
+  "timestamp_utc": "2026-10-10T07:32:15.442162+00:00",
+  "passed": 63,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "MATLAB audit completed",
+      "passed": true
+    },
+    {
+      "name": "MATLAB export completed",
+      "passed": true
+    },
+    {
+      "name": "QA passed",
+      "passed": true
+    },
+    {
+      "name": "equations passed",
+      "passed": true
+    },
+    {
+      "name": "saved model preserved",
+      "passed": true
+    },
+    {
+      "name": "reviewer source bound",
+      "passed": true
+    },
+    {
+      "name": "stateflow_admissibility_v35.py Python binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_reference_v30.py Python binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_reference_v32.py Python binding",
+      "passed": true
+    },
+    {
+      "name": "stateflow_reference_v34.py Python binding",
+      "passed": true
+    },
+    {
+      "name": "verify_stateflow_admissibility_v35.py Python binding",
+      "passed": true
+    },
+    {
+      "name": "verify_stateflow_v34.py Python binding",
+      "passed": true
+    },
+    {
+      "name": "run_stateflow_admissibility_v35.m MATLAB binding",
+      "passed": true
+    },
+    {
+      "name": "export_stateflow_admissibility_v35.m MATLAB binding",
+      "passed": true
+    },
+    {
+      "name": "receipt/output binding",
+      "passed": true
+    },
+    {
+      "name": "clean restore warning absent",
+      "passed": true
+    },
+    {
+      "name": "zero_demand MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "zero_demand MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "hp_only MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "hp_only MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "tes_charge MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "tes_charge MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "tes_discharge MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "tes_discharge MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "boiler_limit MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "boiler_limit MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "insufficient_heat MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "insufficient_heat MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "demand_step_h_0.5 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "demand_step_h_0.5 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "demand_step_h_0.25 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "demand_step_h_0.25 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "demand_step_h_0.125 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "demand_step_h_0.125 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "source_step_h_0.5 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "source_step_h_0.5 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "source_step_h_0.25 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "source_step_h_0.25 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "source_step_h_0.125 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "source_step_h_0.125 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "safe_held_h_0.5 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "safe_held_h_0.5 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "safe_held_h_0.25 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "safe_held_h_0.25 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "safe_held_h_0.125 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "safe_held_h_0.125 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "off_dwell_overload MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "off_dwell_overload MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "scale_10 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "scale_10 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "scale_10000 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "scale_10000 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "scale_1e+06 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "scale_1e+06 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "scale_1e+09 MAT timestamps",
+      "passed": true
+    },
+    {
+      "name": "scale_1e+09 MAT energy memory",
+      "passed": true
+    },
+    {
+      "name": "runtime defect confirmed",
+      "passed": true
+    },
+    {
+      "name": "residual summary bound",
+      "passed": true
+    },
+    {
+      "name": "Copeland_AE4_1431_R2.pdf acquisition hash",
+      "passed": true
+    },
+    {
+      "name": "EnergyPlus_26_2_plant_loop_heat_pumps.html acquisition hash",
+      "passed": true
+    },
+    {
+      "name": "bulletin equipment scope",
+      "passed": true
+    },
+    {
+      "name": "bulletin specific run guidance",
+      "passed": true
+    },
+    {
+      "name": "engineering cycling text",
+      "passed": true
+    }
+  ],
+  "classification": "receipt_source_equipment_and_MAT_binding_checks_not_additional_model_tests"
+}

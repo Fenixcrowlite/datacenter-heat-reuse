@@ -1,0 +1,101 @@
+{
+  "version": "0.42",
+  "inherits": "STATUS_stateflow_v41.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T13:10:54.029975+00:00",
+  "checkpoint": "Uncertainty-aware Stateflow dwell repair",
+  "stateflow_acceptance": "PASS_SCOPED_IMPLEMENTATION",
+  "model_version": "0.42",
+  "new_model": true,
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v42.slx",
+  "model_sha256": "db9777f73cbe9c6e56f0e9900d2c7b6c915588768b68b2464809802109b69a9c",
+  "controller_defect": "v41 lower-age dwell guarantee repaired in executed fixtures",
+  "result_directory": "results/stateflow_clock_v42_20261010T130432870Z",
+  "focused_probe_directory": "results/stateflow_dwell_v42_20261010T130858503Z",
+  "independent_qa": "results/stateflow_clock_v42_20261010T130432870Z/independent_QA_v42_20261010T131023_265654Z.json",
+  "matlab_batch_receipts": [
+    "audit/Stateflow_execution_v42_20261010T130324104Z.json",
+    "audit/Stateflow_execution_v42_20261010T130653849Z.json",
+    "audit/Stateflow_execution_v42_20261010T130854831Z.json"
+  ],
+  "matlab_batch_exit_code": 0,
+  "scenarios": 31,
+  "completed_scenarios": 29,
+  "intervals": 43,
+  "positive_segments": 65,
+  "harness_passed": 61,
+  "harness_failed": 0,
+  "six_modes_executed": true,
+  "actual_runtime_fault_rejections": 36,
+  "actual_fault_breakdown": {
+    "domain_monitor_timer": 30,
+    "out_of_budget_seed": 2,
+    "nominal_planner_uncertainty_attacks": 4
+  },
+  "executed_numeric_function_probes": 1016,
+  "independent_evidence_checks_passed": 8012,
+  "independent_evidence_checks_failed": 0,
+  "synthetic_reviewer_checks_passed": 4,
+  "synthetic_reviewer_checks_failed": 0,
+  "independent_check_breakdown": {
+    "artifact": {
+      "passed": 129,
+      "failed": 0
+    },
+    "execution": {
+      "passed": 140,
+      "failed": 0
+    },
+    "numeric": {
+      "passed": 519,
+      "failed": 0
+    },
+    "equation": {
+      "passed": 331,
+      "failed": 0
+    },
+    "timing": {
+      "passed": 26,
+      "failed": 0
+    },
+    "reference": {
+      "passed": 225,
+      "failed": 0
+    },
+    "repair": {
+      "passed": 32,
+      "failed": 0
+    },
+    "synthetic": {
+      "passed": 4,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 514,
+      "failed": 0
+    },
+    "function_probe": {
+      "passed": 6096,
+      "failed": 0
+    }
+  },
+  "certified_dwell_transitions": 26,
+  "uncertainty_dwell_guarantee_failures": 0,
+  "certainly_premature_transitions": 0,
+  "max_independent_balance_residual_MWh": 9.020562075079397e-16,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Scoped numerical/implementation acceptance, not measured equipment validation or article replication; primary full signoffs remain 0/31.",
+    "Exact-rational timing QA uses independent algorithms in the same agent, not independent personnel.",
+    "Clock bounds/seeds are engineering numerical fixtures; physical error signs and long-run histories remain unknown.",
+    "Outward comparison and certified waits can conservatively defer equality and shift near-ties by a few binary64 spacings; exhaustive exact real-input ordering is unproved.",
+    "Normal-mode host planner executes analytic intra-macro segments; generated-code and solver-clock event execution remain untested.",
+    "Finite arithmetic and existing clock/event budgets remain explicit rejection domains; no global arbitrary-precision guarantee is claimed.",
+    "Inherited Stateflow formal-argument shadow warnings remain in logs. Sandbox startup failure is retained. Focused harness cleanup-order warning was fixed and its probes/attacks rerun successfully.",
+    "HP component release 0.40 and temperature/cutoff TES assumptions are inherited; equipment calibration, hydraulic/stratified physics and measured physical validation remain open."
+  ],
+  "next": "Resume primary equipment traceability: select the most relevant accessible primary full text from the existing 0/31 signoff ledger, record exact pages/equation numbers, variables, units and operating domain for HP performance or TES cutoff/loss assumptions, and map them to the accepted v42 implementation. Independently derive and dimensionally check the verified relationship; document an access block or assumption mismatch if full text does not support it. Do not repeat Stateflow regression without a new defect/change."
+}

@@ -1,0 +1,297 @@
+{
+  "status": "VERIFIED_ON_REAL_EXECUTED_V85_TRACE",
+  "model_v85": "DCHR_Electrical_Dispatch_Stateflow_v85",
+  "model_pool": "Bazen_Prepripojenie_Sluzby_v85_v03_SK",
+  "scope": "CERTIFIED_SHORT_HORIZON_HEAT_SERVICE_REALLOCATION_NO_ADDITIONAL_RECOVERY",
+  "warning": "No year 8760 v85 input is available; no feedback to Stateflow v85; no vendor COP map",
+  "cases": [
+    {
+      "id": "service_E3.0_a1.0_H2_dt0.25__studena_voda",
+      "pramen_v85": "service_E3.0_a1.0_H2_dt0.25",
+      "scenar_bazen": "studena_voda",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0.44756578947368203,
+      "bazen_presmerovane_MWh": 0.15,
+      "dh_zostava_MWh": 0.29756578947368206,
+      "v85_hull_direct_HP_MWh": [
+        0.4475657894736817,
+        0.44756578947368247
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.4475657894736817,
+        0.44756578947368247
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.049999999999999239,
+        0.05000000000000035
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.39756578947367877,
+        0.39756578947368593
+      ],
+      "bazenska_energia_strat_MWh": -0.031944666392033937,
+      "max_T_bazen_C": 16.314190202847339,
+      "energeticke_reziduum_bazen_MWh": 5.8286708792820718E-16,
+      "duplicita_MWh": 5.5511151231257827E-17
+    },
+    {
+      "id": "service_E3.0_a1.0_H2_dt0.25__tepla_voda",
+      "pramen_v85": "service_E3.0_a1.0_H2_dt0.25",
+      "scenar_bazen": "tepla_voda",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0.44756578947368203,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0.44756578947368203,
+      "v85_hull_direct_HP_MWh": [
+        0.4475657894736817,
+        0.44756578947368247
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.4475657894736817,
+        0.44756578947368247
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.049999999999999239,
+        0.05000000000000035
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.39756578947367877,
+        0.39756578947368593
+      ],
+      "bazenska_energia_strat_MWh": 0.048668829917522957,
+      "max_T_bazen_C": 27.67884732218171,
+      "energeticke_reziduum_bazen_MWh": 2.5604518505417673E-15,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "service_E3.0_a1.0_H2_dt0.25__stop_bazen",
+      "pramen_v85": "service_E3.0_a1.0_H2_dt0.25",
+      "scenar_bazen": "stop_bazen",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0.44756578947368203,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0.44756578947368203,
+      "v85_hull_direct_HP_MWh": [
+        0.4475657894736817,
+        0.44756578947368247
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.4475657894736817,
+        0.44756578947368247
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.049999999999999239,
+        0.05000000000000035
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.39756578947367877,
+        0.39756578947368593
+      ],
+      "bazenska_energia_strat_MWh": -0.032271420391477353,
+      "max_T_bazen_C": 16.055727734810993,
+      "energeticke_reziduum_bazen_MWh": 1.3183898417423734E-16,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "charge_E4.95_a1.0_H2_dt0.25__studena_voda",
+      "pramen_v85": "charge_E4.95_a1.0_H2_dt0.25",
+      "scenar_bazen": "studena_voda",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0,
+      "v85_hull_direct_HP_MWh": [
+        0,
+        0
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.3816234724617058,
+        0.38162347246170669
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.043861251442457672,
+        0.04388982180884056
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.33773661031766966,
+        0.33775926336187756
+      ],
+      "bazenska_energia_strat_MWh": -0.032271420391477353,
+      "max_T_bazen_C": 16.055727734810993,
+      "energeticke_reziduum_bazen_MWh": 1.3183898417423734E-16,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "charge_E4.95_a1.0_H2_dt0.25__tepla_voda",
+      "pramen_v85": "charge_E4.95_a1.0_H2_dt0.25",
+      "scenar_bazen": "tepla_voda",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0,
+      "v85_hull_direct_HP_MWh": [
+        0,
+        0
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.3816234724617058,
+        0.38162347246170669
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.043861251442457672,
+        0.04388982180884056
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.33773661031766966,
+        0.33775926336187756
+      ],
+      "bazenska_energia_strat_MWh": 0.048668829917522957,
+      "max_T_bazen_C": 27.67884732218171,
+      "energeticke_reziduum_bazen_MWh": 2.5604518505417673E-15,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "charge_E4.95_a1.0_H2_dt0.25__stop_bazen",
+      "pramen_v85": "charge_E4.95_a1.0_H2_dt0.25",
+      "scenar_bazen": "stop_bazen",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0,
+      "v85_hull_direct_HP_MWh": [
+        0,
+        0
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.3816234724617058,
+        0.38162347246170669
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.043861251442457672,
+        0.04388982180884056
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.33773661031766966,
+        0.33775926336187756
+      ],
+      "bazenska_energia_strat_MWh": -0.032271420391477353,
+      "max_T_bazen_C": 16.055727734810993,
+      "energeticke_reziduum_bazen_MWh": 1.3183898417423734E-16,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "binding_stop__studena_voda",
+      "pramen_v85": "binding_stop",
+      "scenar_bazen": "studena_voda",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0,
+      "v85_hull_direct_HP_MWh": [
+        0,
+        0
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.1287807518777962,
+        0.12878075187782587
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.032217181918108295,
+        0.032229834711123881
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.096553449898103078,
+        0.096561038023621829
+      ],
+      "bazenska_energia_strat_MWh": -0.032271420391477353,
+      "max_T_bazen_C": 16.055727734810993,
+      "energeticke_reziduum_bazen_MWh": 1.3183898417423734E-16,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "binding_stop__tepla_voda",
+      "pramen_v85": "binding_stop",
+      "scenar_bazen": "tepla_voda",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0,
+      "v85_hull_direct_HP_MWh": [
+        0,
+        0
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.1287807518777962,
+        0.12878075187782587
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.032217181918108295,
+        0.032229834711123881
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.096553449898103078,
+        0.096561038023621829
+      ],
+      "bazenska_energia_strat_MWh": 0.048668829917522957,
+      "max_T_bazen_C": 27.67884732218171,
+      "energeticke_reziduum_bazen_MWh": 2.5604518505417673E-15,
+      "duplicita_MWh": 0
+    },
+    {
+      "id": "binding_stop__stop_bazen",
+      "pramen_v85": "binding_stop",
+      "scenar_bazen": "stop_bazen",
+      "simulink_v85_spusteny_teraz": true,
+      "zhoda_retained_trace_bitwise": true,
+      "pocet_intervalov": 4,
+      "cas_h": 1,
+      "v85_hp_direct_service_MWh": 0,
+      "bazen_presmerovane_MWh": 0,
+      "dh_zostava_MWh": 0,
+      "v85_hull_direct_HP_MWh": [
+        0,
+        0
+      ],
+      "v85_hp_teplo_hull_MWh": [
+        0.1287807518777962,
+        0.12878075187782587
+      ],
+      "v85_kompresor_hull_MWh": [
+        0.032217181918108295,
+        0.032229834711123881
+      ],
+      "v85_zdroj_hull_MWh": [
+        0.096553449898103078,
+        0.096561038023621829
+      ],
+      "bazenska_energia_strat_MWh": -0.032271420391477353,
+      "max_T_bazen_C": 16.055727734810993,
+      "energeticke_reziduum_bazen_MWh": 1.3183898417423734E-16,
+      "duplicita_MWh": 0
+    }
+  ]
+}

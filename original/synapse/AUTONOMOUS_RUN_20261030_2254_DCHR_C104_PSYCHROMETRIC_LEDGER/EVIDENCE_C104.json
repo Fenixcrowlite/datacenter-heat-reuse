@@ -1,0 +1,19 @@
+{
+  "actor": "chatgpt-dchr-c104-psychrometric-20261030-2254",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\C104_PSYCHROMETRIC_HOURLY.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\C104_FINDINGS.md",
+  "hourly_sha256": "15547bfd196152440ec1870af182ef20a79ab1004790cf71d1de9869b447228d",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\SHA256_MANIFEST_C104.json",
+  "manifest_sha256": "3e34dadbdac5fcffb15300ff7c67b97676074df1aab59d0b786464c858542a4a",
+  "next": "Add sensible HRV bypass controls; then couple water and air loads to one constrained heat source after source/vender validation.",
+  "physical_summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\C104_PHYSICAL_SUMMARY.csv",
+  "physical_summary_sha256": "e389de893a34a3ce4bacf6d8ca50bc72634d4634cc08ccea78fff027dddaceb4",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\C104_INDEPENDENT_QA.json",
+  "qa_result": "17/17 selftest; 2207520 independent row checks; 2 negative controls; 81 annual comparisons; dimensional schema gate",
+  "qa_summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER\\C104_SUMMARY_QA.json",
+  "schema": "C104_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

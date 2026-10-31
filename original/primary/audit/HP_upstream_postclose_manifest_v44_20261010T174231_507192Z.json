@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-10-10T17:42:31.535264+00:00",
+  "files": [
+    {
+      "path": "audit/check_hp_upstream_release_v44.py",
+      "bytes": 2748,
+      "sha256": "e3d9fae0b15130b23c616920de5ca75031ea51eedbaa58758f716b7d325225ce"
+    },
+    {
+      "path": "audit/HP_upstream_manifest_v44_20261010T174200_742907Z.json",
+      "bytes": 5564,
+      "sha256": "e439a2acfe49e637f8c3119d4e3ce5c0cb9a05a9f30fe83286757c471bd205f7"
+    },
+    {
+      "path": "audit/HP_upstream_postclose_v44_20261010T174221_799613Z.json",
+      "bytes": 3693,
+      "sha256": "766126872b8822183dad2800a5e4e0709a5d07b137779e3e07e25289fee0baee"
+    },
+    {
+      "path": "automation/logs/hp_finalize_v44_20261010T174200659Z.log",
+      "bytes": 107,
+      "sha256": "66fcea524f8e8dec021725326b86b27809c83691963a84155ae091173203f930"
+    },
+    {
+      "path": "automation/logs/hp_postclose_v44_20261010T174221712Z.log",
+      "bytes": 97,
+      "sha256": "fde296479c4f7e06a3ae49cfa10d3ef8922e277f38705cc966ddd791f5d0ccab"
+    }
+  ]
+}

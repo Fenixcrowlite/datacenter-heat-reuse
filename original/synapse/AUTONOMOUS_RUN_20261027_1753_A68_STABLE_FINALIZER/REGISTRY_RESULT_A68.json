@@ -1,0 +1,13 @@
+{
+  "QA": "13/13 unittest; stable checkpoint; no duplicate events",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1753_A68_STABLE_FINALIZER",
+  "event_id": 1337,
+  "evidence_sha256": "e360d51c36258dfe02ab938a4d25ae527981595813cde058c2794eafee63ed6a",
+  "handoff_sha256": "07287290019aa4d65303ee31f3ca10ae243d1b582ea7d53b73311810619df001",
+  "manifest_sha256": "dd2141ed19c610e35ee8e46c950749d289b0d940ad39479973f53b9593de8c59",
+  "next_step": "Use this module in the next isolated finalizer; never rewrite A66/A67 evidence.",
+  "physical_release": false,
+  "scope": "A68_stable_finalizer_replay",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

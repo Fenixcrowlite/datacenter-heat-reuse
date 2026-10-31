@@ -1,0 +1,105 @@
+{
+  "version": "0.39",
+  "inherits": "STATUS_stateflow_v38.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T12:36:56.411250+00:00",
+  "checkpoint": "Fresh saved-v38 HP dynamic-range defect audit",
+  "stateflow_acceptance": "DEFECT_REPRODUCED_OPEN",
+  "model_version": "0.38",
+  "new_model": false,
+  "generated_model": "matlab\\simulink\\DCHR_Dispatch_Stateflow_v38.slx",
+  "model_sha256": "fe60aaee835973195ccb94b323f516e7c1a6f413f5016f9b9f4d319251d297b2",
+  "controller_defect": "Fixed 80-iteration output-space search returns false OFF or nonmaximal output at large request/source ratios.",
+  "result_directory": "results\\stateflow_hp_domain_v39_20261010T123256940Z",
+  "independent_qa": "results\\stateflow_hp_domain_v39_20261010T123256940Z\\independent_QA_v39_20261010T123637_591117Z.json",
+  "matlab_batch_receipts": [
+    "audit\\Stateflow_execution_v39_20261010T123246386Z.json",
+    "audit\\Stateflow_execution_v39_20261010T123512674Z.json"
+  ],
+  "matlab_batch_exit_code": 0,
+  "scenarios": 22,
+  "completed_scenarios": 22,
+  "completed_intervals": 45,
+  "positive_segments": 45,
+  "harness_checks_passed": 122,
+  "harness_checks_failed": 0,
+  "hp_component_probes": 78,
+  "independent_evidence_checks_passed": 4040,
+  "independent_evidence_checks_failed": 0,
+  "synthetic_reviewer_checks_passed": 3,
+  "synthetic_reviewer_checks_failed": 0,
+  "independent_check_breakdown": {
+    "artifact": {
+      "passed": 78,
+      "failed": 0
+    },
+    "execution": {
+      "passed": 104,
+      "failed": 0
+    },
+    "numeric": {
+      "passed": 459,
+      "failed": 0
+    },
+    "equation": {
+      "passed": 318,
+      "failed": 0
+    },
+    "reference": {
+      "passed": 325,
+      "failed": 0
+    },
+    "defect_reproduction": {
+      "passed": 8,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 2748,
+      "failed": 0
+    },
+    "synthetic": {
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "implementation_comparisons": {
+    "passed": 202,
+    "failed": 234
+  },
+  "max_independent_balance_residual_MWh": 7.771561172376096e-16,
+  "previous_immutable_entries_preserved": 2747,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "preservation_exclusions": {
+    "automation/engineering_progress.md": {
+      "reason": "Explicit exclusion in corrected v22 manifest",
+      "old_entry": {
+        "path": "automation/engineering_progress.md",
+        "sha256": "864090fcc8d974e7adf79207f57a37c88a66d9f604d648c110236831df4fca94",
+        "bytes": 10020
+      }
+    },
+    "automation/logs/stateflow_finalize_v22_20261009T050008.log": {
+      "reason": "Explicit exclusion in corrected v22 manifest",
+      "old_entry": {
+        "path": "automation/logs/stateflow_finalize_v22_20261009T050008.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  },
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Documented numerical implementation defect, no new SLX or corrected controller acceptance.",
+    "Extreme source/output ratios are numerical stress fixtures, not plausible equipment sizes or measured data.",
+    "Execution/invariant and defect-evidence QA pass; explicit analytic implementation comparisons FAIL and remain open.",
+    "Exact binary64 cutoff fixture is observed but excluded from defect counts; full near-cutoff classification remains unproved.",
+    "Clock residual seeds, nonzero error-bound event ordering, code generation and solver-clock events remain untested here.",
+    "Normal-mode host HP/planner with analytic intra-macro segments; no calibrated hydraulics, stratification or cycling losses.",
+    "Independent algorithms/artifact QA in the same agent, not independent personnel; synthetic checks counted separately.",
+    "Stateflow license and saved-chart execution observed; no standalone Stateflow version inferred from empty ver lookup.",
+    "No new primary article equation, parameter or literature signoff; full signoffs 0/31, no article replication or physical validation."
+  ],
+  "next": "Implement additive Stateflow v40 with a source-relative bracket or stable scaled HP root, explicit unsupported-resolution rejection, and source-limited request invariance. Execute v39 dynamic-range/cutoff counterexamples plus all six modes and prior v38 representative references; independently verify analytic maximal output, nonzero electricity, SOC/port limits and first-law closure. Preserve v38 and all v39 evidence. Do not broaden clock seed/bound/event-order acceptance or claim equipment calibration; those audits and primary parameter traceability remain open."
+}

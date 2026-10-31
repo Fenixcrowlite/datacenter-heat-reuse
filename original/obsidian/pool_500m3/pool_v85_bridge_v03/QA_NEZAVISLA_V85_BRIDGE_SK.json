@@ -1,0 +1,71 @@
+{
+  "schema": "V03_INDEPENDENT_QA",
+  "old_v85_sha256": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+  "test_count": 99,
+  "cases": [
+    {
+      "id": "service_E3.0_a1.0_H2_dt0.25__studena_voda",
+      "checked": true,
+      "pool_MWh": 0.15,
+      "other_service_MWh": 0.297565789473682,
+      "source_service_MWh": 0.447565789473682
+    },
+    {
+      "id": "service_E3.0_a1.0_H2_dt0.25__tepla_voda",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.447565789473682,
+      "source_service_MWh": 0.447565789473682
+    },
+    {
+      "id": "service_E3.0_a1.0_H2_dt0.25__stop_bazen",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.447565789473682,
+      "source_service_MWh": 0.447565789473682
+    },
+    {
+      "id": "charge_E4.95_a1.0_H2_dt0.25__studena_voda",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.0,
+      "source_service_MWh": 0.0
+    },
+    {
+      "id": "charge_E4.95_a1.0_H2_dt0.25__tepla_voda",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.0,
+      "source_service_MWh": 0.0
+    },
+    {
+      "id": "charge_E4.95_a1.0_H2_dt0.25__stop_bazen",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.0,
+      "source_service_MWh": 0.0
+    },
+    {
+      "id": "binding_stop__studena_voda",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.0,
+      "source_service_MWh": 0.0
+    },
+    {
+      "id": "binding_stop__tepla_voda",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.0,
+      "source_service_MWh": 0.0
+    },
+    {
+      "id": "binding_stop__stop_bazen",
+      "checked": true,
+      "pool_MWh": 0.0,
+      "other_service_MWh": 0.0,
+      "source_service_MWh": 0.0
+    }
+  ],
+  "status": "VERIFIED"
+}

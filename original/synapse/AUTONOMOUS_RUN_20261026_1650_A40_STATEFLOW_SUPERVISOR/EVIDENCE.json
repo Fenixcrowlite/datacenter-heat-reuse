@@ -1,0 +1,24 @@
+{
+  "scope": "A40_real_Stateflow_4_mode_isolated_synthetic_supervisor",
+  "status": "STATEFLOW_OPEN_LOOP_SIM_VERIFIED",
+  "matlab": "R2026a",
+  "scenarios": 4,
+  "samples_per_scenario": 672,
+  "independent_oracle_comparisons": 2688,
+  "python_tests": "9/9 PASS",
+  "states": 4,
+  "transitions_including_default": 11,
+  "source_trace_sha256": {
+    "trace_main_only_no_shed.csv": "bcd8c524514d8b918e341eeadc5a7edc66871d5154ef50e05b7b9d9f713727bc",
+    "trace_both_no_shed.csv": "531f5636851e83a637cdc752c52271b2b410a0bfe680f4ff6923527c42f14928",
+    "trace_backup_only_no_shed.csv": "3fcedc1cbfe4848184381a958d373f184be74e955f2a03707e86bde775649e13",
+    "trace_neither_no_shed.csv": "c57f1e3d6ea1677a89c16ac3785c6e7bf2d93deb18b481c5bb198facba33260c"
+  },
+  "model_sha256": "cdf8a224a3fc83480272cb2dd527ced930d5046e7d53e008d26ef08e3ae8d89c",
+  "matlab_result_sha256": "afec2702750bbd945bfaa1a7c219abbe061ad25808c5590b990789ea8c925ad5",
+  "hardware_interface": false,
+  "physical_release_allowed": false,
+  "critical_note": "shedCeilingFraction is a synthetic ceiling, never an actuator command",
+  "limitations": "open-loop A38 traces; no physical feedback, branch switching delays or sensor validation",
+  "next_step": "Integrate Stateflow mode into isolated A38 thermal closed loop; dynamic IT shedding and REJECT A/B delays; 672-step energy/thermal parity; do not touch production v85 SLX"
+}

@@ -1,0 +1,672 @@
+{
+  "status": "PASS",
+  "passed": 166,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "task_existing",
+      "passed": true
+    },
+    {
+      "name": "registry_integrity",
+      "passed": true
+    },
+    {
+      "name": "task_eligible",
+      "passed": true
+    },
+    {
+      "name": "source_count",
+      "passed": true
+    },
+    {
+      "name": "sha256_slx",
+      "passed": true
+    },
+    {
+      "name": "sha256_policy",
+      "passed": true
+    },
+    {
+      "name": "sha256_kernel",
+      "passed": true
+    },
+    {
+      "name": "sha256_builder",
+      "passed": true
+    },
+    {
+      "name": "sha256_spec",
+      "passed": true
+    },
+    {
+      "name": "sha256_status",
+      "passed": true
+    },
+    {
+      "name": "sha256_c33",
+      "passed": true
+    },
+    {
+      "name": "model_known_sha",
+      "passed": true
+    },
+    {
+      "name": "slx_integrity",
+      "passed": true
+    },
+    {
+      "name": "slx_has_stateflow",
+      "passed": true
+    },
+    {
+      "name": "slx_count",
+      "passed": true
+    },
+    {
+      "name": "spec_27",
+      "passed": true
+    },
+    {
+      "name": "all_25_parameters",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_zero_demand",
+      "passed": true
+    },
+    {
+      "name": "capacity_zero_demand",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_zero_demand",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_HP_only",
+      "passed": true
+    },
+    {
+      "name": "capacity_HP_only",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_HP_only",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_TES_charge",
+      "passed": true
+    },
+    {
+      "name": "capacity_TES_charge",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_TES_charge",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_TES_discharge",
+      "passed": true
+    },
+    {
+      "name": "capacity_TES_discharge",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_TES_discharge",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_boiler_limit",
+      "passed": true
+    },
+    {
+      "name": "capacity_boiler_limit",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_boiler_limit",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_insufficient_heat",
+      "passed": true
+    },
+    {
+      "name": "capacity_insufficient_heat",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_insufficient_heat",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_cycles_P1000.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_cycles_P1000.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_cycles_P1000.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_service_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_service_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_service_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_service_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_service_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_service_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_service_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_service_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_service_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_service_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_service_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_service_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_service_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_service_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_service_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_service_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_service_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_service_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_loss_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_loss_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_loss_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_loss_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_loss_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_loss_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_loss_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_loss_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_loss_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_loss_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_loss_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_loss_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_loss_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_loss_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_loss_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_loss_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "capacity_loss_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_loss_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_binding_stop",
+      "passed": true
+    },
+    {
+      "name": "capacity_binding_stop",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_binding_stop",
+      "passed": true
+    },
+    {
+      "name": "physical_domain_zero_ceiling",
+      "passed": true
+    },
+    {
+      "name": "capacity_zero_ceiling",
+      "passed": true
+    },
+    {
+      "name": "initial_inside_zero_ceiling",
+      "passed": true
+    },
+    {
+      "name": "case_id_exact",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_zero_demand",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_zero_demand",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_HP_only",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_HP_only",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_TES_charge",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_TES_charge",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_TES_discharge",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_TES_discharge",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_boiler_limit",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_boiler_limit",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_insufficient_heat",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_insufficient_heat",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_cycles_P1000.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_cycles_P1000.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_service_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_service_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_service_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_service_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_service_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_service_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_service_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_service_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_service_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_service_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_service_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_service_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_loss_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_loss_charge_E3.0_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_loss_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_loss_charge_E3.0_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_loss_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_loss_charge_E4.95_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_loss_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_loss_charge_E4.95_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_loss_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_loss_charge_E8.5_a1.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_loss_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_loss_charge_E8.5_a10.0",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_binding_stop",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_binding_stop",
+      "passed": true
+    },
+    {
+      "name": "reported_cap_zero_ceiling",
+      "passed": true
+    },
+    {
+      "name": "reported_temp_zero_ceiling",
+      "passed": true
+    },
+    {
+      "name": "capacity_set_10",
+      "passed": true
+    },
+    {
+      "name": "policy_capacity_raw_indices",
+      "passed": true
+    },
+    {
+      "name": "kernel_thermal_capacity",
+      "passed": true
+    },
+    {
+      "name": "builder_links_policy",
+      "passed": true
+    },
+    {
+      "name": "builder_links_kernel",
+      "passed": true
+    },
+    {
+      "name": "prior_100_assumption",
+      "passed": true
+    },
+    {
+      "name": "different_reference",
+      "passed": true
+    },
+    {
+      "name": "no_parity_claim",
+      "passed": true
+    },
+    {
+      "name": "no_matlab_claim",
+      "passed": true
+    },
+    {
+      "name": "no_physical_validation",
+      "passed": true
+    },
+    {
+      "name": "independent_positive_control",
+      "passed": true
+    },
+    {
+      "name": "independent_negative_control",
+      "passed": true
+    },
+    {
+      "name": "correction_in_note",
+      "passed": true
+    }
+  ],
+  "method": "independent Decimal recomputation from 27 archived v85 cases, ZIP CRC and source SHA; no MATLAB execution"
+}

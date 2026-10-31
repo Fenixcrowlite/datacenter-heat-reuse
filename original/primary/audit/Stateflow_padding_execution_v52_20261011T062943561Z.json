@@ -1,0 +1,7 @@
+{
+  "command": "addpath('matlab');compare_finite_reference_v53('results/finite_interface_v53_20261011T062818_250661Z');",
+  "exit_code": 0,
+  "evidence_class": "observed_matlab_batch_receipt",
+  "timestamp_utc": "2026-10-11T06:29:49.5184196Z",
+  "log_path": "automation/logs/stateflow_padding_v52_20261011T062943561Z.log"
+}

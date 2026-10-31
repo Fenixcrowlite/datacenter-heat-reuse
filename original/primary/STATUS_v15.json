@@ -1,0 +1,93 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.15",
+  "updated_utc": "2026-10-08T22:04:04.084833+00:00",
+  "kind": "additive_research_and_mathematical_domain_checkpoint",
+  "inherits_status": "STATUS_v14.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v14.md",
+  "milestone": "M1_PARTIAL_PRIMARY_PROVENANCE_M2_IASE_ENDPOINT_DOMAIN_GATE",
+  "delivered": "Sintong Eq15-16 both-stream domain audit, independent diagnostic/reference and partial Park provenance",
+  "evidence": [
+    "audit/Sintong_IASE_domain_audit_v15.md",
+    "audit/Sintong_IASE_independent_review_v15.md",
+    "audit/Sintong_IASE_tests_v15_20261008T220043_794544Z.json",
+    "audit/Sintong_IASE_domain_comparison_v15_20261008T220043_794544Z.csv",
+    "audit/Sintong_IASE_primary_evidence_v15_20261008T220047_157053Z.json",
+    "audit/Sintong_IASE_visual_review_v15_20261008T220404_084833Z.json",
+    "audit/Park_IASE_provenance_v15.md",
+    "audit/Park_IASE_evidence_v15_20261008T220137Z.json",
+    "automation/logs/Park_provenance_checks_v15_20261008T220228_867073Z.log",
+    "audit/IASE_evidence_manifest_v15_20261008T220404_084833Z.json"
+  ],
+  "tests": {
+    "independent_python": {
+      "passed": 15,
+      "failed": 0,
+      "errors": 0,
+      "exact_flow_function_points": 1342,
+      "exact_alternative_points": 671,
+      "random_reference_cases": 2000,
+      "random_diagnostic_cases": 1000,
+      "comparison_rows": 66,
+      "seed": 15026
+    },
+    "provenance_integrity": {
+      "passed": 8,
+      "failed": 0,
+      "scientific_validation": false
+    },
+    "matlab_v15": "NOT_EXECUTED_RESEARCH_TASK",
+    "simulink_v15": "NOT_BUILT_OR_EXECUTED",
+    "stateflow_v15": "NOT_BUILT_OR_EXECUTED_AVAILABILITY_NOT_CHECKED",
+    "primary_author_simulation_replication": "NOT_PERFORMED"
+  },
+  "findings": [
+    {
+      "id": "F15-IASE-01",
+      "state": "CONDITIONAL_UNRESTRICTED_FLOW_ADOPTION_DEFECT_CONFIRMED",
+      "topic": "Return-only supply criterion can hide outdoor-stream capacity violation",
+      "interpretation": "alpha=epsilon*(1+r)/2, equal constant cp passive sensible exchange",
+      "required_bound": "0<=alpha<=min(1,r)",
+      "counterexample": {
+        "r": 0.25,
+        "scenario_epsilon": 0.8,
+        "return_in_C": 35,
+        "outdoor_in_C": 5,
+        "return_out_C": 20,
+        "derived_outdoor_out_C": 65,
+        "Q_W": 15075,
+        "Qmax_W": 7537.5
+      },
+      "author_annual_result_disproved": false
+    },
+    {
+      "id": "F15-PROV-01",
+      "state": "PRIMARY_BODY_TEXT_PARTIAL_NORMALIZATION_UNRESOLVED",
+      "topic": "Park Eq22 coefficient notation differs from Sintong Eq15; upstream Ham unverified"
+    }
+  ],
+  "research_status": {
+    "full_primary_signoffs": 0,
+    "count_source": "inherited v14; no new full signoff",
+    "sintong_eq15_16": "PRIMARY_TEXT_AND_VISUAL_VERIFIED_AUTHOR_IMPLEMENTATION_UNRESOLVED",
+    "park": "PRIMARY_PDF_BODY_PARSED_TEXT_VERIFIED_VISUAL_PENDING",
+    "ham_upstream": "FULL_TEXT_NOT_VERIFIED",
+    "primary_metadata_or_abstract_only": false,
+    "park_local_original": "NOT_ACQUIRED_WINERROR_10013"
+  },
+  "limitations": [
+    "Both-outlet bound is conditional on sensible passive positive-flow equal-cp source interpretation",
+    "No validated epsilon curve, geometry/UA, fan work, moist-air, frost or leakage model",
+    "No new calibrated annual result, MATLAB integration or Simulink/Stateflow execution",
+    "Legacy mathematical vulnerabilities remain as recorded in v14 until separate integration"
+  ],
+  "preservation": {
+    "previous_manifest": "audit/heat_pump_evidence_manifest_v14_20261008T215520_147043Z.json",
+    "previous_artifact_hashes_unchanged": 27,
+    "intentional_existing_edit": "Append automation/engineering_progress.md only"
+  },
+  "next": [
+    "Integrate heat_pump_step_v14 into a separate finite-boiler/TES/unmet-demand dispatch; review TES parameter/time-step validation first, then compare a deterministic multi-step trace with independent Python before a new Simulink model. Keep unresolved IASE algebra out of annual dispatch.",
+    "Visually verify Park p9 and acquire upstream Ham et al. (2015) primary model/author code to resolve the Park/Sintong coefficient normalization and unequal-flow domain."
+  ]
+}

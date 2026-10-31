@@ -1,0 +1,181 @@
+{
+  "status": "SYNTHETIC_COUPLED_FAILSAFE_REFERENCE_VERIFIED_BY_PYTHON_ONLY",
+  "physical_release_allowed": false,
+  "hardware_control": false,
+  "a41_input_sha256": "a9a88fef53a8211737835d6cd7efe1ba66ce9649eef42724445098f09fcc7f21",
+  "samples": 672,
+  "dt_seconds": 900,
+  "assumptions": [
+    "synthetic demand and REJECT A/B ratings",
+    "ideal immediate zero-capacity IT trip",
+    "2-step restart qualification and 15 kW/sample ramp are hypothetical",
+    "HP COP is a synthetic temperature proxy, not measured",
+    "HP condenser serves users first, then TES charging",
+    "unmet heating demand tracked explicitly; no pump/fan/electrical grid model",
+    "sensor lag applies to alarm, not independent zero-capacity interlock"
+  ],
+  "cases": {
+    "both": {
+      "samples": 672,
+      "max_T_C": 30.0,
+      "trip_steps": 0,
+      "unhandled_kWh": 0.0,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.875559481997,
+      "IT_generated_kWh": 28560.0,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07,
+      "trace_sha256": "56f2bf41381488d397174eef403329f567cf2f23c7e6efe58647e99da7e71e2f"
+    },
+    "main_only": {
+      "samples": 672,
+      "max_T_C": 30.0,
+      "trip_steps": 0,
+      "unhandled_kWh": 0.0,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.875559481997,
+      "IT_generated_kWh": 28370.394935,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07,
+      "trace_sha256": "ae18a71735f81ee8fc0e85e82a237983a80ea4d0f86879ce4e0fdb6d2d744032"
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_T_C": 42.6221091328125,
+      "trip_steps": 11,
+      "unhandled_kWh": 81.02291000000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8754453417857,
+      "IT_generated_kWh": 27043.32227873608,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07,
+      "trace_sha256": "6e646b22616d4c6d7e47edfd1d6be448a610998d3070298c74e205c1ed98fc81"
+    },
+    "neither": {
+      "samples": 672,
+      "max_T_C": 30.0,
+      "trip_steps": 289,
+      "unhandled_kWh": 0.0,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1017.4078100659789,
+      "IT_generated_kWh": 17083.442342500002,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 1.1920928955078125e-07,
+      "trace_sha256": "3449d9e3d9e76d93f0c44dc420c6e527096c63a5a15fa8658d96966dfeabb61e"
+    }
+  },
+  "sensor_capacity_sweep": {
+    "lag0_C8000000": {
+      "samples": 672,
+      "max_T_C": 42.6221091328125,
+      "trip_steps": 11,
+      "unhandled_kWh": 81.02291000000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8754453417857,
+      "IT_generated_kWh": 27043.32227873608,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag0_C16000000": {
+      "samples": 672,
+      "max_T_C": 38.77394555213448,
+      "trip_steps": 3,
+      "unhandled_kWh": 52.80189750000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8742662614388,
+      "IT_generated_kWh": 27652.60126623608,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag0_C32000000": {
+      "samples": 672,
+      "max_T_C": 35.00671478833117,
+      "trip_steps": 3,
+      "unhandled_kWh": 52.80189750000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.7815824822944,
+      "IT_generated_kWh": 27652.601266398215,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag1_C8000000": {
+      "samples": 672,
+      "max_T_C": 44.02269607792969,
+      "trip_steps": 9,
+      "unhandled_kWh": 77.111845,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8755502011506,
+      "IT_generated_kWh": 27283.16121373608,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag1_C16000000": {
+      "samples": 672,
+      "max_T_C": 38.77394555213448,
+      "trip_steps": 3,
+      "unhandled_kWh": 52.80189750000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8742662614388,
+      "IT_generated_kWh": 27652.60126623608,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag1_C32000000": {
+      "samples": 672,
+      "max_T_C": 35.00671478833117,
+      "trip_steps": 3,
+      "unhandled_kWh": 52.80189750000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.7815824822944,
+      "IT_generated_kWh": 27652.601266398215,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag2_C8000000": {
+      "samples": 672,
+      "max_T_C": 44.02269607792969,
+      "trip_steps": 10,
+      "unhandled_kWh": 80.90507500000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8755452699545,
+      "IT_generated_kWh": 27249.454443736082,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag2_C16000000": {
+      "samples": 672,
+      "max_T_C": 38.77394555213448,
+      "trip_steps": 3,
+      "unhandled_kWh": 52.80189750000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.8742662614388,
+      "IT_generated_kWh": 27652.60126623608,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    },
+    "lag2_C32000000": {
+      "samples": 672,
+      "max_T_C": 35.00671478833117,
+      "trip_steps": 3,
+      "unhandled_kWh": 52.80189750000001,
+      "unmet_user_kWh": 7.275957614183426e-14,
+      "hp_electric_kWh": 1294.7815824822944,
+      "IT_generated_kWh": 27652.601266398215,
+      "max_it_balance_W": 0.0,
+      "max_hp_balance_W": 1.4551915228366852e-11,
+      "max_tes_balance_J": 2.3436587071046233e-07
+    }
+  }
+}

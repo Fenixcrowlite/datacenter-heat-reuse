@@ -1,0 +1,36 @@
+{
+  "accounting": "Purchased HVAC electricity is dehumidifier + fan + steam humidifier + sensible-only cooling. External air heat is thermal, separate. Pool water evaporation latent heat is NOT added again. No dehumidifier condenser heat counted in cooling.",
+  "assumptions": {
+    "SFP_kW_per_m3s": 1.5,
+    "cooling_COP": 3.0,
+    "cp_kJ_kgK": 1.005,
+    "dry_air_density_kg_m3": 1.18,
+    "flow_m3_h": 3000.0,
+    "indoor_air_C": 29.0,
+    "steam_humidifier_kWh_per_kg": 0.75
+  },
+  "exclusions": [
+    "latent cooling and reheat",
+    "HRV bypass/frost",
+    "supply/exhaust pressure and filters",
+    "pump power",
+    "humidifier heat interaction",
+    "actual measured humidity and airflow",
+    "manufacturer equipment curves"
+  ],
+  "field_validated": false,
+  "hourly_sha256": "7758cda64fb64840d249cceb9d9fa59d63fc17310d7a4c1a9a32fde46e5f275f",
+  "limitations": [
+    "Outdoor RH is scenario-constant, Tout synthetic from C88.",
+    "SFP/steam/COP are assumptions, not manufacturer specifications.",
+    "No full psychrometric energy balance or equipment sizing acceptance."
+  ],
+  "rows": 78840,
+  "scenarios": 9,
+  "schema": "C102_HVAC_AUX_V1",
+  "source_C100_sha256": "8ce8e04be652540eb635afb75958077c716220a26f3471526264985e0862fff4",
+  "source_signoffs_added": 0,
+  "summary_sha256": "92dcd27810df2a5c22626f9f2173dd7fa2b60134723031edaa85a705d5b0ca43",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

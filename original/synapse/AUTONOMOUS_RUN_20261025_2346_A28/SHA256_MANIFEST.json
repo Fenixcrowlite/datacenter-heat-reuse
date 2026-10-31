@@ -1,0 +1,12 @@
+{
+  "field_calibration_gate.py": "5ae7a0b35857a934827f9a875ad44d7c99b16efe96eb372e5afae272241ad499",
+  "test_field_calibration_gate.py": "7e84b66bc7915cb4bce4e1fe803931c6b8c625cf584d791ae8d976d4dbfba94a",
+  "independent_crosscheck.py": "b65790b1ab6282618114a3794923a2a685fe91b39f51de6e317388e4c61634fc",
+  "FIELD_CALIBRATION_PROTOCOL_SK.md": "9e0b7fa995d4bbfc395c4864a4a8918d8ab9d376fd770624fc2f4dc699e87c36",
+  "FIELD_GATE_EVIDENCE.json": "2bfec2d9a2330aeea1edf6b1afb535765db77417e4425267fa3c63863835c09b",
+  "INDEPENDENT_QA.json": "1ca659b0746c14da6eb53ff48d0e823c4284af3272dd353008e0f3a21b52c207",
+  "TEST_LOG.txt": "95c1793df1f7a06f7bac1196e13dd31960ab4b1ed847f55fbfd814a343f9d915",
+  "example_synthetic/paired.csv": "b306b081f99656b9b79158100540be5fed47b934c29537d29a2ef7adff453290",
+  "example_synthetic/metadata.json": "f6fad55aa22bb2aa42304c155a0947bab21094aee0ce20a338ec910b73abfbef",
+  "register_a28.py": "edd81f5a77e81fcf6335fafd830197de9eab18df0cd3962b274ca3ec1204705b"
+}

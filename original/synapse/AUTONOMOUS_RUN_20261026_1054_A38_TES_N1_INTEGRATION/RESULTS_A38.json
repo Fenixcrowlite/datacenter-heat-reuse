@@ -1,0 +1,162 @@
+{
+  "status": "SYNTHETIC_INTEGRATED_REFERENCE_ONLY",
+  "physical_release_allowed": false,
+  "matlab_stateflow_executed": false,
+  "hardware_control": false,
+  "real_equipment_certified": false,
+  "assumptions": [
+    "synthetic v08 demand; v04 TES parameters; v07 IT thermal recurrence",
+    "HP COP proxy fixed by baseline interval, not a part-load curve",
+    "IT shed reduces only REJECT demand 1:1; other heat branches frozen",
+    "TES corrected without feedback from IT shedding or equipment dynamics",
+    "hypothetical REJECT 180/150 kW and hypothetical 40%/15kW shedding",
+    "no controller response delay, pump/fan power, pool or district dynamics"
+  ],
+  "samples": 672,
+  "interval_seconds": 900,
+  "fault_hour": 24.0,
+  "upstream": {
+    "v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+    "v04_sha256": "12343eef83ca67a801fe3ffbca06006a4f96a93e7b5c2914d99b7f730cc054e1",
+    "v07_sha256": "00e7350db86fe98773992cac6fc7f4a442d579f89d60ba75a278f902829a1252",
+    "a36_csv_sha256": "4fefcbd8bffdbedecf1894a8cfecab4ce052d2252e8c669b95394c5aa9fd99a1",
+    "a37_thermal_py_sha256": "4b036f70b83c9a70a1d3292354216d418d55edab48d4861212df8fbbce5288b1",
+    "a37b_tes_py_sha256": "7ce12bfac30d5bba2b2b4e16b0353fa7ef94a1d76ee1f5c30ab6fe49c7c6669f",
+    "a37b_tes_trace_sha256": "0b57a242555398ce72dcfe5f7ce42e21dd794179f4477274ab3483c9f2f05778"
+  },
+  "TES_clipped_intervals": 6,
+  "cases": {
+    "both/no_shed": {
+      "samples": 672,
+      "max_T_IT_C": 30.0,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 0.0,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_both_no_shed.csv",
+      "sha256": "531f5636851e83a637cdc752c52271b2b410a0bfe680f4ff6923527c42f14928"
+    },
+    "both/ideal_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 30.0,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 0.0,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_both_ideal_40pct.csv",
+      "sha256": "531f5636851e83a637cdc752c52271b2b410a0bfe680f4ff6923527c42f14928"
+    },
+    "both/ramp15k_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 30.0,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 0.0,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_both_ramp15k_40pct.csv",
+      "sha256": "531f5636851e83a637cdc752c52271b2b410a0bfe680f4ff6923527c42f14928"
+    },
+    "main_only/no_shed": {
+      "samples": 672,
+      "max_T_IT_C": 46.45633992036866,
+      "first_alarm_h": 147.75,
+      "alarm_intervals": 30,
+      "unhandled_kWh": 636.6096529268833,
+      "shed_kWh": 0.0,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_main_only_no_shed.csv",
+      "sha256": "bcd8c524514d8b918e341eeadc5a7edc66871d5154ef50e05b7b9d9f713727bc"
+    },
+    "main_only/ideal_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 30.0,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 636.6096529268833,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_main_only_ideal_40pct.csv",
+      "sha256": "435811d663ac6938512a8bc08c22b2233964ba2e926d14ead71d57e2d7200670"
+    },
+    "main_only/ramp15k_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 30.0,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 636.6096529268833,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_main_only_ramp15k_40pct.csv",
+      "sha256": "435811d663ac6938512a8bc08c22b2233964ba2e926d14ead71d57e2d7200670"
+    },
+    "backup_only/no_shed": {
+      "samples": 672,
+      "max_T_IT_C": 61.45609967962574,
+      "first_alarm_h": 24.75,
+      "alarm_intervals": 197,
+      "unhandled_kWh": 2543.427490627528,
+      "shed_kWh": 0.0,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_backup_only_no_shed.csv",
+      "sha256": "3fcedc1cbfe4848184381a958d373f184be74e955f2a03707e86bde775649e13"
+    },
+    "backup_only/ideal_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 30.0,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 0.0,
+      "shed_kWh": 2543.427490627528,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_backup_only_ideal_40pct.csv",
+      "sha256": "57e332d729f7127816a28f0aa434120233ff3f9426127117d87eab11eea26b2a"
+    },
+    "backup_only/ramp15k_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 33.168424659375006,
+      "first_alarm_h": null,
+      "alarm_intervals": 0,
+      "unhandled_kWh": 8.374332500000005,
+      "shed_kWh": 2535.053158127528,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_backup_only_ramp15k_40pct.csv",
+      "sha256": "f13c33a0de434befed0e2caecba518e08fa188e41cdb2e159bd1d3c521670838"
+    },
+    "neither/no_shed": {
+      "samples": 672,
+      "max_T_IT_C": 136.45609967962574,
+      "first_alarm_h": 24.0,
+      "alarm_intervals": 576,
+      "unhandled_kWh": 23037.73174452342,
+      "shed_kWh": 0.0,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_neither_no_shed.csv",
+      "sha256": "c57f1e3d6ea1677a89c16ac3785c6e7bf2d93deb18b481c5bb198facba33260c"
+    },
+    "neither/ideal_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 93.86283798199773,
+      "first_alarm_h": 24.0,
+      "alarm_intervals": 576,
+      "unhandled_kWh": 13497.150288523417,
+      "shed_kWh": 9540.581456,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_neither_ideal_40pct.csv",
+      "sha256": "dea18542ac54466636cd7b43df0ea555cb4a5549be21f2e21f32f10105ce65d6"
+    },
+    "neither/ramp15k_40pct": {
+      "samples": 672,
+      "max_T_IT_C": 93.86283798199773,
+      "first_alarm_h": 24.0,
+      "alarm_intervals": 576,
+      "unhandled_kWh": 13536.330589523415,
+      "shed_kWh": 9501.401155000001,
+      "max_DC_residual_W": 1.0186340659856796e-10,
+      "trace": "trace_neither_ramp15k_40pct.csv",
+      "sha256": "662dd5f2ad935f3e63244997d0013cbaaf6ec298649b642f8807cb8aa99d0c03"
+    }
+  }
+}

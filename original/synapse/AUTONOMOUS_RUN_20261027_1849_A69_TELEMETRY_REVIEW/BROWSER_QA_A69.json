@@ -1,0 +1,34 @@
+{
+  "browser": "Chrome CDP isolated, actual CSS viewport",
+  "physical_release": false,
+  "status": "PASS",
+  "viewport_results": {
+    "1440": {
+      "banner": "SYNTETICKÉ TESTOVACIE DÁTA · FYZICKÁ VALIDÁCIA NEPOTVRDENÁ",
+      "bodyWidth": 1100,
+      "innerWidth": 1440,
+      "ready": "complete",
+      "scrollWidth": 1425,
+      "series": 4,
+      "svg": 2
+    },
+    "320": {
+      "banner": "SYNTETICKÉ TESTOVACIE DÁTA · FYZICKÁ VALIDÁCIA NEPOTVRDENÁ",
+      "bodyWidth": 320,
+      "innerWidth": 320,
+      "ready": "complete",
+      "scrollWidth": 320,
+      "series": 4,
+      "svg": 2
+    },
+    "390": {
+      "banner": "SYNTETICKÉ TESTOVACIE DÁTA · FYZICKÁ VALIDÁCIA NEPOTVRDENÁ",
+      "bodyWidth": 390,
+      "innerWidth": 390,
+      "ready": "complete",
+      "scrollWidth": 390,
+      "series": 4,
+      "svg": 2
+    }
+  }
+}

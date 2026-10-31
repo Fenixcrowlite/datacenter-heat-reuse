@@ -1,0 +1,1623 @@
+{
+  "format": "dchr-source-archive-v1",
+  "created_utc": "2026-10-31T13:02:26.665688+00:00",
+  "files": [
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "C102_AUX_HOURLY.csv.gz",
+      "sha256": "7758cda64fb64840d249cceb9d9fa59d63fc17310d7a4c1a9a32fde46e5f275f",
+      "bytes": 2605558,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "C102_AUX_SUMMARY.csv",
+      "sha256": "92dcd27810df2a5c22626f9f2173dd7fa2b60134723031edaa85a705d5b0ca43",
+      "bytes": 1331,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "C102_FINDINGS.md",
+      "sha256": "25f8be534f688f7581b20412f8ff910496a27fb95259df14e31f25c7d37ecc41",
+      "bytes": 4736,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "C102_INDEPENDENT_QA.json",
+      "sha256": "8cb2b9e3e808fa5ef75feb9fbd477f8f50a0391ea8b955a0c7bbf4a010ca314b",
+      "bytes": 595,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "C102_METADATA.json",
+      "sha256": "e03adbaa97cb6f0e3fdf2010607a0980db2f897206efb8418cc6f2db271102e3",
+      "bytes": 1461,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "CANONICAL_RECEIPT_C102.json",
+      "sha256": "99a58b4410adf44d46fcdec736b3b001dcbf52c594edaed3cae2c0ac2157e4ad",
+      "bytes": 298,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "EVIDENCE_C102.json",
+      "sha256": "7e94e5c956316a99e5f15831c32f12190922b1685a1d91891a2c0ff5daeedbb0",
+      "bytes": 1547,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "b41bbddebce7583f5d28271033faebc2b8784f6923b33a3d60d9e9cd7b4d73d1",
+      "bytes": 2334,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "SHA256_MANIFEST_C102.json",
+      "sha256": "f845ca4bf0bf48ca7edcb61d11ca512e4c72ffc01608d8413a95eb262744f573",
+      "bytes": 1274,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "c102_hvac_aux.py",
+      "sha256": "8b8e696ec1f0ef720f15c1a29265b6e01e5eb02af229a2ca98290fb91bdfc76e",
+      "bytes": 6093,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "qa_c102_independent.py",
+      "sha256": "786e2aec487f43685f430c5c0cfc8d6b29a61d7502d8fc1fc0bd44a61a8c85b9",
+      "bytes": 5350,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+      "path": "register_c102_evidence.py",
+      "sha256": "d8dd9d6468505ed775dd46cf0f5c1822b9fd69d7f454c47942cf5f05ff8e8a16",
+      "bytes": 4651,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_FINDINGS.md",
+      "sha256": "7c6655f2ef0d13cbf565245f23d365fe87b54cdcea10223f5952c8c40b40f736",
+      "bytes": 6621,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_INDEPENDENT_QA.json",
+      "sha256": "49cc4c06c3ee966d3ef19b4ae2f798a3fd33b1d7c7724350874a45721e9cbefd",
+      "bytes": 601,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_METADATA.json",
+      "sha256": "b848412d1e8b94409a951ca6c34a9ebe2a14f80c98c742e624ab02bf5c9316f6",
+      "bytes": 1561,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_PHYSICAL_SUMMARY.csv",
+      "sha256": "e389de893a34a3ce4bacf6d8ca50bc72634d4634cc08ccea78fff027dddaceb4",
+      "bytes": 2909,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_PSYCHROMETRIC_HOURLY.csv.gz",
+      "sha256": "15547bfd196152440ec1870af182ef20a79ab1004790cf71d1de9869b447228d",
+      "bytes": 5340010,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_PSYCHROMETRIC_SUMMARY.csv",
+      "sha256": "1aa45c1bd88da9eadab2a57ed9a48a2ba442624e11dca0251b1d1d5c6e826e0b",
+      "bytes": 2909,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "C104_SUMMARY_QA.json",
+      "sha256": "9e970b4230d8956be4ad93b9015dcd91eb4f1b1984217f1821b53d64815eb886",
+      "bytes": 210,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "CANONICAL_RECEIPT_C104.json",
+      "sha256": "9aa74a4624257ac88eef28fada3da5bb3634245ec4f535b1dd1815590a285ff7",
+      "bytes": 303,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "EVIDENCE_C104.json",
+      "sha256": "1c1fd7a23106b72360bb1f5ef95ac402cfb304996759dc80e9c911eab34e08d4",
+      "bytes": 1751,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "14b420d92833fdecc916bab4e842c0289e63d37d5dbeb079259e2ffe4be40540",
+      "bytes": 3052,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "SHA256_MANIFEST_C104.json",
+      "sha256": "3e34dadbdac5fcffb15300ff7c67b97676074df1aab59d0b786464c858542a4a",
+      "bytes": 1869,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "c104_physical_summary.py",
+      "sha256": "3f18d88b9204d3350260d00eee7b703801571a8141123e36460cbb59c41cf58b",
+      "bytes": 2886,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "c104_psychrometric.py",
+      "sha256": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+      "bytes": 9175,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "qa_c104_independent.py",
+      "sha256": "27e0ca1db238377e72cc5ffc6bc06f4b3daa64883682889c710411c196758068",
+      "bytes": 6207,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "qa_c104_summary.py",
+      "sha256": "ba0426ff87f6eb0639084e0a83388bddeddac0c07b81d43c20a34620654c106d",
+      "bytes": 2183,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "register_c104_evidence.py",
+      "sha256": "7dac4cc8293f08cd2e4d0858c071507054dd45f7fcc6d6c10110be297892e778",
+      "bytes": 4626,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "C106_BYPASS_HOURLY.csv.gz",
+      "sha256": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+      "bytes": 3819619,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "C106_FINDINGS.md",
+      "sha256": "d94ce80b8ab40b8dee22548a00588f7c6c193fdc968353bb8242406bd1fe8426",
+      "bytes": 4161,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "C106_INDEPENDENT_QA.json",
+      "sha256": "5dcd65716e9d891f79c6b90e769477068bbd4ac92fa200e1bdf768057a16d76c",
+      "bytes": 718,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "C106_METADATA.json",
+      "sha256": "25f03c7f426542fc9cc9bd3ff5d52a5f5a67b13c135987874fc268aea8e41bff",
+      "bytes": 1197,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "C106_SUMMARY.csv",
+      "sha256": "83f27727ca080ece530ec645a0ba8b59180c0a1434d52d1866590ce9d71b3a5e",
+      "bytes": 1495,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "CANONICAL_RECEIPT_C106.json",
+      "sha256": "ab9bf06da9ab6bf5f5eda63d9a97d39fb02c0bbdb2e9719dea732f84ed21e8f0",
+      "bytes": 302,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "EVIDENCE_C106.json",
+      "sha256": "10e6cec90dfad7f64d9fd0593388f82bd21901651600f60c01487fa93fd2a6e0",
+      "bytes": 1447,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "3dcf25d3ba7fd871f177689bb1bd366c0acaddc70ffbc1aa29b8db75ae880fa9",
+      "bytes": 2655,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "SHA256_MANIFEST_C106.json",
+      "sha256": "424559fc76b34be2a54324cd6dcddfcedd0d8439bfdb5b11946ecb91fcb3053e",
+      "bytes": 1389,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "c106_bypass.py",
+      "sha256": "53037892c9964329206528372c9cd32d68906e1a031a0c72072a0b2e5ae3473d",
+      "bytes": 7007,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "qa_c106_independent.py",
+      "sha256": "52a6a0779b6f1ac857ec7f3811a60940db1b69bc2c805d3ee027018c1eb2c3dc",
+      "bytes": 5772,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+      "path": "register_c106_evidence.py",
+      "sha256": "51967169372fb979206a6a10c20915783d84fa85964596fc7db48c47c9feb50a",
+      "bytes": 4169,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "C108_FINDINGS.md",
+      "sha256": "f50591fda032048d6cbca8956acd043ce59a8f455439c510c33b43bc99daaebd",
+      "bytes": 5496,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "C108_INDEPENDENT_QA.json",
+      "sha256": "27fc6d23b6984d96cd899c0ec3ee36667bdd839aeefa21b78e96ce0164b9e080",
+      "bytes": 321,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "C108_METADATA.json",
+      "sha256": "0d209218f0a79c5f3a25bcc5962c4f364eb82911aa46168fce503525ea52ff9b",
+      "bytes": 2654,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "C108_PROVENANCE_QA.json",
+      "sha256": "31d15d251a697f9afa7c6bab013f16120f5cf1796d14e35e1318b648aa3aa610",
+      "bytes": 260,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "C108_SHARED_HOURLY.csv.gz",
+      "sha256": "7b243871e1ab13abc4c35e6ee8ae9bf85950bc546adf39c5f5383f1d54ac24d4",
+      "bytes": 5668892,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "C108_SUMMARY.csv",
+      "sha256": "e4ce4ceb7fe7d58ee206c2e5de1d5bdbef0f8b7019c099aec78f503eeda00a26",
+      "bytes": 4547,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "CANONICAL_RECEIPT_C108.json",
+      "sha256": "44bb3e2446fb08309557645457e54a77454c6f01d6074ab4e069b866fd055e07",
+      "bytes": 303,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "EVIDENCE_C108.json",
+      "sha256": "e0ce0d6927f98dc3326684ab258185fcdc9a0a9ebc32247ad9f9236af94af785",
+      "bytes": 1670,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "2e6b630a39fe88ee3291dc9b3d72db29d6c74c1a14762625fbcc06fe08896fd3",
+      "bytes": 3846,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "SHA256_MANIFEST_C108.json",
+      "sha256": "64ddc5fe27da8d47fbd9c2290adcf2a5c5b1e31744dfd005510b6be3fe0c1428",
+      "bytes": 1737,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "c108_shared_dispatch.py",
+      "sha256": "e3695e53d9365b9420d18e44eac0a7ba00223c02b892712dec6f6caff6164417",
+      "bytes": 10197,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "qa_c108_independent.py",
+      "sha256": "646df43ff5412b468d82195a7df602b25c297b4b0b02bbb2c652128b29b758cb",
+      "bytes": 6227,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "qa_c108_provenance.py",
+      "sha256": "6315abc32509c54b988260abaed2a9375fdfd74d211aad629e0e597edb75ff47",
+      "bytes": 1838,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "register_c108_evidence.py",
+      "sha256": "545c9e4daa1b559fdf2daa004386886c0578b92d2f181476fce5c5c471956975",
+      "bytes": 4587,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "C111_COUPLED_HOURLY.csv.gz",
+      "sha256": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e",
+      "bytes": 3720741,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "C111_FINDINGS.md",
+      "sha256": "9894dcfa94a2d0e8b87bdfcdba08dce89468312180b1ca5a6707b496493d03c3",
+      "bytes": 3410,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "C111_INDEPENDENT_QA.json",
+      "sha256": "e37163fd11520dd9331b971b5c5a929c7a64f87ee0969ce498c7bc192376c168",
+      "bytes": 468,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "C111_METADATA.json",
+      "sha256": "07f1149758783f264f1676c5b3ecf2ef00f1da9077996f08eb2e8c0d7e88f14a",
+      "bytes": 1507,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "C111_SUMMARY.csv",
+      "sha256": "db3faab98034f6358b710d19b49c07bc34cc285188a9d191e04336de68496103",
+      "bytes": 3763,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "CANONICAL_RECEIPT_C111.json",
+      "sha256": "c8f4dee9407fc9606d0824bd31601ad85966791d89fca1c6eb3d8df1f6e346aa",
+      "bytes": 303,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "EVIDENCE_C111.json",
+      "sha256": "4132b1b5eb93f400644cd7af074bbb1ad22eff6f359b09321833b5bff84e203b",
+      "bytes": 1293,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "0a94c5979e0af2d061a2a7eba9333656998de607954a9d73e154e3ab424757c0",
+      "bytes": 4565,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "SHA256_MANIFEST_C111.json",
+      "sha256": "d3e5453fb3abc43a5cfbdb728a180f07d6eb9455cf20865b3057c73431502721",
+      "bytes": 1345,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "c111_evap_feedback.py",
+      "sha256": "dba0c4a1d1fc7b568b83e62dea4548c28df0b755720e84f2f5d4c3b4cdfb1395",
+      "bytes": 8813,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "qa_c111_independent.py",
+      "sha256": "06674f2017ae950ad97438060c1892ee45bf05c8e7cf7d8f3cd9b6f340c1d19f",
+      "bytes": 5251,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "register_c111_evidence.py",
+      "sha256": "c8a6694607277e1ce20509b26de774cae39a6386f616c7cf138a4ac12ffdc7ae",
+      "bytes": 4298,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "C112_FINDINGS.md",
+      "sha256": "47ac0fcba200c13cebf43726ec6713ca7856f09dcd3762f847db483c502aa71a",
+      "bytes": 3362,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "C112_INDEPENDENT_QA.json",
+      "sha256": "94b191617039f7526dce20a0e5d600a26f9e9dff5a2171b8c34f0750c6cac4c0",
+      "bytes": 534,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "C112_METADATA.json",
+      "sha256": "2124c64a89589a4c0d88043e2ea31883b23242aec6392e55f56440736d565df9",
+      "bytes": 1868,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "C112_ROOM_HUMIDITY_HOURLY.csv.gz",
+      "sha256": "2c0cd40d6919679c01316d20fcf7770f7ebfe124543a445a6efa5cbb73e2c339",
+      "bytes": 4163413,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "C112_SUMMARY.csv",
+      "sha256": "8104d9e18c0debc630c61bcbe926a76bfa1cdc2935af9c71c8ce8455fd7bb72f",
+      "bytes": 2477,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "CANONICAL_RECEIPT_C112.json",
+      "sha256": "3e3ef790f042038b4b0d33f374622e789a3dcb775723da8e17d77afba4b6edd9",
+      "bytes": 305,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "EVIDENCE_C112.json",
+      "sha256": "7db570db44e4a6a8a1530d7dbf551068077be84fba1c97066f1ec9af764c422f",
+      "bytes": 1294,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "a553c88f48cf7bc92e8b0c17f1575c108491fbf242e5736be43f1649ec61ea11",
+      "bytes": 2994,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "SHA256_MANIFEST_C112.json",
+      "sha256": "b9aa031d09a74b6de1344cec16c2d3541311a164bf7af8c0202e75c50c6ecad5",
+      "bytes": 1353,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "c112_finite_humidity.py",
+      "sha256": "6dc6c77adc479f9bdbfcc2c5937aee6b8f31b6b02764d93b0ffefab95b84ebc8",
+      "bytes": 8952,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "qa_c112_independent.py",
+      "sha256": "63a1cc23f5c8188f045ca810fc1e715d4457eeba22fa9def4e1708f86517365d",
+      "bytes": 5850,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "register_c112_evidence.py",
+      "sha256": "f3867bbd278217f2a0c5c80437eaef46277306899b40239f37dd69847e4c5f4f",
+      "bytes": 4280,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "C114_ASYMMETRIC_CAPACITY.csv",
+      "sha256": "fe27a033f3e075ea494bc2b0d1d89a6d79ed40ad2ea6e5b1c2744ac9534df574",
+      "bytes": 555,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "C114_ASYMMETRIC_METADATA.json",
+      "sha256": "0fe90cf5eb0d3654822fe2a9ee6bb8b430c2eb6d57f051fd065c4ad317a5bf0b",
+      "bytes": 1855,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "C114_CAPACITY_ENVELOPE.csv",
+      "sha256": "47ac8ff94c319ecdd4c9b5bfd6b34f30d79303e3e65919268de7a5ca74af426d",
+      "bytes": 1600,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "C114_FINDINGS.md",
+      "sha256": "17e3e78d82a47e5a5776ceb4a7565d54b1db013348851a6fa8348c689e3f73d2",
+      "bytes": 2783,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "C114_INDEPENDENT_QA.json",
+      "sha256": "b2c53b3a55a07bcd5c513a363cb5eed8683f0853ff13e7f704ba52b1350d1f78",
+      "bytes": 302,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "C114_METADATA.json",
+      "sha256": "9ff6489b946c528597323f4db6a72f32a0654f56636dd74c37f32872637c77eb",
+      "bytes": 1922,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "CANONICAL_RECEIPT_C114.json",
+      "sha256": "56366a717b8d99224785f708af735b1525596e78bdd21bb7ba445722835ebbbf",
+      "bytes": 301,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "EVIDENCE_C114.json",
+      "sha256": "e3c86c75e13ff7fd61c30e6ead155540b383c7c3e224856574a3489f450efb49",
+      "bytes": 1328,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "6668c51429175e8d256a15a3131dccebcbb01a09c59535b35424e9c87ac57e39",
+      "bytes": 2542,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "SHA256_MANIFEST_C114.json",
+      "sha256": "34fa9d305b5e3d62445240e291dd73b6221c53b056324df04ac3c9a4387006cf",
+      "bytes": 1683,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "c114_asymmetric.py",
+      "sha256": "d15f6ec7eafdb8bb55ea75372f22d1cbf4db831f6c27e59bfcb77108558e0f31",
+      "bytes": 3941,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "c114_capacity_search.py",
+      "sha256": "63d10d60983c6a07fcb1240e9854a48db3c42068ea317dae0624fe3e9a0fd97d",
+      "bytes": 6457,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "qa_c114_independent.py",
+      "sha256": "631b3012be30a25cd4dd9bfb30eb775a997dbb0a4bef8f02459285048935dc18",
+      "bytes": 4344,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "register_c114_evidence.py",
+      "sha256": "d053560f7f99bcbe0221cab5bcb28b6e01dfc6cc6bc3f335a847222490a007a7",
+      "bytes": 4979,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "C116_FINDINGS.md",
+      "sha256": "65f9ad62dda5c5aafe7f6ee59395d0fdb024eff053476863ab93b855b962a892",
+      "bytes": 2174,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "C116_INDEPENDENT_QA.json",
+      "sha256": "992f814178e2f3e4f4fddae6385ae00e2878a903b510528232c4f304d01d62d5",
+      "bytes": 1308,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "C116_METADATA.json",
+      "sha256": "88c75ed40a14aeb6ddc14d0766ea3dd939726978a795723fbf4482a46703c8ff",
+      "bytes": 1746,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "C116_SUMMARY.csv",
+      "sha256": "9f24bb96943b306d05f2d8cc8adee3c34980336acc3280508110682568d82d26",
+      "bytes": 2359,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "C116_TWO_WAY_HOURLY.csv.gz",
+      "sha256": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf",
+      "bytes": 4941983,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "CANONICAL_RECEIPT_C116.json",
+      "sha256": "761063200a9d1fa53b49a1c2ed5dd11f0b4bf332b842634bbefed000e785293e",
+      "bytes": 305,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "EVIDENCE_C116.json",
+      "sha256": "e749ba84fca48bee067f36628621544d7b9b6aaa78107473b46e3c4bc55db658",
+      "bytes": 1278,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "b2b42a60d89edb6575d9cc059259cc910d70793268fe298fd01c0016b9535e65",
+      "bytes": 2373,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "SHA256_MANIFEST_C116.json",
+      "sha256": "40b5b9698d3ec5b85120c2e8856fbeacd61b94c96101ab2d809f853218549d9d",
+      "bytes": 1304,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "c116_two_way_coupling.py",
+      "sha256": "54217d21cc124ca07adf631e5442b2a805b4b1cc38783a7fe2eca65ae063263b",
+      "bytes": 9267,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "finalize_c116.py",
+      "sha256": "434f1e4d3bc4b746b524fe5a9878b97628b40e78934b2c8b02fb5770ae0f6426",
+      "bytes": 4345,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+      "path": "qa_c116_independent.py",
+      "sha256": "dc2b70d9e069dbbe1ca1d04eee2c071b7c9104219cc9dea0f76602c5259799c8",
+      "bytes": 6189,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "C118_FINDINGS.md",
+      "sha256": "ef32cb126faf4f0eb58af2b3d42b66d4372756d46abdda03049cb565baa471cd",
+      "bytes": 4723,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "C118_INDEPENDENT_QA.json",
+      "sha256": "545332661c1342d46ccdc63cf1d2e32571939033cd2cf924115d66c0bdfc91ee",
+      "bytes": 764,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "C118_METADATA.json",
+      "sha256": "8074c6c1315fc9c2874ef7059a8b1d85b3e5b90454f9dfb52abc9c67bc7f1626",
+      "bytes": 1663,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "C118_SUBHOUR_STRESS.csv.gz",
+      "sha256": "27220733cb23e36d797ccb1805d062407744634f973ad785eccc3f3ba861b6e0",
+      "bytes": 8510968,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "C118_SUMMARY.csv",
+      "sha256": "6ea88dba94ee54155380a224bf07649ace30d6681d3625b2e520a53bc65f8e7d",
+      "bytes": 4130,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "CANONICAL_RECEIPT_C118.json",
+      "sha256": "0046c74aad26e368b6edc55e210fa6021b2acb2ff6d380c954a88698c077781c",
+      "bytes": 300,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "EVIDENCE_C118.json",
+      "sha256": "96d985f3f686046f7d0e67e61813ca25083211f57fdf77f207a10ad1930a9eaf",
+      "bytes": 1269,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "be78e77fb8741a006c6a58a5cb33ce1e374628fa4eb6ae82bae7fe9bc0aaf79d",
+      "bytes": 2386,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "SHA256_MANIFEST_C118.json",
+      "sha256": "51a6d770334896dcd2f1f5a0032dc8a6a8fc36230de372557d6ff162be472e98",
+      "bytes": 1298,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "c118_subhour_rh.py",
+      "sha256": "a2fa7fb4d45f3c020813c6cd67059e1fad11c380a558afc5e4235f15e4e693ce",
+      "bytes": 10987,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "finalize_c118.py",
+      "sha256": "1785d9a585dfe8cb152cfe9341b9773c5b213c4bfc1482491610e78ac593b17a",
+      "bytes": 4743,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "qa_c118_independent.py",
+      "sha256": "51c422035fd64435335c9b25ec1becdab31152b88ee109edb13f252bd3262531",
+      "bytes": 6755,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "C120_FINDINGS.md",
+      "sha256": "1e9b80b6e3164631b484d700f9baba2814ff1f8711e07e50f1c1709843d6aa7f",
+      "bytes": 4771,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "C120_INDEPENDENT_QA.json",
+      "sha256": "11b6810b4d79031c2e65ac9fc943b3e834526f01d073c49cb60e45368c2cb33b",
+      "bytes": 341,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "C120_METADATA.json",
+      "sha256": "4bc27cfd141262c24b10bc10b61e72b952fb32754b45d917a66cbc15839b0e30",
+      "bytes": 2236,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "C120_QUARTER_CONTROL.csv.gz",
+      "sha256": "8eddd1fcd5d5a456deaf4dd8994c38b063089dd0a405dae1e43761ace19b0f4c",
+      "bytes": 4291336,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "C120_SUMMARY.csv",
+      "sha256": "5437315621b39af9a083f4739ee91a61a6d8ce6cdc0ed08c24a7ff109e3b67dd",
+      "bytes": 2900,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "CANONICAL_RECEIPT_C120.json",
+      "sha256": "9b2f777e5cac968a43381319bd49cc8704df0c2d5433f0f4a3fd61a35bc547e8",
+      "bytes": 305,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "EVIDENCE_C120.json",
+      "sha256": "479f6d35cff9dbc209f01f78c2c9c4b74e2bdf4c13e4447e6854e00dfa19b98d",
+      "bytes": 1125,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "72a152537c58b44d4cc2d2c971505927518d5c2d045385382c65d35c7a0cef65",
+      "bytes": 2945,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "SHA256_MANIFEST_C120.json",
+      "sha256": "b42b6b6334b2362192951df518bc4ae1c0c83e30e087820200fddb129781cc28",
+      "bytes": 1303,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "c120_quarter_control.py",
+      "sha256": "d3392778eaf6046646cf503656603d5768484beffbf714cefe91d93ef21a9a66",
+      "bytes": 9240,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "finalize_c120.py",
+      "sha256": "bec66d2a2d1d791d9432642a58900f9621be235248e9a3461468c6d5136c0a0e",
+      "bytes": 4128,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "qa_c120_independent.py",
+      "sha256": "9fbabbfd92a84bb252f6d742bd277faa2239976f26cf7d361763264995e4cf91",
+      "bytes": 4907,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_DELAY_HOURLY.csv.gz",
+      "sha256": "d105be559a7eb01cdd92afa7a50073a2eda6687bdf8bc94392f03d165afc63ec",
+      "bytes": 4302259,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_FINDINGS.md",
+      "sha256": "8ccb5f7c36f0ff7a56b349ead0af8dd8bbaff5af110accca1deaa29dfc6cc638",
+      "bytes": 3029,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_INDEPENDENT_QA.json",
+      "sha256": "2fcf1b34b94d7d8994e3da727a6da957be9237474d1db9aea81ce2a75b6554e3",
+      "bytes": 583,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_METADATA.json",
+      "sha256": "0049f3126ac2a4a4b640acbfdaa0058fd5f6c68dfc1a4eb80179a55cae60099c",
+      "bytes": 2397,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_QA_LOG.txt",
+      "sha256": "a1be8a0e41b27afb582e5ee5a1ceb38039bf68a31552589a6d6963285dbc5cd6",
+      "bytes": 586,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_RUN_LOG.txt",
+      "sha256": "fd0faebb3e51649dde4afc20093445ca181caa66b94c9a71daa0599a6e66124c",
+      "bytes": 1356,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "C121_SUMMARY.csv",
+      "sha256": "022b7b45be630ea3d14860076e5ecdf32e14ca2c08cc8a2a35a6571677a4b584",
+      "bytes": 1032,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "CANONICAL_RECEIPT_C121.json",
+      "sha256": "3ea47bdde215d2572344ca528c3e8677d44c8e8c13d8390a9a03547fffd0b08d",
+      "bytes": 303,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "EVIDENCE_C121.json",
+      "sha256": "b4ce5920b09db79688ab49070c487095f281911e32e01752c4537bb3121d8e17",
+      "bytes": 1115,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "acb695a28fb4355bc9c8071bb4e2a9d1f25f3038edee2bbbc52613668efd443c",
+      "bytes": 2643,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "SHA256_MANIFEST_C121.json",
+      "sha256": "220860cda1ef5d5487822e17f223233c39c4f844e5f8ff633da7efb5f3153668",
+      "bytes": 1582,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "c121_delay_sensitivity.py",
+      "sha256": "0f0662c0fd92f209e2e13a1cfa6c6b4842a23a3aaac7fe43d3d9286a9a084e2d",
+      "bytes": 7065,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "finalize_c121.py",
+      "sha256": "12fffe95c7657e5c617861cac25477d42bd41999216ba52c2e1d0dce1d43f551",
+      "bytes": 4240,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+      "path": "qa_c121_independent.py",
+      "sha256": "e52e144e0b7192832660dcdf032a17cbc8c11fa47ea134de99b9f25fef8f46e4",
+      "bytes": 3538,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_FINDINGS.md",
+      "sha256": "5fd08ff9b6833209a9b9a6c6012f3f53d7eda5bbe6b4374cc4b9f9ffa8b3beaf",
+      "bytes": 1642,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_INDEPENDENT_QA.json",
+      "sha256": "3662d76802848b6199d7e2cf12e5ae9da4640348451cfcbe03e56d1bdcec65c7",
+      "bytes": 312,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_METADATA.json",
+      "sha256": "3a971648186f6f524ff1c12a46c1fbb3ec41134dc5019da3f2d793a9ff650d28",
+      "bytes": 1198,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_QA_LOG.txt",
+      "sha256": "190ce37f5dcfbab400b7ce2c3e1b2677b77c182eca979554415262241c28b2cd",
+      "bytes": 285,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_QUARTER_AIR.csv.gz",
+      "sha256": "bc73e47fc74182b782293ab655fd8b8bcea5a4aa7a01f8b1ff4c8f860caf76d0",
+      "bytes": 10793715,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_RUN_LOG.txt",
+      "sha256": "fb25b5111f56d332a9eb60c4926763cfd4b0e0b6cf6b9838780233435c7a1a3b",
+      "bytes": 3826,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "C124_SUMMARY.json",
+      "sha256": "9864048528df214966cd677ff6d1df92ff84c5a245a698ee794d9673786b3333",
+      "bytes": 1625,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "CANONICAL_RECEIPT_C124.json",
+      "sha256": "6aa9605b8bc8e96df04e6f7b2e6ec7e5d2ba870a4ef74bd26062953b3363e688",
+      "bytes": 299,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "EVIDENCE_C124.json",
+      "sha256": "3f1d72496ec3677294f72f32f9030958e92dbebf0af4aeb1c11b0a6767abb4b0",
+      "bytes": 1109,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "4398ce7ecbd4fcb1f3529d03c2638e0174d01d593963695621b0f985007488b6",
+      "bytes": 1378,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "SHA256_MANIFEST_C124.json",
+      "sha256": "84c7fc6fdc51b51f822e63c3cab85b831e39fd026da2552aef4774a01e9dd32b",
+      "bytes": 1708,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "c124_air_enthalpy.py",
+      "sha256": "998d5da270714a1b84dfecaa774578174e7815fe4178af28920d0a24d4da3b11",
+      "bytes": 8006,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "finalize_c124.py",
+      "sha256": "0576dabcf0068569219561d72f94181cbc433cf7fdf04caec4f633728815a139",
+      "bytes": 7170,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "qa_c124_independent.py",
+      "sha256": "20fbf437e4cb879a7e20fceb1c13af12609d466f51f073e8baf83b5ea0a4ad68",
+      "bytes": 2818,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "qa_c124_independent_rejected_v1.py",
+      "sha256": "03b6056e9979f2a0abf2d5133aa81ac1c7f69b080e49e8f60638d9907b370f32",
+      "bytes": 2674,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "C125_FINDINGS.md",
+      "sha256": "54a089d2409a958ed6c8066ff4772a6a0a7a3f77f97e7cfad11a1a6a7ec64505",
+      "bytes": 1948,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "C125_INDEPENDENT_QA.json",
+      "sha256": "428b5489c0a54fe18f0c5f66215780d0179006d26e759138ccbe384759a0e344",
+      "bytes": 403,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "C125_METADATA.json",
+      "sha256": "ce62b731d825c1e3febd683ee61e68d23213e4d493c99657a6dffb1b66021ef5",
+      "bytes": 1108,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "C125_POOL_AIR_QUARTER.csv.gz",
+      "sha256": "f43c92e3a9bc3ee7ae61952ec7148ab01fc02eed296dc1c8687592779e292173",
+      "bytes": 10033498,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "C125_SUMMARY.json",
+      "sha256": "29d37b3449e123b8a63348d9063e43be8e8d29d5d97306e30817fb7f062360bc",
+      "bytes": 756,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "CANONICAL_RECEIPT_C125.json",
+      "sha256": "705510fa9201a6393e231ffdbe6f31b67e1919f327e269990d987cd09e30f3d9",
+      "bytes": 305,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "EVIDENCE_C125.json",
+      "sha256": "38d5632506a78883b58a14c7d49aeacb8190c565846346b13465d645ccaa9477",
+      "bytes": 1157,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "8ef46bea6c4dc4a90c81c79abe48da0481a7a432863380a0f2099ef556f65c23",
+      "bytes": 1253,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "SHA256_MANIFEST_C125.json",
+      "sha256": "239eaa39d6fa362d0bffed017f3fde2f03a2d92390c38976098294c5caa81800",
+      "bytes": 1276,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "c125_pool_air_replay.py",
+      "sha256": "4762f5d9206f0e4dea986028a711e50ab4ac2720a6db09ccd38c09bb1035ace6",
+      "bytes": 6847,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "finalize_c125.py",
+      "sha256": "f3c222b6cf251ae5e487e69f999ef978da8aab51e4744e6264a1c7608b217f4e",
+      "bytes": 7627,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "qa_c125_independent.py",
+      "sha256": "7bebe5c6118f696a9e6b54529a34b68bd4e84b9cd31652e97d8e98693cc7ef2a",
+      "bytes": 4494,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "C127_BOUNDED_QUARTER.csv.gz",
+      "sha256": "428c52fb8c2749cb2769632cb317e0d6c2e6268225b9e9f04e624ad48c4a056a",
+      "bytes": 4279134,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "C127_FINDINGS.md",
+      "sha256": "f72113d3ddd3d00b734249deb56af78440f8ec2fdf9a6252280ba35f24fa8d98",
+      "bytes": 2366,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "C127_INDEPENDENT_QA.json",
+      "sha256": "969b1f339254fe6d7243f1db7beec09d93c478a4d94e609ae7e0962f916e89e2",
+      "bytes": 767,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "C127_METADATA.json",
+      "sha256": "9f216c46c519f2d2216cc2871bf41ba4c145d96b37beb1285f5bc7a851b59ffe",
+      "bytes": 977,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "C127_SUMMARY.json",
+      "sha256": "55ba9431fa3be899f6284502b72294de0d4e2e755683b965ccba1b14abb873c9",
+      "bytes": 1740,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "CANONICAL_RECEIPT_C127.json",
+      "sha256": "90303dcf135790e46761be7e0cf7ec15496cda815ecf454cc448a2abe6068b0c",
+      "bytes": 306,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "EVIDENCE_C127.json",
+      "sha256": "101e8f91b91b6cae23ad75d5600f281321307761b4d9fc06f0cc4fecbd0f46da",
+      "bytes": 1147,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "103288090dfefe9f4b6020c9ea6ac8655ed701ec15fe5ff8e1f8bf35d2f493c6",
+      "bytes": 1417,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "SHA256_MANIFEST_C127.json",
+      "sha256": "9873308929b5374999e0111b72854d1dafd6a4b4ff9695a0b53fd5c71fefec65",
+      "bytes": 1275,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "c127_bounded_dispatch.py",
+      "sha256": "60cbdeeb79e42e03b5a4e89bd0f41697c34472e4bb70108243d81a6c53d8aeed",
+      "bytes": 7838,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "finalize_c127.py",
+      "sha256": "0e308e7349ad1d355972c523e0c0c4312b307fb2d6601be4eae54d557558b6f0",
+      "bytes": 8125,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "qa_c127_independent.py",
+      "sha256": "632f1955df7a243918477e52940290d7a10911fce2cc371d4065dae3abd71261",
+      "bytes": 5839,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "C128_DELAYED_PRIORITY.csv.gz",
+      "sha256": "971d43ce842083469e11ddc1262ccb83a43d9c6e35db9343602b0e7d9c8d70c4",
+      "bytes": 861320,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "C128_FINDINGS.md",
+      "sha256": "19a6ed8ef5f2843188f4cb6d2f45a56c5f8c0bcf3997b6b83deb895e9d606608",
+      "bytes": 2012,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "C128_INDEPENDENT_QA.json",
+      "sha256": "476304c60202ddd15735cfd28585a2ae07a556b743660cf9ab12001371be7030",
+      "bytes": 811,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "C128_METADATA.json",
+      "sha256": "196cf8a27189bbd84acc101f46c33d1ccc31c8b5793880268ad922bb11b7c4ba",
+      "bytes": 1101,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "C128_REGRESSION_QA.json",
+      "sha256": "56c3006c04a83e806375cf7c1957e431afefa4f41cfd9ec7393c5986bee65785",
+      "bytes": 233,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "C128_SUMMARY.json",
+      "sha256": "8a735072ff00bdadac17a3196f067f88703eaef9a8c422b99a66582a21cb57fc",
+      "bytes": 4450,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "CANONICAL_RECEIPT_C128.json",
+      "sha256": "ec785d1d46e64e1bdb7307cd286f4babbe6fc12153ec4672b3d2ee5853086b8e",
+      "bytes": 306,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "EVIDENCE_C128.json",
+      "sha256": "cde132042b01565df23380bd52a87d564f055f6923b286ab8da10d202f174e65",
+      "bytes": 1338,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "ead0cf572b988d6672cdb15f66fe4c639a119631b16e8bc098cdbe27453bdc39",
+      "bytes": 1504,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "SHA256_MANIFEST_C128.json",
+      "sha256": "82222690a524d19ffe8cce8024d669654139280f34028cce491506eaa4fdfe5b",
+      "bytes": 986,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "c128_delayed_priority.py",
+      "sha256": "541b5db7ec0d0d92277078825a3752e430d17d00c8f4dbf539cb939cd37a6147",
+      "bytes": 7172,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "finalize_c128.py",
+      "sha256": "7e9ee2435aad420ea0f26c7513d68c335c3d8f311fb7d928193cd6016d9ee7b2",
+      "bytes": 8342,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "qa_c128_independent.py",
+      "sha256": "790ff5c7effd1f75efb67b3fc4ab536391f2369377c1d5b7fabbe96496a39f33",
+      "bytes": 6157,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "qa_c128_regression.py",
+      "sha256": "6d0d99762018682b73a6a079a339eaa36241925fc611752b126b8dcc1307dc6c",
+      "bytes": 1469,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "C129_ACTUATOR_COP.csv.gz",
+      "sha256": "7ff9ff587e5c69466153b58644eef75a843f1caceeafcc20b7627e8d2943b7d0",
+      "bytes": 2216037,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "C129_FINDINGS.md",
+      "sha256": "402cd952a16d32c9d50675936bdd198dd1d436cadd1dba67f7f285d53f16cdbd",
+      "bytes": 4828,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "C129_INDEPENDENT_QA.json",
+      "sha256": "37eed72ed0ccbe6f9b4321266d482f4dde3f42f3c94400622766cbdd5430fd93",
+      "bytes": 510,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "C129_METADATA.json",
+      "sha256": "fe07309f21d726da5528824659466551d5bdbfb88bd9486bf27ac8b1794e5242",
+      "bytes": 1309,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "C129_SUMMARY.json",
+      "sha256": "42e3a260fa1d77158c2fbf373626c0b0d8d918fadab37a992530f42db7144c6c",
+      "bytes": 16683,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "CANONICAL_RECEIPT_C129.json",
+      "sha256": "56ae0a7baee5a190472407eb5cbe602b6fe4365ad976138dc7cba8996793508b",
+      "bytes": 302,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "EVIDENCE_C129.json",
+      "sha256": "373c34377686cbf65c83af5d085943ab8c61f679aa656da30859cda54c19392d",
+      "bytes": 1226,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "92b1f6ef857d3f704b4de5743bee69808919e276ee5e94c8bda705992b17a0b4",
+      "bytes": 1524,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "SHA256_MANIFEST_C129.json",
+      "sha256": "56664781077bf58b99c5d98155023dcf137dcfcc454750596ce3129bb87d1c39",
+      "bytes": 873,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "c129_actuator_cop.py",
+      "sha256": "3106a7953491e05ca3de24b8deba1fe06cc07f6f11a829bd447856b900d41e37",
+      "bytes": 7713,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "finalize_c129.py",
+      "sha256": "96e676db2137ff405dcb5e031b154b6a3b2ed9f95c86abd9db9b92dce861ce68",
+      "bytes": 6474,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "qa_c129_independent.py",
+      "sha256": "38b977c726277905cfaa0c1afc78406302502b0f65e565f7cb692dcadcebe01b",
+      "bytes": 6879,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "C130_DYNAMIC_COP_BUFFER.csv.gz",
+      "sha256": "315e5a40d129fb442059c1dd4c60bde0f6bff780865e6b2857dc58e20ddc280f",
+      "bytes": 837464,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "C130_FINDINGS.md",
+      "sha256": "3c6ca8c1ef68a88869d7fd789d0115c5700015d4d7e7c4dcef9b5177db019ae2",
+      "bytes": 3517,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "C130_INDEPENDENT_QA.json",
+      "sha256": "6df0ed43b1422d07b955782d3407ed421eb22e8baa4a1a9420d2e56f781ba452",
+      "bytes": 434,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "C130_METADATA.json",
+      "sha256": "b1656e410d0f67c2a7b19f044ebf2cfd10e859144423cfcd4caa5199c1209c53",
+      "bytes": 1296,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "C130_SUMMARY.json",
+      "sha256": "563ea4dde0714ecfb34275c44717cd9d4d984fd7b293baf03ea06839337d5e1c",
+      "bytes": 3369,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "CANONICAL_RECEIPT_C130.json",
+      "sha256": "278c44feca824a57038fc4c35857bd1ab560c70e34721a1ec32c62b2fd182113",
+      "bytes": 308,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "EVIDENCE_C130.json",
+      "sha256": "0bfea6eebfa58830b0cfc914c405dca79913762e56a76a76894cabf31f2521a6",
+      "bytes": 1244,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "FINAL_HANDOFF.md",
+      "sha256": "71d6e25b499659235bca0d0544b8046af9da28b652b80f1e46d9591a8e9b29bb",
+      "bytes": 1679,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "SHA256_MANIFEST_C130.json",
+      "sha256": "3b1a09225e362f9c24859a664fe0b78011559095ba4a862debfc7f74ba0d96ef",
+      "bytes": 885,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "c130_dynamic_cop_buffer.py",
+      "sha256": "e966668804b60e9d73ab6abb91134af6e4d2f167653ab79678a2b94ba01cb375",
+      "bytes": 9626,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "finalize_c130.py",
+      "sha256": "c98062983c5dfd7132a5ca1be52be6f715059165d2e51fac2a04c0295c7fe08d",
+      "bytes": 6406,
+      "capture": "file-bytes"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER",
+      "path": "qa_c130_independent.py",
+      "sha256": "eb3cb2c2084c29f76033a31a5dfa0cb6bfa8c31ff67f9aa26c3c2722a1db1314",
+      "bytes": 6464,
+      "capture": "file-bytes"
+    }
+  ],
+  "excluded": [
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    },
+    {
+      "root": "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+      "path": "__pycache__",
+      "reason": "installed dependency, generated cache, browser profile or symlink"
+    }
+  ],
+  "errors": [],
+  "roots": [
+    "synapse/AUTONOMOUS_RUN_20261030_2148_DCHR_C102_HVAC_AUX_ENERGY",
+    "synapse/AUTONOMOUS_RUN_20261030_2254_DCHR_C104_PSYCHROMETRIC_LEDGER",
+    "synapse/AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS",
+    "synapse/AUTONOMOUS_RUN_20261031_0049_DCHR_C108_SHARED_HEAT_DISPATCH",
+    "synapse/AUTONOMOUS_RUN_20261031_0152_DCHR_C111_EVAP_FEEDBACK",
+    "synapse/AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY",
+    "synapse/AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE",
+    "synapse/AUTONOMOUS_RUN_20261031_0446_DCHR_C116_RH_EVAP_COUPLED",
+    "synapse/AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH",
+    "synapse/AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL",
+    "synapse/AUTONOMOUS_RUN_20261031_0750_DCHR_C121_CONTROL_DELAY",
+    "synapse/AUTONOMOUS_RUN_20261031_0900_DCHR_C124_AIR_ENTHALPY",
+    "synapse/AUTONOMOUS_RUN_20261031_0955_DCHR_C125_POOL_AIR_REPLAY",
+    "synapse/AUTONOMOUS_RUN_20261031_1049_DCHR_C127_BOUNDED_DISPATCH",
+    "synapse/AUTONOMOUS_RUN_20261031_1153_DCHR_C128_DELAYED_PRIORITY",
+    "synapse/AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP",
+    "synapse/AUTONOMOUS_RUN_20261031_1347_DCHR_C130_DYNAMIC_COP_BUFFER"
+  ],
+  "object_count": 219,
+  "logical_bytes": 76987139
+}

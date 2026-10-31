@@ -1,0 +1,32 @@
+{
+  "assumptions": {
+    "airflow_m3_h": 3000,
+    "coil_COP": 3.0,
+    "condenser_credit_fraction": 0.5,
+    "dehumidifier_kWh_kg": 0.5,
+    "dry_air_kg_h": 3540.0,
+    "feedwater_T_C": 20,
+    "indoor_RH": 0.55,
+    "indoor_T_C": 29.0,
+    "steam_enthalpy_kJ_kg": 2676,
+    "steam_kWh_kg": 0.75
+  },
+  "boundary": "Alternative C102 conditioning scenario, NOT additive. Outdoor coil removes only outdoor humidity above indoor setpoint; residual room dehumidifier treats pool evaporation. Steam electricity contains steam enthalpy; no duplicate heat credit. Pool evaporation latent remains in water ledger.",
+  "field_validated": false,
+  "hourly_sha256": "15547bfd196152440ec1870af182ef20a79ab1004790cf71d1de9869b447228d",
+  "limitations": [
+    "Steady-state dry-air coil and fixed COP, no manufacturer curves.",
+    "C88 synthetic temperatures and scenario-constant RH; not measured.",
+    "HRV sensible-only with dewpoint floor, no frost or bypass dynamics.",
+    "No real coil sizing, pressure drops, condenser heat recovery verification, or integrated pool heat allocation."
+  ],
+  "rows": 78840,
+  "scenarios": 9,
+  "schema": "C104_PSYCHROMETRIC_ALTERNATIVE_V1",
+  "source_C100_sha256": "8ce8e04be652540eb635afb75958077c716220a26f3471526264985e0862fff4",
+  "source_C102_sha256": "7758cda64fb64840d249cceb9d9fa59d63fc17310d7a4c1a9a32fde46e5f275f",
+  "source_signoffs_added": 0,
+  "summary_sha256": "1aa45c1bd88da9eadab2a57ed9a48a2ba442624e11dca0251b1d1d5c6e826e0b",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

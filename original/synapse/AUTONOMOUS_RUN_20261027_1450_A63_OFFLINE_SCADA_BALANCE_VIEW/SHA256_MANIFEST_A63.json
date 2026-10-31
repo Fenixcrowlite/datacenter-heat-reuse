@@ -1,0 +1,16 @@
+{
+  "A63_ANALYSIS_CONTRACT_SK.md": "ea833a8a24dcb7f3fe441846bf7744265bac7d12a8dd3329162e3dd02bc8e3d6",
+  "BROWSER_QA_A63.json": "4e080ebbc9b5fe2058a47701fefc599e189f63fb7219148db8a461b49bb6e230",
+  "EVIDENCE_A63.json": "7198b45b94b7aaebc6f4ba50b45bfbcd7d90feed25ae33e1cada7d579a28b8bc",
+  "INDEPENDENT_QA_A63.json": "4baa0e19617d48a07929215d6baed808cd2537c0c7e7370ed36afe5915f1264c",
+  "OUTPUT/dashboard.html": "efbc59a25bd7ad3a331c95c5036b176c620418244c883598d00c5a5bd53ca447",
+  "OUTPUT/metrics.json": "54fe76412030c8853b43b83421e2ecbbb8d2e00ae71b4208a30f5934c230b6d0",
+  "OUTPUT/sources.json": "8d07997f59cf03d488c7b5ea43908e0a8b85305c0e30f740367977e42b1c1387",
+  "QA_A63_CLEAN.txt": "dba23e2da6bb355badfd3df62992d17db78be777f55c1be482e1477ec7ab072c",
+  "QA_SCRIPT_A63.js": "60df634b20c7f7cea2cf8eb3d76055052c1b28b57774bd6d4e3f4b08906fae31",
+  "a63_offline_dashboard.py": "b5aa3793011e77c723624caa8b74baa9ea3ced3ecd55bea592d4d25dfcfaa834",
+  "browser_smoke_a63.py": "d80f8da72d05afb6def0196fe36f6191490150dd3f1d1f6b158d719abdfb55e7",
+  "finalize_a63.py": "c3ae33592eddcb8103c7e7f9a1beef929c83528b944c5565e7c0fdf2fc3fcd06",
+  "independent_qa_a63.py": "e4116c1fc280748dc7d650c071b46dd2dd3e59d2b3bbcb948aac2a0195d0de43",
+  "test_a63.py": "db14401d57db23fee18690ee9d09e29589f19d388f24202ae545adf9f8bce4fa"
+}

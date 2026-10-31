@@ -1,0 +1,162 @@
+{
+  "UA_grid": [
+    0.0001,
+    0.02,
+    0.1,
+    0.5,
+    1.0,
+    2.0,
+    10.0,
+    100.0
+  ],
+  "bisection_iterations": 9,
+  "boundaries": [
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 0.7525418658117035,
+      "bracket_pass_kW_K": 0.7535613492469628,
+      "bracket_ratio": 1.0013547198921082,
+      "case": {
+        "COP_assumed": 2.2,
+        "cold_in_C": 15.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 35.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.796002412252385,
+      "status": "BRACKETED"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 2.0062967583808744,
+      "bracket_pass_kW_K": 2.012613341344802,
+      "bracket_ratio": 1.0031483791904372,
+      "case": {
+        "COP_assumed": 2.2,
+        "cold_in_C": 25.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 35.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.75013439706968,
+      "status": "BRACKETED"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": null,
+      "bracket_pass_kW_K": null,
+      "case": {
+        "COP_assumed": 2.2,
+        "cold_in_C": 32.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 35.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 8744,
+      "max_UA_min_pool_C": 24.058626088936588,
+      "status": "NO_FEASIBLE_UA_IN_GRID"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 7.949543082659752,
+      "bracket_pass_kW_K": 7.974571258674682,
+      "bracket_ratio": 1.0031483791904372,
+      "case": {
+        "COP_assumed": 2.2,
+        "cold_in_C": 32.0,
+        "hot_flow_kg_s": 2.0,
+        "hot_in_C": 35.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.796002412252385,
+      "status": "BRACKETED"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 9.479643639665133,
+      "bracket_pass_kW_K": 9.509489152433014,
+      "bracket_ratio": 1.0031483791904372,
+      "case": {
+        "COP_assumed": 2.2,
+        "cold_in_C": 32.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 38.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.50940341982342,
+      "status": "BRACKETED"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 0.8581471001143591,
+      "bracket_pass_kW_K": 0.859309649061239,
+      "bracket_ratio": 1.0013547198921082,
+      "case": {
+        "COP_assumed": 2.2,
+        "cold_in_C": 32.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 50.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.796002412252385,
+      "status": "BRACKETED"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 1.1372479822928196,
+      "bracket_pass_kW_K": 1.1387886347566916,
+      "bracket_ratio": 1.0013547198921082,
+      "case": {
+        "COP_assumed": 4.0,
+        "cold_in_C": 15.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 35.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.796002412252385,
+      "status": "BRACKETED"
+    },
+    {
+      "UA_upper_tested_kW_K": 100.0,
+      "bracket_fail_kW_K": 2.2186091344107193,
+      "bracket_pass_kW_K": 2.2255941572412117,
+      "bracket_ratio": 1.0031483791904372,
+      "case": {
+        "COP_assumed": 4.0,
+        "cold_in_C": 25.0,
+        "hot_flow_kg_s": 0.5,
+        "hot_in_C": 38.0
+      },
+      "coarse_monotone": true,
+      "max_UA_hours_below": 0,
+      "max_UA_min_pool_C": 27.72563841828396,
+      "status": "BRACKETED"
+    }
+  ],
+  "cases": 8,
+  "criterion": "Every hour pool temperature >= 27.5 C, zero backup, 8760 synthetic hours",
+  "elapsed_s": 24.804,
+  "field_validated": false,
+  "hour_steps": 1112520,
+  "model_notes": [
+    "C96 constant assumed COP; changing cold-loop inlet does not change COP.",
+    "UA is a synthetic effective conductance, no fouling or manufacturer curve.",
+    "No pool ventilation/dehumidification, no source flow/temperature measurements.",
+    "Feasibility may not be monotone between untested points; coarse scan checked only.",
+    "A no-feasible-UA result is bounded by tested grid and other assumed caps."
+  ],
+  "schema": "C98_SYNTHETIC_UA_FEASIBILITY_V1",
+  "source_signoffs_added": 0,
+  "sweep_sha256": "d5d4a599dfc11c048cd0152fab8b706b08809a7e24f87a6903bd1afb5a1b6d22",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "unique_simulations": 127,
+  "upstream_C96_sha256": "c084e706fc79c635856df6ba6223c1fed1cb9b8c7c72c5aba0e67ae38b8700d9",
+  "vendor_COP": false
+}

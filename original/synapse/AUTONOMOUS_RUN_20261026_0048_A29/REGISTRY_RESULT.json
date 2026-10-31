@@ -1,0 +1,16 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1174,
+  "action": "CREATED_EVENT",
+  "scope": "isolated_A29_independent_heatmeter_holdout_and_A28_source_recomputation",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_0048_A29",
+  "evidence_sha256": "0d50652abd2980acf118196476a42d494f24d1263f8a29c76edc5b2da2e49aae",
+  "source_code_sha256": "8341a28b222d183738fdbedc0860fe939252433dc975db0a14ceedd818e9df5a",
+  "manifest_sha256": "e56e35bbb7c5740dca7a8bbd47d421d46d89b0aea842f7e32cd1d1469fb82abe",
+  "a28_source_sha256": "5ae7a0b35857a934827f9a875ad44d7c99b16efe96eb372e5afae272241ad499",
+  "qa": "28/28 unit tests PASS; 8 independent finite-difference/energy/hash checks PASS; Python compilation PASS; 32 explicitly synthetic holdout points",
+  "finding": "Independent meter holdout is time-disjoint from A28 calibration; raw A28 inputs and residual covariance independently recomputed; energy, bias, RMSE and pointwise propagated uncertainty cross-checked",
+  "decision": "SYNTHETIC_ONLY_NOT_FIELD_VERIFIED; release_allowed=false",
+  "limits": "No real paired sensor/reference measurements or independent heat-meter certificate; density/cp and meter uncertainty assumed; no physical release, SCADA or MATLAB production change",
+  "next_step": "Acquire authenticated field calibration CSV and independent heat-meter holdout with verified certificate and separate interval; run A28/A29 and compare physics/uncertainty; retain fail-closed release"
+}

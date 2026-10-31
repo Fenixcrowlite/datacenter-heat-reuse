@@ -1,0 +1,37 @@
+python.exe : test_external_sensor_corruption (test_dchr_lineage_audit.LineageTests.test_external_sensor_corruption) ...
+ ok
+строка:1 знак:223
++ ... Location $d;& 'C:\Python314\python.exe' -m unittest -v test_dchr_line ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_external_s...ruption) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_flow_corruption (test_dchr_lineage_audit.LineageTests.test_flow_corruption) ... ok
+test_ingest_eight_significant_digits (test_dchr_lineage_audit.LineageTests.test_ingest_eight_significant_digits) ... ok
+test_invalid_csv_header_rejected (test_dchr_lineage_audit.LineageTests.test_invalid_csv_header_rejected) ... ok
+test_live_full_lineage (test_dchr_lineage_audit.LineageTests.test_live_full_lineage) ... ok
+test_missing_csv_cell_rejected (test_dchr_lineage_audit.LineageTests.test_missing_csv_cell_rejected) ... ok
+test_model_sha_guard (test_dchr_lineage_audit.LineageTests.test_model_sha_guard) ... ok
+test_nonfinite_rejected (test_dchr_lineage_audit.LineageTests.test_nonfinite_rejected) ... ok
+test_operational_corruption (test_dchr_lineage_audit.LineageTests.test_operational_corruption) ... ok
+test_raw_it_placeholder_corruption (test_dchr_lineage_audit.LineageTests.test_raw_it_placeholder_corruption) ... ok
+test_safety_sensor_corruption (test_dchr_lineage_audit.LineageTests.test_safety_sensor_corruption) ... ok
+test_sha (test_dchr_lineage_audit.LineageTests.test_sha) ... ok
+test_source_sensor_corruption (test_dchr_lineage_audit.LineageTests.test_source_sensor_corruption) ... ok
+test_stage_corruption (test_dchr_lineage_audit.LineageTests.test_stage_corruption) ... ok
+test_timestamp_corruption (test_dchr_lineage_audit.LineageTests.test_timestamp_corruption) ... ok
+test_v07_heat_regression (test_dchr_lineage_audit.LineageTests.test_v07_heat_regression) ... ok
+test_v07_temperature_regression (test_dchr_lineage_audit.LineageTests.test_v07_temperature_regression) ... ok
+test_valid_row (test_dchr_lineage_audit.LineageTests.test_valid_row) ... ok
+test_bad_quality (test_scada_api_link.ScadaLinkTests.test_bad_quality) ... ok
+test_bad_rows (test_scada_api_link.ScadaLinkTests.test_bad_rows) ... ok
+test_good (test_scada_api_link.ScadaLinkTests.test_good) ... ok
+test_hardware_enabled (test_scada_api_link.ScadaLinkTests.test_hardware_enabled) ... ok
+test_missing_case (test_scada_api_link.ScadaLinkTests.test_missing_case) ... ok
+test_sha_mutation (test_scada_api_link.ScadaLinkTests.test_sha_mutation) ... ok
+test_wrong_provenance (test_scada_api_link.ScadaLinkTests.test_wrong_provenance) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 5.399s
+
+OK

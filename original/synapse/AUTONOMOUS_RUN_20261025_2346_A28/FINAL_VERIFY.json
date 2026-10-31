@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "manifest_verified": 10,
+  "manifest_total": 10,
+  "unit_tests": 23,
+  "independent_checks": 16,
+  "source_class": "SYNTHETIC_TEST",
+  "release_allowed": false,
+  "event_id": 1170,
+  "event_count": 1,
+  "sqlite_integrity": "ok",
+  "task_state": [
+    "review",
+    "planned"
+  ],
+  "stop_hits": [],
+  "snapshot_at": "2026-10-25T23:53:57.7889189+01:00",
+  "handoff_sha256": "a640f3702f61506d66ff6ac77531b90c5230c8211d749bd5af5960db5cfe5a1b",
+  "manifest_sha256": "2259513d0188d48af83919d0665495be5827442821ac8249b5126e332f8551e2",
+  "source_sha256": "5ae7a0b35857a934827f9a875ad44d7c99b16efe96eb372e5afae272241ad499",
+  "evidence_sha256": "2bfec2d9a2330aeea1edf6b1afb535765db77417e4425267fa3c63863835c09b",
+  "replay_defect_recorded": true,
+  "all_pass": true
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "project_id": "data_center_heat_reuse",
+  "version": "0.2.0",
+  "status": "component-model-tested",
+  "entrypoints": {
+    "hub": "00_Project_Hub.md",
+    "matlab": "matlab/run_experiment_v2.m",
+    "tests": "matlab/run_tests_v2.m",
+    "sensitivity": "matlab/run_sensitivity_v2.m",
+    "pptx": "presentation/DataCenter_Heat_Reuse_v0_2_RU.pptx",
+    "pdf": "presentation/DataCenter_Heat_Reuse_v0_2_RU.pdf"
+  },
+  "learning": [
+    "docs/Mathematical_Model_v0_2.md",
+    "docs/Dependency_Map_v0_2.md",
+    "docs/Learning_Path_v0_2.md",
+    "docs/Validation_and_Traceability_v0_2.md",
+    "docs/Results_v0_2.md"
+  ],
+  "data": [
+    "results/scenario_summary_v2.csv",
+    "results/temperature_lift_sensitivity_v2.csv",
+    "results/storage_sensitivity_v2.csv",
+    "results/tests_v2.csv"
+  ],
+  "figures": [
+    "results/figures/08_scenario_comparison_v2.png",
+    "results/figures/09_lift_cop_coverage_v2.png",
+    "results/figures/10_best_scenario_operation_v2.png",
+    "results/figures/11_cop_map_v2.png",
+    "results/figures/12_coverage_map_v2.png",
+    "results/figures/13_storage_tradeoff_v2.png"
+  ],
+  "study_hub": {
+    "source_id": "4d7fd5e4e94dcc6e28d8",
+    "subject": "PROJECT ? DataCenter Heat Reuse",
+    "artifacts": [
+      "source.md",
+      "study_pack.md",
+      "audio_overview.wav"
+    ]
+  },
+  "next_milestone": "real-data calibration + detailed heat exchanger / manufacturer HP map"
+}

@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c95-source-traceability-20261030-1800",
+  "audit_sha256": "ffded50233193267442d904bc53d18dc4fdcf9595619ca0393c974070f296485",
+  "catalog_entries": 31,
+  "independent_qa_sha256": "09ef676f5516920721d86022eaa1a34e272d9bf98fedb79780f74f8f4cb44a41",
+  "manifest_sha256": "d866e6c02e91c98b6d53a0a36148c3b8996116a88e91f5af557d290f47fdceb0",
+  "matrix_sha256": "03db76f18fd9bfadddb4489d53d6106eef5dc6a3fa68635a035601cf3a40582c",
+  "next": "Use measured source inlet/outlet temperatures and flow, vendor COP map, then reviewed parameter update",
+  "physical_validation": false,
+  "production_changed": false,
+  "qa": "9 explicit generator assertions, 16/16 independent PASS",
+  "schema": "C95_SOURCE_TRACEABILITY_EVIDENCE_V1",
+  "scope": "Cross-check C94 against existing 31-source catalog and canonical parameter registry",
+  "source_signoffs_added": 0,
+  "task_id": "scc-2aab24704c2bd0"
+}

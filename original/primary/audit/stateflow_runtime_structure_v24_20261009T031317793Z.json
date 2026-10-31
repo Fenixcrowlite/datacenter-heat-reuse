@@ -1,0 +1,341 @@
+{
+  "version": "0.24",
+  "scope": "Independent v24 executable-domain evidence and saved-model graph audit.\n\nNumerical valid-trace QA explicitly reuses the already independent v22 oracle.\nNo MATLAB production implementation is imported or executed by this script.\nStatic ZIP provenance is distinct from simulation rejection evidence.\n",
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "spec_sha256": "456365fc2634e5aa4f344df41741d95875a706805fc850a8de5a3cb63d722f37",
+  "verifier_sha256": "eb5a1aa3b11cd896aedcc5615fd26dcda03b1622acfe4e191b14b1752f78f930",
+  "reused_valid_trace_oracle": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\audit\\verify_stateflow_trace_v22.py",
+  "reused_valid_trace_oracle_sha256": "70a77ae14527af0e1bf9844510901d68275e96e29ef47733417ca4a058a0cf0f",
+  "structure": {
+    "checks": 78,
+    "passed": 78,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "Scenario_Input_to_Verified_HP_Component_port_1",
+        "passed": true
+      },
+      {
+        "name": "Verified_HP_Component_to_Thermal_Dispatch_port_1",
+        "passed": true
+      },
+      {
+        "name": "TES_Energy_Memory_to_Verified_HP_Component_port_2",
+        "passed": true
+      },
+      {
+        "name": "TES_Energy_Memory_to_Thermal_Dispatch_port_2",
+        "passed": true
+      },
+      {
+        "name": "TES_and_Boiler_Parameters_to_Verified_HP_Component_port_3",
+        "passed": true
+      },
+      {
+        "name": "TES_and_Boiler_Parameters_to_Thermal_Dispatch_port_3",
+        "passed": true
+      },
+      {
+        "name": "HP_Parameters_to_Verified_HP_Component_port_4",
+        "passed": true
+      },
+      {
+        "name": "Integration_Step_to_Verified_HP_Component_port_5",
+        "passed": true
+      },
+      {
+        "name": "Integration_Step_to_Runtime_Contract_Gate_port_5",
+        "passed": true
+      },
+      {
+        "name": "Thermal_Dispatch_to_Runtime_Contract_Gate_port_1",
+        "passed": true
+      },
+      {
+        "name": "Verified_HP_Component_to_Runtime_Contract_Gate_port_2",
+        "passed": true
+      },
+      {
+        "name": "TES_Energy_Memory_to_Runtime_Contract_Gate_port_3",
+        "passed": true
+      },
+      {
+        "name": "TES_and_Boiler_Parameters_to_Runtime_Contract_Gate_port_4",
+        "passed": true
+      },
+      {
+        "name": "Runtime_Contract_Gate_to_Next_TES_Energy_port_1",
+        "passed": true
+      },
+      {
+        "name": "Runtime_Contract_Gate_to_Dispatch_Trace_port_1",
+        "passed": true
+      },
+      {
+        "name": "Next_TES_Energy_to_TES_Energy_Memory_port_1",
+        "passed": true
+      },
+      {
+        "name": "Verified_HP_Component_to_HP_Trace_port_1",
+        "passed": true
+      },
+      {
+        "name": "TES_Energy_Memory_to_Energy_Start_Trace_port_1",
+        "passed": true
+      },
+      {
+        "name": "unchecked_chart_output_has_no_trace_or_memory_bypass",
+        "passed": true
+      },
+      {
+        "name": "integration_constant_uses_same_model_time",
+        "passed": true
+      },
+      {
+        "name": "discrete_energy_memory",
+        "passed": true
+      },
+      {
+        "name": "energy_feedback_index_8",
+        "passed": true
+      },
+      {
+        "name": "input_interpolation_disabled",
+        "passed": true
+      },
+      {
+        "name": "initial_energy_configurable",
+        "passed": true
+      },
+      {
+        "name": "single_operational_stateflow_chart",
+        "passed": true
+      },
+      {
+        "name": "discrete_chart_updates",
+        "passed": true
+      },
+      {
+        "name": "common_sampling_interval",
+        "passed": true
+      },
+      {
+        "name": "IDLE_entry_and_during_allocate_ports",
+        "passed": true
+      },
+      {
+        "name": "HEAT_RECOVERY_entry_and_during_allocate_ports",
+        "passed": true
+      },
+      {
+        "name": "STORAGE_CHARGE_entry_and_during_allocate_ports",
+        "passed": true
+      },
+      {
+        "name": "STORAGE_DISCHARGE_entry_and_during_allocate_ports",
+        "passed": true
+      },
+      {
+        "name": "BACKUP_entry_and_during_allocate_ports",
+        "passed": true
+      },
+      {
+        "name": "UNMET_DEMAND_entry_and_during_allocate_ports",
+        "passed": true
+      },
+      {
+        "name": "six_required_operating_states",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_26",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_25",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_24",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_29",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_27",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_28",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_42",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_37",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_43",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_45",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_55",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_40",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_50",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_35",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_46",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_47",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_51",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_30",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_31",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_56",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_41",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_52",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_57",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_36",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_32",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_38",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_44",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_33",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_34",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_39",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_58",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_53",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_48",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_49",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_59",
+        "passed": true
+      },
+      {
+        "name": "mode_guard_destination_54",
+        "passed": true
+      },
+      {
+        "name": "all_30_guarded_changes",
+        "passed": true
+      },
+      {
+        "name": "six_guarded_startup_choices",
+        "passed": true
+      },
+      {
+        "name": "single_default_into_startup_junction",
+        "passed": true
+      },
+      {
+        "name": "embedded_stateflow_choose_mode_v24_matches_reviewed_source",
+        "passed": true
+      },
+      {
+        "name": "embedded_stateflow_allocate_v24_matches_reviewed_source",
+        "passed": true
+      },
+      {
+        "name": "embedded_stateflow_contract_gate_v24_matches_reviewed_source",
+        "passed": true
+      },
+      {
+        "name": "single_host_hp_adapter",
+        "passed": true
+      },
+      {
+        "name": "hp_adapter_passes_model_dt_into_versioned_runtime_domain_function",
+        "passed": true
+      }
+    ]
+  },
+  "model_sha256": "1f1c826f0f61d04bea58c2ab39d607268ac273bad9564e69bec89e361c461389",
+  "source_hashes": {
+    "build_dispatch_stateflow_v24.m": "fe27ca93d240a691cca14cdaf6040c800239ff3c9881fa6be3509f47a7b73324",
+    "dchr_stateflow_hp_v24.m": "09aeabd1b3ac0858155726518f65e4355886cf3c1a766595629a0059adc9e011",
+    "probe_stateflow_clock_v24.m": "11362c2233c1a535b7a356d0e8b13e35aea0751d30c6f0c60f30cae9a57d5a6d",
+    "run_stateflow_acceptance_v24.m": "8b389529a83471fb42eb0a1bb872abb1c316377ad86512722bbc03fcad7ce699",
+    "run_stateflow_rejections_v24.m": "923d07f741483b5f44647bb9d4718c15e1efca564456842e9b7bf1c7e6b4dfca",
+    "stateflow_allocate_v24.m": "dbaacfb51b33aa0953d570e3e911527820cd4510994507643e6fa7229e839031",
+    "stateflow_choose_mode_v24.m": "bd3d5fab4a1b201943f9c95101b8cc7771d57de496dfd8453805ef534151fb8b",
+    "stateflow_contract_gate_v24.m": "dfbef66ddc289afd770211fda94665439edaed0c4538dd03b3479aee6d321ad8"
+  },
+  "failed": 0
+}

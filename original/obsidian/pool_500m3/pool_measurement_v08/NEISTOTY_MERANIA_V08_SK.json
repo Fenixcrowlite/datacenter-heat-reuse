@@ -1,0 +1,22 @@
+{
+  "status": "CALCULATED_ASSUMED_UNCERTAINTY_NOT_CALIBRATION",
+  "source_class": "D",
+  "assumptions": {
+    "pool_volume_m3": 500,
+    "rho_kg_m3": 997,
+    "cp_J_kgK": 4182,
+    "sample_seconds": 900,
+    "flow_m3h": 30,
+    "heat_exchanger_deltaT_K": 3,
+    "flow_relative_std_uncertainty": 0.05,
+    "each_temperature_std_uncertainty_K": 0.2,
+    "temperature_sensor_independent_errors": true
+  },
+  "thermal_storage_J_K": 2084727000,
+  "nominal_flow_based_heat_W": 104236.35,
+  "standard_uncertainty_flow_heat_W": 11123.97165177556,
+  "relative_standard_uncertainty_flow_heat": 0.10671873729054748,
+  "standard_uncertainty_15min_pool_dT_power_W": 655166.4882767502,
+  "worst_case_bounded_15min_pool_dT_power_W": 926545.3333333334,
+  "warning": "Do not estimate 100-150kW pool heating solely by 15min temperature finite difference with 0.2K temperature errors; use traceable volume flow and supply/return thermometers. Independent uncertainties assumed, no correlated sensor drift."
+}

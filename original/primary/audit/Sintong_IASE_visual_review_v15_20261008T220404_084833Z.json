@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-10-08T22:04:04.084833+00:00",
+  "kind": "primary_thesis_visual_review_record",
+  "inspected_pdf_pages": [
+    23,
+    30,
+    31,
+    70
+  ],
+  "original_pdf_sha256": "8149370d2df0c5899c844095f3890fea112c3d81eaff6671cb3cf0f3da9185f5",
+  "page_render_sha256": {
+    "23": "a703e0f15fec380b83666d174c92cd199c898e1bbec7b351ed1f4e953a647cbd",
+    "30": "f6a7c26b0ae147a3e5e4a333cb52135e03e168e9c4c0d362c948b8bbff6d1942",
+    "31": "e6b0d8d76416d0caf4fecfa244f4b495058fcd530443d6ffe6db75f6da51a42d",
+    "70": "c8e381d202c416c4c5512a16143c54f6f97923e34f1820e92a85c9011e01c50e"
+  },
+  "eq15_16_locator": "printed/PDF p30, zero-based index29",
+  "eq15_parentheses_interpretation": "UNRESOLVED_AUTHOR_IMPLEMENTATION",
+  "park_equation_visual_verified": false,
+  "independent_math_and_code_review": "NO_MATERIAL_ISSUE_WITHIN_DECLARED_DOMAIN",
+  "review_is_equipment_validation": false
+}

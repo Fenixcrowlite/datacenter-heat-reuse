@@ -1,0 +1,179 @@
+{
+  "version": "0.28",
+  "timestamp_utc": "2026-10-09T15:34:17.753381+00:00",
+  "review_scope": "Independent read-only checkpoint finalizer and provenance review; no MATLAB execution, no baseline modifications.",
+  "preflight_asserts_executed": 40,
+  "passed": 30,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "current_artifacts_pass_complete_preflight",
+      "passed": true,
+      "detail": "Stopped immediately before the first checkpoint write; original finalizer main never invoked."
+    },
+    {
+      "name": "actual_QA_counts_exclude_both_synthetic_sections",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "saved_Simulink_version_format_explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_changed_acceptance_summary",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_domain_spec",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_supplemental_inputs",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_generic_rejection_verifier",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_experiment_sample_trace",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_dispatch_assertions",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_experiment_assertions",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_source_snapshot",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_reviewed_MATLAB_source",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_model",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_v24_baseline",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_numeric_trace",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_experiments",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_rejection_records",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_log",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_console",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_changed_prior_manifest_artifact",
+      "passed": true,
+      "detail": "In-memory hash perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_nonzero_MATLAB_exit",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_wrong_receipt_directory",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_wrong_summary_directory",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_wrong_model_before_hash",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_failed_acceptance",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_failed_independent_section",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_missing_independent_section",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "reject_selftest_reclassified_as_actual",
+      "passed": true,
+      "detail": "In-memory evidence-object perturbation rejected; no evidence file changed."
+    },
+    {
+      "name": "all_273_v27_manifest_hashes_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "actual_log_marker_matches_this_result_directory",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "synthetic_gate_probe_count": 25,
+  "synthetic_gate_probes_are_simulation_evidence": false,
+  "prior_manifest_artifacts_preserved": 273,
+  "reviewed_finalizer": "audit\\finalize_stateflow_checkpoint_v28.py",
+  "reviewed_finalizer_sha256": "8f6afc75ceedd4e898ecfd375ddd03f3b8481e69882c0370586cec7946a5fca0",
+  "independent_qa": "results\\stateflow_v28_20261009T152826319Z\\independent_qa_v28_20261009T153203999Z.json",
+  "independent_qa_sha256": "6e2dd9d3b03ea2404c3bcde18da640461ee9c9ef4ffbfe2721d84b999ff47eee",
+  "execution_receipt": "results\\stateflow_v28_20261009T152826319Z\\execution_receipt_v28_20261009T153241813Z.json",
+  "execution_receipt_sha256": "24893416da5b4704418562efa27fcc9d944fdcd12d3ad55211948dcd24888f41",
+  "actual_QA_count": 14575,
+  "separate_synthetic_QA_count": 1039,
+  "actual_project_model_release": "0.28",
+  "saved_simulink_model_version_format": "%<AutoIncrement:1.1>",
+  "defects_identified_and_repaired": "Missing summary/domain/spec/supplemental/generic-verifier hashes, per-experiment sample trace and acceptance-integrity evidence hashes, source/console hashes and exact result/log path binding; explicit project versus internal Simulink version semantics.",
+  "limitations": [
+    "Finalizer gate probes are synthetic in-memory negative tests, not additional executed Stateflow tests.",
+    "Actual receipt exit code derives from root tool session; this reviewer reads receipt and log rather than rerunning MATLAB.",
+    "No equipment calibration, primary-paper replication or physical validation is established."
+  ]
+}

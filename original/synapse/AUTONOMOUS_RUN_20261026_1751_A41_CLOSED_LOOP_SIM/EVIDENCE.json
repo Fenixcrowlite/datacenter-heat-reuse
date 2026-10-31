@@ -1,0 +1,18 @@
+{
+  "scope": "A41_isolated_synthetic_Simulink_Stateflow_TES_IT_feedback",
+  "status": "STATEFLOW_CLOSED_LOOP_SYNTHETIC_VERIFIED",
+  "physical_release_allowed": false,
+  "matlab": "R2026a",
+  "scenario_count": 4,
+  "samples_per_scenario": 672,
+  "matlab_python_numeric_comparisons": 26880,
+  "independent_python_tests": "15/15 PASS",
+  "delay_sensitivity_cases": 5,
+  "model_sha256": "190af2be60032c508e7ebeba94572e22057699283fd895ec91b6aeca71fc0d72",
+  "matlab_result_sha256": "f7b5d10be6ce3cab53563436156817a665ac517afb473eac3d09aa83cf608e33",
+  "report_sha256": "c516b2f7856667169b8f6935d7a20ff82f4c5b7ec32353881de93c2038a32d7c",
+  "source_a38_sha256": "415201a65f4c08bbb59955db0d7744928d833cbaf34d73fd5be0cebf8d02232d",
+  "source_a40_sha256": "cdf8a224a3fc83480272cb2dd527ced930d5046e7d53e008d26ef08e3ae8d89c",
+  "caveat": "Closed loop for TES energy, IT temperature and shed memory only; other A36/HP/IT branches remain synthetic feedforward; no physical certification",
+  "next_step": "A42 isolate fully coupled IT/HP/TES plant, fail-safe IT shutdown under REJECT total loss, sensor delay and heat capacity sweep, then physical parameter validation"
+}

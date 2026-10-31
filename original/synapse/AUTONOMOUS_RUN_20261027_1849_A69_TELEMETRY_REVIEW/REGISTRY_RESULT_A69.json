@@ -1,0 +1,13 @@
+{
+  "QA": "18 PASS/1 SKIP, independent Decimal PASS, true mobile Chrome 3/3 PASS",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1849_A69_TELEMETRY_REVIEW",
+  "event_id": 1341,
+  "evidence_sha256": "bc8a8423a7f744b41d6370b3c5e83791b148b4fb6c9ca16c74c6341e67df4e2d",
+  "handoff_sha256": "6fa0b003e430c492b9cbd788969b38965d0af0c511ab78fa134119d49b66b3a6",
+  "manifest_sha256": "f34a634b8af577eae33b5fcfc6bede20fe74b0464fecb579b07f598d51d5c74f",
+  "next_step": "Use A59 channel mapping on a verified SCADA export, produce A69 review; obtain calibration/timebase evidence for A57/A58 before physical acceptance.",
+  "physical_release": false,
+  "scope": "A69_offline_A59_telemetry_review",
+  "source_kind": "synthetic_test",
+  "task_id": "scc-3d9d172beb6e1b"
+}

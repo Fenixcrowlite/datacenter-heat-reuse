@@ -1,0 +1,49 @@
+﻿{
+  "status": "PASS",
+  "hours": 8760,
+  "rows": 70080,
+  "selftests": 5,
+  "sha256": "d105be559a7eb01cdd92afa7a50073a2eda6687bdf8bc94392f03d165afc63ec",
+  "scenarios": {
+    "('feedback_capped', 0, 0.0)": {
+      "high_quarters": 7919.0,
+      "switches": 18710.0,
+      "energy_proxy_kWh": 147036.925
+    },
+    "('feedback_capped', 0, 0.5)": {
+      "high_quarters": 8602.0,
+      "switches": 16362.0,
+      "energy_proxy_kWh": 120141.9848
+    },
+    "('feedback_capped', 2, 0.0)": {
+      "high_quarters": 5779.0,
+      "switches": 19144.0,
+      "energy_proxy_kWh": 149485.4507
+    },
+    "('feedback_capped', 2, 0.5)": {
+      "high_quarters": 6798.0,
+      "switches": 16522.0,
+      "energy_proxy_kWh": 123434.4403
+    },
+    "('predictive_capped', 0, 0.0)": {
+      "high_quarters": 6295.0,
+      "switches": 17367.0,
+      "energy_proxy_kWh": 158011.8725
+    },
+    "('predictive_capped', 0, 0.5)": {
+      "high_quarters": 7494.0,
+      "switches": 18141.0,
+      "energy_proxy_kWh": 115468.3792
+    },
+    "('predictive_capped', 2, 0.0)": {
+      "high_quarters": 10517.0,
+      "switches": 20292.0,
+      "energy_proxy_kWh": 160578.904
+    },
+    "('predictive_capped', 2, 0.5)": {
+      "high_quarters": 10254.0,
+      "switches": 21235.0,
+      "energy_proxy_kWh": 108969.4761
+    }
+  }
+}

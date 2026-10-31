@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c96-ua-ntu-pump-20261030-1850",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1850_DCHR_C96_UA_NTU_PUMP_ENVELOPE\\C96_HOURLY.csv.gz",
+  "hourly_sha256": "12adf23a7d8b4c9096ed0a091660e6406ac6ff8088955cb90da764539deb2b88",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1850_DCHR_C96_UA_NTU_PUMP_ENVELOPE\\SHA256_MANIFEST_C96.json",
+  "manifest_sha256": "66d6582e6ab3572cf426eed89e80ff4cd57952208ef173eedd7d30f9e7896bb4",
+  "next": "Narrow UA below 2 kW/K to find failure boundary; obtain real source and vendor COP/pressure curves",
+  "physical_validation": false,
+  "production_changed": false,
+  "qa": "16/16 selftests; 227760/227760 independent rows; 26/26 groups; 12/12 LMTD; negative corruption detected",
+  "schema": "C96_UA_NTU_PUMP_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1850_DCHR_C96_UA_NTU_PUMP_ENVELOPE\\C96_SUMMARY.csv",
+  "summary_sha256": "e0cc2cf68bb6e38a627d8b22b00cadf9909bfbb0d54a56d3c9069f9bf982370f",
+  "task_id": "scc-2aab24704c2bd0"
+}

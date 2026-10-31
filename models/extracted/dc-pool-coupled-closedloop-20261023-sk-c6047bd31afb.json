@@ -1302,6 +1302,7 @@
   "execution_status": "not_ported",
   "file": "extracted/dc-pool-coupled-closedloop-20261023-sk-c6047bd31afb.json",
   "copies": [
+    "obsidian/calibration/closed_loop_simulink_20261023/DC_Pool_Coupled_ClosedLoop_20261023_SK.slx",
     "primary/calibration/closed_loop_simulink_20261023/DC_Pool_Coupled_ClosedLoop_20261023_SK.slx"
   ]
 }

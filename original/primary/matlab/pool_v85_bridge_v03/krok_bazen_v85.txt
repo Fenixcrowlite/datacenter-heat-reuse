@@ -1,0 +1,36 @@
+function [Tnovy,stav_novy,y] = krok_bazen_v85(T,stav,u)
+%#codegen
+% Vstup: [Q_HP_sluzba_v85_W, STOP, aktivita, plachta, T_vzduch, RH].
+% Len presmerovanie uz vyrobeneho tepla v85: nie nove teplo z DC!
+C=997*500*4182; dt=900; A=312.5; cp=4182;
+Qv85=max(0,u(1)); stop=u(2)>0.5;
+aktivita=max(0,u(3)); plachta=min(1,max(0,u(4)));
+Ta=u(5);RH=min(1,max(0,u(6)));
+ps=0.61094*exp(17.625*T/(T+243.04));
+pa=RH*0.61094*exp(17.625*Ta/(Ta+243.04));
+mv=max(0,4e-5*A*(ps-pa)*aktivita*(1-0.9*plachta));
+Qvypar=mv*2440000;
+Qkonv=3*A*(T-Ta)*(1-0.75*plachta);
+Qrad=0.95*5.670374419e-8*A*((T+273.15)^4-(Ta-2+273.15)^4)*(1-0.75*plachta);
+Qkonstr=800*(T-20);
+Qdop=mv*cp*(T-15);
+Qstraty=Qvypar+Qkonv+Qrad+Qkonstr+Qdop+2000;
+stav_novy=stav;
+if T<=27.35
+    stav_novy=1;
+elseif T>=27.65
+    stav_novy=0;
+end
+Qpool=0;
+if ~stop && stav_novy>0.5 && T<27.75
+    Qsafe=max(0,C*(27.75-T)/dt+Qstraty);
+    Qpool=min([Qv85,150000,Qsafe]);
+end
+% Zostavajuca sluzba je stale dostupna povodnej vetve.
+Qdh=Qv85-Qpool;
+Tnovy=T+(Qpool-Qstraty)*dt/C;
+y=zeros(1,9);
+y(1)=Tnovy;y(2)=Qpool;y(3)=Qdh;y(4)=Qstraty;
+y(5)=Qv85;y(6)=double(stop);y(7)=stav_novy;
+y(8)=Qvypar;y(9)=Qv85-(Qpool+Qdh);
+end

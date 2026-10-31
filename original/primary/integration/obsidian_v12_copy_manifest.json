@@ -1,0 +1,38 @@
+[
+  {
+    "file": "STATUS_v12.json",
+    "action": "copied",
+    "sha256": "ff553a837f1d5f65c38b7cf82dd82d5996680213de334b33c52dd03be167ed99",
+    "verified_identical": true
+  },
+  {
+    "file": "MASTER_STAGEBOARD_v12.md",
+    "action": "copied",
+    "sha256": "d5948ea6d00b46d2eba6e2a5deaf0b130ba598ede070e1205003c8d9eededc26",
+    "verified_identical": true
+  },
+  {
+    "file": "audit/test_component_contract_v12.py",
+    "action": "copied",
+    "sha256": "f54b48f8ed0a71ad006560d04432a7f916ff2958a1d138670e2281eec535e3c9",
+    "verified_identical": true
+  },
+  {
+    "file": "audit/component_contract_reference_tests_v12.json",
+    "action": "copied",
+    "sha256": "f7a01bfdc3013d44ede97626f9e3c93701dbc2e85609308ef979026045d97937",
+    "verified_identical": true
+  },
+  {
+    "file": "audit/Component_contract_audit_v12_RU.md",
+    "action": "copied",
+    "sha256": "2a5c95669f4ee6e77d520741e2a660bfbbe2604c7971efb74a0d792dc28dea4e",
+    "verified_identical": true
+  },
+  {
+    "file": "matlab/run_component_contract_v12.m",
+    "action": "copied",
+    "sha256": "4b5b5bb8336877a51b49fde1494bfe7ce67746de25a43477763116ea81764beb",
+    "verified_identical": true
+  }
+]

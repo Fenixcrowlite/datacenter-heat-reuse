@@ -1,0 +1,98 @@
+{
+  "version": "0.22",
+  "timestamp_utc": "20261009T025711_894696Z",
+  "scope": "Independent ZIP/XML generated-model structure and source provenance only",
+  "model_file": "matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+  "model_sha256": "e1d3c1fe69597cd35a8c93a0706bcf81e7ffe8ed7edb0f9e05d9c359afc4f909",
+  "dispatch_xml_member": "simulink/stateflow/chart_71.xml",
+  "total": 13,
+  "passed": 13,
+  "failed": 0,
+  "matlab_executed_by_this_inspection": false,
+  "physical_validation": false,
+  "primary_source_verified": false,
+  "checks": [
+    {
+      "name": "unique_actual_dispatch_chart",
+      "passed": true,
+      "detail": "Dispatch chart matches: 1"
+    },
+    {
+      "name": "six_expected_operating_states",
+      "passed": true,
+      "detail": [
+        "IDLE",
+        "HEAT_RECOVERY",
+        "STORAGE_CHARGE",
+        "STORAGE_DISCHARGE",
+        "BACKUP",
+        "UNMET_DEMAND"
+      ]
+    },
+    {
+      "name": "IDLE_executes_mode_allocation",
+      "passed": true,
+      "detail": "IDLE\nen,du:\ny=stateflow_allocate_v22(0,u,E,p);"
+    },
+    {
+      "name": "HEAT_RECOVERY_executes_mode_allocation",
+      "passed": true,
+      "detail": "HEAT_RECOVERY\nen,du:\ny=stateflow_allocate_v22(1,u,E,p);"
+    },
+    {
+      "name": "STORAGE_CHARGE_executes_mode_allocation",
+      "passed": true,
+      "detail": "STORAGE_CHARGE\nen,du:\ny=stateflow_allocate_v22(2,u,E,p);"
+    },
+    {
+      "name": "STORAGE_DISCHARGE_executes_mode_allocation",
+      "passed": true,
+      "detail": "STORAGE_DISCHARGE\nen,du:\ny=stateflow_allocate_v22(3,u,E,p);"
+    },
+    {
+      "name": "BACKUP_executes_mode_allocation",
+      "passed": true,
+      "detail": "BACKUP\nen,du:\ny=stateflow_allocate_v22(4,u,E,p);"
+    },
+    {
+      "name": "UNMET_DEMAND_executes_mode_allocation",
+      "passed": true,
+      "detail": "UNMET_DEMAND\nen,du:\ny=stateflow_allocate_v22(5,u,E,p);"
+    },
+    {
+      "name": "37_transitions_36_guarded",
+      "passed": true,
+      "detail": {
+        "transitions": 37,
+        "guarded": 36
+      }
+    },
+    {
+      "name": "no_unconditional_test_guards",
+      "passed": true,
+      "detail": "One unlabeled default transition is distinct from unconditional test guards."
+    },
+    {
+      "name": "discrete_parameterized_sample_time",
+      "passed": true,
+      "detail": {
+        "update": "DISCRETE",
+        "sample": "dchr_dt_v22"
+      }
+    },
+    {
+      "name": "embedded_stateflow_choose_mode_v22.m_equals_source",
+      "passed": true,
+      "detail": "XML normalizes newlines; compare exact normalized Unicode source including final newline."
+    },
+    {
+      "name": "embedded_stateflow_allocate_v22.m_equals_source",
+      "passed": true,
+      "detail": "XML normalizes newlines; compare exact normalized Unicode source including final newline."
+    }
+  ],
+  "source_sha256": {
+    "stateflow_choose_mode_v22.m": "dd6c8ec93f7c0d112130b1122d1f48646ce84e52b51e019d4a5fed496f7a2da1",
+    "stateflow_allocate_v22.m": "d61e9a44241c9efd8c793e6777612946cbd3b1bbeaef699ba58da1e25d966565"
+  }
+}

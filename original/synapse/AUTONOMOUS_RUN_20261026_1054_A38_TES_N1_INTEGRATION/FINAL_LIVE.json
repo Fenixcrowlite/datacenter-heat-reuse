@@ -1,0 +1,30 @@
+{
+    "timestamp":  "2026-10-26T11:01:40.8940842+01:00",
+    "host":  "DESKTOP-M9L3I4M",
+    "ram_free_gib":  2.494,
+    "ram_total_gib":  15.823,
+    "gpu_csv":  "1944 MiB, 8188 MiB, 2 %",
+    "git_worktree_count":  361,
+    "checked_stop_roots":  [
+                               "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter",
+                               "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery",
+                               "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1054_A38_TES_N1_INTEGRATION",
+                               "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse",
+                               "C:\\Users\\Lysda\\Desktop\\temp_coding",
+                               "C:\\Users\\Lysda\\Desktop\\EduMotionPipeline"
+                           ],
+    "stop_flags":  [
+
+                   ],
+    "process_alive":  {
+                          "20428":  true,
+                          "19516":  true,
+                          "6124":  true,
+                          "16288":  true,
+                          "7512":  true,
+                          "5264":  true,
+                          "30968":  true,
+                          "25492":  true
+                      },
+    "note":  "Root-level STOP only; nested tree not exhaustively scanned. Primary SynapseMCP Web used."
+}

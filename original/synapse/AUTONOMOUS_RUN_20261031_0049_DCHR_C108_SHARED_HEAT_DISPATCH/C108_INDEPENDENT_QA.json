@@ -1,0 +1,11 @@
+{
+  "annual_summaries_checked": 12,
+  "hourly_SHA": "7b243871e1ab13abc4c35e6ee8ae9bf85950bc546adf39c5f5383f1d54ac24d4",
+  "independent_assertions": 2207664,
+  "negative_controls": 2,
+  "rows": 105120,
+  "scenarios": 12,
+  "schema": "C108_INDEPENDENT_QA_V1",
+  "source_SHA_verified": true,
+  "status": "PASS"
+}

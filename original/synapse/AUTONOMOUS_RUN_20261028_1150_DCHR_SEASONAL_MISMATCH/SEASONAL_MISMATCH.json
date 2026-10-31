@@ -1,0 +1,270 @@
+{
+  "classification": "SIMULATED_COUNTERFACTUAL_NOT_DISPATCH_FEASIBLE",
+  "source_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "rows": 8760,
+  "assumed_interval_hours": 1,
+  "timezone": "UNSPECIFIED_IN_SOURCE",
+  "baseline_existing_storage_capacity_mwh_observed": 100,
+  "curtailed_potential_mwh": 22545.421260603576,
+  "gas_heat_mwh": 12549.051491180473,
+  "simultaneous_curtailment_gas_hours": 0,
+  "direct_same_hour_overlap_upper_bound_mwh": 0.0,
+  "monthly": {
+    "1": {
+      "curtailed_potential_mwh": 0.0,
+      "gas_heat_mwh": 3860.6155479765607,
+      "hours": 744
+    },
+    "2": {
+      "curtailed_potential_mwh": 0.0,
+      "gas_heat_mwh": 2982.568825289822,
+      "hours": 672
+    },
+    "3": {
+      "curtailed_potential_mwh": 0.210573616115477,
+      "gas_heat_mwh": 1509.8167378890391,
+      "hours": 744
+    },
+    "4": {
+      "curtailed_potential_mwh": 1016.3800516439835,
+      "gas_heat_mwh": 18.15441922108372,
+      "hours": 720
+    },
+    "5": {
+      "curtailed_potential_mwh": 3580.5739562288263,
+      "gas_heat_mwh": 0.0,
+      "hours": 744
+    },
+    "6": {
+      "curtailed_potential_mwh": 4081.8181066586535,
+      "gas_heat_mwh": 0.0,
+      "hours": 720
+    },
+    "7": {
+      "curtailed_potential_mwh": 4278.63815689259,
+      "gas_heat_mwh": 0.0,
+      "hours": 744
+    },
+    "8": {
+      "curtailed_potential_mwh": 4258.374385568431,
+      "gas_heat_mwh": 0.0,
+      "hours": 744
+    },
+    "9": {
+      "curtailed_potential_mwh": 3670.292409025501,
+      "gas_heat_mwh": 0.0,
+      "hours": 720
+    },
+    "10": {
+      "curtailed_potential_mwh": 1653.8013859022517,
+      "gas_heat_mwh": 0.0,
+      "hours": 744
+    },
+    "11": {
+      "curtailed_potential_mwh": 5.332235067233942,
+      "gas_heat_mwh": 1041.6894178505715,
+      "hours": 720
+    },
+    "12": {
+      "curtailed_potential_mwh": 0.0,
+      "gas_heat_mwh": 3136.206542953395,
+      "hours": 744
+    }
+  },
+  "ideal_counterfactual_capacities_mwh": {
+    "0": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 0.0,
+        "charged_mwh": 0.0,
+        "unused_potential_mwh": 22545.42126060358,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 0.0,
+        "charged_mwh": 0.0,
+        "unused_potential_mwh": 22545.42126060358,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 0.0,
+        "charged_mwh": 0.0,
+        "unused_potential_mwh": 22545.42126060358,
+        "final_soc_mwh": 0.0
+      }
+    ],
+    "100": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 100.21057361611548,
+        "charged_mwh": 100.21057361611548,
+        "unused_potential_mwh": 22445.210686987462,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 100.21057361611548,
+        "charged_mwh": 100.21057361611548,
+        "unused_potential_mwh": 22445.210686987462,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 100.21057361611548,
+        "charged_mwh": 100.21057361611548,
+        "unused_potential_mwh": 22445.210686987462,
+        "final_soc_mwh": 0.0
+      }
+    ],
+    "500": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 500.2105736161152,
+        "charged_mwh": 500.2105736161155,
+        "unused_potential_mwh": 22045.210686987462,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 500.2105736161152,
+        "charged_mwh": 500.2105736161155,
+        "unused_potential_mwh": 22045.210686987462,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 500.2105736161152,
+        "charged_mwh": 500.2105736161155,
+        "unused_potential_mwh": 22045.210686987462,
+        "final_soc_mwh": 0.0
+      }
+    ],
+    "1000": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 1000.2105736161155,
+        "charged_mwh": 1000.2105736161154,
+        "unused_potential_mwh": 21545.21068698746,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 1000.2105736161155,
+        "charged_mwh": 1000.2105736161154,
+        "unused_potential_mwh": 21545.21068698746,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 1000.2105736161155,
+        "charged_mwh": 1000.2105736161154,
+        "unused_potential_mwh": 21545.21068698746,
+        "final_soc_mwh": 0.0
+      }
+    ],
+    "2500": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 2500.210573616113,
+        "charged_mwh": 2500.210573616115,
+        "unused_potential_mwh": 20045.21068698747,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 2500.210573616113,
+        "charged_mwh": 2500.210573616115,
+        "unused_potential_mwh": 20045.21068698747,
+        "final_soc_mwh": 0.0
+      },
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 2500.210573616113,
+        "charged_mwh": 2500.210573616115,
+        "unused_potential_mwh": 20045.21068698747,
+        "final_soc_mwh": 0.0
+      }
+    ],
+    "5000": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 4178.106534420082,
+        "charged_mwh": 5000.210573616115,
+        "unused_potential_mwh": 17545.210686987466,
+        "final_soc_mwh": 822.1040391960337
+      },
+      {
+        "initial_soc_mwh": 822.1040391960337,
+        "saved_gas_heat_mwh": 5000.2105736161175,
+        "charged_mwh": 5000.210573616115,
+        "unused_potential_mwh": 17545.210686987466,
+        "final_soc_mwh": 822.1040391960337
+      },
+      {
+        "initial_soc_mwh": 822.1040391960337,
+        "saved_gas_heat_mwh": 5000.2105736161175,
+        "charged_mwh": 5000.210573616115,
+        "unused_potential_mwh": 17545.210686987466,
+        "final_soc_mwh": 822.1040391960337
+      }
+    ],
+    "10000": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 4178.106534420082,
+        "charged_mwh": 10000.210573616116,
+        "unused_potential_mwh": 12545.210686987426,
+        "final_soc_mwh": 5822.1040391960305
+      },
+      {
+        "initial_soc_mwh": 5822.1040391960305,
+        "saved_gas_heat_mwh": 10000.210573616125,
+        "charged_mwh": 10000.210573616116,
+        "unused_potential_mwh": 12545.210686987426,
+        "final_soc_mwh": 5822.1040391960305
+      },
+      {
+        "initial_soc_mwh": 5822.1040391960305,
+        "saved_gas_heat_mwh": 10000.210573616125,
+        "charged_mwh": 10000.210573616116,
+        "unused_potential_mwh": 12545.210686987426,
+        "final_soc_mwh": 5822.1040391960305
+      }
+    ],
+    "20000": [
+      {
+        "initial_soc_mwh": 0.0,
+        "saved_gas_heat_mwh": 4178.106534420082,
+        "charged_mwh": 20000.210573616117,
+        "unused_potential_mwh": 2545.210686987404,
+        "final_soc_mwh": 15822.104039196038
+      },
+      {
+        "initial_soc_mwh": 15822.104039196038,
+        "saved_gas_heat_mwh": 12549.051491180482,
+        "charged_mwh": 12549.051491180438,
+        "unused_potential_mwh": 9996.36976942311,
+        "final_soc_mwh": 15822.104039196038
+      },
+      {
+        "initial_soc_mwh": 15822.104039196038,
+        "saved_gas_heat_mwh": 12549.051491180482,
+        "charged_mwh": 12549.051491180438,
+        "unused_potential_mwh": 9996.36976942311,
+        "final_soc_mwh": 15822.104039196038
+      }
+    ]
+  },
+  "assumptions": [
+    "All curtailed HP_Heat is hypothetical potential, not proven recoverable thermal output.",
+    "No additional heat-pump electricity, COP/capacity limit, heat-exchanger constraints, network losses, storage losses, investment or cost modeled.",
+    "Unrestricted charge/discharge power; 100% efficiency; one-hour constant power; 0 MWh initial storage in first synthetic year.",
+    "Years 2 and 3 replay identical synthetic annual conditions; not measured future years or a certified steady state.",
+    "Additional idealized storage is NOT an incremental retrofit of the existing 100 MWh baseline storage; do not add savings to baseline without coupled re-simulation.",
+    "No claim of actual gas reduction, ERF, REF, WUE, legal compliance or primary-source signoff."
+  ],
+  "production_modified": false,
+  "primary_source_signoffs": 0
+}

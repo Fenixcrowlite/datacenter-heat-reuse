@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-08T21:49:32.831440+00:00",
+  "finished_utc": "2026-10-08T21:49:32.899756+00:00",
+  "scope": "OFFLINE_SYNTHETIC_ACQUISITION_GATES_ONLY",
+  "primary_text_verified": false,
+  "tests_run": 7,
+  "failed": 0,
+  "errors": 0,
+  "passed": 7
+}

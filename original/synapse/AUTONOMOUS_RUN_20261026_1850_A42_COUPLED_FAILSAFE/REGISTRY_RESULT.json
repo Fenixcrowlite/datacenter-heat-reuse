@@ -1,0 +1,14 @@
+{
+  "action": "CREATED_EVENT",
+  "event_id": 1234,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A42_isolated_coupled_IT_HP_TES_REJECT_failsafe",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1850_A42_COUPLED_FAILSAFE",
+  "evidence_sha256": "429c80ef908e664c435de546315bf8253f886efaa276a7d0452018afadc5473d",
+  "manifest_sha256": "50df599028cf3df4dc42b679358009103c9688969e480625dc88f9c8f4339791",
+  "qa": "14/14 Python unittest PASS; 10752 Decimal balance expressions; MATLAB R2026a 7x672=4704 rows PASS",
+  "status": "SYNTHETIC_COUPLED_PYTHON_AND_MATLAB_NUMERIC_AUDIT_PASS",
+  "physical_release_allowed": false,
+  "caveat": "Synthetic reference, no A42 Simulink/Stateflow model; ideal IT trip, unverified COP/equipment, physical release blocked",
+  "next_step": "A43 isolated Simulink/Stateflow model, finite IT trip delay and residual heat, 7x672 Python/MATLAB parity; source equipment parameters"
+}

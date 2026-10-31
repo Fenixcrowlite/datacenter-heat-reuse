@@ -1,0 +1,93 @@
+{
+  "version": "0.41",
+  "inherits": "STATUS_stateflow_v40.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T13:00:37.509896+00:00",
+  "checkpoint": "Saved-v40 clock uncertainty dwell-guard defect audit",
+  "stateflow_acceptance": "DEFECT_CONFIRMED_OPEN",
+  "model_version": "0.40",
+  "new_model": false,
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v40.slx",
+  "model_sha256": "eabb893ed5465b754981bb45ad06a1bb4ad1700ce031ce3531737b28ff7392f6",
+  "controller_defect": "Clock bound persisted but ignored in ON/OFF dwell guards and nominal wait scheduling",
+  "result_directory": "results/stateflow_clock_v41_20261010T125630995Z",
+  "supplement_directory": "results/stateflow_clock_v41_20261010T125848772Z",
+  "independent_qa": "results/stateflow_clock_v41_20261010T125630995Z/independent_QA_v41_20261010T130008_944237Z.json",
+  "matlab_batch_receipts": [
+    "audit/Stateflow_execution_v41_20261010T125627238Z.json",
+    "audit/Stateflow_execution_v41_20261010T125750329Z.json",
+    "audit/Stateflow_execution_v41_20261010T125844974Z.json",
+    "audit/Stateflow_execution_v41_20261010T125931352Z.json"
+  ],
+  "matlab_batch_exit_code": 0,
+  "scenarios": 29,
+  "completed_scenarios": 27,
+  "intervals": 33,
+  "positive_segments": 47,
+  "harness_passed": 56,
+  "harness_failed": 0,
+  "actual_runtime_fault_rejections": 2,
+  "six_modes_executed": true,
+  "independent_evidence_checks_passed": 1359,
+  "independent_evidence_checks_failed": 0,
+  "synthetic_reviewer_checks_passed": 4,
+  "synthetic_reviewer_checks_failed": 0,
+  "independent_check_breakdown": {
+    "artifact": {
+      "passed": 75,
+      "failed": 0
+    },
+    "execution": {
+      "passed": 97,
+      "failed": 0
+    },
+    "numeric": {
+      "passed": 381,
+      "failed": 0
+    },
+    "equation": {
+      "passed": 241,
+      "failed": 0
+    },
+    "reference": {
+      "passed": 225,
+      "failed": 0
+    },
+    "defect_reproduction": {
+      "passed": 8,
+      "failed": 0
+    },
+    "controls": {
+      "passed": 8,
+      "failed": 0
+    },
+    "synthetic": {
+      "passed": 4,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 324,
+      "failed": 0
+    }
+  },
+  "uncertainty_dwell_guarantee_failures": 10,
+  "certainly_premature_transitions": 0,
+  "max_independent_balance_residual_MWh": 7.216449660063518e-16,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Audit evidence QA passes; uncertainty-aware controller acceptance FAILS for ten interval-unresolved transitions.",
+    "No certainly premature physical transition is proved: admissible error sign/history of stress seeds is unknown.",
+    "The 1e-9-hour seeds and 2^-80-hour seed are numerical fixtures, not measured clocks/equipment or demonstrated long-run histories.",
+    "No corrected model is generated; model release remains 0.40 and its earlier acceptance stays scoped.",
+    "Near-tie fixtures are assessed within existing energy/time resolution; exhaustive exact real-input ordering remains open.",
+    "Normal-mode host planner executes analytic intra-macro segments; generated code/solver-clock event execution untested.",
+    "No measured physical validation/article replication or new primary-text signoff; research remains 0/31 full signoffs.",
+    "Independent algorithms in same agent, not independent personnel. Separate synthetic reviewer checks are not simulations.",
+    "Inherited formal-argument shadow warnings and failed sandbox startup are retained in timestamped logs.",
+    "Broad fixtures missed BACKUP; initial commentary misidentified missing mode as HEAT_RECOVERY. Targeted BACKUP supplement closes coverage. Initial reviewer assumed physical-cutoff precedence and aborted; failed attempts preserved."
+  ],
+  "next": "Implement additive Stateflow v42 uncertainty-aware dwell decisions in planner, saved supervisor and runtime gate: require physical-age lower endpoint hi+lo-bound >= minimum dwell using cancellation-safe comparisons; schedule a conservative wait with certified post-add enclosure or explicitly reject unresolvable progress. Retain ON-dwell safety overrides and all v41 seeds/ties, then execute new SLX with independent interval timing, six-mode/reference, actual fault and saved-MAT QA. Preserve v40/v41 evidence. Then resume primary equipment traceability."
+}

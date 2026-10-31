@@ -1,0 +1,92 @@
+{
+  "version": "0.59",
+  "timestamp_utc": "2026-10-11T11:55:30.514126+00:00",
+  "inherits": "STATUS_v58.json",
+  "result": "EVENT_ISOLATION_PASS_CORRELATED_STATEFLOW_HANDOFF_BLOCKED",
+  "model_version": "0.57",
+  "new_model": false,
+  "saved_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v57.slx",
+  "model_sha256": "05714844ca9dc182dc4ab8328c09e928695b0fb3967dfc7194c97b6eab65b387",
+  "model_executed_this_run": true,
+  "coupled_stateflow_acceptance": false,
+  "finite_water_stateflow_acceptance": "INHERITED_V57_AND_FRESHLY_REEXECUTED",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "stateflow_license_observed": 1,
+  "stateflow_version": [],
+  "sfroot_class": "Simulink.Root",
+  "chart_count": 2,
+  "event_matlab_passed": 1081,
+  "event_matlab_failed": 0,
+  "event_runs": 214,
+  "event_regimes": 10,
+  "event_status_counts": {
+    "CERTIFIED_NO_EVENT": 124,
+    "HORIZON_UNRESOLVED_BLOCKED": 31,
+    "ISOLATED_EVENT_BLOCKED": 59
+  },
+  "certified_crossing_counts": {
+    "BRANCH": 37,
+    "CAPACITY": 28,
+    "LIMIT_HOT_FLOW": 21,
+    "LIMIT_REQUEST": 3,
+    "LIMIT_NAMEPLATE": 2,
+    "LIMIT_TES_PORT": 1
+  },
+  "stateflow_matlab_passed": 328,
+  "stateflow_matlab_failed": 0,
+  "actual_scenarios": 13,
+  "actual_runtime_fault_rejections": 12,
+  "reference_comparisons": 6,
+  "independent_event_passed": 70368,
+  "independent_event_failed": 0,
+  "independent_stateflow_passed": 10992,
+  "independent_stateflow_failed": 0,
+  "event_reviewer_selfchecks": {
+    "passed": 5,
+    "failed": 0
+  },
+  "stateflow_reviewer_selfchecks": 7,
+  "stateflow_counts": {
+    "intervals": 66,
+    "positive_segments": 78,
+    "mode_coverage": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "latch_changes": 18,
+    "macro_transitions": 31,
+    "binary_records": 190,
+    "binary_values": 220634,
+    "original_MATs": 20
+  },
+  "original_event_binary_values": 51153,
+  "exact_branch_endpoint_MWh": "90071992547409925/18014398509481984",
+  "adjacent_binary64_energy_MWh": [
+    5.0,
+    5.000000000000001
+  ],
+  "defect_status": "NONREPRESENTABLE_BRANCH_ENDPOINT_PERSISTENT_EQUIVALENT_LIMITER_TIE_AND_CORRELATED_HANDOFF_OPEN",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "result_directory": "results/charge_events_v59_20261011T115206_526064Z",
+  "independent_event_qa": "results/charge_events_v59_20261011T115206_526064Z/independent_QA_v59_20261011T115508_583162Z.json",
+  "independent_stateflow_qa": "results/charge_events_v59_20261011T115206_526064Z/stateflow/independent_QA_v57_20261011T115446_761864Z.json",
+  "derivation": "audit/Charge_event_protocol_derivation_v59.md",
+  "limitations": [
+    "No new SLX or continuously coupled controller. v59 certifies pre-event prefixes/event windows; one-sided mathematical policy is specified, correlated representation and executable Stateflow handoff remain OPEN.",
+    "Conditional binary64 round-to-nearest/gradual-underflow outward arithmetic, |kt|<=1; maximum128 bisections. Uncertain signs/adjacent times stop refinement. No user-specified event-width accuracy guarantee.",
+    "Fixed-regime continuation beyond the first event is only a root-isolation diagnostic. Physical port energy is integrated on half the certified prefix; no post-event service credit or scalar memory handoff.",
+    "Exact symbolic event lies strictly between adjacent doubles; persistent branch/hot-flow/request equality needs equivalent-limiter handling. Current scalar strict APIs reject both adjacent continuations.",
+    "Synthetic finite-water/HP/TES assumptions; no equipment maps, finite UA/hydraulics, measured calibration or article replication. No new primary literature this run; inherited signoffs0/31.",
+    "Same-agent independent Fraction/120-/160-digit algorithms and original-MAT QA; independent personnel/physical validation not performed. Reviewer mutations are separate synthetic self-checks.",
+    "Saved v57 held-macro boundary/normal-mode host planner/64 slots and inherited shadow warnings remain. Stateflow license/charts/execution observed; version list is empty.",
+    "Development evidence retained: sandbox MATLAB startup failure and missing nested batch receipt caught by Stateflow QA. Receipt packaging repaired; stationary-equivalence derivation clarified before final sealed-source execution."
+  ],
+  "next_actionable_task": "Implement an additive correlated event record that retains the exact branch/limiter manifold, incoming trajectory and time/energy/source/work/loss/HP-clock enclosures; support interval initial inventory and exactly equivalent persistent limiter ties. Execute the v59 nonrepresentable branch/hot-flow fixture across the event without midpoint/snap/reset or service credit for unresolved time. Then integrate a new continuously tank-linked Stateflow model preserving v57 compiled finite-water guards and v52 cutoff/restart/dwell, with actual six-mode/fault/reference and original-MAT independent QA. Preserve v52-v59; no unchanged annual-matrix reruns. Primary equipment calibration remains OPEN."
+}

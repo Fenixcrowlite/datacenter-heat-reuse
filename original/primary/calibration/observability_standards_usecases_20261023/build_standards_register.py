@@ -1,0 +1,82 @@
+# -*- coding: utf-8 -*-
+"""Standards REQUIREMENTS TRACEABILITY, not a legal conformity certificate.
+Each proposed check and evidence document has an ownership/status.
+"""
+from pathlib import Path
+import csv,json
+P=Path(__file__).resolve().parent
+records=[
+# domain | reference | subject | source | requirement-to-verify | proposed-evidence | status | priority
+"DC Energy|ISO/IEC 30134-2:2026|PUE calculation and measurement|https://www.iso.org/standard/30134-2|Define DC boundary; E_DC and E_IT measurement categories; annual ratio|Meter SLD + calibrated E_DC and E_IT records|NOT_METERED|P0",
+"DC Energy|EU 2024/1364 Annex II III|Annual data centre sustainability reporting|https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj|Determine installation reporting applicability and annual measurement boundaries|Eligibility memo + year metering statement|NOT_EVALUATED|P0",
+"DC Energy|EN 50600-4-6|Energy reuse factor measurement|https://www.cenelec.eu/|Clarify measuring heat E_REUSE at DC facility boundary; reporting definition|Calibrated heat meter with heat transfer diagram|NOT_METERED|P0",
+"DC Energy|ISO/IEC 30134-9:2022|WUE metering|https://www.iso.org/standard/77692.html|Measure site water consumption normalized by IT energy|Water submeter + calendar kWh IT|NOT_METERED|P1",
+"DC Energy|ISO 50001:2018|Energy management system|https://www.iso.org/iso-50001-energy-management.html|Define baseline EnPIs, targets, monitoring and continuous improvement|Energy policy; audit; owner KPI reviews|NOT_IMPLEMENTED|P1",
+"DC Energy|ISO 50002-1:2025|Energy audit methodology|https://www.iso.org/iso-50001-energy-management.html|Document audit boundaries, traceable data and findings|Signed audit plan and measurement log|NOT_IMPLEMENTED|P1",
+"DC Energy|EU Energy Efficiency Directive 2023/1791|Data-centre reporting and heat reuse applicability|https://eur-lex.europa.eu/eli/dir/2023/1791/oj|Assess thresholds, permitting, heat reuse and national transposition|Legal applicability memo|NOT_ASSESSED|P0",
+"DC Energy|ISO/IEC 30134 series|Other KPIs and resource reporting|https://www.iso.org/committee/654019.html|Determine required REF, CUE, energy export metrics|KPI inventory with applicability|PARTIALLY_MODELED|P2",
+"Data Center|EN 50600 series|Data centre infrastructure and availability classes|https://www.cenelec.eu/|Select facility availability, redundancy and lifecycle documentation|Site architecture, basis of design, review|NOT_VERIFIED|P0",
+"IT Cooling|ASHRAE liquid cooling W classes|Class W17/W27/W32/W40/W45/W+|https://www.ashrae.org/technical-resources/topics-and-initiatives/ai-data-center/introduction-and-purpose|Determine actual IT supply fluid limits from hardware vendor|IT hardware coolant specification and thermal trip limits|NOT_VERIFIED|P0",
+"IT Cooling|ASHRAE TC 9.9|IT thermal guideline and reliability|https://handbook.ashrae.org/Handbooks/A23/IP/A23_Ch20/a23_ch20_ip.aspx|Confirm safe supply and return, moisture and transients|IT vendor acceptance report + BMS trends|MODEL_ONLY|P0",
+"IT Cooling|TIA-942 series|Data centre design best practices|https://tiaonline.org/|Assess applicability of redundant topology and system classification|Site topology, BOD, N+1 failure proof|APPLICABILITY_UNKNOWN|P1",
+"IT Cooling|EN 50600 availability|End-to-end cooling and electrical redundancy|https://www.cenelec.eu/|Show no single failure removes IT required cooling|FMEA + commissioning fault injection|SIMULATED_ONLY|P0",
+"IT Cooling|EN 378-1 family|Refrigeration safety|https://www.cenelec.eu/|Select refrigerant classification, machine room, release safety|OEM refrigerant safety assessment|NOT_SELECTED|P0",
+"Heat Pump|STN EN 14511-2:2022|Heat pump declared test conditions|https://normy.normoff.gov.sk/norma/135891/?lang=sk|Validate COP and heat output at selected water temperatures|OEM full- and partial-load heat map|NOT_CERTIFIED_FOR_SITE|P0",
+"Heat Pump|EN 14511-3:2022|Manufacturer rating methods|https://www.cenelec.eu/|Validate heating capacity, compressor draw and test tolerances|OEM lab test and independent rating|NOT_VERIFIED|P0",
+"Heat Pump|EN 14825|Seasonal part-load measurement methods|https://www.cenelec.eu/|Avoid treating constant COP as seasonal SCOP|Manufacturer PLR test data plus weather hours|NOT_AVAILABLE|P0",
+"Heat Pump|EN 378-2 family|Safety design and equipment|https://www.cenelec.eu/|Assess location, refrigerant leak, shutdown and ventilation|Refrigerant risk assessment, OEM drawings|NOT_VERIFIED|P0",
+"Heat Pump|Regulation (EU) 2024/573|F-gas applicable refrigerants|https://climate.ec.europa.eu/areas-action/fluorinated-greenhouse-gases/f-gas-legislation_en|Identify applicable gas phase-outs, labelling and training|Chosen refrigerant register and controls|DEVICE_NOT_SELECTED|P1",
+"Heat Pump|EU Ecodesign rules|Equipment energy compliance|https://energy-efficient-products.ec.europa.eu/|Determine applicable ecodesign scope and declaration|OEM DoC and technical file|APPLICABILITY_UNKNOWN|P1",
+"Heat Pump|OEM EN14511 selected maps|Temperature lift/flow/PLR|https://www.carrier.com/commercial/en/eu/|Get Qheat,Qevap,Welec,COP at 25/20 and 35/30 to 50/70C|Signed Carrier/Oilon selection output|MISSING|P0",
+"Pool Design|STN EN 15288-1+A1:2024|Public pool design safety|https://normy.normoff.gov.sk/norma/139372/?lang=en|Classify swimming pool, verify actual geometry/circulation/safety|Licensed norm text + signed design statement|FULL_TEXT_NOT_ACQUIRED|P0",
+"Pool Operation|STN EN 15288-2:2019|Public pool operational safety|https://normy.normoff.gov.sk/norma/128828/?lang=en|Supervision, water quality, operational procedures|Approved operation manual and risk assessment|NOT_VERIFIED|P0",
+"Pool Equipment|STN EN 13451-1+A1:2024|Swimming pool equipment safety|https://normy.normoff.gov.sk/norma/139373/|Check circulation fittings, suction and relevant machine guards|Manufacturer datasheets and pool safety report|NOT_VERIFIED|P0",
+"Pool Law|Vyhláška 308/2012 Z. z. §8(7)|Swimming pool temperature ceiling|https://static.slov-lex.sk/static/SK/ZZ/2012/308/vyhlasene_znenie.print.html|Confirm effective consolidated law and actual pool category; published swimming max 28C|Legal memo; instrumented overtemp shutoff test|PUBLIC_TEXT_ONLY|P0",
+"Pool Water|Vyhláška 308/2012 Z. z.|Pool water quality and sampling|https://static.slov-lex.sk/static/SK/ZZ/2012/308/vyhlasene_znenie.print.html|Identify actual operating hygiene limits and sampling|Licensed water test plan|NOT_VERIFIED|P0",
+"Pool Heating|ASHRAE HVAC Applications Natatoriums|Evaporation and air moisture|https://handbook.ashrae.org/|Use occupancy/activity cover humidity and VZT instead of fixed assumptions|Psychrometric annual airflow/latent balance|MODEL_SCENARIO_ONLY|P0",
+"Pool Ventilation|STN EN 16798-1|Indoor environmental input parameters|https://normy.normoff.gov.sk/|Confirm indoor humidity ventilation and design comfort|Independent hall HVAC model and air measurements|NOT_VERIFIED|P1",
+"Pool Equipment|EU pool chemical rules|Chemical treatment compatibility|https://echa.europa.eu/|Verify titanium/gasket chlorine and salt exposure limits|OEM materials certification and water chemistry|NOT_SPECIFIED|P0",
+"HX|OEM selected exchanger|Actual duty at 35/32–27.5/29.5C|https://www.alfalaval.sk/|Prove real 150kW including fouling and pressure drop|Manufacturer thermal sizing report|MODEL_U_ASSUMPTION|P0",
+"HX|PED 2014/68/EU|Pressure equipment applicability|https://eur-lex.europa.eu/eli/dir/2014/68/oj|Assess assembly classification, pressure rating and conformity|Nameplates/DoC/PED category evidence|NOT_ASSESSED|P0",
+"HX|Water chemistry and potable-water separation|Cross contamination protection|https://www.alfalaval.sk/|Document independent IT and pool loops, backflow prevention|Approved P&ID and isolation logic|NOT_DESIGNED|P0",
+"Hydraulics|STN EN 12828+A1:2014|Water-based heating system design|https://normy.normoff.gov.sk/norma/119367/|Size flows, expansion, pumps, valves and pressure safety|Calculated P&ID with head curves and expansion|SCREENING_ONLY|P0",
+"Hydraulics|EN 13941|District heating pipe systems if applicable|https://www.cenelec.eu/|Determine pipe installation scope and buried district network|Licensed pipe system specification|APPLICABILITY_UNKNOWN|P1",
+"Hydraulics|Pump OEM curves|Rated flow, head and NPSH|https://www.grundfos.com/|Ensure hydraulics at all operating and emergency points|Q-H + efficiencies, NPSH calculation|ASSUMPTION_ONLY|P0",
+"Thermal Storage|OEM TES rated energy and losses|Storage capacity and temperature stratification|https://www.cenelec.eu/|Use measured rather than lumped TES efficiency and loss|Storage design and commissioning curves|MODEL_ONLY|P1",
+"Water|Cooling makeup and blowdown|Water use of adiabatic recoolers|https://www.kelvion.com/|Quantify supply water, wastewater, biocide and disposal|Seasonal water balance + permits|MISSING|P1",
+"Electrical|IEC 60364 series|Low voltage electrical installation|https://webstore.iec.ch/|Verify circuit sizing, protection, RCD, earthing and selectivity|Electrical SLD, protection coordination|NO_SLD|P0",
+"Electrical|IEC 61439 series|LV switchgear assemblies|https://webstore.iec.ch/|Verify switchboard rating and declaration|OEM board documentation and inspection|NOT_SELECTED|P1",
+"Electrical|IEC 60204-1|Safety of electrical equipment of machinery where applicable|https://webstore.iec.ch/|Identify machines and emergency stops|OEM conformity and wiring tests|APPLICABILITY_UNKNOWN|P1",
+"Electrical|UPS + genset manufacturer|Continuity of IT cooling pumps|https://www.cenelec.eu/|End-to-end failover and reserve fuel / autonomy|UPS loaded test, generator test|NOT_VERIFIED|P0",
+"Control|IEC 61508|Functional safety principles if safety-related E/E/PE|https://webstore.iec.ch/|Determine required safety function integrity from risk assessment|Safety requirements specification, proof test|NEEDS_HAZARD_ASSESSMENT|P0",
+"Control|IEC 62443-3-3|Industrial automation cybersecurity|https://webstore.iec.ch/|Zone/conduit segregation, access, logging and patching|Threat model and OT security test|NOT_DESIGNED|P1",
+"Control|Independent overtemperature trip|Pool water maximum and overshoot|https://static.slov-lex.sk/static/SK/ZZ/2012/308/vyhlasene_znenie.print.html|Independent sensor/cutout with measured uncertainty and overrun|Hardware-in-loop trip test|ONLY_SOFTWARE_SIMULATION|P0",
+"Control|Flow failure/low pressure trip|IT load shed independent cooling pump|https://www.ashrae.org/|Fail-safe flow proof from redundant sensors and real server vendor|HIL trip to safe shutdown with UPS|MODEL_TRIP_ONLY|P0",
+"Metering|Heat meter standard EN 1434 series|Thermal energy delivered and reused measurement|https://www.cenelec.eu/|Calibrate matched flow and temperature sensors and logging intervals|Meter certificates, boundary drawing|NO_METER|P0",
+"Metering|ISO/IEC 30134-2:2026|Power meters and annual data|https://www.iso.org/standard/30134-2|Track E_IT/E_DC on same 12mo period without double count|Meter calibration, gap flags, billing crosschecks|UNAVAILABLE|P0",
+"Measurement|SI units ISO 80000|Dimensional analysis, units and precision|https://www.iso.org/|Require units, valid ranges, sensor uncertainties for every field|Signal register and dimensional unit tests|PARTIAL|P0",
+"Environmental|ISO 14001:2026|Environmental management and lifecycle review|https://www.iso.org/|Assess water refrigerant impacts, reporting, waste|Environmental impact and refrigerant leakage audit|NOT_APPLIED|P2",
+"Environmental|ISO 14064 series|GHG inventory if reported|https://www.iso.org/|Select market/location emissions and official factors|GHG scope and third party factors|MISSING_EMISSION_FACTORS|P1",
+"Business|ISO 9001:2026|Quality management system|https://www.iso.org/standard/88464.html|Maintain document revision and traceable verification|Revision-controlled documents, deviation/CAPA log|PARTIAL_ARTIFACT_QA|P1",
+"Business|ISO 31000:2018|Risk management guidance|https://www.iso.org/|Risk register with likelihood/severity and risk owner|Signed FMEA + residual risk reviews|FMEA_CREATED_NOT_SIGNED|P1",
+"Business|Contracted electricity and gas|Actual cost and supply constraints|https://ec.europa.eu/eurostat/|Actual tariff and demand charges, not Eurostat mean|Signed energy contracts and site budgets|BENCHMARK_ONLY|P1",
+"Operations|Commissioning/fat/sat|Acceptance tests for all failure scenarios|https://www.ashrae.org/|Run testable independent operational failover and overtemp proof|Site FAT/SAT witnessed signed reports|NO_PHYSICAL_TESTS|P0",
+"Operations|Service and calibration|Maintenance intervals per OEM|https://www.cenelec.eu/|Choose planned shutdown windows and periodic retest|Approved maintenance and calibration schedule|MISSING|P1",
+"Operations|BMS KPI traceability|Evidence from actual telemetry|https://www.iso.org/iso-50001-energy-management.html|Record sample interval, clock timezone and sensor provenance|Versioned BMS CSV and commissioning logs|SYNTHETIC_ONLY|P0",
+]
+names=["domain","standard_reference","subject","source_url","normative_check_to_confirm","required_evidence","evidence_status","priority"]
+data=[]
+for i,line in enumerate(records,1):
+ cells=line.split("|")
+ assert len(cells)==8,(i,len(cells))
+ data.append(dict(zip(names[:1]+names[1:],cells),id=f"STD-{i:03d}",compliance="UNVERIFIED_NOT_COMPLIANT_CLAIM",
+  standard_full_text_reviewed=False,registered_on="2026-10-23"))
+path=P/"standards_traceability_2026.csv"
+if path.exists():raise FileExistsError(path)
+with path.open("x",encoding="utf-8-sig",newline="") as f:
+ w=csv.DictWriter(f,fieldnames=["id"]+names+["compliance","standard_full_text_reviewed","registered_on"])
+ w.writeheader();w.writerows(data)
+(P/"standards_traceability_2026.json").write_text(json.dumps(data,indent=2,ensure_ascii=False),encoding="utf-8")
+counts={}
+for r in data:counts[r["domain"]]=counts.get(r["domain"],0)+1
+print("STANDARDS_TRACEABILITY_WRITTEN",len(data),"requirements",len(counts),"disciplines",json.dumps(counts,ensure_ascii=False))

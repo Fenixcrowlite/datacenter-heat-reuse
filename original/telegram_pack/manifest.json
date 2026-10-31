@@ -1,0 +1,36 @@
+{
+  "project": "DataCenter Heat Reuse",
+  "version": "0.4.0-validation",
+  "canonical_path": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse",
+  "onedrive_path": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse",
+  "entry_note": "00_Project_Hub.md",
+  "presentation": "presentation\\DataCenter_Heat_Reuse_v0_3_RU.pptx",
+  "results": "results\\scenario_summary_v2.csv",
+  "main_model": "matlab\\run_full_study_v3.m",
+  "simulink_model": "matlab\\simulink\\DataCenterHeatReuse_Core.slx",
+  "summary": {
+    "annual_heat_demand_GWh": 59.43,
+    "best_reference_scenario": "Warm45_Storage100",
+    "coverage_percent": 82.26,
+    "mean_COP": 6.21,
+    "layer": "reference-study-v0.3"
+  },
+  "frankfurt_validation": {
+    "annual_heat_demand_GWh": 144.0,
+    "hp_rated_MWth": 37.0,
+    "target_coverage_percent": 97.5,
+    "achieved_coverage_percent": 97.5000000000047,
+    "mean_COP": 4.155,
+    "hp_electricity_GWh": 33.947,
+    "gas_heat_GWh": 3.600,
+    "calibrated_recovery_fraction": 0.920585,
+    "doc": "Frankfurt_Validation_v0_4_RU.md",
+    "results": "frankfurt_validation_v4.csv",
+    "sensitivity": "frankfurt_sensitivity_v4.csv"
+  },
+  "notes": [
+    "Economic and CO2 outputs use scenario assumptions, not current Slovak market values.",
+    "Reference study v0.3 and Frankfurt validation v0.4 are separate experimental layers.",
+    "Frankfurt 97.5% coverage is used as a calibration target, not an independent prediction."
+  ]
+}

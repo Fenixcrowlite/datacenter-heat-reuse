@@ -1,0 +1,23 @@
+{
+  "dataset_id": "REPLACE_WITH_DATASET_ID",
+  "provenance": "A",
+  "source_uri": "field:REPLACE_WITH_MEASUREMENT_SOURCE",
+  "measurement_method": "REPLACE_WITH_PHYSICAL_MEASUREMENT_METHOD",
+  "expected_step_seconds": 900,
+  "instrument_ids": [],
+  "calibration_document": "",
+  "units": {
+    "Q_DC_available_W": "W",
+    "T_DC_C": "°C",
+    "Q_DH_request_W": "W",
+    "T_air_C": "°C",
+    "RH": "fraction",
+    "T_pool_sensor1_C": "°C",
+    "T_pool_sensor2_C": "°C",
+    "pool_flow_m3h": "m3/h",
+    "P_IT_W": "W",
+    "Q_REJECT_measured_W": "W",
+    "main_reject_ok": "fraction",
+    "backup_reject_ok": "fraction"
+  }
+}

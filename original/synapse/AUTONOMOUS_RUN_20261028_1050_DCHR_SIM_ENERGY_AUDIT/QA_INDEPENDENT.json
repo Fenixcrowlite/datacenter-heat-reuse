@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "independent_method": "math.fsum float, no import of audit module",
+  "rows_checked": 8760,
+  "energy_fields_checked": 9,
+  "max_energy_difference_mwh": 0.0,
+  "pue_float": 1.2,
+  "curtailed_intervals": 4587,
+  "curtailed_fraction_of_potential_hp_heat": 0.32413690790774086,
+  "used_heat_balance_failures": 0,
+  "potential_heat_balance_failures": 0,
+  "full_primary_signoff": false,
+  "measured_site_data": false
+}

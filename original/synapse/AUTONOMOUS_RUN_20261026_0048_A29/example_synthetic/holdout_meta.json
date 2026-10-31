@@ -1,0 +1,1 @@
+{"source_class": "SYNTHETIC_TEST", "units": {"flow": "m3/h", "hot": "degC", "cold": "degC", "meter": "kW"}, "meter_independent": true, "sample_period_s": 60, "density_kg_m3": 997, "specific_heat_kj_kg_K": 4.18, "meter_std_uncertainty_kw": 1.0}

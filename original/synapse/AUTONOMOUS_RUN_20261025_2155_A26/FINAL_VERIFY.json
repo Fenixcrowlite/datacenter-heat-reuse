@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "conditions": {
+    "all_manifest_hashes": true,
+    "manifest_count_8": true,
+    "source_hash_stable": true,
+    "class_D_explicit": true,
+    "three_analytic_cases": true,
+    "mc_3x80000": true,
+    "test_log_20": true,
+    "task_state_preserved": true,
+    "single_event": true,
+    "event_evidence_hash": true,
+    "sqlite_quick_check": true,
+    "handoff_present": true
+  },
+  "manifest_file_checks": {
+    "correlated_pool_metrology.py": true,
+    "test_correlated_pool_metrology.py": true,
+    "monte_carlo_crosscheck.py": true,
+    "CORRELATED_METROLOGY_EVIDENCE.json": true,
+    "MONTE_CARLO_QA.json": true,
+    "METROLOGIA_KORELOVANYCH_CHYB_SK.md": true,
+    "TEST_LOG.txt": true,
+    "register_a26.py": true
+  },
+  "handoff_sha256": "9da138bbe3a3e64e817d8fd577778807536a553e6f34218194726e59a4c3b918",
+  "evidence_sha256": "2205015f2fe36eb050d37aab351a7c6f34d9a4018916c6f0bffe76e4f2edb5ee",
+  "event_id": 1161,
+  "task_id": "scc-3d9d172beb6e1b"
+}

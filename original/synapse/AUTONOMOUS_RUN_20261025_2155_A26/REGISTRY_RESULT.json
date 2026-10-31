@@ -1,0 +1,16 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1161,
+  "action": "EXISTING_EVENT",
+  "scope": "isolated_correlated_metrology_uncertainty_envelope_D_synthetic",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261025_2155_A26",
+  "evidence_sha256": "2205015f2fe36eb050d37aab351a7c6f34d9a4018916c6f0bffe76e4f2edb5ee",
+  "source_code_sha256": "ad86683d55cc39b4b467224fcf85001ef5edce71e5033d677062f23a6c905223",
+  "monte_carlo_sha256": "249aa83d692bef2a4f6e3c6590d14752a7c805707b4bbbdae1c5fda3f0222870",
+  "qa_log_sha256": "162ef4a4e16d73c27218baad36d63c196d2cb1cddd2dd003d76e8137a69a6e3e",
+  "manifest_sha256": "466863aa77a675ff154445f1951d9cce87ad1b9353dd10a85060f48a8adf409e",
+  "qa": "20/20 unit tests PASS; py_compile PASS; independent seeded 3x80000 Gaussian Monte Carlo PASS",
+  "finding": "Temperature covariance shifts assumed flow-based u(P) from 11.124 kW (r=0) to 6.068 (r=+0.9) or 14.514 (r=-0.9); 15-min 500m3 storage finite-difference uncertainty remains very large",
+  "limits": "Assumed Class D correlations, not measured; no equipment calibration, field validation, pool standards signoff or MATLAB execution",
+  "next_step": "Collect traceable paired flow and supply/return temperature records, estimate covariance/autocorrelation and compare with independent calorimeter"
+}

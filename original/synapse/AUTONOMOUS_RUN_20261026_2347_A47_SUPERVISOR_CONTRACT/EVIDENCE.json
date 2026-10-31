@@ -1,0 +1,18 @@
+{
+  "status": "A47_GRAPHICAL_FSM_CONTRACT_PARITY_PASS",
+  "task_id": "scc-3d9d172beb6e1b",
+  "source": "A44 reference + A45 traces + A46 state contract",
+  "samples": 4704,
+  "cases": 7,
+  "state_mismatches": 0,
+  "unittest": "5/5 PASS",
+  "negative_control_initial_mismatches": 53,
+  "source_model_sha256": {
+    "A44": "c55dc5a1d4311104e675aebd6045e19883f95f27ea33db42d155edbdffe12307",
+    "A46": "a26fa2f0ca04555c20b806417efff390d0b605bc2a82b0ac1459fa860f6c2e49"
+  },
+  "physical_release": false,
+  "actual_graphical_chart_connected": false,
+  "matlab_run_this_checkpoint": false,
+  "next_step": "A48 build isolated Simulink with A44 graphical Chart replacing EMChart FSM; 7x672 full numeric parity"
+}

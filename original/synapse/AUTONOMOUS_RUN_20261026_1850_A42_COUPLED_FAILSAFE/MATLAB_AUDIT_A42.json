@@ -1,0 +1,65 @@
+{
+  "status": "MATLAB_INDEPENDENT_NUMERIC_AUDIT_PASS",
+  "matlab_simulink_model_built": false,
+  "physical_release_allowed": false,
+  "scenarios": 7,
+  "samples": 4704,
+  "cases": {
+    "both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 2.3436587071046233E-7,
+      "unmet_kWh": 7.2759576141834261E-14,
+      "acceptance": "PASS"
+    },
+    "main_only": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 2.3436587071046233E-7,
+      "unmet_kWh": 7.2759576141834261E-14,
+      "acceptance": "PASS"
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_temperature_C": 42.6221091328125,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 2.3436587071046233E-7,
+      "unmet_kWh": 7.2759576141834261E-14,
+      "acceptance": "PASS"
+    },
+    "neither": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 1.1920928955078125E-7,
+      "unmet_kWh": 7.2759576141834261E-14,
+      "acceptance": "PASS"
+    },
+    "COUNTERFACTUAL_both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 1.1920928955078125E-7,
+      "unmet_kWh": 7.2759576141834261E-14,
+      "acceptance": "PASS"
+    },
+    "COUNTERFACTUAL_backup_only": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 1.1920928955078125E-7,
+      "unmet_kWh": 253.00000000000006,
+      "acceptance": "PASS"
+    },
+    "COUNTERFACTUAL_neither": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_it_residual_W": 0,
+      "max_tes_residual_J": 1.1920928955078125E-7,
+      "unmet_kWh": 11520,
+      "acceptance": "PASS"
+    }
+  }
+}

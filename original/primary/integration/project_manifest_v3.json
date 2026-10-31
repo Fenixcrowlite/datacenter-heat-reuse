@@ -1,0 +1,62 @@
+{
+  "schema_version": "3.0",
+  "project_id": "data_center_heat_reuse",
+  "title": "DataCenter Heat Reuse",
+  "version": "0.3.0",
+  "language": ["ru", "en"],
+  "status": "validated-reference-model",
+  "canonical_root": "C:/Users/Lysda/OneDrive/Projects/DataCenter_Heat_Reuse",
+  "entrypoints": {
+    "obsidian": "00_Project_Hub.md",
+    "readme": "README.md",
+    "matlab_full": "matlab/run_full_study_v3.m",
+    "matlab_scenarios": "matlab/run_experiment_v2.m",
+    "matlab_sensitivity": "matlab/run_sensitivity_v2.m",
+    "matlab_uncertainty": "matlab/run_uncertainty_v3.m",
+    "matlab_tests": "matlab/run_tests_v3.m",
+    "simulink": "matlab/simulink/DataCenterHeatReuse_Core.slx",
+    "presentation": "presentation/DataCenter_Heat_Reuse_v0_3_RU.pptx",
+    "presentation_pdf": "presentation/DataCenter_Heat_Reuse_v0_3_RU.pdf"
+  },
+  "learning_path": [
+    "docs/01_How_System_Works.md",
+    "docs/Mathematical_Model_v0_3_RU.md",
+    "docs/Dependency_Map_v0_3_RU.md",
+    "docs/Experiment_Design_v0_3_RU.md",
+    "docs/Literature_Map.md",
+    "sources/source_catalog.md",
+    "sources/parameter_registry.yaml",
+    "docs/Results_v0_3_RU.md",
+    "docs/Learning_Path_v0_3_RU.md",
+    "docs/Extension_Roadmap.md"
+  ],
+  "datasets": [
+    "results/scenario_summary_v2.csv",
+    "results/temperature_lift_sensitivity_v2.csv",
+    "results/storage_sensitivity_v2.csv",
+    "results/uncertainty_v3.csv",
+    "results/uncertainty_summary_v3.csv",
+    "results/tests_v2.csv",
+    "results/tests_v3.csv"
+  ],
+  "figures": [
+    "results/figures/08_scenario_comparison_v2.png",
+    "results/figures/09_lift_cop_coverage_v2.png",
+    "results/figures/10_best_scenario_operation_v2.png",
+    "results/figures/11_cop_map_v2.png",
+    "results/figures/12_coverage_map_v2.png",
+    "results/figures/13_storage_tradeoff_v2.png",
+    "results/figures/14_uncertainty_v3.png"
+  ],
+  "tags": [
+    "data-center", "waste-heat", "district-heating", "heat-pump",
+    "thermal-storage", "matlab", "simulink", "energy-systems", "exergy"
+  ],
+  "evidence_policy": {
+    "A": "measured selected system",
+    "B": "peer-reviewed literature",
+    "C": "manufacturer/provider data",
+    "D": "scenario assumption"
+  },
+  "next_milestone": "calibrated Bratislava-like case with real weather, DH load/temperatures, DC telemetry and manufacturer HP map"
+}

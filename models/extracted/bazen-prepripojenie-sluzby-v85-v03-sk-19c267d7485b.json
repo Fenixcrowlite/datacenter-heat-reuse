@@ -372,6 +372,8 @@
   "execution_status": "not_ported",
   "file": "extracted/bazen-prepripojenie-sluzby-v85-v03-sk-19c267d7485b.json",
   "copies": [
-    "primary/matlab/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx"
+    "obsidian/pool_500m3/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx",
+    "primary/matlab/pool_v85_bridge_v03/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx",
+    "primary/results/pool_v85_bridge_v03/deliverable_bundle/Simulink/Bazen_Prepripojenie_Sluzby_v85_v03_SK.slx"
   ]
 }

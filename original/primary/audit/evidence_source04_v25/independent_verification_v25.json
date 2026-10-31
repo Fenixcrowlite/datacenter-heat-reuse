@@ -1,0 +1,24 @@
+{
+  "type": "independent_evidence_and_primary_text_QA",
+  "passed": 15,
+  "failed": 0,
+  "checks": {
+    "original_pdf_hash": true,
+    "evidence_hash": true,
+    "traceability_hash": true,
+    "all_90_primary_checks_pass": true,
+    "registry_31_unique": true,
+    "no_full_signoff": true,
+    "source04_partial": true,
+    "17_table2_rows": true,
+    "figure3_energy_closure": true,
+    "storage_losses_excluded": true,
+    "paper_DOI_original": true,
+    "paper_table2_units": true,
+    "paper_storage_volume": true,
+    "paper_storage_capacity": true,
+    "paper_explicit_zero_losses": true
+  },
+  "pdf_sha256": "e05f77bfe17ae2f11e7c1d3b3c4dfa283f2e16a2208e602bc5fa8edeb215359f",
+  "evidence_sha256": "d03da06b5d3f434b31359a873ddf8f44665fbdd7694f99e570a3b843b5277486"
+}

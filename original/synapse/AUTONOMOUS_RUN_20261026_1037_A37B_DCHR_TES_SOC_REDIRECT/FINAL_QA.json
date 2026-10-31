@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "directories": [
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1025_A37_DCHR_IT_THERMAL_PROTECTION",
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1037_A37B_DCHR_TES_SOC_REDIRECT"
+  ],
+  "files_checked": 38,
+  "events": [
+    1216,
+    1217
+  ]
+}

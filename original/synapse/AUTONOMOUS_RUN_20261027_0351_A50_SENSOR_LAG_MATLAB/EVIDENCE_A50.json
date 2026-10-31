@@ -1,0 +1,36 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A50_graphical_stateflow_sensor_lag_fault_injection",
+  "status": "A50_GRAPHICAL_SENSOR_LAG_PARITY_PASS",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0351_A50_SENSOR_LAG_MATLAB",
+  "model_sha256": "8edb7f64b9fe27c54be4c5d1223e242feb6f733cde97dce4c044b25729dc5cbe",
+  "a48_source_sha256": "063f9afb5816cd4f6bed415256293eee67b328718b141c29d84853ddafab25cb",
+  "matlab_result_sha256": "2ad339d11a0f23a2bbd3b44ab790d437e5087fb874619dad98d12d2e7965b85a",
+  "matlab_executed": true,
+  "comparisons": 15840,
+  "cases": 6,
+  "steps_per_case": 240,
+  "python_tests": "7/7 PASS",
+  "sensor_lag_steps": [
+    0,
+    1,
+    4
+  ],
+  "trip_delay_steps": 2,
+  "trip_indices": {
+    "neither": [
+      98,
+      98,
+      98
+    ],
+    "backup_only": [
+      98,
+      98,
+      103
+    ]
+  },
+  "synthetic_only": true,
+  "physical_release": false,
+  "model_limitation": "Saved A50 SLX is a baseline copy of A48; sensor-lag blocks are inserted into an in-memory isolated copy for each MATLAB simulation, not persisted as six separate SLX files.",
+  "next_step": "A51: vary trip-delay guard in an isolated graphical Stateflow copy (0/2/4 steps), independently compare 240-step trajectories and prove thermal/energy balances; keep physical validation and 31 source signoffs BLOCKED."
+}

@@ -1,0 +1,53 @@
+{
+  "files": {
+    "C100_AIR_HOURLY.csv.gz": {
+      "bytes": 4225982,
+      "sha256": "8ce8e04be652540eb635afb75958077c716220a26f3471526264985e0862fff4"
+    },
+    "C100_AIR_SUMMARY.csv": {
+      "bytes": 1969,
+      "sha256": "16eea24a886be89157614a210495544c49433809885de470551f617bada6fe9a"
+    },
+    "C100_FINDINGS.md": {
+      "bytes": 6925,
+      "sha256": "4f262128ec2981c72b084acd833198e4ef8e001cb17fa0493ef25c508f630563"
+    },
+    "C100_INDEPENDENT_QA.json": {
+      "bytes": 492,
+      "sha256": "8d3b06491eb0c5e9cfe2ef0679e64f0c816e028c2ff470045b393c80c1867b5a"
+    },
+    "C100_METADATA.json": {
+      "bytes": 2008,
+      "sha256": "f919f70b3da6688cffc01a6d1a39593044d52bafc35b3aafb46dd5583c18cde4"
+    },
+    "C100_QA_INITIAL_FAILURE.txt": {
+      "bytes": 2440,
+      "sha256": "6e419f6137c8bd41ca36633283bbc26c16e9c4c08adab2066884307a3f261681"
+    },
+    "C100_QA_LOG.txt": {
+      "bytes": 986,
+      "sha256": "33501e9065b0a77725ea40a15d989d0095b5573d31aebdd43c9143d79baec968"
+    },
+    "C100_QA_SECOND_FAILURE.txt": {
+      "bytes": 2446,
+      "sha256": "6f6c56930063587e5f6aec691b0816f9285f305d77ab267b5ac778cde8bd46e5"
+    },
+    "C100_RUN_LOG.txt": {
+      "bytes": 1396,
+      "sha256": "a560b9a450c27008c2870d3ec9f6b16c899213b460380ce118db44ca134c0563"
+    },
+    "c100_air_hvac.py": {
+      "bytes": 10313,
+      "sha256": "0dd4d2cb6f9742a7041882aeb4c3ab8fc08f010501e0c9ef5196af0c7125e962"
+    },
+    "qa_c100_independent.py": {
+      "bytes": 6576,
+      "sha256": "17b65adbe0d8d7e4c0b89b9357453c1ae0b132d049d0d4e830d349986d41fafc"
+    }
+  },
+  "qa": "13/13 selftests; 1419217 independent assertions; 78840 hourly rows; 2 negative controls",
+  "schema": "C100_SHA256_MANIFEST_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

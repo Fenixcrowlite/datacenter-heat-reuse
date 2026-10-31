@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c118-subhour-rh-20261031-0550",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH\\C118_SUBHOUR_STRESS.csv.gz",
+  "artifact_sha256": "27220733cb23e36d797ccb1805d062407744634f973ad785eccc3f3ba861b6e0",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH\\C118_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH\\SHA256_MANIFEST_C118.json",
+  "manifest_sha256": "51a6d770334896dcd2f1f5a0032dc8a6a8fc36230de372557d6ff162be472e98",
+  "next": "Subhour responsive dehumidifier + dynamic air temperature/enthalpy; calibrate with measured air flow and equipment.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH\\C118_INDEPENDENT_QA.json",
+  "schema": "C118_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0550_DCHR_C118_SUBHOUR_RH\\C118_SUMMARY.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

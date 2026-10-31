@@ -1,0 +1,122 @@
+{
+  "status": "A51_GRAPHICAL_TRIP_DELAY_PARITY_PASS",
+  "comparisons": 15840,
+  "cases": {
+    "neither_trip0": {
+      "samples": 240,
+      "first_trip_index_zero_based": 96,
+      "max_temperature_C": 34.750728282585563,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8.4703294725430034E-22,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        0
+      ]
+    },
+    "backup_only_trip0": {
+      "samples": 240,
+      "first_trip_index_zero_based": 96,
+      "max_temperature_C": 42.891420632300694,
+      "max_abs_differences": [
+        0,
+        2.9802322387695312E-8,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        2.9103830456733704E-11,
+        0,
+        0,
+        2.9802322387695312E-8
+      ]
+    },
+    "neither_trip2": {
+      "samples": 240,
+      "first_trip_index_zero_based": 98,
+      "max_temperature_C": 67.804362159375,
+      "max_abs_differences": [
+        0,
+        1.3877787807814457E-17,
+        0,
+        0,
+        0,
+        1.6940658945086007E-21,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        6.9388939039072284E-18
+      ]
+    },
+    "backup_only_trip2": {
+      "samples": 240,
+      "first_trip_index_zero_based": 98,
+      "max_temperature_C": 67.804362159375,
+      "max_abs_differences": [
+        0,
+        7.4505805969238281E-9,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        2.9103830456733704E-11,
+        0,
+        0,
+        1.4901161193847656E-8
+      ]
+    },
+    "neither_trip4": {
+      "samples": 240,
+      "first_trip_index_zero_based": 100,
+      "max_temperature_C": 90.941415468849613,
+      "max_abs_differences": [
+        0,
+        6.9388939039072284E-18,
+        0,
+        0,
+        0,
+        1.6940658945086007E-21,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        6.9388939039072284E-18
+      ]
+    },
+    "backup_only_trip4": {
+      "samples": 240,
+      "first_trip_index_zero_based": 100,
+      "max_temperature_C": 74.02163479851562,
+      "max_abs_differences": [
+        0,
+        2.384185791015625E-7,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        2.384185791015625E-7
+      ]
+    }
+  },
+  "synthetic_only": true,
+  "physical_release": false,
+  "source_a50_unmodified": true,
+  "delay_steps": [
+    0,
+    2,
+    4
+  ]
+}

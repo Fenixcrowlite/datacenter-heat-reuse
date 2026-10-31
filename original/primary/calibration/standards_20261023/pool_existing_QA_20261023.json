@@ -1,0 +1,115 @@
+{
+  "as_of": "2026-10-23",
+  "scope": "read-only concurrent-workstream audit",
+  "confidence": "software comparison against simulated results, not real-world validation",
+  "inputs": [
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_500m3_v01\\vysledky_bazen_500m3.json",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_500m3_v01\\simulink_scenare_SK.json"
+  ],
+  "checks": [
+    {
+      "name": "pool geometry",
+      "status": "PASS_GEOMETRIC_ONLY",
+      "evidence": {
+        "m3": 500,
+        "surface_m2": 312.5,
+        "vol_calculator_m3": 500.0
+      },
+      "required_action": "Classify 25x12.5x1.6 geometry against selected public-use, depth, lane and water-treatment requirements"
+    },
+    {
+      "name": "ideal heatup energy",
+      "status": "PASS_DIMENSIONAL",
+      "evidence": {
+        "other_chat_MWh": 6.94909,
+        "independent_MWh": 6.94909
+      },
+      "required_action": "Use for ideal lower-bound heatup only"
+    },
+    {
+      "name": "existing thermostatic limit",
+      "status": "NONCOMPLIANT_SCREENING",
+      "evidence": {
+        "setpoint_C": 28.0,
+        "existing_OFF_C": 28.2,
+        "published_limit_C": 28.0
+      },
+      "required_action": "Apply max-temp safety guard below 28 C with sensor/inertia allowance after legal-version review"
+    },
+    {
+      "name": "logged final-temperature exceedances",
+      "status": "FAIL",
+      "evidence": {
+        "Python_end_over_28": [
+          {
+            "case": "TC_75kW",
+            "last_C": 28.12534120573681
+          },
+          {
+            "case": "TC_150kW_RH80",
+            "last_C": 28.172880652884512
+          }
+        ],
+        "Simulink_end_over_28": [
+          {
+            "case": "TC_75kW",
+            "last_C": 28.103659843606653
+          },
+          {
+            "case": "TC_300kW",
+            "last_C": 28.08128524634391
+          }
+        ]
+      },
+      "required_action": "Add high-rate max-over-horizon probe and interlock, do not rely on endpoint tests"
+    },
+    {
+      "name": "Python versus Simulink scenario bridge",
+      "status": "PASS_NUMERIC_COMPARISON_NOT_CALIBRATION",
+      "evidence": [
+        {
+          "case": "TC_75kW",
+          "time_to_28_delta_minutes": -17.965,
+          "seven_day_heat_delta_MWh": -0.051875,
+          "end_temperature_delta_C": -0.021681
+        },
+        {
+          "case": "TC_150kW",
+          "time_to_28_delta_minutes": -7.055,
+          "seven_day_heat_delta_MWh": -0.09375,
+          "end_temperature_delta_C": -0.073619
+        },
+        {
+          "case": "TC_300kW",
+          "time_to_28_delta_minutes": -3.638,
+          "seven_day_heat_delta_MWh": 0.0225,
+          "end_temperature_delta_C": 0.155186
+        }
+      ],
+      "required_action": "Agree tolerances for solver, hysteresis timing and original code's interpolation"
+    },
+    {
+      "name": "PUE external benchmark",
+      "status": "SCENARIO_NOT_MEASURED",
+      "evidence": {
+        "model_pue": 1.2,
+        "uptime_2026_mean_pue": 1.52,
+        "IT_MW_at_utilization": 8.2,
+        "model_annual_EDC_MWh": 86198.4,
+        "market_PUE_same_IT_EDC_MWh": 109184.64
+      },
+      "required_action": "Treat PUE 1.2 as high-efficiency scenario and 1.52 survey mean as separate case"
+    },
+    {
+      "name": "pool envelope & compressor",
+      "status": "UNVERIFIED_REAL_DATA",
+      "evidence": {
+        "loss_avg_kW": 31.448776393848785,
+        "COP": 4.0,
+        "cover_evap_reduction": 0.9
+      },
+      "required_action": "Acquire actual hall RH, cover performance, manufacturer HP COP map, insulation UAs, heat exchanger performance"
+    }
+  ],
+  "critical_count": 2
+}

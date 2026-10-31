@@ -1,0 +1,7 @@
+﻿scenario,cooler_count_total,net_capacity_per_unit_MW,net_capacity_normal_MW,net_capacity_during_fault_MW,net_capacity_after_spare_MW,fault_seconds,deficit_during_fault_MW,buffer_min_5K_m3,normal_10MW_design_load_unserved_MW,capacity_adequate_after_failover,requires_independent_UPS_pump,classification
+6units_nominal_30s,6,2,10,8,10,30,2,2.878,0,True,True,model hypothesis only: rated and derated duties not manufacturer confirmed
+6units_derated10pct_30s,6,1.8,9.0,7.2,9.0,30,2.8,4.029,1.0,False,True,model hypothesis only: rated and derated duties not manufacturer confirmed
+7units_derated10pct_30s,7,1.8,10.8,9.0,10.8,30,1.0,1.439,0,True,True,model hypothesis only: rated and derated duties not manufacturer confirmed
+7units_derated10pct_5min,7,1.8,10.8,9.0,10.8,300,1.0,14.39,0,True,True,model hypothesis only: rated and derated duties not manufacturer confirmed
+7units_derated20pct_30s,7,1.6,9.6,8.0,9.6,30,2.0,2.878,0.4,False,True,model hypothesis only: rated and derated duties not manufacturer confirmed
+7units_nominal_total_cooling_lost_60s,7,2,12,0,12,60,10,28.781,0,True,True,model hypothesis only: rated and derated duties not manufacturer confirmed

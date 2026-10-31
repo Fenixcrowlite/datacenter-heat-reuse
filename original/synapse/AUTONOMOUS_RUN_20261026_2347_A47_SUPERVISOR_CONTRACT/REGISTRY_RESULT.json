@@ -1,0 +1,13 @@
+{
+  "event_id": 1257,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A47_graphical_supervisor_preintegration_contract",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2347_A47_SUPERVISOR_CONTRACT",
+  "evidence_sha256": "7f2a2943b4331b33473a157a0a0c63df791f60f71121f83ce0e7dc32cd933505",
+  "manifest_sha256": "0115d303bb432b6b60d81f8ea8e778fb2ab10c2ebaf7dcb56b286cdbcd0ef2fa",
+  "handoff_sha256": "91f8c7b0f67295769de8e7c45b25967a389cb70a2f0e929a95f3b492f52051e0",
+  "qa": "5/5 unittest; 4704/4704 FSM states; 53-mismatch negative control",
+  "graphical_stateflow_connected": false,
+  "physical_release": false,
+  "next_step": "A48 build isolated Simulink with A44 graphical Chart replacing EMChart FSM; 7x672 full numeric parity"
+}

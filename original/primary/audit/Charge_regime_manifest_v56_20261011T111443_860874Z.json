@@ -1,0 +1,663 @@
+{
+  "version": "0.56",
+  "timestamp_utc": "2026-10-11T11:14:43.860859+00:00",
+  "evidence_root": "results/charge_regimes_v56_20261011T111230_427402Z",
+  "scope": "CHECKPOINT_AND_IMMUTABLE_EVIDENCE_HASHES_EXCLUDING_GENERATED_BUILD_CACHE",
+  "artifacts": [
+    {
+      "path": "STATUS_v56.json",
+      "size": 5197,
+      "sha256": "3b174a7347f4762a65f7404839f44f13ac23c98d76aa4031d5e93cb181b68d34"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v56.md",
+      "size": 1884,
+      "sha256": "7bac2932181fcf4664d38632b0bb5226c7148d8f432a738fdd3b835b3f456796"
+    },
+    {
+      "path": "audit/Charge_regime_results_v56.md",
+      "size": 5215,
+      "sha256": "53dd6a052d0e5dbf22d5d00beb04000690ab70409e1f1a51f5440835f4ef0f98"
+    },
+    {
+      "path": "automation/engineering_progress.md",
+      "size": 152269,
+      "sha256": "de365c46621a600a76c547c9d129518d66b98a1eb266e9d94d03281e0716365b"
+    },
+    {
+      "path": "automation/STATEFLOW_ACCEPTANCE.md",
+      "size": 21622,
+      "sha256": "c6df8fe44c07247160b88630ce3ed74053321f1192a69d069d04896c9b42f961"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary_manifest.json",
+      "size": 20092,
+      "sha256": "1fd041c7862fbfdad540056d87e27977e4f1ce678ffff7d88b5da919d5c447d8"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/boiler_limit_simulation.mat",
+      "size": 290112,
+      "sha256": "cb947c040c412b3ea2e28e15774ebf798f4e95397ea10be1fe875a481f9b1e18"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/charge_regimes_v56.mat",
+      "size": 7015016,
+      "sha256": "15f23973c337c4e91bce6bba7d90ed006dd70930520ff7319b9cd4517bb3258c"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/execution_release_20261011T111240343Z.json",
+      "size": 570,
+      "sha256": "c9c3afc2d582985f53b25fabc18ec6cb1ae5ee293c0859687a515dedd43c6d0b"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/execution_release_20261011T111250956Z.json",
+      "size": 570,
+      "sha256": "1bf8362fdec6ae33b20e62e485d1818fa1d62a644e3f2b8143ea134fb9bfdab0"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/hp_only_simulation.mat",
+      "size": 290104,
+      "sha256": "08d2892b890009a806cf2e650571b2af89592d177fecc56be7083c56d4c559b5"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/independent_QA_v56_20261011T111430_667933Z.json",
+      "size": 720064,
+      "sha256": "517629a4e299540b10b0cda61366eef50616c310fa6e7dbc933cdb954f1fb913"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/insufficient_heat_simulation.mat",
+      "size": 290128,
+      "sha256": "25995bcb6753b131c7f90b6c934c2976390acefa758ebbf3eb2f89146f341505"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/matlab_release_20261011T111240343Z.log",
+      "size": 181,
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/matlab_release_20261011T111250956Z.log",
+      "size": 43056,
+      "sha256": "3683685fae196f61ec70bb5193bdd137c7ce8e23da86d4c1f996a0f65e5e5b25"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/mat_reopen.json",
+      "size": 1002368,
+      "sha256": "e4fd0e78648ba78809cdc753e7761b111eb0e3daeb8fa1404d32f83e559c7b68"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/negative_source_fault.mat",
+      "size": 287928,
+      "sha256": "4a4a36dad0a22b84aec026d64d471ab70d5ececa1a4fd97139dfcd5330c3a665"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/original_simulation_reopen.json",
+      "size": 248400,
+      "sha256": "b6d92aa390b57bd26a0d84a7e3e298c6982bac5468e12cb047abae906a119289"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/preservation.json",
+      "size": 50229,
+      "sha256": "58ff2295bef3bbc52fa9d1df5d1fa89c6d82a54ef515f2c3a28adda44b9e20c1"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/release_QA_v56_20261011T111435_176759Z.json",
+      "size": 94611,
+      "sha256": "279093c381c770c24b8dfcf39846d3151a7bcad08b8da7fb89d9a222e639cb23"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/release_reviewer_20261011T111434976Z.log",
+      "size": 687,
+      "sha256": "51ee23b6d5466ecbb3568e350909ce6e8613f6198b7d17d9a401a2725f55641c"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/report.json",
+      "size": 1002368,
+      "sha256": "e4fd0e78648ba78809cdc753e7761b111eb0e3daeb8fa1404d32f83e559c7b68"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/reviewer_20261011T111429325Z.log",
+      "size": 429,
+      "sha256": "12d56663cbe4c6ec729627003a5eefdd41dd67ad9791f151ce2588253d9618b8"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_hashes.json",
+      "size": 2239,
+      "sha256": "587663addd99d574bf5c6231600456cb6f1ccfebb10e76839b2f4828632382bb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/spec.json",
+      "size": 163668,
+      "sha256": "ee45f0a62abe0d20cf479cbfcfe6453b57990952e81896054e2188281b1ff8e3"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/temporal_original_reopen.json",
+      "size": 232065,
+      "sha256": "5d1dc608dd8be949e36d91b44792c3f7b1b24f70e3290a765ba349f350d906cf"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/temporal_report.json",
+      "size": 281396,
+      "sha256": "a7efcca24bd38c969f5a2c4f40969cf4c14319da8dd454cfb57f876bf3ddae63"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/temporal_simulation.mat",
+      "size": 337440,
+      "sha256": "6df5689b3611a988d31fd92439959732c4851aa9e3a0b8fdc685151f7b65bd86"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/tes_charge_simulation.mat",
+      "size": 290112,
+      "sha256": "96e2fa69e165851ddac8ad4083b34fa182397b4f6eb1abcf9b241ef0293bf941"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/tes_discharge_simulation.mat",
+      "size": 290120,
+      "sha256": "d1b2badee0834faa0810b25deebf4fcf6343b5a25e9fc1d572e14bdc55ba9fe4"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/zero_demand_simulation.mat",
+      "size": 518232,
+      "sha256": "94b37a98bb881757fc3e5cea13689f89673b1bfe1e6beea424ccaccf99b339bb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/001_zero_demand_dispatch.bin",
+      "size": 200,
+      "sha256": "533c6d26c19d46bff3ce08f8ea19af75305c04a66af2824811f8b77fac58c59f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/002_zero_demand_raw_segments.bin",
+      "size": 14336,
+      "sha256": "0ebebe4a32d577cf9478b12ef161b8d8f1595e647745f16527c65a6e014c7ef2"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/003_zero_demand_raw_plans.bin",
+      "size": 11776,
+      "sha256": "a4a59b1c7949848f7dcc1c46442bb583fab2988ef680ab76e8d8605a7688afbe"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/004_zero_demand_clock_start.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/005_zero_demand_clock_end.bin",
+      "size": 32,
+      "sha256": "fa81ad9a13f0dcf50c8c3e5f7ea60f6ceb7192db2abae2d82f7528c6b97d4777"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/006_zero_demand_energy_start.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/007_zero_demand_case_p.bin",
+      "size": 88,
+      "sha256": "9e21e0c35ab7ea09540e77cc69fda1b97c113c8a1197d1508e20b68010018f6f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/008_zero_demand_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/009_zero_demand_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/010_zero_demand_case_inputs.bin",
+      "size": 40,
+      "sha256": "4795abbb547f29ccd3136ab787e7d44cbe5cc37227672027901a3f42c6f7d8f1"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/011_zero_demand_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/012_zero_demand_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/013_hp_only_dispatch.bin",
+      "size": 200,
+      "sha256": "9781460fb11bf073a5b2c52871987145f563330209e54a5c2ac1df2dceefe794"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/014_hp_only_raw_segments.bin",
+      "size": 14336,
+      "sha256": "8afba2cca12639399a56197285f2e79dd490bc780fef9bc02679e6c89d542e18"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/015_hp_only_raw_plans.bin",
+      "size": 11776,
+      "sha256": "2ea94ddef289c82d3a8b9b9858a381b06781de440f7db5cd05cefd5b6b855a7c"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/016_hp_only_clock_start.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/017_hp_only_clock_end.bin",
+      "size": 32,
+      "sha256": "d8a51e5c9e5416b99ec16253c82410f67dde2bb68134ab7b3e2d11b077c627f3"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/018_hp_only_energy_start.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/019_hp_only_case_p.bin",
+      "size": 88,
+      "sha256": "1ea0dc1eddbc352488b8c3b27a030a0585e228313edeb29d6c7c56008cb25840"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/020_hp_only_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/021_hp_only_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/022_hp_only_case_inputs.bin",
+      "size": 40,
+      "sha256": "52825c93749763316aa00e6e7d99d22e95f036756e195e940c3c4c5c28234da9"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/023_hp_only_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/024_hp_only_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/025_tes_charge_dispatch.bin",
+      "size": 200,
+      "sha256": "57f3b3dc3605ab86514444a0836e8b30ac2dc5f21a9f3fa42f2a1376a22124af"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/026_tes_charge_raw_segments.bin",
+      "size": 14336,
+      "sha256": "3630beb6f16653e993903b968dabc45d79c24dbb597eda3bd78fd91ba4ca9c79"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/027_tes_charge_raw_plans.bin",
+      "size": 11776,
+      "sha256": "ca85e9bbca5b3627f882d23cdc1cb71ea77240b8dceaf8335244ff2870d44dfe"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/028_tes_charge_clock_start.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/029_tes_charge_clock_end.bin",
+      "size": 32,
+      "sha256": "d8a51e5c9e5416b99ec16253c82410f67dde2bb68134ab7b3e2d11b077c627f3"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/030_tes_charge_energy_start.bin",
+      "size": 8,
+      "sha256": "6c3c396ed6b5c36dcae172271f462051b1266b851e92df3deea8ac65478fd712"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/031_tes_charge_case_p.bin",
+      "size": 88,
+      "sha256": "9e21e0c35ab7ea09540e77cc69fda1b97c113c8a1197d1508e20b68010018f6f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/032_tes_charge_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/033_tes_charge_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/034_tes_charge_case_inputs.bin",
+      "size": 40,
+      "sha256": "52825c93749763316aa00e6e7d99d22e95f036756e195e940c3c4c5c28234da9"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/035_tes_charge_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "6c3c396ed6b5c36dcae172271f462051b1266b851e92df3deea8ac65478fd712"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/036_tes_charge_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/037_tes_discharge_dispatch.bin",
+      "size": 200,
+      "sha256": "5dd91a83c767912bbc0c86eedbb835fa2b582d485e682a3595cfdc3dd1c40e93"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/038_tes_discharge_raw_segments.bin",
+      "size": 14336,
+      "sha256": "1ba46ae9a943288c8444f376ef3a2c67ebce6485aa84ef3cf87111796929761c"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/039_tes_discharge_raw_plans.bin",
+      "size": 11776,
+      "sha256": "09d88a859f5fe56cd56078f78be73d473fcc2686a894af683ba1e6cf752b2418"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/040_tes_discharge_clock_start.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/041_tes_discharge_clock_end.bin",
+      "size": 32,
+      "sha256": "fa81ad9a13f0dcf50c8c3e5f7ea60f6ceb7192db2abae2d82f7528c6b97d4777"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/042_tes_discharge_energy_start.bin",
+      "size": 8,
+      "sha256": "57007a71b371a2eb3438dc5238f91b001e4888e8434ec8405f5bc42628a9c6ef"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/043_tes_discharge_case_p.bin",
+      "size": 88,
+      "sha256": "9e21e0c35ab7ea09540e77cc69fda1b97c113c8a1197d1508e20b68010018f6f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/044_tes_discharge_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/045_tes_discharge_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/046_tes_discharge_case_inputs.bin",
+      "size": 40,
+      "sha256": "759b316a876fe64570e89b86737c561060fd7688a89ac523830c434a6db2492b"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/047_tes_discharge_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "57007a71b371a2eb3438dc5238f91b001e4888e8434ec8405f5bc42628a9c6ef"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/048_tes_discharge_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/049_boiler_limit_dispatch.bin",
+      "size": 200,
+      "sha256": "f47ec73829fdf4565984db7d9a31202ee74c767fc9ef8d4e22fb172c45338f0a"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/050_boiler_limit_raw_segments.bin",
+      "size": 14336,
+      "sha256": "c3cf8389313f9d003681979ecf4d9dca39b436c6edcfb10d3a0e511e09b67c4c"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/051_boiler_limit_raw_plans.bin",
+      "size": 11776,
+      "sha256": "4213d2dbd1d70bd210a4f0e61e449a6e3f2e1b20d34f2864774515f1cba6aec4"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/052_boiler_limit_clock_start.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/053_boiler_limit_clock_end.bin",
+      "size": 32,
+      "sha256": "fa81ad9a13f0dcf50c8c3e5f7ea60f6ceb7192db2abae2d82f7528c6b97d4777"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/054_boiler_limit_energy_start.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/055_boiler_limit_case_p.bin",
+      "size": 88,
+      "sha256": "9e21e0c35ab7ea09540e77cc69fda1b97c113c8a1197d1508e20b68010018f6f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/056_boiler_limit_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/057_boiler_limit_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/058_boiler_limit_case_inputs.bin",
+      "size": 40,
+      "sha256": "dc82fec4389316298f8323589354d19099c67423c585df5e13aa888b1c5aa368"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/059_boiler_limit_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/060_boiler_limit_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/061_insufficient_heat_dispatch.bin",
+      "size": 200,
+      "sha256": "255253a901dc5905227b8e70095bd24e7dc72a7cfca752289df10cd422553649"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/062_insufficient_heat_raw_segments.bin",
+      "size": 14336,
+      "sha256": "cfd37dc0b38a5deeb7c2ed79c590af4554cc722a6bad304cc033535a613bd420"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/063_insufficient_heat_raw_plans.bin",
+      "size": 11776,
+      "sha256": "bf161caecdb286bc985a686e70839b6cfd0fa88555238dae9898ead7a93ccbc7"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/064_insufficient_heat_clock_start.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/065_insufficient_heat_clock_end.bin",
+      "size": 32,
+      "sha256": "fa81ad9a13f0dcf50c8c3e5f7ea60f6ceb7192db2abae2d82f7528c6b97d4777"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/066_insufficient_heat_energy_start.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/067_insufficient_heat_case_p.bin",
+      "size": 88,
+      "sha256": "9e21e0c35ab7ea09540e77cc69fda1b97c113c8a1197d1508e20b68010018f6f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/068_insufficient_heat_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/069_insufficient_heat_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/070_insufficient_heat_case_inputs.bin",
+      "size": 40,
+      "sha256": "e041224e674958a24fc1edc330ce73412e22984e21c5784f067a5ddf9feba9f7"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/071_insufficient_heat_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/072_insufficient_heat_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/073_sequence_dispatch.bin",
+      "size": 1400,
+      "sha256": "9af4c5cab50625ba26fa41a50e2b27a2ea407090ed8f02d8f24df015424c3c07"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/074_sequence_raw_segments.bin",
+      "size": 100352,
+      "sha256": "cbaf4e21bacfd4a84697ab772e9ff5c9926c50357e7633c0ca19c532b164c991"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/075_sequence_raw_plans.bin",
+      "size": 82432,
+      "sha256": "5112b9236b81bd2e882fc76464d973f43e7ae9569b0f8419ac819c3ba0b0b694"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/076_sequence_clock_start.bin",
+      "size": 224,
+      "sha256": "9bb04045747e18204ce22ccf8bf0fc94fd0ca18798a0ccb7d8f45a80e57d5a72"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/077_sequence_clock_end.bin",
+      "size": 224,
+      "sha256": "3fd5d25bf09073ed18f039943e4fb89ef374b867a2dd5c3b2002f56544a4b594"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/078_sequence_energy_start.bin",
+      "size": 56,
+      "sha256": "612ce3b8674bf07bf37bf5f1289db0a90c7d40a275743441ceb702c53341bd87"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/079_sequence_case_p.bin",
+      "size": 88,
+      "sha256": "9e21e0c35ab7ea09540e77cc69fda1b97c113c8a1197d1508e20b68010018f6f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/080_sequence_case_h.bin",
+      "size": 72,
+      "sha256": "03ce985f76a6461db206a2b2dae07334352ec872074ed6acc985661ddf1ce04f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/081_sequence_case_c.bin",
+      "size": 32,
+      "sha256": "3b617a44745abf14954f0bd2aef7648c28bbddf58eb193f04893087551b124cb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/082_sequence_case_inputs.bin",
+      "size": 280,
+      "sha256": "76cc6815011e5cd20a0f87a9327099a87998e22fd6a85536301cae295b867f8a"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/083_sequence_case_initial_energy_MWh.bin",
+      "size": 8,
+      "sha256": "f52df18731eea8d020801fe2c6b3164648d9d81256a6c37964533a25999961d3"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/084_sequence_case_initial_clock.bin",
+      "size": 32,
+      "sha256": "41e57a811ac9776a5931d1ac2f1f354df344c042329b13e20b4b516db8b78410"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/085_sequence_blocker_witness.bin",
+      "size": 48,
+      "sha256": "1ceb4904e88b5542a8d30919c0b5fb90444d33a03ad63e05b2a5386fa83205b0"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/Charge_regime_derivation_v56.md",
+      "size": 4321,
+      "sha256": "84b41a84ce6cf08ae9326936800be274cc19a2faac82e2b0ffd3561f4bc2bdec"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/finalize_charge_release_v56.py",
+      "size": 16725,
+      "sha256": "a025d617692f6556e79e88eaa6bf84167ff3807167ddc684dec82b8cc6dfdff4"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/prepare_charge_regimes_v56.py",
+      "size": 4367,
+      "sha256": "ac5cda7d1b9ce58c1b9a38b3b07ba9e559ed953072736cbb6edc73ab58d95ac6"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/run_charge_regimes_v56.ps1",
+      "size": 779,
+      "sha256": "1721d37ff5570c26d7f03f9b5c452c20ab98d7defccc691e45303d582b9ceccb"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/run_charge_release_v56.ps1",
+      "size": 1277,
+      "sha256": "1de192921f07080759b3bb470ed4c64141393a9af01db415dc5d6f7c32db868f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/run_charge_temporal_v56.ps1",
+      "size": 798,
+      "sha256": "8306f745898fd357d904c63b3dc7b04fd98cd895976a52162a1e506cc2062285"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/verify_charge_regimes_v56.py",
+      "size": 15371,
+      "sha256": "d2b386eeadd2ca8c3a4469c0c8dafa9687263a643141d090df3cd0480dfc5305"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/verify_charge_release_v56.py",
+      "size": 10501,
+      "sha256": "134f000e94600af0e7a489b5ae3fc82cc866228e1bedd8db8c6001d50949d3c9"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/export_charge_release_v56.m",
+      "size": 3204,
+      "sha256": "b596c2b8787aba7f331a4ecd2050327b1b333c4931e7e741d316251c06bb9194"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/run_charge_regimes_v56.m",
+      "size": 7629,
+      "sha256": "70a36957e1aad9c8033f711e2a3829128edd2416cf3b2ef36ee9d35a210ab632"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/run_charge_temporal_v56.m",
+      "size": 4819,
+      "sha256": "7a2ff831b8519895ab2282a37e5f21c710b67e032706e989b47ccb1fb2e299d1"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/simulink/DCHR_Dispatch_Stateflow_v52.slx",
+      "size": 203411,
+      "sha256": "3d12602aeebcb80585ecfd16e13b0e9ea9cffe091348883b620923e468954e12"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/+dchr/+components/charge_regime_events_v56.m",
+      "size": 3482,
+      "sha256": "89a380cc22dbb2fa273adab1e45081669903b48a164b849c4c9a5ef47194047f"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/+dchr/+components/coupled_branch_certificate_v55.m",
+      "size": 2575,
+      "sha256": "db13983c6494c09735d0dc7ec6e33d482ed61e9a54817f5f6c7000664a8a3ba6"
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/+dchr/+components/coupled_temperature_boundary_v55.m",
+      "size": 561,
+      "sha256": "c50b41a27350107a26d96bc4d32a8ccd1da7de071d46fbf99e03f4a989d54755"
+    }
+  ]
+}

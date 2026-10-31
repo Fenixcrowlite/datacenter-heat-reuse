@@ -1,0 +1,25 @@
+{
+  "quick_check": "ok",
+  "task_count": 207,
+  "event_count": 1086,
+  "verified_events": [
+    {
+      "task": "scc-71049230e9c567",
+      "actor": "chatgpt-edumotion-s04-numeric-phone-20261025-0250",
+      "event_id": 1085,
+      "task_status": "blocked",
+      "worker_pid": null,
+      "report_sha256": "e1e1a749bb3e90c395177d5601ab810cd4b955df31dbc41d6b0de4be871744b9",
+      "manifest_sha256": "841653a79c0d0954388df09289d31e5ceef32b79f737e3f46d1c75b516870750"
+    },
+    {
+      "task": "scc-300ca8a11edcf3",
+      "actor": "chatgpt-dchr-v87-matlab-ledger-bridge-20261025-0255",
+      "event_id": 1086,
+      "task_status": "queued",
+      "worker_pid": null,
+      "report_sha256": "6fb0b24b79eb516d0d0487c9daddf0811d6065f16139da33dccc211e6dd09aaf",
+      "manifest_sha256": "43096802fce297e4a1f790c34ca71915b095a9d5976fec610c4a922630dff0ba"
+    }
+  ]
+}

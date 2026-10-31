@@ -1,0 +1,8 @@
+{
+  "actor": "chatgpt-dchr-c90-pool-500m3-20261030-1452",
+  "event_id": 1450,
+  "evidence_sha256": "4e3f6562c01f2bd085d638bd4b39e626921de0623f63095500af1d713c26cad3",
+  "manifest_sha256": "35f8094145a09077a68da6c18a94dc1a4ea581bd4b6b73098359b8e59d21ef49",
+  "schema": "SYNAPSE_IDEMPOTENT_EVIDENCE_RECEIPT_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

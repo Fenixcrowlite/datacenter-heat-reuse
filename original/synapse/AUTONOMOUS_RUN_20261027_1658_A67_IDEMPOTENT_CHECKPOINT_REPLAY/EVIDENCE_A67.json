@@ -1,0 +1,14 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1658_A67_IDEMPOTENT_CHECKPOINT_REPLAY",
+  "mutations": 0,
+  "next_step": "Use a stable checkpoint timestamp in future finalizers; do not rewrite already registered A66 evidence.",
+  "physical_release": false,
+  "real_replay_checks": "10/10 PASS twice",
+  "replayed_event_id": 1332,
+  "replayed_evidence_sha256": "b541e33a678813edf1b5f6d54e6140b17988af11e5ce7ebdb9bd1da6cfd53349",
+  "scope": "A67_readonly_idempotent_checkpoint_replay",
+  "source_kind": "derived_simulation",
+  "status": "VERIFIED_READONLY_REPLAY",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "7/7 PASS"
+}

@@ -1,0 +1,7 @@
+{
+  "command": "addpath('matlab/simulink'); export_stateflow_admissibility_v35('results/stateflow_admissibility_v35_20261010T031130245Z');",
+  "log_path": "automation/logs/stateflow_v35_console_20261010T031214269Z.log",
+  "exit_code": 0,
+  "evidence_class": "observed_matlab_batch_receipt",
+  "timestamp_utc": "2026-10-10T03:12:19.1787637Z"
+}

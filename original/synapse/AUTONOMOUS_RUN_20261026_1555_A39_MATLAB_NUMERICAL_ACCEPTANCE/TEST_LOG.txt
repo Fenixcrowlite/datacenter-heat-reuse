@@ -1,0 +1,21 @@
+﻿python.exe : test_actual_matlab_output (__main__.A39Acceptance.test_actual_matlab_output) ... ok
+строка:1 знак:235
++ ... CCEPTANCE'; & 'C:\Python314\python.exe' (Join-Path $d 'test_a39.py')  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_actual_mat..._output) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_comparison_cardinality (__main__.A39Acceptance.test_comparison_cardinality) ... ok
+test_existing_registry_state (__main__.A39Acceptance.test_existing_registry_state) ... ok
+test_immutable_trace_hashes (__main__.A39Acceptance.test_immutable_trace_hashes) ... ok
+test_no_false_release (__main__.A39Acceptance.test_no_false_release) ... ok
+test_no_stop (__main__.A39Acceptance.test_no_stop) ... ok
+test_numeric_accuracy (__main__.A39Acceptance.test_numeric_accuracy) ... ok
+test_pinned_inputs (__main__.A39Acceptance.test_pinned_inputs) ... ok
+test_stderr_and_failure_absent (__main__.A39Acceptance.test_stderr_and_failure_absent) ... ok
+test_trace_dimensions (__main__.A39Acceptance.test_trace_dimensions) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.081s
+
+OK

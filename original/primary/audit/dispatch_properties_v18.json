@@ -1,0 +1,9 @@
+{
+  "scope": "Python algebraic/constraints only, not primary-paper or physical validation",
+  "seed": 18009,
+  "cases": 1500,
+  "invalid_rejected": 13,
+  "invalid_total": 13,
+  "max_abs_energy_residual_MWh": 4.973799150320701e-14,
+  "errors": []
+}

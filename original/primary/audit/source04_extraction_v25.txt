@@ -1,0 +1,572 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+PAGES 22
+PDF_PAGE 1 CHARS 1064 HITS [('COP', 2)]
+PDF_PAGE 2 CHARS 3626 HITS [('heat pump', 4), ('electricity price', 3)]
+PDF_PAGE 3 CHARS 4782 HITS [('heat pump', 3)]
+PDF_PAGE 4 CHARS 4836 HITS [('heat pump', 1)]
+PDF_PAGE 5 CHARS 4540 HITS [('heat pump', 1), ('electricity price', 1)]
+PAGE_TEXT_START 5
+Energies 2020, 13, 3551
+4 of 21
+utilization can lead to reduction of the CO2 emissions if the use of fossil-fuel-burning HOBs can be
+avoided. On the other hand, if the DH system is already highly decarbonized and waste heat can
+replace low-emissions sources, increased electricity consumption can even increase the total emissions
+of the DH system.
+Oró et al. [20] studied waste heat recovery from diﬀerent air cooling systems in DCs. The study
+was based on a 1000 kW DC in Spain. The results show that the waste heat recovery increased the
+power usage eﬀectiveness (PUE) value. The PUE is a commonly used metric for measuring the energy
+eﬀectiveness of DCs. It is calculated by dividing the total power consumption of a DC by the power
+consumption of IT equipment. Thus, the theoretical minimum is 1 when all the power consumed by a
+DC is used in its IT equipment, and the power usage is more eﬀective when the PUE is closer to 1.
+Although PUE is commonly used, it does not take into account the energy that is recovered and reused.
+For this, Oró used the energy reuse factor (ERF) based on the primary energy consumption, which is
+the share of reused primary energy out of the total consumption of a DC. The results showed that
+55% of the consumed primary energy could be reused in a DH network. With the assumption that
+the DC owner operates and invests in the heat recovery equipment, a cooling system recovering heat
+from hot return air proved to be economically feasible, with payback times varying between 10 and
+14 years. In other studied cooling systems, waste heat was captured from a condenser in a chiller,
+which cooled down the chilled water circulation. With these systems, the payback time exceeded the
+assumed 15-year lifetime of the equipment.
+He et al. [21] studied DC waste heat utilization as a means to replace heat production based
+on coal as a case study in China. The results showed that waste utilization led to signiﬁcant power
+savings and increased energy eﬃciency for the DC. The temperature level of the waste heat could
+be raised by installing a distributed cooling system, where the heat absorbed from the server racks
+evaporates the cooling ﬂuid in pipes placed in the back of the racks. The cooling ﬂuid is condensed via
+chilled water circulation, from which waste heat is recovered by heat pumps. Such a system resulted in
+increased DC energy eﬃciency when compared to a free cooling system, where waste heat is dumped
+into the environment. Two-phase cooling systems are based on the latent heat of the cooling ﬂuid,
+and can remove greater amounts of heat with a smaller mass ﬂow for the cooling ﬂuid. Additionally,
+capturing the waste heat at higher temperatures is possible in two-phase cooling systems [12].
+Lowering the DH supply temperature would reduce the utilization of diﬀerent waste heat and
+renewable sources, but lower operation temperatures would also decrease the heat losses in the
+distribution and increase the system eﬃciency [22]. In new low-energy houses, a supply temperature
+of 50 ◦C would be enough for space heating, but older buildings are often designed for higher supply
+temperatures. Additionally, old domestic hot water substations would need to be replaced and special
+care would need to be taken to avoid the increased legionella risk due to lower temperatures [23].
+According to Volkova et al. [24], low-temperature district heating is one of the most important factors
+in lowering the emissions and fuel consumption of DH systems, however the transition to large
+systems would require a long period of time, and there are no public plans for lowering the operation
+temperatures in Espoo. Thus, low-temperature district heating is not considered in this paper.
+2. Materials and Methods
+The goal of this paper was to analyze the impact of waste heat utilization on the DH production
+costs after abandoning coal- and natural-gas-based CHP production. Espoo’s DH system was modeled
+using EnergyPRO software from EMD International A/S, Aalborg, Denmark [25]. EnergyPRO is a
+commercial software and it was chosen for this study as it is able to model complex systems of diﬀerent
+production units with diﬀerent characteristics. EnergyPRO is widely used for research purposes.
+At every time step, EnergyPRO calculates priority numbers based on marginal production costs,
+taking into account any possible limitations on the use of a production unit. In this paper, the used time
+step was one hour and the optimization period was one year. The electricity price, outdoor temperature,
+
+PAGE_TEXT_END 5
+PDF_PAGE 6 CHARS 2602 HITS [('COP', 1), ('heat pump', 5), ('electricity price', 2)]
+PAGE_TEXT_START 6
+Energies 2020, 13, 3551
+5 of 21
+DH supply, and return temperatures were input into the model for each time step as a time series.
+The modeling in this study was done with EnergyPRO version 4.6.797.
+The DH system was modeled as three scenarios of diﬀerent electricity prices. The assumed year of
+the simulation was 2030, when all the coal-based capacity should be shut down in the Espoo area and
+the share of renewable sources in the DH production should be 95% [2]. The DH system was modeled
+in each electricity price scenario without coal-based capacity, but the natural-gas-burning CHP plants
+were still in operation. The amount of waste heat needed to replace the CHP capacity and to increase
+the share of renewables to 95% was studied by removing the CHP capacity and increasing the capacity
+of waste heat from 0 to 200 MW. Two diﬀerent operation strategies were introduced—an operation
+strategy based on marginal costs and an operation strategy prioritizing waste heat utilization.
+After optimizing the production in EnergyPRO (EMD International A/S, Aalborg, Denmark),
+the results were used in an investment analysis. The production costs of a system with waste utilization
+were compared to the production costs of a DH system without waste heat and the annual savings
+achieved were considered as a revenue source.
+2.1. External Conditions
+The DH operator published the hourly heat demand for the year 2016 in Helsinki’s DH network [26].
+This demand was scaled down to estimate Espoo’s heat demand and hourly proﬁle. The total annual
+demand was 2601.7 GWh and the peak load was 942.5 MW. For outdoor temperature, hourly data for
+2016 from the weather observation station in Kaisaniemi, Helsinki, were used [27]. Because the supply
+temperature has a signiﬁcant impact on the performance of heat pumps, the supply temperature was
+modeled according to the outdoor temperature and a control curve in [16]. The control curve is shown
+in Figure 1. The return water temperature was assumed to be constant at 50 ◦C. Figure 2 shows the
+supply and return temperatures over a year.
+ 
+Figure 1. The control curve of the DH supply temperature.
+ 
+Figure 2. The modelled supply and return temperatures.
+2.2. Heat Pumps
+The software (EnergyPRO, EMD International A/S, Aalborg, Denmark) calculated the coeﬃcient
+of performance (COP) for heat pumps at each time step according to the given initial characteristics of
+a heat pump and the operation temperatures, i.e., the supply and return temperatures and the heat
+source’s inlet and outlet temperatures [25]. Heat pumps were used to recover low temperature waste
+
+PAGE_TEXT_END 6
+PDF_PAGE 7 CHARS 3869 HITS [('COP', 5), ('heat pump', 5), ('Table 1', 1)]
+PAGE_TEXT_START 7
+Energies 2020, 13, 3551
+6 of 21
+heat from data centers and puriﬁed sewage water. It is assumed that the HPs can produce heat in the
+required supply temperature independently. In reality, HPs often need priming by other heat plants to
+achieve the highest supply temperatures. For example, the Katri Vala heat pump plant in Helsinki can
+produce heat at temperatures up to 90 ◦C, and at higher temperatures the DH supply water is primed
+by a natural-gas-burning HOB. In Mäntsälä (21,000 inhabitants) in Finland, a HP harvests heat from
+warm cooling air from a data center. The HP’s supply temperature can reach 90 ◦C and it can cover
+all of Mäntsälä’s DH heat demands during summer; however, during the winter months, it needs
+priming by other production units [28]. The Suomenoja wastewater heat pump (WWHP) plant in
+Espoo recovers heat from sewage water. The plant consists of two 23.5 MW units, and a third unit is
+planned for 2021. During winter, the sewage water temperature is 10 ◦C and the HPs cool it down to
+3 ◦C. In summer, the sewage water is cooled down from 14 to 7 ◦C. The HP can produce heat with a
+COP of 3.7 [29].
+The COP of heat recovery HPs and heat source temperature depend on the cooling system of a
+DC. The most eﬃcient cooling system is all-liquid cooling, in which the waste heat can be recovered
+at temperatures ranging between 50 and 60 ◦C. In such a system, HPs can have COP of up to 6.3.
+In mixed air–liquid cooling systems the COP can reach 5.5, while in air-cooled systems the COP can
+reach 4.1 [15]. In Finland, the most commonly used system in DC is an air cooling system, in which
+cold cooling air is led to the IT equipment through a ﬂoor plenum. Cooling eﬃciency can be increased
+by adding a chilled water system to capture heat from the warm cooling air, but this decreases the
+temperature level [13].
+In Figure 3, a typical DC air cooling system with chilled water circulation and a heat recovery HP
+is illustrated, showing the approximate temperature levels. Cold cooling air is led from the computer
+room air conditioning (CRAC) unit through the ﬂoor plenum and perforated ﬂoor tiles to the cold aisle
+between the service racks. Air ﬂows through the service racks cooling them. Finally, via the hot aisles,
+the warmed up cooling air circulates back to the CRAC unit, where it is cooled down to the required
+temperature by chilled water circulation. Waste heat is recovered from the chilled water circulation
+by HPs [21]. Heat can be recovered from the chilled water at temperatures in the range of 10–20 ◦C.
+The inlet temperature to the service racks typically varies between 15 and 25 ◦C, while the temperature
+of the returning hot air ranges between 25 and 35 ◦C [15]. Some studies show that even though heat can
+be captured at higher temperatures directly from returning cooling air, this increases the complexity of
+the cooling system; thus, heat recovery from chilled water can be more beneﬁcial [21].
+DH
+10 MW
+(75 oC /
+50 oC)
+Floor plenum
+Cold air (20 oC)
+Chilled water 
+circulation
+(15 oC / 10 oC)
+Heat 7.2 MW
+Electricity 2.8 MW
+Hot air (30 oC)
+Racks
+Racks
+CRAC
+Heat pump
+Cold 
+aisle
+Hot 
+aisle
+Hot 
+aisle
+Racks
+Cold 
+aisle
+Figure 3. Typical air cooling system of a data center with chilled water circulation and a heat recovery
+heat pump.
+In this paper, it is assumed that data center heat pumps (DCHPs) use a DC chilled water circuit
+as the heat source. The heat source inlet and outlet temperatures are 15 and 10 ◦C, respectively.
+These temperatures are collected from [13]. In the example in Figure 3, to produce 10 MW of heat,
+a DH operator buys 2.8 MW of electricity from the spot market and pays a buy-in price for 7.2 MW of
+waste heat to the DC owner. Table 1 shows the assumed design characteristics and actual operation
+temperatures of the DCHP and WWHP. To allow easier comparison, same design characteristics are
+
+PAGE_TEXT_END 7
+PDF_PAGE 8 CHARS 3805 HITS [('COP', 2), ('heat pump', 3), ('Table 1', 1), ('electricity price', 4)]
+PAGE_TEXT_START 8
+Energies 2020, 13, 3551
+7 of 21
+assumed for DCHP than WWHP. In the model, the maximum electric capacity of HPs is set high
+enough so that it does not limit the heat production.
+Table 1. Thedesignandactualtemperaturesoftheheatpumps[29].Abbreviations:Coefficientofperformance
+(COP), District heating (DH), Waste water heat pump (WWHP), Data center heat pump (DCHP).
+Type
+COP
+Source, Hot (◦C)
+Source, Cold (◦C)
+DH, Return (◦C)
+DH, Supply (◦C)
+Design
+3.7
+14
+7
+50
+65
+WWHP
+Calculated
+14/10 *
+7/3 *
+50
+Figure 2
+DCHP
+Calculated
+15
+10
+50
+Figure 2
+* The higher value is the sewage water temperature during summer (April–September) and the lower value is
+during winter (October–March).
+2.3. Buy-In Heat
+The DH operator, Fortum, published buy-in prices for an open DH network in the Espoo area.
+The price varies according to the outdoor temperature and diﬀers depending on whether heat is fed on
+the return or supply side [6]. The buy-in prices are shown in Table 2. In this paper, it is assumed that
+the DH operator is responsible for upgrading the DC waste heat to the supply temperature, thus the
+DH operator pays the lower return side price. The DH operator pays for the cold temperature heat
+fed on the evaporator side of the DCHP. In the model, the amount of energy provided by a DC is
+calculated every hour by subtracting the consumed electricity in the DCHP from the heat produced
+by the DCHP. The DH operator also pays the spot price, electricity tax, and distribution costs for the
+consumed electricity, along with the variable operation and maintenance (O&M) costs of the HP.
+Table 2. Heat buy-in prices for supply and return side feeds [6].
+Outdoor Temperature (◦C)
+−20
+−16
+−12
+−10
+−8
+−6
+−4
+−2
+0
+2
+4
+6
+8
+10
+12
+16
+20
+Supply (€/MWh)
+50
+50
+50
+50
+50
+45
+45
+40
+30
+30
+30
+25
+20
+20
+20
+20
+15
+Return (€/MWh)
+35
+35
+35
+35
+35
+32
+32
+28
+21
+21
+21
+18
+14
+10
+10
+10
+8
+An energy company, ST1, is planning to open a geothermal plant in Espoo. Heat from the
+geothermal plant would be sold to the DH network [2]. The prices in Table 2 were used for this as
+well. Because it is assumed that geothermal heat can be fed to DH network in the required supply
+temperature, the DH operator pays the higher supply side price for it.
+2.4. Assumptions
+Three diﬀerent scenarios were assumed with diﬀerent electricity prices. In scenario A, the average
+electricity price is 29.36 €/MWh. The electricity price and its hourly proﬁle were taken from [30]. In [30],
+Khosravi et al. studied diﬀerent scenarios of development of the Finnish energy mix. In scenario 9,
+Khosravi et al. assumed that wind power capacity is increased in Finnish electricity markets with a
+support from feed-in tariﬀs. Additionally, nuclear power capacity is increased and coal-based power
+production is shut down. CO2 allowances were assumed to be 30 €/tCO2. The average electricity
+price of scenario C, 77 €/MWh, was taken from [31], where the price of CO2 allowances was assumed
+to be 30 €/tCO2 as well. The average price of scenario B, 54 €/MWh, corresponds to electricity price
+estimation in 2030 in Germany, with CO2 allowances of 29 €/tCO2 and 22% of volatile renewable
+electricity production [32]. The value was chosen here because it is roughly in between the other two
+scenarios. The hourly price proﬁle for 2016 [33] is scaled in scenarios B and C.
+The DH operator has to pay for the electricity that the heat pumps consume. In addition to the spot
+market price, distribution fees and electricity tax are paid for the consumed electricity. The electricity
+from CHP production is also sold at the spot price. Distribution fees are collected from the high
+voltage price list of the network operator in the Espoo area [34]. The electricity grid customer is able to
+choose from two diﬀerent pricing methods. Here, pricing with lower distribution costs but higher
+
+PAGE_TEXT_END 8
+PDF_PAGE 9 CHARS 3227 HITS [('heat pump', 2), ('thermal storage', 1), ('electricity price', 3)]
+PAGE_TEXT_START 9
+Energies 2020, 13, 3551
+8 of 21
+ﬁxed monthly costs was chosen. The distribution costs consisted of the consumption fee, load fee,
+and security of supply fee. A reactive energy or reactive power fee was not considered. From December
+until February, the consumption fee was 9.91 €/MWh during the daytime (from 07:00 am until 09:00 pm),
+and at any other time the fee was 3.29 €/MWh. In this paper, it was assumed that heat pumps pay
+taxes according to the lower tax category 2, which was 6.9 €/MWh. Both electricity consuming and
+producing units pay a load fee to the grid operator. The electricity costs are shown in Table 3 and
+the fuel costs are shown in Table 4. The price of the CO2 allowance was assumed to be 30 €/tCO2 [31].
+For CHP production, all the costs were assumed to be costs of DH production and the revenue from
+electricity production was subtracted from the total costs. Electricity consumption was assumed to
+cause emissions of 0.091 tCO2/MWh, which was the average emission factor of electricity consumption
+in Finland in 2019 [35].
+Table 3. The costs of electricity distribution, fuel prices, and the average electricity price for three
+diﬀerent scenarios. The costs of electricity distribution are collected from [34]. Average electricity prices
+are from [30–32]
+Electricity Distribution
+€/MWh
+Consumption fee
+3.29 (9.91) *
+Load fee, intake from network
+1.81
+Load fee, output to network
+0.72
+Security of supply fee
+0.13
+Electricity tax
+6.90
+Average electricity price **:
+Scenario A [30]
+29.36
+Scenario B [32]
+54
+Scenario C [31]
+77
+* The higher price is used from December until February during the day time (from 7:00 am until 9:00 pm).
+** In scenario A, the used hourly price proﬁle was taken from [30] and the 2016 price proﬁle [33] was scaled in
+scenarios B and C.
+Table 4. Fuel costs [31] and emission factors [36] for diﬀerent fuels. The price of CO2 allowances is
+assumed to be 30 €/tCO2 [31].
+Fuel
+Price (€/MWh)
+Tax HOB (€/MWh)
+Tax CHP (€/MWh)
+Emissions (tCO2/MWh)
+Natural gas
+32.4
+18.6
+12.9
+0.199
+Wood chips
+32
+-
+-
+-
+Wood pellets
+38
+-
+-
+-
+Oil
+61
+22.9
+-
+0.267
+Bio-oil
+67
+-
+-
+-
+The DH system had a total HOB capacity of 816 MW, including the two planned new wood-
+chip-burning HOBs. The HOBs were burning natural gas, oil, bio-oil, wood pellets, or wood chips.
+The HOBs were not modeled as individual units, rather the same fuel burning boilers were modeled
+as one unit. The wastewater heat pump thermal capacity was 70.5 MW, which also included the
+planned third unit in the Suomenoja power plant area. In the reference scenarios, there were also two
+natural-gas-burning CHP units—an OCGT and CCGT. Start-up and shut-down times were limited for
+CHP units by adding minimum operation and non-operation times. These times were 24 h for the
+CCGT and 4 h for the OCGT. The minimum running capacity was 40% for the CHP units. HPs or HOBs
+did not have such restrictions. The production units and their variable operation costs are shown in
+Table 5. The DH system also included a 20,000 m3 hot water thermal storage unit, with a total storage
+capacity of 857.5 MWh. Heat losses for the storage or the network were not considered. For CHP units,
+heat rejection was allowed if it lowered the production costs.
+
+PAGE_TEXT_END 9
+PDF_PAGE 10 CHARS 3698 HITS [('heat pump', 2)]
+PAGE_TEXT_START 10
+Energies 2020, 13, 3551
+9 of 21
+Table 5. Production units in the model. Abbreviations: Operation and maintenance (O&M), Combined-
+cycle gas turbine (CCGT), Open-cycle gas turbine (OCGT), Heat-only boiler (HOB), Waste water
+heat pump (WWHP), Data center heat pump (DCHP), Natural gas (NG), Wood pellets (W. pellets),
+Wood chips (W. chips).
+Unit
+Fuel
+Fuel
+Capacity
+(MW)
+Thermal
+Capacity
+(MW)
+Electric
+Capacity
+(MW)
+Minimum
+Load
+Min.
+Operation/Non-
+Operation Time
+O&M Costs
+CCGT *
+NG
+498
+214
+234
+40%
+24 h
+4.5 €/MWhel
+OCGT *
+NG
+132
+75
+45
+40%
+4 h
+4.5 €/MWhel
+HOB 1
+NG
+525
+473
+-
+-
+-
+2 €/MWhfuel
+HOB 2
+Oil
+94
+85
+-
+-
+-
+2 €/MWhfuel
+HOB 3
+Bio-oil
+49
+45
+-
+-
+-
+2 €/MWhfuel
+HOB 4
+W. pellets
+90
+80
+-
+-
+-
+2 €/MWhfuel
+HOB 5
+W. chips
+147
+133
+-
+-
+-
+2 €/MWhfuel
+Geothermal
+-
+-
+40
+-
+-
+-
+-
+WWHP
+-
+-
+70.5
+-
+-
+-
+3 €/MWhheat
+DCHP
+-
+-
+-
+-
+-
+-
+3 €/MWhheat
+* Used only in the reference scenarios. The approximate capacities of the CHP plants were taken from [37], HOB plants
+were taken from [38–41], the geothermal plant was taken from [2], and the WWHP plant was taken from [8,29].
+Estimations of the variable operation and maintenance (O&M) costs were based on [42].
+2.5. Investment Analysis
+The economic feasibility of the waste heat utilization was studied further by calculating the
+net present value (NPV) and discounted payback period (DPP) for DCHP investments of diﬀerent
+capacities. In the calculations, the capital costs and ﬁxed annual costs were considered. The investment
+gained revenue, which came from the production cost savings from waste heat utilization when
+compared to the situation of 0 MW of waste heat and no CHP production. Annual cash ﬂows were
+assumed to be the same for every year, while changes in weather conditions, heat demands, electricity
+and fuel prices, and operation and maintenance (O&M) costs were not considered. The NPV can be
+calculated with Equation (1), where C0 is the initial investment costs, r is the rate of return, t is the
+investment’s life time, and C is the annual cash ﬂow, which is equal every year after the investment is
+made. The annual cash ﬂow equals the annual production cost savings subtracted with annual ﬁxed
+costs. The equation is based on an equation represented in [43]:
+NPV = C1 −(1 + r)−t
+r
+−C0
+(1)
+The assumptions for the costs contain a great level of uncertainty. For example, the location of a DC
+had an impact on costs, as a high share of the investment costs was due to building the DH network and
+connection to the DC [18]. The Danish Energy Agency estimated the investment costs for a 10 MW HP
+for recovering industrial waste heat to be 0.58 M€/MWheat in 2030, while if the HP needed to be capable
+of producing a DH supply temperature of 80 ◦C, the investment costs would be 5% higher. The annual
+ﬁxed O&M costs were estimated to be 2000 €/MWheat/a [42]. Wahlroos et al. in [18] estimated similar
+sized HP’s investment costs to be 500 €/kWheat, while Rämä et al. [44] used value of 650 €/kWheat for
+HP investments. Another source of uncertainty is the rate of return. Companies operating in diﬀerent
+business areas evaluate the rate of return diﬀerently. For example, if an investment contain high risks,
+the rate of return can be expected to be higher [19]. Often, DC owners have higher expectations for
+returns on their investments than DH operators [18].
+Here, the investment costs were assumed to be 0.6 M€/MWheat and the annual ﬁxed O&M costs
+were assumed to be 2000 €/MWheat/a. The DH operator also pays the monthly ﬁxed fee for the electricity
+grid owner. A high-voltage connection in the Espoo area costs 19,500 €/month, leading to the total
+annual cost of 234,000 €/a [34]. The rate of return was assumed to be 6%, which was the same as
+
+PAGE_TEXT_END 10
+PDF_PAGE 11 CHARS 2608 HITS [('heat pump', 1), ('electricity price', 1)]
+PAGE_TEXT_START 11
+Energies 2020, 13, 3551
+10 of 21
+Rämä et al. used in [44]. In addition to the NPV, the discounted payback period (DPP) was calculated
+with Equation (2) [43]:
+DPP = −
+ln
+
+1 −C0r
+C
+
+ln(1 + r)
+(2)
+3. Results
+In the reference scenarios, when the CCGT and OCGT plants were still running and waste heat
+was not fed into the system, the average and total production costs were 37.34 €/MWh and 97.2 M€ in
+scenario A, 37.02 €/MWh and 96.3 M€ in B, and 32.26 €/MWh and 83.9 M€ in C. The shares of renewable
+energy sources (RES) are 80% in A, 79% in B and 67% in C. CO2 emissions of the reference scenarios are
+130 ktCO2 in A, 136 ktCO2 in B and 205 ktCO2 in C. The emissions of electricity production are excluded
+from these numbers according to the power to heat ratio of the CHP plants. CHP plants can reject
+heat, if it leads to negative net production costs. In B, 75 MWh and, in C, 3841 MWh of heat is rejected.
+CO2 emissions from heat pumps are estimated throughout this paper assuming the 2019 average CO2
+emission coeﬃcient of electricity production (91 g/kWhel) in Finland [35].
+3.1. Operation Strategy Based on Marginal Costs
+After removing the CHP capacity from the model, the capacity of DCHP is increased gradually
+from 0 MW to 200 MW by 10 MW steps. The production order of diﬀerent units is based on their
+marginal costs and waste heat is utilized only if it is beneﬁcial according to the total production costs.
+Thus, the production costs decrease as the waste heat capacity is increased. In Figure 4, the increase of
+the share of RES and the decrease of the production costs are represented, as waste heat capacity is
+added to the model. The key values of the results are represented also in Table 6.
+ 
+Figure 4. Production costs and share of renewable sources as a function of waste heat capacity
+in operation based on marginal costs. Abbreviations: Renewable energy source (RES), Reference
+scenario (Ref.).
+In reference scenario A, the production share of the CHP plants is very small, at only 2% of
+the annual demand. Thus, removing the CHP capacity has a very small inﬂuence on the average
+production costs. Already the 10 MW waste heat can lower the average costs below the level of
+reference scenario A. In scenario B, approximately 60 MW of waste heat is needed to lower the average
+cost to the reference level. In reference scenario C, 29% of the annual heat demand is produced by the
+two CHP units. Due to the high electricity price, the cost of waste heat utilization is much higher and
+production costs cannot be lowered below the reference level, with a reasonable amount of waste heat.
+
+PAGE_TEXT_END 11
+PDF_PAGE 12 CHARS 3697 HITS [('heat pump', 2), ('electricity price', 2)]
+PDF_PAGE 13 CHARS 3070 HITS [('heat pump', 1), ('electricity price', 2)]
+PDF_PAGE 14 CHARS 2934 HITS []
+PDF_PAGE 15 CHARS 2381 HITS [('electricity price', 1)]
+PDF_PAGE 16 CHARS 1503 HITS [('electricity price', 1)]
+PDF_PAGE 17 CHARS 4211 HITS [('electricity price', 6)]
+PDF_PAGE 18 CHARS 4441 HITS [('COP', 1), ('electricity price', 1)]
+PDF_PAGE 19 CHARS 4580 HITS [('heat pump', 1), ('electricity price', 9)]
+PDF_PAGE 20 CHARS 4086 HITS [('heat pump', 4)]
+PDF_PAGE 21 CHARS 4822 HITS [('COP', 1), ('heat pump', 2), ('electricity price', 1)]
+PDF_PAGE 22 CHARS 3563 HITS []

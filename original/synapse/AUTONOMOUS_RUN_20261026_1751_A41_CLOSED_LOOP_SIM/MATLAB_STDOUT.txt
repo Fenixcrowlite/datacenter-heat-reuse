@@ -1,0 +1,9 @@
+[Warning: The model name 'DCHR_A41_Closed_Loop' is shadowing another name in the MATLAB workspace or path. Type "which -all DCHR_A41_Closed_Loop" at the command line to find the
+other uses of this name. You should change the name of the model to avoid problems.] 
+[> In build_a41 (line 12)
+In run (line 100)] 
+A41_CLOSED_LOOP_PASS both samples=672 maxT=30 critical=0
+A41_CLOSED_LOOP_PASS main_only samples=672 maxT=30 critical=0
+A41_CLOSED_LOOP_PASS backup_only samples=672 maxT=63.1215 critical=8
+A41_CLOSED_LOOP_PASS neither samples=672 maxT=90.7976 critical=294
+A41_ALL_SCENARIOS_PASS

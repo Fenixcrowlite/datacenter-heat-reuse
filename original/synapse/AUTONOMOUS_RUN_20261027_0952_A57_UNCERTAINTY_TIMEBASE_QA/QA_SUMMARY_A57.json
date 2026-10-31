@@ -1,0 +1,18 @@
+{
+  "A55_source_sha256": "e65e2ec1e2e7927023637c0bd8f430dcfb1045346666220ede8ecb7ed0e5be91",
+  "A56_source_sha256": "0834471ae3505906167192769da7ba5baf9cabd2baac55352fb480f607e4358c",
+  "ast_parse": "5/5 PASS",
+  "capacity_demo_J_per_K": [
+    7456187.499999735,
+    8621500.000001838
+  ],
+  "independent_decimal_energy_intervals": "64/64 PASS",
+  "physical_release": false,
+  "real_measurements": false,
+  "synthetic_samples": 65,
+  "tau_demo_s": [
+    206.95832324518278,
+    538.2928086909359
+  ],
+  "unittest": "20/20 PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c112-finite-humidity-20261031-0251",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY\\C112_ROOM_HUMIDITY_HOURLY.csv.gz",
+  "artifact_sha256": "2c0cd40d6919679c01316d20fcf7770f7ebfe124543a445a6efa5cbb73e2c339",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY\\C112_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY\\SHA256_MANIFEST_C112.json",
+  "manifest_sha256": "b9aa031d09a74b6de1344cec16c2d3541311a164bf7af8c0202e75c50c6ecad5",
+  "next": "Capacity search for RH 45-65%, then RH->evaporation and latent-energy coupling; verify real vendor data.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY\\C112_INDEPENDENT_QA.json",
+  "schema": "C112_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0251_DCHR_C112_FINITE_HUMIDITY\\C112_SUMMARY.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

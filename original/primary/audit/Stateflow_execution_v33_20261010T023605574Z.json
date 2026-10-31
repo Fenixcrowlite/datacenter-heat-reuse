@@ -1,0 +1,7 @@
+{
+  "evidence_class": "observed_matlab_batch_receipt",
+  "exit_code": 0,
+  "log_path": "automation/logs/stateflow_fallback_v33_console_20261010T023605574Z.log",
+  "timestamp_utc": "2026-10-10T02:37:46.7563030Z",
+  "command": "addpath('matlab/simulink'); run_stateflow_fallback_v33('audit/stateflow_fallback_spec_v33_20261010T023551_628086Z')"
+}

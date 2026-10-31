@@ -1,0 +1,32 @@
+python.exe : test_01_fixture_integrity_and_identity (test_a69.A69Tests.test_01_fixture_integrity_and_identity) ... ok
+строка:1 знак:333
++ ... ython.exe'; & $py -B -m unittest -v test_a69 *> QA_A69_CLEAN.txt; $ec ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_01_fixture...dentity) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_02_independent_constant_net_energy (test_a69.A69Tests.test_02_independent_constant_net_energy) ... ok
+test_03_independent_command_energy (test_a69.A69Tests.test_03_independent_command_energy) ... ok
+test_04_summary_has_observed_not_extrapolated_duration (test_a69.A69Tests.test_04_summary_has_observed_not_extrapolated
+_duration) ... ok
+test_05_tampered_csv_is_rejected (test_a69.A69Tests.test_05_tampered_csv_is_rejected) ... ok
+test_06_tampered_metadata_is_rejected (test_a69.A69Tests.test_06_tampered_metadata_is_rejected) ... ok
+test_07_source_kind_conflict (test_a69.A69Tests.test_07_source_kind_conflict) ... ok
+test_08_nonfinite_value_rejected (test_a69.A69Tests.test_08_nonfinite_value_rejected) ... ok
+test_09_negative_actuator_power_rejected (test_a69.A69Tests.test_09_negative_actuator_power_rejected) ... ok
+test_10_time_reversal_rejected (test_a69.A69Tests.test_10_time_reversal_rejected) ... ok
+test_11_irregular_sample_gap_warning (test_a69.A69Tests.test_11_irregular_sample_gap_warning) ... ok
+test_12_trip_state_transition (test_a69.A69Tests.test_12_trip_state_transition) ... ok
+test_13_generates_self_contained_html (test_a69.A69Tests.test_13_generates_self_contained_html) ... ok
+test_14_no_overwrite (test_a69.A69Tests.test_14_no_overwrite) ... ok
+test_15_deterministic_report (test_a69.A69Tests.test_15_deterministic_report) ... ok
+test_16_html_injection_escaped (test_a69.A69Tests.test_16_html_injection_escaped) ... ok
+test_17_real_label_never_releases (test_a69.A69Tests.test_17_real_label_never_releases) ... ok
+test_18_fail_closed_without_partial_output (test_a69.A69Tests.test_18_fail_closed_without_partial_output) ... ok
+test_19_symlink_input_rejected (test_a69.A69Tests.test_19_symlink_input_rejected) ... skipped 'symlink privilege unavai
+lable on Windows'
+
+----------------------------------------------------------------------
+Ran 19 tests in <variable>s
+
+OK (skipped=1)

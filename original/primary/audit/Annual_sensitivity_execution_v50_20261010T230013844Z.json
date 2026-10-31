@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "evidence_class": "observed_matlab_batch_receipt",
+  "command": "addpath('matlab'); replay_annual_sensitivity_defects_v50('results/annual_sensitivity_v50_20261010T225436_641700Z');",
+  "timestamp_utc": "2026-10-10T23:00:54.1337371Z",
+  "log_path": "automation/logs/annual_sensitivity_v50_20261010T230013844Z.log"
+}

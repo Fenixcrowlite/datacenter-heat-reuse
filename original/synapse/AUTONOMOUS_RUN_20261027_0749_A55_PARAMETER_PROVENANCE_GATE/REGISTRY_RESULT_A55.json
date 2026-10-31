@@ -1,0 +1,15 @@
+{
+  "event_id": 1293,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A55_physical_parameter_provenance_and_identification_gate",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0749_A55_PARAMETER_PROVENANCE_GATE",
+  "result_sha256": "ba08e126bcee3e82e3eecf8b985810a7fc5225ddcef8c1c694d94901ba19eae9",
+  "evidence_sha256": "d4d5794392e324700bb55139c4890f0315c74a9a92bc4c70d2cbfd03c2ab458b",
+  "manifest_sha256": "d25c5b0a7658db9665972fefbc03b520fefecffb10ddcde6681d135f74441a91",
+  "handoff_sha256": "f046207971a6bfaddae169199a6947c419f8716cf905cdbb6ec8a996eae122b0",
+  "QA": "12/12 Python unittest PASS, independent Decimal 3/3 PASS",
+  "synthetic_only": true,
+  "source_promotion": false,
+  "physical_release": false,
+  "next_step": "Acquire asset-specific time-aligned telemetry, calibrated sensor records and vendor performance maps; identify C_eff/tau/residual with A55; independently review then rerun isolated graphical Stateflow uncertainty tests. No physical release."
+}

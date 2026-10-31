@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-10-08T22:01:37Z",
+  "task": "bounded Park [38] provenance audit",
+  "memo": "audit/Park_IASE_provenance_v15.md",
+  "prior_checkpoint_read": [
+    "STATUS_v14.json",
+    "MASTER_STAGEBOARD_v14.md",
+    "audit/research_frontier_2026_10_08.md",
+    "audit/Sintong_2023_primary_source_audit_v06_RU.md",
+    "audit/Sintong_primary_source_correction_v07_RU.md"
+  ],
+  "local_sintong": {
+    "path": "sources/papers/09_Sintong_Stockholm_2023.pdf",
+    "sha256": "8149370d2df0c5899c844095f3890fea112c3d81eaff6671cb3cf0f3da9185f5",
+    "reference_pdf_page": 70,
+    "equations_pdf_page": 30,
+    "equation_page_visual_inspected": true,
+    "root_render": "audit/Sintong_p30_IASE_v15_20261008T220047_157053Z.png"
+  },
+  "park_publisher": {
+    "doi": "10.3390/en11020444",
+    "html_url": "https://www.mdpi.com/1996-1073/11/2/444",
+    "pdf_url": "https://mdpi-res.com/d_attachment/energies/energies-11-00444/article_deploy/energies-11-00444.pdf",
+    "pdf_pages_reported": 14,
+    "body_text_access": "VERIFIED_VIA_WEB_OPEN",
+    "equation_pdf_page": 9,
+    "equations": [22, 23],
+    "reference_pdf_page": 14,
+    "upstream_reference_number": 21,
+    "equation_visual_access": "FAILED_SCREENSHOT_CACHE_MISS",
+    "local_pdf_acquired": false,
+    "local_download_log": "audit/Park_acquisition_v15_20261008T215837_580374Z.json"
+  },
+  "access_attempts": [
+    {"channel": "web", "url_suffix": "444", "result": "INITIAL_HTTP_429_SUBSEQUENT_HTM_REDIRECT_FULL_BODY_ACCESS"},
+    {"channel": "web", "url_suffix": "energies-11-00444.pdf", "result": "PRIMARY_BODY_PARSED_TEXT_SUCCESS"},
+    {"channel": "web", "operation": "publisher PDF screenshots pages 9 and 14", "result": "CACHE_MISS"},
+    {"channel": "web", "url_suffix": "444/html", "result": "NOT_ACCESSIBLE"},
+    {"channel": "web", "url_suffix": "444/pdf", "result": "NOT_ACCESSIBLE"},
+    {"channel": "web", "operation": "Semantic Scholar same-paper mirror", "result": "PARSED_TEXT_SUCCESS_SCREENSHOT_CACHE_MISS", "used_as_primary_publisher_evidence": false},
+    {"channel": "local Python urllib", "result": "WINERROR_10013_TRANSPORT_BLOCKED"},
+    {"channel": "browser", "operation": "create in-app research tab", "result": "IAB_UNAVAILABLE"},
+    {"channel": "browser", "operation": "create Chrome publisher research tab", "result": "AUTO_REVIEW_TIMEOUT", "rejection": false, "settings_changed": false}
+  ],
+  "classification": {
+    "bibliography": "PRIMARY_TEXT_VERIFIED",
+    "park_equation_text": "PRIMARY_PDF_PARSED_TEXT_VERIFIED_VISUAL_PENDING",
+    "park_to_sintong_normalization": "UNRESOLVED_NOTATION_DIFFERENCE",
+    "author_intent": "UNVERIFIED",
+    "ham_full_text": "NOT_VERIFIED",
+    "article_replication": "NOT_PERFORMED",
+    "full_source_signoff": false,
+    "matlab_simulink_stateflow_changes": "NONE"
+  }
+}

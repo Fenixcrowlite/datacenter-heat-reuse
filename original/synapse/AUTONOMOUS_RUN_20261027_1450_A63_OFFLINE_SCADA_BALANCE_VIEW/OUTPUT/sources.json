@@ -1,0 +1,9 @@
+{
+  "a62_scenarios": [
+    "OUTPUT_V08_SIGNED",
+    "OUTPUT_V09_SIGNED"
+  ],
+  "physical_release": false,
+  "source_folder": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1405_A62_SIGNED_LOSS_EXPORT",
+  "source_kind": "derived_simulation"
+}

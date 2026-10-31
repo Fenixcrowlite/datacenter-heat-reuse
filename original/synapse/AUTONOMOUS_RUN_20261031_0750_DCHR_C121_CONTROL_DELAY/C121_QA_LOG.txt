@@ -1,0 +1,17 @@
+﻿{
+  "status": "PASS",
+  "rows_checked": 70080,
+  "baseline_C120_rows_crosschecked": 17520,
+  "scenario_counts": {
+    "('feedback_capped', 0, 0.0)": 8760,
+    "('feedback_capped', 0, 0.5)": 8760,
+    "('feedback_capped', 2, 0.0)": 8760,
+    "('feedback_capped', 2, 0.5)": 8760,
+    "('predictive_capped', 0, 0.0)": 8760,
+    "('predictive_capped', 0, 0.5)": 8760,
+    "('predictive_capped', 2, 0.0)": 8760,
+    "('predictive_capped', 2, 0.5)": 8760
+  },
+  "negative_controls": 5,
+  "data_sha256": "d105be559a7eb01cdd92afa7a50073a2eda6687bdf8bc94392f03d165afc63ec"
+}

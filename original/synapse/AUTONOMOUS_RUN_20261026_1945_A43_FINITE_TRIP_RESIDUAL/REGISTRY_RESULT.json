@@ -1,0 +1,15 @@
+{
+  "action": "CREATED_EVENT",
+  "event_id": 1238,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A43_isolated_finite_trip_residual_thermal_simulink",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1945_A43_FINITE_TRIP_RESIDUAL",
+  "evidence_sha256": "7a620de82c9b31e0e3725f3a3f769cecf9d797dba3e9821d76e37b3f7fc1ee89",
+  "manifest_sha256": "350e89bcd80c9efb50521f130021e05668852962c2738e4986e2efd0da23d0c0",
+  "model_sha256": "afe6752077d6bea440ac85d7b700fb867879bc38306840a11fc50ba53c91f162",
+  "qa": "18/18 Python PASS; 18816 Decimal expressions; MATLAB CSV 4704; executable Simulink EMChart 4704 steps/51744 parity PASS",
+  "status": "A43_SYNTHETIC_SIMULINK_EMCHART_CLOSED_LOOP_PARITY_PASS",
+  "physical_release": false,
+  "caveat": "Synthetic assumptions: 30-min trip, 12% residual heat tau 1h, 60kW/15min REJECT recovery; no graphical Stateflow chart or compressor inertia, no hardware release",
+  "next_step": "A44 independent graphical Stateflow transitions + compressor ramp/lag and measured parameter calibration; no production/hardware changes"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1152,
+  "action": "EXISTING_EVENT",
+  "scope": "independent_v07_to_D_v08_SCADA_lineage_readonly",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261025_1952_A24",
+  "evidence_sha256": "8ce7de1b5eb36fa2e667be843b6a161c043d6f773b036e78b88b844fc47d2232",
+  "scada_link_sha256": "013e604f8fd57a1af7e7a50f7daa8a37aac91395ef929c5e8dffd9fd06793063",
+  "qa_report_sha256": "acdf35aa789fcbd74925da217f7fce4341b26f592382e67360746f1d141278de",
+  "manifest_sha256": "45d6df3a3f88b954e7e6124b81b1bbcf1f69c7add7c7a4a5d4f01c2d4d63b938",
+  "qa": "25/25 mutation tests PASS; 8 scenarios; 5376 row lineage; 8 live SCADA SHA; 3 model SHA; py_compile PASS",
+  "finding": "Verified D_SYNTHETIC v07 -> raw D -> 8 significant digit staging -> v08 CSV -> live SCADA SHA lineage",
+  "limits": "No original MATLAB run receipt, physical measurement, calibration, standards signoff or hardware safety acceptance",
+  "next_step": "Read-only inventory of MATLAB v08 execution receipts, then independently validate physical parameters against primary sources"
+}

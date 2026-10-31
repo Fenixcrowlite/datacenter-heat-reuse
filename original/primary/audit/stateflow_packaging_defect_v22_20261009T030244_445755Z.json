@@ -1,0 +1,20 @@
+{
+  "scope": "Packaging integrity, no numerical/model failure",
+  "checked_files": 69,
+  "mismatches": [
+    {
+      "path": "automation/logs/stateflow_finalize_v22_20261009T050008.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "18d044e1d4d8ef014ce1acc93d6d88f37b5ddff5d89a3b4850fca4e52283d4b9"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v22.md",
+      "expected_sha256": "d9be9794ce5ee90d5164fac1bdc3962a507a1ce1ef7575f01724418975a53838",
+      "actual_sha256": "b84a5fd2dc2123c5a38b98eb2249826976044a695e24ded3573509edebe5684b"
+    }
+  ],
+  "causes": [
+    "Active finalize log hashed before it received stdout",
+    "Concurrent workspace writer replaced generic MASTER_STAGEBOARD_v22.md with Stenberg audit"
+  ]
+}

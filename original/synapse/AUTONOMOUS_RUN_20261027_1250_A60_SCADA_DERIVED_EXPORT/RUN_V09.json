@@ -1,0 +1,38 @@
+﻿{
+  "schema_version": "a60.1",
+  "source_schema": "scada_v09_matlab",
+  "source_kind": "derived_simulation",
+  "source_csv_sha256": "a1a9a202ffae217845fa52fb1440dcd650236a312677f2d3c6ee1db231e35c37",
+  "source_path": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\matlab_live_v01\\runtime\\jobs\\79b874c619674e1e966c72bf92eb67b3\\result.csv",
+  "physical_release": false,
+  "measurement_calibration_ready": false,
+  "missing_for_A55": [
+    "timestamp_utc",
+    "asset_id",
+    "calibration_ref",
+    "T_C",
+    "Q_net_W",
+    "P_cmd_W",
+    "P_actual_W",
+    "trip_state",
+    "Q_residual_W",
+    "Q_nominal_W"
+  ],
+  "warning": "Simulation output only. Relative time, no calibration certificate, no measured compressor step response.",
+  "metrics": {
+    "samples": 672,
+    "duration_h": 167.75,
+    "temperature_pool_min_C": 16.068635804129,
+    "temperature_pool_max_C": 27.58,
+    "E_TES_delta_MWh": 0.4541031349373917,
+    "integrated_MWh": {
+      "Q_DC_W": 28.510163671738255,
+      "Q_reject_W": 6.23180192002145,
+      "Q_pool_W": 10.373083904244265,
+      "Q_DH_W": 16.07613232771671,
+      "P_HP_W": 4.756318600830832
+    },
+    "integration": "trapezoidal; time from relative cas_h, not UTC"
+  },
+  "analysis_csv_sha256": "d9ac2a32795e54eeef0bff9f430306d960c30331b1505cca5e3675dfe669c488"
+}

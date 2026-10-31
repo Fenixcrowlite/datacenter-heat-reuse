@@ -1,0 +1,187 @@
+{
+  "version": "0.72",
+  "timestamp_utc": "2026-10-12T03:15:54.936054+00:00",
+  "inherits": "STATUS_v71.json",
+  "result": "SAVED_V71_FOUR_NUMERICAL_ADMISSIBILITY_DEFECTS_CONFIRMED_QA_PASS",
+  "new_model": false,
+  "saved_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v71.slx",
+  "saved_model_version": "0.71",
+  "model_sha256": "e46ed9479ecd44842e3b9b1fb0190276bfa983e1b2cae8968fc11443e92430e7",
+  "model_executed_this_run": true,
+  "accepted_dispatch_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v57.slx",
+  "accepted_sampled_interval_model": "matlab/simulink/DCHR_Interval_Dispatch_Stateflow_v66.slx",
+  "accepted_scoped_earliest_event_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v71.slx",
+  "corrected_model_accepted": false,
+  "matlab_passed": 1334,
+  "matlab_failed": 0,
+  "independent_passed": 45766,
+  "independent_failed": 0,
+  "actual_probe_scenarios": 25,
+  "accepted_probe_scenarios": 16,
+  "accepted_runs_including_valid_prefixes": 20,
+  "completed_held_intervals": 596,
+  "positive_event_segments": 645,
+  "interior_events": 49,
+  "required_actual_final_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "actual_runtime_rejections": 9,
+  "v30_reference_comparisons": 20,
+  "reviewer_selfchecks": 8,
+  "open_defect_classes": [
+    "OPEN_CORRELATED_WORK_NONNEGATIVITY_FALSE_REJECTION",
+    "OPEN_EXACT_ON_DWELL_FALSE_REJECTION",
+    "OPEN_PASSIVE_INTERVAL_WRAPPING_FALSE_REJECTION",
+    "OPEN_SOURCE_LIMIT_PROOF_FALSE_REJECTION"
+  ],
+  "findings": [
+    {
+      "id": "passive_service_lambda_0p2",
+      "classification": "OPEN_PASSIVE_INTERVAL_WRAPPING_FALSE_REJECTION",
+      "first_rejected_tick": 91,
+      "time_h": "91",
+      "exact_inventory": "3.740775835725290273520783526280712864734654873115121259099079021778007686781569043685481861207789147635148890702721359469418909248589298333461815957901302590651E-8",
+      "last_accepted_inventory_hull": [
+        2.7464180228123115e-09,
+        8.863346044546292e-08
+      ],
+      "exact_prefix_inventory": "4.568993923413783965498960938282084058894594432811768192837473523464408479765565586758283941621837103206397199711975803765933375280776855501483911488186946555907E-8",
+      "exact_contraction": "0.8187307530779818495801981782603473539933477974986013552256987164380898396906069534479622464231019194631940579062970623265818132660146043749152782129107184365413",
+      "dependency_width_factor": "1.181269246922018150419801821739652646006652202501398644774301283561910160309393046552037753576898080536805942093702937673418186733985395625084721787089281563459"
+    },
+    {
+      "id": "passive_service_lambda_1p0",
+      "classification": "OPEN_PASSIVE_INTERVAL_WRAPPING_FALSE_REJECTION",
+      "first_rejected_tick": 23,
+      "time_h": "23",
+      "exact_inventory": "3.078563889510567091178258352183749327950153017216910043826120889401576697683724392644222285257841107452851904317633102775645319890154899424894461098672657348430E-10",
+      "last_accepted_inventory_hull": [
+        4.3409381178144735e-12,
+        1.6693399176035155e-09
+      ],
+      "exact_prefix_inventory": "8.368404278606774423156739091932879623079518778205449795961533520557305201097377148058284772611114256347665201842050960214998134860116255810086043069018668826279E-10",
+      "exact_contraction": "0.3678794411714423215955237701614608674458111310317678345078368016974614957448998033571472743459196437466273252768439952082469757927901290086266535894940987830922",
+      "dependency_width_factor": "1.632120558828557678404476229838539132554188868968232165492163198302538504255100196642852725654080356253372674723156004791753024207209870991373346410505901216908"
+    },
+    {
+      "id": "disable_exact_dwell",
+      "classification": "OPEN_EXACT_ON_DWELL_FALSE_REJECTION",
+      "exact_age_h": "0.250",
+      "minimum_ON_h": "0.25",
+      "retained_age_hull": [
+        0.2499999999999999,
+        0.2500000000000001
+      ]
+    },
+    {
+      "id": "source_limited",
+      "classification": "OPEN_SOURCE_LIMIT_PROOF_FALSE_REJECTION",
+      "host_replay_heat_power": "0.1181116887472747067899803141699521802365779876708984375",
+      "exact_source_power": "0.09999999999999986772006391246514409397188063389787319370126996063138932538722315605422097579863110560373270490566910598945543535221444226716062216070167359875277",
+      "exact_source_capacity": "0.1000000000000000020816681711721685132943093776702880859375",
+      "exact_margin": "1.3436160425870702441932242874377241489223623003936861067461277684394577902420136889439626729509433089401054456464778555773283937783929832640124723E-16",
+      "source_rate_hull": [
+        0.09999999999999962,
+        0.10000000000000013
+      ],
+      "capacity_hull": [
+        0.09999999999999998,
+        0.10000000000000003
+      ]
+    },
+    {
+      "id": "rounded_source_water_tie",
+      "classification": "OPEN_SOURCE_LIMIT_PROOF_FALSE_REJECTION",
+      "host_replay_heat_power": "0.9999999999999984456877655247808434069156646728515625",
+      "exact_source_power": "0.8466562544370283489853022511003168142304223570029027227667540060729942972310862405734796408214131499801513762640589525174146424007099956063871263209518207280780",
+      "exact_source_capacity": "0.846656254437029576198625591132440604269504547119140625",
+      "exact_margin": "1.2272133233400321237900390821901162379022332459939270057027689137594265203591785868500198486237359410474825853575992900043936128736790481792719220E-15",
+      "source_rate_hull": [
+        0.8466562544370262,
+        0.8466562544370305
+      ],
+      "capacity_hull": [
+        0.8466562544370293,
+        0.8466562544370297
+      ]
+    },
+    {
+      "id": "source_below_tie",
+      "classification": "OPEN_SOURCE_LIMIT_PROOF_FALSE_REJECTION",
+      "host_replay_heat_power": "0.9999999999990889509859925965429283678531646728515625",
+      "exact_source_power": "0.8466562544362583196076688603550000612506252834082974685783154245335540456580950464172162037941702555735393482813797949676259104664252757471916817774774634734642",
+      "exact_source_capacity": "0.8466562544362594977531699669270892627537250518798828125",
+      "exact_margin": "1.1781455011065720892015030997684715853439216845754664459543419049535827837962058297444264606517186202050323740895335747242528083182225225365265358E-15",
+      "source_rate_hull": [
+        0.8466562544362561,
+        0.8466562544362605
+      ],
+      "capacity_hull": [
+        0.8466562544362592,
+        0.8466562544362597
+      ]
+    },
+    {
+      "id": "restart_band_2m42",
+      "classification": "OPEN_CORRELATED_WORK_NONNEGATIVITY_FALSE_REJECTION",
+      "exact_stop_time_h": "1.278509462042024418587889913525222048885771999567481659804693988390179727485762400112646135106854080758460070205681449299511332898588446544647634435110269729242E-14",
+      "root_time_hull": [
+        9.81670884931698e-15,
+        1.542625676321295e-14
+      ],
+      "exact_heat": "7.671056772252144240438312344866344652419646769008750685634254741021388455777427363412800969867372605370722271141232172602458834361221084736829681453869525268063E-14",
+      "exact_source": "5.984889641886629593524003577486022814648176041738056069590110414010870948238772402515449071308432235638168044241364804917210665860552487641681786484877967523462E-14",
+      "exact_work": "1.686167130365514646914308767380321837771470727270694616044144327010517507538654960897351898558940369732554226899867367685248168500668597095147894968991557744601E-14",
+      "work_hull": [
+        -1.3312309310775837e-14,
+        4.6604091775030754e-14
+      ],
+      "restart_temperature_band": "2.27373675443232059478759765625E-13"
+    },
+    {
+      "id": "segment_budget_exhaustion",
+      "classification": "EXPLICIT_FAIL_CLOSED_SEGMENT_BUDGET_LIMIT",
+      "independent_ideal_policy_segments": 23,
+      "interior_events": 22,
+      "scope": "Ideal exact mathematical policy only; no trace claimed for rejected call."
+    }
+  ],
+  "matlab_metadata": {
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "license_observed": 1,
+    "stateflow_ver": [],
+    "chart_count": 1,
+    "action_language": "MATLAB",
+    "simulation_mode": "normal",
+    "states": [
+      "IDLE",
+      "HEAT_RECOVERY",
+      "STORAGE_CHARGE",
+      "STORAGE_DISCHARGE",
+      "BACKUP",
+      "UNMET_DEMAND"
+    ]
+  },
+  "result_directory": "results/earliest_admissibility_v72_20261012T030907_237961Z",
+  "independent_qa": "results/earliest_admissibility_v72_20261012T030907_237961Z/independent_QA_v72_20261012T031418_598448Z.json",
+  "derivation": "audit/Earliest_admissibility_derivation_v72.md",
+  "results": "audit/Earliest_admissibility_results_v72.md",
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "limitations": [
+    "Four numerical admissibility defects remain OPEN in saved v71. This checkpoint reproduces defects and accepts no repaired or annual model.",
+    "Accepted traces cover synthetic tested fixtures only. Actual rejected calls have runtime diagnostics; separately executed valid prefixes are saved. No complete trajectory is claimed for a rejected call.",
+    "Diagnostic return/capture copies run on the MATLAB host only. They supply rejection-branch operands and are separately labelled, not saved-model execution or independent QA.",
+    "Same-agent algorithmic QA with exact-binary Fraction and 120/160-digit closed exp/log/source equations; not independent personnel. MAT reopening/export uses MATLAB, not an independent HDF5 parser.",
+    "Macro analytic physical segments execute within Stateflow protocol calls; no solver-clock thermal firing, generated-code or arbitrary-domain acceptance. Sixteen-segment resource limit remains explicit.",
+    "Primary article replication, equipment calibration, measured validation and annual v71 remain untested. Full primary signoffs remain 0/31."
+  ],
+  "next_actionable_task": "Implement additive saved v73 numerical-admissibility repairs: stable monotone passive/affine inventory images; correlated ON-age equality certificate; source-capacity proof retaining selected limiter/denominator relation; correlated compressor-work/auxiliary nonnegativity proof. Execute all original v72 counterexamples and six modes, long passive/repeated schedules, exact/early/late disable, source/water ties, narrow bands, genuine collision and explicit segment-exhaustion controls. Preserve v57-v72. Accept only after saved-model execution and independent closed-form original-MAT QA; then develop the held-boundary annual adapter. Primary calibration and measured validation remain OPEN."
+}

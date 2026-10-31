@@ -1,0 +1,19 @@
+{
+  "schema": "C89_MONTHLY_ADEQUACY",
+  "task_id": "scc-2aab24704c2bd0",
+  "actor": "chatgpt-dchr-c89-monthly-adequacy-20261030-1352",
+  "scope": "Isolated CPU-only synthetic annual monthly heat adequacy report; shared sources unchanged",
+  "source_sha256": "07d1d7f19d92ce34d5b3e5a44a2131234a4a2e7991e21f018b197137ed0eb370",
+  "script_sha256": "62685daa99739ccd4eb1eac7726e998cc87b36dfae64287beea7554a3e0a8631",
+  "independent_qa_sha256": "215cbb2de11ae64bb9477d14fed22e9da61cd853f04a9461b1d8343cb51b2145",
+  "monthly_json_sha256": "00c80676888d01f74790b2fea00b0708339bd1e4e935b75ecc69bb5a9424473f",
+  "monthly_csv_sha256": "f7a00981b0e4efab28d81d92fc5b5db16efef9c427fc9f01e5f9704918ba537e",
+  "findings_sha256": "8b9973a9e1f2cf259d0e400d6b5d231ca9904b8b1b64aee4d2d179e8e9a41855",
+  "qa": "4 self-tests PASS; 14/14 independent QA PASS; 8760 hours; -W error compile PASS",
+  "results": "demand 59429.976769 MWh, gas 10542.548228 MWh (17.739%), HP electricity 7969.875645 MWh, gas needed 2879h, max 9.738802 MW",
+  "synthetic": true,
+  "physical_field_validation": false,
+  "stateflow_v85_parity": false,
+  "primary_sources_signed": 0,
+  "next": "Independent field source signoffs and 500m3 pool-load reconciliation; no production deployment."
+}

@@ -1,0 +1,27 @@
+{
+  "data_class": "SYNTHETIC_FIXTURE_NOT_MEASURED",
+  "inputs": {
+    "edc_kwh": "1200000",
+    "eit_kwh": "1000000",
+    "ereuse_kwh": "300000",
+    "eres_total_kwh": "600000",
+    "win_m3": "2000"
+  },
+  "metrics": {
+    "PUE": "1.2",
+    "ERF": "0.25",
+    "REF": "0.5",
+    "WUE_m3_per_MWh_IT": "2"
+  },
+  "threshold_example": {
+    "article12_reporting_500kW_or_more": true,
+    "article26_heat_reuse_over_1MW": false,
+    "note": "Threshold indicators only, NOT legal determination; national law, exceptions and feasibility require review."
+  },
+  "source_refs": [
+    "https://eur-lex.europa.eu/eli/dir/2023/1791/oj/eng",
+    "https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj/eng"
+  ],
+  "full_primary_signoff": false,
+  "site_compliance_verified": false
+}

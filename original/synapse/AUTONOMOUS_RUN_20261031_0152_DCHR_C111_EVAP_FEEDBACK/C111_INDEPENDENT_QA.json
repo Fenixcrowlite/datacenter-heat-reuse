@@ -1,0 +1,17 @@
+{
+  "annual_electric_deltas_MWh": [
+    -0.6991365403015379,
+    -0.6991365403015379,
+    -2.3713461397436504,
+    -2.071265861547573
+  ],
+  "baseline_C108_field_matches": 210240,
+  "checks_ledger_min": 1401592,
+  "dynamic_evap_matches_pool": 35040,
+  "hourly_sha256": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e",
+  "negative_controls": 3,
+  "physical_validation": false,
+  "rows": 70080,
+  "scenarios": 8,
+  "status": "PASS"
+}

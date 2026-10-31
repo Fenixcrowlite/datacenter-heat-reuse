@@ -1,0 +1,1596 @@
+{
+  "timestamp_utc": "2026-10-10T22:48:55.585281+00:00",
+  "excludes": "Mutable append-only progress/acceptance ledgers and generated local_build caches.",
+  "files": [
+    {
+      "path": "audit/Annual_stateflow_derivation_v49.md",
+      "bytes": 4575,
+      "sha256": "109b129df160f634bf0d9b49dd47970419ce831f87b13e07bbda5f163281187d"
+    },
+    {
+      "path": "audit/Annual_stateflow_execution_v49_20261010T224406192Z.json",
+      "bytes": 412,
+      "sha256": "936312939a6d1fde0e351b3f6314661bb89da118da1d22aa256fbd06533609d8"
+    },
+    {
+      "path": "audit/Annual_stateflow_execution_v49_20261010T224417968Z.json",
+      "bytes": 412,
+      "sha256": "f4cd9986917038445b11101464062be3059a10ff0dbb5dfc69ec2d22013a47d6"
+    },
+    {
+      "path": "audit/Annual_stateflow_results_v49.md",
+      "bytes": 6193,
+      "sha256": "11ecf8f637f21e4fa5f4f361e3654bc3bdd9aa09e1d1b54b46b6b3e4fbbd66ef"
+    },
+    {
+      "path": "audit/check_annual_stateflow_release_v49.py",
+      "bytes": 2662,
+      "sha256": "b8c36ab3bd1f3c903bda28c7c4527d0b6c91c826e8466a9ad2917894b32538e3"
+    },
+    {
+      "path": "audit/finalize_annual_stateflow_v49.py",
+      "bytes": 15269,
+      "sha256": "e627cea7cb5cdb71c71e925e8bcfc18413b6acdbb1399d17228f58fa5274a258"
+    },
+    {
+      "path": "audit/prepare_annual_stateflow_v49.py",
+      "bytes": 2417,
+      "sha256": "e4631ae46891a168edb787054bef263a2d682a666d0ac6a4d9b198767928514c"
+    },
+    {
+      "path": "audit/run_annual_stateflow_v49.ps1",
+      "bytes": 918,
+      "sha256": "302696bdce90e52e4a20783f310781f63eed016ad373e2c6f98759b6875b0873"
+    },
+    {
+      "path": "audit/verify_annual_stateflow_v49.py",
+      "bytes": 15686,
+      "sha256": "78b89a0f5645a3bbf96dff122615f8ac248d9c14c4fea6352b98befca4b73ad8"
+    },
+    {
+      "path": "automation/logs/annual_stateflow_independent_v49_20261010T224648055Z.log",
+      "bytes": 2103,
+      "sha256": "f068851a60e8a95335fce058b1bae8beffc05c991456990a01f65e92aba6dc38"
+    },
+    {
+      "path": "automation/logs/annual_stateflow_independent_v49_20261010T224734887Z.log",
+      "bytes": 1809,
+      "sha256": "71ccda939be2358e8eb8ee7ead1b502bcab93171dedc1d755227282f16f029dd"
+    },
+    {
+      "path": "automation/logs/annual_stateflow_v49_20261010T224406192Z.log",
+      "bytes": 181,
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4"
+    },
+    {
+      "path": "automation/logs/annual_stateflow_v49_20261010T224417968Z.log",
+      "bytes": 43810,
+      "sha256": "ccef7111acf19ff25f00f6fa77a2d146ae96d24a95a397e2d32d100eae6119a5"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v49.md",
+      "bytes": 1514,
+      "sha256": "4cce5a8b39f3e82826515a1141ef4975703573d3cc41d1cd97fea60495b539a3"
+    },
+    {
+      "path": "matlab/+dchr/adapt_annual_stateflow_v49.m",
+      "bytes": 4485,
+      "sha256": "08958d30a761f7a9b1f0e1e0dfe2620688b6a82c8e1c945f21df21e8838d7b43"
+    },
+    {
+      "path": "matlab/export_annual_stateflow_v49.m",
+      "bytes": 2061,
+      "sha256": "3ee5d6c88d4859e410291b6251279d424785085328feefe2662569861b06d614"
+    },
+    {
+      "path": "matlab/run_annual_stateflow_v49.m",
+      "bytes": 8838,
+      "sha256": "649209aa174c0d663a42ff96ab825d2b5a2b8cd1a5bc85bcd6343da2c89a4e71"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/adapter_v49.mat",
+      "bytes": 755900,
+      "sha256": "861bc4821f060c81288514a76a7e1e5966613133c9be5eebce0a63e4fdfcc69c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_8760h_clock_end.csv",
+      "bytes": 234054,
+      "sha256": "9559569315ac91ebcd51ad619c2d13ee4f1854369230f3c4fa65e140f16a3402"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_8760h_clock_start.csv",
+      "bytes": 234020,
+      "sha256": "d5cc09ae7325a695a60fd3fce81997c9e808d0a95005f81a86d437fbf069c4ce"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_8760h_dispatch.csv",
+      "bytes": 3089411,
+      "sha256": "cc9cdaadbc4158e94bd7c7b57e46927d3004594804388a222f48b277b7993d45"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_8760h_ports.csv",
+      "bytes": 931050,
+      "sha256": "46d589a3f6c9b727056ca79dfb39a95ff6000486dcdb124719ece4aca7d6bf36"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_8760h_segments.csv",
+      "bytes": 5181195,
+      "sha256": "1eb8c98567f276edd4d5fb1284d7f759f885f9b3a74285ad3b02269b1de5c513"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_8760h_simulation.mat",
+      "bytes": 7443852,
+      "sha256": "cc45fd77d87ec0b787448024a2095af88edaa3d6bbe681d73874a0629b33427b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_inputs.csv",
+      "bytes": 466042,
+      "sha256": "58cb88cad4cd488a26edb5de89618a53440be87adfc687b898f999b0643cc9b6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_stateflow_v49.json",
+      "bytes": 1333594,
+      "sha256": "674463866f98dc449bf01dba5d53f588636b3cb06c84b932c94e13d766029397"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/annual_stateflow_v49.mat",
+      "bytes": 173336,
+      "sha256": "dd8c6d6bd9b8b1f71f13eeae90cec4c28b527d76501c852b3004391ae98bf5e2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/boiler_limit_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/boiler_limit_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/boiler_limit_dispatch.csv",
+      "bytes": 55,
+      "sha256": "39752a5e77f1983d799fd9afbae5cd7e7aecb7ed7f3d6c23be763ce19ee2ad6a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/boiler_limit_ports.csv",
+      "bytes": 137,
+      "sha256": "45fc2106c741ca70d6e4dd420a7e9185c152c5b252b19aff371206b67043dfe3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/boiler_limit_segments.csv",
+      "bytes": 65,
+      "sha256": "2b3e760a1f3e3a9ff6af1adf90b10825a61161951c57589beb43efdda06d804f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/boiler_limit_simulation.mat",
+      "bytes": 286696,
+      "sha256": "55525cf4a460888b66c7a2a5aa007e6336b1adc3223fcffc82694c744896c068"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/cold_72h_clock_end.csv",
+      "bytes": 711,
+      "sha256": "8d671192b40245ba11d9068bd5562a28c0ae825fb74ca0e6bd53279429645fff"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/cold_72h_clock_start.csv",
+      "bytes": 710,
+      "sha256": "a1da124776118bf7ec671c3df1f5700eb82ccc0d492b085dd4d6bddebd826bf8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/cold_72h_dispatch.csv",
+      "bytes": 19908,
+      "sha256": "409a6b949b4021cebdcc19010b20e9e7d5f530b3d2184a27e09ab12762abd012"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/cold_72h_ports.csv",
+      "bytes": 6722,
+      "sha256": "cf4b1a4f60c996be277052fe7eec76d9169090f8da9e3057e4cadc2ab6c3a325"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/cold_72h_segments.csv",
+      "bytes": 19744,
+      "sha256": "3e4c8763b10c24e79f4d979f6aef709abb5494b1b1002c3737e5a025dba2f7a1"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/cold_72h_simulation.mat",
+      "bytes": 379734,
+      "sha256": "d022144dae8c487ef5ead6c88682ac18d3596825e8fbd794e60c77778a64507e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/fixed_preflight.csv",
+      "bytes": 86531,
+      "sha256": "680fbdcb95e9cc9f1c31c907862c1aa51039c0b49f01503119fc96e71189ebbc"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/hp_only_clock_end.csv",
+      "bytes": 9,
+      "sha256": "7fa924c9c7a582b150e6cf24cd4eafa351fd5f47f168a440a06cfd0c30017187"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/hp_only_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/hp_only_dispatch.csv",
+      "bytes": 53,
+      "sha256": "e81faa91ed5f2a49b61b40d8d5f7782395b7d3cc5869640c10cf335bef468ad1"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/hp_only_ports.csv",
+      "bytes": 137,
+      "sha256": "748e853ca98de9aa2c19afcaeeb3efeb4b53ce69334b9f93c0504908f7fd25ff"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/hp_only_segments.csv",
+      "bytes": 63,
+      "sha256": "b919eb7b5d41e01cd9f9d5b5830312ff004b1839f82520482dec4ce0c5c5eeda"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/hp_only_simulation.mat",
+      "bytes": 286696,
+      "sha256": "54a4c9517dac21a707e733ef92900315463f953a8c088ed91ce0ce0b6e9e1d7c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/independent_QA_v49_20261010T224648_231871Z.json",
+      "bytes": 27513471,
+      "sha256": "83bbf1416ed9087084bc0a2e155796b01a0a36e90a36edf67cfa70f369bbbc5f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/independent_QA_v49_20261010T224734_985106Z.json",
+      "bytes": 27513468,
+      "sha256": "3f12c52e749662a5e9d2d8b9278bf292add47102ccf205fbba93d2edec22bc93"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/insufficient_heat_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/insufficient_heat_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/insufficient_heat_dispatch.csv",
+      "bytes": 55,
+      "sha256": "627ebaa48e800e800d27a4a9fe48a7506c9d480895e9e3218ad1b5cb9c471365"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/insufficient_heat_ports.csv",
+      "bytes": 137,
+      "sha256": "ad711ce5e93aa6df4e2563abc131a50851b0dab571b49ad45f3fcb669148fd27"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/insufficient_heat_segments.csv",
+      "bytes": 65,
+      "sha256": "3d9711560649066ba9a0c7e2b026f7dcb36f3872827af02266dbb3277c01a6b3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/insufficient_heat_simulation.mat",
+      "bytes": 286696,
+      "sha256": "14d5441522052544ba4484065c54c766cd7d16d45ea2644f60124d844d64ebaa"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/annual_8760h_clock_end.csv",
+      "bytes": 234054,
+      "sha256": "9559569315ac91ebcd51ad619c2d13ee4f1854369230f3c4fa65e140f16a3402"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/annual_8760h_clock_start.csv",
+      "bytes": 234020,
+      "sha256": "d5cc09ae7325a695a60fd3fce81997c9e808d0a95005f81a86d437fbf069c4ce"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/annual_8760h_dispatch.csv",
+      "bytes": 3089411,
+      "sha256": "cc9cdaadbc4158e94bd7c7b57e46927d3004594804388a222f48b277b7993d45"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/annual_8760h_ports.csv",
+      "bytes": 931050,
+      "sha256": "46d589a3f6c9b727056ca79dfb39a95ff6000486dcdb124719ece4aca7d6bf36"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/annual_8760h_segments.csv",
+      "bytes": 5181195,
+      "sha256": "1eb8c98567f276edd4d5fb1284d7f759f885f9b3a74285ad3b02269b1de5c513"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/annual_inputs.csv",
+      "bytes": 466042,
+      "sha256": "58cb88cad4cd488a26edb5de89618a53440be87adfc687b898f999b0643cc9b6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/boiler_limit_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/boiler_limit_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/boiler_limit_dispatch.csv",
+      "bytes": 55,
+      "sha256": "39752a5e77f1983d799fd9afbae5cd7e7aecb7ed7f3d6c23be763ce19ee2ad6a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/boiler_limit_ports.csv",
+      "bytes": 137,
+      "sha256": "45fc2106c741ca70d6e4dd420a7e9185c152c5b252b19aff371206b67043dfe3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/boiler_limit_segments.csv",
+      "bytes": 65,
+      "sha256": "2b3e760a1f3e3a9ff6af1adf90b10825a61161951c57589beb43efdda06d804f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/cold_72h_clock_end.csv",
+      "bytes": 711,
+      "sha256": "8d671192b40245ba11d9068bd5562a28c0ae825fb74ca0e6bd53279429645fff"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/cold_72h_clock_start.csv",
+      "bytes": 710,
+      "sha256": "a1da124776118bf7ec671c3df1f5700eb82ccc0d492b085dd4d6bddebd826bf8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/cold_72h_dispatch.csv",
+      "bytes": 19908,
+      "sha256": "409a6b949b4021cebdcc19010b20e9e7d5f530b3d2184a27e09ab12762abd012"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/cold_72h_ports.csv",
+      "bytes": 6722,
+      "sha256": "cf4b1a4f60c996be277052fe7eec76d9169090f8da9e3057e4cadc2ab6c3a325"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/cold_72h_segments.csv",
+      "bytes": 19744,
+      "sha256": "3e4c8763b10c24e79f4d979f6aef709abb5494b1b1002c3737e5a025dba2f7a1"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/fixed_preflight.csv",
+      "bytes": 86531,
+      "sha256": "680fbdcb95e9cc9f1c31c907862c1aa51039c0b49f01503119fc96e71189ebbc"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/hp_only_clock_end.csv",
+      "bytes": 9,
+      "sha256": "7fa924c9c7a582b150e6cf24cd4eafa351fd5f47f168a440a06cfd0c30017187"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/hp_only_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/hp_only_dispatch.csv",
+      "bytes": 53,
+      "sha256": "e81faa91ed5f2a49b61b40d8d5f7782395b7d3cc5869640c10cf335bef468ad1"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/hp_only_ports.csv",
+      "bytes": 137,
+      "sha256": "748e853ca98de9aa2c19afcaeeb3efeb4b53ce69334b9f93c0504908f7fd25ff"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/hp_only_segments.csv",
+      "bytes": 63,
+      "sha256": "b919eb7b5d41e01cd9f9d5b5830312ff004b1839f82520482dec4ce0c5c5eeda"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/insufficient_heat_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/insufficient_heat_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/insufficient_heat_dispatch.csv",
+      "bytes": 55,
+      "sha256": "627ebaa48e800e800d27a4a9fe48a7506c9d480895e9e3218ad1b5cb9c471365"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/insufficient_heat_ports.csv",
+      "bytes": 137,
+      "sha256": "ad711ce5e93aa6df4e2563abc131a50851b0dab571b49ad45f3fcb669148fd27"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/insufficient_heat_segments.csv",
+      "bytes": 65,
+      "sha256": "3d9711560649066ba9a0c7e2b026f7dcb36f3872827af02266dbb3277c01a6b3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/paired_loss_first_ports.csv",
+      "bytes": 825023,
+      "sha256": "5678edaf2a06ca5c2d6b04efef24fdd462e77645228b86a3508ee038a30304d5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/paired_loss_first_v48.csv",
+      "bytes": 2701470,
+      "sha256": "af4c6b0c28c08614decdc8a1c0d8099d527bd56179a1f7c6680573a87f30b081"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/report.json",
+      "bytes": 1333594,
+      "sha256": "674463866f98dc449bf01dba5d53f588636b3cb06c84b932c94e13d766029397"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/scheduled_preflight.csv",
+      "bytes": 1199051,
+      "sha256": "7257ef4bcfdcf614eff9ed06f4c45374c5b1584c7e9bc3ba6878a03ab001207c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_charge_clock_end.csv",
+      "bytes": 9,
+      "sha256": "7fa924c9c7a582b150e6cf24cd4eafa351fd5f47f168a440a06cfd0c30017187"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_charge_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_charge_dispatch.csv",
+      "bytes": 53,
+      "sha256": "0ae90c6e68a0613570270aaf74678533f93d9c2864cbd7cd6737ebb71b8c8500"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_charge_ports.csv",
+      "bytes": 137,
+      "sha256": "7acbfcb3b47c171e9f019358249c67faa7ce466ca9d52fb93d37d47ace6a87ad"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_charge_segments.csv",
+      "bytes": 63,
+      "sha256": "77a02312a92a6764de4643122ab15275819a8275b3f4ec530051f93b4cefd512"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_discharge_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_discharge_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_discharge_dispatch.csv",
+      "bytes": 55,
+      "sha256": "ade52b465dcb133af4a3c19719406e84a588a8689eaf042d225e35093ba57fa7"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_discharge_ports.csv",
+      "bytes": 137,
+      "sha256": "04a713dc2690846ab9687571a236b85aa036314f82c2c17206821d8683f25c3e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/tes_discharge_segments.csv",
+      "bytes": 65,
+      "sha256": "86ad34d6bc1dba9707f39249f5d9ff61d34e6f2c0c2d67520a11b747e4163ee9"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/zero_demand_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/zero_demand_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/zero_demand_dispatch.csv",
+      "bytes": 55,
+      "sha256": "71d82e62b2851299c89b2f5b07a1ce716eb09499c1650c15bc4d00e429354042"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/zero_demand_ports.csv",
+      "bytes": 137,
+      "sha256": "da26b3718a75306cd67318c57516481c043a81f8ade4868ba9b52556bfb8c63f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/mat_reopen/zero_demand_segments.csv",
+      "bytes": 65,
+      "sha256": "399ae9241b678cbbb45ce7ccf51d20f1d6a45352b9322df088349e05f3254ce0"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/paired_loss_first_ports.csv",
+      "bytes": 825023,
+      "sha256": "5678edaf2a06ca5c2d6b04efef24fdd462e77645228b86a3508ee038a30304d5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/paired_loss_first_v48.csv",
+      "bytes": 2701470,
+      "sha256": "af4c6b0c28c08614decdc8a1c0d8099d527bd56179a1f7c6680573a87f30b081"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/paired_loss_first_v48.mat",
+      "bytes": 845002,
+      "sha256": "9f5962c57be46f99538e36d4ec0efe39d41f3803f2b1d083e88953b260249f66"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/preservation.json",
+      "bytes": 294815,
+      "sha256": "dbef786e22193d18e2e919ecbec2f5087f7f98e5464aa7e80f564cc43fe49a44"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/qa_source/20261010T224648_231871Z/verify_annual_dispatch_v48.py",
+      "bytes": 15306,
+      "sha256": "c87c06245d2a31a70da521313643d42f64a22b7a5e599ff900f04d174a1bd521"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/qa_source/20261010T224648_231871Z/verify_annual_stateflow_v49.py",
+      "bytes": 15067,
+      "sha256": "502075832663a9177e91fb7931c54f0af6932ca05552e183b3ea8ab442651986"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/qa_source/20261010T224734_985106Z/verify_annual_dispatch_v48.py",
+      "bytes": 15306,
+      "sha256": "c87c06245d2a31a70da521313643d42f64a22b7a5e599ff900f04d174a1bd521"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/qa_source/20261010T224734_985106Z/verify_annual_stateflow_v49.py",
+      "bytes": 15686,
+      "sha256": "78b89a0f5645a3bbf96dff122615f8ac248d9c14c4fea6352b98befca4b73ad8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/scheduled_preflight.csv",
+      "bytes": 1199051,
+      "sha256": "7257ef4bcfdcf614eff9ed06f4c45374c5b1584c7e9bc3ba6878a03ab001207c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/snapshot_revisions_v49.json",
+      "bytes": 472,
+      "sha256": "78b55b921b0094c96da9191b797e043ff9af54c9e41aad96332f44beb6485e68"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/audit/Annual_stateflow_derivation_v49.md",
+      "bytes": 3131,
+      "sha256": "e2ebbe7544c1b4b0c7420781702f8088c534d64db49a3c771ba72719f497b3e8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/audit/prepare_annual_stateflow_v49.py",
+      "bytes": 2417,
+      "sha256": "e4631ae46891a168edb787054bef263a2d682a666d0ac6a4d9b198767928514c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/audit/run_annual_stateflow_v49.ps1",
+      "bytes": 918,
+      "sha256": "302696bdce90e52e4a20783f310781f63eed016ad373e2c6f98759b6875b0873"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/dc_source.m",
+      "bytes": 243,
+      "sha256": "a03055ea20301e07c5cea327495354af48cf479fc12cf3a0187dccd3699cbbd9"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/dh_temperature.m",
+      "bytes": 590,
+      "sha256": "4f129e4d088ace2968cfd026ce248141dd395c91193ebe6e86c0622b93d99002"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/exergy_heat.m",
+      "bytes": 243,
+      "sha256": "56cd12f9c6bf400eb58c91bee00b30d9d250d952a7533fe5a3b783869861ca48"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/heat_exchanger.m",
+      "bytes": 531,
+      "sha256": "f56ac126c061d87bdee66901f093fe5a2cdb6cd7ecfee210f6bbbcea56c9999f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/heat_pump.m",
+      "bytes": 618,
+      "sha256": "6eedcb801e7b7256ea581c5fd2a413f230a9b28403c9a167e9c27f4405076fe2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/heat_pump_step_v14.m",
+      "bytes": 4282,
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/heat_pump_step_v38.m",
+      "bytes": 4868,
+      "sha256": "248a9da376155ec2fbd8596c38f1378b232b5f0e180a96163694225f8d3c8307"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/heat_pump_step_v40.m",
+      "bytes": 5895,
+      "sha256": "6b8a3145b2d8a66089dfd49d3eb6b73724beeb8f9dfc1145bd5a298c059a9ed2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/part_load_cop.m",
+      "bytes": 358,
+      "sha256": "dfc49343c77f86f961729f7f4081dba1d32a09a12b60e3c29f11bf364ac4ecf8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_event_kernel_v31.m",
+      "bytes": 3623,
+      "sha256": "a277a4e8ef6bc5b5bf13dc1199c567f64b5848972650e107a67c682c77aecf20"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_kernel_v30.m",
+      "bytes": 3026,
+      "sha256": "8f56a70f5a2ddd7e84c2e458412a3e18edc786a4e9f80d060059f4064bb0a44d"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_parameters_v30.m",
+      "bytes": 2489,
+      "sha256": "14cbdb46fe7cb479d758b7b4e8413c829f4ddab98618fcd19af0a4bb2c0209f9"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_step.m",
+      "bytes": 769,
+      "sha256": "62077ab766b7974ac091b27db05d947898ce637c7e478d7c44007178e6cf2c68"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_step_v16.m",
+      "bytes": 2759,
+      "sha256": "8244c928d73d975521c854bcf2e42566c7a65eaa0172ee6d29c626bc65aecee9"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_step_v28.m",
+      "bytes": 3193,
+      "sha256": "fe5fc6cc99b998a17e2250cffc22fe72e3411182e92d3abddab5df12c5df205f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/+components/storage_step_v30.m",
+      "bytes": 1731,
+      "sha256": "0959576e2d2a1ddd5334841e04ffacedc8080b14d3ef683f9bc005e42fcbce09"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/adapt_annual_stateflow_v49.m",
+      "bytes": 4485,
+      "sha256": "08958d30a761f7a9b1f0e1e0dfe2620688b6a82c8e1c945f21df21e8838d7b43"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/adapt_dispatch_energy_v46.m",
+      "bytes": 1109,
+      "sha256": "09fad7ed54a23861601682bab88514bd6705fb33eef45ecb043ffb1a33d262a2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/adapt_stateflow_inputs_v49.m",
+      "bytes": 4229,
+      "sha256": "b1428bcd47202d16cf1257479d22bb10b61b1c9f97d039dfa39432454c14ebb7"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/compute_energy_metrics_v45.m",
+      "bytes": 2905,
+      "sha256": "821369c635ab943dd5850df7e3aaeb595981f6e1f2d478ef3da57640c338242c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/compute_metrics.m",
+      "bytes": 1763,
+      "sha256": "0450736d9a319109a376bbe9962e45685f17348634eada9eef131e6aba92a248"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/compute_metrics_v2.m",
+      "bytes": 2385,
+      "sha256": "3759487dbb6c7352edc0209408f2abdd775677bde4c78508a79abe33286b00b2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/compute_service_comparison_v46.m",
+      "bytes": 2303,
+      "sha256": "1dfd0a196e143348a6358961b49839c94347f10511e71e7ada556b0418bfe6ff"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/heat_demand.m",
+      "bytes": 599,
+      "sha256": "6c0eabc7ef972418a5a81f33391b9aa42d9b4424595fe9e1bd852219cd05ff9e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/heat_pump_capability.m",
+      "bytes": 842,
+      "sha256": "e96fe6094293fbc519bffc0e2e1afbc110664d79a63772ffd96138422880e01a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/make_inputs.m",
+      "bytes": 1158,
+      "sha256": "a73b80447bb5d2909ebe5b5abe51dd0ae0ba7befc4ad6aa1e9ce109342fbe2e5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_dispatch_v16.m",
+      "bytes": 4424,
+      "sha256": "4f33930c582d8b841d7c70025db485fc4252d4d740099efcbceccfd7e84c2318"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_dispatch_v28.m",
+      "bytes": 4640,
+      "sha256": "24f7d9cf2969965c97933f871cd6a9a70b5b40e304dad8688784c3d6271a5e0d"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_dispatch_v30.m",
+      "bytes": 2714,
+      "sha256": "3900eebd27c34100a254fe309e0ecf7c13068b1c69b1a58db6dedfcca76c3bcf"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_system.m",
+      "bytes": 2136,
+      "sha256": "6c8a23a6db121e66b4bcfa20672ecb5d9aa0e50ac97d811774ca02324235853a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_system_v13.m",
+      "bytes": 1747,
+      "sha256": "aa821849e445eee6381338b4dc9ef38bef14452d1fab48d615bb62ad8bdb57d3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_system_v2.m",
+      "bytes": 2220,
+      "sha256": "7ec9e95e54302ec7a1734613c75f4a19d56015c492f38e000fb1ba51bb5119bb"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/+dchr/simulate_system_v48.m",
+      "bytes": 4631,
+      "sha256": "c409bd97fb5cd657af5ba66896310e32ad05ba81e567ccaf9d063139db553f50"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/default_config.m",
+      "bytes": 1885,
+      "sha256": "5c2ed59f08000d0d3eb4d266f85ad713d5c0d0b15b5022bd15a98fa908ef0f63"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/default_config_v2.m",
+      "bytes": 885,
+      "sha256": "d48d06c784ae18dd8fc37f2952357c338d030a2fe92148dcbc8299841ff1417e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/export_annual_dispatch_v48.m",
+      "bytes": 1534,
+      "sha256": "f620f66b786cf998abda0c50308a82907b08540f1e84f9e88498b4ecc1a33b28"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/export_annual_stateflow_v49.m",
+      "bytes": 2061,
+      "sha256": "3ee5d6c88d4859e410291b6251279d424785085328feefe2662569861b06d614"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/export_hp_annual_v47.m",
+      "bytes": 1397,
+      "sha256": "360fd6df113f65c2ae76c27a26a00c221814ad4de4695dc2cb4a6ff5cc8ef400"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/export_period_evidence_v46.m",
+      "bytes": 2162,
+      "sha256": "d98aa0462f582d81c67fcea211c0ec17c92939bb5571238be799f648fd45332b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_annual_dispatch_v48.m",
+      "bytes": 9328,
+      "sha256": "bc4b1769c31b62302fabb21493df75eb24bcbc285245d94a2f396250cc414b16"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_annual_stateflow_v49.m",
+      "bytes": 8838,
+      "sha256": "649209aa174c0d663a42ff96ab825d2b5a2b8cd1a5bc85bcd6343da2c89a4e71"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_component_contract_v12.m",
+      "bytes": 3448,
+      "sha256": "4b5b5bb8336877a51b49fde1494bfe7ce67746de25a43477763116ea81764beb"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_dispatch_contract_v13.m",
+      "bytes": 805,
+      "sha256": "cad569d08ae631a5ac20ddce640872eb6a6ddc1532c75cb4032768a7e6fa382b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_dispatch_contract_v16.m",
+      "bytes": 11843,
+      "sha256": "be96461884ee9a170c1f5e560e8014665def1e3d2358064bdcb93052376c9e52"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_dispatch_crosscheck_v18.m",
+      "bytes": 352,
+      "sha256": "01e2913ef1abe3e969828f04a77d08bfe2c42c90b272bda0696cab5766cc4ad2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_experiment.m",
+      "bytes": 5592,
+      "sha256": "d31544ec57480eee4ffb6aecf7fbeef970e3dd99d83df8646d7386883c93ab01"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_experiment_v2.m",
+      "bytes": 4257,
+      "sha256": "c92e33fed5c2fb14a035ca3b8e49dda51a502e13216ad5de8fce37e7f741e578"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_frankfurt_validation_v4.m",
+      "bytes": 4518,
+      "sha256": "ee4604c5ff6bcf3f1df77f1e6160706996657cddb937c04cd15e783b1c651d9d"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_full_study_v3.m",
+      "bytes": 646,
+      "sha256": "4437900f0d32eff6281a0667afc19da49810315b135d008f2a1dffad8eb3d285"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_heat_pump_contract_v14.m",
+      "bytes": 7808,
+      "sha256": "f0cb37852e0239fd3e89f867c484207ae49426a6a957d59244ef9815457bd38c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_hp_annual_audit_v47.m",
+      "bytes": 8086,
+      "sha256": "4c0498a7166008ea518aed94fe685430527767c4c613f47d7f93b2866e91ce20"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_period_experiment_v46.m",
+      "bytes": 9569,
+      "sha256": "6bba6b468b20be183cc425bb527ddfb135f4b8edf4c6e3e9eca8bc55500d41a3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_sensitivity.m",
+      "bytes": 2871,
+      "sha256": "5cd298f418e04e5a2372f253af544ca748c63ea7eab4b152617607f5c21a3d95"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_sensitivity_v2.m",
+      "bytes": 2819,
+      "sha256": "091f85a48e92600b5ba2a3ed7e8785031b87156462e079b047ea6db19a290469"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_tests_v2.m",
+      "bytes": 1191,
+      "sha256": "b06f110d50c2f62addaba81054d7453fcfe77041b0370f390ff5cebd16b3296c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_tests_v3.m",
+      "bytes": 2561,
+      "sha256": "3c072887bd9fbab67248d3ba687a3c77a31ff65911ca8997fb5e419fe56f6884"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/run_uncertainty_v3.m",
+      "bytes": 3089,
+      "sha256": "a437711b65ceed3ed10deb762cc5d6ad59f82a83cae0c65fcf4d3470310a3e46"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v14.m",
+      "bytes": 1310,
+      "sha256": "fdc795be338d1cdf969657fbc9747683a8e591c38a8a561d071652eda515ff4c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v22.m",
+      "bytes": 6005,
+      "sha256": "06c09fd7d41c72d6e1a4675421f59a002a92c074b49e48ad60b2c78a6a1a9982"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v24.m",
+      "bytes": 6939,
+      "sha256": "fe27ca93d240a691cca14cdaf6040c800239ff3c9881fa6be3509f47a7b73324"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v28.m",
+      "bytes": 7006,
+      "sha256": "efb05e70b0900c0ddaf3aaf949b96e38245c55467cd64c6c01bbcd05fd8c8747"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v30.m",
+      "bytes": 7242,
+      "sha256": "1251067fb4fae1cb177c78d0e5dc3240fff74e95a57da3604ea214b97752e406"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v32.m",
+      "bytes": 7919,
+      "sha256": "3bc203d66ed02afb48850e6848a29cb373707c2b51bcb0d85132df26cdeb565a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v34.m",
+      "bytes": 11438,
+      "sha256": "d7316ad0b5d4897b20bc4f2113f09759bd50c0238fc3037abf40043bcfb53f82"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v36.m",
+      "bytes": 11640,
+      "sha256": "3417eb7daf4a11041c8681f99abed1aaa888fd71b46cc1ee5b3820e271248412"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v38.m",
+      "bytes": 12072,
+      "sha256": "7dda8740d2756032862052b264792c3750ef60c3f0acb065a87e95541e9c953f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v40.m",
+      "bytes": 12072,
+      "sha256": "94ab94d0c1a3b20b9bd6cb73d3f70949477c3db6a719d587c53e11459a9d3d02"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v42.m",
+      "bytes": 12254,
+      "sha256": "33efd10264769e107e6328a7b5227e79eb7e0b1352777ba423d5ce8c8ced4597"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/build_simulink_model.m",
+      "bytes": 3434,
+      "sha256": "928e58e8358fedd501acca0f0c7ba162d5eda97f302846eaf26d0d9de1616fe6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/DCHR_Dispatch_Stateflow_v42.slx",
+      "bytes": 196626,
+      "sha256": "db9777f73cbe9c6e56f0e9900d2c7b6c915588768b68b2464809802109b69a9c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_segment_plan_v32.m",
+      "bytes": 2286,
+      "sha256": "5d073681c8486ca128ec77e45ad1840c3966eaf0649be4c67ac49d99d892eac3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_segment_plan_v34.m",
+      "bytes": 3808,
+      "sha256": "868da1af10eea884036781a85812102b9474dcba09797c16f3bcfb130cb62f84"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_segment_plan_v36.m",
+      "bytes": 4186,
+      "sha256": "2f5ba036d2e9aefe0a4cdd0d1499a83eb4f1f1c2a4250f9625cd3f03b24bd3b5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_segment_plan_v38.m",
+      "bytes": 4826,
+      "sha256": "7895bae54c204d3d8f2adc0a39bd428f5c9b1bc32449dec37a3213f75f887bed"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_segment_plan_v40.m",
+      "bytes": 4826,
+      "sha256": "c0f7de1dc85089ac13cca80c6facc1dec8f88563d0bc1ce8f1d70ee8b5b3b6fa"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_segment_plan_v42.m",
+      "bytes": 4965,
+      "sha256": "ec090c52d36daf0990ef58ebb687420e0f3e7280af02f04648ecd6d107864ba2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v22.m",
+      "bytes": 1418,
+      "sha256": "08931800592a820c65a07eb6c6f15ea33765e36ba4d10600c8f62c1408c0506f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v24.m",
+      "bytes": 919,
+      "sha256": "09aeabd1b3ac0858155726518f65e4355886cf3c1a766595629a0059adc9e011"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v28.m",
+      "bytes": 2509,
+      "sha256": "87b3ebf8840efd4e703b4d34efe31d467f5cd72d3f6327331d9ac2c18677021c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v30.m",
+      "bytes": 2543,
+      "sha256": "62633b49633966a552d53cc97a8353cf8b16f78d30200e1456f5110b0b63d0a2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v38.m",
+      "bytes": 2584,
+      "sha256": "f67995605791ca45301d74cae7a363bea28f2aebca8a159597f3714957752123"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v40.m",
+      "bytes": 2584,
+      "sha256": "fd8579ca9942a44559e6b93b78b763e839578c5fde0ddb11dad2b92cfecee6e6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v42.m",
+      "bytes": 2584,
+      "sha256": "67a395160c14b7074e2b57f068c42f9245b9a7957dd6d5116fa4cd656df9aa55"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_hp_boundary_v44.m",
+      "bytes": 386,
+      "sha256": "1cef17bdedf4b5ad713dc18736c8585a8a4360ec94ab2636fa4a51a529c7c4b8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_hp_traceability_v43.m",
+      "bytes": 1031,
+      "sha256": "95e801271412d2299ef0e296ac521aa15160d7b9e2eee3be9183939197e15c4f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_reporting_v45.m",
+      "bytes": 879,
+      "sha256": "229390e7bc98f636e492c246c347e7cc7df57697f3ab9c4a95c6c0ff3f42cf5c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_admissibility_v35.m",
+      "bytes": 1662,
+      "sha256": "05d68c4da0b3834c5931cfe971cd4414c4bed795e28a3ed9692a808ced5a0204"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_admissibility_v36.m",
+      "bytes": 2403,
+      "sha256": "9dbb89c6843ae57fd740493f1d5bd6e7f83d84f0f1f9d485d7e4c519ebd4fd88"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_clock_v41.m",
+      "bytes": 1681,
+      "sha256": "7b0e61766e75430e04300ecd874b54904ef71323cee95cf979061f24cb4290fa"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_clock_v42.m",
+      "bytes": 3241,
+      "sha256": "50c6280e057ec006ac7b10972ee25f456a76466ed75fec9e5b24216e6e01b6a2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_dwell_v42.m",
+      "bytes": 931,
+      "sha256": "1784ee0bd1cee69724e27133c9ec34cbfb3f8a75a1d11d8fd5dd72fe3c4307fe"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_fallback_mat_v33.m",
+      "bytes": 1300,
+      "sha256": "a1cb90938e620d37219daec4d42aa53308ed92ff91e59af4552b25a6cb82a584"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_mat_audit_v30.m",
+      "bytes": 3192,
+      "sha256": "678aefd122cd89d72a5ac3b3e028546f9e0895a1051d501e4f5194cced794a1e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_mat_audit_v32.m",
+      "bytes": 3020,
+      "sha256": "80bbf05e1f196914d415b0ffbe756e7a1dd6f194fe2050bae20b3936aae014d6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_mat_audit_v34.m",
+      "bytes": 2837,
+      "sha256": "e50175fed4e4600142deb3b6e9ebf172ecbb8341523e78fdf352b1712d103e10"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_numeric_metadata_v37.m",
+      "bytes": 1688,
+      "sha256": "746a7d9080171543c9d6a37047680e4a7ad9f98efcbf2c6d13bbfbad57b9bcb8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_numeric_metadata_v38.m",
+      "bytes": 1778,
+      "sha256": "374b9f6a149586f7d18eca1f722db1c14e3c302e348d4be177c7feed95dfd6a4"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_resolution_v37.m",
+      "bytes": 1770,
+      "sha256": "89e4bb22bf3d7e1fbe569e4f3c25559301174e902814d07c33ae7e15a0c85307"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_resolution_v38.m",
+      "bytes": 2196,
+      "sha256": "6cc9841e8d0c7ee3c81965d0eb0f82750f8a6b85a1e8d72c76038341077ae3c8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_stateflow_resolution_v40.m",
+      "bytes": 2196,
+      "sha256": "21b9d01c40ab17730762b5b31559eaf708a774be8f23bdd71e5e49a85ab1dd89"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/export_TES_event_mat_audit_v31.m",
+      "bytes": 1663,
+      "sha256": "3bc70eeb281758c775ae9a98836ddfdcd767da25e29aaf4a34c74cc7b72fde7a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/probe_stateflow_clock_v24.m",
+      "bytes": 2466,
+      "sha256": "11362c2233c1a535b7a356d0e8b13e35aea0751d30c6f0c60f30cae9a57d5a6d"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_hp_boundary_v44.m",
+      "bytes": 1719,
+      "sha256": "f27caf96b910cff0596091b0e7aaa58dbb1bdeca91cae4a2b5772d808b133685"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_hp_traceability_v43.m",
+      "bytes": 5820,
+      "sha256": "9f2d9a016796720ba3e6bd782c40ac8a8a12593356334fef85120f0d486344e2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_reporting_v45.m",
+      "bytes": 9078,
+      "sha256": "443580e0a6d073bcaffe787d0bc7fa01f13eb4576f3a13602240103c67be3529"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v22.m",
+      "bytes": 13678,
+      "sha256": "af8dcaf7f27aefc8c30a3c433f938e375f58378fa8fc57033ebc9d2c54dc1b17"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v24.m",
+      "bytes": 12684,
+      "sha256": "8b389529a83471fb42eb0a1bb872abb1c316377ad86512722bbc03fcad7ce699"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v28.m",
+      "bytes": 15850,
+      "sha256": "114574ac22aa4a91309594faa2348de77c4bdd54029953c609107105d598e02a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v30.m",
+      "bytes": 11211,
+      "sha256": "0f85a370e0efc24b875af7922a908ccb45467a95751cfd38be2f3a44d3067d43"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v32.m",
+      "bytes": 8785,
+      "sha256": "4f6c26a7d0bcbe6040f03648108a7858c933b67fc9e800092370bea73997a5b6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v34.m",
+      "bytes": 8999,
+      "sha256": "5eab42e05457cf62114e4fea13f845b954fc9f371da6adb6cb72ffc72637e5dd"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_acceptance_v38.m",
+      "bytes": 7790,
+      "sha256": "1569639b62b608a4b569f242df560cdd2019c648de1efc51002bee954512244b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_admissibility_v35.m",
+      "bytes": 8746,
+      "sha256": "93c6b32509cb4bbb1cddc26175d123b8fd66c6d8c1d9aa34d9fbc0b40a9ada41"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_admissibility_v36.m",
+      "bytes": 10551,
+      "sha256": "6a619b9dab0a35d78bbe8b4af28b95a9686abd0c84c13c56b25e5e3a441b5589"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_clock_v41.m",
+      "bytes": 4952,
+      "sha256": "8294c8798f350a9d04c02f7e0e2754cc592b33e0afd6673acadc0c0eef5303d2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_clock_v42.m",
+      "bytes": 5213,
+      "sha256": "9030c45f7a7948aa74f146b71565be7a1362f4404caec809e4051aa94a8e942a"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_dimensional_faults_v36.m",
+      "bytes": 3968,
+      "sha256": "891accc78f30a02caf8ebe7ec125c7049f2f319a083b6578bbdab1f9dce321ed"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_dwell_probes_v42.m",
+      "bytes": 3286,
+      "sha256": "5ccda257042e08158c10878db656b9bb8d2660717e95f83f6b3cce01ab0a30a5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_fallback_v33.m",
+      "bytes": 5614,
+      "sha256": "594085c0fc18b0d005ce16842f237ec4eee1bcbf0cb12773e47bc93685233cd8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v30.m",
+      "bytes": 5156,
+      "sha256": "545eea7759251533574318c746353d4e31bd209fc167e02493fa2939ecbc274c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v32.m",
+      "bytes": 4062,
+      "sha256": "241c1669c808a63962f7f45ef92d29b3183bdfd70b97a077f318c3499014cc80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v34.m",
+      "bytes": 4623,
+      "sha256": "19f1ff15838bea948ab4d595cc6d42958e20c52b8859160cc2d0dff12f3f7cbf"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v36.m",
+      "bytes": 4697,
+      "sha256": "41843ba75c36e5aad4c525cbbd2f9e74943a42b1d4f44aa21b9b9a7aea4e6b99"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v38.m",
+      "bytes": 4769,
+      "sha256": "6281f980fb1cc13e478b077d00467df2b3e25d34376da20006c3756a68868189"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v40.m",
+      "bytes": 4769,
+      "sha256": "07d0e44255c3a671661fe09efa49a8a594a1125800455bea90371e6395c84ba5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_faults_v42.m",
+      "bytes": 4769,
+      "sha256": "e05cfc71360d3bfaff27665b4dcd89727bd746d1c9b39c3e640b024366d46b34"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_gate_faults_v24.m",
+      "bytes": 5540,
+      "sha256": "c3295a45d2da1a6437bc547b71a8ba4ce9959ae5a133daa552d6e7ec982db8e2"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_hp_domain_v39.m",
+      "bytes": 6332,
+      "sha256": "802fa491c9478e73ac3569100d294fa66b6b021c9508f8c5300e3a72e2f52e0c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_hp_domain_v40.m",
+      "bytes": 6885,
+      "sha256": "acdeb2c6cb33b348bc7ea79c1aef990e1de85c2dbe7498d644f448e4e7ce9eff"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_loss_experiments_v28.m",
+      "bytes": 4633,
+      "sha256": "130af25bdd4920dee5d243d022aee1d426a8dec3fee18548a02042b8eb3b216f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_monitor_faults_v26.m",
+      "bytes": 8593,
+      "sha256": "d5a0e8f21d52fe97ad99d5917a769e0577ffb58b3164b48ab4ff734c49779ce5"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_monitor_faults_v29.m",
+      "bytes": 21196,
+      "sha256": "af75b32b8d46b230a50b2f29566db484a747a71526346e5a0377ead75dcff275"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_rejections_v24.m",
+      "bytes": 3478,
+      "sha256": "923d07f741483b5f44647bb9d4718c15e1efca564456842e9b7bf1c7e6b4dfca"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_rejections_v28.m",
+      "bytes": 3570,
+      "sha256": "09a8164b3000395f6e38debe6c41061b1385240771faa38ee2efa352bc239040"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_resolution_v37.m",
+      "bytes": 5410,
+      "sha256": "3c3fe5a5d732ef4f25805848ba97dee977cd5ed18179f99c38edcf11a22d78cc"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_temporal_acceptance_v27.m",
+      "bytes": 15888,
+      "sha256": "ba4b8d534383e983dd898564cc214cf3e84ad6b2caa5e0ee60bc05622d14fc44"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_stateflow_temporal_acceptance_v29.m",
+      "bytes": 19059,
+      "sha256": "d0382a619647e3ea6e2b44db1a54ac3afb8fcdc07d3ef0366800c95833c8d804"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/run_TES_event_comparison_v31.m",
+      "bytes": 10172,
+      "sha256": "2252726b5af395a4959af2d88ad61177bc0ae679d6801366d7d195a1904ddd96"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v22.m",
+      "bytes": 964,
+      "sha256": "d61e9a44241c9efd8c793e6777612946cbd3b1bbeaef699ba58da1e25d966565"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v24.m",
+      "bytes": 1156,
+      "sha256": "dbaacfb51b33aa0953d570e3e911527820cd4510994507643e6fa7229e839031"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v28.m",
+      "bytes": 1176,
+      "sha256": "e2cd89b13b20e4981eb97a47b981be573052dc2feaba5fc4135b4a801b111542"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v30.m",
+      "bytes": 816,
+      "sha256": "467f7a034652c862568e55eaaf2c05bb1125d9cd89e7316e092cf9e3150a5157"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v32.m",
+      "bytes": 1327,
+      "sha256": "781c5d74978e7b305270f2f21d730e9d59fbfd9e7067e81dd47e132e33a5df90"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v34.m",
+      "bytes": 1389,
+      "sha256": "9fe925113e0105eb6f83fbf14eb3baad93ce3d6cb7f44447cf50e93959b98a27"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v36.m",
+      "bytes": 1389,
+      "sha256": "e7ab9b475d5f592190cd8f64e0628e4baea678098d8ebc4c3f8bbeacb4a7be68"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v38.m",
+      "bytes": 1389,
+      "sha256": "f4b53842b555887cb341e8d0b275df341bcb188d40efb2e7415dfd22e88a5a34"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v40.m",
+      "bytes": 1389,
+      "sha256": "36984444f7c368ca290f5f5c85a9273c1a03eb9a6b1a86bb5ce2eaca8f92b184"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_allocate_v42.m",
+      "bytes": 1389,
+      "sha256": "4a13f20e7b7ea6e004ba6e673d037015be9176b481846e9b820fd8767b8dc6d6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v22.m",
+      "bytes": 620,
+      "sha256": "dd6c8ec93f7c0d112130b1122d1f48646ce84e52b51e019d4a5fed496f7a2da1"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v24.m",
+      "bytes": 738,
+      "sha256": "bd3d5fab4a1b201943f9c95101b8cc7771d57de496dfd8453805ef534151fb8b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v28.m",
+      "bytes": 753,
+      "sha256": "c6b24396beba3b9780877bbcf0d3058a38ef721781f0546ce060a84fa6373144"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v30.m",
+      "bytes": 490,
+      "sha256": "28b7038f55e2d85c7385ee0e4bd916a1d8f6a5bba064d0323210c6fe3d0b0ea6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v32.m",
+      "bytes": 371,
+      "sha256": "bc1ef1eb235ad4ad0795cfd72963867f4b25121ee0ef4b5ac900e435f7b146d6"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v34.m",
+      "bytes": 373,
+      "sha256": "498bccdbe8a33211cac51e5b98da6b42e2acdbc19eec0942fa6566c0748434e3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v36.m",
+      "bytes": 386,
+      "sha256": "4873ca6e47b3b25681e43f6c36a5a44246e286810dd186cee075cb6193ef96af"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v38.m",
+      "bytes": 386,
+      "sha256": "b80b4ef18981f74f6fb2f6b52bf922dfaab651f80a640e69370be0b58f18758f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v40.m",
+      "bytes": 386,
+      "sha256": "366c6a85546a125e09dfb19375f2508594275430d67810114363f4619f80de05"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_choose_mode_v42.m",
+      "bytes": 386,
+      "sha256": "addce328ce2a3d21bc8bbbcc39c653edfc2833e9eafcc0fd27cbb78b6f8dc94d"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_clock_add_v38.m",
+      "bytes": 894,
+      "sha256": "756bd82458baefab5f3edd48ba7943382e80c235f067405bbc6ca216206d7bbb"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_clock_add_v40.m",
+      "bytes": 898,
+      "sha256": "705f503da00d698896af12018f3d591a7cb6bd24b481194e37272de135033c16"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_clock_add_v42.m",
+      "bytes": 898,
+      "sha256": "32fecaa4a3d91e5c72fcb7bf1e32b4e85cc14fbaef3cbfbd26735b91f78f273f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_collect_v32.m",
+      "bytes": 310,
+      "sha256": "430694efb37f0ffb20627d05cfd656a1e0a4919effa50c97f45af9757cd15c7e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_collect_v34.m",
+      "bytes": 310,
+      "sha256": "287a7808ea48bd101196d2aeb0ee9c8c8cf16a2eeea986bae7fead4af6fc5068"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_collect_v36.m",
+      "bytes": 312,
+      "sha256": "7ad5166227d1bb2af589d2b28da6edf39a75e3da4eac13b186b42f67ed8ef78c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_collect_v38.m",
+      "bytes": 312,
+      "sha256": "87eb981a36aef660265c239b8a101e745065f4c4c0f9d7a3661a43d3155cf6ae"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_collect_v40.m",
+      "bytes": 312,
+      "sha256": "455a2c27a15beefac810dc19966d97f91c490cd785020d7f65854517e81f374b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_collect_v42.m",
+      "bytes": 312,
+      "sha256": "93c34bb0cb5ed4b1f6c29cc3334f34b2d883e2292ea7a3f51a75746fe9f5ac00"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v24.m",
+      "bytes": 3082,
+      "sha256": "dfbef66ddc289afd770211fda94665439edaed0c4538dd03b3479aee6d321ad8"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v28.m",
+      "bytes": 3275,
+      "sha256": "91e71131f633747f2f784622be45c954bb4abfcb31f0109a5b7e720a329f180b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v30.m",
+      "bytes": 3337,
+      "sha256": "d4b0702ae6256b55180a0a37f913754d6ea3a3e0f6897af815159434717c5fb3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v32.m",
+      "bytes": 4244,
+      "sha256": "e81eb8c8008f02c7a36e386d54143bc6cd4c96b83276e89e754be2dbbe352019"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v34.m",
+      "bytes": 5421,
+      "sha256": "023dadb9e8911c05980f8f1fce44d8c90ab573103f2f6cf6f55124fba4dd9555"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v36.m",
+      "bytes": 6383,
+      "sha256": "562b78e086129aef844c1cbc0097f506189d45a4bfb11c8fbcff310d69e2d148"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v38.m",
+      "bytes": 7929,
+      "sha256": "ce517aaadafd9b613ad385f268c52efd216eb9b55468d7b2bf1298fe67f15142"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v40.m",
+      "bytes": 7933,
+      "sha256": "05ed901f821ce403807a1e6c16beace6c3631acdc8e8b827c40e379ce5782678"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v42.m",
+      "bytes": 8591,
+      "sha256": "de6836169d58f832be7e2ddc80fa68e211152b7e2f72b0fe4f6753deb86768b3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_dwell_ready_v42.m",
+      "bytes": 584,
+      "sha256": "7427ee296accfd223cc138c0a5853a2b47001291c453567de46248f471e18a8d"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_dwell_wait_v42.m",
+      "bytes": 649,
+      "sha256": "f12bb4fd0be08b50d6b476c6c60f6c2ea441b3d90fe4ee55f6ed2619396a367c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v34.m",
+      "bytes": 382,
+      "sha256": "c6e4715190836b0da3932d65ebb1894add5b6d86ae9fb10c550b494f98af93df"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v36.m",
+      "bytes": 447,
+      "sha256": "e4c9fdf2848ff8787286b44d7b4383b13a15b8053f4a0c2c99ac4eb9532ae5ac"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v38.m",
+      "bytes": 457,
+      "sha256": "c916d22d78b5f90bf665a7537009cb400176f39abba3219ddb955d131fee716b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v40.m",
+      "bytes": 457,
+      "sha256": "739a7bc2020eb855da826361ee53dbd4619f9745ee1910cbf54a68a1938f0828"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_supervisor_guard_v42.m",
+      "bytes": 519,
+      "sha256": "ab2e561506b41558583cb96db720223d8727c7a82888deadc97bbfc4e0d72ade"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/stateflow_time_tolerance_v36.m",
+      "bytes": 412,
+      "sha256": "3921081f7f379bbcc0d5c3686a7e8d67628e5078c3f932b937e55e070750b9a3"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/source_snapshot/matlab/simulink/validate_dispatch_v14.m",
+      "bytes": 1262,
+      "sha256": "0cc7618b83646283a444063d34a5de33dccf521e96b2743365cfdf631e45e77c"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/spec.json",
+      "bytes": 4152,
+      "sha256": "c8b27e3d3ad63bc0e22894cc18eca7b6da65fed89821e8de1a074d5bb5a0bc01"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_charge_clock_end.csv",
+      "bytes": 9,
+      "sha256": "7fa924c9c7a582b150e6cf24cd4eafa351fd5f47f168a440a06cfd0c30017187"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_charge_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_charge_dispatch.csv",
+      "bytes": 53,
+      "sha256": "0ae90c6e68a0613570270aaf74678533f93d9c2864cbd7cd6737ebb71b8c8500"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_charge_ports.csv",
+      "bytes": 137,
+      "sha256": "7acbfcb3b47c171e9f019358249c67faa7ce466ca9d52fb93d37d47ace6a87ad"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_charge_segments.csv",
+      "bytes": 63,
+      "sha256": "77a02312a92a6764de4643122ab15275819a8275b3f4ec530051f93b4cefd512"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_charge_simulation.mat",
+      "bytes": 286696,
+      "sha256": "a5a4ddba4a3c987b0dd31a5b0d27fe4df10fdf05eef14ffb53092cdce9b0e5a9"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_discharge_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_discharge_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_discharge_dispatch.csv",
+      "bytes": 55,
+      "sha256": "ade52b465dcb133af4a3c19719406e84a588a8689eaf042d225e35093ba57fa7"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_discharge_ports.csv",
+      "bytes": 137,
+      "sha256": "04a713dc2690846ab9687571a236b85aa036314f82c2c17206821d8683f25c3e"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_discharge_segments.csv",
+      "bytes": 65,
+      "sha256": "86ad34d6bc1dba9707f39249f5d9ff61d34e6f2c0c2d67520a11b747e4163ee9"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/tes_discharge_simulation.mat",
+      "bytes": 286696,
+      "sha256": "73d0f9ac5bb8f85b9a6e067ffbfd059f45157770a723e0e9a3f6efa526b24970"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/zero_demand_clock_end.csv",
+      "bytes": 9,
+      "sha256": "99a0fd61d325ffc5072db61d612209e33fc59e0ce94dc64bb80c360aa9068a80"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/zero_demand_clock_start.csv",
+      "bytes": 9,
+      "sha256": "35154285b5337ea86aad4262b2f51b7690bec1b90ea96a87d6001c5c074d808b"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/zero_demand_dispatch.csv",
+      "bytes": 55,
+      "sha256": "71d82e62b2851299c89b2f5b07a1ce716eb09499c1650c15bc4d00e429354042"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/zero_demand_ports.csv",
+      "bytes": 137,
+      "sha256": "da26b3718a75306cd67318c57516481c043a81f8ade4868ba9b52556bfb8c63f"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/zero_demand_segments.csv",
+      "bytes": 65,
+      "sha256": "399ae9241b678cbbb45ce7ccf51d20f1d6a45352b9322df088349e05f3254ce0"
+    },
+    {
+      "path": "results/annual_stateflow_v49_20261010T224401_242369Z/zero_demand_simulation.mat",
+      "bytes": 514920,
+      "sha256": "773c56ebac1a082a7671917d15fbdac886030c321d389d58571c6e3c86bea4ce"
+    },
+    {
+      "path": "STATUS_v49.json",
+      "bytes": 8012,
+      "sha256": "8010943278ab720df276ca87f3a510f059a93e15397a1db1c59e106f0c10a29e"
+    }
+  ]
+}

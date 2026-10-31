@@ -1,0 +1,13 @@
+{
+  "correction_handoff_sha256": "1e39d27df99a49e75b483d03ec936ff5e16ff3404210196a7bc11641be337b00",
+  "original_event_id": 1384,
+  "original_evidence_preserved": true,
+  "original_evidence_sha256": "ac06eb427929f73745029f095226a3aa40f00a21e8c157d6176da292a4902c2d",
+  "original_manifest_sha256": "7201c8d5743298820cea3191954c35dfd624a3b5f3df4d5be8ac3a9f5b35e7de",
+  "production_modified": false,
+  "qa": "2/2 repeat read-only PASS; 10/10 original SHA PASS; event unique; SQLite ok",
+  "scope": "DCHR_POSTREG_IDEMPOTENCY_REGRESSION_CORRECTION",
+  "verification_1_sha256": "e40edced23ee22ca77e14510cb37c8d7a9a0f6944d462ce27718956e7f44b7a5",
+  "verification_2_sha256": "e40edced23ee22ca77e14510cb37c8d7a9a0f6944d462ce27718956e7f44b7a5",
+  "verifier_sha256": "76b02acbad6864944092144b7fdf65fcc4c45495fee23e15ba34e1717cbb962c"
+}

@@ -1,0 +1,16 @@
+test_bad_energy_even_with_valid_sha (test_a63.A63Tests.test_bad_energy_even_with_valid_sha) ... ok
+test_bad_signed_loss_even_with_valid_sha (test_a63.A63Tests.test_bad_signed_loss_even_with_valid_sha) ... ok
+test_bad_timebase_even_with_valid_sha (test_a63.A63Tests.test_bad_timebase_even_with_valid_sha) ... ok
+test_duplicate_header (test_a63.A63Tests.test_duplicate_header) ... ok
+test_false_physical_claim (test_a63.A63Tests.test_false_physical_claim) ... ok
+test_generates_standalone_interactive_view (test_a63.A63Tests.test_generates_standalone_interactive_view) ... ok
+test_no_overwrite (test_a63.A63Tests.test_no_overwrite) ... ok
+test_nonfinite_rejected (test_a63.A63Tests.test_nonfinite_rejected) ... ok
+test_tampered_csv_hash (test_a63.A63Tests.test_tampered_csv_hash) ... ok
+test_valid_synthetic_closure (test_a63.A63Tests.test_valid_synthetic_closure) ... ok
+test_wrong_source_kind (test_a63.A63Tests.test_wrong_source_kind) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in <variable>s
+
+OK

@@ -1,0 +1,5 @@
+Test,Passed
+source_temperature_improves_COP,1
+lower_DH_supply_improves_COP,1
+more_recovery_not_worse_for_coverage,1
+storage_not_worse_for_coverage,1

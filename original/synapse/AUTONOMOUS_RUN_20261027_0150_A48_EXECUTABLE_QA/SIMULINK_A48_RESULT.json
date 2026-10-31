@@ -1,0 +1,137 @@
+{
+  "status": "A48_GRAPHICAL_COUPLED_PARITY_PASS",
+  "model": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0150_A48_EXECUTABLE_QA\\DCHR_A48_Graphical_Closed_Loop.slx",
+  "samples": 4704,
+  "numeric_comparisons": 51744,
+  "physical_release": false,
+  "graphical_stateflow_chart_built": true,
+  "state_machine_implemented_in_EMChart": false,
+  "scenarios": {
+    "both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_abs_differences": [
+        0,
+        9.3132257461547852E-10,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        1.4901161193847656E-8
+      ],
+      "parity": "PASS"
+    },
+    "main_only": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_abs_differences": [
+        0,
+        9.3132257461547852E-10,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        1.4901161193847656E-8
+      ],
+      "parity": "PASS"
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "max_abs_differences": [
+        0,
+        7.4505805969238281E-9,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        2.9103830456733704E-11,
+        0,
+        0,
+        1.4901161193847656E-8
+      ],
+      "parity": "PASS"
+    },
+    "neither": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "max_abs_differences": [
+        0,
+        1.862645149230957E-9,
+        0,
+        0,
+        0,
+        1.6940658945086007E-21,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        1.8335413187742233E-9
+      ],
+      "parity": "PASS"
+    },
+    "CF_both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "max_abs_differences": [
+        0,
+        4.6566128730773926E-10,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        4.6566128730773926E-10
+      ],
+      "parity": "PASS"
+    },
+    "CF_backup_only": {
+      "samples": 672,
+      "max_temperature_C": 45.133743594166489,
+      "max_abs_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        5.8207660913467407E-11
+      ],
+      "parity": "PASS"
+    },
+    "CF_neither": {
+      "samples": 672,
+      "max_temperature_C": 45.133743594166489,
+      "max_abs_differences": [
+        0,
+        5.5879354476928711E-9,
+        0,
+        0,
+        0,
+        0,
+        5.8207660913467407E-11,
+        1.4551915228366852E-11,
+        0,
+        0,
+        1.8335413187742233E-9
+      ],
+      "parity": "PASS"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1157,
+  "action": "EXISTING_EVENT",
+  "scope": "isolated_matlab_v08_execution_receipt_validation_gate",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261025_2051_A25",
+  "evidence_sha256": "706fce5447c56963dc662173bccebce6bf60e4db8b2801b92c104203981e6c70",
+  "source_code_sha256": "deb4effda9442b0b41e857c621b472f4f564b9d27f8016d2d8a5247c4a617600",
+  "qa_log_sha256": "768ee2b5aec467b211530d1b953d87a482db3ad787fa8d8e5ef9bca1a370cc4f",
+  "manifest_sha256": "0f765600c5000efd47ec5e37672319847476d382fd18c65b87bd98808901d5b9",
+  "qa": "20/20 synthetic mutation tests PASS; py_compile PASS; 13 actual source/output SHA256 verified",
+  "finding": "No matching MATLAB v08 execution receipt/log in four bounded searched directories; static release consistency is NOT execution attestation",
+  "limits": "No MATLAB process was started; no proof of actual process execution, physical validation or real measurements",
+  "next_step": "Owner-controlled isolated MATLAB v08 rerun with trusted process log+hash receipt, then run v08_matlab_receipt_gate.py --receipt"
+}

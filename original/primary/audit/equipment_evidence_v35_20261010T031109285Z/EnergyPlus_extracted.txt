@@ -1,0 +1,793 @@
+Plant Loop Heat Pumps EnergyPlus Home GitHub Search Ctrl K No results found Start typing to search across all pages Plant Loop Heat
+      Pumps There are four plant loop heat pump models available in
+      EnergyPlus: Equation
+      fit (water-to-water) Parameter
+      estimation (water-to-water) EIR-formulated (water-to-water or air-to-water) Fuel-fired
+      absorption (air-to-water) Detailed descriptions of the former two models are available in
+      the references Tang and Jin. The EIR formulation was added with
+      EnergyPlus 9.1, based on the popular EIR formulation used in the
+      chiller model. This section describes the important details of the
+      three models. Equation Fit
+      Water To Water Heat Pump Model This section describes the equation-fit model for
+      water-to-water heat pump. (Object names:
+      HeatPump:WaterToWater:EquationFit:Cooling &
+      HeatPump:WaterToWater:EquationFit:Heating). This documentation is
+      derived from the M.S. dissertation of Tang (2005) which is
+      available on the Oklahoma State University web site . The model
+      uses four non-dimensional equations or curves to predict the heat
+      pump performance in cooling and heating mode. The methodology
+      involved using the generalized least square method to generate a
+      set of performance coefficients from the catalog data at indicated
+      reference conditions. Then the respective coefficients and
+      indicated reference conditions are used in the model to simulate
+      the heat pump performance. The variables that influenced the
+      water-to-water heat pump performance are load side inlet water
+      temperature, source side inlet temperature, source side water flow
+      rate and load side water flow rate. The governing equations for
+      the cooling and heating mode are as following: Cooling Mode: Q c Q c , r e f = A 1 + A 2 [ T L , i n T r e f ] + A 3 [ T S , i n T r e f ] + A 4 [ V ̇ L V ̇ L , r e f ] + A 5 [ V ̇ S V ̇ S , r e f ] \begin{equation}
+      \frac{{Q{}_c}}{{Q{}_{c,ref}}} = A1 + A2\left[ {\frac{{T{}_{L,in}}}{{T{}_{ref}}}} \right] + A3\left[ {\frac{{T{}_{S,in}}}{{T{}_{ref}}}} \right] + A4\left[ {\frac{{{{\dot V}_L}}}{{{{\dot V}_{L,ref}}}}} \right] + A5\left[ {\frac{{{{\dot V}_S}}}{{{{\dot V}_{S,ref}}}}} \right]
+      \end{equation} (16.427) P o w e r c P o w e r c , r e f = B 1 + B 2 [ T L , i n T r e f ] + B 3 [ T S , i n T r e f ] + B 4 [ V ̇ L V ̇ L , r e f ] + B 5 [ V ̇ S V ̇ S , r e f ] \begin{equation}
+      \frac{{Power{}_c}}{{Power{}_{c,ref}}} = B1 + B2\left[ {\frac{{T{}_{L,in}}}{{T{}_{ref}}}} \right] + B3\left[ {\frac{{T{}_{S,in}}}{{T{}_{ref}}}} \right] + B4\left[ {\frac{{{{\dot V}_L}}}{{{{\dot V}_{L,ref}}}}} \right] + B5\left[ {\frac{{{{\dot V}_S}}}{{{{\dot V}_{S,ref}}}}} \right]
+      \end{equation} (16.428) Heating Mode: Q h Q h , r e f = C 1 + C 2 [ T L , i n T r e f ] + C 3 [ T S , i n T r e f ] + C 4 [ V ̇ L V ̇ L , r e f ] + C 5 [ V ̇ S V ̇ S , r e f ] \begin{equation}
+      \frac{{{Q_h}}}{{Q{}_{h,ref}}} = C1 + C2\left[ {\frac{{T{}_{L,in}}}{{T{}_{ref}}}} \right] + C3\left[ {\frac{{T{}_{S,in}}}{{T{}_{ref}}}} \right] + C4\left[ {\frac{{{{\dot V}_L}}}{{{{\dot V}_{L,ref}}}}} \right] + C5\left[ {\frac{{{{\dot V}_S}}}{{{{\dot V}_{S,ref}}}}} \right]
+      \end{equation} (16.429) P o w e r h P o w e r h , r e f = D 1 + D 2 [ T L , i n T r e f ] + D 3 [ T S , i n T r e f ] + D 4 [ V ̇ L V ̇ L , r e f ] + D 5 [ V ̇ S V ̇ S , r e f ] \begin{equation}
+      \frac{{Power{_h}}}{{Power{}_{h,ref}}} = D1 + D2\left[ {\frac{{T{}_{L,in}}}{{T{}_{ref}}}} \right] + D3\left[ {\frac{{T{}_{S,in}}}{{T{}_{ref}}}} \right] + D4\left[ {\frac{{{{\dot V}_L}}}{{{{\dot V}_{L,ref}}}}} \right] + D5\left[ {\frac{{{{\dot V}_S}}}{{{{\dot V}_{S,ref}}}}} \right]
+      \end{equation} (16.430) Assuming no losses, the source side heat transfer rate for
+      cooling and heating mode is calculated as following; Q s o u r c e , c = Q c + P o w e r c \begin{equation}
+      {Q_{source,c}} = {Q_c} + Powe{r_c}
+      \end{equation} (16.431) Q s o u r c e , h = Q h − P o w e r h \begin{equation}
+      {Q_{source,h}} = {Q_h} - Powe{r_h}
+      \end{equation} (16.432) where: A 1 − D 5 A1 - D5 are the equation fit coefficients for the cooling and heating
+      mode T r e f {T_{ref}} is 283.15K T L , i n {T_{L,in}} is the entering load side water temperature (K) T S , i n {T_{S,in}} is the entering source side water temperature (K) V ̇ L {\dot V_L} is the load side volumetric flow rate
+      (m 3 ^{3} /s) V ̇ S {\dot V_S} is the source side volumetric flow rate
+      (m 3 ^{3} /s) Q c {Q_c} is the load side heat transfer rate in cooling mode (W) P o w e r c Powe{r_c} is the power consumption in cooling mode (W) Q s o u r c e , c {Q_{source,c}} is the source side heat transfer rate in cooling mode (W) Q h {Q_h} is the load side heat transfer rate in heating mode (W) P o w e r h Powe{r_h} is the power consumption in heating mode (W) Q s o u r c e , h {Q_{source,h}} is the source side heat transfer rate in heating mode (W). If the load side heat transfer rate
+      ( Q c _{c} or Q h _{h} )
+      or power consumption
+      ( Power c _{c} or Power h _{h} )
+      are less than or equal to zero, then the heat pump is turned off
+      for that simulation time step, a warning is issued, and the
+      simulation continues. The inlet conditions or variables are divided by the reference
+      conditions. This formulation allows the coefficients to fall into
+      smaller range of values. Moreover, the value of the coefficient
+      indirectly represents the sensitivity of the output to that
+      particular inlet variable. The reference conditions used when
+      generating the performance coefficients must be the same as the
+      reference conditions used later in the model. The reference
+      temperature T r e f {T_{ref}} is fixed at 283K. Temperature unit of Kelvin is used instead of
+      Celsius to keep the ratio of the water inlet temperature and
+      reference temperature positive value should the water inlet
+      temperature drop below the freezing point. For cooling mode, the reference conditions; reference load side
+      volumetric flow rate, V ̇ L , r e f {\dot V_{L,ref}} ,
+      reference source side volumetric flow rate, V ̇ S , r e f {\dot V_{S,ref}} , P o w e r c , r e f Powe{r_{c,ref}} and reference source side heat transfer rate, Q s o u r c e , c , r e f {Q_{source,c,ref}} are the conditions when the heat pump is operating at the highest
+      cooling capacity or reference cooling capacity, Q c , r e f {Q_{c,ref}} indicated in the manufacturer’s catalog. Note that the reference
+      conditions for heating mode might differ from the reference
+      conditions specified for the cooling mode. Coefficient estimation
+      procedure The generalized least square method is used to generate the
+      coefficients. This method utilizes an optimization method which
+      calculates for the coefficients that will give the least amount of
+      differences between the model outputs and the catalog data. A set
+      of coefficients for the cooling mode is generated which includes
+      A1-A5 for load side heat transfer. The same procedure is repeated
+      B, C, and D coefficients. An information flow chart showing the
+      inputs, reference conditions, performance coefficients and outputs
+      are shown in the figure below: Figure 16.47: Information Flow Chart for
+      Water-To-Water Heat Pump Equation Fit (Tang 2005) Parameter
+      Estimation Water-To-Water Heat Pump Model A steady state simulation model for a water-to-water
+      reciprocating vapor compression heat pump (Object names:
+      HeatPump:WaterToWater:ParameterEstimation:Cooling &
+      HeatPump:WaterToWater:ParameterEstimation:Heating) is described in
+      this section. This documentation is derived from the
+      Ph.D. dissertation of Hui Jin which is available on the Oklahoma
+      State University web site . The model incorporates a multivariable
+      unconstrained optimization algorithm to estimate several
+      unspecific parameters. The aim of the model is to describe the
+      detailed physical geometry and operation of each component and
+      replicate the performance of the actual unit in operation.
+      Assuming the thermodynamic process in the expansion device and the
+      pressure drop at the suction and discharge valves to be
+      isenthalpic the heat balance equation is given by Q ̇ s = W ̇ + Q ̇ L \begin{equation}
+      {\dot Q_s} = \dot W + {\dot Q_{_L}}
+      \end{equation} (16.433) where: Q ̇ s {\dot Q_s} is the source side heat transfer rate (W) Q ̇ L {\dot Q_L} is the load side heat transfer rate (W) W ̇ \dot W is the compressor power input (W). The compressor model is based on an isentropic process shown in
+      Figure 16.48 governed by: P V γ = C o n s t a n t \begin{equation}
+      {PV^{\gamma}} = Constant
+      \end{equation} (16.434) where P is pressure and V is specific volume. Figure 16.48: Schematic indicator diagram for a
+      reciprocating Compressor(Jin 2002) Since the refrigerant vapor in the clearance volume as shown in
+      the previous figure goes through a re-expansion procedure, the
+      mass flow rate of the compressor refrigerant is a decreasing
+      function of the pressure ratio. m ̇ = P D ν s u c ( 1 + C − C ( P d i s P s u c ) 1 γ ) \begin{equation}
+      {\dot{m}} = \frac{{PD}}{{\nu {}_{suc}}}\left( 1 + C - C{(\frac{{P{}_{dis}}}{{P{}_{suc}}})^{\frac{1}{\gamma }}} \right)
+      \end{equation} (16.435) where: m ̇ {\dot{m}} is the refrigerant mass flow rate PD is the piston displacement C is the clearance factor P d i s P_{dis} is the discharge pressure P s u c P_{suc} is the suction pressure γ \gamma is the isentropic exponent. Parameter estimation
+      procedure A set of parameters for the cooling mode is defined on the
+      basis of the equations used in the model. An information flowchart
+      indicating the parameters, inputs to the model and the resulting
+      outputs acquired are shown in Figure 16.49 .
+      The estimation of parameters is conducted using the catalog
+      data. The parameter definition include: Piston displacement, PD Clearance factor, C Pressure drop across the suction and discharge valves, Δ P \Delta P Loss factor used to define the electromechanical losses
+      supposed to be proportional to the theoretical power, η {\mathrm{\eta }} Superheat in ∘ ^{\circ} C
+      or F, Δ T s h \Delta T_{\mathrm{sh}} Constant part of the electromechanical losses, W l o s s {\mathrm{W}}{}_{{\mathrm{loss}}} Source side heat transfer coefficient,
+      (UA) S _{S} Load side heat transfer coefficient,
+      (UA) L _{L} Figure 16.49: Information Flowchart for Water-To-Water
+      Heat Pump Parameter Estimation Model implementation (Jin 2002) where: TWiL is the entering water Load side temperature TWiS is the entering water Source side temperature m ̇ W i L {\dot{m}_{WiL}} is the entering water Load side mass flow rate m ̇ W i S {\dot{m}_{WiS}} is the entering water Source side mass flow rate S is the Thermostatic Signal. The parameter estimation procedure incorporates an objective
+      function that computes the difference between the model outputs
+      and the catalog outputs.  The objective function is then minimized
+      by using a multi variable unconstrained multi modal Nelder Mead
+      optimization algorithm. As the objective function value lowers
+      after each iteration, the model outputs approach the catalog
+      outputs consequently leading to convergence and the correct
+      parameters are estimated for the respective model. The inputs to
+      the model include the entering water temperatures and mass flow
+      rates on the load side and the source side. The calculation of the
+      objective function is shown in the form of a formula flowchart in
+      Figure 16.50 .
+      The square of the sum of the errors (SSQE) for a given set of
+      parameter values that will be minimized is given by: S S Q E = ∑ i = 1 ( ( W ) − ( W ) i ( W ) ) 2 + ( ( QL ) − ( QL ) i ( QL ) ) \begin{equation}
+      SSQE = \sum\limits_{i = 1} {{{\left( {\frac{{\left( {\mathop {W{}_{cat}}\limits^{} } \right) - \left( {\mathop W\limits^{} } \right){}_i}}{{\left( {\mathop {W{}_{cat}}\limits^{} } \right)}}} \right)}^2}}  + \left( {\frac{{\left( {\mathop {QL{}_{cat}}\limits^{} } \right) - \left( {\mathop {QL}\limits^{} } \right){}_i}}{{\left( {\mathop {QL{}_{cat}}\limits^{} } \right)}}} \right)
+      \end{equation} (16.436) Where W c a t {\mathrm{W}}{}_{{\mathrm{cat}}} is the catalog power consumption W {\mathrm{W}}{}_{} is the model power consumption Q L c a t {\mathrm{QL}}{}_{{\mathrm{cat}}} is the catalog load side heat transfer Q L {\mathrm{QL}}{}_{} is the model load side heat transfer. Extrapolation beyond the catalog data grants the parameter
+      estimation model an upper hand in comparison with the equation fit
+      and deterministic models. However, the detailed model is
+      computationally more intensive. Moreover, when the model is
+      implemented within a transient system simulation program, it may
+      come across figures that are random and unplanned by the
+      manufacturer such as low water flow rates or extreme temperatures.
+      This oddity may result in unrealistic set of results. Figure 16.50: Flow diagram of EnergyPlus Water to
+      Water Heat Pump implementation Control
+      Strategy Both water-to-water heat pump models; parameter estimation
+      based model and curve-fit model use the “cycle time control logic”
+      developed by Murugappan (2002). This strategy keeps the heat pump from short-cycling whereby
+      the heat pump will stay on or off for the specified cycle time
+      after switching states. The control logic is identical to the
+      operation of a physical heat pump whereby the heat pump does not
+      switch between on and off instantly. Refer to Muraggapan (2002)
+      for the further details on the control strategy. References Jin, Hui. 2002. Parameter Estimation Based Models of Water
+      Source Heat Pumps. Phd. Thesis, Department of Mechanical and
+      Aerospace Engineering, Oklahoma State University. (downloadable
+      from http://www.hvac.okstate.edu/ ) Tang,C. C. 2005. Modeling Packaged Heat Pumps in Quasi-Steady
+      State Energy Simulation Program. M.S. Thesis. Department of
+      Mechanical and Aerospace Engineering, Oklahoma State University.
+      (downloadable from http://www.hvac.okstate.edu/ ) Murugappan, Arun. 2002.  Implementing Ground Source Heat Pump
+      and Ground Loop Heat Exchanger Models in the EnergyPlus Simulation
+      Environment, M.S. Thesis, Department of Mechanical and Aerospace
+      Engineering, Oklahoma State University (downloadable from http://www.hvac.okstate.edu/ ) EIR
+      Formulated Plant Loop Heat Pump Model This section describes the EIR formulated model for plant loop
+      heat pumps, which can be configured as either a water-source or
+      air-source object. (Object names: HeatPump:PlantLoop:EIR:Cooling
+      & HeatPump:PlantLoop:EIR:Heating). The heating component has
+      multiple defrost models to choose from and water outlet
+      temperature minimum and maximum inputs to further control the
+      unit, if desired. In general, these heat pump objects are treated
+      the same as the other heat pump models by the plant loop. Even
+      though a heat pump is generally a single load coil and a single
+      source coil with a reversing valve, in EnergyPlus, the paradigm is
+      to split the operation into two separate coils, one for heating
+      and another for cooling. It is certainly possible to connect the
+      load side of both of these to a single plant loop if the controls
+      are established properly. For water-source operation the source
+      side of the coils are often placed on a single loop with some form
+      of condensing supply, either a ground loop heat exchanger or a
+      cooling tower (or a combination of the two). For air-source
+      operation, the outdoor air node is used on the source-side inlet
+      node. This is a typical congifiguration for chillers/boilers or
+      heat pumps conditioning water loops that serve chilled or hot
+      water coils. For advanced plant configurations the heat pump could be
+      connected to a cold and hot plant loop to move energy from one
+      plant to another. This is a form of heat recovery that is used to
+      meet small plant loads in one plant loop (e.g., heating) while the
+      other plant loop is active (e.g., cooling). The activation of a
+      heat recovery heat pump in this manner will reduce the active
+      cooling plant load while meeting the heating plant load which
+      improves the overall plant efficiency. In Energyplus the plants
+      are separate and therefore the load side of one coil is connected
+      to one loop (e.g., cooling) while the source side is connected to
+      the other loop (e.g., heating). The corresponding coil would be
+      connect in the opposite fashion where the load side is connected
+      to the other loop (e.g., heating) while the source side is
+      connected to the original loop (e.g., cooling). Given the
+      constraints of a single mixer and splitter for a given plant loop
+      this connection can be challenging. One possible connection option
+      is to connect one coil’s load side to the plant inlet branch while
+      the source side is connected to the other plant’s demand side
+      outlet branch. Only 1 or the other coil is operating while the
+      idle coil operates as a pass-through unit. The following figure
+      shows the HeatPump:PlantLoop:EIR coils configured as typical
+      air-cooled plant equipment on the supply side of each plant in
+      parallel branches where a cooling and heating coil are considered
+      a single heat pump (i.e., 2-pipe units AWHP-1, 2 and 3. These
+      could also be 4-pipe units connected to a condenser or ground
+      source loop.). Also shown is a 4-pipe water-to-water heat pump
+      connected between the plant loops in a heat recovery configuration
+      (as of V22.3). A heat pipe configured this way would required that
+      both plant loops have flow and specialized controls to determine
+      which coil operates (see
+      PlantEquipmentOperation:ChillerHeaterChangeover). An important
+      connection criteria for the 4-pipe heat recovery configuration is
+      to connect the load side of the heat pump to the plant supply side
+      inlet and the source side to the demand side outlet. The model
+      will check whether there is a connection to the plant in this
+      fashion and use that information to decide whether to add the heat
+      pump water flow rates during plant sizing since this configuration
+      should not increase plant design water flow rate. Figure 16.51: Schematic of the Cold and Hot water
+      loops using Heat Pumps Note that this component is a constant or variable flow device
+      (it will either request its full design flow from the plant or
+      flow proportional to the operating part-load ratio). The heat pump
+      can respond to a load or outlet node setpoint. The bookkeeping part of the plant heat pump model with regards
+      to flow requests and nodal conditions is similar to other
+      water-to-water heat pump components. This section will briefly
+      describe the mathematical formulation of the model and then
+      itemize more detailed calculations. Once load and source water flow rates have been established for
+      the component, using the SetComponentFlowRate interface to the
+      plant, and inlet temperatures for each side have been read, a
+      model function calculates the response of the unit to these
+      conditions. The process to evaluate the outlet state is as
+      follows: Determine the operating water flow rate of the heat pump.
+      Constant water flow heat pumps will operating at the design water
+      flow rate and variable speed water flow heat pumps will operate at
+      a water flow rate proportional to operating part-load ratio. In
+      addition, if a heat pump is configured as a heat recovery unit
+      (see figure) then the water flow rate is set as pass-through when
+      the unit is off. If set point controlled, retrieve the load side temperature
+      setpoint to determine the load on the heat pump. If load
+      controlled, directly use the load passed to the model. Evaluate the capacity modifier function using the load side
+      setpoint temperature as the projected outlet temperature and the
+      source inlet temperature
+      ( C A P F T = f ( T o u t , l o a d , s e t , T i n , s o u r c e ) CAPFT = f(T_{out,load,set}, T_{in,source}) ) Evaluate source outlet temperature limits and defrost
+      operation, if selected, to determine the impact on operating
+      capacity Calculate available load side capacity using the reference
+      value and the modifier
+      ( Q ̇ a v a i l = Q ̇ r e f × C A P F T \dot{Q}_{avail} = \dot{Q}_{ref} \times CAPFT ) Calculate the part load ratio using the current
+      plant-dispatched load (constrained between zero and one)
+      ( P L R = Q ̇ p l a n t Q ̇ a v a i l PLR = \frac{\dot{Q}_{plant}}{\dot{Q}_{avail}} ) Calculate the actual operating load side heat transfer and
+      the load side outlet temperature
+      ( Q ̇ l o a d = Q ̇ a v a i l P L R \dot{Q}_{load} = \dot{Q}_{avail}PLR , T o u t , l o a d = T i n , l o a d ± Q ̇ l o a d m ̇ l o a d C p , l o a d ) T_{out,load} = T_{in,load} \pm \frac{\dot{Q}_{load}}{\dot{m}_{load}C_{p,load}}) )
+      – note the plus/minus refers to how the value will be added in
+      heating mode and subtracted in cooling mode. Take the reference power usage as P r e f P_{ref} = Q r e f Q_{ref} divided by C O P r e f COP_{ref} Evaluate power usage by evaluating the EIR curves using the
+      target load side outlet temperature, source inlet temperature, and
+      the current part load ratio
+      ( E I R F T = f ( T o u t , l o a d , s e t , T i n , s o u r c e ) EIRFT = f(T_{out,load,set}, T_{in,source}) , E I R F P L R = f ( P L R ) EIRFPLR = f(PLR) , P = P r e f × E I R F T × E I R F P L R P = P_{ref} \times EIRFT \times EIRFPLR ) Perform an energy balance on the unit to determine the
+      source side heat transfer rate and the source side outlet
+      temperature
+      ( Q ̇ s o u r c e = Q ̇ l o a d ± P \dot{Q}_{source} = \dot{Q}_{load} \pm P , T o u t , s o u r c e = T i n , s o u r c e ± Q ̇ s o u r c e m ̇ s o u r c e C p , s o u r c e T_{out,source} = T_{in,source} \pm \frac{\dot{Q}_{source}}{\dot{m}_{source}C_{p,source}} )
+      – again the plus/minus refers to the different behavior between
+      cooling and heating mode. The following sections identify model calculations in more
+      detail: Water
+      Flow Rate Initialization The heat pump initially sets the load and source side water
+      flow rates to either an off condition, a pass-through condition,
+      or the design values to allow other plant components (e.g., pumps,
+      boilers, coils, etc.) to operate if needed. If the plant is
+      operating, the water flow rate is set according to logical
+      progression from the initial iteration to the final iteration of a
+      specific time step. m ̇ l o a d = m ̇ r a t e d \begin{equation}
+      \dot{m}_{load} = \dot{m}_{rated}
+      \end{equation} (16.437) m ̇ s o u r c e = m ̇ s o u r c e \begin{equation}
+      \dot{m}_{source} = \dot{m}_{source}
+      \end{equation} (16.438) On subsequent
+      iterations, the flow rate is also set to the design values,
+      however, if the pump is variable speed the load and source side
+      water flow rates are set proportional to the operating part-load
+      ratio from the previous iteration. When a load-side branch pump is
+      used the load-side flow is also limited to the minimum pump flow
+      rate. If the heat pump is air-cooled the source side flow is set
+      to design without multiplying by operating part-load ratio. If the
+      heat pump is off and is configured as a heat recovery heat pump
+      connected to the supply side inlet and demand side outlet then the
+      heat pump will allow the plant water to flow through the heat pump
+      when the heat pump is off. For heat pumps that are connected to a
+      parallel branch on the plant supply side (see figure for 2-pipe
+      AWHPs) then the water flow rate is set to 0 when the heat pump is
+      off. When the heat pump is off and conncted to the plant supply side
+      only: m ̇ l o a d = 0 \begin{equation}
+      \dot{m}_{load} = 0
+      \end{equation} (16.439) m ̇ s o u r c e = 0 ( w a t e r − c o o l e d o n l y ) \begin{equation}
+      \dot{m}_{source} = 0\;\; (water-cooled\;only)
+      \end{equation} (16.440) When the heat pump is off and conncted to the plant supply side
+      and plant demand side (heat recovery configuration): m ̇ l o a d = m ̇ i n l e t , l o a d \begin{equation}
+      \dot{m}_{load} = \dot{m}_{inlet,\;load}
+      \end{equation} (16.441) m ̇ s o u r c e = m ̇ i n l e t , s o u r c e ( w a t e r − c o o l e d o n l y ) \begin{equation}
+      \dot{m}_{source} =  \dot{m}_{inlet,\;source}\;\; (water-cooled\;only)
+      \end{equation} (16.442) When the heat pump is on, regardless where the heat pump is
+      connected, and the water flow rate is selected as constant
+      flow: m ̇ l o a d = m ̇ l o a d , r a t e d \begin{equation}
+      \dot{m}_{load} = \dot{m}_{load,\; rated}
+      \end{equation} (16.443) m ̇ s o u r c e = m ̇ s o u r c e , r a t e d ( w a t e r − c o o l e d o n l y ) \begin{equation}
+      \dot{m}_{source} = \dot{m}_{source,\; rated}\;\; (water-cooled\;only)
+      \end{equation} (16.444) When the heat pump is on, regardless where the heat pump is
+      connected, and the water flow rate is selected as variable
+      flow: m ̇ l o a d = m ̇ l o a d , r a t e d × P L R o p e r a t i n g , ( P L R m i n ≤ P L R o p e r a t i n g ≤ 1 ) ( m ̇ ≥ V S b r a n c h p u m p , m i n f l o w ) \begin{equation}
+      \dot{m}_{load} = \dot{m}_{load,\; rated} \times PLR_{operating},\;{(PLR_{min} \le PLR_{operating} \le 1)}\;\; (\dot{m} \ge VS_{branchpump,\; minflow})
+      \end{equation} (16.445) m ̇ s o u r c e = m ̇ s o u r c e , r a t e d × P L R o p e r a t i n g , ( P L R m i n ≤ P L R o p e r a t i n g ≤ 1 ) ( w a t e r − c o o l e d o n l y ) \begin{equation}
+      \dot{m}_{source} = \dot{m}_{source,\; rated} \times PLR_{operating},\;{(PLR_{min} \le PLR_{operating} \le 1)}\;\; (water-cooled\;only)
+      \end{equation} (16.446) Operating Set
+      Point If the plant loop operating scheme is set point based the loop
+      set point is used. For component based controls the component
+      outlet set point is used otherwise the plant loop set point is
+      used. For dual set point control the lower set point is used for
+      cooling and the higher set point is used for heating. In the
+      following equations the operating set point temperature is T s e t p o i n t T_{setpoint} . Heat
+      Pump Performance Calculations Calculations begin by determing the operating capacity of the
+      heat pump. The capacity of the heat pump is a function of the
+      load-side outlet temperature and the source-side inlet
+      temperature. The heat pump is assumed to meet the load-side
+      temperature set point and therefore the load-side outlet
+      temperature is assumed to be the set point temperature. C A P F T = f ( T s e t p o i n t , T s o u r c e , i n l e t ) \begin{equation}
+      CAPFT = f(T_{setpoint}, T_{source,\; inlet})
+      \end{equation} (16.447) Q ̇ a v a i l = Q ̇ r e f × C A P F T \begin{equation}
+      \dot{Q}_{avail} = \dot{Q}_{ref} \times CAPFT
+      \end{equation} (16.448) If heat recovery is active, the capacity of the heat pump is a
+      function of the load-side outlet temperature and the heat
+      recovery-side inlet temperature. Again the heat pump is assumed to
+      meet the load-side temperature set point and therefore the
+      load-side outlet temperature is assumed to be the set point
+      temperature. C A P F T = f ( T s e t p o i n t , T h e a t r e c o v e r y , i n l e t ) \begin{equation}
+      CAPFT = f(T_{setpoint}, T_{heatrecovery,\; inlet})
+      \end{equation} (16.449) Q ̇ a v a i l = Q ̇ r e f × C A P F T \begin{equation}
+      \dot{Q}_{avail} = \dot{Q}_{ref} \times CAPFT
+      \end{equation} (16.450) Dry Outdoor
+      Coil Calculations (Heating mode only) For air-cooled heat pumps a dry coil correction factor, if
+      used, is applied for heating operation. As the moisture content of
+      the ambient air changes the heating capacity also changes. This
+      change in performance is limited to an ambient relative humidity
+      range of 60 - 90% where below 60% the outdoor coil is dry and
+      reduces heating capacity and above 90% the coil is fully wet and
+      yields full heating capacity. In the following equations, below
+      60% relative humidity the F a c t o r c o r r e c t i o n = F a c t o r c o r r e c t i o n , d r y Factor_{correction} = Factor_{correction,\;dry} and above 90% relative humidity the F a c t o r c o r r e c t i o n = 1 Factor_{correction} = 1 .
+      These calculations apply only to heating operation. R H r a n g e = 90 − 60 \begin{equation}
+      RH_{range} = 90 - 60
+      \end{equation} (16.451) F a c t o r c o r r e c t i o n , d r y = f ( T a m b i e n t ) \begin{equation}
+      Factor_{correction,\;dry} = f(T_{ambient})
+      \end{equation} (16.452) F a c t o r c o r r e c t i o n = F a c t o r c o r r e c t i o n , d r y + ( 1 − F a c t o r c o r r e c t i o n , d r y ) × ( 1 − 90 − R H a m b i e n t R H r a n g e ) \begin{equation}
+      %Real64 semiDryFactor = dryCorrectionFactor + (1.0 - dryCorrectionFactor) * ((RH90 - state.dataEnvrn->OutRelHum) / rangeRH);
+      Factor_{correction} = Factor_{correction,\;dry} + (1 - Factor_{correction,\;dry}) \times (1 - \frac{90 - RH_{ambient}}{RH_{range}})
+      \end{equation} (16.453) Q ̇ a v a i l = Q ̇ a v a i l × F a c t o r c o r r e c t i o n \begin{equation}
+      \dot{Q}_{avail} = \dot{Q}_{avail} \times Factor_{correction}
+      \end{equation} (16.454) P L R = Q ̇ l o a d Q ̇ a v a i l \begin{equation}
+      PLR = \frac{\dot{Q}_{load}}{\dot{Q}_{avail}}
+      \end{equation} (16.455) T s e t p o i n t , m i n = f ( T a m b i e n t ) \begin{equation}
+      T_{setpoint,\;min} = f(T_{ambient})
+      \end{equation} (16.456) T s e t p o i n t , m a x = f ( T a m b i e n t ) \begin{equation}
+      T_{setpoint,\;max} = f(T_{ambient})
+      \end{equation} (16.457) T s e t p o i n t = T s e t p o i n t , m i n ≤ T s e t p o i n t ≤ T s e t p o i n t , m a x \begin{equation}
+      T_{setpoint} = T_{setpoint,\;min} \le T_{setpoint} \le T_{setpoint,\;max}
+      \end{equation} (16.458) Since the
+      capacity as a function of temperature (CAPFT) relies on T s e t p o i n t T_{setpoint} the above performance calculations are repeated. If the
+      Minimum/Maximum Supply Water Temperature Curves are not used or
+      the water temp limits are not exceeded then the calculations
+      proceed without repeating. Part
+      Load Ratio Calculations The heat pump operates to meet a load or temperature set point
+      and therefore will operate at less than full capacity for most
+      operating hours. The heat pump will run the entire time step to
+      the point where the part-load ratio (PLR) is below the minimum
+      part-load ratio provided by the user. Below this point the heat
+      pump will cycle on and off to meet the load. C y c l i n g R a t i o = 1 \begin{equation}
+      CyclingRatio = 1
+      \end{equation} (16.459) P L R o p e r a t i n g = P L R \begin{equation}
+      PLR_{operating} = PLR
+      \end{equation} (16.460) C y c l i n g R a t i o = P L R o p e r a t i n g P L R m i n , ( P L R o p e r a t i n g ≤ P L R m i n ) \begin{equation}
+      CyclingRatio = \frac{PLR_{operating}}{PLR_{min}}, {(PLR_{operating}\le PLR_{min})}
+      \end{equation} (16.461) P L R = P L R m i n , ( P L R o p e r a t i n g ≤ P L R m i n ) \begin{equation}
+      PLR = PLR_{min}, {(PLR_{operating}\le PLR_{min})}
+      \end{equation} (16.462) P L R o p e r a t i n g = P L R × C y c l i n g R a t i o , ( P L R o p e r a t i n g ≤ P L R m i n ) \begin{equation}
+      PLR_{operating} = PLR \times CyclingRatio, {(PLR_{operating}\le PLR_{min})}
+      \end{equation} (16.463) Defrost
+      Model Description (Heating mode only) The plant heat pump as 3 Heat Pump Defrost Control types which
+      will impact heat pump heating capacity. The valid choices are
+      None, Timed, OnDemand or TimedEmpirical. When None is selected
+      these calculations are not performed and defrost operation will
+      not impact energy use. Otherwise, one of the following calculation
+      sets are executed if the outdoor ambient temperature is less than
+      or equal to the user entered Maximum Outdoor Dry Bulb Temperature
+      For Defrost Operation. The defrost model reports are set to 0 when
+      defrost is not used or not active. These calculations apply only
+      to heating operation. Q ̇ l o a d , d e f r o s t = 0 \begin{equation}
+      \dot{Q}_{load,\; defrost} = {0}
+      \end{equation} (16.464) Q ̇ d e f r o s t = 0 \begin{equation}
+      \dot{Q}_{defrost} = {0}
+      \end{equation} (16.465) F r a c t i o n d e f r o s t , t i m e = 0 \begin{equation}
+      Fraction_{defrost, time} = {0}
+      \end{equation} (16.466) When defrost is
+      active the following calculations are performed according to the
+      user selected defrost model: T d e f r o s t , c o i l = 0.82 × T a m b i e n t − 8.589 \begin{equation}
+      % Real64 OutdoorCoilT = 0.82 * state.dataEnvrn->OutDryBulbTemp - 8.589;
+      T_{defrost, coil} = {0.82 \times T_{ambient} - 8.589}
+      \end{equation} (16.467) w d e f r o s t , c o i l = w a m b i e n t − w s a t , w h e r e w s a t = f ( T d e w p o i n t , P r e s s u r e a m b i e n t ) \begin{equation}
+      % Real64 OutdoorCoildw = max(1.0e-6, (state.dataEnvrn->OutHumRat - Psychrometrics::PsyWFnTdpPb(state, OutdoorCoilT, state.dataEnvrn->OutBaroPress)));
+      {w_{defrost, coil} = w_{ambient} - w_{sat}}, where\; {w_{sat} = f(T_{dewpoint},\; Pressure_{ambient})}
+      \end{equation} (16.468) Timed Defrost
+      Model: F r a c t i o n d e f r o s t , t i m e = u s e r i n p u t , H e a t P u m p D e f r o s t T i m e P e r i o d F r a c t i o n \begin{equation}
+      Fraction_{defrost, time} = user\; input,\; Heat\; Pump\; Defrost\; Time\; Period\; Fraction
+      \end{equation} (16.469) M u l t i p l i e r h e a t i n g , c a p a c i t y = 0.909 − 107.33 × w d e f r o s t , c o i l \begin{equation}
+      Multiplier_{heating,\; capacity} = {0.909 - 107.33 \times w_{defrost,\; coil}}
+      \end{equation} (16.470) M u l t i p l e r h e a t i n g , p o w e r = 0.90 − 36.45 × w d e f r o s t , c o i l \begin{equation}
+      Multipler_{heating,\; power} = {0.90 - 36.45 \times w_{defrost,\; coil}}
+      \end{equation} (16.471) Q ̇ l o a d , d e f r o s t = 0.01 × F r a c t i o n d e f r o s t , t i m e × ( 7.222 − T a m b i e n t ) × ( Q r e f 1.01667 ) \begin{equation}
+      \dot{Q}_{load,\; defrost} = {0.01 \times Fraction_{defrost,\; time} \times (7.222 - T_{ambient}) \times (\frac{Q_{ref}}{1.01667})}
+      \end{equation} (16.472) E I R F T d e f r o s t = 1 C O P r e f \begin{equation}
+      EIRFT_{defrost} = \frac{1}{COP_{ref}}
+      \end{equation} (16.473) If the Defrost
+      Energy Input Ratio Function of Temperature Curve has been entered
+      by the user this curve will update the value of E I R F T d e f r o s t EIRFT_{defrost} .
+      This performance curve is a function of outdoor wet-bulb
+      temperature and outdoor dry-bulb temperature. If either of these
+      outdoor temperatures are below 15.555 C, the minimum temperature
+      of 15.555 C is used. E I R F T d e f r o s t = f ( T a m b i e n t , w e t b u l b , T a m b i e n t ) \begin{equation}
+      {EIRFT_{defrost} = f(T_{ambient,\; wetbulb}, T_{ambient})}
+      \end{equation} (16.474) Q ̇ d e f r o s t = E I R F T d e f r o s t × Q r e f 1.01667 × F r a c t i o n d e f r o s t , t i m e \begin{equation}
+      \dot{Q}_{defrost} = EIRFT_{defrost} \times \frac{Q_{ref}}{1.01667} \times Fraction_{defrost,\; time}
+      \end{equation} (16.475) On Demand
+      Defrost Model: F r a c t i o n d e f r o s t , t i m e = 1 1 + 0.01446 w d e f r o s t , c o i l \begin{equation}
+      Fraction_{defrost, time} = \frac{1}{1+\frac{0.01446}{w_{defrost,\; coil}}}
+      \end{equation} (16.476) M u l t i p l i e r h e a t i n g , c a p a c i t y = 0.875 × F r a c t i o n d e f r o s t , t i m e \begin{equation}
+      Multiplier_{heating,\; capacity} = {0.875 \times Fraction_{defrost,\; time}}
+      \end{equation} (16.477) M u l t i p l e r h e a t i n g , p o w e r = 0.954 × ( 1 − F r a c t i o n d e f r o s t , t i m e ) \begin{equation}
+      Multipler_{heating,\; power} = {0.954 \times (1 - Fraction_{defrost,\; time})}
+      \end{equation} (16.478) Q ̇ l o a d , d e f r o s t = 0.01 × F r a c t i o n d e f r o s t , t i m e × ( 7.222 − T a m b i e n t ) × ( Q ̇ r e f 1.01667 ) \begin{equation}
+      \dot{Q}_{load,\; defrost} = {0.01 \times Fraction_{defrost,\; time} \times (7.222 - T_{ambient}) \times (\frac{\dot{Q}_{ref}}{1.01667})}
+      \end{equation} (16.479) E I R F T d e f r o s t = 0 \begin{equation}
+      EIRFT_{defrost} = 0
+      \end{equation} (16.480) If the Defrost
+      Energy Input Ratio Function of Temperature Curve has been entered
+      by the user this curve will update E I R F T d e f r o s t EIRFT_{defrost} .
+      If either of these outdoor temperatures are below 15.555 C, the
+      minimum temperature of 15.555 C is used. E I R F T d e f r o s t = f ( T a m b i e n t , w e t b u l b , T a m b i e n t ) \begin{equation}
+      {EIRFT_{defrost} = f(T_{ambient,\; wetbulb}, T_{ambient})}
+      \end{equation} (16.481) Q ̇ d e f r o s t = E I R F T d e f r o s t × Q ̇ r e f 1.01667 × F r a c t i o n d e f r o s t , t i m e \begin{equation}
+      \dot{Q}_{defrost} = EIRFT_{defrost} \times \frac{\dot{Q}_{ref}}{1.01667} \times Fraction_{defrost,\; time}
+      \end{equation} (16.482) Timed
+      Empirical Defrost Model: The model for Timed Empirical Defrost uses a Timed Empirical
+      Defrost Frequency Curve to determine the number of defrost cycles
+      that occur each hour. The number of defrost cycles is multiplied
+      by the operating part-load ratio to determine the defrost cycle
+      frequency. The heat load due to defrost is also initialized to 0. C y c l e s d e f r o s t = f ( T a m b i e n t ) × P L R o p e r a t i n g \begin{equation}
+      {Cycles_{defrost} = f(T_{ambient})} \times PLR_{operating}
+      \end{equation} (16.483) H e a t l o a d , d e f r o s t = 0 \begin{equation}
+      Heat_{load,\; defrost} = 0
+      \end{equation} (16.484) The heat load
+      per cycle of defrost is calculated based on a user provided
+      performance curve. This curve can be either a univariate or
+      bivariate using one of the following equations. If the Timed
+      Empirical Defrost Heat Load Penalty Curve has been entered by the
+      user this curve will update H e a t l o a d , d e f r o s t Heat_{load,\; defrost} as: H e a t l o a d , d e f r o s t = f ( T a m b i e n t ) \begin{equation}
+      Heat_{load,\; defrost} = f(T_{ambient})
+      \end{equation} (16.485) H e a t l o a d , d e f r o s t = f ( T a m b i e n t , w e t b u l b ) \begin{equation}
+      Heat_{load,\; defrost} = f(T_{ambient,\;wetbulb})
+      \end{equation} (16.486) The heat load
+      per cycle of defrost is applied to the available capacity and is
+      proportional to the defrost cycle per hour as: Q ̇ d e f r o s t = Q ̇ a v a i l × H e a t l o a d , d e f r o s t × C y c l e s d e f r o s t \begin{equation}
+      \dot{Q}_{defrost} = \dot{Q}_{avail} \times Heat_{load,\; defrost} \times Cycles_{defrost}
+      \end{equation} (16.487) F r a c t i o n h e a t , e n e r g y = 0 \begin{equation}
+      Fraction_{heat,\; energy} = 0
+      \end{equation} (16.488) The defrost
+      input energy fraction is calculated based on a user provided
+      performance curve. This curve can be either a univariate or
+      bivariate using one of the following equations. If the Timed
+      Empirical Defrost Heat Input Energy Fraction Curve has been
+      entered by the user this curve will update F r a c t i o n h e a t , e n e r g y Fraction_{heat,\; energy} as: F r a c t i o n h e a t , e n e r g y = f ( T a m b i e n t ) \begin{equation}
+      Fraction_{heat,\; energy} = f(T_{ambient})
+      \end{equation} (16.489) F r a c t i o n h e a t , e n e r g y = f ( T a m b i e n t , w e t b u l b , T a m b i e n t ) \begin{equation}
+      Fraction_{heat,\; energy} = f(T_{ambient,\;wetbulb},\;T_{ambient})
+      \end{equation} (16.490) D e f r o s t P o w e r = Q ̇ r e f C O P r e f × F r a c t i o n h e a t , e n e r g y × C y c l e s d e f r o s t \begin{equation}
+      DefrostPower = \frac{\dot{Q}_{ref}}{COP_{ref}} \times Fraction_{heat,\; energy} \times Cycles_{defrost}
+      \end{equation} (16.491) M u l t i p l i e r h e a t i n g , c a p a c i t y = 1 + ( H e a t l o a d , d e f r o s t × C y c l e s d e f r o s t ) \begin{equation}
+      Multiplier_{heating,\; capacity} = {1 + (Heat_{load,\; defrost} \times Cycles_{defrost})}
+      \end{equation} (16.492) M u l t i p l e r h e a t i n g , p o w e r = ( 1 + H e a t l o a d , d e f r o s t ) \begin{equation}
+      Multipler_{heating,\; power} = {(1 + Heat_{load,\; defrost})}
+      \end{equation} (16.493) F r a c t i o n d e f r o s t , t i m e = u s e r i n p u t , H e a t P u m p D e f r o s t T i m e P e r i o d F r a c t i o n × C y c l e s d e f r o s t \begin{equation}
+      Fraction_{defrost, time} = user\; input, Heat\; Pump\; Defrost\; Time\; Period\; Fraction \times Cycles_{defrost}
+      \end{equation} (16.494) These defrost method calculations, if used, will result in an
+      adjustment to the available heating capacity as: Q ̇ a v a i l * = M u l t i p l i e r h e a t i n g , c a p a c i t y ; \begin{equation}
+      \dot{Q}_{avail} *= Multiplier_{heating,\; capacity};
+      \end{equation} (16.495) Final
+      Calculation of Load and Energy, Power and Electricity, and Outlet
+      Conditions The plus/minus in a few of the following equations
+      differentiates behavior between cooling and heating. Q ̇ l o a d = Q ̇ a v a i l × P L R o p e r a t i n g \begin{equation}
+      \dot{Q}_{load} = \dot{Q}_{avail} \times PLR_{operating}
+      \end{equation} (16.496) Q l o a d = Q ̇ l o a d × T i m e S t e p I n S e c o n d s \begin{equation}
+      {Q}_{load} = \dot{Q}_{load} \times TimeStepInSeconds
+      \end{equation} (16.497) T o u t , l o a d = T i n , l o a d ± Q ̇ l o a d m ̇ l o a d × C p , l o a d \begin{equation}
+      T{out,\;load} = T_{in,\;load} \pm \frac{\dot{Q}_{load}}{\dot{m}_{load}} \times C_{p,\;load}
+      \end{equation} (16.498) E I R F T = f ( T o u t , l o a d , T i n , s o u r c e ) \begin{equation}
+      EIRFT = {f(T_{out,\;load}, T_{in,\;source})}
+      \end{equation} (16.499) E I R F P L R = f ( P L R o p e r a t i n g ) \begin{equation}
+      EIRFPLR = {f(PLR_{operating})}
+      \end{equation} (16.500) P o w e r = Q ̇ l o a d C O P r e f × E I R F T × E I R F P L R × M u l t i p l e r h e a t i n g , p o w e r × C y c l i n g R a t i o \begin{equation}
+      Power = \frac{\dot{Q}_{load}}{COP_{ref}} \times EIRFT \times EIRFPLR \times Multipler_{heating,\; power} \times CyclingRatio
+      \end{equation} (16.501) E n e r g y = P o w e r × T i m e S t e p I n S e c o n d s \begin{equation}
+      Energy = Power \times TimeStepInSeconds
+      \end{equation} (16.502) Q ̇ s o u r c e = ( Q ̇ l o a d ± P o w e r ) × C y c l i n g R a t i o \begin{equation}
+      {\dot{Q}_{source} = (\dot{Q}_{load} \pm Power) \times CyclingRatio}
+      \end{equation} (16.503) T o u t , s o u r c e = T i n , s o u r c e ± Q ̇ s o u r c e m ̇ s o u r c e × C p , s o u r c e \begin{equation}
+      T{out,\;source} = T_{in,\;source} \pm \frac{\dot{Q}_{source}}{\dot{m}_{source} \times C_{p,\;source}}
+      \end{equation} (16.504) Q s o u r c e = Q ̇ s o u r c e × T i m e S t e p I n S e c o n d s \begin{equation}
+      {Q}_{source} = \dot{Q}_{source} \times TimeStepInSeconds
+      \end{equation} (16.505) Air to Water Heat
+      Pumps with Heat Recovery This section describes an air-to-water heat pump with a heat
+      recovery option. The heat pump object is based on HeatPump:PlantLoop:EIR:Cooling and HeatPump:PlantLoop:EIR:Heating . The heat recovery options
+      are supported using heat recovery refrigerant-to-water heat
+      exchangers (condenser or evaporator coils) that connect to hot
+      water or chilled water heat recovery plant loops. These objects
+      have fluid inlet and outlet nodes connecting them to a heat
+      recovery plant loop. When these objects are connected to the heat
+      recovery plant loop and the entering fluid temperature is
+      favorable for heat recovery, then the heat recovery operation is
+      enabled Heat Recovery Equipment
+      Capacity The heat recovery capacity is derived from the load side
+      capacity of the heat pump by applying energy balance around the
+      heat pump. The hot water and chilled water recovery capacities are
+      calculated as follows: Q ̇ C a p , H W = Q ̇ R e f C a p , c o o l × ( 1 + C O P c o o l ) \begin{equation}
+      \dot{Q}_\mathrm{Cap,\; HW} = \dot{Q}_\mathrm{RefCap,\; cool} \times \mathrm{(1 + COP_\mathrm{cool})}
+      \end{equation} (16.506) Q ̇ C a p , C H W = Q ̇ R e f C a p , h e a t × ( 1 − C O P h e a t ) \begin{equation}
+      \dot{Q}_\mathrm{Cap,\; CHW} = \dot{Q}_\mathrm{RefCap,\; heat} \times \mathrm{(1 - COP_\mathrm{heat})}
+      \end{equation} (16.507) Heat Recovery
+      Reference Fluid Flow Rate The heat recovery fluid reference volume flow rates are
+      determined from the heat recovery capacity, design temperature
+      difference of the heat recovery loop, specific heat capacity of
+      the heat recovery fluid and density of the heat recovery fluid as
+      follows: V ̇ h e a t r e c o v e r y , H W = Q ̇ C a p , H W C p H W × D e n H W × d e l t a T H W \begin{equation}
+      \dot{V}_\mathrm{heatrecovery,\; HW} = \frac{\dot{Q}_\mathrm{Cap,\; HW}}{\mathrm{Cp}_\mathrm{HW} \times \mathrm{Den}_\mathrm{HW} \times \mathrm{deltaT}_\mathrm{HW}}
+      \end{equation} (16.508) V ̇ h e a t r e c o v e r y , C H W = Q ̇ C a p , C H W C p C H W × D e n C H W × d e l t a T C H W \begin{equation}
+      \dot{V}_\mathrm{heatrecovery,\; CHW} = \frac{\dot{Q}_\mathrm{Cap,\; CHW}}{\mathrm{Cp}_\mathrm{CHW} \times \mathrm{Den}_\mathrm{CHW} \times \mathrm{deltaT}_\mathrm{CHW}}
+      \end{equation} (16.509) Heat Recovery
+      Rate The hot water or chilled water heat recovery rate is determined
+      from the load side heat transfer rate and the electric power usage
+      rate based on energy conservation as follows: Q H W = Q ̇ l o a d , c o o l + P o w e r \begin{equation}
+      \mathrm{Q}_\mathrm{HW} = \dot{Q}_\mathrm{load,\; cool} + \mathrm{Power}
+      \end{equation} (16.510) Q C H W = Q ̇ l o a d , h e a t − P o w e r \begin{equation}
+      \mathrm{Q}_\mathrm{CHW}  = \dot{Q}_\mathrm{load,\; heat} - \mathrm{Power}
+      \end{equation} (16.511) The heat recovery does not occur when the heat recovery hot
+      water outlet temperature exceed the user specified maximum
+      temperature limit or when the heat reovery chilled water outlet
+      temperature drops below the minimum temperature limit. Therefore,
+      the heat recovery operation is disabled when heat recovery loop
+      temeprature reaches at these temperature limits. Heat Recovery Outlet
+      Temperature The heat recovery fluid outlet temperature is determiend from
+      the heat recovery rate, specific heat of the fluid, and the heat
+      recovery inlet temperature. T H W , O u t = T H W , I n + Q H W C p H W × m ̇ h e a t r e c o v e r y , H W \begin{equation}
+      \mathrm{T}_\mathrm{HW,\; Out} = \mathrm{T}_\mathrm{HW,\; In} + \frac{\mathrm{Q}_\mathrm{HW}}{\mathrm{Cp}_\mathrm{HW} \times \dot{m}_\mathrm{heatrecovery,\; HW}}
+      \end{equation} (16.512) T C H W , O u t = T C H W , I n − Q C H W C p C H W × m ̇ h e a t r e c o v e r y , C H W \begin{equation}
+      \mathrm{T}_\mathrm{CHW,\; Out} = \mathrm{T}_\mathrm{CHW,\; In} - \frac{\mathrm{Q}_\mathrm{CHW}}{\mathrm{Cp}_\mathrm{CHW} \times \dot{m}_\mathrm{heatrecovery,\; CHW}}
+      \end{equation} (16.513) When the heat recovery outlet temperature exceeds the
+      user-specified maximum or minimum temperature limits, the outlet
+      temperatures are capped at this temperature, and the delivered
+      heat recovery rate is recalculated based on these user specified
+      temperature limits. Q ̇ H W , l i m i t = m ̇ H W × C p H W × ( T H W , l i m i t − T H W , I n ) \begin{equation}
+      \dot{Q}_\mathrm{HW,\; limit} = \dot{m}_\mathrm{HW} \times \mathrm{Cp}_\mathrm{HW} \times {(\mathrm{T}_\mathrm{HW,\; limit} - \mathrm{T}_\mathrm{HW,\; In})}
+      \end{equation} (16.514) Q ̇ C H W , l i m i t = m ̇ C H W × C p C H W × ( T C H W , I n − T C H W , l i m i t ) \begin{equation}
+      \dot{Q}_\mathrm{CHW,\; limit} = \dot{m}_\mathrm{CHW} \times \mathrm{Cp}_\mathrm{CHW} \times {(\mathrm{T}_\mathrm{CHW,\; In} - \mathrm{T}_\mathrm{CHW,\; limit})}
+      \end{equation} (16.515) The net difference between the potential heat recovery rate and
+      delivered heat recovery rate is reported as source side heat
+      transfer rate and is calculated as follows: Q ̇ s o u r c e , c o o l = Q ̇ H W − Q ̇ H W , l i m i t \begin{equation}
+      \dot{Q}_\mathrm{source,\; cool} = \dot{Q}_\mathrm{HW} - \dot{Q}_\mathrm{HW,\; limit}
+      \end{equation} (16.516) Q ̇ s o u r c e , h e a t = Q ̇ C H W − Q ̇ C H W , l i m i t \begin{equation}
+      \dot{Q}_\mathrm{source,\; heat} = \dot{Q}_\mathrm{CHW} - \dot{Q}_\mathrm{CHW,\; limit}
+      \end{equation} (16.517) Fuel-Fired Air to Water
+      Heat Pumps This section describes the EIR formulated model for fuel-fired
+      plant loop absorption air-to-water heat pumps. The object is
+      similar to a conventional air-to-water heat pump, except that it
+      uses an absorption cycle driven by fuel combustion. The object
+      names are HeatPump:AirToWater:FuelFired:Heating and
+      HeatPump:AirToWater:FuelFired:Cooling. In general, these heat pump
+      objects are treated in the same way as the other plant loop heat
+      pump models. When dealing with the heating and cooling modules of
+      the equipment, it uses a similar paradigm as the electric-driven EIR
+      Formulated Plant Loop Heat Pump : even though a heat pump is
+      generally a single load coil and a single source coil with a
+      reversing valve, in EnergyPlus, the paradigm is to split the
+      operation into two separate units, one for heating a hot water
+      loop and one for cooling a chilled water loop. It is certainly
+      possible to connect the load side of both of these to a single
+      plant loop if the controls are established properly. This
+      equipment only supports air-source operation with an outdoor air
+      node used as the source-side inlet node. The underlying fuel-fired absorption heat pump model uses
+      equation-fit models based on manufacturer data. The implemented
+      model is as follows: Equipment
+      Capacity The heating and cooling capacities are derived from the nominal
+      (rated) capacity and a capacity function of temperatures. G A H P H e a t i n g / C o o l i n g C a p a c i t y = R a t e d C a p a c i t y × C A P F T \begin{equation}
+      \mathrm{GAHP Heating/Cooling Capacity} = \mathrm{Rated Capacity} \times \mathrm{CAPFT}
+      \end{equation} (16.518) The temperatures used for the equation model are the returning
+      (or entering) water temperature
+      ( T r e t T_{\mathrm{ret}} )
+      of the load side and the ambient air temperature
+      ( T m a t h r m a m b T_{mathrm{amb}} ). C A P F T = a + b × T r e t + c × T r e t 2 + d × T a m b + e × T a m b 2 + f × T a m b × T r e t \begin{equation}
+      \mathrm{CAPFT} = a + b \times T_{\mathrm{ret}} + c \times T_{\mathrm{ret}}^{2} + d \times T_{\mathrm{amb}} + e \times T_{\mathrm{amb}}^{2} + f \times T_{\mathrm{amb}} \times T_{\mathrm{ret}}
+      \end{equation} (16.519) Part Load
+      Ratio Part Load Ratio is the ratio for the actual heating/cooling
+      load over the current full capacity load. In real absorption
+      machines, the PLR is usually between 0.2 and 1.0. P L R = L o a d C a p a c i t y , 0.2 ≤ P L R ≤ 1 \begin{equation}
+      \mathrm{PLR} = \frac{\mathrm{Load}}{\mathrm{Capacity}}, 0.2 \leq \mathrm{PLR} \leq 1
+      \end{equation} (16.520) Fuel Use The fuel usage is calculated using the following formula,
+      taking consideration of the load capacity, nominal COP, and the
+      various adjustment factors (temperature, PLR, Defrosting, and
+      Cycling Ratio): F u e l U s e = L o a d × E I R F T × E I R F P L R × E I R D E F R O S T C O P n o m i n a l × C R F \begin{equation}
+      \mathrm{Fuel Use} = \frac{\mathrm{Load} \times \mathrm{EIRFT} \times \mathrm{EIRFPLR} \times \mathrm{EIRDEFROST}}{\mathrm{COP}_\mathrm{nominal} \times \mathrm{CRF}}
+      \end{equation} (16.521) EIR
+      Temperature Adjustment A typical EIR temperature correction function will involve two
+      independent temperature variables—the ambient air temperature
+      ( T m a t h r m a m b T_{mathrm{amb}} )
+      and the returning (or entering) water temperature
+      ( T r e t T_{\mathrm{ret}} )
+      of the load side. E I R F T = a + b × T r e t + c × T r e t 2 + d × T a m b + e × T a m b 2 + f × T a m b × T r e t \begin{equation}
+      \mathrm{EIRFT} = a + b \times T_{\mathrm{ret}} + c \times T_{\mathrm{ret}}^{2} + d \times T_{\mathrm{amb}} + e \times T_{\mathrm{amb}}^{2} + f \times T_{\mathrm{amb}} \times T_{\mathrm{ret}}
+      \end{equation} (16.522) EIR PLR
+      Adjustment The EIR PLR correction function is a cubic function that takes
+      the PLR as the sole independent variable. For example, a potential
+      curve can be used is like the following: E I R F P L R = 0.0865 × P L R 2 − 0.006 × P L R + 0.9814 , f o r 0.25 ≤ P L R ≤ 1 \begin{equation}
+      \mathrm{EIRFPLR} = 0.0865 \times \mathrm{PLR}^{2} - 0.006 \times \mathrm{PLR} + 0.9814, \mathrm{for } 0.25 \leq \mathrm{PLR} \leq 1
+      \end{equation} (16.523) Defrosting Adjustment
+      (Heating mode only) If the defrost control type is OnDemand, then the defrost fuel
+      use correction is modeled using the ambient air temperature as the
+      independent variable. The inputs allows a cubic (or lower order)
+      function. For example, one possible curve correlation can look
+      like the following: E I R D E F R O S T = − 0.0011 × T a m b 2 − 0.006 × T a m b + 1.0317 , f o r − 8.89 ∘ C ≤ T a m b ≤ 3.33 ∘ C \begin{equation}
+      \mathrm{EIRDEFROST} = -0.0011 \times T_{\mathrm{amb}}^{2} - 0.006 \times T_{\mathrm{amb}} + 1.0317, \mathrm{for} -8.89^{\circ}\mathrm{C} \leq T_{\mathrm{amb}} \leq 3.33^{\circ}\mathrm{C}
+      \end{equation} (16.524) Cycling
+      Ratio Adjustment The cycling ratio correction is also used for fuel use
+      calculations when the PLR is below the minimum. This curve can be
+      inputted by the user. An example correlation for CRF is as
+      follows: C R F = 0.4167 × C R + 0.5833 , \begin{equation}
+      \mathrm{CRF} = 0.4167 \times \mathrm{CR} + 0.5833,
+      \end{equation} (16.525) where C R F \mathrm{CRF} is the Cycling Ratio Factor; and C R \mathrm{CR} is the Cycling Ratio, which is defined as: C R = P L R P L R m i n , f o r 0.2 ≤ P L R ≤ 0.25 \begin{equation}
+      \mathrm{CR} = \frac{\mathrm{PLR}}{\mathrm{PLR}_{\mathrm{min}}}, \mathrm{for} 0.2 \leq \mathrm{PLR} \leq 0.25
+      \end{equation} (16.526) Please note that since the object is based on curve inputs, the
+      user also has the flexibility of defining the curves by
+      themselves—e.g. from the capacity function of temperature to the
+      defrost EIR corrections. Electricity
+      Use The electricity use for the fuel-fired absorption heat pump is
+      modeled using EIR (Electricity based relation) input curves. The
+      two part of electricity use is the “auxiliary electricity” and the
+      “standby electricity”: E l e c t r i c i t y u s e = N o r m i n a l A u x i l i a r y P o w e r × E I R a u x i l i a r y + E l e c t r i c i t y S t a n d b y , \begin{equation}
+      \mathrm{Electricity use} = \mathrm{Norminal Auxiliary Power} \times \mathrm{EIR}_{\mathrm{auxiliary}} + \mathrm{Electricity}_{\mathrm{Standby}},
+      \end{equation} (16.527) Where N o r m i n a l A u x i l i a r y P o w e r \mathrm{Norminal Auxiliary Power} and E l e c t r i c i t y S t a n d b y \mathrm{Electricity}_{\mathrm{Standby}} are user inputs and where E I R a u x i l i a r y \mathrm{EIR}_{\mathrm{auxiliary}} is a curve modifier defined as follows and involves two
+      independent temperature variables—the ambient air temperature
+      ( T m a t h r m a m b T_{mathrm{amb}} )
+      and the returning (or entering) water temperature
+      ( T r e t T_{\mathrm{ret}} )
+      of the load side. E I R a u x i l i a r y = a + b × T r e t + c × T r e t 2 + d × T a m b + e × T a m b 2 + f × T a m b × T r e t \begin{equation}
+      \mathrm{EIR}_{\mathrm{auxiliary}} = a + b \times T_{\mathrm{ret}} + c \times T_{\mathrm{ret}}^{2} + d \times T_{\mathrm{amb}} + e \times T_{\mathrm{amb}}^{2} + f \times T_{\mathrm{amb}} \times T_{\mathrm{ret}}
+      \end{equation} (16.528) Modular Air to Water Heat
+      Pumps The AWHP, modeled with object HeatPump:AirToWater, is a 2-pipe
+      unit that transfers thermal energy from the outside to a water
+      loop. It does not provide simultaneous hot and chilled water;
+      instead, it switches between cooling and heating modes based on
+      the temperature requirements of the connected loop. In cooling mode, it functions like an air-cooled chiller, using
+      the refrigeration cycle to absorb heat from the water loop and
+      dissipate it to the ambient air. Conversely, in heating mode, it
+      acts as a heat pump, absorbing heat from the ambient air and
+      transferring it to the water loop. Depending on the application, the air-to-water heat pump can be
+      assigned to a chilled water loop, a heating hot water loop, a
+      domestic hot water loop, or a condenser water loop. In this object: The source side is connected to an outdoor air
+      node The heating load side can connect to a hot water loop, a
+      domestic hot water loop, or a condenser water loop The cooling load side can connect to a chilled water loop
+      or a condenser water loop If the heating (or cooling) load side node names are left
+      empty, the air-to-water heat pump will only produce chilled water
+      (or hot water). Performance calculations Similar to the other AWHP objects (i.e. the
+      HeatPump:PlantLoop:EIR:Cooling and HeatPump:PlantLoop:EIR:Heating
+      with Condenser Type being AirSource), this object also
+      characterizes the heating/cooling capacity and electricity
+      consumption for different temperatures and part load ratios.
+      However, this object will have more than one group of such curves
+      to model air-to-water heat pumps with fixed-speed compressors and
+      inverter-driven compressors. Heating mode The heating capacity at speed level k is derived from the
+      nominal (rated) capacity and a normalized capacity function of
+      temperatures in Equation . C a p a c i t y h e a t i n g , k = C a p a c i t y h e a t i n g , r a t e d × C A P F T h e a t i n g , k ( T a m b , T l e a v i n g ) \begin{equation}
+      Capacity_{heating,k}=Capacity_{heating,rated} \times CAPFT_{heating,k}(T_{amb},T_{leaving})
+      \end{equation} (16.529) Where C a p a c i t y h e a t i n g , k Capacity_{heating,k} is the heating capacity at speed level k. C a p a c i t y h e a t i n g , r a t e d Capacity_{heating,rated} is the rated capacity for heating. T a m b T_{amb} is the ambient air temperature. T l e a v i n g T_{leaving} is the load side leaving water temperature C A P F T h e a t i n g , k CAPFT_{heating,k} is a normalized bivariate function characterizing the relationship
+      between capacity and two temperature inputs: the ambient air
+      temperature and the leaving water temperature. It is derived based
+      on manufacturing data. The heating electricity use of the heat pump is calculated
+      using the rated EIR, the EIR adjustment function, and the EIR part
+      load ratio adjustment curve, as is shown in equation . E l e c t r i c i t y h e a t i n g , k = E I R h e a t i n g , r a t e d × E I R F T h e a t i n g , k ( T a m b , T l e a v i n g ) × E I R P L R h e a t i n g , k ( P L R ) \begin{equation}
+
+      Electricity_{heating,k}=EIR_{heating,rated} \times EIRFT_{heating,k}(T_{amb}, T_{leaving}) \times EIRPLR_{heating,k}(PLR)
+      \end{equation} (16.530) E l e c t r i c i t y h e a t i n g , k Electricity_{heating,k} is the electricity usage for heating at speed level k. E I R h e a t i n g , r a t e d EIR_{heating,rated} is the rated heating energy input ratio. The E I R F T h e a t i n g , k ( . , . ) EIRFT_{heating,k}(., .) is a normalized bivariate function adjusting the EIR relative to
+      the given ambient temperature and leaving water temperature, at
+      speed level k. E I R P L R h e a t i n g , k ( . ) EIRPLR_{heating,k}(.) is a normalized univariate function adjusting the EIR based on the
+      part load ratio. Cooling Mode The cooling capacity at speed level k is derived from the
+      nominal (rated) capacity and a normalized capacity function of
+      temperatures in Equation . C a p a c i t y c o o l i n g , k = C a p a c i t y c o o l i n g , r a t e d × C A P F T c o o l i n g , k ( T a m b , T l e a v i n g ) \begin{equation}
+      Capacity_{cooling,k}=Capacity_{cooling,rated} \times CAPFT_{cooling,k}(T_{amb},T_{leaving})
+      \end{equation} (16.531) Where C a p a c i t y c o o l i n g , k Capacity_{cooling,k} is the cooling capacity at speed level k. C a p a c i t y c o o l i n g , r a t e d Capacity_{cooling,rated} is the rated capacity for cooling. T a m b T_{amb} is the ambient air temperature. T l e a v i n g T_{leaving} is the load side leaving water temperature C A P F T c o o l i n g , k CAPFT_{cooling,k} is a normalized bivariate function characterizing the relationship
+      between capacity and two temperature inputs: the ambient air
+      temperature and the leaving water temperature. It is derived based
+      on manufacturing data. The cooling electricity use of the heat pump is calculated
+      using the rated EIR, the EIR adjustment function, and the EIR part
+      load ratio adjustment curve, as is shown in equation 16.532 . E l e c t r i c i t y c o o l i n g , k = E I R c o o l i n g , r a t e d × E I R F T c o o l i n g , k ( T a m b , T l e a v i n g ) × E I R P L R c o o l i n g , k ( P L R ) \begin{equation}
+
+      Electricity_{cooling,k}=EIR_{cooling,rated} \times EIRFT_{cooling,k}(T_{amb}, T_{leaving}) \times EIRPLR_{cooling,k}(PLR)
+      \end{equation} (16.532) E l e c t r i c i t y c o o l i n g , k Electricity_{cooling,k} is the electricity usage for cooling at speed level k. E I R c o o l i n g , r a t e d EIR_{cooling,rated} is the rated cooling energy input ratio. The E I R F T c o o l i n g , k ( . , . ) EIRFT_{cooling,k}(., .) is a normalized bivariate function adjusting the EIR relative to
+      the given ambient temperature and leaving water temperature, at
+      speed level k k . E I R P L R c o o l i n g , k ( . ) EIRPLR_{cooling,k}(.) is a normalized univariate function adjusting the EIR based on the
+      part load ratio. Defrost Defrost control As this heat pump object is performance-curve-based and does
+      not model refrigerant pressure, the object cannot model products
+      with refrigerant pressure as control targets. The defrost control of this object resembles the
+      HeatPump:PlantLoop:EIR:* object, with three options: Timed,
+      OnDemand, or TimedEmpirical. when Timed or OnDemand is selected, defrost power is
+      calculated as shown in the following equation. P o w e r d e f r o s t = E I R F T d e f r o s t ( C a p a c i t y h e a t i n g , r a t e d / 1.01667 ) × f r a c D e f r o s t T i m e \begin{equation}
+      Power_{defrost} = EIRFT_{defrost}(Capacity_{heating,rated}/1.01667) \times fracDefrostTime
+      \end{equation} (16.533) P o w e r d e f r o s t Power_{defrost} is the power usage of defrosting. E I R F d e f r o s t ( . ) EIRF_{defrost}(.) is from user input “Defrost Energy Input Ratio Function of
+      Temperature Curve” if it’s present or 1/COP if it’s blank. C a p a c i t y h e a t i n g , r a t e d Capacity_{heating,rated} is the “Rated Heating Capacity” input field. “Timed” and
+      “OnDemand” differ in the fractional Defrost Time
+      (fracDefrostTime). For “Timed”, it gets value from the user input
+      “Heat Pump Defrost Time Period Fraction”. For “OnDemand”, it is
+      calculated as f r a c D e f r o s t T i m e = 1.0 / ( 1.0 + 0.01446 / O u t d o o r C o i l d w ) \begin{equation}
+      fracDefrostTime =1.0 / (1.0 + 0.01446 / OutdoorCoildw)
+      \end{equation} (16.534) Where O u t d o o r C o i l d w = H u m i d i t y R a t i o o u t d o o r − H u m i d i t y R a t i o s a t u r a t e d \begin{equation}
+      OutdoorCoildw=HumidityRatio_{outdoor}-HumidityRatio_{saturated}
+      \end{equation} (16.535) H u m i d i t y R a t i o s a t u r a t e d HumidityRatio_{saturated} is calculated using outdoor temperature and outdoor air barometric
+      pressure when TimedEmpirical is selected, defrost power is
+      calculated as shown in equation P o w e r d e f r o s t = C a p a c i t y h e a t i n g , r a t e d C O P h e a t i n g , r e f × d e f r o s t H e a t E n e r g y F r a c t i o n × D e f r o s t C y c l e s \begin{equation}
+      Power_{defrost}=\frac{Capacity_{heating,rated}}{COP_{heating,ref}} \times
+      defrostHeatEnergyFraction \times DefrostCycles
+      \end{equation} (16.536) where d e f r o s t H e a t E n e r g y F r a c t i o n defrostHeatEnergyFraction is based on the user input curve “Timed Empirical Defrost Heat
+      Input Energy Fraction Curve”. C O P h e a t i n g , r e f COP_{heating,ref} is the reference heating COP. The D e f r o s t C y c l e s DefrostCycles is the number of defrost cycles in an hour. It is determined by
+      the “Timed Empirical Defrost Frequency Curve”, part load ratio,
+      and cycling ratio. The following actuators are added to enable more flexible
+      custom defrost controls: heat pump operation mode compressor suction temperature entering water temperature, enteringTemp leaving water temperature, leavingTemp Note that if the time duration since start or end of defrost is
+      needed, a defrost timer globar variable can be used to record time
+      since start or end of defrost. EnergyManagementSystem:GlobalVariable,
+    DefrostTimer; !- Tracks the cumulative time since defrost started or stopped (seconds) Temperature and Flow
+      Calculations Heating Mode Initially, the flow rate of the air and water side will both be
+      rated flow rate. The air side inlet temperature will be the
+      ambient outdoor temperature. The waterside outlet temperature will
+      be assumed to reach the leaving water temperature setpoint. With this information, for a series of fixed-speed compressors,
+      the available capacity for the kth fixed-speed compressor can be
+      calculated using eq. C a p a c i t y a v a i l , h e a t i n g , k = C a p a c i t y h e a t i n g , r a t e d × C A P F T h e a t i n g , k ( T a i r , i n , T l e a v i n g W a t e r S e t p o i n t ) \begin{equation}
+      Capacity_{avail,heating,k}=Capacity_{heating,rated} \times CAPFT_{heating,k}(T_{air,in},T_{leavingWaterSetpoint})
+      \end{equation} (16.537) The appropriate number of fixed-speed compressors, a, is
+      selected such that ∑ i = 1 a C a p a c i t y a v a i l , h e a t i n g , i < D e m a n d p l a n t L o o p < ∑ i = 1 a + 1 C a p a c i t y a v a i l , h e a t i n g , i \begin{equation}
+      \sum_{i=1}^{a} Capacity_{avail,heating,i} < Demand_{plantLoop} < \sum_{i=1}^{a+1} Capacity_{avail,heating,i}
+      \end{equation} (16.538) The cycling ratio of the (a+1)th compressor will be
+      calculated C y c l i n g R a t i o = D e m a n d p l a n t L o o p − ∑ i = 1 a C a p a c i t y a v a i l , h e a t i n g , i C a p a c i t y a v a i l , h e a t i n g , a + 1 \begin{equation}
+      CyclingRatio = \frac{Demand_{plantLoop} - \sum_{i=1}^{a} Capacity_{avail,heating,i}}{Capacity_{avail,heating,a+1}}
+      \end{equation} (16.539) When the plant loop demand does not exceed the available
+      capacity, load-side actual heat transfer just equals the plant
+      loop demand. Q l o a d = D e m a n d p l a n t L o o p \begin{equation}
+      Q_{load} = Demand_{plantLoop}
+      \end{equation} (16.540) When the plant loop demand is larger than the available
+      capacity, then the actual load transfer is Q l o a d = ∑ i = 1 m a x S p e e d L e v e l C a p a c i t y a v a i l , h e a t i n g , i \begin{equation}
+      Q_{load} = \sum_{i=1}^{maxSpeedLevel} Capacity_{avail,heating,i}
+      \end{equation} (16.541) where maxSpeedLevel is the maximum number of compressor speed
+      levels. The heating mode load-side (water) outlet temperature will
+      be T o u t , l o a d = T i n , l o a d + Q l o a d m l o a d C l o a d \begin{equation}
+      T_{out,load} = T_{in,load} + \frac{Q_{load}}{m_{load}C_{load}}
+      \end{equation} (16.542) Where T i n , l o a d T_{in,load} is the load side inlet temperature. m l o a d m_{load} is the load side mass flow rate. C l o a d C_{load} is the load-side specific heat. Power is evaluated using equation 16.530 . In heating mode, source-side heat transfer will be Q s o u r c e = Q l o a d − P o w e r \begin{equation}
+      Q_{source} = Q_{load} - Power
+      \end{equation} (16.543) The source-side outlet temperature is thus T o u t , s o u r c e = T i n , s o u r c e − Q s o u r c e m s o u r c e C s o u r c e \begin{equation}
+      T_{out,source} = T_{in,source} - \frac{Q_{source}}{m_{source}C_{source}}
+      \end{equation} (16.544) For a variable-speed compressor, the available capacity for the
+      speed level k can be calculated using eq as well. The appropriate
+      compressor speed is calculated by interpolation between C a p a c i t y a v a i l , h e a t i n g , a Capacity_{avail,heating,a} and C a p a c i t y a v a i l , h e a t i n g , a + 1 Capacity_{avail,heating,a+1} such that C a p a c i t y a v a i l , h e a t i n g , a < D e m a n d p l a n t L o o p < C a p a c i t y a v a i l , h e a t i n g , a + 1 Capacity_{avail,heating,a} <
+      Demand_{plantLoop} < Capacity_{avail,heating,a+1} .
+      When the plant loop demand is larger than the available capacity,
+      then the actual load transfer is Q l o a d = C a p a c i t y a v a i l , h e a t i n g , m a x S p e e d L e v e l . \begin{equation}
+      Q_{load} = Capacity_{avail,heating,maxSpeedLevel} .
+      \end{equation} (16.545) The other calculations are the same as the fixed-speed
+      compressors. Cooling mode The available cooling capacity at speed-level k can be
+      calculated using eq . C a p a c i t y a v a i l , c o o l i n g , k = C a p a c i t y c o o l i n g , r a t e d × C A P F T c o o l i n g , k ( T a i r , i n , T l e a v i n g W a t e r S e t p o i n t ) \begin{equation}
+      Capacity_{avail,cooling,k} = Capacity_{cooling,rated} \times CAPFT_{cooling,k}(T_{air,in},T_{leavingWaterSetpoint})
+      \end{equation} (16.546) The appropriate number of fixed-speed compressors, a, is
+      selected such that ∑ i = 1 a C a p a c i t y a v a i l , c o o l i n g , i < D e m a n d p l a n t L o o p < ∑ i = 1 a + 1 C a p a c i t y a v a i l , c o o l i n g , i \begin{equation}
+      \sum_{i=1}^{a} Capacity_{avail,cooling,i} < Demand_{plantLoop} < \sum_{i=1}^{a+1} Capacity_{avail,cooling,i}
+      \end{equation} (16.547) The cycling ratio of the (a+1)th stage compressor will be
+      calculated C y c l i n g R a t i o = D e m a n d p l a n t L o o p − ∑ i = 1 a C a p a c i t y a v a i l , c o o l i n g , i C a p a c i t y a v a i l , c o o l i n g , a + 1 \begin{equation}
+      CyclingRatio = \frac{Demand_{plantLoop} - \sum_{i=1}^{a} Capacity_{avail,cooling,i}}{Capacity_{avail,cooling,a+1}}
+      \end{equation} (16.548) When the plant loop demand does not exceed the available
+      capacity, load-side actual heat transfer just equals the plant
+      loop demand. Q l o a d = D e m a n d p l a n t L o o p \begin{equation}
+      Q_{load} = Demand_{plantLoop}
+      \end{equation} (16.549) When the plant loop demand is larger than the available
+      capacity, then the actual load transfer is Q l o a d = ∑ i = 1 m a x S p e e d L e v e l C a p a c i t y a v a i l , c o o l i n g , i \begin{equation}
+      Q_{load} = \sum_{i=1}^{maxSpeedLevel} Capacity_{avail,cooling,i}
+      \end{equation} (16.550) The cooling mode load-side (water) outlet temperature will
+      be T o u t , l o a d = T i n , l o a d − Q l o a d m l o a d C l o a d \begin{equation}
+      T_{out,load} = T_{in,load} - \frac{Q_{load}}{m_{load}C_{load}}
+      \end{equation} (16.551) Where T i n , l o a d T_{in,load} is the load side inlet temperature. m l o a d m_{load} is the load side mass flow rate. C l o a d C_{load} is the load-side specific heat. Power is evaluated using equation 16.532 . In cooling mode, source-side heat transfer will be Q s o u r c e = Q l o a d + P o w e r \begin{equation}
+      Q_{source} = Q_{load} + Power
+      \end{equation} (16.552) The source-side outlet temperature is thus o u t , s o u r c e = T i n , s o u r c e + Q s o u r c e m s o u r c e C s o u r c e \begin{equation}
+      _{out,source} = T_{in,source} + \frac{Q_{source}}{m_{source}C_{source}}
+      \end{equation} (16.553) Crankcase
+      heater When the outdoor air dry-bulb temperature is below the value
+      specified in the input field Maximum Outdoor Dry-bulb Temperature
+      for Crankcase Heater Operation, the crankcase heater is enabled
+      during the time that the compressor is not running. The capacity
+      is specified in the input field “crankcase heater capacity”. If
+      “Crankcase Heater Capacity Function of Temperature Curve Name” is
+      defined, a multiplier is applied to adjust the crankcase heater
+      capacity based on the ambient temperature condition. Air System Compound Component Groups Variable Refrigerant Flow Heat Pumps EnergyPlus is funded by the U.S. Department of Energy and is developed by LBNL, ORNL, NLR, PNNL, and other academic and private contributors. EnergyPlus License.

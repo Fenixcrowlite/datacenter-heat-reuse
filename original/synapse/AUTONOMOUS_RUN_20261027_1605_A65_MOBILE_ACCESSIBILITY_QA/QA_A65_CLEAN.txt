@@ -1,0 +1,13 @@
+test_expected_rows (test_a65.TestA65.test_expected_rows) ... ok
+test_mobile_browser_regression (test_a65.TestA65.test_mobile_browser_regression) ... ok
+test_no_mutation_source (test_a65.TestA65.test_no_mutation_source) ... ok
+test_no_remote_assets (test_a65.TestA65.test_no_remote_assets) ... ok
+test_original_probe_proves_defect (test_a65.TestA65.test_original_probe_proves_defect) ... ok
+test_reject_missing_table (test_a65.TestA65.test_reject_missing_table) ... ok
+test_reject_wrong_cell_count (test_a65.TestA65.test_reject_wrong_cell_count) ... ok
+test_same_numeric_content (test_a65.TestA65.test_same_numeric_content) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in <variable>s
+
+OK

@@ -1,0 +1,71 @@
+{
+  "version": "v20",
+  "source_id": 1,
+  "source_sha256": "f70dc2d65045dc6e23ebc069ebdfcdca566b4134b01f84a08e916b46bc92f651",
+  "doi_from_pdf": "10.1016/j.energy.2017.08.078",
+  "scope": "PARTIAL primary PDF text verification, NOT full paper signoff or independent physical validation",
+  "checks": [
+    {
+      "test": "source_sha256",
+      "pass": true,
+      "location": "source file"
+    },
+    {
+      "test": "page_count",
+      "pass": true,
+      "location": "PDF page count"
+    },
+    {
+      "test": "doi",
+      "pass": true,
+      "location": "PDF p1"
+    },
+    {
+      "test": "ere_terms",
+      "pass": true,
+      "location": "PDF p4 Eq1"
+    },
+    {
+      "test": "hourly_energypro",
+      "pass": true,
+      "location": "PDF p6 section4.1"
+    },
+    {
+      "test": "direct_feed_assumption",
+      "pass": true,
+      "location": "PDF p6 section4.1"
+    },
+    {
+      "test": "storage_excluded",
+      "pass": true,
+      "location": "PDF p7 section4.2"
+    },
+    {
+      "test": "fixed_DH_temperatures",
+      "pass": true,
+      "location": "PDF p7 section4.2"
+    },
+    {
+      "test": "table2_capacities",
+      "pass": true,
+      "location": "PDF p8 Table2"
+    },
+    {
+      "test": "table4_savings",
+      "pass": true,
+      "location": "PDF p9 Table4"
+    },
+    {
+      "test": "table4_costs",
+      "pass": true,
+      "location": "PDF p9 Table4"
+    }
+  ],
+  "page_renders": [
+    "source01_pdf_p04.png",
+    "source01_pdf_p06.png",
+    "source01_pdf_p07.png",
+    "source01_pdf_p08.png",
+    "source01_pdf_p09.png"
+  ]
+}

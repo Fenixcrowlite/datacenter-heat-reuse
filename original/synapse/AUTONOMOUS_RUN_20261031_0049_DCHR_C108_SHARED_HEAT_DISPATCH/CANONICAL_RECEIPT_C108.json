@@ -1,0 +1,7 @@
+{
+  "actor": "chatgpt-dchr-c108-shared-source-20261031-0049",
+  "event_id": 1468,
+  "evidence_sha256": "e0ce0d6927f98dc3326684ab258185fcdc9a0a9ebc32247ad9f9236af94af785",
+  "manifest_sha256": "64ddc5fe27da8d47fbd9c2290adcf2a5c5b1e31744dfd005510b6be3fe0c1428",
+  "task_id": "scc-2aab24704c2bd0"
+}

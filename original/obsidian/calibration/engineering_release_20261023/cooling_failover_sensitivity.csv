@@ -1,0 +1,11 @@
+﻿cooling_shortage_MW,full_failover_delay_s,shortage_energy_kWh,buffer_5K_m3,buffer_2K_m3,contingency
+2,10,5.556,0.959,2.398,THERMAL only; storage does not preserve flow without separate UPS pumps
+2,30,16.667,2.878,7.195,THERMAL only; storage does not preserve flow without separate UPS pumps
+2,60,33.333,5.756,14.39,THERMAL only; storage does not preserve flow without separate UPS pumps
+2,300,166.667,28.781,71.952,THERMAL only; storage does not preserve flow without separate UPS pumps
+2,900,500.0,86.342,215.856,THERMAL only; storage does not preserve flow without separate UPS pumps
+10,10,27.778,4.797,11.992,THERMAL only; storage does not preserve flow without separate UPS pumps
+10,30,83.333,14.39,35.976,THERMAL only; storage does not preserve flow without separate UPS pumps
+10,60,166.667,28.781,71.952,THERMAL only; storage does not preserve flow without separate UPS pumps
+10,300,833.333,143.904,359.759,THERMAL only; storage does not preserve flow without separate UPS pumps
+10,900,2500.0,431.711,1079.278,THERMAL only; storage does not preserve flow without separate UPS pumps

@@ -1,0 +1,13 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1216,
+  "scope": "isolated_DCHR_A37_v07_N1_IT_thermal_inertia_sensitivity",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1025_A37_DCHR_IT_THERMAL_PROTECTION",
+  "evidence_sha256": "3708f3e723439ab25f76767e0845bfa6edfe3af0481d56b55cfc94648b7eaa7a",
+  "manifest_sha256": "9f76427b6042088397b573ea4f5a0ceab7562771171a7acbfab708c4ddb313af",
+  "qa": "16/16 unit PASS; 8064 trace rows, 104832 independent Decimal checks PASS; 4 A36B energy crosschecks",
+  "key_finding": "v07 thermal law: backup-only no-shed max 61.46C; hypothetical 40% IT shedding with 15kW/step ramp-up max 33.17C; neither reject available still max 93.86C, all 576 post-fault intervals alarm.",
+  "decision": "N1_THERMAL_RISK_SYNTHETIC_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "limits": "synthetic capacities and curtailment assumptions, no actual IT service model, TES/HP feedback, equipment safety, or real hardware control",
+  "next_step": "Owner to integrate thermal law, real shedding response, TES SOC and REJECT A/B faults into isolated MATLAB/Stateflow; obtain equipment ratings and field validation."
+}

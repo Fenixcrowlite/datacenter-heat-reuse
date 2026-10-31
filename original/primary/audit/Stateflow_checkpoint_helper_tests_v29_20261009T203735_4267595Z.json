@@ -1,0 +1,182 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:37:35.616405+00:00",
+  "review_type": "independent_synthetic_checkpoint_helper_mutation_tests",
+  "scope": "Independent synthetic mutation probes for v29 checkpoint closure helpers.\n\nThese tests verify bookkeeping and receipt rejection only. They never execute\nMATLAB/Stateflow, alter a saved model or count as actual model evidence.\nSynthetic marker fixtures are explicitly labelled and preserved in logs.\n",
+  "evidence_class": "synthetic_reviewer_self_test",
+  "synthetic_only": true,
+  "dynamic_model_execution_this_review": false,
+  "primary_text_verified_this_review": false,
+  "physical_validation": false,
+  "finalizer_sha256": "8515504f3c799cc8166277dd2b04060195c5ec7e5340e007a94a54347365162a",
+  "test_source_sha256": "3c4b231c75a77c1f216c347c8afc5ae3941da75758c6f9331e302193565e365a",
+  "checks": 31,
+  "passed": 31,
+  "failed": 0,
+  "assertions": [
+    {
+      "name": "accept_clean_three_way_evidence_classification",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "static_and_synthetic_counts_excluded_from_actual_evidence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_contradictory_total",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'passed')"
+    },
+    {
+      "name": "reject_contradictory_category_total",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'actual_evidence', 'passed')"
+    },
+    {
+      "name": "reject_contradictory_section_total",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_unknown_evidence_class",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'integrity', 'unclassified')"
+    },
+    {
+      "name": "reject_inconsistent_synthetic_flag",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_reconciled_static_to_actual_inflation",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'specification', 'actual_evidence', 'static_specification')"
+    },
+    {
+      "name": "reject_reconciled_synthetic_to_actual_inflation",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'synthetic_reviewer_self_test', 'actual_evidence', 'synthetic_reviewer_self_test')"
+    },
+    {
+      "name": "reject_negative_counts",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_fractional_counts",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_missing_actual_evidence_section",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', {'specification', 'integrity', 'saved_model_structure', 'synthetic_reviewer_self_test', 'post_fault_clean_restart'})"
+    },
+    {
+      "name": "reject_boolean_counts",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_empty_required_QA_section",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'temporal_evidence', 'Empty QA section')"
+    },
+    {
+      "name": "reject_unknown_injected_actual_section",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', {'specification', 'integrity', 'saved_model_structure', 'temporal_evidence', 'unreviewed_extra', 'synthetic_reviewer_self_test', 'post_fault_clean_restart'})"
+    },
+    {
+      "name": "accept_actual_QA_without_optional_synthetic_self_test",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "accept_monitor_required_actual_artifact_schema",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_omitted_monitor_runtime_artifact_bindings",
+      "passed": true,
+      "detail": "AssertionError: ('monitor', {'specification', 'saved_model_structure', 'integrity', 'restored_trace', 'fault_rejections', 'baseline_trace'})"
+    },
+    {
+      "name": "accept_consistent_explicitly_synthetic_receipt_fixture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_duplicate_harness_receipt",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_missing_exit_observation",
+      "passed": true,
+      "detail": "KeyError: 'exit_observed'"
+    },
+    {
+      "name": "reject_false_exit_observation",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_nonzero_exit",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_harness_marker",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_result_path_in_marker",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_duplicate_log_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_duplicate_console_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_log_hash",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_console_hash",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_marker_missing_from_log_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_marker_missing_from_console_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    }
+  ],
+  "preserved_synthetic_fixture_logs": [
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203735_616405Z_TEMPORAL_log.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203735_616405Z_TEMPORAL_console.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203735_616405Z_MONITOR_log.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203735_616405Z_MONITOR_console.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203735_616405Z_log_file_missing_marker.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203735_616405Z_console_file_missing_marker.log"
+  ],
+  "actual_model_evidence_checks": 0
+}

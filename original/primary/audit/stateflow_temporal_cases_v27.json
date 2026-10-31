@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "version": "0.27",
+  "scope": "Independent finite invalid-input timing and sampled-boundary tests on the preserved actual v24 Stateflow model; implementation QA only",
+  "model_file": "matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+  "model_sha256": "1f1c826f0f61d04bea58c2ab39d607268ac273bad9564e69bec89e361c461389",
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "baseline": {
+    "x": [6, 35, 70, 5],
+    "E": 1,
+    "p": [1, 10, 3, 4, 0.9, 0.8, 0.01, 2],
+    "h": [8, 0.45, 1.2, 8, 0, 1, 4, 0, 0],
+    "model_dt": 1
+  },
+  "sampling_contract": {
+    "units": "hours for all times; MW for powers; MWh for energies",
+    "parameter_interval_override": "For every case set model_dt=dt_h and p(1)=dt_h. All remaining baseline values are unchanged.",
+    "input_schedule": "Use baseline x at timestamp 0, mutate only target_index at invalid_input_time_h, then hold that invalid row. The invalid timestamp remains present even when later than stop_time_h. Do not round input timestamps onto solver ticks.",
+    "first_sampled_invalid_time": "ceil(invalid_input_time_h/dt_h)*dt_h for the strictly positive finite timestamps in this specification",
+    "accepted_trace": "Only validated chart outputs at n*dt_h strictly before runtime rejection; completed controls include a tick exactly at StopTime.",
+    "diagnostic_requirement": "Runtime rejection must have SimulationPhase=Execution, diagnostic SimulationTime equal expected_failure_time_h, the expected outer physical-domain identifier and independently specified runtime_message_fragment, and an accepted valid prefix. Compilation or input ingestion rejection is insufficient.",
+    "inner_identifier_scope": "R2026a actual sim diagnostics flatten nested host MException causes in captured and thrown modes. expected_inner_identifier is required only for separately labelled direct host-adapter component evidence; it does not prove simulated inner-cause preservation or model failure timing.",
+    "nonfinite_limit": "NaN/Inf ingestion can fail before runtime; these cases deliberately use finite invalid values and make no claim about delayed nonfinite failure timing."
+  },
+  "cases": [
+    {"id":"source_tick1_dt025", "dt_h":0.25, "invalid_input_time_h":0.25, "stop_time_h":0.75, "target_index":1, "invalid_value":-1, "expected_outcome":"runtime_rejection", "expected_failure_time_h":0.25, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:InvalidInput", "runtime_message_fragment":"q_source_MW is outside its physical domain.", "expected_valid_times_h":[0]},
+    {"id":"demand_tick1_dt05", "dt_h":0.5, "invalid_input_time_h":0.5, "stop_time_h":1.5, "target_index":4, "invalid_value":-1, "expected_outcome":"runtime_rejection", "expected_failure_time_h":0.5, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v22:InputDomain", "runtime_message_fragment":"Demand/backup must be nonnegative", "expected_valid_times_h":[0]},
+    {"id":"zero_lift_tick1_dt1", "dt_h":1, "invalid_input_time_h":1, "stop_time_h":3, "target_index":3, "invalid_value":35, "expected_outcome":"runtime_rejection", "expected_failure_time_h":1, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:TemperatureLift", "runtime_message_fragment":"Heating mode requires sink_C > source_C.", "expected_valid_times_h":[0]},
+    {"id":"negative_lift_tick1_dt2", "dt_h":2, "invalid_input_time_h":2, "stop_time_h":6, "target_index":3, "invalid_value":30, "expected_outcome":"runtime_rejection", "expected_failure_time_h":2, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:TemperatureLift", "runtime_message_fragment":"Heating mode requires sink_C > source_C.", "expected_valid_times_h":[0]},
+    {"id":"source_tick3_dt025", "dt_h":0.25, "invalid_input_time_h":0.75, "stop_time_h":1.25, "target_index":1, "invalid_value":-1, "expected_outcome":"runtime_rejection", "expected_failure_time_h":0.75, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:InvalidInput", "runtime_message_fragment":"q_source_MW is outside its physical domain.", "expected_valid_times_h":[0,0.25,0.5]},
+    {"id":"demand_tick3_dt05", "dt_h":0.5, "invalid_input_time_h":1.5, "stop_time_h":2.5, "target_index":4, "invalid_value":-1, "expected_outcome":"runtime_rejection", "expected_failure_time_h":1.5, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v22:InputDomain", "runtime_message_fragment":"Demand/backup must be nonnegative", "expected_valid_times_h":[0,0.5,1]},
+    {"id":"zero_lift_tick3_dt1", "dt_h":1, "invalid_input_time_h":3, "stop_time_h":5, "target_index":3, "invalid_value":35, "expected_outcome":"runtime_rejection", "expected_failure_time_h":3, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:TemperatureLift", "runtime_message_fragment":"Heating mode requires sink_C > source_C.", "expected_valid_times_h":[0,1,2]},
+    {"id":"absolute_zero_tick3_dt2", "dt_h":2, "invalid_input_time_h":6, "stop_time_h":10, "target_index":2, "invalid_value":-273.15, "expected_outcome":"runtime_rejection", "expected_failure_time_h":6, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:InvalidInput", "runtime_message_fragment":"source_C is outside its physical domain.", "expected_valid_times_h":[0,2,4]},
+    {"id":"source_before_boundary_dt1", "dt_h":1, "invalid_input_time_h":0.75, "stop_time_h":3, "target_index":1, "invalid_value":-1, "expected_outcome":"runtime_rejection", "expected_failure_time_h":1, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v14:InvalidInput", "runtime_message_fragment":"q_source_MW is outside its physical domain.", "expected_valid_times_h":[0]},
+    {"id":"demand_after_boundary_dt05", "dt_h":0.5, "invalid_input_time_h":0.625, "stop_time_h":2, "target_index":4, "invalid_value":-1, "expected_outcome":"runtime_rejection", "expected_failure_time_h":1, "expected_identifier":"DCHR:v24:PhysicalDomain", "expected_inner_identifier":"DCHR:v22:InputDomain", "runtime_message_fragment":"Demand/backup must be nonnegative", "expected_valid_times_h":[0,0.5]},
+    {"id":"future_invalid_stop_zero_dt1", "dt_h":1, "invalid_input_time_h":1, "stop_time_h":0, "target_index":1, "invalid_value":-1, "expected_outcome":"complete", "expected_failure_time_h":null, "expected_identifier":"", "expected_inner_identifier":"", "expected_valid_times_h":[0]},
+    {"id":"future_invalid_after_stop_dt025", "dt_h":0.25, "invalid_input_time_h":0.5, "stop_time_h":0.25, "target_index":4, "invalid_value":-1, "expected_outcome":"complete", "expected_failure_time_h":null, "expected_identifier":"", "expected_inner_identifier":"", "expected_valid_times_h":[0,0.25]}
+  ]
+}

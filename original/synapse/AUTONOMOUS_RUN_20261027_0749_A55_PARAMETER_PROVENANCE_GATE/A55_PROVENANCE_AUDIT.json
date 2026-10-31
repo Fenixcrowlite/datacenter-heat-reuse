@@ -1,0 +1,52 @@
+{
+  "status": "A55_PROVENANCE_GATE_IMPLEMENTED_PHYSICAL_CALIBRATION_BLOCKED",
+  "A54_sha256": "b113a3d091085d118942f5ac0dda1e3d94963e9f7710d78275207308be544575",
+  "parameter_registry_sha256": "e571b056d3616a3bf11d4bc2d2139f84cb3426c3039f61d881a89bb45beb40f2",
+  "A54_parameter_provenance": "D: engineering stress-test assumptions",
+  "A54_ranges": {
+    "heat_capacity_J_per_K": [
+      6000000.0,
+      8000000.0,
+      10000000.0
+    ],
+    "residual_fraction": [
+      0.06,
+      0.12,
+      0.24
+    ],
+    "compressor_tau_s": [
+      900.0,
+      1800.0
+    ]
+  },
+  "water_only_equivalent_m3": [
+    1.4376,
+    1.9168,
+    2.396
+  ],
+  "water_equivalence_assumption": "rho=998 kg/m3, cp=4182 J/(kg K), ~20 C; excludes metal, glycol and spatial effects",
+  "required_primary_evidence": [
+    "selected equipment/loop asset ID and sensor calibration records",
+    "time-aligned UTC inlet/outlet temperatures, measured flow and heat balance",
+    "compressor command and measured thermal response during identified steps",
+    "measured post-trip heat flow and nominal heat flow over a documented window",
+    "vendor performance map, operating envelope and sensor uncertainty"
+  ],
+  "telemetry_schema": [
+    "timestamp_utc",
+    "asset_id",
+    "calibration_ref",
+    "T_C",
+    "Q_net_W",
+    "P_cmd_W",
+    "P_actual_W",
+    "trip_state",
+    "Q_residual_W",
+    "Q_nominal_W"
+  ],
+  "measurements_supplied": false,
+  "source_class_promoted": false,
+  "safe_operating_limits_certified": false,
+  "physical_release": false,
+  "next_step": "Obtain asset-specific calibrated telemetry and vendor datasheet; run calibrate() then independent review; only then re-run Stateflow uncertainty grid."
+}

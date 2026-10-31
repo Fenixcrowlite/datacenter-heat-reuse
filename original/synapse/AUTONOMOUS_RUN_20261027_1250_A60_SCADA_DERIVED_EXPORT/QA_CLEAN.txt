@@ -1,0 +1,20 @@
+test_bad_csv_row (test_a60.A60Tests.test_bad_csv_row) ... ok
+test_bad_number_rejected (test_a60.A60Tests.test_bad_number_rejected) ... ok
+test_duplicate_header_rejected (test_a60.A60Tests.test_duplicate_header_rejected) ... ok
+test_existing_destination_preserved (test_a60.A60Tests.test_existing_destination_preserved) ... ok
+test_insufficient_rows_rejected (test_a60.A60Tests.test_insufficient_rows_rejected) ... ok
+test_metric_tes_delta (test_a60.A60Tests.test_metric_tes_delta) ... ok
+test_missing_input (test_a60.A60Tests.test_missing_input) ... ok
+test_negative_time_rejected (test_a60.A60Tests.test_negative_time_rejected) ... ok
+test_nonfinite_rejected (test_a60.A60Tests.test_nonfinite_rejected) ... ok
+test_nonmonotonic_time_rejected (test_a60.A60Tests.test_nonmonotonic_time_rejected) ... ok
+test_schema_contract (test_a60.A60Tests.test_schema_contract) ... ok
+test_time_gap_rejected (test_a60.A60Tests.test_time_gap_rejected) ... ok
+test_unknown_schema_rejected (test_a60.A60Tests.test_unknown_schema_rejected) ... ok
+test_v08_export_real_transform (test_a60.A60Tests.test_v08_export_real_transform) ... ok
+test_v09_export (test_a60.A60Tests.test_v09_export) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in <variable>s
+
+OK

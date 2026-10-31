@@ -1,0 +1,56 @@
+{
+  "accounting": "Source extracted = pool heat - pool HP electricity + air heat - air HP electricity. C106 HVAC electricity is counted once. Pool latent evaporation remains in water loss; air external heating is residual C106 demand. Pump electricity charged once when any source is used.",
+  "assumptions": {
+    "air_HP_COP": 3.0,
+    "air_HP_cap_MW": 0.1,
+    "air_scenarios": [
+      "RHout40_HRV50",
+      "RHout70_HRV50",
+      "RHout90_HRV50"
+    ],
+    "backup_heat_MW": 0,
+    "policies": [
+      "water_first",
+      "air_first"
+    ],
+    "pool_HP_COP": 2.2,
+    "pool_HP_cap_MW": 0.3,
+    "pool_HP_electric_cap_MW": 0.075,
+    "source_configurations": {
+      "ample": [
+        38.0,
+        2.0,
+        10.0
+      ],
+      "constrained": [
+        35.0,
+        0.5,
+        2.0
+      ]
+    }
+  },
+  "field_validated": false,
+  "hourly_sha256": "7b243871e1ab13abc4c35e6ee8ae9bf85950bc546adf39c5f5383f1d54ac24d4",
+  "limitations": [
+    "C106 air loads assume fixed pool temperature 28 C, so air humidity is not dynamically recoupled to water temperature.",
+    "Both heat pumps share a hypothetical source-side UA/NTU capacity; no piping topology or return temperature recalculation.",
+    "COPs, weather, UA, temperatures, flow and air loads are assumed, not manufacturer or measured values.",
+    "No air heat backup; unmet air heat is a service failure, not free energy.",
+    "No vendor frost/defrost curves, measured weather or primary-source signoffs.",
+    "This is not a validated integrated MATLAB/Simulink model."
+  ],
+  "rows": 105120,
+  "scenarios": 12,
+  "schema": "C108_SHARED_SOURCE_ALLOCATION_V1",
+  "scope": "Independent allocation sidecar: C96 UA/NTU finite source cap shared by two assumed heat pumps. Air demand and baseline HVAC electric come from C106; pool losses recomputed at dynamic pool temperature.",
+  "selftests": 12,
+  "source_C96_script_sha256": "c084e706fc79c635856df6ba6223c1fed1cb9b8c7c72c5aba0e67ae38b8700d9",
+  "source_pins": {
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1649_DCHR_C93_POOL_UNCERTAINTY_SWEEP\\c93_uncertainty_sweep.py": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2348_DCHR_C106_HRV_FROST_BYPASS\\C106_BYPASS_HOURLY.csv.gz": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "e4ce4ceb7fe7d58ee206c2e5de1d5bdbef0f8b7019c099aec78f503eeda00a26",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "isolated_A39_real_MATLAB_R2026a_12x672_numerical_acceptance",
+  "status": "VERIFIED_MATLAB_NUMERICAL_ONLY",
+  "matlab_comparisons": 80640,
+  "max_abs_difference": 2.9103830456733704e-11,
+  "python_regression": "10/10 PASS",
+  "source_a38_step_sha256": "a1a593c4764e2e05d0ffa6f1289f2caa4b14f7b37455b61f9b2c8e50d5944f1a",
+  "source_a38_acceptance_sha256": "e63e298f49c131df16194b2ccdc8bd76f3cf2ab30b5b57a39cb871e92ea358a6",
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "source_a36_sha256": "4fefcbd8bffdbedecf1894a8cfecab4ce052d2252e8c669b95394c5aa9fd99a1",
+  "matlab_result_sha256": "449ce63c1bf12d42cd6895a9a6e001a3ca99a4b7100a11bf6da24f2084f9356a",
+  "stdout_sha256": "59a6e5f693994f73439bf1c51e2272d0571838d6ea737a4cab0028f9c0180212",
+  "matlab_pid_from_launch_file": 18752,
+  "result_file_mtime_utc": "2026-10-26T14:57:47.978562+00:00",
+  "note": "MATLAB output executed_at string has *** timezone-format placeholder; use file mtime; mathematical results validated independently",
+  "stateflow_executed": false,
+  "physical_release_allowed": false,
+  "next_step": "Build isolated Stateflow controller with TES SOC, REJECT A/B N-1 and IT shedding, test transition guards and 672-step parity; no hardware release"
+}

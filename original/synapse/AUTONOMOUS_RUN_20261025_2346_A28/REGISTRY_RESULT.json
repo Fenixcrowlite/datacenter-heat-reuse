@@ -1,0 +1,15 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1170,
+  "action": "CREATED_EVENT",
+  "scope": "isolated_A28_field_calibration_residual_covariance_readiness_gate",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261025_2346_A28",
+  "evidence_sha256": "2bfec2d9a2330aeea1edf6b1afb535765db77417e4425267fa3c63863835c09b",
+  "source_code_sha256": "5ae7a0b35857a934827f9a875ad44d7c99b16efe96eb372e5afae272241ad499",
+  "manifest_sha256": "2259513d0188d48af83919d0665495be5827442821ac8249b5126e332f8551e2",
+  "qa": "23/23 unit tests PASS, 16 independent checks PASS, py_compile PASS, 32 synthetic paired readings",
+  "finding": "Operational covariance cannot identify sensor-error covariance; new fail-closed intake requires paired reference readings and certificate hashes, separates residual bias from variability",
+  "decision": "SYNTHETIC_ONLY_NOT_FIELD_VERIFIED; release_allowed=false",
+  "limits": "Only synthetic fixture; certificate file SHA is not issuer authentication; no field measurements, production edits or SCADA control",
+  "next_step": "Obtain traceable matched field reference measurements, independently authenticate calibration, evaluate holdout heat-meter agreement; owner-review A27 PSD integration"
+}

@@ -1,0 +1,759 @@
+{
+  "version": "v25",
+  "source_id": 4,
+  "paper": "Hiltunen & Syri (2020), Energies 13(14), 3551",
+  "doi": "10.3390/en13143551",
+  "pdf_sha256": "e05f77bfe17ae2f11e7c1d3b3c4dfa283f2e16a2208e602bc5fa8edeb215359f",
+  "pdf_page_to_printed": {
+    "5": 4,
+    "7": 6,
+    "8": 7,
+    "9": 8
+  },
+  "kind": "partial agreement with accessible original, NOT paper replication",
+  "test_pass": 90,
+  "test_fail": 0,
+  "checks": [
+    {
+      "name": "publisher reprint has 22 PDF pages",
+      "passed": true,
+      "observed": 22,
+      "expected": 22,
+      "pdf_page": 1
+    },
+    {
+      "name": "DOI publisher cover",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 1
+    },
+    {
+      "name": "title publisher cover",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 1
+    },
+    {
+      "name": "Table2 temperature row 1",
+      "passed": true,
+      "observed": -20.0,
+      "expected": -20,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 1",
+      "passed": true,
+      "observed": 50.0,
+      "expected": 50,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 1",
+      "passed": true,
+      "observed": 35.0,
+      "expected": 35,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 1",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 2",
+      "passed": true,
+      "observed": -16.0,
+      "expected": -16,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 2",
+      "passed": true,
+      "observed": 50.0,
+      "expected": 50,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 2",
+      "passed": true,
+      "observed": 35.0,
+      "expected": 35,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 2",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 3",
+      "passed": true,
+      "observed": -12.0,
+      "expected": -12,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 3",
+      "passed": true,
+      "observed": 50.0,
+      "expected": 50,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 3",
+      "passed": true,
+      "observed": 35.0,
+      "expected": 35,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 3",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 4",
+      "passed": true,
+      "observed": -10.0,
+      "expected": -10,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 4",
+      "passed": true,
+      "observed": 50.0,
+      "expected": 50,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 4",
+      "passed": true,
+      "observed": 35.0,
+      "expected": 35,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 4",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 5",
+      "passed": true,
+      "observed": -8.0,
+      "expected": -8,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 5",
+      "passed": true,
+      "observed": 50.0,
+      "expected": 50,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 5",
+      "passed": true,
+      "observed": 35.0,
+      "expected": 35,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 5",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 6",
+      "passed": true,
+      "observed": -6.0,
+      "expected": -6,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 6",
+      "passed": true,
+      "observed": 45.0,
+      "expected": 45,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 6",
+      "passed": true,
+      "observed": 32.0,
+      "expected": 32,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 6",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 7",
+      "passed": true,
+      "observed": -4.0,
+      "expected": -4,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 7",
+      "passed": true,
+      "observed": 45.0,
+      "expected": 45,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 7",
+      "passed": true,
+      "observed": 32.0,
+      "expected": 32,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 7",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 8",
+      "passed": true,
+      "observed": -2.0,
+      "expected": -2,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 8",
+      "passed": true,
+      "observed": 40.0,
+      "expected": 40,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 8",
+      "passed": true,
+      "observed": 28.0,
+      "expected": 28,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 8",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 9",
+      "passed": true,
+      "observed": 0.0,
+      "expected": 0,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 9",
+      "passed": true,
+      "observed": 30.0,
+      "expected": 30,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 9",
+      "passed": true,
+      "observed": 21.0,
+      "expected": 21,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 9",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 10",
+      "passed": true,
+      "observed": 2.0,
+      "expected": 2,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 10",
+      "passed": true,
+      "observed": 30.0,
+      "expected": 30,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 10",
+      "passed": true,
+      "observed": 21.0,
+      "expected": 21,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 10",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 11",
+      "passed": true,
+      "observed": 4.0,
+      "expected": 4,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 11",
+      "passed": true,
+      "observed": 30.0,
+      "expected": 30,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 11",
+      "passed": true,
+      "observed": 21.0,
+      "expected": 21,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 11",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 12",
+      "passed": true,
+      "observed": 6.0,
+      "expected": 6,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 12",
+      "passed": true,
+      "observed": 25.0,
+      "expected": 25,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 12",
+      "passed": true,
+      "observed": 18.0,
+      "expected": 18,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 12",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 13",
+      "passed": true,
+      "observed": 8.0,
+      "expected": 8,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 13",
+      "passed": true,
+      "observed": 20.0,
+      "expected": 20,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 13",
+      "passed": true,
+      "observed": 14.0,
+      "expected": 14,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 13",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 14",
+      "passed": true,
+      "observed": 10.0,
+      "expected": 10,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 14",
+      "passed": true,
+      "observed": 20.0,
+      "expected": 20,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 14",
+      "passed": true,
+      "observed": 10.0,
+      "expected": 10,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 14",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 15",
+      "passed": true,
+      "observed": 12.0,
+      "expected": 12,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 15",
+      "passed": true,
+      "observed": 20.0,
+      "expected": 20,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 15",
+      "passed": true,
+      "observed": 10.0,
+      "expected": 10,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 15",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 16",
+      "passed": true,
+      "observed": 16.0,
+      "expected": 16,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 16",
+      "passed": true,
+      "observed": 20.0,
+      "expected": 20,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 16",
+      "passed": true,
+      "observed": 10.0,
+      "expected": 10,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 16",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 temperature row 17",
+      "passed": true,
+      "observed": 20.0,
+      "expected": 20,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply price row 17",
+      "passed": true,
+      "observed": 15.0,
+      "expected": 15,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return price row 17",
+      "passed": true,
+      "observed": 8.0,
+      "expected": 8,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply >= return row 17",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 exactly 17 rows in each column",
+      "passed": true,
+      "observed": [
+        17,
+        17,
+        17
+      ],
+      "expected": [
+        17,
+        17,
+        17
+      ],
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 supply nonincreasing vs outdoor temp",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Table2 return nonincreasing vs outdoor temp",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "Figure3 condenser 10 MW",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 7
+    },
+    {
+      "name": "Figure3 source 7.2 MW",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 7
+    },
+    {
+      "name": "Figure3 electricity 2.8 MW",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 7
+    },
+    {
+      "name": "Figure3 heat balance",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 7
+    },
+    {
+      "name": "Figure3 implied COP",
+      "passed": true,
+      "observed": 3.57142857,
+      "expected": 3.57142857,
+      "pdf_page": 7
+    },
+    {
+      "name": "WWHP design COP 3.7",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 8
+    },
+    {
+      "name": "hourly EnergyPRO time step",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 5
+    },
+    {
+      "name": "TES 20000 m3",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 9
+    },
+    {
+      "name": "TES 857.5 MWh",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 9
+    },
+    {
+      "name": "TES and network losses neglected",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 9
+    },
+    {
+      "name": "Table3 scenario A €/MWh",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 9
+    },
+    {
+      "name": "Table3 scenario B €/MWh",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 9
+    },
+    {
+      "name": "Table3 scenario C €/MWh",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": 9
+    },
+    {
+      "name": "exactly 31 distinct source IDs",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "pdf_page": null
+    },
+    {
+      "name": "trace DOI agrees with primary",
+      "passed": true,
+      "observed": "10.3390/en13143551",
+      "expected": "10.3390/en13143551",
+      "pdf_page": 1
+    },
+    {
+      "name": "zero full source signoffs",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "pdf_page": null
+    }
+  ],
+  "table2": [
+    {
+      "ambient_C": -20.0,
+      "supply_EUR_per_MWh": 50.0,
+      "return_EUR_per_MWh": 35.0
+    },
+    {
+      "ambient_C": -16.0,
+      "supply_EUR_per_MWh": 50.0,
+      "return_EUR_per_MWh": 35.0
+    },
+    {
+      "ambient_C": -12.0,
+      "supply_EUR_per_MWh": 50.0,
+      "return_EUR_per_MWh": 35.0
+    },
+    {
+      "ambient_C": -10.0,
+      "supply_EUR_per_MWh": 50.0,
+      "return_EUR_per_MWh": 35.0
+    },
+    {
+      "ambient_C": -8.0,
+      "supply_EUR_per_MWh": 50.0,
+      "return_EUR_per_MWh": 35.0
+    },
+    {
+      "ambient_C": -6.0,
+      "supply_EUR_per_MWh": 45.0,
+      "return_EUR_per_MWh": 32.0
+    },
+    {
+      "ambient_C": -4.0,
+      "supply_EUR_per_MWh": 45.0,
+      "return_EUR_per_MWh": 32.0
+    },
+    {
+      "ambient_C": -2.0,
+      "supply_EUR_per_MWh": 40.0,
+      "return_EUR_per_MWh": 28.0
+    },
+    {
+      "ambient_C": 0.0,
+      "supply_EUR_per_MWh": 30.0,
+      "return_EUR_per_MWh": 21.0
+    },
+    {
+      "ambient_C": 2.0,
+      "supply_EUR_per_MWh": 30.0,
+      "return_EUR_per_MWh": 21.0
+    },
+    {
+      "ambient_C": 4.0,
+      "supply_EUR_per_MWh": 30.0,
+      "return_EUR_per_MWh": 21.0
+    },
+    {
+      "ambient_C": 6.0,
+      "supply_EUR_per_MWh": 25.0,
+      "return_EUR_per_MWh": 18.0
+    },
+    {
+      "ambient_C": 8.0,
+      "supply_EUR_per_MWh": 20.0,
+      "return_EUR_per_MWh": 14.0
+    },
+    {
+      "ambient_C": 10.0,
+      "supply_EUR_per_MWh": 20.0,
+      "return_EUR_per_MWh": 10.0
+    },
+    {
+      "ambient_C": 12.0,
+      "supply_EUR_per_MWh": 20.0,
+      "return_EUR_per_MWh": 10.0
+    },
+    {
+      "ambient_C": 16.0,
+      "supply_EUR_per_MWh": 20.0,
+      "return_EUR_per_MWh": 10.0
+    },
+    {
+      "ambient_C": 20.0,
+      "supply_EUR_per_MWh": 15.0,
+      "return_EUR_per_MWh": 8.0
+    }
+  ],
+  "figure3": {
+    "Q_condenser_MW": 10.0,
+    "Q_evaporator_MW": 7.2,
+    "W_electric_MW": 2.8,
+    "implied_COP": 3.5714285714285716
+  },
+  "storage": {
+    "volume_m3": 20000,
+    "energy_MWh": 857.5,
+    "standing_and_network_losses_in_paper": "excluded"
+  },
+  "caveat": "Source04 does not validate nonzero TES standing loss in v16; upstream [6] and EnergyPRO remain unverified",
+  "full_source_signoffs": 0,
+  "independent_physical_validation": "NOT_TESTED",
+  "traceability_sha256": "5ac7ea52d9fa15a264eea30a46bdfce0e3062f8e2039688b744d1c22724d679d",
+  "test_script_sha256": "3b38f5c121f35787c35b5ff8a08a73db5b32bdbac664722780dd26c8f2d48656"
+}

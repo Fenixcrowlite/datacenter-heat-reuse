@@ -1,0 +1,93 @@
+{
+  "version": "0.28",
+  "inherits": "STATUS_stateflow_v27.json",
+  "research_inherits": "STATUS_v25.json",
+  "checkpoint": "Executed versioned Stateflow exponential standing retention and timestep sensitivity",
+  "timestamp_utc": "2026-10-09T15:35:08.918445+00:00",
+  "stateflow_acceptance": "PASS",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "matlab_batch_exit_code": 0,
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx",
+  "model_version": "0.28",
+  "model_sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d",
+  "preserved_v24_sha256": "1f1c826f0f61d04bea58c2ab39d607268ac273bad9564e69bec89e361c461389",
+  "model_version_semantics": "Project release and filename/helper suffix; distinct from saved Simulink internal version format",
+  "project_model_release": "0.28",
+  "saved_simulink_model_version_format": "%<AutoIncrement:1.1>",
+  "model_modified_this_run": false,
+  "recovery_of_unfinished_v28": true,
+  "execution_receipt": "results/stateflow_v28_20261009T152826319Z/execution_receipt_v28_20261009T153241813Z.json",
+  "result_directory": "results/stateflow_v28_20261009T152826319Z",
+  "independent_qa": "results/stateflow_v28_20261009T152826319Z/independent_qa_v28_20261009T153203999Z.json",
+  "matlab_checks_passed": 1221,
+  "matlab_checks_failed": 0,
+  "experiment_checks_passed": 105,
+  "experiment_cases": 20,
+  "runtime_domain_rejections": 46,
+  "scenarios": 19,
+  "intervals": 70,
+  "max_abs_balance_residual_MWh": 1.8457457784393227e-15,
+  "temporal_acceptance_v28": "NOT_TESTED",
+  "monitor_corruption_acceptance_v28": "NOT_TESTED",
+  "independent_checks_passed": 15614,
+  "independent_actual_checks_passed": 14575,
+  "independent_checks_failed": 0,
+  "independent_breakdown": {
+    "self_test": {
+      "passed": 1029,
+      "failed": 0,
+      "synthetic_only": true
+    },
+    "generic_rejection_schema_self_test": {
+      "passed": 10,
+      "failed": 0,
+      "synthetic_only": true
+    },
+    "trace_qa": {
+      "passed": 6524,
+      "failed": 0,
+      "synthetic_only": false
+    },
+    "experiments_qa": {
+      "passed": 7626,
+      "failed": 0,
+      "synthetic_only": false
+    },
+    "structure": {
+      "passed": 76,
+      "failed": 0,
+      "synthetic_only": false
+    },
+    "runtime_rejections": {
+      "passed": 323,
+      "failed": 0,
+      "synthetic_only": false
+    },
+    "acceptance_integrity": {
+      "passed": 26,
+      "failed": 0,
+      "synthetic_only": false
+    }
+  },
+  "derivation_checks_passed": 14,
+  "primary_text_verified_this_run": false,
+  "inherited_primary_text_review": "audit/TES_standing_loss_primary_v28.md",
+  "primary_source_signoffs": 0,
+  "total_sources": 31,
+  "primary_paper_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "standalone_codegen": false,
+  "limitations": [
+    "Exponential retention is exact only for passive constant-coefficient zero-equilibrium/ambient-referenced energy.",
+    "Active ports retain loss-first splitting; fresh charge loses no standing heat in its current interval. First-order timestep error is measured.",
+    "Usable energy above a delivery temperature cutoff requires an ambient offset and cutoff events; current scalar model has no temperature state.",
+    "New continuous_loss_rate_per_h is a rate coefficient, not a measured hourly fractional loss. All sensitivity parameters are scenario assumptions.",
+    "Cadau primary Eq (4) is partially verified; its implementation has at least two nodes. No article reproduction or equipment calibration.",
+    "Normal-mode host MATLAB HP adapter; standalone code generation, equipment faults, hysteresis/dwell, sensors and hydraulic/network/fuel/auxiliary models remain untested.",
+    "Variable part-load v18 scenarios have reference/equivalent-baseline parity and independently checked laws; closed-form output predictions cover fixed-COP cases.",
+    "v26 monitor-corruption and v27 delayed fault tests were executed on v24; they are not rerun evidence for v28.",
+    "Nonfatal Stateflow allocator-output shadow warnings remain in v24/v28 execution logs.",
+    "No measured-system physical validation; full primary signoffs remain 0/31."
+  ],
+  "next": "Derive and independently test a temperature/cutoff-aware TES model with the ambient-loss offset and exact constant-flow integration; specify saturation/cutoff events before a new Stateflow version. Preserve v24 and v28 baselines."
+}

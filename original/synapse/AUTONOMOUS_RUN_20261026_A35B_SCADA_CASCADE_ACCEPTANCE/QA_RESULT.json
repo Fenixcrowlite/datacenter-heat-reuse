@@ -1,0 +1,11 @@
+{
+  "tests_passed": 28,
+  "tests_total": 28,
+  "chrome": "PASS",
+  "edge": "PASS",
+  "blocked_non_get_requests": 0,
+  "server_state_unchanged": true,
+  "production_sha_unchanged": true,
+  "simulation_class": "D_SYNTHETIC",
+  "release_allowed": false
+}

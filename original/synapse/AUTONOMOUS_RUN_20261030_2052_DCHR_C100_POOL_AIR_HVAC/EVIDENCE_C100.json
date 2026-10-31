@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c100-air-hvac-20261030-2052",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2052_DCHR_C100_POOL_AIR_HVAC\\C100_AIR_HOURLY.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2052_DCHR_C100_POOL_AIR_HVAC\\C100_FINDINGS.md",
+  "hourly_sha256": "8ce8e04be652540eb635afb75958077c716220a26f3471526264985e0862fff4",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2052_DCHR_C100_POOL_AIR_HVAC\\SHA256_MANIFEST_C100.json",
+  "manifest_sha256": "8502c3d9c30768bc500220bfeb82e71b7c5bb19350e5760e9aa7fa6b29d08016",
+  "metadata": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2052_DCHR_C100_POOL_AIR_HVAC\\C100_METADATA.json",
+  "next": "Measure T/RH/airflow; obtain dehumidifier and HRV curves; include fan/humidifier/cooling energy; couple to C96 with no double count.",
+  "qa": "13/13 selftests; 1419217 independent assertions; 78840 hourly rows; 2 negative controls",
+  "schema": "C100_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_2052_DCHR_C100_POOL_AIR_HVAC\\C100_AIR_SUMMARY.csv",
+  "task_id": "scc-2aab24704c2bd0"
+}

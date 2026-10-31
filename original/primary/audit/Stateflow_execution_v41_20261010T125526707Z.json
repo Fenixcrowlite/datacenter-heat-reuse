@@ -1,0 +1,7 @@
+{
+  "command": "addpath('matlab/simulink'); export_stateflow_clock_v41('results/stateflow_clock_v41_20261010T125341508Z');",
+  "timestamp_utc": "2026-10-10T12:55:35.3165926Z",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "exit_code": 0,
+  "log_path": "automation/logs/stateflow_clock_v41_console_20261010T125526707Z.log"
+}

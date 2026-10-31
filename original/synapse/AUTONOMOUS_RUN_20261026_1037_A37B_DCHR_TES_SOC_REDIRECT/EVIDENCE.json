@@ -1,0 +1,11 @@
+{
+  "scope": "isolated_DCHR_A37B_v04_TES_SOC_dynamic_charge_saturation_and_REJECT_redirect",
+  "qa": "11/11 unit PASS; original v08 TES baseline within 5.01e-6 J; 672 steps / 8064 independent Decimal checks PASS",
+  "key_finding": "A36 fixed TES charge overfills synthetic 900kWh storage: 6 intervals clipped after hour 69; 75.688kWh charge curtailed; +61.346kWh reject; 14.342kWh HP power proxy reduction.",
+  "source_v04_sha256": "12343eef83ca67a801fe3ffbca06006a4f96a93e7b5c2914d99b7f730cc054e1",
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "decision": "TES_SOC_REDIRECT_SYNTHETIC_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "limits": "synthetic v04 parameters, fixed COP proxy, no full HP/TES/Stateflow feedback, no hardware control",
+  "next_step": "Owner integrate A37B TES SOC and A37 N-1 IT thermal logic in isolated MATLAB/Stateflow, validate equipment parameters and full dynamic energy closure.",
+  "physical_release_allowed": false
+}

@@ -1,0 +1,66 @@
+{
+  "version": "0.33",
+  "inherits": "STATUS_stateflow_v32.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T02:42:41.191702+00:00",
+  "checkpoint": "Executed saved-v32 capacity-fallback sensitivity and independently derived restart/dwell constraints",
+  "experiment_acceptance": "PASS",
+  "stateflow_acceptance_inherited": "PASS_v32",
+  "model_version": "0.32",
+  "new_model": false,
+  "generated_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v32.slx",
+  "model_sha256": "bc9b1f1befb7a58863f7d79a121856ba2d8c73a387fe2b88537c8c9bd0c84a87",
+  "controller_defect": "CONFIRMED_OPEN: capacity tail leaves usable TES idle while demand is unmet",
+  "result_directory": "results\\stateflow_fallback_v33_20261010T023623898Z",
+  "independent_qa": "audit\\Stateflow_fallback_QA_v33_20261010T023838_807159Z.json",
+  "execution_receipt": "audit\\Stateflow_execution_v33_20261010T023605574Z.json",
+  "execution_log": "automation/logs/stateflow_fallback_v33_console_20261010T023605574Z.log",
+  "matlab_batch_exit_code": 0,
+  "scenarios": 25,
+  "intervals": 310,
+  "segments": 620,
+  "matlab_checks_passed": 16200,
+  "matlab_checks_failed": 0,
+  "independent_check_breakdown": {
+    "actual_generic_oracle": {
+      "passed": 34863,
+      "failed": 0
+    },
+    "alternate_targeted_recurrence": {
+      "passed": 625,
+      "failed": 0
+    },
+    "static_saved_model": {
+      "passed": 73,
+      "failed": 0
+    },
+    "artifact_runtime_preservation": {
+      "passed": 24898,
+      "failed": 0
+    },
+    "synthetic_reviewer_checks": {
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "equation_checks_passed": 643,
+  "equation_checks_failed": 0,
+  "previous_immutable_entries_preserved": 941,
+  "max_abs_balance_residual_MWh": 3.3306690738754696e-15,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Checkpoint v33 executes unchanged saved model v32; no new SLX or corrected production controller.",
+    "Capacity-tail TES-service defect remains open despite passing implementation/oracle assertions.",
+    "Four-hour, five-family, five-timestep assumed sensitivity study; no universal optimizer or policy-superiority claim.",
+    "Proposed hysteresis/dwell equations and RK4 example are not an executed Stateflow policy or calibrated equipment requirement.",
+    "Iterator segments share macro solver time; physical-hour timers and seconds-based Stateflow temporal logic need explicit unit handling.",
+    "Normal-mode host planner; standalone code generation, stratification, hydraulics, calibration and physical validation remain untested.",
+    "v32 six-mode/fault acceptance inherited; v33 does not add equipment faults, cycling losses, delayed nonfinite faults or runtime corruption coverage.",
+    "Independent algorithm/artifact QA is not separate human/agent review or paper replication; full primary signoffs remain 0/31.",
+    "New research candidates were search-index discovery only; full-text retrieval failed and no equations/values were adopted."
+  ],
+  "next": "Implement additive Stateflow model v34 with persistent HP hysteresis/dwell latch, explicit physical-duration timers, TES service during HP OFF and a bounded multi-event integrator; test exact-capacity initialization, changing inputs, finite backup, cutoff safety, timer units and timestep partitions against the preserved v32 counterexample."
+}

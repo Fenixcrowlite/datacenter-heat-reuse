@@ -1,0 +1,749 @@
+{
+  "source_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "rows": 8760,
+  "interval_hours": 1,
+  "synthetic_not_metered": true,
+  "primary_source_signoffs": 0,
+  "models": [
+    {
+      "config": {
+        "capacity_mwh": 100,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 0.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 231.051706,
+          "delivered_mwh": 89.632113,
+          "loss_mwh": 125.149528,
+          "additional_electric_mwh": 101.305459,
+          "source_heat_mwh": 129.746247,
+          "remaining_gas_heat_mwh": 12459.419378,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 231.051706,
+          "delivered_mwh": 89.632113,
+          "loss_mwh": 125.149528,
+          "additional_electric_mwh": 101.305459,
+          "source_heat_mwh": 129.746247,
+          "remaining_gas_heat_mwh": 12459.419378,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 231.051706,
+          "delivered_mwh": 89.632113,
+          "loss_mwh": 125.149528,
+          "additional_electric_mwh": 101.305459,
+          "source_heat_mwh": 129.746247,
+          "remaining_gas_heat_mwh": 12459.419378,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 100,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 231.215177,
+          "delivered_mwh": 89.632113,
+          "loss_mwh": 125.304825,
+          "additional_electric_mwh": 101.762043,
+          "source_heat_mwh": 129.453134,
+          "remaining_gas_heat_mwh": 12459.419378,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 231.215177,
+          "delivered_mwh": 89.632113,
+          "loss_mwh": 125.304825,
+          "additional_electric_mwh": 101.762043,
+          "source_heat_mwh": 129.453134,
+          "remaining_gas_heat_mwh": 12459.419378,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 231.215177,
+          "delivered_mwh": 89.632113,
+          "loss_mwh": 125.304825,
+          "additional_electric_mwh": 101.762043,
+          "source_heat_mwh": 129.453134,
+          "remaining_gas_heat_mwh": 12459.419378,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 0.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 1115.4629,
+          "delivered_mwh": 433.108635,
+          "loss_mwh": 603.785929,
+          "additional_electric_mwh": 507.622291,
+          "source_heat_mwh": 607.840609,
+          "remaining_gas_heat_mwh": 12115.942856,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 1115.4629,
+          "delivered_mwh": 433.108635,
+          "loss_mwh": 603.785929,
+          "additional_electric_mwh": 507.622291,
+          "source_heat_mwh": 607.840609,
+          "remaining_gas_heat_mwh": 12115.942856,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 1115.4629,
+          "delivered_mwh": 433.108635,
+          "loss_mwh": 603.785929,
+          "additional_electric_mwh": 507.622291,
+          "source_heat_mwh": 607.840609,
+          "remaining_gas_heat_mwh": 12115.942856,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 1121.718662,
+          "delivered_mwh": 433.108635,
+          "loss_mwh": 609.728903,
+          "additional_electric_mwh": 511.641697,
+          "source_heat_mwh": 610.076966,
+          "remaining_gas_heat_mwh": 12115.942856,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 1121.718662,
+          "delivered_mwh": 433.108635,
+          "loss_mwh": 609.728903,
+          "additional_electric_mwh": 511.641697,
+          "source_heat_mwh": 610.076966,
+          "remaining_gas_heat_mwh": 12115.942856,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 1121.718662,
+          "delivered_mwh": 433.108635,
+          "loss_mwh": 609.728903,
+          "additional_electric_mwh": 511.641697,
+          "source_heat_mwh": 610.076966,
+          "remaining_gas_heat_mwh": 12115.942856,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 0.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 4447.047215,
+          "delivered_mwh": 1888.646764,
+          "loss_mwh": 2236.645629,
+          "additional_electric_mwh": 2134.898899,
+          "source_heat_mwh": 2312.148316,
+          "remaining_gas_heat_mwh": 10660.404728,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4447.047215,
+          "delivered_mwh": 1888.646764,
+          "loss_mwh": 2236.645629,
+          "additional_electric_mwh": 2134.898899,
+          "source_heat_mwh": 2312.148316,
+          "remaining_gas_heat_mwh": 10660.404728,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4447.047215,
+          "delivered_mwh": 1888.646764,
+          "loss_mwh": 2236.645629,
+          "additional_electric_mwh": 2134.898899,
+          "source_heat_mwh": 2312.148316,
+          "remaining_gas_heat_mwh": 10660.404728,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 4959.519566,
+          "delivered_mwh": 1910.036878,
+          "loss_mwh": 2700.978453,
+          "additional_electric_mwh": 2399.183431,
+          "source_heat_mwh": 2560.336135,
+          "remaining_gas_heat_mwh": 10639.014613,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4959.519566,
+          "delivered_mwh": 1910.036878,
+          "loss_mwh": 2700.978453,
+          "additional_electric_mwh": 2399.183431,
+          "source_heat_mwh": 2560.336135,
+          "remaining_gas_heat_mwh": 10639.014613,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4959.519566,
+          "delivered_mwh": 1910.036878,
+          "loss_mwh": 2700.978453,
+          "additional_electric_mwh": 2399.183431,
+          "source_heat_mwh": 2560.336135,
+          "remaining_gas_heat_mwh": 10639.014613,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 10000,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 0.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 4447.047215,
+          "delivered_mwh": 1888.646764,
+          "loss_mwh": 2236.645629,
+          "additional_electric_mwh": 2134.898899,
+          "source_heat_mwh": 2312.148316,
+          "remaining_gas_heat_mwh": 10660.404728,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4447.047215,
+          "delivered_mwh": 1888.646764,
+          "loss_mwh": 2236.645629,
+          "additional_electric_mwh": 2134.898899,
+          "source_heat_mwh": 2312.148316,
+          "remaining_gas_heat_mwh": 10660.404728,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4447.047215,
+          "delivered_mwh": 1888.646764,
+          "loss_mwh": 2236.645629,
+          "additional_electric_mwh": 2134.898899,
+          "source_heat_mwh": 2312.148316,
+          "remaining_gas_heat_mwh": 10660.404728,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 10000,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72.0,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 7002.381705,
+          "delivered_mwh": 2815.065569,
+          "loss_mwh": 3689.035705,
+          "additional_electric_mwh": 3413.140834,
+          "source_heat_mwh": 3589.24087,
+          "remaining_gas_heat_mwh": 9733.985922,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 7002.381705,
+          "delivered_mwh": 2815.065569,
+          "loss_mwh": 3689.035705,
+          "additional_electric_mwh": 3413.140834,
+          "source_heat_mwh": 3589.24087,
+          "remaining_gas_heat_mwh": 9733.985922,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 7002.381705,
+          "delivered_mwh": 2815.065569,
+          "loss_mwh": 3689.035705,
+          "additional_electric_mwh": 3413.140834,
+          "source_heat_mwh": 3589.24087,
+          "remaining_gas_heat_mwh": 9733.985922,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    }
+  ],
+  "thermal_sensitivity": [
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 55,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 5259.172908,
+          "delivered_mwh": 25.115082,
+          "loss_mwh": 3289.788173,
+          "additional_electric_mwh": 1515.231823,
+          "source_heat_mwh": 3743.941086,
+          "remaining_gas_heat_mwh": 12523.93641,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 1679.989162,
+          "temperature_blocked_hours": 3222
+        },
+        {
+          "charge_mwh": 4584.012041,
+          "delivered_mwh": 65.993903,
+          "loss_mwh": 4285.344173,
+          "additional_electric_mwh": 1310.871376,
+          "source_heat_mwh": 3273.140665,
+          "remaining_gas_heat_mwh": 12483.057588,
+          "year": 2,
+          "initial_soc_mwh": 1679.989162,
+          "final_soc_mwh": 1679.989162,
+          "temperature_blocked_hours": 3222
+        },
+        {
+          "charge_mwh": 4584.012041,
+          "delivered_mwh": 65.993903,
+          "loss_mwh": 4285.344173,
+          "additional_electric_mwh": 1310.871376,
+          "source_heat_mwh": 3273.140665,
+          "remaining_gas_heat_mwh": 12483.057588,
+          "year": 3,
+          "initial_soc_mwh": 1679.989162,
+          "final_soc_mwh": 1679.989162,
+          "temperature_blocked_hours": 3222
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 65,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 5089.240151,
+          "delivered_mwh": 1920.941491,
+          "loss_mwh": 2812.734469,
+          "additional_electric_mwh": 2051.434294,
+          "source_heat_mwh": 3037.805857,
+          "remaining_gas_heat_mwh": 10628.11,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 5089.240151,
+          "delivered_mwh": 1920.941491,
+          "loss_mwh": 2812.734469,
+          "additional_electric_mwh": 2051.434294,
+          "source_heat_mwh": 3037.805857,
+          "remaining_gas_heat_mwh": 10628.11,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 5089.240151,
+          "delivered_mwh": 1920.941491,
+          "loss_mwh": 2812.734469,
+          "additional_electric_mwh": 2051.434294,
+          "source_heat_mwh": 3037.805857,
+          "remaining_gas_heat_mwh": 10628.11,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 72,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 4959.519566,
+          "delivered_mwh": 1910.036878,
+          "loss_mwh": 2700.978453,
+          "additional_electric_mwh": 2399.183431,
+          "source_heat_mwh": 2560.336135,
+          "remaining_gas_heat_mwh": 10639.014613,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4959.519566,
+          "delivered_mwh": 1910.036878,
+          "loss_mwh": 2700.978453,
+          "additional_electric_mwh": 2399.183431,
+          "source_heat_mwh": 2560.336135,
+          "remaining_gas_heat_mwh": 10639.014613,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4959.519566,
+          "delivered_mwh": 1910.036878,
+          "loss_mwh": 2700.978453,
+          "additional_electric_mwh": 2399.183431,
+          "source_heat_mwh": 2560.336135,
+          "remaining_gas_heat_mwh": 10639.014613,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.00025,
+        "storage_temperature_c": 80,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 4804.908614,
+          "delivered_mwh": 1897.922807,
+          "loss_mwh": 2566.849703,
+          "additional_electric_mwh": 2767.568334,
+          "source_heat_mwh": 2037.34028,
+          "remaining_gas_heat_mwh": 10651.128685,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4804.908614,
+          "delivered_mwh": 1897.922807,
+          "loss_mwh": 2566.849703,
+          "additional_electric_mwh": 2767.568334,
+          "source_heat_mwh": 2037.34028,
+          "remaining_gas_heat_mwh": 10651.128685,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 4804.908614,
+          "delivered_mwh": 1897.922807,
+          "loss_mwh": 2566.849703,
+          "additional_electric_mwh": 2767.568334,
+          "source_heat_mwh": 2037.34028,
+          "remaining_gas_heat_mwh": 10651.128685,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    },
+    {
+      "config": {
+        "capacity_mwh": 2500,
+        "charge_mw": 3.0,
+        "discharge_mw": 3.0,
+        "extra_hp_electric_mw": 1.5,
+        "site_electric_cap_mw": 12.0,
+        "hp_total_electric_cap_mw": 2.5,
+        "charge_efficiency": 0.95,
+        "discharge_efficiency": 0.95,
+        "hourly_loss_fraction": 0.0,
+        "storage_temperature_c": 72,
+        "hx_approach_k": 3.0
+      },
+      "year_results": [
+        {
+          "charge_mwh": 2631.652482,
+          "delivered_mwh": 2375.066365,
+          "loss_mwh": 0.0,
+          "additional_electric_mwh": 1270.009206,
+          "source_heat_mwh": 1361.643276,
+          "remaining_gas_heat_mwh": 10173.985126,
+          "year": 1,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 2631.652482,
+          "delivered_mwh": 2375.066365,
+          "loss_mwh": 0.0,
+          "additional_electric_mwh": 1270.009206,
+          "source_heat_mwh": 1361.643276,
+          "remaining_gas_heat_mwh": 10173.985126,
+          "year": 2,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        },
+        {
+          "charge_mwh": 2631.652482,
+          "delivered_mwh": 2375.066365,
+          "loss_mwh": 0.0,
+          "additional_electric_mwh": 1270.009206,
+          "source_heat_mwh": 1361.643276,
+          "remaining_gas_heat_mwh": 10173.985126,
+          "year": 3,
+          "initial_soc_mwh": 0.0,
+          "final_soc_mwh": 0.0,
+          "temperature_blocked_hours": 0
+        }
+      ],
+      "classification": "SYNTHETIC_CONSTRAINED_SENSITIVITY_NOT_INCREMENTAL_SAVINGS",
+      "baseline_existing_storage_mwh": 100,
+      "note": "Parallel counterfactual; baseline gas already includes its 100 MWh storage. No integrated redispatch."
+    }
+  ],
+  "assumptions": [
+    "Baseline contains a 100 MWh storage; scenarios are parallel sensitivities, NOT incremental gas savings.",
+    "Curtailed HP heat is only a potential. Extra heat pump electricity and source-heat headroom are enforced.",
+    "Extra HP electricity bounded by configured site MW cap and total HP electric MW cap; both assumed, not measured nameplate limits.",
+    "COP extra-lift derating is heuristic (COP * original lift / revised lift), not a manufacturer performance map.",
+    "Fixed storage temperature; no stratification, mixing, return-temperature or charging temperature dynamics.",
+    "Fixed hourly self-discharge, separate charge/discharge efficiencies and explicit thermal power caps.",
+    "Gas heat displacement is theoretical thermal demand coverage; no fuel/electric tariffs or investment economics.",
+    "Annual synthetic weather is repeated for 3 years; no metered source, validated thermal design or primary-source signoffs."
+  ]
+}

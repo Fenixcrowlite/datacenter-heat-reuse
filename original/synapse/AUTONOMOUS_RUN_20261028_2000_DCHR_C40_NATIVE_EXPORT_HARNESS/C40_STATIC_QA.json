@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "calls_core": true,
+    "isolated_export": true,
+    "matlab_installed": true,
+    "no_native_output_yet": true,
+    "no_shared_driver": true,
+    "no_shared_results_path": true,
+    "no_source_mutation": true,
+    "output_collision_guard": true,
+    "recovery90": true,
+    "scenario45": true,
+    "seed42_source": true,
+    "source_contract": true,
+    "source_files_present": true,
+    "storage100": true,
+    "warm_scenario_driver": true,
+    "weather_mode": true
+  },
+  "export_script_sha256": "ebee23ad1791c8de2cdc313ba460abf52768f8232529aae31950a93bac9dffec",
+  "free_ram_gib": 1.891,
+  "matlab_source_sha256": "7ec9e95e54302ec7a1734613c75f4a19d56015c492f38e000fb1ba51bb5119bb",
+  "min_ram_for_native_gib": 5.0,
+  "native_executed": false,
+  "native_execution_admitted": false,
+  "observed_local": "2026-10-28T19:59:23+01:00",
+  "passed": 16,
+  "primary_source_signoffs": 0,
+  "scope": "DCHR_C40_NATIVE_EXPORT_STATIC_QA",
+  "status": "PASS"
+}

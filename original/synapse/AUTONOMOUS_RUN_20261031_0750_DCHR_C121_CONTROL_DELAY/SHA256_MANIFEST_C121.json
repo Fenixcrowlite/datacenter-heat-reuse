@@ -1,0 +1,48 @@
+{
+  "files": {
+    "C121_DELAY_HOURLY.csv.gz": {
+      "bytes": 4302259,
+      "sha256": "d105be559a7eb01cdd92afa7a50073a2eda6687bdf8bc94392f03d165afc63ec"
+    },
+    "C121_FINDINGS.md": {
+      "bytes": 3029,
+      "sha256": "8ccb5f7c36f0ff7a56b349ead0af8dd8bbaff5af110accca1deaa29dfc6cc638"
+    },
+    "C121_INDEPENDENT_QA.json": {
+      "bytes": 583,
+      "sha256": "2fcf1b34b94d7d8994e3da727a6da957be9237474d1db9aea81ce2a75b6554e3"
+    },
+    "C121_METADATA.json": {
+      "bytes": 2397,
+      "sha256": "0049f3126ac2a4a4b640acbfdaa0058fd5f6c68dfc1a4eb80179a55cae60099c"
+    },
+    "C121_QA_LOG.txt": {
+      "bytes": 586,
+      "sha256": "a1be8a0e41b27afb582e5ee5a1ceb38039bf68a31552589a6d6963285dbc5cd6"
+    },
+    "C121_RUN_LOG.txt": {
+      "bytes": 1356,
+      "sha256": "fd0faebb3e51649dde4afc20093445ca181caa66b94c9a71daa0599a6e66124c"
+    },
+    "C121_SUMMARY.csv": {
+      "bytes": 1032,
+      "sha256": "022b7b45be630ea3d14860076e5ecdf32e14ca2c08cc8a2a35a6571677a4b584"
+    },
+    "c121_delay_sensitivity.py": {
+      "bytes": 7065,
+      "sha256": "0f0662c0fd92f209e2e13a1cfa6c6b4842a23a3aaac7fe43d3d9286a9a084e2d"
+    },
+    "finalize_c121.py": {
+      "bytes": 4240,
+      "sha256": "12fffe95c7657e5c617861cac25477d42bd41999216ba52c2e1d0dce1d43f551"
+    },
+    "qa_c121_independent.py": {
+      "bytes": 3538,
+      "sha256": "e52e144e0b7192832660dcdf032a17cbc8c11fa47ea134de99b9f25fef8f46e4"
+    }
+  },
+  "qa": "PASS",
+  "schema": "C121_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

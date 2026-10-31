@@ -1,0 +1,8 @@
+{
+  "candidate_sha256": "07d1d7f19d92ce34d5b3e5a44a2131234a4a2e7991e21f018b197137ed0eb370",
+  "hours": 8760,
+  "max_absolute_error": 5.093703236980218e-13,
+  "numeric_comparisons": 192720,
+  "reference_sha256": "bbe8f22ff33fce9b77450967ecd8f8e59a7950ce78c6f16fcec3f2b098b4dbb9",
+  "tolerance": 2e-08
+}

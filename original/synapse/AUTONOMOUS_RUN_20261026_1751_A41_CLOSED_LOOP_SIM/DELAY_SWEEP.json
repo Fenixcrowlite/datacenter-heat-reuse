@@ -1,0 +1,40 @@
+{
+  "status": "SYNTHETIC_DELAY_SENSITIVITY_NOT_CERTIFIED",
+  "delay_steps": {
+    "0": {
+      "max_temperature_C": 33.168424659375006,
+      "first_temperature_alarm_hour": null,
+      "alarm_intervals": 0,
+      "critical_steps": 0,
+      "unhandled_kWh": 8.374332500000005
+    },
+    "1": {
+      "max_temperature_C": 49.541777625,
+      "first_temperature_alarm_hour": 24.0,
+      "alarm_intervals": 3,
+      "critical_steps": 5,
+      "unhandled_kWh": 45.8743325
+    },
+    "2": {
+      "max_temperature_C": 63.121549659375006,
+      "first_temperature_alarm_hour": 24.0,
+      "alarm_intervals": 5,
+      "critical_steps": 8,
+      "unhandled_kWh": 83.37433250000001
+    },
+    "3": {
+      "max_temperature_C": 72.07995511101564,
+      "first_temperature_alarm_hour": 24.0,
+      "alarm_intervals": 7,
+      "critical_steps": 10,
+      "unhandled_kWh": 119.842675
+    },
+    "4": {
+      "max_temperature_C": 77.45536371103712,
+      "first_temperature_alarm_hour": 24.0,
+      "alarm_intervals": 9,
+      "critical_steps": 11,
+      "unhandled_kWh": 152.82800500000002
+    }
+  }
+}

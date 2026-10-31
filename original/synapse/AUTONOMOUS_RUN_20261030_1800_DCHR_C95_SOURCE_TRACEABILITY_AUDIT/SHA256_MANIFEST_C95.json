@@ -1,0 +1,41 @@
+{
+  "catalog_sources": 31,
+  "files": {
+    "C95_AUDIT.json": {
+      "bytes": 1155,
+      "sha256": "ffded50233193267442d904bc53d18dc4fdcf9595619ca0393c974070f296485"
+    },
+    "C95_DRIFT_MATRIX.csv": {
+      "bytes": 1464,
+      "sha256": "03db76f18fd9bfadddb4489d53d6106eef5dc6a3fa68635a035601cf3a40582c"
+    },
+    "C95_FINDINGS.md": {
+      "bytes": 2228,
+      "sha256": "4e564365ec7f02e7dcc1b9d0fbbec91aa2f6610a8aefa78b82e4372e6084e438"
+    },
+    "C95_INDEPENDENT_QA.json": {
+      "bytes": 588,
+      "sha256": "09ef676f5516920721d86022eaa1a34e272d9bf98fedb79780f74f8f4cb44a41"
+    },
+    "C95_QA_LOG.txt": {
+      "bytes": 64,
+      "sha256": "3dbdf5a59b6fd356e755aafb0e77f5e2f598bb5739eb5a2abfb9232e8deb1d56"
+    },
+    "C95_RUN_LOG.txt": {
+      "bytes": 2228,
+      "sha256": "439866fff2b79538fda219cacaa7d219c685053bf280ab366a30e33a43da4986"
+    },
+    "c95_source_traceability.py": {
+      "bytes": 9500,
+      "sha256": "7ea9519d1d951f5d8a3b1b957ab969cde59938ea97a136989acb50f18cc9c2bd"
+    },
+    "qa_c95_independent.py": {
+      "bytes": 2928,
+      "sha256": "7ef946176cd35a85276c718baa98d80cd86e53596f7c366e1963ba8944a41033"
+    }
+  },
+  "new_signoffs": 0,
+  "qa": "9 explicit generator assertions, 16/16 independent PASS",
+  "schema": "C95_SHA256_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

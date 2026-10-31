@@ -1,0 +1,41 @@
+function [safe,latched,flags] = pool_safety_gate_v05(T, previous, raw)
+%#codegen
+% SK: Povodne 11-kanalove vstupy DC, 5 kan. injekcie poruch.
+% raw(12:13) = bias simulovaneho senzora (K), raw14 prietok OK,
+% raw15 havarijne tlacidlo aktivne, raw16 manualny reset.
+% Synteticke snimace=T(model)+bias; nezastupuju nezavisle merania.
+safe=zeros(1,11);
+for i=1:11,safe(i)=raw(i);end
+b1=raw(12);b2=raw(13);
+t1=T+b1;t2=T+b2;
+flowok=raw(14)>0.5;
+emergency=raw(15)>0.5;
+reset=raw(16)>0.5;
+sensorFault=(abs(t1-t2)>0.35) || (abs(b1)>0.45) || (abs(b2)>0.45);
+nonFinite=(~isfinite(t1) || ~isfinite(t2) || ~isfinite(T));
+tempHigh=(t1>=27.7) || (t2>=27.7);
+flowFault=~flowok;
+bad=sensorFault || nonFinite || tempHigh || flowFault || emergency;
+latched=double(previous>0.5);
+resetAccepted=false;
+if bad
+    latched=1;
+elseif reset && latched && T<=27.65
+    latched=0;
+    resetAccepted=true;
+end
+if latched
+    safe(9)=0; % odpojenie bazena, nie vypnutie IT!
+end
+flags=zeros(1,10);
+flags(1)=double(latched);
+flags(2)=double(sensorFault);
+flags(3)=double(tempHigh);
+flags(4)=double(flowFault);
+flags(5)=double(emergency);
+flags(6)=double(nonFinite);
+flags(7)=double(resetAccepted);
+flags(8)=t1;
+flags(9)=t2;
+flags(10)=safe(9);
+end

@@ -1,0 +1,8 @@
+[Warning: The model name 'DCHR_A40_Safety_Controller' is shadowing another name in the MATLAB workspace or path. Type "which -all DCHR_A40_Safety_Controller" at the command line to
+find the other uses of this name. You should change the name of the model to avoid problems.] 
+[> In run_a40 (line 6)
+In run (line 100)] 
+A40_SCENARIO_PASS both counts=[276 0 0 396]
+A40_SCENARIO_PASS backup_only counts=[189 166 207 110]
+A40_SCENARIO_PASS neither counts=[96 0 576 0]
+A40_STATEFLOW_SIM_PASS samples=672 modes=[226 153 36 257]

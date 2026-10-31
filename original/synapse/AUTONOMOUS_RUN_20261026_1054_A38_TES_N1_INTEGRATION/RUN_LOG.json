@@ -1,0 +1,68 @@
+{
+  "status": "SYNTHETIC_INTEGRATED_REFERENCE_ONLY",
+  "samples": 672,
+  "cases": 12,
+  "TES_clipped_intervals": 6,
+  "cases_summary": {
+    "both/no_shed": {
+      "max_T_IT_C": 30.0,
+      "unhandled_kWh": 0.0,
+      "alarm_intervals": 0
+    },
+    "both/ideal_40pct": {
+      "max_T_IT_C": 30.0,
+      "unhandled_kWh": 0.0,
+      "alarm_intervals": 0
+    },
+    "both/ramp15k_40pct": {
+      "max_T_IT_C": 30.0,
+      "unhandled_kWh": 0.0,
+      "alarm_intervals": 0
+    },
+    "main_only/no_shed": {
+      "max_T_IT_C": 46.45633992036866,
+      "unhandled_kWh": 636.6096529268833,
+      "alarm_intervals": 30
+    },
+    "main_only/ideal_40pct": {
+      "max_T_IT_C": 30.0,
+      "unhandled_kWh": 0.0,
+      "alarm_intervals": 0
+    },
+    "main_only/ramp15k_40pct": {
+      "max_T_IT_C": 30.0,
+      "unhandled_kWh": 0.0,
+      "alarm_intervals": 0
+    },
+    "backup_only/no_shed": {
+      "max_T_IT_C": 61.45609967962574,
+      "unhandled_kWh": 2543.427490627528,
+      "alarm_intervals": 197
+    },
+    "backup_only/ideal_40pct": {
+      "max_T_IT_C": 30.0,
+      "unhandled_kWh": 0.0,
+      "alarm_intervals": 0
+    },
+    "backup_only/ramp15k_40pct": {
+      "max_T_IT_C": 33.168424659375006,
+      "unhandled_kWh": 8.374332500000005,
+      "alarm_intervals": 0
+    },
+    "neither/no_shed": {
+      "max_T_IT_C": 136.45609967962574,
+      "unhandled_kWh": 23037.73174452342,
+      "alarm_intervals": 576
+    },
+    "neither/ideal_40pct": {
+      "max_T_IT_C": 93.86283798199773,
+      "unhandled_kWh": 13497.150288523417,
+      "alarm_intervals": 576
+    },
+    "neither/ramp15k_40pct": {
+      "max_T_IT_C": 93.86283798199773,
+      "unhandled_kWh": 13536.330589523415,
+      "alarm_intervals": 576
+    }
+  }
+}

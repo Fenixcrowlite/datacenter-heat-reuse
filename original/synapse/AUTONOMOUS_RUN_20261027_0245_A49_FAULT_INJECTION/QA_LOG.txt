@@ -1,0 +1,14 @@
+test_baseline_immutable (__main__.A49Tests.test_baseline_immutable) ... ok
+test_full_fault_injection (__main__.A49Tests.test_full_fault_injection) ... ok
+test_hp_tau_zero_and_nonzero (__main__.A49Tests.test_hp_tau_zero_and_nonzero) ... ok
+test_independent_ledger (__main__.A49Tests.test_independent_ledger) ... ok
+test_reject_mutation_detected (__main__.A49Tests.test_reject_mutation_detected) ... ok
+test_sensor_lag_observable (__main__.A49Tests.test_sensor_lag_observable) ... ok
+test_temperature_mutation_detected (__main__.A49Tests.test_temperature_mutation_detected) ... ok
+test_tes_mutation_detected (__main__.A49Tests.test_tes_mutation_detected) ... ok
+test_trip_delay_cases (__main__.A49Tests.test_trip_delay_cases) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.360s
+
+OK

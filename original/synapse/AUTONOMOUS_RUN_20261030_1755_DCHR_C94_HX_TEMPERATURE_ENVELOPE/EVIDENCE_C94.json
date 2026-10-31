@@ -1,0 +1,17 @@
+{
+  "actor": "chatgpt-dchr-c94-hx-envelope-20261030-1755",
+  "findings_sha256": "70d75706936c4a037062611cddeae0dd9d413e3618fbbd15d13bd0c6e9ba3faf",
+  "hourly_sha256": "e8f69bc656858bba9eb262d22997198098f238f7f0fb856e4c24f8e8ea42af56",
+  "independent_qa_sha256": "a752abd78a17230921b54345a3970621a0c219554011f3c8d045c99ad696b836",
+  "manifest_sha256": "795fb2143518b52692b3ea0679a58b2bd6a6801da1458cfafde3aa84580bb4d5",
+  "next": "Get measured source temperature/flow and manufacturer COP; implement UA/NTU and air-side ventilation/dehumidification",
+  "physical_validation": false,
+  "production_changed": false,
+  "qa": "12/12 self, 157680/157680 independent hourly, 18/18 groups PASS",
+  "schema": "C94_HX_TEMPERATURE_ENVELOPE_EVIDENCE_V1",
+  "scope": "18 synthetic source temperature/flow/backup scenarios x 8760 hours",
+  "source_signoffs_added": 0,
+  "summary_sha256": "60c7f267413265e4e6fefd223fc0d3396ce68fe57b5a699eb5690ac4479e736d",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,27 @@
+{
+  "base_sha256": "3106a7953491e05ca3de24b8deba1fe06cc07f6f11a829bd447856b900d41e37",
+  "cop_model": "COP = clip(0.32*(T_sink+273.15)/(T_sink-T_source),1.5,6.5); illustrative not manufacturer curve",
+  "data_sha256": "315e5a40d129fb442059c1dd4c60bde0f6bff780865e6b2857dc58e20ddc280f",
+  "field_validated": false,
+  "hours": 168,
+  "limitations": [
+    "assumed temperatures and daily DC waste-heat profile",
+    "no compressor map, defrost, part-load degradation or real measurements",
+    "source shortage may curtail output faster than nominal down-ramp",
+    "air cooling independent from heat-pump electrical consumption"
+  ],
+  "rows": 4032,
+  "scenarios": 6,
+  "schema": "C130_SYNTHETIC_FINITE_WASTE_HEAT_V1",
+  "selftests": 8,
+  "source_pins": {
+    "air": "998d5da270714a1b84dfecaa774578174e7815fe4178af28920d0a24d4da3b11",
+    "pool": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+    "source": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+  },
+  "source_signoffs_added": 0,
+  "storage": "source heat kJ conservation: buffer_before+inflow=recovered+buffer_after+spill",
+  "summary_sha256": "563ea4dde0714ecfb34275c44717cd9d4d984fd7b293baf03ea06839337d5e1c",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

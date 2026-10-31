@@ -1,0 +1,15 @@
+{
+  "scope": "isolated_live_SCADA_v09_headless_cascade_whatif_acceptance",
+  "server": "localhost:8091",
+  "server_pid": 5264,
+  "source_sha256": {
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\scada_server.py": "8e3e091391ed3046057cf7beec2c7e43e4f92758e437276c8e8e1a8eb226c23e",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\web\\app.js": "c84b34f1e39cddabd4ee149cc22ca65a80c506d6b0dc129c9c52f291c74d14dc",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\web\\index.html": "6e93ceae316c80d0a1cdb4f146019ac22a8f674e02921213f1ad1f13e751abfb"
+  },
+  "qa": "28/28 PASS Chrome+Edge; pool/DH OFF; pre-onset baseline; poll stability; GET only; backend unchanged",
+  "decision": "SCADA_CASCADE_WHATIF_UI_VERIFIED",
+  "limits": "Synthetic scenario overlay, no recalculation of DC/HP/TES/REJECT or physical validation",
+  "release_allowed": false,
+  "next_step": "Model owner to implement energy-balanced Simulink/Stateflow what-if recalculation if full physics needed; keep production GUI unchanged"
+}

@@ -1,0 +1,56 @@
+﻿{
+    "time":  "2026-10-25T02:58:08.8118442+01:00",
+    "host":  "DESKTOP-M9L3I4M",
+    "free_ram_gib":  4.618,
+    "total_ram_gib":  15.823,
+    "gpu":  "2149, 8188, 0",
+    "worktrees":  361,
+    "stop_roots_checked":  [
+                               "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter",
+                               "C:\\Users\\Lysda\\Desktop\\EduMotionPipeline",
+                               "C:\\Users\\Lysda\\Desktop\\temp_coding",
+                               "C:\\Users\\Lysda\\Desktop\\MicroFreelance_2026",
+                               "C:\\Users\\Lysda\\Desktop\\.jarvice_worktrees",
+                               "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse",
+                               "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\EDUMOTION_S04_NUMERIC_PHONE_20261025_0250",
+                               "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\DCHR_V87_MATLAB_LEDGER_BRIDGE_20261025_0255"
+                           ],
+    "stop_flags":  [
+
+                   ],
+    "processes":  [
+                      {
+                          "ProcessId":  32920,
+                          "ParentProcessId":  2916,
+                          "Name":  "pythonw.exe",
+                          "Role":  "Jarvice DevTeam"
+                      },
+                      {
+                          "ProcessId":  30680,
+                          "ParentProcessId":  32920,
+                          "Name":  "pythonw.exe",
+                          "Role":  "Jarvice DevTeam"
+                      },
+                      {
+                          "ProcessId":  5264,
+                          "ParentProcessId":  22920,
+                          "Name":  "python.exe",
+                          "Role":  "SCADA"
+                      },
+                      {
+                          "ProcessId":  8768,
+                          "ParentProcessId":  24072,
+                          "Name":  "python.exe",
+                          "Role":  "SCADA bridge"
+                      },
+                      {
+                          "ProcessId":  16288,
+                          "ParentProcessId":  25716,
+                          "Name":  "node.exe",
+                          "Role":  "FUXA bridge"
+                      }
+                  ],
+    "matlab_count":  0,
+    "ffmpeg_count":  0,
+    "codex_cli_count":  0
+}

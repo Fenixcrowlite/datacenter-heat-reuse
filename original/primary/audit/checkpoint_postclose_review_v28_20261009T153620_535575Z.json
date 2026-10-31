@@ -1,0 +1,2542 @@
+{
+  "version": "0.28",
+  "timestamp_utc": "2026-10-09T15:36:20.535575+00:00",
+  "scope": "Post-finalization independent checkpoint integrity and status provenance only; no MATLAB run or changes to previous artifacts.",
+  "passed": 504,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "v28_unchanged:audit/acquire_TES_sources_v28.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/check_TES_derivation_v28.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/checkpoint_independent_review_v28_20261009T153417_753381Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/checkpoint_independent_review_v28_20261009T153417_753381Z.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/dispatch_reference_vectors_v18.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/finalize_stateflow_checkpoint_v28.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/prepare_stateflow_sources_v28.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/stateflow_domain_cases_v28.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/Stateflow_exponential_independent_QA_v28.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/stateflow_oracle_selftest_v28_20261009T103534330Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/stateflow_oracle_selftest_v28_20261009T103704714Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/stateflow_oracle_selftest_v28_initial.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/stateflow_qa_vectors_v28.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/Stateflow_v28_independent_review_20261009T153008Z.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/stateflow_verifier_completeness_selftest_v28_20261009T152913862Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/TES_Cadau_v28_page4.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/TES_Cadau_v28_page5.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/TES_derivation_checks_v28_20261009T103210_777150Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/TES_source_acquisition_v28_20261009T102911_076286Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/TES_standing_loss_primary_v28.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/TES_Stateflow_results_v28.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/verify_stateflow_runtime_v24.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:audit/verify_stateflow_trace_v28.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/checkpoint_independent_review_v28_20261009T153417_753381Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_local_20261009T103521580Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_local_20261009T103521580Z_console.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_local_20261009T103736630Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_local_20261009T103736630Z_console.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_resume_20261009T152756080Z_console.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_resume_local_20261009T152810989Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_acceptance_v28_resume_local_20261009T152810989Z_console.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_build_v28_local_20261009T103130804Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_build_v28_local_20261009T103130804Z_console.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_build_v28_sandbox_20261009T103114054Z_console.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_complete_qa_v28_resume_20261009T153203999Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_oracle_selftest_v28_20261009T103534330Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_oracle_selftest_v28_20261009T103704714Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_partial_qa_v28_20261009T103745453Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_partial_qa_v28_resume_20261009T153122496Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/stateflow_verifier_completeness_selftest_v28_20261009T152913862Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/TES_derivation_checks_v28_20261009T103210_777150Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:automation/logs/TES_source_acquisition_v28_20261009T102911_076286Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:MASTER_STAGEBOARD_stateflow_v28.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/+dchr/+components/storage_step_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/+dchr/simulate_dispatch_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/build_dispatch_stateflow_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/DCHR_Dispatch_Stateflow_v28.slx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/dchr_stateflow_hp_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/run_stateflow_acceptance_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/run_stateflow_loss_experiments_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/run_stateflow_rejections_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/stateflow_allocate_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/stateflow_choose_mode_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:matlab/simulink/stateflow_contract_gate_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/acceptance_summary_v28.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/carnot_fraction_above_one_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/charge_efficiency_above_one_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p25_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p25_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p5_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_0p5_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_1_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_1_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_2_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_2_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_4_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v24_dt_4_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p25_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p25_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p5_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_0p5_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_1_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_1_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_2_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_2_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_4_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/constant_charge_v28_dt_4_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/continuous_loss_exponent_overflow_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/cop_ceiling_below_floor_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/cop_floor_equal_one_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/discharge_efficiency_above_one_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/execution_receipt_v28_20261009T153241813Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/independent_partial_qa_v28_20261009T153122496Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/independent_qa_v28_20261009T153203999Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/infinite_continuous_loss_rate_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/infinite_initial_energy_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/infinite_physical_timestep_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/infinite_sink_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/infinite_source_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/initial_energy_above_capacity_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/legacy_input_charge_then_shortage_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/legacy_input_charge_then_shortage_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/legacy_input_empty_then_recover_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/legacy_input_empty_then_recover_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/legacy_input_full_and_cutoff_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/legacy_input_full_and_cutoff_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/longer_physical_timestep_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/model_structure_v28.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_backup_limit_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_charge_power_limit_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_demand_second_tick_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_demand_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_discharge_power_limit_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_hp_capacity_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_initial_energy_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_part_load_penalty_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_physical_timestep_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_source_second_tick_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_source_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_standing_loss_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_storage_capacity_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/negative_temperature_lift_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_backup_limit_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_continuous_loss_rate_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_demand_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_initial_energy_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_physical_timestep_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_polynomial_coefficient_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/nonfinite_source_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p25_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p25_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p5_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_0p5_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_1_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_1_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_2_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_2_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_4_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v24_dt_4_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p25_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p25_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p5_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_0p5_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_1_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_1_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_2_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_2_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_4_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/passive_v28_dt_4_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/polynomial_prediction_overflow_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/polynomial_super_carnot_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p25_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p25_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p5_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_0p5_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_1p0_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_1p0_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_2p0_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_dt_2p0_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_room_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_charge_room_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_discharge_emptying_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_discharge_emptying_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_full_store_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_full_store_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_high_loss_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_high_loss_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_loss_underflow_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_loss_underflow_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_mode_sequence_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_mode_sequence_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p25_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p25_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p5_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_0p5_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_1p0_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_1p0_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_2p0_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_passive_dt_2p0_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_unity_efficiencies_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_unity_efficiencies_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_zero_store_v28_legacy_equivalent_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/qa_zero_store_v28_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/runtime_rejections_v28.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/shorter_physical_timestep_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_absolute_zero_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/build_dispatch_stateflow_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/dchr_stateflow_hp_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/dispatch_reference_vectors_v18.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/run_stateflow_acceptance_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/run_stateflow_loss_experiments_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/run_stateflow_rejections_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/simulate_dispatch_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_allocate_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_choose_mode_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_contract_gate_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_domain_cases_v28.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/stateflow_qa_vectors_v28.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/source_snapshot/storage_step_v28.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/stateflow_assertions_v28.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/stateflow_trace_v28.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/storage_experiment_assertions_v28.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/storage_timestep_experiments_v28.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/unit_part_load_penalty_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/unknown_hp_backend_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/zero_carnot_fraction_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/zero_charge_efficiency_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/zero_discharge_efficiency_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/zero_lift_second_tick_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/zero_physical_timestep_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:results/stateflow_v28_20261009T152826319Z/zero_temperature_lift_start_rejection.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:sources/papers/Cadau_2019_TES_v28_20261009T102911_076286Z.extracted.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:sources/papers/Cadau_2019_TES_v28_20261009T102911_076286Z.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_unchanged:STATUS_stateflow_v28.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:audit/finalize_stateflow_checkpoint_v27.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:audit/stateflow_temporal_cases_v27.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:audit/stateflow_temporal_execution_receipt_v27_20261009T081921277Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:audit/Stateflow_temporal_independent_QA_v27.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:audit/stateflow_temporal_qa_selftest_v27_20261009T081625343Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:audit/verify_stateflow_temporal_v27.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_independent_temporal_qa_v27_20261009T081939137Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_temporal_qa_selftest_v27_20261009T081625343Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_temporal_v27_local_20261009T081048363Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_temporal_v27_local_20261009T081244188Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_temporal_v27_local_20261009T081632948Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_temporal_v27_local_20261009T081736272Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:automation/logs/stateflow_temporal_v27_sandbox_20261009T081029187Z.log",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:MASTER_STAGEBOARD_stateflow_v27.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/+dchr/+components/heat_pump_step_v14.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/+dchr/+components/storage_step_v16.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/+dchr/simulate_dispatch_v16.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/build_dispatch_stateflow_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/DCHR_Dispatch_Stateflow_v14.slx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/dchr_stateflow_hp_v22.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/dchr_stateflow_hp_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/probe_stateflow_clock_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/run_stateflow_acceptance_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/run_stateflow_gate_faults_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/run_stateflow_monitor_faults_v26.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/run_stateflow_rejections_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/run_stateflow_temporal_acceptance_v27.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/stateflow_allocate_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/stateflow_choose_mode_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:matlab/simulink/stateflow_contract_gate_v24.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/final_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/final_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/runner_attempt_v27.m",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/spec_attempt_v27.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/temporal_assertions_v27.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/temporal_summary_v27.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/final_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/final_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/independent_temporal_qa_v27_20261009T081939137Z.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/temporal_assertions_v27.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/temporal_summary_v27.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_clean_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_clean_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_configured_input.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_diagnostic.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_exception_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_host_adapter_report.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_partial_simulation.mat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_partial_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_raw_trace_times.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_reference_trace.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v27_unchanged:STATUS_stateflow_v27.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest_count_and_integrity_count_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prior_manifest_preserved_count_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest_paths_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "manifest_excludes_mutable_ledgers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "actual_status_QA_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "total_status_QA_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "synthetic_status_QA_count_separate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reviewer_gate_probes_not_added_to_actual",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_QA_sections_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_acceptance_counts_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_experiment_counts_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_domain_cases_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_actual_scenarios_and_intervals_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "actual_all_six_modes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_model_and_baseline_hashes_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "project_release_versus_saved_internal_format_explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "status_residual_matches_saved_trace_summary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no_new_primary_source_verification_claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no_paper_replication_physical_or_codegen_claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v28_temporal_monitor_corruption_not_claimed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "receipt_returned_exit_and_model_preservation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptance_log_and_console_hashes_match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exact_run_marker_matches",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "stageboard_correct_counts_and_limitations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "preflight_reviewed_finalizer_still_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "next_action_temperature_cutoff_exact_integration",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "manifest": "audit/Stateflow_manifest_v28_20261009T153508_918445Z.json",
+  "manifest_sha256": "8c8edb48c7f4002ff9419625fed626e108bb022af715bce242fd8026b700e488",
+  "prior_manifest": "audit/Stateflow_temporal_manifest_v27_20261009T082057_601462Z.json",
+  "prior_manifest_sha256": "8ee77a42ce3b35bb473857744e41204612a5785d6380288be72d96bfba89724d",
+  "finalizer_integrity": "audit/stateflow_integrity_v28_20261009T153508_918445Z.json",
+  "finalizer_integrity_sha256": "05df3270f235d4e4e82fa48d2ccacc6c4464a8fa0bde7f49c88ea3720ec8f73f",
+  "status_sha256": "71851f2fd29c9a1bb1a5dd25ea9a4f614951c13e91a66b54ae3ec01e68a333f0",
+  "new_manifest_unchanged_files": 205,
+  "prior_manifest_unchanged_files": 273,
+  "additional_model_or_simulation_checks_claimed": 0,
+  "actual_independent_QA_count": 14575,
+  "separate_synthetic_QA_count": 1039,
+  "evidence_scope_note": "This post-close review and log were created after the immutable v28 manifest. They reference its SHA-256 and do not amend its entries; future manifests may preserve them."
+}

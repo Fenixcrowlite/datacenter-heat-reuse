@@ -1,0 +1,27 @@
+{
+  "base_sha256": "541b5db7ec0d0d92277078825a3752e430d17d00c8f4dbf539cb939cd37a6147",
+  "data_sha256": "7ff9ff587e5c69466153b58644eef75a843f1caceeafcc20b7627e8d2943b7d0",
+  "field_validated": false,
+  "hours": 168,
+  "interpretation": "synthetic electrically driven heat-pump stage; output=electric+recovered; bypass is thermal dump, not useful heating",
+  "limitations": [
+    "fixed assumed COP, not a measured COP curve",
+    "waste heat supply assumed unlimited within thermal cap",
+    "no real equipment cycling/minimum on time",
+    "synthetic weather and pool/air parameters"
+  ],
+  "ramp_semantics": "thermal source output ramps +/- 2 kW per 15 min or ideal, starting cold at zero; dispatch never exceeds live delayed demand",
+  "rows": 22848,
+  "scenarios": 34,
+  "schema": "C129_SYNTHETIC_HEAT_PUMP_RAMP_COP_V1",
+  "selftests": 8,
+  "source_pins": {
+    "air": "998d5da270714a1b84dfecaa774578174e7815fe4178af28920d0a24d4da3b11",
+    "pool": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+    "source": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "42e3a260fa1d77158c2fbf373626c0b0d8d918fadab37a992530f42db7144c6c",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

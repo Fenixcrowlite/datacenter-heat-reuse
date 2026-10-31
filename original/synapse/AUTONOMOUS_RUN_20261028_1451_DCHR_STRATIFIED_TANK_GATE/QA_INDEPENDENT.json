@@ -1,0 +1,11 @@
+{
+  "cases": 5,
+  "independent_annual_energy_ledgers": 15,
+  "independent_cylinder_ua_checks": 5,
+  "independent_electric_source_splits": 15,
+  "independent_final_profile_energy_checks": 5,
+  "lossless_control": true,
+  "no_incremental_savings_claim": true,
+  "source_rows": 8760,
+  "status": "PASS"
+}

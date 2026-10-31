@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "project_id": "data_center_heat_reuse",
+  "title": "DataCenter Heat Reuse",
+  "version": "0.1.0",
+  "language": ["ru", "en"],
+  "entrypoints": {
+    "obsidian": "00_Project_Hub.md",
+    "readme": "README.md",
+    "matlab": "matlab/run_experiment.m",
+    "sensitivity": "matlab/run_sensitivity.m",
+    "simulink": "matlab/simulink/DataCenterHeatReuse_Core.slx",
+    "presentation": "presentation/DataCenter_Heat_Reuse_v0_1_RU.pptx"
+  },
+  "learning_path": [
+    "docs/01_How_System_Works.md",
+    "docs/Mathematical_Model.md",
+    "docs/Architecture.md",
+    "docs/Experiment_Protocol.md",
+    "docs/Literature_Map.md",
+    "docs/Assumptions_and_Parameters.md",
+    "docs/Results_v0_1.md",
+    "docs/Extension_Roadmap.md"
+  ],
+  "datasets": [
+    "results/scenario_summary.csv",
+    "results/temperature_lift_sensitivity.csv",
+    "results/storage_sensitivity.csv",
+    "results/warm45_storage100_timeseries.csv"
+  ],
+  "figures": [
+    "results/figures/01_scenario_comparison.png",
+    "results/figures/02_winter_operation.png",
+    "results/figures/03_load_duration.png",
+    "results/figures/04_cop_sensitivity.png",
+    "results/figures/05_monthly_energy_balance.png",
+    "results/figures/06_cop_temperature_lift_map.png",
+    "results/figures/07_storage_sensitivity.png"
+  ],
+  "tags": ["data-center", "waste-heat", "district-heating", "heat-pump", "thermal-storage", "matlab", "simulink", "energy-systems"],
+  "status": "reference-model-v0.1",
+  "next_milestone": "replace synthetic weather and demand with calibrated real data"
+}

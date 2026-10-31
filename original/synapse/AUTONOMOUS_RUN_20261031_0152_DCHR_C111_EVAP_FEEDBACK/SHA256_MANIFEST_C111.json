@@ -1,0 +1,41 @@
+{
+  "field_validated": false,
+  "files": {
+    "C111_COUPLED_HOURLY.csv.gz": {
+      "bytes": 3720741,
+      "sha256": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e"
+    },
+    "C111_FINDINGS.md": {
+      "bytes": 3410,
+      "sha256": "9894dcfa94a2d0e8b87bdfcdba08dce89468312180b1ca5a6707b496493d03c3"
+    },
+    "C111_INDEPENDENT_QA.json": {
+      "bytes": 468,
+      "sha256": "e37163fd11520dd9331b971b5c5a929c7a64f87ee0969ce498c7bc192376c168"
+    },
+    "C111_METADATA.json": {
+      "bytes": 1507,
+      "sha256": "07f1149758783f264f1676c5b3ecf2ef00f1da9077996f08eb2e8c0d7e88f14a"
+    },
+    "C111_SUMMARY.csv": {
+      "bytes": 3763,
+      "sha256": "db3faab98034f6358b710d19b49c07bc34cc285188a9d191e04336de68496103"
+    },
+    "c111_evap_feedback.py": {
+      "bytes": 8813,
+      "sha256": "dba0c4a1d1fc7b568b83e62dea4548c28df0b755720e84f2f5d4c3b4cdfb1395"
+    },
+    "qa_c111_independent.py": {
+      "bytes": 5251,
+      "sha256": "06674f2017ae950ad97438060c1892ee45bf05c8e7cf7d8f3cd9b6f340c1d19f"
+    },
+    "register_c111_evidence.py": {
+      "bytes": 4298,
+      "sha256": "c8a6694607277e1ce20509b26de774cae39a6386f616c7cf138a4ac12ffdc7ae"
+    }
+  },
+  "qa_status": "PASS",
+  "schema": "C111_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

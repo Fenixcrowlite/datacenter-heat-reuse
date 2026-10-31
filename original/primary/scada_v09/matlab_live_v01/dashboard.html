@@ -1,0 +1,80 @@
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DCHR | Live MATLAB Simulink</title>
+<style>
+:root{font:15px/1.5 system-ui,sans-serif;color:#e9f3fa;background:#0b121e}
+*{box-sizing:border-box}body{max-width:1280px;margin:auto;padding:22px}a{color:#61c6fe}header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+h1{margin:.2em 0;font-size:1.75rem}h2{font-size:1.15rem;margin:.3em 0 1em}
+small,.hint{color:#91a5b8}.disclaimer{border:1px solid #9f824e;background:#1d1b18;border-radius:9px;padding:12px;margin:16px 0}
+.layout{display:grid;grid-template-columns:minmax(265px,360px) minmax(0,1fr);gap:18px}
+.panel{background:#141f2e;border:1px solid #304256;border-radius:12px;padding:17px;margin-bottom:16px}
+label{display:flex;flex-direction:column;gap:5px;font-size:.86rem;color:#b8cfdf}
+input[type=number]{width:100%;background:#0b1725;border:1px solid #3a5368;color:#eef8ff;padding:9px;border-radius:7px}
+.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:14px 0}
+.checks label{display:flex;flex-direction:row;align-items:center;font-size:.9rem}
+button{background:#1782ac;color:white;border:0;border-radius:8px;padding:11px 17px;font:inherit;font-weight:650;cursor:pointer}
+button:disabled{background:#3e5260;cursor:not-allowed}
+.status{font-weight:650;color:#83cbe9}.err{color:#ff9c8b;white-space:pre-wrap}.metricgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.metric{background:#1b2e3e;padding:13px;border-radius:9px}.metric b{display:block;font-size:1.35rem}
+canvas{width:100%;height:270px;border-radius:7px;background:#101c2a}
+.graph-head{display:flex;justify-content:space-between;align-items:center}
+.legend{display:flex;gap:16px;flex-wrap:wrap;color:#aebac8;font-size:.84rem}
+.legend span:before{content:'■ ';color:var(--c)}.range{width:100%}
+pre{white-space:pre-wrap;word-wrap:break-word;font-size:.8rem;color:#afc4d4}
+@media(max-width:820px){.layout{grid-template-columns:1fr}.metricgrid{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<header><div><small>DATA CENTER HEAT REUSE / SIMULINK</small><h1>Живой пересчёт тепловой системы</h1><small>SCADA ⇄ MATLAB R2026a ⇄ Simulink + Stateflow v04</small></div><div><a href="#source-selector">Источники v04/v08 ↓</a> · <a href="http://127.0.0.1:8091/">← SCADA v09</a></div></header>
+<div class="disclaimer"><b>СИНТЕТИЧЕСКАЯ МОДЕЛЬ / D_SYNTHETIC</b> · Новый физический прогон Simulink v04, НЕ исходный replay v08, НЕ сертификат v85. PLC и оборудование отключены. Теплосеть: температура подачи вычисляется приближённо, без гидравлики и инерции.</div>
+<div class="layout"><aside><div class="panel"><h2>Параметры эксперимента</h2><form id="params"><div class="fieldgrid">
+<label>Лимит тепла DC, кВт<input name="dc_available_limit_kw" type="number" min="0" max="500" value="300" step="10"></label>
+<label>Предел бассейна, кВт<input name="pool_limit_kw" type="number" min="0" max="150" value="150" step="5"></label>
+<label>Предел ТН, тепловой кВт<input name="hp_thermal_limit_kw" type="number" min="0" max="200" value="200" step="5"></label>
+<label>Запрос теплосети, кВт<input name="dh_request_limit_kw" type="number" min="0" max="500" value="160" step="10"></label>
+<label>Поправка T источника, °C<input name="source_temperature_offset_C" type="number" min="-15" max="20" value="0"></label>
+<label>Отключить бассейн с часа<input name="pool_off_from_h" type="number" min="0" max="168" step=".25" value="168"></label>
+<label>Отключить ЦО с часа<input name="dh_off_from_h" type="number" min="0" max="168" step=".25" value="168"></label>
+<label>T обратки ЦО, °C<input name="dh_return_C" type="number" min="5" max="90" step=".5" value="45"></label>
+<label>Расход ЦО, кг/с<input name="dh_mass_flow_kg_s" type="number" min=".1" max="100" step=".1" value="5"></label>
+</div><div class="checks">
+<label><input type="checkbox" name="pool_enabled" checked> Бассейн ON</label>
+<label><input type="checkbox" name="dh_enabled" checked> ЦО ON</label>
+<label><input type="checkbox" name="hp_pool_enabled" checked> Догрев ТН бассейна ON</label>
+<label><input type="checkbox" name="tes_enabled" checked> TES ON</label>
+<label><input type="checkbox" name="hx_enabled" checked> Прямой HX ON</label>
+<label><input type="checkbox" name="it_enabled" checked> IT источник ON</label>
+</div><button id="go" type="submit">▶ Новый прогон MATLAB</button></form>
+<p class="hint">Каждая настройка передаётся в новый 7-дневный прогон. 672 шага по 900 с. Прогон не меняет архивные .slx и CSV.</p></div></aside>
+<main><div class="panel"><div class="graph-head"><h2>Состояние расчёта</h2><span class="status" id="status">Инициализация…</span></div><p id="details" class="hint">Проверка MATLAB и моделей.</p><p class="err" id="error"></p>
+<div id="metrics" class="metricgrid"><div class="metric"><small>Температура воды</small><b id="temp">—</b></div><div class="metric"><small>Тепло в бассейн</small><b id="pool">—</b></div><div class="metric"><small>Тепло в ЦО</small><b id="dh">—</b></div><div class="metric"><small>COP / ТН</small><b id="cop">—</b></div></div>
+</div><div class="panel"><div class="graph-head"><h2>Динамика бассейна и теплосети</h2><small id="time">t = — ч</small></div><canvas id="tempChart" width="950" height="270"></canvas><div class="legend"><span style="--c:#3ad3f5">T бассейна, °C</span><span style="--c:#ecb870">T подачи ЦО*, °C</span></div><input class="range" id="timeline" type="range" min="0" max="671" value="0"><small>*Расчётная подача, без тепловой инерции труб</small></div>
+<div class="panel"><h2>Распределение тепла, кВт</h2><canvas id="powerChart" width="950" height="270"></canvas><div class="legend"><span style="--c:#3ad3f5">Бассейн</span><span style="--c:#b69cfa">ЦО</span><span style="--c:#f0a367">REJECT</span><span style="--c:#88d2a1">Электричество ТН</span></div></div>
+<div class="panel"><h2>Энергетическая проверка</h2><pre id="summary">Новый расчёт ещё не выполнен.</pre></div>
+<div class="panel" id="visited-history">
+  <h2>История посещённых отсчётов MATLAB v04</h2>
+  <p class="hint">SQLite · только выбранные моменты завершённого расчёта v04. Не архив v08, не измерения, не промышленный журнал тревог. Один отсчёт сохраняется не более одного раза на задание.</p>
+  <p id="visit-status" class="hint">История ещё не загружена.</p>
+  <div style="overflow:auto;max-height:240px"><table style="width:100%;font-size:.85rem;border-collapse:collapse">
+    <thead><tr><th>Впервые просмотрен, UTC</th><th>t модели, ч</th><th>Бассейн, °C</th><th>ЦО, кВт</th><th>Насос ТН, кВт*</th></tr></thead>
+    <tbody id="visit-body"></tbody>
+  </table></div>
+  <p class="hint">* P_HP_W: электричество компрессора ТН, не циркуляционного насоса ЦО.</p>
+</div><div class="panel" id="source-selector">
+<h2>Единый просмотр источников v08 / v04</h2>
+<p class="hint">Один экран, но <b>не одна история</b>. v08 = сохранённые исходные CSV; v04 = новый завершённый расчёт MATLAB. Синтетика качества D. Графики, отсчёты и диагностические флаги не смешиваются.</p>
+<div class="graph-head"><label>Модель и происхождение
+<select id="sc-source" style="background:#0b1725;color:#eef8ff;padding:9px;border:1px solid #3a5368;border-radius:7px">
+<option value="v04">MATLAB v04 · реальный sim() / D_DERIVED</option>
+<option value="v08">Simulink v08 · архивный CSV / D_SYNTHETIC</option>
+</select></label><button type="button" id="sc-refresh">Обновить источник</button></div>
+<p id="sc-provenance" class="hint">Загрузка данных…</p><p id="sc-error" class="err"></p>
+<div class="metricgrid"><div class="metric"><small>T бассейна, °C</small><b id="sc-pool-temp">—</b></div><div class="metric"><small>Бассейн, кВт</small><b id="sc-pool-power">—</b></div><div class="metric"><small>ЦО, кВт</small><b id="sc-dh-power">—</b></div><div class="metric"><small>REJECT, кВт</small><b id="sc-reject-power">—</b></div></div>
+<h3>Температура бассейна и расчётная подача ЦО</h3><canvas id="sc-temp-chart" width="950" height="225" aria-label="Температура выбранного источника"></canvas>
+<p class="hint" id="sc-temp-note">—</p>
+<h3>Распределение тепловой мощности, кВт</h3><canvas id="sc-power-chart" width="950" height="225" aria-label="Мощность выбранного источника"></canvas>
+<div class="graph-head"><label for="sc-index">Отсчёт <span id="sc-clock">—</span></label><small id="sc-total">—</small></div>
+<input class="range" id="sc-index" type="range" min="0" max="671" value="0">
+<h3>Диагностика выбранного источника</h3><p id="sc-diagnostics" class="hint">—</p>
+<h3>Сохранённые отсчёты выбранного источника</h3>
+<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.84rem" id="sc-table"><thead><tr><th>t, ч</th><th>T бассейна, °C</th><th>Q бассейна, кВт</th><th>Q ЦО, кВт</th><th>Q REJECT, кВт</th></tr></thead><tbody id="sc-table-body"></tbody></table></div>
+<p class="hint">Здесь показаны именно исходные временные отсчёты модели, а не журнал фактических измерений или посещённых кадров SCADA. Список тревог оригинальной SCADA v08 остаётся отдельным.</p>
+</div></main></div>
+<script src="/dashboard.js" defer></script><script src="/source_compare.js" defer></script><script src="/visited_v04.js" defer></script></body></html>

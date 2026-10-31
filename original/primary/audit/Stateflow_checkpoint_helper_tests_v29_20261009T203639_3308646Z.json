@@ -1,0 +1,157 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:36:39.490097+00:00",
+  "review_type": "independent_synthetic_checkpoint_helper_mutation_tests",
+  "scope": "Independent synthetic mutation probes for v29 checkpoint closure helpers.\n\nThese tests verify bookkeeping and receipt rejection only. They never execute\nMATLAB/Stateflow, alter a saved model or count as actual model evidence.\nSynthetic marker fixtures are explicitly labelled and preserved in logs.\n",
+  "evidence_class": "synthetic_reviewer_self_test",
+  "synthetic_only": true,
+  "dynamic_model_execution_this_review": false,
+  "primary_text_verified_this_review": false,
+  "physical_validation": false,
+  "finalizer_sha256": "a77ed27cdeb361e078e319725c9ba4ca48427b928856e9e856215d5875a18330",
+  "test_source_sha256": "11cedb3821184735d9086924215e23e58b998fb36956354a990d01a8a7137042",
+  "checks": 26,
+  "passed": 25,
+  "failed": 1,
+  "assertions": [
+    {
+      "name": "accept_clean_three_way_evidence_classification",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "static_and_synthetic_counts_excluded_from_actual_evidence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_contradictory_total",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'passed')"
+    },
+    {
+      "name": "reject_contradictory_category_total",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'actual_evidence', 'passed')"
+    },
+    {
+      "name": "reject_contradictory_section_total",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_unknown_evidence_class",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'integrity', 'unclassified')"
+    },
+    {
+      "name": "reject_inconsistent_synthetic_flag",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_reconciled_static_to_actual_inflation",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'specification', 'actual_evidence', 'static_specification')"
+    },
+    {
+      "name": "reject_reconciled_synthetic_to_actual_inflation",
+      "passed": true,
+      "detail": "AssertionError: ('temporal', 'synthetic_reviewer_self_test', 'actual_evidence', 'synthetic_reviewer_self_test')"
+    },
+    {
+      "name": "reject_negative_counts",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_fractional_counts",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_missing_actual_evidence_section",
+      "passed": false,
+      "detail": "Corrupted synthetic fixture was accepted."
+    },
+    {
+      "name": "reject_boolean_counts",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "accept_consistent_explicitly_synthetic_receipt_fixture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "reject_duplicate_harness_receipt",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_missing_exit_observation",
+      "passed": true,
+      "detail": "KeyError: 'exit_observed'"
+    },
+    {
+      "name": "reject_false_exit_observation",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_nonzero_exit",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_harness_marker",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_result_path_in_marker",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_duplicate_log_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_duplicate_console_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_log_hash",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_wrong_console_hash",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_marker_missing_from_log_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    },
+    {
+      "name": "reject_marker_missing_from_console_file",
+      "passed": true,
+      "detail": "AssertionError: "
+    }
+  ],
+  "preserved_synthetic_fixture_logs": [
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203639_490097Z_TEMPORAL_log.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203639_490097Z_TEMPORAL_console.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203639_490097Z_MONITOR_log.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203639_490097Z_MONITOR_console.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203639_490097Z_log_file_missing_marker.log",
+    "automation/logs/checkpoint_helper_SYNTHETIC_v29_20261009T203639_490097Z_console_file_missing_marker.log"
+  ],
+  "actual_model_evidence_checks": 0
+}

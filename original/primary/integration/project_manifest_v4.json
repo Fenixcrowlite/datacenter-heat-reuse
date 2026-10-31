@@ -1,0 +1,42 @@
+{
+  "project_id": "data-center-heat-reuse",
+  "name": "DataCenter Heat Reuse",
+  "version": "0.4.0-validation",
+  "canonical_root": "OneDrive/Projects/DataCenter_Heat_Reuse",
+  "obsidian_mirror": "02_PROJECTS/02_Automation/DataCenter_Heat_Reuse",
+  "layers": {
+    "reference_study": "v0.3",
+    "literature_validation": "v0.4-frankfurt"
+  },
+  "entrypoints": {
+    "full_study": "matlab/run_full_study_v3.m",
+    "frankfurt_validation": "matlab/run_frankfurt_validation_v4.m",
+    "simulink": "matlab/simulink/DataCenterHeatReuse_Core.slx"
+  },
+  "validation": {
+    "source": "Jurgens et al. 2024 Frankfurt",
+    "annual_demand_MWh": 144000,
+    "hp_rated_MWth": 37,
+    "target_coverage": 0.975,
+    "achieved_coverage": 0.975000000000047,
+    "mean_cop": 4.15501074516106,
+    "hp_electric_MWh": 33946.5901209857,
+    "gas_heat_MWh": 3599.99999999337,
+    "calibrated_recovery_fraction": 0.920584795377727
+  },
+  "published": [
+    "docs/Frankfurt_Validation_v0_4_RU.md",
+    "results/frankfurt_validation_v4.csv",
+    "results/frankfurt_validation_v4_timeseries.csv",
+    "results/frankfurt_sensitivity_v4.csv",
+    "results/figures/15_frankfurt_validation_sensitivity_v4.png",
+    "docs/Mathematical_Model_v0_3_RU.md",
+    "docs/Dependency_Map_v0_3_RU.md",
+    "docs/Learning_Path_v0_3_RU.md",
+    "presentation/DataCenter_Heat_Reuse_v0_3_RU.pptx",
+    "presentation/DataCenter_Heat_Reuse_v0_3_RU.pdf"
+  ],
+  "telegram": {
+    "commands": ["/dchr", "/dchr_kpi", "/dchr_frankfurt", "/dchr_plot validation", "/dchr_explain cop", "/dchr_explain storage", "/dchr_sources", "/dchr_files"]
+  }
+}

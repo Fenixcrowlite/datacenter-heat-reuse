@@ -1,0 +1,14 @@
+﻿[
+    {
+        "file":  "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_2050_A44_GRAPHICAL_STATEFLOW\\DCHR_A44_Graphical_Supervisor.slx",
+        "exists":  true,
+        "sha256":  "C55DC5A1D4311104E675AEBD6045E19883F95F27EA33DB42D155EDBDFFE12307",
+        "size":  55513
+    },
+    {
+        "file":  "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1945_A43_FINITE_TRIP_RESIDUAL\\DCHR_A43_Finite_Trip_Closed_Loop.slx",
+        "exists":  true,
+        "sha256":  "AFE6752077D6BEA440AC85D7B700FB867879BC38306840A11FC50BA53C91F162",
+        "size":  84278
+    }
+]

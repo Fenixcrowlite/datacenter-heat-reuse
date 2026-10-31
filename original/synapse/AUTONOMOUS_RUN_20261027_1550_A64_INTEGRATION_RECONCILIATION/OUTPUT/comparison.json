@@ -1,0 +1,123 @@
+{
+  "scenarios": {
+    "V08": {
+      "a60_csv_sha256": "6752002558833f6e2fef743d02200bda0ba2a00ad94166e44fe870ded4a5cf18",
+      "a60_summary_sha256": "5b9c6a8b399223ed9ff668fbfb958bb83b53674cc48f47a43473cbdfa956db82",
+      "a62_csv_sha256": "3917ad808fffee01d792fee91fa9f177c71063ca7f5054352bdfeaf25fcdaf6e",
+      "a62_summary_sha256": "01993998f98709e88c27424a6129f8d0494e8912ff3b1bdda4930a444b15345c",
+      "channels": {
+        "P_HP_W": {
+          "discrete_MWh": "4.763524896706407",
+          "discrete_minus_trapezoid_kWh": "7.20629259595245",
+          "first_W": "35098.7155505933",
+          "last_W": "22551.6252170263",
+          "sample_slope_correction_kWh": "1.568386291695875",
+          "terminal_rectangle_kWh": "5.637906304256575",
+          "trapezoid_MWh": "4.75631860411045455"
+        },
+        "Q_DC_W": {
+          "discrete_MWh": "28.56",
+          "discrete_minus_trapezoid_kWh": "49.83632875",
+          "first_W": "200000",
+          "last_W": "198690.63",
+          "sample_slope_correction_kWh": "0.16367125",
+          "terminal_rectangle_kWh": "49.6726575",
+          "trapezoid_MWh": "28.51016367125"
+        },
+        "Q_DH_W": {
+          "discrete_MWh": "16.1011322729762245",
+          "discrete_minus_trapezoid_kWh": "24.9999317500",
+          "first_W": "100000",
+          "last_W": "99999.454",
+          "sample_slope_correction_kWh": "0.0000682500",
+          "terminal_rectangle_kWh": "24.9998635",
+          "trapezoid_MWh": "16.0761323412262245"
+        },
+        "Q_pool_W": {
+          "discrete_MWh": "10.3930843032766458875",
+          "discrete_minus_trapezoid_kWh": "20.0003977213447875",
+          "first_W": "150000",
+          "last_W": "10003.1817707583",
+          "sample_slope_correction_kWh": "17.4996022786552125",
+          "terminal_rectangle_kWh": "2.500795442689575",
+          "trapezoid_MWh": "10.3730839055553011"
+        },
+        "Q_reject_W": {
+          "discrete_MWh": "6.245686703251126881486389338970725",
+          "discrete_minus_trapezoid_kWh": "13.8847913504743750000000000",
+          "first_W": "0",
+          "last_W": "111078.330803795",
+          "sample_slope_correction_kWh": "-13.8847913504743750000000000",
+          "terminal_rectangle_kWh": "27.76958270094875",
+          "trapezoid_MWh": "6.231801911900652506486389338970725"
+        }
+      },
+      "discrete_duration_h": "168",
+      "physical_release": false,
+      "samples": 672,
+      "source_kind": "derived_simulation",
+      "step_s": "900",
+      "time_span_h": "167.75"
+    },
+    "V09": {
+      "a60_csv_sha256": "d9ac2a32795e54eeef0bff9f430306d960c30331b1505cca5e3675dfe669c488",
+      "a60_summary_sha256": "0e2de7ef45200a8dc24de623e6587ac99194e8a9d063a2055550b0f699424f54",
+      "a62_csv_sha256": "82b3164014e04964eb80d256b1f9439d2ebcfd583972b1258330e04bee97dde1",
+      "a62_summary_sha256": "c0d6528695a1b596572119d08dca5bba1bf78182e95e2932eb0daced4cee310a",
+      "channels": {
+        "P_HP_W": {
+          "discrete_MWh": "4.763524893239118075",
+          "discrete_minus_trapezoid_kWh": "7.2062924082834375",
+          "first_W": "35098.7138278937",
+          "last_W": "22551.6254383738",
+          "sample_slope_correction_kWh": "1.5683860486899875",
+          "terminal_rectangle_kWh": "5.63790635959345",
+          "trapezoid_MWh": "4.7563186008308346375"
+        },
+        "Q_DC_W": {
+          "discrete_MWh": "28.55999999999999875",
+          "discrete_minus_trapezoid_kWh": "49.836328261697875",
+          "first_W": "200000",
+          "last_W": "198690.626093583",
+          "sample_slope_correction_kWh": "0.163671738302125",
+          "terminal_rectangle_kWh": "49.67265652339575",
+          "trapezoid_MWh": "28.510163671738300875"
+        },
+        "Q_DH_W": {
+          "discrete_MWh": "16.1011322594186827",
+          "discrete_minus_trapezoid_kWh": "24.9999317019888625",
+          "first_W": "100000",
+          "last_W": "99999.4536159109",
+          "sample_slope_correction_kWh": "0.0000682980111375",
+          "terminal_rectangle_kWh": "24.999863403977725",
+          "trapezoid_MWh": "16.0761323277166938375"
+        },
+        "Q_pool_W": {
+          "discrete_MWh": "10.39308430195404426",
+          "discrete_minus_trapezoid_kWh": "20.000397709776125",
+          "first_W": "150000",
+          "last_W": "10003.181678209",
+          "sample_slope_correction_kWh": "17.499602290223875",
+          "terminal_rectangle_kWh": "2.50079541955225",
+          "trapezoid_MWh": "10.373083904244268135"
+        },
+        "Q_reject_W": {
+          "discrete_MWh": "6.245686710970867530408516496420525",
+          "discrete_minus_trapezoid_kWh": "13.8847909494205000000000000",
+          "first_W": "0",
+          "last_W": "111078.327595364",
+          "sample_slope_correction_kWh": "-13.8847909494205000000000000",
+          "terminal_rectangle_kWh": "27.769581898841",
+          "trapezoid_MWh": "6.231801920021447030408516496420525"
+        }
+      },
+      "discrete_duration_h": "168",
+      "physical_release": false,
+      "samples": 672,
+      "source_kind": "derived_simulation",
+      "step_s": "900",
+      "time_span_h": "167.75"
+    }
+  },
+  "schema": "a64.1"
+}

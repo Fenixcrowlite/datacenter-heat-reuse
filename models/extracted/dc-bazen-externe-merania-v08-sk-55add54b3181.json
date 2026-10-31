@@ -2457,6 +2457,7 @@
   "execution_status": "not_ported",
   "file": "extracted/dc-bazen-externe-merania-v08-sk-55add54b3181.json",
   "copies": [
+    "obsidian/pool_500m3/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx",
     "primary/matlab/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx"
   ]
 }

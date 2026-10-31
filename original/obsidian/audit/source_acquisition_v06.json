@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-08T18:11:58.221513+00:00",
+  "files": [
+    {
+      "filename": "04_Hiltunen_Espoo_2020.pdf",
+      "status": "MISSING",
+      "tried": [
+        {
+          "url": "https://www.mdpi.com/1996-1073/13/14/3551/pdf",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "filename": "20_Verzino_Varna_2026.pdf",
+      "status": "MISSING",
+      "tried": [
+        {
+          "url": "https://www.mdpi.com/1996-1073/19/3/800/pdf",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.mdpi.com/1996-1073/19/3/800/pdf-vor",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "filename": "21_Ebrahimi_2014.pdf",
+      "status": "DOWNLOADED",
+      "tried": [],
+      "source_url": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20104/2014_Ebrahimi_Jones_Fleischer_A_Review_of_data_center_cooling_technology.pdf",
+      "size": 968091
+    }
+  ],
+  "original_catalog": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\sources\\original\\Datacentra_teplo_vedecke_prace.pdf"
+}

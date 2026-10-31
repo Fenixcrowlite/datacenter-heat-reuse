@@ -1,0 +1,17 @@
+test_analytic_decomposition (test_a64.TestA64.test_analytic_decomposition) ... ok
+test_constant_power_endpoint (test_a64.TestA64.test_constant_power_endpoint) ... ok
+test_cumulative_mismatch_rejected (test_a64.TestA64.test_cumulative_mismatch_rejected) ... ok
+test_nan_rejected (test_a64.TestA64.test_nan_rejected) ... ok
+test_nonuniform_rejected (test_a64.TestA64.test_nonuniform_rejected) ... ok
+test_nonzero_origin_rejected (test_a64.TestA64.test_nonzero_origin_rejected) ... ok
+test_output_static_and_informative (test_a64.TestA64.test_output_static_and_informative) ... ok
+test_provenance_no_physical_release (test_a64.TestA64.test_provenance_no_physical_release) ... ok
+test_real_v08 (test_a64.TestA64.test_real_v08) ... ok
+test_real_v09 (test_a64.TestA64.test_real_v09) ... ok
+test_row_count_rejected (test_a64.TestA64.test_row_count_rejected) ... ok
+test_source_field_mismatch_rejected (test_a64.TestA64.test_source_field_mismatch_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in <variable>s
+
+OK

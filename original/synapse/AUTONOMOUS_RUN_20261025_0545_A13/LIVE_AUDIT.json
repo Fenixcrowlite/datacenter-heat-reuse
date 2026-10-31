@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-25T05:55:50.693005+01:00",
+  "ram_free_gib": 4.592,
+  "gpu": "2149, 8188, 0",
+  "worktrees": 361,
+  "stop_checked_roots": [
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\DCHR_V87_RECEIPT_BINDING_20261025_0545",
+    "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse",
+    "C:\\Users\\Lysda\\Desktop\\temp_coding",
+    "C:\\Users\\Lysda\\Desktop\\EduMotionPipeline"
+  ],
+  "stop_active": [],
+  "owner_processes": {
+    "5264": {
+      "parent": 22920,
+      "role": "on314\\python.exe -u C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\scada_server.py"
+    },
+    "8768": {
+      "parent": 24072,
+      "role": ".exe C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\matlab_live_v01\\live_bridge.py"
+    },
+    "16288": {
+      "parent": 25716,
+      "role": "\\node.exe C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\scada_v09\\fuxa_bridge\\run_stack.cjs"
+    },
+    "30680": {
+      "parent": 32920,
+      "role": "da\\Desktop\\temp_coding\\telegram_codex_bot\\.venv\\Scripts\\pythonw.exe -m scripts.launch_devteam_worker"
+    },
+    "32920": {
+      "parent": 2916,
+      "role": "da\\Desktop\\temp_coding\\telegram_codex_bot\\.venv\\Scripts\\pythonw.exe -m scripts.launch_devteam_worker"
+    }
+  },
+  "registry_tasks": 207,
+  "registry_events": 1098,
+  "registry_quick_check": "ok",
+  "matlab_active": false
+}

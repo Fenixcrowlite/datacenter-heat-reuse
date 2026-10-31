@@ -1,0 +1,533 @@
+{
+  "timestamp_utc": "2026-10-11T11:15:00.120874+00:00",
+  "manifest": "audit/Charge_regime_manifest_v56_20261011T111443_860874Z.json",
+  "manifest_sha256": "dae58edd3befab154718ce9155d79a513d3f2fe640c77be58ac2e455a2851e36",
+  "passed": 131,
+  "failed": 0,
+  "checks": [
+    {
+      "path": "STATUS_v56.json",
+      "passed": true
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v56.md",
+      "passed": true
+    },
+    {
+      "path": "audit/Charge_regime_results_v56.md",
+      "passed": true
+    },
+    {
+      "path": "automation/engineering_progress.md",
+      "passed": true
+    },
+    {
+      "path": "automation/STATEFLOW_ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/boiler_limit_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/charge_regimes_v56.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/execution_release_20261011T111240343Z.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/execution_release_20261011T111250956Z.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/hp_only_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/independent_QA_v56_20261011T111430_667933Z.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/insufficient_heat_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/matlab_release_20261011T111240343Z.log",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/matlab_release_20261011T111250956Z.log",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/mat_reopen.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/negative_source_fault.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/original_simulation_reopen.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/preservation.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/release_QA_v56_20261011T111435_176759Z.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/release_reviewer_20261011T111434976Z.log",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/report.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/reviewer_20261011T111429325Z.log",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_hashes.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/spec.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/temporal_original_reopen.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/temporal_report.json",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/temporal_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/tes_charge_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/tes_discharge_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/zero_demand_simulation.mat",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/001_zero_demand_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/002_zero_demand_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/003_zero_demand_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/004_zero_demand_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/005_zero_demand_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/006_zero_demand_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/007_zero_demand_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/008_zero_demand_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/009_zero_demand_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/010_zero_demand_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/011_zero_demand_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/012_zero_demand_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/013_hp_only_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/014_hp_only_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/015_hp_only_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/016_hp_only_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/017_hp_only_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/018_hp_only_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/019_hp_only_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/020_hp_only_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/021_hp_only_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/022_hp_only_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/023_hp_only_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/024_hp_only_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/025_tes_charge_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/026_tes_charge_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/027_tes_charge_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/028_tes_charge_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/029_tes_charge_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/030_tes_charge_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/031_tes_charge_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/032_tes_charge_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/033_tes_charge_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/034_tes_charge_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/035_tes_charge_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/036_tes_charge_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/037_tes_discharge_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/038_tes_discharge_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/039_tes_discharge_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/040_tes_discharge_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/041_tes_discharge_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/042_tes_discharge_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/043_tes_discharge_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/044_tes_discharge_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/045_tes_discharge_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/046_tes_discharge_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/047_tes_discharge_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/048_tes_discharge_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/049_boiler_limit_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/050_boiler_limit_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/051_boiler_limit_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/052_boiler_limit_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/053_boiler_limit_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/054_boiler_limit_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/055_boiler_limit_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/056_boiler_limit_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/057_boiler_limit_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/058_boiler_limit_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/059_boiler_limit_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/060_boiler_limit_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/061_insufficient_heat_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/062_insufficient_heat_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/063_insufficient_heat_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/064_insufficient_heat_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/065_insufficient_heat_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/066_insufficient_heat_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/067_insufficient_heat_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/068_insufficient_heat_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/069_insufficient_heat_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/070_insufficient_heat_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/071_insufficient_heat_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/072_insufficient_heat_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/073_sequence_dispatch.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/074_sequence_raw_segments.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/075_sequence_raw_plans.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/076_sequence_clock_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/077_sequence_clock_end.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/078_sequence_energy_start.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/079_sequence_case_p.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/080_sequence_case_h.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/081_sequence_case_c.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/082_sequence_case_inputs.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/083_sequence_case_initial_energy_MWh.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/084_sequence_case_initial_clock.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/binary/085_sequence_blocker_witness.bin",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/Charge_regime_derivation_v56.md",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/finalize_charge_release_v56.py",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/prepare_charge_regimes_v56.py",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/run_charge_regimes_v56.ps1",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/run_charge_release_v56.ps1",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/run_charge_temporal_v56.ps1",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/verify_charge_regimes_v56.py",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/audit/verify_charge_release_v56.py",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/export_charge_release_v56.m",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/run_charge_regimes_v56.m",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/run_charge_temporal_v56.m",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/simulink/DCHR_Dispatch_Stateflow_v52.slx",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/+dchr/+components/charge_regime_events_v56.m",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/+dchr/+components/coupled_branch_certificate_v55.m",
+      "passed": true
+    },
+    {
+      "path": "results/charge_regimes_v56_20261011T111230_427402Z/source_snapshot/matlab/+dchr/+components/coupled_temperature_boundary_v55.m",
+      "passed": true
+    }
+  ]
+}

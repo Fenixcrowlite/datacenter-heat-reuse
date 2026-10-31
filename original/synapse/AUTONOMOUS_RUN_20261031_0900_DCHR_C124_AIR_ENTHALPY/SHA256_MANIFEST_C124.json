@@ -1,0 +1,51 @@
+{
+  "files": {
+    "C124_FINDINGS.md": {
+      "bytes": 1642,
+      "sha256": "5fd08ff9b6833209a9b9a6c6012f3f53d7eda5bbe6b4374cc4b9f9ffa8b3beaf"
+    },
+    "C124_INDEPENDENT_QA.json": {
+      "bytes": 312,
+      "sha256": "3662d76802848b6199d7e2cf12e5ae9da4640348451cfcbe03e56d1bdcec65c7"
+    },
+    "C124_METADATA.json": {
+      "bytes": 1198,
+      "sha256": "3a971648186f6f524ff1c12a46c1fbb3ec41134dc5019da3f2d793a9ff650d28"
+    },
+    "C124_QA_LOG.txt": {
+      "bytes": 285,
+      "sha256": "190ce37f5dcfbab400b7ce2c3e1b2677b77c182eca979554415262241c28b2cd"
+    },
+    "C124_QUARTER_AIR.csv.gz": {
+      "bytes": 10793715,
+      "sha256": "bc73e47fc74182b782293ab655fd8b8bcea5a4aa7a01f8b1ff4c8f860caf76d0"
+    },
+    "C124_RUN_LOG.txt": {
+      "bytes": 3826,
+      "sha256": "fb25b5111f56d332a9eb60c4926763cfd4b0e0b6cf6b9838780233435c7a1a3b"
+    },
+    "C124_SUMMARY.json": {
+      "bytes": 1625,
+      "sha256": "9864048528df214966cd677ff6d1df92ff84c5a245a698ee794d9673786b3333"
+    },
+    "c124_air_enthalpy.py": {
+      "bytes": 8006,
+      "sha256": "998d5da270714a1b84dfecaa774578174e7815fe4178af28920d0a24d4da3b11"
+    },
+    "finalize_c124.py": {
+      "bytes": 7170,
+      "sha256": "0576dabcf0068569219561d72f94181cbc433cf7fdf04caec4f633728815a139"
+    },
+    "qa_c124_independent.py": {
+      "bytes": 2818,
+      "sha256": "20fbf437e4cb879a7e20fceb1c13af12609d466f51f073e8baf83b5ea0a4ad68"
+    },
+    "qa_c124_independent_rejected_v1.py": {
+      "bytes": 2674,
+      "sha256": "03b6056e9979f2a0abf2d5133aa81ac1c7f69b080e49e8f60638d9907b370f32"
+    }
+  },
+  "qa": "PASS",
+  "schema": "C124_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

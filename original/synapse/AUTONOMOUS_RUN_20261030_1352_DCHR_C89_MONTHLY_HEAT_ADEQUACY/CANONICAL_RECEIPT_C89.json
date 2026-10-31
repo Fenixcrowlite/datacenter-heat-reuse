@@ -1,0 +1,8 @@
+{
+  "actor": "chatgpt-dchr-c89-monthly-adequacy-20261030-1352",
+  "event_id": 1449,
+  "evidence_sha256": "16e40694ced5ebeaf3aa2b03871c716a9665ac3e48a2541db78d034b7e980097",
+  "manifest_sha256": null,
+  "schema": "SYNAPSE_IDEMPOTENT_EVIDENCE_RECEIPT_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

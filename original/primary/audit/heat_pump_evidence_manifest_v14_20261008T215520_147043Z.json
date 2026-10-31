@@ -1,0 +1,120 @@
+{
+  "timestamp_utc": "2026-10-08T21:55:20.147043+00:00",
+  "category": "immutable_post_gate_file_manifest",
+  "packaging_checks": "PASS",
+  "primary_replication": false,
+  "files": {
+    "MASTER_STAGEBOARD_v14.md": {
+      "bytes": 2641,
+      "sha256": "e0da279c232d045c549059f9611b917920f56eb524c174617b286af27b8c3df4"
+    },
+    "STATUS_v14.json": {
+      "bytes": 4153,
+      "sha256": "b686b269b1ae9b2aaaa001236171ab13a663081a885a0e0456605c950f301a24"
+    },
+    "audit/Heat_pump_domain_and_part_load_v14.md": {
+      "bytes": 7375,
+      "sha256": "c6904e1322973e86afd87e15c3c87aa0d1b147c2704150bf66a3f4b920b2fcf8"
+    },
+    "audit/Marcinichen_acquisition_v14.md": {
+      "bytes": 5795,
+      "sha256": "9bcbf75b534681139c5ba73b0ecbfc6aa49288b5278cc777f87a3e1bd5cbcf7f"
+    },
+    "audit/Marcinichen_acquisition_v14.py": {
+      "bytes": 4526,
+      "sha256": "b870066640fcae8866cf8b6a7b926dc0289c6b7846891f4f25fd12b201b8fda6"
+    },
+    "audit/Marcinichen_acquisition_v14_20261008T214932788906Z.json": {
+      "bytes": 711,
+      "sha256": "3c494f224d95bca4d1f32b92862badac254db8ec661caeb418d48f95e3a4831f"
+    },
+    "audit/Marcinichen_acquisition_v14_test.py": {
+      "bytes": 3262,
+      "sha256": "6dd5444d16bcd8ead69a3c6641058bb8363eca26c3fd5a6a0b6e783c575d69da"
+    },
+    "audit/Marcinichen_acquisition_v14_tests_20261008T214932831440Z.json": {
+      "bytes": 270,
+      "sha256": "d3a04082ebb6ff698de534540a8faae227fb0c037a58577b8be8d1cbffa5efc4"
+    },
+    "audit/finalize_checkpoint_v14.py": {
+      "bytes": 13854,
+      "sha256": "90816a6a6130ff988e52780f551f029369cb24c8ea21307336683fb798078bd4"
+    },
+    "audit/heat_pump_reference_tests_v14_20261008T215102_859885Z.json": {
+      "bytes": 1458,
+      "sha256": "a8e0b93238300abfbc8a7cecb547b03f912454d0a45e2cea42ff5b53e0d7e41a"
+    },
+    "audit/heat_pump_reference_tests_v14_20261008T215215_727651Z.json": {
+      "bytes": 1458,
+      "sha256": "d3c6a6c355b28563cf2d60d4b5c90bd27d917146008ba3561e5c70e863ffd5dc"
+    },
+    "audit/heat_pump_reference_v14.py": {
+      "bytes": 5460,
+      "sha256": "a10033e87d202aa8675b6aaaa2eaf76c2f8e6100b0e2f953b1aa6be51eb5b5cc"
+    },
+    "audit/heat_pump_vectors_v14_20261008T215102_859885Z.csv": {
+      "bytes": 150396,
+      "sha256": "034f0b9c4e4a812d299eb40c20a3248ab7b70f86bc5aaabae4197d9fc3cbbe75"
+    },
+    "audit/heat_pump_vectors_v14_20261008T215215_727651Z.csv": {
+      "bytes": 150664,
+      "sha256": "0ef2516dedc76d437bb0013e1d09126e66dc8c92b0ef7814ea836a06ee011752"
+    },
+    "audit/test_heat_pump_reference_v14.py": {
+      "bytes": 14641,
+      "sha256": "1b84033e0ea238fd5bfe7fc91dd6c43cca263127bb59e9b4d394b6fb269a29d0"
+    },
+    "automation/engineering_progress.md": {
+      "bytes": 3430,
+      "sha256": "224e8659d8af2be2b949c8287e69dd1b1a4b8d7543d0660e115d9a5c14835c99"
+    },
+    "automation/logs/Marcinichen_acquisition_v14_fetch_20261008T2149Z.log": {
+      "bytes": 211,
+      "sha256": "ebb62bda431ac89c21caa3a147689615270a1904076c93f40be6fb5786548f1a"
+    },
+    "automation/logs/Marcinichen_acquisition_v14_tests_20261008T2149Z.log": {
+      "bytes": 1061,
+      "sha256": "130eac674ee38705ddce432af504895c6f0d1c2b33f18a683e1057d8348e76b3"
+    },
+    "automation/logs/hp_reference_v14_20261008T215102_859885Z.log": {
+      "bytes": 2110,
+      "sha256": "17c1b8eaf9136e2564c5b3335af43f99cf46931e81934e95febfe07b0130e2bd"
+    },
+    "automation/logs/hp_reference_v14_20261008T215215_727651Z.log": {
+      "bytes": 2256,
+      "sha256": "8e7fb267bb8aa9fe8f67e23f4421aee1bf4d3fcb4e9dbc8d2acab1314f372ff9"
+    },
+    "automation/logs/matlab_hp_v14_contract_20261008_235131.log": {
+      "bytes": 292,
+      "sha256": "24c347cabf526a84911dedb1bc4ea4930bd8091e9d8bb9f62d7a4c305dd0ad49"
+    },
+    "automation/logs/matlab_hp_v14_contract_20261008_235235.log": {
+      "bytes": 5019,
+      "sha256": "20f3829107bcae2598c6e3fc5055778f7c7eaa616b9b44a09afe2928fdd305bf"
+    },
+    "automation/logs/matlab_hp_v14_smoke_20261008_235035.log": {
+      "bytes": 268,
+      "sha256": "b60bd6d251dd021476e89f3e950c9c2e7f379a9e50b436abf4f4d00f524c19f5"
+    },
+    "matlab/+dchr/+components/heat_pump_step_v14.m": {
+      "bytes": 4282,
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12"
+    },
+    "matlab/run_heat_pump_contract_v14.m": {
+      "bytes": 7808,
+      "sha256": "f0cb37852e0239fd3e89f867c484207ae49426a6a957d59244ef9815457bd38c"
+    },
+    "results/hp_contract_v14_20261008_235235/matlab_heat_pump_contract_v14.csv": {
+      "bytes": 2664,
+      "sha256": "9021a2ba76bb0a9b1dc86c28be2eeb8cb48eded76638ad7f703a6eeb72511380"
+    },
+    "results/hp_contract_v14_20261008_235235/matlab_heat_pump_contract_v14.json": {
+      "bytes": 5358,
+      "sha256": "48a886980c417a9f42c1bf252d7bf4bc3d05371ed0ec6cdbd019d218fa17ed00"
+    },
+    "results/hp_contract_v14_20261008_235235/matlab_heat_pump_vectors_v14.csv": {
+      "bytes": 61149,
+      "sha256": "1130d64a11fca3db5b19da36d4e66be1a868ad2ea555e76ebb4fc30b516babe2"
+    }
+  }
+}

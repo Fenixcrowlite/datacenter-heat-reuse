@@ -1,0 +1,51 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1451_DCHR_STRATIFIED_TANK_GATE",
+  "case_summary": [
+    {
+      "charge_temp_c": 72,
+      "ua_kw_per_k": 0.46814973649193786,
+      "volume_m3": 10000,
+      "year3_delivered_mwh": 341.037,
+      "year3_extra_electric_mwh": 226.472
+    },
+    {
+      "charge_temp_c": 80,
+      "ua_kw_per_k": 0.46814973649193786,
+      "volume_m3": 10000,
+      "year3_delivered_mwh": 437.112,
+      "year3_extra_electric_mwh": 331.553
+    },
+    {
+      "charge_temp_c": 72,
+      "ua_kw_per_k": 10.093950538627052,
+      "volume_m3": 305485.8,
+      "year3_delivered_mwh": 3460.154,
+      "year3_extra_electric_mwh": 3413.141
+    },
+    {
+      "charge_temp_c": 80,
+      "ua_kw_per_k": 10.093950538627052,
+      "volume_m3": 305485.8,
+      "year3_delivered_mwh": 3004.792,
+      "year3_extra_electric_mwh": 3413.141
+    },
+    {
+      "charge_temp_c": 80,
+      "ua_kw_per_k": 0.0,
+      "volume_m3": 10000,
+      "year3_delivered_mwh": 456.073,
+      "year3_extra_electric_mwh": 234.1
+    }
+  ],
+  "incremental_savings_claimed": false,
+  "manifest_sha256": "06d4c713b51e32db06543cb8f5c74dd754688cf943aec8b404458ba0fd113ef5",
+  "next_step": "Compare against existing 100 MWh Simulink dispatch boundary in isolated MATLAB test; validate UA/COP/return temperature, equipment, tariffs and 31 primary sources.",
+  "primary_source_signoffs": 0,
+  "production_modified": false,
+  "qa": "21/21 unit PASS; 15 annual independent ledgers, 15 electric splits, 5 UA geometries, 5 profiles PASS",
+  "scope": "DCHR_STRATIFIED_WATER_TANK_DYNAMIC_ENERGY_GATE",
+  "simulink_integrated": false,
+  "source_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e",
+  "synthetic_not_metered": true
+}

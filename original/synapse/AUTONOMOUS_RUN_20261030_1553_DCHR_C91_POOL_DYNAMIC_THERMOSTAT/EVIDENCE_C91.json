@@ -1,0 +1,21 @@
+{
+  "actor": "chatgpt-dchr-c91-pool-thermostat-20261030-1553",
+  "adversarial_sha256": "a3517fdeff30852624aeb7fca6bb82c10018f928371f811f70bbadd07a2c74bd",
+  "findings_sha256": "dc534431e3a1c78e642290a2e80d7a0ba463a83f9c547abfa2a22c9b82a60cae",
+  "hourly_sha256": "c9ea5be5d5cd654f204bdd5eb6a30377fb740e0eeee66f73b6bc1e5b7af5ad80",
+  "manifest_sha256": "3b1be9e13a7c63bd9638974f18f8d59715b7c483d40242e7cb9ef00a5c5a834a",
+  "model_sha256": "964cb181227db7c5af93e8632e352919ab28b030de69c934412dc798bb7264b4",
+  "next": "Validate primary evaporation/HVAC sources and real HX pinch/COP/temperature allocation; retain 31 signoffs open",
+  "physical_field_validation": false,
+  "plot_sha256": "5981d28c101df06b8f1cee75e7343026024341ed9b6981bc24fc1bf3a5c68422",
+  "primary_sources_signed": 0,
+  "production_changed": false,
+  "qa": "11/11 self + 28/28 independent + 8/8 adversarial + plot 6x365 PASS",
+  "qa_sha256": "2e4272af08d80c921dcfd070380f5806d4db0756e85b2e2527d501db24374646",
+  "results": "25pct hypothetical HX fraction: min 27.782 C, zero hours below 27.5 C; 10pct: two hours below, 10pct+50kW backup: 5.06 MWh backup, zero hours below",
+  "schema": "C91_POOL_DYNAMIC_EVIDENCE_V1",
+  "scope": "Isolated CPU-only 500m3 dynamic thermostat and conditional HX recovery simulation, independent QA and plot",
+  "summary_sha256": "72c6a15a377cf15c38cd7d6ae0215a515a6c543164c296bb7daf7be0301d4b38",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

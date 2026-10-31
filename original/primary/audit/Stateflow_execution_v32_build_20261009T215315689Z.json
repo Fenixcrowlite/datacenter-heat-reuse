@@ -1,0 +1,7 @@
+﻿{
+    "timestamp_utc":  "2026-10-09T21:54:01.0159086Z",
+    "log_path":  "automation/logs/stateflow_build_v32_console_20261009T215315689Z.log",
+    "command":  "addpath(\u0027audit\u0027); run_stateflow_v32_batch(\u0027build\u0027,\u0027\u0027)",
+    "evidence_class":  "observed_matlab_batch_receipt",
+    "exit_code":  1
+}

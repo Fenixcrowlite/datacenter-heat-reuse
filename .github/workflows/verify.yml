@@ -1,0 +1,41 @@
+name: Reproduce Python and container
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Native Python tests
+        run: python3 -m heat_reuse verify
+      - name: Build pinned container
+        run: docker compose build
+      - name: Run tests inside container
+        run: docker compose run --rm -T laboratory python -m heat_reuse verify
+      - name: Verify HTTP calculation and persistent volume
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker compose up -d
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8080/api/health; then break; fi
+            sleep 2
+          done
+          curl --fail --silent -H 'Content-Type: application/json' -d '{"model_id":"pool-v04","steps":32,"config":{"pool_enabled":false}}' http://127.0.0.1:8080/api/run > /tmp/result.json
+          python3 -c 'import json; r=json.load(open("/tmp/result.json")); assert r["source_kind"]=="PYTHON_COMPUTED"; assert r["metrics"]["pool_heat_MWh"]==0'
+          docker compose restart
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8080/api/results > /tmp/history.json; then break; fi
+            sleep 2
+          done
+          python3 -c 'import json; r=json.load(open("/tmp/result.json")); h=json.load(open("/tmp/history.json")); assert any(x["id"]==r["id"] for x in h)'
+      - name: Container logs
+        if: always()
+        run: docker compose logs
+      - name: Stop test containers
+        if: always()
+        run: docker compose down

@@ -1,0 +1,16 @@
+{
+  "ERF_certified": false,
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1050_DCHR_SIM_ENERGY_AUDIT",
+  "curtailed_heat_mwh": "22545.42126060357734628",
+  "curtailed_intervals": 4587,
+  "manifest_sha256": "c3152418100ab493592b3cc6f7733f25f48d1edb083f2a3ac1f745eb50606a1d",
+  "measured_data": false,
+  "next_step": "Obtain authenticated measured E_DC/E_IT/E_REUSE/E_RES/W_IN with explicit measurement boundaries; reconcile heat-pump electricity and DC perimeter; only then calculate regulatory metrics. Keep primary source signoffs 0/31.",
+  "primary_signoffs": 0,
+  "production_modified": false,
+  "qa": "13/13 unit tests PASS; 8760/8760 hourly records and 9 energy totals independently PASS",
+  "scope": "DCHR_EXISTING_SIMULATION_ANNUAL_ENERGY_AND_CURTAILMENT_AUDIT",
+  "simulated_pue": "1.1999999999999999403336915094104385",
+  "source_csv_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "source_status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e"
+}

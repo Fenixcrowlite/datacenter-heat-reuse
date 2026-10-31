@@ -1,0 +1,7 @@
+{
+  "evidence_class": "observed_matlab_batch_receipt",
+  "timestamp_utc": "2026-10-10T18:27:15.8066210Z",
+  "command": "addpath('matlab'); run_annual_dispatch_v48('results/annual_dispatch_v48_20261010T182553_348909Z'); export_annual_dispatch_v48('results/annual_dispatch_v48_20261010T182553_348909Z');",
+  "log_path": "automation/logs/annual_dispatch_v48_20261010T182602227Z.log",
+  "exit_code": 0
+}

@@ -1,0 +1,14 @@
+{
+  "actor": "chatgpt-dchr-c98-ua-boundary-20261030-1954",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1954_DCHR_C98_UA_THRESHOLD\\C98_SWEEP.csv",
+  "field_validated": false,
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1954_DCHR_C98_UA_THRESHOLD\\SHA256_MANIFEST_C98.json",
+  "manifest_sha256": "e97696ccb20d02298bc66d02ff934853a0bd8c7143a6f82941cceb19ad79277b",
+  "next": "Use measured source/flow and vendor UA/COP curves, couple evaporator loop; include ventilation/dehumidification",
+  "qa": "820 independent assertions; 127 simulations; 7 pass/fail brackets; 2 negative controls",
+  "schema": "C98_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "summary": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261030_1954_DCHR_C98_UA_THRESHOLD\\C98_THRESHOLDS.json",
+  "sweep_sha256": "d5d4a599dfc11c048cd0152fab8b706b08809a7e24f87a6903bd1afb5a1b6d22",
+  "task_id": "scc-2aab24704c2bd0"
+}

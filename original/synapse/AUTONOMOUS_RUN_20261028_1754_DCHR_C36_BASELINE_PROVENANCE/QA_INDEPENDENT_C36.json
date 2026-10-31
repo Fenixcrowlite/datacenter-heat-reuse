@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "passed": 14,
+  "failed": 0,
+  "tests": 14,
+  "independent_hourly_records": 17520,
+  "verified_against_source_hashes": 11,
+  "negative_control": "v2 warm45 label rejected by 2006.5 MWh annual gas mismatch"
+}

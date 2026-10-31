@@ -1,0 +1,638 @@
+{
+  "version": "0.30",
+  "timestamp_utc": "2026-10-09T21:30:38.443630+00:00",
+  "prior_manifest": "audit/Stateflow_fault_manifest_v29_20261009T204014_224631Z.json",
+  "prior_manifest_preserved_count": 288,
+  "mutable_exclusions": [
+    "automation/engineering_progress.md",
+    "automation/STATEFLOW_ACCEPTANCE.md",
+    "active closure console"
+  ],
+  "files": [
+    {
+      "path": "audit/finalize_stateflow_checkpoint_v30.py",
+      "bytes": 12126,
+      "sha256": "0daac10c766980dc9933fc1b8d11fca1b80a0130b5d8777500176e1253e97459"
+    },
+    {
+      "path": "audit/Stateflow_independent_QA_v30_20261009T212925_625430Z.json",
+      "bytes": 569104,
+      "sha256": "c3148908dd56119503cc2e9a8849991c96fd59c112b6f948507ffffbef6e52f8"
+    },
+    {
+      "path": "audit/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "audit/stateflow_spec_v30_20261009T211837_392341Z/cases.json",
+      "bytes": 17243,
+      "sha256": "e579178a4a7daff6edd20c047b392c786ddbc8bc8b1c1a2a4499d7c57bde9537"
+    },
+    {
+      "path": "audit/stateflow_spec_v30_20261009T211837_392341Z/equation_qa.json",
+      "bytes": 27539,
+      "sha256": "a8df550ed008687c667ef0eee8bdc3b25fc2d61f956edda8f1e453ff7598aedd"
+    },
+    {
+      "path": "audit/stateflow_spec_v30_20261009T211837_392341Z/vectors.csv",
+      "bytes": 16726,
+      "sha256": "dc6d593351a85e4ee47262291de5458fb7421f7277dde7300115e0b66eed5cfc"
+    },
+    {
+      "path": "audit/stateflow_spec_v30_20261009T212412_569508Z/cases.json",
+      "bytes": 17243,
+      "sha256": "6010f0f6b575c4aab9af56395fc3228cbe5983d32268341dbc9be9f411858fe3"
+    },
+    {
+      "path": "audit/stateflow_spec_v30_20261009T212412_569508Z/equation_qa.json",
+      "bytes": 27539,
+      "sha256": "cbe043ff71d50b01ff1902a0d925b507153da8b8f08b00c038226e2a578bd0bc"
+    },
+    {
+      "path": "audit/stateflow_spec_v30_20261009T212412_569508Z/vectors.csv",
+      "bytes": 16726,
+      "sha256": "dc6d593351a85e4ee47262291de5458fb7421f7277dde7300115e0b66eed5cfc"
+    },
+    {
+      "path": "audit/TES_Stateflow_results_v30.md",
+      "bytes": 5952,
+      "sha256": "272adaa028270d3da71b22fcb085f1441ef7c3cf72ea41fd35135a6f1049577e"
+    },
+    {
+      "path": "audit/TES_temperature_exact_flow_derivation_v30.md",
+      "bytes": 7292,
+      "sha256": "902d76102bb89a673d9c71a3526b17017dc3e91116f3a605c9e7dbba7a8cb124"
+    },
+    {
+      "path": "audit/verify_stateflow_v30.py",
+      "bytes": 13343,
+      "sha256": "8bfcdd0863c85676af4d8a5ff6eb59ea1876982fc2bed3438abfa74802218fd6"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212203032Z.console.log",
+      "bytes": 18234,
+      "sha256": "30134b0d15293617162d217c89ce334cc32e6baf9dc6da9fcda8f6ce22586d00"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212203032Z.exit.log",
+      "bytes": 15,
+      "sha256": "bb5c6fd93f8d7a94c36ebcf5894478b1bf8085bd50e2e2b946101154eaecd025"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212203032Z.log",
+      "bytes": 17835,
+      "sha256": "0110e9e77f6e650394fc3b7b4f3fec41359f782b1acc02faa3f02486da43924b"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212454305Z.console.log",
+      "bytes": 64210,
+      "sha256": "a9fd025bed33f235486529bb0aa08631993148ed8b0054f79e4289f45085455e"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212454305Z.exit.log",
+      "bytes": 15,
+      "sha256": "bb5c6fd93f8d7a94c36ebcf5894478b1bf8085bd50e2e2b946101154eaecd025"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212454305Z.log",
+      "bytes": 62873,
+      "sha256": "e769619f0ad047cfdc8dfbf18d27448cd47fde8ed3fc8a911c3aded944032af2"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212720326Z.console.log",
+      "bytes": 65178,
+      "sha256": "8542c2ec8590ae55e3f0e11465cb6a670a96e3ae422fc0410361adfa54b055f9"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212720326Z.exit.log",
+      "bytes": 15,
+      "sha256": "aadbd2332fe641283098f3431aee93008693d73ecf1a56e9f5b5b46762b4d083"
+    },
+    {
+      "path": "automation/logs/stateflow_acceptance_v30_local_20261009T212720326Z.log",
+      "bytes": 63870,
+      "sha256": "e229a1837a086ba607f36d1f6067b2fc6d228f1c3f694c3ee72995d5e6c34e31"
+    },
+    {
+      "path": "automation/logs/stateflow_build_v30_20261009T211845092Z.console.log",
+      "bytes": 181,
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4"
+    },
+    {
+      "path": "automation/logs/stateflow_build_v30_20261009T211845092Z.exit.log",
+      "bytes": 15,
+      "sha256": "bb5c6fd93f8d7a94c36ebcf5894478b1bf8085bd50e2e2b946101154eaecd025"
+    },
+    {
+      "path": "automation/logs/stateflow_build_v30_local_20261009T211858302Z.console.log",
+      "bytes": 193,
+      "sha256": "cdca8d99ca4d331a44421596557ab64ce5225c7afdf779938592f07c2ccf5d8d"
+    },
+    {
+      "path": "automation/logs/stateflow_build_v30_local_20261009T211858302Z.exit.log",
+      "bytes": 15,
+      "sha256": "aadbd2332fe641283098f3431aee93008693d73ecf1a56e9f5b5b46762b4d083"
+    },
+    {
+      "path": "automation/logs/stateflow_build_v30_local_20261009T211858302Z.log",
+      "bytes": 190,
+      "sha256": "cc999b658937e6793730b324cafea9f0fa7deeaed6fe7d803cd88e5c5a2a3542"
+    },
+    {
+      "path": "automation/logs/stateflow_derivation_v30_20261009T211837264Z.log",
+      "bytes": 135,
+      "sha256": "d13e53a867650c2a789af707565bda0f16819f6aa82bd591dd9aba3efeeb0913"
+    },
+    {
+      "path": "automation/logs/stateflow_derivation_v30_20261009T212412455Z.log",
+      "bytes": 135,
+      "sha256": "3950222db411d55e76be5cfbcb6a52edd9187aed0cd26d883ecfbdb2b7db520c"
+    },
+    {
+      "path": "automation/logs/stateflow_independent_qa_v30_20261009T212925136Z.log",
+      "bytes": 651,
+      "sha256": "8760541fb4746e7cb29a4443682ed8ae180f9057a2a56e080ae4d323d38b89e7"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_stateflow_v30.md",
+      "bytes": 2898,
+      "sha256": "07d5dbb9427df97292818d9a9405a52c0d14ac7ccd17e18f3850157ba3b4f921"
+    },
+    {
+      "path": "matlab/+dchr/+components/storage_kernel_v30.m",
+      "bytes": 3026,
+      "sha256": "8f56a70f5a2ddd7e84c2e458412a3e18edc786a4e9f80d060059f4064bb0a44d"
+    },
+    {
+      "path": "matlab/+dchr/+components/storage_parameters_v30.m",
+      "bytes": 2489,
+      "sha256": "14cbdb46fe7cb479d758b7b4e8413c829f4ddab98618fcd19af0a4bb2c0209f9"
+    },
+    {
+      "path": "matlab/+dchr/+components/storage_step_v30.m",
+      "bytes": 1731,
+      "sha256": "0959576e2d2a1ddd5334841e04ffacedc8080b14d3ef683f9bc005e42fcbce09"
+    },
+    {
+      "path": "matlab/+dchr/simulate_dispatch_v30.m",
+      "bytes": 2714,
+      "sha256": "3900eebd27c34100a254fe309e0ecf7c13068b1c69b1a58db6dedfcca76c3bcf"
+    },
+    {
+      "path": "matlab/simulink/build_dispatch_stateflow_v30.m",
+      "bytes": 7242,
+      "sha256": "1251067fb4fae1cb177c78d0e5dc3240fff74e95a57da3604ea214b97752e406"
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v30.slx",
+      "bytes": 129541,
+      "sha256": "a940a1380f265feaa1426bfb0bda92ecf0514a9497453734e3a95830154e18fe"
+    },
+    {
+      "path": "matlab/simulink/dchr_stateflow_hp_v30.m",
+      "bytes": 2543,
+      "sha256": "62633b49633966a552d53cc97a8353cf8b16f78d30200e1456f5110b0b63d0a2"
+    },
+    {
+      "path": "matlab/simulink/export_stateflow_mat_audit_v30.m",
+      "bytes": 3192,
+      "sha256": "678aefd122cd89d72a5ac3b3e028546f9e0895a1051d501e4f5194cced794a1e"
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_acceptance_v30.m",
+      "bytes": 11211,
+      "sha256": "0f85a370e0efc24b875af7922a908ccb45467a95751cfd38be2f3a44d3067d43"
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_faults_v30.m",
+      "bytes": 5156,
+      "sha256": "545eea7759251533574318c746353d4e31bd209fc167e02493fa2939ecbc274c"
+    },
+    {
+      "path": "matlab/simulink/stateflow_allocate_v30.m",
+      "bytes": 816,
+      "sha256": "467f7a034652c862568e55eaaf2c05bb1125d9cd89e7316e092cf9e3150a5157"
+    },
+    {
+      "path": "matlab/simulink/stateflow_choose_mode_v30.m",
+      "bytes": 490,
+      "sha256": "28b7038f55e2d85c7385ee0e4bd916a1d8f6a5bba064d0323210c6fe3d0b0ea6"
+    },
+    {
+      "path": "matlab/simulink/stateflow_contract_gate_v30.m",
+      "bytes": 3337,
+      "sha256": "d4b0702ae6256b55180a0a37f913754d6ea3a3e0f6897af815159434717c5fb3"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/above_capacity_state_fault_simulation.mat",
+      "bytes": 5092,
+      "sha256": "b2e83a0988bee53c636ddde6fb55f68e5e7da4131e158d6bb62f4861187de4f5"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/acceptance_summary_v30.json",
+      "bytes": 840,
+      "sha256": "66b970781dc0b336bf81241f630138d597071ee42740b7671beadb52cc00f577"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/active_flow_comparison_v30.csv",
+      "bytes": 1068,
+      "sha256": "9f558754642fff55e472a3db129a79f272dbb1dd5cad08966835319f0955ffe1"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/boiler_limit_simulation.mat",
+      "bytes": 4336,
+      "sha256": "7effd4d425758a62812ec0d6ad0958bd5516ff4b73a2e413cb8e1e013d99d6ec"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/capacity_endpoint_simulation.mat",
+      "bytes": 4592,
+      "sha256": "a06fce1393e596690831383666ee8bc6fa6f9829de5d8643492b49290bf91b1b"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/condenser_below_tank_max_fault_simulation.mat",
+      "bytes": 5118,
+      "sha256": "5fc5ac00596b226cf20f984d2fcddcc2867c0d2b20b30e571865cc49ef86f9d6"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_next_energy_fault_simulation.mat",
+      "bytes": 6485,
+      "sha256": "4e7f1d6ce16056df65f1bf729f7bf69f61e667763eca69bb2ce97cb6a6012db0"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_next_energy_in_memory_allocation.m",
+      "bytes": 828,
+      "sha256": "2fc40157d2dc63bb90d1270cca34d85c97341a7ad9fd782601a95cc664d9d75d"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_standing_loss_fault_simulation.mat",
+      "bytes": 6242,
+      "sha256": "9e08ad212f8c6746564c0969ab2f85950b6facf199049bacf0931717dd6aad08"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_standing_loss_in_memory_allocation.m",
+      "bytes": 828,
+      "sha256": "76430f8a8e4104528b5b792cad0440c7ac96d0bcbc9a1e418a9c2316a1eb3a91"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_temperature_fault_simulation.mat",
+      "bytes": 6391,
+      "sha256": "804c0de03bfd764ad10de269aa3b7b6b40c1131455fc5f84db8580e2920b5a8e"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_temperature_in_memory_allocation.m",
+      "bytes": 830,
+      "sha256": "842301a25727ad0af67c23a8e671c891a6dfad9261869d79d3f8589d3d758d6f"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_usable_inventory_fault_simulation.mat",
+      "bytes": 6388,
+      "sha256": "0442aeb02ea921581cfc6094911703a7995a119284953ecc6f0e7df67d4dcf64"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/corrupt_usable_inventory_in_memory_allocation.m",
+      "bytes": 830,
+      "sha256": "0712ed70378f49b334ff3630cc8e99387a34dab3bcee6ee9acf67fd5fa1805e9"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/cutoff_above_capacity_fault_simulation.mat",
+      "bytes": 5095,
+      "sha256": "c5df17dbccf25f01b057f2202acc7abc8501c355a85c72d9e671ed1e596f12af"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/cutoff_endpoint_simulation.mat",
+      "bytes": 4576,
+      "sha256": "ce477efcd92cfda938b110b7482c44c5d668fb18ab64f1044cc7a90f040c1e60"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/delayed_delivery_fault_fault_simulation.mat",
+      "bytes": 5161,
+      "sha256": "3eca40d9519711178371c46727d3e4903d11d4c2733315c325d4a002b5252a26"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/delayed_negative_source_fault_simulation.mat",
+      "bytes": 5119,
+      "sha256": "da08c7b3d0f3fb9cf6038b687eade1c9484c7b4d1d5173748c85b8569cdfeb19"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/delivery_above_cutoff_fault_simulation.mat",
+      "bytes": 5124,
+      "sha256": "15215ca0b5b3bdd8992b0fdd6e0d56b7acb90dbca286a166b3c4db58db0445cc"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/fault_evidence_v30.json",
+      "bytes": 28001,
+      "sha256": "a33c250625bf9688459716652163ac065d1a984e94cd1c563c1c604defd1b6ea"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/high_rate_simulation.mat",
+      "bytes": 4457,
+      "sha256": "284ce3470aca2d79c664afbc84c61bcf60c38e7f3bf504016c21603b7d35633f"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/hp_only_simulation.mat",
+      "bytes": 4420,
+      "sha256": "5a39bf8f9367788b11e995e743ff50af048bd8aef48f41a0046238d8c2f010b2"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/insufficient_heat_simulation.mat",
+      "bytes": 4348,
+      "sha256": "aa973b860eb3002c365e6b085acec2487311eefb432e53406d4ab691eb5eba8b"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/invalid_efficiency_fault_simulation.mat",
+      "bytes": 5095,
+      "sha256": "2b5486bbab3e0b3227e040009714e885aa5f015508d912fc90019962134571c5"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/invalid_heating_lift_fault_simulation.mat",
+      "bytes": 5082,
+      "sha256": "5b7d50481ae2e1856707bba25277a2e2418489f37fac558346d861e95cd16db5"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/invalid_hp_backend_fault_simulation.mat",
+      "bytes": 5099,
+      "sha256": "e26f7fdf7e09f0eccb4128c6f09490f5fed2a2deda31977bde4cce62098feee9"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/mat_audit_source/export_stateflow_mat_audit_v30.m",
+      "bytes": 3192,
+      "sha256": "678aefd122cd89d72a5ac3b3e028546f9e0895a1051d501e4f5194cced794a1e"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/mat_audit_v30.json",
+      "bytes": 57820,
+      "sha256": "8bd624ce5c0525d3fa844a6028d4cf4c11a324755eb296ce72fdc314ad663c43"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/mode_sequence_simulation.mat",
+      "bytes": 5157,
+      "sha256": "8a5dcef343cb48e5c90647afd4604bb6c64bc701fd9857ef08bccf4a3a5bbaf9"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/model_structure_v30.json",
+      "bytes": 10381,
+      "sha256": "5fa58f492bdba0012e60bbd47b3948d74453260c77b992a0b15ad0c86ec47536"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/negative_boiler_fault_simulation.mat",
+      "bytes": 5100,
+      "sha256": "0db71d2c9d17c4f46b72852382fd4093427e750c4ece6044014666cfa9516e82"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/negative_demand_fault_simulation.mat",
+      "bytes": 5099,
+      "sha256": "e0bc0a900f6fd9036bf0c848ab601e57dc311f04eeeaac3605a29fed0759b596"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/negative_rate_fault_simulation.mat",
+      "bytes": 5095,
+      "sha256": "35e86f8616f2db06d2008f21d0ade01856a17b5f4c458208d65d24bf6587fd17"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/negative_source_fault_simulation.mat",
+      "bytes": 5082,
+      "sha256": "ddd15fd8d65ee079ada35c8121988f570c4a48000ebda06615ae26c59807fddf"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/part_load_carnot_simulation.mat",
+      "bytes": 4695,
+      "sha256": "e990d348e85335f7e6ba2998908b82a8a67cadc801a5823467b5dc5275b3d22b"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_0.25_simulation.mat",
+      "bytes": 5117,
+      "sha256": "d53f045ff08734a772da086f80dd411417b04c78ca17c3c99ca6396606265c8f"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_0.25_v28_comparison.mat",
+      "bytes": 4291,
+      "sha256": "ec7e5dfe4f9c462ff6519ff43a5de9a435d13ad9c2113b347109069b1e92aa4c"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_0.5_simulation.mat",
+      "bytes": 4750,
+      "sha256": "1dc8086868441b8dd1b05576f6902a4d610d1dd2b9074fbef349a48e851e3294"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_0.5_v28_comparison.mat",
+      "bytes": 4045,
+      "sha256": "2013c9a2c00e604cf06634b925ae4f147349014cdba9ba0fbad01a2c308640d8"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_1_simulation.mat",
+      "bytes": 4444,
+      "sha256": "c7cffb62c928c9f95fd3f2872a261e49216d45de790e841750f5058c6880a2f2"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_1_v28_comparison.mat",
+      "bytes": 3960,
+      "sha256": "75db2539b72048de2c74b887512d33f1f87539116809e140a07e55c515761500"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_2_simulation.mat",
+      "bytes": 4307,
+      "sha256": "b2ffaecf25662e5f64bd2250c4f8a1e25d17c3669c394ace6b67b9ec34dd7936"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_charge_2_v28_comparison.mat",
+      "bytes": 4556,
+      "sha256": "916bfa370f6f70fdf4c89eb760a5e8e88a48e8a140fdb151000af315d2f606f7"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_0.25_simulation.mat",
+      "bytes": 5137,
+      "sha256": "8cd4a0fa70aba5595355535304b481073145f85d6a187a2c9b971d3c0a6bdbde"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_0.25_v28_comparison.mat",
+      "bytes": 4280,
+      "sha256": "95f3142bdd4388f8c4c53dfcfcbaeb8d4ed0eb5dcc8270d59d885cf305a015f1"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_0.5_simulation.mat",
+      "bytes": 4767,
+      "sha256": "b3dbb44cb88d961758fa6d7a33ae11f739037d63e8fe7eef1dcdd1d8da7ea93c"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_0.5_v28_comparison.mat",
+      "bytes": 4056,
+      "sha256": "49260647f9c52618eef211451dd29d49a19c2a15713a94b37c69a826d17fd57f"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_1_simulation.mat",
+      "bytes": 4466,
+      "sha256": "0f350de4bdee4060fbcf6cde8652de1d691e87117476691884134b689ba6f3fd"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_1_v28_comparison.mat",
+      "bytes": 3985,
+      "sha256": "6e05a3080c38808cc916cce389eddb5f9eadc5f2f98e8705f80e9f03e139242b"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_2_simulation.mat",
+      "bytes": 4316,
+      "sha256": "c1d0fe0e7589fa61c0d13b403a8d562827fc6ae2adbd53ee03193c3068ec7a01"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/partition_discharge_2_v28_comparison.mat",
+      "bytes": 3897,
+      "sha256": "7efe3b47bc0f50e3025e3301039dfbe27f93246831368a7ab5e7352ab97b6267"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/passive_cutoff_crossing_simulation.mat",
+      "bytes": 4440,
+      "sha256": "ce19452204ca0f50761292e087b1acebe6a78fe4cb490ee62867ed8377667659"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/post_fault_clean_simulation.mat",
+      "bytes": 4550,
+      "sha256": "c1bbb91105a112e562d1f9557e75b5576129d30cb79b6c3a5a869d5a665594cc"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/small_rate_simulation.mat",
+      "bytes": 4484,
+      "sha256": "1ae4d5a408be7b59d34f9c2ea7ff930ec9871a87f79d49f0ccd1ed89795e1cfc"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/build_dispatch_stateflow_v30.m",
+      "bytes": 7242,
+      "sha256": "1251067fb4fae1cb177c78d0e5dc3240fff74e95a57da3604ea214b97752e406"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/DCHR_Dispatch_Stateflow_v28.slx",
+      "bytes": 122717,
+      "sha256": "30ea3701f2f04d293d6c9bf528dc625762bf69db9a06c9d6d384293a98497a1d"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/DCHR_Dispatch_Stateflow_v30.slx",
+      "bytes": 129541,
+      "sha256": "a940a1380f265feaa1426bfb0bda92ecf0514a9497453734e3a95830154e18fe"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/dchr_stateflow_hp_v30.m",
+      "bytes": 2543,
+      "sha256": "62633b49633966a552d53cc97a8353cf8b16f78d30200e1456f5110b0b63d0a2"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/export_stateflow_mat_audit_v30.m",
+      "bytes": 3192,
+      "sha256": "678aefd122cd89d72a5ac3b3e028546f9e0895a1051d501e4f5194cced794a1e"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/heat_pump_step_v14.m",
+      "bytes": 4282,
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/run_stateflow_acceptance_v30.m",
+      "bytes": 11211,
+      "sha256": "0f85a370e0efc24b875af7922a908ccb45467a95751cfd38be2f3a44d3067d43"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/run_stateflow_faults_v30.m",
+      "bytes": 5156,
+      "sha256": "545eea7759251533574318c746353d4e31bd209fc167e02493fa2939ecbc274c"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/simulate_dispatch_v30.m",
+      "bytes": 2714,
+      "sha256": "3900eebd27c34100a254fe309e0ecf7c13068b1c69b1a58db6dedfcca76c3bcf"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/spec/cases.json",
+      "bytes": 17243,
+      "sha256": "6010f0f6b575c4aab9af56395fc3228cbe5983d32268341dbc9be9f411858fe3"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/spec/equation_qa.json",
+      "bytes": 27539,
+      "sha256": "cbe043ff71d50b01ff1902a0d925b507153da8b8f08b00c038226e2a578bd0bc"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/spec/vectors.csv",
+      "bytes": 16726,
+      "sha256": "dc6d593351a85e4ee47262291de5458fb7421f7277dde7300115e0b66eed5cfc"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/stateflow_allocate_v30.m",
+      "bytes": 816,
+      "sha256": "467f7a034652c862568e55eaaf2c05bb1125d9cd89e7316e092cf9e3150a5157"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/stateflow_choose_mode_v30.m",
+      "bytes": 490,
+      "sha256": "28b7038f55e2d85c7385ee0e4bd916a1d8f6a5bba064d0323210c6fe3d0b0ea6"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/stateflow_contract_gate_v30.m",
+      "bytes": 3337,
+      "sha256": "d4b0702ae6256b55180a0a37f913754d6ea3a3e0f6897af815159434717c5fb3"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/storage_kernel_v30.m",
+      "bytes": 3026,
+      "sha256": "8f56a70f5a2ddd7e84c2e458412a3e18edc786a4e9f80d060059f4064bb0a44d"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/storage_parameters_v30.m",
+      "bytes": 2489,
+      "sha256": "14cbdb46fe7cb479d758b7b4e8413c829f4ddab98618fcd19af0a4bb2c0209f9"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/source_snapshot/storage_step_v30.m",
+      "bytes": 1731,
+      "sha256": "0959576e2d2a1ddd5334841e04ffacedc8080b14d3ef683f9bc005e42fcbce09"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/stateflow_assertions_v30.csv",
+      "bytes": 159117,
+      "sha256": "60a853e8075e807a9a201d1903623f579ba874a89cb0dc2593b26dddf3d1e141"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/stateflow_trace_v30.csv",
+      "bytes": 13314,
+      "sha256": "c0278a93a39458f9d21a709b070fdb38b5bea913e702b4bd5c38d1486f8eab1b"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/tes_charge_simulation.mat",
+      "bytes": 4577,
+      "sha256": "0c4fc8f8e10833ef812ba68ec9a8931ccd654dfe1e84ed2c7550d36e6f507765"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/tes_discharge_simulation.mat",
+      "bytes": 4479,
+      "sha256": "1429d36cf3dc24d50f0a59cb5d025cfbdd127a4afa1c064a49859d409b4a8f6b"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/zero_capacity_simulation.mat",
+      "bytes": 4363,
+      "sha256": "647ac9e7874175a0a5a2292c52f827972c90738bf64470652dadf79c2db64121"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/zero_demand_simulation.mat",
+      "bytes": 5667,
+      "sha256": "54e11ed6af058737fa12fb235763bbbbed305e412548b1e0e34d1053043a66b8"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/zero_heat_capacity_fault_simulation.mat",
+      "bytes": 5113,
+      "sha256": "f7ceebccd67595a2898434366c68800fb11efb25092832c54f37446c3d297522"
+    },
+    {
+      "path": "results/stateflow_v30_20261009T212727142Z/zero_rate_simulation.mat",
+      "bytes": 4414,
+      "sha256": "81138ffc5492eca1f043c34230492826d4bfe9b017257640ee4fb467494fdf10"
+    },
+    {
+      "path": "STATUS_stateflow_v30.json",
+      "bytes": 3028,
+      "sha256": "bc1a6e12c4d5eaf5c44d4970db2431241fb43590b1610a62120d76d21ddfdc80"
+    }
+  ]
+}

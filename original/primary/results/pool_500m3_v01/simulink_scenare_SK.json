@@ -1,0 +1,42 @@
+[
+  {
+    "scenar": "TC_75kW",
+    "vykon_kW": 75,
+    "plachta": true,
+    "prvy_dosiahnuty_28C_h": 97.88333333333334,
+    "teplota_na_konci_C": 28.103659843606653,
+    "dodane_teplo_MWh": 9.623125,
+    "straty_MWh": 2.6146394745698056,
+    "reziduum_rel": 6.5772790770708212E-5
+  },
+  {
+    "scenar": "TC_150kW",
+    "vykon_kW": 150,
+    "plachta": true,
+    "prvy_dosiahnuty_28C_h": 47.31666666666667,
+    "teplota_na_konci_C": 27.868080746054112,
+    "dodane_teplo_MWh": 10.76875,
+    "straty_MWh": 3.8973134390927866,
+    "reziduum_rel": 0.00011702457504814392
+  },
+  {
+    "scenar": "TC_300kW",
+    "vykon_kW": 300,
+    "plachta": true,
+    "prvy_dosiahnuty_28C_h": 23.35,
+    "teplota_na_konci_C": 28.08128524634391,
+    "dodane_teplo_MWh": 11.5475,
+    "straty_MWh": 4.5538498178300006,
+    "reziduum_rel": 0.00021748074241184688
+  },
+  {
+    "scenar": "TC_150kW_bez_plachty",
+    "vykon_kW": 150,
+    "plachta": false,
+    "prvy_dosiahnuty_28C_h": 46.833333333333336,
+    "teplota_na_konci_C": 27.875698669055524,
+    "dodane_teplo_MWh": 11.9575,
+    "straty_MWh": 5.0803918569015281,
+    "reziduum_rel": 7.9933472158059167E-9
+  }
+]

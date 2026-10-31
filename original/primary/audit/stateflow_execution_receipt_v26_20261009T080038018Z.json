@@ -1,0 +1,13 @@
+{
+  "acceptance_result_directory": "results/stateflow_v24_20261009T075807903Z",
+  "scope": "Actual implementation simulation and expected runtime fault rejection; no physical validation",
+  "log_sha256": "f82dd50a6a7a3e176b973ece132dae047ca247c0faf396e4fef5521bfa9bd244",
+  "timestamp_utc": "2026-10-09T08:00:38.0246135Z",
+  "matlab_batch_exit_code": 0,
+  "log_file": "automation/logs/stateflow_monitor_v26_local_20261009T075554758Z.log",
+  "sandbox_startup_message": "System Error: File system inconsistency",
+  "monitor_result_directory": "results/stateflow_monitor_v26_20261009T075607297Z",
+  "sandbox_startup_exit_code": 1,
+  "authorized_local_retry": "auto-reviewed require_escalated local MATLAB batch",
+  "observed_from": "Completed exec session 54414, exit_code 0, MATLAB_EXIT_CODE=0"
+}

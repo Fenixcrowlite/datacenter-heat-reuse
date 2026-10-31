@@ -1,0 +1,36 @@
+{
+  "mobile_sha256": "fa36b9d6febad8ccb7bef977cc30c668d7fcbad5963793257931597a255eeef1",
+  "original_sha256": "5f8cd1410e4f598fe3e31b0254ae3a6e203e0734d0b674e37c01987f09b6c309",
+  "physical_release": false,
+  "qa": "PASS",
+  "screens": {
+    "desktop_1440": {
+      "banner": true,
+      "cells": 60,
+      "mobileLabel": "none",
+      "rows": 10,
+      "scrollWidth": 1440,
+      "tables": 2,
+      "width": 1440
+    },
+    "mobile_320": {
+      "banner": true,
+      "cells": 60,
+      "mobileLabel": "\"Kanál\"",
+      "rows": 10,
+      "scrollWidth": 320,
+      "tables": 2,
+      "width": 320
+    },
+    "mobile_390": {
+      "banner": true,
+      "cells": 60,
+      "mobileLabel": "\"Kanál\"",
+      "rows": 10,
+      "scrollWidth": 390,
+      "tables": 2,
+      "width": 390
+    }
+  },
+  "source_kind": "derived_simulation"
+}

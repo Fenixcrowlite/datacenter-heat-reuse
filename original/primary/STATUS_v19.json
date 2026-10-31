@@ -1,0 +1,31 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.19",
+  "inherits_status": "STATUS_v18.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v18.md",
+  "checkpoint": "MATLAB v16 vs Python v16 deterministic sequential parity",
+  "matlab_batch_exit_code": 0,
+  "scenarios": 3,
+  "intervals": 12,
+  "fields_compared": 19,
+  "fields_passed": 19,
+  "fields_failed": 0,
+  "max_abs_delta": 8.881784197001252e-16,
+  "scope": "Implementation parity on 12 deterministic steps, not primary-paper agreement or independent physical validation",
+  "primary_source_signoffs": 0,
+  "independent_physical_validation": "NOT_TESTED",
+  "stateflow_final": "NOT_VALIDATED",
+  "evidence": [
+    "audit/run_dispatch_parity_v19.m",
+    "audit/matlab_parity_v19_run.log",
+    "results/dispatch_parity_v19_20261009/parity_summary_v19.json",
+    "results/dispatch_parity_v19_20261009/field_comparison_v19.csv",
+    "results/dispatch_parity_v19_20261009/matlab_trace_v19.csv"
+  ],
+  "sha256": {
+    "summary": "0026F2CA385699A32B64A76CBEF4F7FA69C2F2073D87E3BFCE5BE964F7BF8D5A",
+    "runner": "0241ECC447816C097C7645982A9E539456BCFB21658272571C6BCACB5D76172A",
+    "python_reference_vectors": "AFB0DF10C2268CD76E0375B2E88E82836E300D5F46672871105EF4D846A0C8DA"
+  },
+  "next": "Page-level verification of primary originals among 31 sources; expand MATLAB/Python parity to varying dt and storage limits without replacing v19 evidence"
+}

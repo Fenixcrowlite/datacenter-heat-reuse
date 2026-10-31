@@ -1,0 +1,16 @@
+{
+  "schema_version": "a59.1",
+  "source_kind": "synthetic_test",
+  "raw_csv_path": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1150_A59_SCADA_TELEMETRY_IMPORT\\DEMO_SYNTHETIC_INPUT\\scada_export.csv",
+  "raw_csv_sha256": "9b60d85647f2e1755dfd4259526c608e9bc23251c76b2a1a9b9f1d1d24a24680",
+  "mapping_path": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1150_A59_SCADA_TELEMETRY_IMPORT\\DEMO_SYNTHETIC_INPUT\\mapping.json",
+  "mapping_sha256": "89c26b58de21042cb5538d06398151170d018ab0582a862f442af334c714d922",
+  "normalized_csv_sha256": "c6165c43bd0dc60e5ef0f5c6c3380a873e84b8a08a50c19908e8416c781c7362",
+  "metadata_sha256": "dd1208ad1bbf3661cf7fd58e967c1731ecd9586202a54c5c13b2c0a854db000c",
+  "rows": 30,
+  "physical_release": false,
+  "sensor_certificates_verified": false,
+  "time_sync_verified": false,
+  "vendor_map_verified": false,
+  "next_gate": "Supply real uncertainty.json and authenticated docs for A57/A58; do not synthesize them."
+}

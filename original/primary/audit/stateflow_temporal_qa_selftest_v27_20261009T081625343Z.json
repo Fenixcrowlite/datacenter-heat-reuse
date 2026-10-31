@@ -1,0 +1,551 @@
+{
+  "version": "0.27",
+  "timestamp_utc": "2026-10-09T08:16:25.523063+00:00",
+  "scope": "Independent actual-v24 Stateflow sampled failure-timing evidence QA, v27.\n\nThe oracle uses only the separately specified fixed-COP hand case. It imports\nno production MATLAB, Stateflow or prior acceptance implementation. Synthetic\nself-tests exercise this reviewer and are not executed model evidence.\n",
+  "primary_text_verified": false,
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "spec_sha256": "cb3c3fc6cf741dd142551791c60118a8a344686db2f927a8dbac4358103db2ec",
+  "verifier_sha256": "4c23dec2a762eea894c34a345d7763e00e4c70d60a68471f01f0499f74064966",
+  "specification": {
+    "checks": 100,
+    "passed": 100,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "independent_fixed_COP_baseline",
+        "passed": true
+      },
+      {
+        "name": "model_hash_is_existing_v24",
+        "passed": true
+      },
+      {
+        "name": "unique_case_ids",
+        "passed": true
+      },
+      {
+        "name": "at_least_eight_finite_delayed_faults",
+        "passed": true
+      },
+      {
+        "name": "both_future_invalid_controls",
+        "passed": true
+      },
+      {
+        "name": "four_sample_intervals",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "source_tick1_dt025:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "demand_tick1_dt05:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick1_dt1:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "negative_lift_tick1_dt2:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "source_tick3_dt025:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "demand_tick3_dt05:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "zero_lift_tick3_dt1:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "absolute_zero_tick3_dt2:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "source_before_boundary_dt1:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:specified_rejection_at_first_sampled_invalid",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:fault_reached_within_run",
+        "passed": true
+      },
+      {
+        "name": "demand_after_boundary_dt05:specified_physical_cause",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:bad_row_outside_requested_run",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_stop_zero_dt1:no_expected_error",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:strictly_positive_finite_invalid_timestamp",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:finite_mutation",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:sampled_clock_parameter",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:stop_time_on_solver_grid",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:specified_prefix_from_independent_clock",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:bad_row_outside_requested_run",
+        "passed": true
+      },
+      {
+        "name": "future_invalid_after_stop_dt025:no_expected_error",
+        "passed": true
+      }
+    ]
+  },
+  "synthetic_reviewer_self_test": {
+    "checks": 31,
+    "passed": 31,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_valid_evidence_passes",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_capture_errors",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_expected_outcome",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_valid_prefix_matches",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_invalid_input_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_partial_trace_sha256",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_diagnostic_error_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_diagnostic_stop_event_time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_diagnostic_error_phase",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_diagnostic_stop_event",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_diagnostic_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_uncaptured_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_uncaptured_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_uncaptured_rejected",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_uncaptured_report_sha256",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_direct_component_inner_cause",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Time_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_E_Next_MWh",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Mode",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_HP_Electric_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_trace_Storage_Discharge_MW",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_case",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_case",
+        "passed": true
+      },
+      {
+        "name": "reject_accepted_output_at_invalid_tick",
+        "passed": true
+      },
+      {
+        "name": "reject_error_in_future_invalid_control",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_raw_dispatch_times_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_raw_hp_times_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_raw_energy_start_times_h",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_raw_joined",
+        "passed": true
+      },
+      {
+        "name": "accept_MATLAB_singleton_time_serialization",
+        "passed": true
+      }
+    ]
+  },
+  "checks": 131,
+  "passed": 131,
+  "failed": 0
+}

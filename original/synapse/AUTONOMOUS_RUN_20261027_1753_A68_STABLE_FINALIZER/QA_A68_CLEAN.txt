@@ -1,0 +1,24 @@
+python.exe : test_bad_hash_rejected (test_a68.CheckpointTests.test_bad_hash_rejected) ... ok
+строка:1 знак:784
++ ... ython.exe'; & $py -m unittest discover -s $d -p test_a68.py -v 2> "$d ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_bad_hash_r...ejected) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_corrupted_checkpoint_rejected (test_a68.CheckpointTests.test_corrupted_checkpoint_rejected) ... ok
+test_frozen_time_replays_byte_identically (test_a68.CheckpointTests.test_frozen_time_replays_byte_identically) ... ok
+test_hash_mismatch_fails_closed (test_a68.CheckpointTests.test_hash_mismatch_fails_closed) ... ok
+test_immutable_replay_and_conflict (test_a68.CheckpointTests.test_immutable_replay_and_conflict) ... ok
+test_naive_time_rejected (test_a68.CheckpointTests.test_naive_time_rejected) ... ok
+test_noncanonical_checkpoint_rejected (test_a68.CheckpointTests.test_noncanonical_checkpoint_rejected) ... ok
+test_scope_mismatch_fails_closed (test_a68.CheckpointTests.test_scope_mismatch_fails_closed) ... ok
+test_sha_matches_independent_hash (test_a68.CheckpointTests.test_sha_matches_independent_hash) ... ok
+test_changed_payload_rejected (test_a68.RegistryTests.test_changed_payload_rejected) ... ok
+test_changed_task_state_rejected (test_a68.RegistryTests.test_changed_task_state_rejected) ... ok
+test_duplicate_events_rejected (test_a68.RegistryTests.test_duplicate_events_rejected) ... ok
+test_exact_replay_one_event (test_a68.RegistryTests.test_exact_replay_one_event) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in <variable>s
+
+OK

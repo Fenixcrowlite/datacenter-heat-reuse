@@ -1,0 +1,7 @@
+{
+  "command": "addpath('matlab/simulink'); run_reporting_v45('results/reporting_v45_20261010T174834_793356Z'); export_reporting_v45('results/reporting_v45_20261010T174834_793356Z');",
+  "log_path": "automation/logs/reporting_v45_20261010T174933789Z.log",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "exit_code": 1,
+  "timestamp_utc": "2026-10-10T17:51:01.4590667Z"
+}

@@ -1,0 +1,7 @@
+{
+  "evidence_class": "observed_matlab_batch_receipt",
+  "exit_code": 0,
+  "log_path": "automation/logs/annual_stateflow_v49_20261010T224417968Z.log",
+  "timestamp_utc": "2026-10-10T22:46:46.9892311Z",
+  "command": "addpath('matlab'); run_annual_stateflow_v49('results/annual_stateflow_v49_20261010T224401_242369Z'); export_annual_stateflow_v49('results/annual_stateflow_v49_20261010T224401_242369Z');"
+}

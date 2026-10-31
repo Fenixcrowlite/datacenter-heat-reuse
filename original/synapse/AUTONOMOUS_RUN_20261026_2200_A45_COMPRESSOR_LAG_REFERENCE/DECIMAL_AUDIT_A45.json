@@ -1,0 +1,38 @@
+{
+  "status": "A45_DECIMAL_AUDIT_PASS",
+  "samples": 4704,
+  "balance_checks": 18816,
+  "max_abs_balance_residual_mixed_units": "5.8825400E-7",
+  "cases": {
+    "both": {
+      "rows": 672,
+      "max_T_C": 30.0
+    },
+    "main_only": {
+      "rows": 672,
+      "max_T_C": 30.0
+    },
+    "backup_only": {
+      "rows": 672,
+      "max_T_C": 67.804362159375
+    },
+    "neither": {
+      "rows": 672,
+      "max_T_C": 67.804362159375
+    },
+    "CF_both": {
+      "rows": 672,
+      "max_T_C": 30.0
+    },
+    "CF_backup_only": {
+      "rows": 672,
+      "max_T_C": 45.13374359416649
+    },
+    "CF_neither": {
+      "rows": 672,
+      "max_T_C": 45.13374359416649
+    }
+  },
+  "physical_release": false,
+  "matlab_simulink_integrated": false
+}

@@ -1,0 +1,8 @@
+          version: '0.19'
+        scenarios: 3
+        intervals: 12
+           fields: 19
+           passed: 19
+           failed: 0
+    max_abs_delta: 8.8818e-16
+

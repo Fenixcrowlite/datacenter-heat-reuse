@@ -1,0 +1,14 @@
+{
+  "event_id": 1274,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A50_graphical_stateflow_sensor_lag_fault_injection",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0351_A50_SENSOR_LAG_MATLAB",
+  "model_sha256": "8edb7f64b9fe27c54be4c5d1223e242feb6f733cde97dce4c044b25729dc5cbe",
+  "result_sha256": "2ad339d11a0f23a2bbd3b44ab790d437e5087fb874619dad98d12d2e7965b85a",
+  "evidence_sha256": "8eac779de927eb8ae102b350d4faacde58fb60ac3bc5a88fbb1fac01b65116c8",
+  "manifest_sha256": "3de3b038132b60535055d90ad3ad8af2562941f3aee012e94ac0f74989db7dd2",
+  "handoff_sha256": "52d7bd86d0d5ef9f498e46eefd642388a6e24aac28f7fc9553bc2704f6de7407",
+  "qa": "MATLAB 6x240, 15840/15840 numeric parity; Python 7/7 PASS",
+  "physical_release": false,
+  "next_step": "A51: vary trip-delay guard in an isolated graphical Stateflow copy (0/2/4 steps), independently compare 240-step trajectories and prove thermal/energy balances; keep physical validation and 31 source signoffs BLOCKED."
+}

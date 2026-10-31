@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "scenario": "neither",
+      "lag": 0,
+      "file": "REF_neither_lag0.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "neither",
+      "lag": 1,
+      "file": "REF_neither_lag1.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "neither",
+      "lag": 4,
+      "file": "REF_neither_lag4.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 0,
+      "file": "REF_backup_only_lag0.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 1,
+      "file": "REF_backup_only_lag1.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 4,
+      "file": "REF_backup_only_lag4.csv",
+      "samples": 240,
+      "first_trip": 103
+    }
+  ],
+  "synthetic": true
+}

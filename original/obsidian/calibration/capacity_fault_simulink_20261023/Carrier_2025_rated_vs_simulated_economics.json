@@ -1,0 +1,165 @@
+{
+  "evidence": "Carrier 2025 manufacturer product PDF, nominal EN14511, W20/15 evaporator and W70/75 condenser, not actual site",
+  "pdf_url": "https://brandportal.carrier.com/m/7e93b9e9f7e9d2a2/original/10191_PSD_02_2025_61XW_ZE_Short_version.pdf",
+  "models": [
+    {
+      "Carrier_61XWH_ZE_model": "3",
+      "nominal_kW_at_W20_15_W70_75": 300,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 34,
+      "spare_units_Nplus1": 1,
+      "total_units": 35,
+      "installed_nominal_MW": 10.5,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "3",
+      "nominal_kW_at_W20_15_W70_75": 300,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 35,
+      "spare_units_Nplus1": 1,
+      "total_units": 36,
+      "installed_nominal_MW": 10.8,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "5",
+      "nominal_kW_at_W20_15_W70_75": 484,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 21,
+      "spare_units_Nplus1": 1,
+      "total_units": 22,
+      "installed_nominal_MW": 10.648,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "5",
+      "nominal_kW_at_W20_15_W70_75": 484,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 22,
+      "spare_units_Nplus1": 1,
+      "total_units": 23,
+      "installed_nominal_MW": 11.132,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "7",
+      "nominal_kW_at_W20_15_W70_75": 727,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 14,
+      "spare_units_Nplus1": 1,
+      "total_units": 15,
+      "installed_nominal_MW": 10.905,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "7",
+      "nominal_kW_at_W20_15_W70_75": 727,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 15,
+      "spare_units_Nplus1": 1,
+      "total_units": 16,
+      "installed_nominal_MW": 11.632,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "10",
+      "nominal_kW_at_W20_15_W70_75": 967,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 11,
+      "spare_units_Nplus1": 1,
+      "total_units": 12,
+      "installed_nominal_MW": 11.604,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "10",
+      "nominal_kW_at_W20_15_W70_75": 967,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 11,
+      "spare_units_Nplus1": 1,
+      "total_units": 12,
+      "installed_nominal_MW": 11.604,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "14",
+      "nominal_kW_at_W20_15_W70_75": 1453,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 7,
+      "spare_units_Nplus1": 1,
+      "total_units": 8,
+      "installed_nominal_MW": 11.624,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "14",
+      "nominal_kW_at_W20_15_W70_75": 1453,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 8,
+      "spare_units_Nplus1": 1,
+      "total_units": 9,
+      "installed_nominal_MW": 13.077,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "15",
+      "nominal_kW_at_W20_15_W70_75": 1468,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 7,
+      "spare_units_Nplus1": 1,
+      "total_units": 8,
+      "installed_nominal_MW": 11.744,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "15",
+      "nominal_kW_at_W20_15_W70_75": 1468,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 8,
+      "spare_units_Nplus1": 1,
+      "total_units": 9,
+      "installed_nominal_MW": 13.212,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "17",
+      "nominal_kW_at_W20_15_W70_75": 1570,
+      "required_useful_MW": 10.0,
+      "duty_units_min": 7,
+      "spare_units_Nplus1": 1,
+      "total_units": 8,
+      "installed_nominal_MW": 12.56,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    },
+    {
+      "Carrier_61XWH_ZE_model": "17",
+      "nominal_kW_at_W20_15_W70_75": 1570,
+      "required_useful_MW": 10.372,
+      "duty_units_min": 7,
+      "spare_units_Nplus1": 1,
+      "total_units": 8,
+      "installed_nominal_MW": 12.56,
+      "interpretation": "Published 2025 EN14511 nominal at W20/15 source and W70/75 sink, NOT at actual site operating temperatures"
+    }
+  ],
+  "model17_6_duty_plus_1_spare_nominal_MW": 9.42,
+  "model17_7_duty_plus_1_spare_nominal_MW": 10.99,
+  "simulink_2025_6_duty_gas_MWh": 9256.805710797953,
+  "simulink_2025_7_duty_gas_MWh": 9189.26722139249,
+  "incremental_gas_saved_MWh": 67.53848940546231,
+  "incremental_hp_electricity_MWh": 14.145004376927318,
+  "incremental_energy_cost_benefit_EUR_per_year": 2023.9212356338398,
+  "extra_module_CAPEX_NPV_zero_limit_EUR": 18882.58246074521,
+  "additional_annual_fixed_maintenance_rate_assumed": 0.02,
+  "discount": 0.06,
+  "duration_year": 20,
+  "liabilities": [
+    "Actual Carrier duty point 35C source/70C sink must be calculated by manufacturer",
+    "6x model17 or 7x model17 not a vendor-validated equipment bank",
+    "Investments assume zero parasitic changes between 6 and 7 duty units",
+    "Simulink dispatch COP is theoretical and unchanged by module sizing",
+    "Carrier 2025 max rated heating capacity 1570kW, not confirmed 2000kW"
+  ],
+  "updated": "2026-10-23"
+}

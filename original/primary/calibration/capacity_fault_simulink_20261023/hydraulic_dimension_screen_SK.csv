@@ -1,0 +1,8 @@
+Sluzba;TepelnyVykon_MW;DeltaT_K;Prietok_m3h;VnutornyPriemer_pri_2ms_mm;Poznamka
+IT_kriticke_chladenie_100percent;10;5;1726.8;553;Koncepcna dimenzia nezavisleho 10MW odvodu tepla z IT
+DC_odpadove_teplo_peak_2025_model;8.291;5;1431.7;503;Synteticky profil IT a predpoklad 85percent
+DC_odpadove_teplo_priemer_2025;6.970;5;1203.6;461;Synteticky profil
+Teplovod_10MW_deltaT20K;10;20;431.7;276;Koncepcny vykurovaci privod a vratka
+Teplovod_10MW_deltaT10K;10;10;863.4;391;Koncepcny mensi spad zvysuje prietok
+Bazen_primar_150kW_deltaT3K;0.15;3;43.2;87;Hydraulicky nezavisly serverovy okruh
+Bazen_sekundar_150kW_deltaT2K;0.15;2;64.8;107;Bazenska voda chemicky kompatibilna

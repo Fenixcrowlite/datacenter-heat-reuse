@@ -1,0 +1,21 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1605_A65_MOBILE_ACCESSIBILITY_QA",
+  "browser_checks": "3/3 PASS",
+  "browser_viewports": [
+    320,
+    390,
+    1440
+  ],
+  "fixed_mobile_overflow_px": 0,
+  "mobile_report": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1605_A65_MOBILE_ACCESSIBILITY_QA\\mobile_comparison.html",
+  "next_step": "Review the responsive offline report on actual mobile hardware; obtain calibrated measurements before physical validation.",
+  "original_overflow_px": 209,
+  "physical_release": false,
+  "preserved_numeric_cells": 60,
+  "scope": "A65_mobile_A64_offline_report_accessibility",
+  "source_kind": "derived_simulation",
+  "status": "VERIFIED_OFFLINE_MOBILE_REFLOW",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "8/8 PASS",
+  "upstream_files_modified": false
+}

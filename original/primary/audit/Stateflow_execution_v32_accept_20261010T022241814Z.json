@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "command": "addpath('audit'); run_stateflow_v32_batch('accept','audit/stateflow_spec_v32_20261009T215252_984245Z')",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "timestamp_utc": "2026-10-10T02:26:19.4485567Z",
+  "log_path": "automation/logs/stateflow_accept_v32_console_20261010T022241814Z.log"
+}

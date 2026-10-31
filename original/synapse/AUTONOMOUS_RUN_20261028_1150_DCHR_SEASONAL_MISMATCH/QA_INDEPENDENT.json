@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_rows": 8760,
+  "months_checked": 12,
+  "counterfactual_fields_checked": 120,
+  "decimal_recomputed": true,
+  "overlap_hours": 0,
+  "baseline_simulated": true,
+  "not_measured": true
+}

@@ -1,0 +1,57 @@
+ 
+70
+[30] An Investment Analysis, M.Pärssinen et al., Waste heat from data centers: An investment 
+analysis, Sustainable Cities and Society, Volume 44, 2019, Pages 428-444, ISSN 2210-6707, 
+https://doi.org/10.1016/j.scs.2018.10.023. 
+ 
+[31] Afonso, C., & Moreira, J. (2017), Data center: Energetic and economic analysis of a more 
+efficient refrigeration system with free cooling and the avoided CO2 emissions, International 
+Journal of Engineering Research and Application, 7(11 (Part-1)). 
+ 
+[32] Geng, Hwaiyu. Data Center Handbook, John Wiley & Sons, Incorporated, 2014. ProQuest 
+Ebook Central, https://ebookcentral.proquest.com/lib/uu/detail.action?docID=1882156. 
+ 
+[33] Henchoz, S., Weber, C., Maréchal, F., & Favrat, D. (2015). Performance and profitability 
+perspectives of a CO2 based district energy network in Geneva’s City Centre. Energy, 85, 221–
+235. https://doi.org/10.1016/j.energy.2015.03.079. 
+ 
+[34] A. Carbó et al. Experimental and numerical analysis for potential heat reuse in liquid 
+cooled data centres. Energy Conversion and Management, Volume 112, 2016, Pages 135-145, 
+ISSN 0196-8904, https://doi.org/10.1016/j.enconman.2016.01.003. 
+ 
+[35] G.F. Davies, G.G. Maidment, R.M. Tozer, Using data centres for combined heating and 
+cooling: An investigation for London, Applied Thermal Engineering 94 (2016) 296–304, 
+http://dx.doi.org/10.1016/j.applthermaleng.2015.09.111. 
+ 
+[36] Norpool group, https://www.nordpoolgroup.com/en/ 
+ 
+[37] Meteotest, Meteonorm Software V7, 2016, www.meteonorm.com. 
+ 
+[38] Park S. et al., J. Analysis of Air-Side Economizers in Terms of Cooling-Energy Perfor-
+mance in a Data Center Considering Exhaust Air Recirculation. Energies 2018, 11, 444. 
+https://doi.org/10.3390/en11020444. 
+ 
+[39] Patterson MK, Tschudi W, VanGeet O, Azevedo D. Towards the net-zero data center: 
+development and application of an energy reuse metric. ASHRAE Trans 2011;117:10–7. 
+ 
+[40] Mikko W. et al., Future views on waste heat utilization – Case of data centers in Northern 
+Europe, Renewable and Sustainable Energy Reviews, Volume 82, Part 2, 2018, Pages 1749-
+1764, ISSN 1364-0321, https://doi.org/1.1016/j.rser.2017.10.058. 
+ 
+[41] Zimmermann S, Meijer I, Tiwari MK, Paredes S, Michel B, Poulikakos D. Aquasar: a hot 
+water cooled data center with direct energy reuse, 2nd Int. Meet. Clean. Combust. CM0901-
+Detail. Chem Models Clean Combust Jul. 2012;43(1):237e45. 
+ 
+[42] S. Pelley, D. Meisner, T. F. Wenisch, and J. W. VanGilder, “Understanding and abstracting 
+total data center power,” in Workshop on Energy- Efficient Design, 2009. 
+ 
+[43] S.Sampath, Thermal Analysis of High End Servers Based on Development of Detail Model 
+and Experiments, The University of Texas at Arlington, Arlington, 2012 (Master's thesis). 
+ 
+[44] World Bank, Climate Change Knowledge Portal For Development Practitioners and Policy 
+Makers, https://climateknowledgeportal.worldbank.org/overview. 
+ 
+[45] D.Shin, S.W. Chung, E.Y. Chung, N. Chang, Energy-optimal dynamic thermal manage-
+ment: computation and cooling power co-optimization, IEEE Transactions on Industrial Infor-
+matics 6 (3) (2010) 340-351. 
+ 

@@ -1,0 +1,17 @@
+{
+  "time": "2026-10-08T18:22:16.776990+00:00",
+  "results": [
+    {
+      "filename": "08_Tofani_Stockholm_2022.pdf",
+      "url": "https://kth.diva-portal.org/smash/get/diva2%3A1723944/FULLTEXT01.pdf",
+      "status": "DOWNLOADED",
+      "size": 1696221
+    },
+    {
+      "filename": "09_Sintong_Stockholm_2023.pdf",
+      "url": "https://www.diva-portal.org/smash/get/diva2%3A1780867/FULLTEXT01.pdf",
+      "status": "DOWNLOADED",
+      "size": 2567616
+    }
+  ]
+}

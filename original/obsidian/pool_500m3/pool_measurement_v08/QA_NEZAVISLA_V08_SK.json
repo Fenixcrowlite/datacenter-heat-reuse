@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "checks": 91565,
+  "cases": [
+    {
+      "name": "zdravy",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 1.949530314959702e-08,
+      "max_heating_diff_W": 0.03401420920272358
+    },
+    {
+      "name": "primarny_ventil_zaseknuty",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 2.547719901713208e-08,
+      "max_heating_diff_W": 0.029246796999359503
+    },
+    {
+      "name": "oba_ventily_zaseknute",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 3.0079601032184655e-08,
+      "max_heating_diff_W": 0.04351096661412157
+    },
+    {
+      "name": "hlavny_REJECT_off_zalozny_ok",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 1.949530314959702e-08,
+      "max_heating_diff_W": 0.03401420920272358
+    },
+    {
+      "name": "oba_REJECT_off_bez_shedding",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 1.949530314959702e-08,
+      "max_heating_diff_W": 0.03401420920272358
+    },
+    {
+      "name": "oba_REJECT_off_so_shedding",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 1.949530314959702e-08,
+      "max_heating_diff_W": 0.03401420920272358
+    },
+    {
+      "name": "spolocny_bias_senzorov",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 1.949530314959702e-08,
+      "max_heating_diff_W": 0.03401420920272358
+    },
+    {
+      "name": "kombinovana_havaria_so_shedding",
+      "rows": 672,
+      "source_class": "D_SYNTHETIC",
+      "max_temperature_diff_C": 2.916559793675333e-08,
+      "max_heating_diff_W": 0.04177242409787141
+    }
+  ],
+  "source_class": "D_SYNTHETIC_REPLAY",
+  "models_sha256": {
+    "matlab/simulink/DCHR_Electrical_Dispatch_Stateflow_v85.slx": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+    "matlab/pool_redundancy_v07/DC_Bazen_Dvojita_Ochrana_v07_SK.slx": "102321d3269d08e499341898e92a1ad234f23e817881a7ab4e2a3cb7d554819e",
+    "matlab/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx": "55add54b3181982ba878776493db2dba8879a583a35fb179f9c3a9c05d560e82"
+  },
+  "semantic_warning": "Validated signal wiring, not measured calibration, not field sensor independence"
+}

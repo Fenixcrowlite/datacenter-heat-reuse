@@ -1,0 +1,8 @@
+{
+  "event_id": 1384,
+  "evidence_sha256": "ac06eb427929f73745029f095226a3aa40f00a21e8c157d6176da292a4902c2d",
+  "handoff_sha256": "331019b2eddb503907d74dc06a736568ffe2cea20c55d051294dccb83068f6e0",
+  "manifest_sha256": "7201c8d5743298820cea3191954c35dfd624a3b5f3df4d5be8ac3a9f5b35e7de",
+  "state": "RECORDED_OR_VERIFIED",
+  "task_id": "scc-2aab24704c2bd0"
+}

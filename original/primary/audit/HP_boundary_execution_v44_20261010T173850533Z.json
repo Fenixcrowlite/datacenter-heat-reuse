@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "command": "addpath('matlab/simulink'); run_hp_boundary_v44('results/hp_upstream_v44_20261010T173843_592523Z'); export_hp_boundary_v44('results/hp_upstream_v44_20261010T173843_592523Z');",
+  "timestamp_utc": "2026-10-10T17:38:53.3905652Z",
+  "log_path": "automation/logs/hp_boundary_v44_20261010T173850533Z.log",
+  "evidence_class": "observed_matlab_batch_receipt"
+}

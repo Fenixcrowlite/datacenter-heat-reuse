@@ -1,0 +1,5 @@
+manufacturer,model,source_in_C,source_out_C,sink_in_C,sink_out_C,heating_kW,COP,certification,source_url,evidence_class,notes
+Carrier,61XWH-ZE07,10,7,30,35,696,5.48,Eurovent Certita 96.01.066,https://www.eurovent-certification.com/en/catalog/program/certificate/participant/model/show/199588446,B,Certified point W10-7/W30-35
+Carrier,61XWH-ZE07,10,7,40,45,687,4.71,Eurovent Certita 96.01.066,https://www.eurovent-certification.com/en/catalog/program/certificate/participant/model/show/199588446,B,Certified point W10-7/W40-45
+Carrier,61XWH-ZE07,10,7,47,55,669,3.92,Eurovent Certita 96.01.066,https://www.eurovent-certification.com/en/catalog/program/certificate/participant/model/show/199588446,B,Certified point W10-7/W47-55
+Carrier,61XWH-ZE07,10,7,55,65,644,3.17,Eurovent Certita 96.01.066,https://www.eurovent-certification.com/en/catalog/program/certificate/participant/model/show/199588446,B,Certified point W10-7/W55-65

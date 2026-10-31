@@ -1,0 +1,10 @@
+﻿python.exe : ----------------------------------------------------------------------
+строка:1 знак:240
++ ... _REDIRECT'; & 'C:\Python314\python.exe' -m unittest -q test_tes_soc.p ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (---------------...---------------:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Ran 11 tests in 0.082s
+
+OK

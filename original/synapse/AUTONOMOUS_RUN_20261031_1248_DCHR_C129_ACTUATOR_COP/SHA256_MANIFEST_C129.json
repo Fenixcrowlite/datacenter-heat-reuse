@@ -1,0 +1,14 @@
+{
+  "files": {
+    "C129_ACTUATOR_COP.csv.gz": "7ff9ff587e5c69466153b58644eef75a843f1caceeafcc20b7627e8d2943b7d0",
+    "C129_FINDINGS.md": "402cd952a16d32c9d50675936bdd198dd1d436cadd1dba67f7f285d53f16cdbd",
+    "C129_INDEPENDENT_QA.json": "37eed72ed0ccbe6f9b4321266d482f4dde3f42f3c94400622766cbdd5430fd93",
+    "C129_METADATA.json": "fe07309f21d726da5528824659466551d5bdbfb88bd9486bf27ac8b1794e5242",
+    "C129_SUMMARY.json": "42e3a260fa1d77158c2fbf373626c0b0d8d918fadab37a992530f42db7144c6c",
+    "c129_actuator_cop.py": "3106a7953491e05ca3de24b8deba1fe06cc07f6f11a829bd447856b900d41e37",
+    "finalize_c129.py": "96e676db2137ff405dcb5e031b154b6a3b2ed9f95c86abd9db9b92dce861ce68",
+    "qa_c129_independent.py": "38b977c726277905cfaa0c1afc78406302502b0f65e565f7cb692dcadcebe01b"
+  },
+  "schema": "C129_SHA256_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

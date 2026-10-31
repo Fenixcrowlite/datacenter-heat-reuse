@@ -1,0 +1,27 @@
+{
+  "scope": "extra pool connected to existing DH, versus independent gas-only heating of same pool heat",
+  "weather": "NASA POWER 2025 hourly",
+  "electricity_EUR_MWh_2025_X_VAT": 152.07260273972602,
+  "gas_EUR_MWh_2025_X_VAT": 55.63479452054794,
+  "boiler_efficiency_scenario": 0.9,
+  "PUE": 1.36,
+  "direct35": {
+    "extra_gas_MWh": 103.37236917198425,
+    "extra_hp_electric_MWh": -21.2712624689957,
+    "source_reuse_change_MWh": 167.12149509420124,
+    "pool_gas_counterfactual_opex_EUR": 15461.836643835566,
+    "incremental_gas_opex_EUR": 6390.111686650631,
+    "incremental_HP_electricity_opex_EUR": -3234.776247220027,
+    "net_energy_opex_benefit_EUR": 12306.501204404962
+  },
+  "hp25": {
+    "extra_gas_MWh": 78.13377652691725,
+    "extra_hp_electric_MWh": 41.77031373753542,
+    "source_reuse_change_MWh": 129.19784983508725,
+    "pool_gas_counterfactual_opex_EUR": 15461.836643835566,
+    "incremental_gas_opex_EUR": 4829.951780210503,
+    "incremental_HP_electricity_opex_EUR": 6352.120327321944,
+    "net_energy_opex_benefit_EUR": 4279.764536303118
+  },
+  "DO_NOT_CLAIM": "This is modeled energy OPEX only, not net profit, payback or verified equipment performance"
+}

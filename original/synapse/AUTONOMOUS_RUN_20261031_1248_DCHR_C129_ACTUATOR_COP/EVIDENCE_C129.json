@@ -1,0 +1,19 @@
+{
+  "actor": "chatgpt-dchr-c129-actuator-cop-20261031-1248",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP\\C129_ACTUATOR_COP.csv.gz",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP\\C129_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP\\SHA256_MANIFEST_C129.json",
+  "manifest_sha256": "56664781077bf58b99c5d98155023dcf137dcfcc454750596ce3129bb87d1c39",
+  "negative_controls": 11,
+  "next": "Validate COP(T_source,T_sink,load) with manufacturer data, add DC waste heat availability and buffer; no shared runtime edits.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_1248_DCHR_C129_ACTUATOR_COP\\C129_INDEPENDENT_QA.json",
+  "regression_numeric_fields": 72576,
+  "rows": 22848,
+  "scenarios": 34,
+  "selftests": 8,
+  "sha256": "7ff9ff587e5c69466153b58644eef75a843f1caceeafcc20b7627e8d2943b7d0",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

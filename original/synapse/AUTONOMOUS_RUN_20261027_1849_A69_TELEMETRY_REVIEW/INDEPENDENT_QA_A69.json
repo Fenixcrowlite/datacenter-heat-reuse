@@ -1,0 +1,19 @@
+{
+  "browser": "not_executed",
+  "energy_kWh_exact_decimal": {
+    "P_actual_W": "39.99755438873025000000000000",
+    "P_cmd_W": "48.33333333333333333333333341",
+    "Q_net_W": "0.9666666666666666666666666658",
+    "Q_residual_W": "5.8"
+  },
+  "observed_intervals": 29,
+  "output_hashes_checked": 2,
+  "physical_release": false,
+  "rows": 30,
+  "source_hashes_checked": 3,
+  "status": "PASS",
+  "svg_plots": 2,
+  "svg_series": 4,
+  "trip_rows": 6,
+  "trip_starts": 1
+}

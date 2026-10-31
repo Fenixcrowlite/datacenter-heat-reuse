@@ -1,0 +1,1131 @@
+
+### PAGE 1
+58	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024 58–70
+*Corresponding author – e-mail: solar@uni-kassel.de
+1.	 Introduction
+With the Paris Agreement in 2016, 195 nations agreed to 
+limit global warming to 1.5 or 2 °C [1]. This indicates the 
+urgency of taking measures against climate change in every 
+sector and since then, more effort has been put into national 
+laws for renewable energies and energy efficiency.
+For instance, two novel laws were passed in Germany 
+in 2023 tackling the heat sector: First, heat supply sys-
+tems for buildings must successively become climate 
+neutral [2]. This makes a district heating network (DHN) 
+connection for house owners more attractive, given that 
+the grid’s heat supply becomes climate neutral. Second, 
+data centres are required to reuse at least 10% of their 
+waste heat if taken into operation in 2026 or later 
+according to EnEfG [3]. This will push data centre 
+owners to supply waste heat to a DHN. In synergy with 
+the previous law, it sets a good starting point for data 
+centre waste heat integration into DHN in Germany.
+Several authors have shown that DHN play a crucial 
+role for decarbonised smart energy systems due to the 
+energy storage potential and the access to heat sources 
+that would be locked otherwise [4–6]. One of those heat 
+sources is waste heat. Many authors also refer to it as 
+‘excess heat’, which is seen as equivalent term here.
+In [7], Lund and Østergaard estimate that half of the 
+heating demand in Europe could be covered with waste 
+heat when using district heating. Waste heat is provided 
+at a wide range of temperatures depending on the spe-
+cific process. Temperature levels of more than 95 °C are 
+common for example in the iron and steel industry 
+while other sectors, such as refineries, paper, or chemi-
+cal industry, often provide waste heat at around 25 to 
+55 °C [8].
+Covering District Heating Demand with Waste Heat from Data 
+Centres – A Feasibility Study in Frankfurt, Germany 
+Bjarne Jürgens*, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, 
+Klaus Vajen
+Institute of Thermal Engineering, University of Kassel, Kurt-Wolters-Straße 3, 34127 Kassel, Germany
+ABSTRACT
+Currently, the huge potential of data centre waste heat for the decarbonization of the heating 
+sector is often ignored. Here, a feasibility study is presented for covering the heat demand of two 
+districts of Frankfurt (Germany) mainly by data centre waste heat. Contrary to many other 
+studies, the total heat demand (144 GWh/a) is to be covered almost exclusively with waste heat 
+integration, the district heating network is not existing yet and the buildings to be connected are 
+not particularly energy efficient. In this study, the potential and demand are estimated, a heating 
+supply concept is presented and evaluated regarding costs, heat pump capacity, and storage size. 
+As a result, the utilisation of data centre waste heat is not only possible, but it is the most 
+promising way for decarbonizing heating in the area under consideration. With high-capacity heat 
+pumps (37 MWth), gas boilers (20 MWth) and a thermal energy storage for daily peaks, 97.5% of 
+the heat demand can be covered with waste heat usage. It is economically favourable compared 
+to individual heat pumps for all types of buildings and with the proposed concept, CO2 emissions 
+in the district heating network area are reduced by 78% on average.
+Keywords 
+Fourth-generation district heating;
+Smart energy systems;
+Waste heat;
+Data centres;
+Feasibility study
+http://doi.org/10.54337/ijsepm.8149
+
+
+### PAGE 2
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024	
+59
+Bjarne Jürgens, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, Klaus Vajen
+The waste heat temperature level is crucial for the inte-
+gration into DHN, because waste heat sources can only be 
+used directly if the temperature level exceeds the DHN 
+supply temperature [9]. Otherwise, the waste heat tempera-
+ture level must be raised, most commonly by using heat 
+pumps [10]. This can be referred to as ‘indirect’ integration. 
+An exception is waste heat integration into the DHN return 
+line, which is investigated but not common [11].
+Data centre waste heat can usually only be integrated 
+indirectly into DHN, since data centres normally use 
+air-cooling which provides a waste heat temperature level 
+of around 25 °C [12,13]. Currently, DHN are usually 2nd, 
+3rd, or 4th generation with supply temperatures of 70 °C 
+and much more [14], so a heat pump is needed for waste 
+heat integration, as it is also proposed in this study.
+There has been a lot of research about heat pumps for 
+district heating with the conclusion that centralised heat 
+pumps can be a main part of future district heating, for 
+example in [15,16]. David et al. demonstrated that large-
+scale heat pumps for DHN are reasonable at many loca-
+tions in Europe [17]. Furthermore, in 2015 Lund and 
+Persson mapped the potential heat sources for Denmark 
+and compared it to the existing DHN [18]. They found 
+that heat sources which could be used with a heat pump 
+(not only waste heat) are available for 99% of the DHN.
+Compared to other common heat sources that also 
+need a heat pump for DHN integration like rivers, lakes, 
+or ambient air, data centre waste heat provides higher 
+temperatures, which results in low electricity costs for 
+the heat pump [19]. Moreover, the temperature level and 
+the waste heat potential are nearly constant throughout 
+the day and year [20].
+Moreno et al. stated in 2023 that in Denmark, data 
+centre waste heat is mostly unused, but a potential baseload 
+heat source, especially for 4th or 5th generation DHN [20]. 
+Also in Germany, the potential is significant with approxi-
+mately 16 TWh/a [21]. In 2023, Monsalves et al. examined 
+the waste heat integration of three Danish data centres into 
+district heating [22]. They concluded that the integration 
+would be economically feasible for all three data centres, 
+but only when the waste heat always can be integrated into 
+the DHN. From the perspective of data centre owners, it is 
+a convenient way to increase energy efficiency and reduce 
+cooling costs [23]. To summarise, integrating data centre 
+waste heat into DHN with heat pumps is not yet common, 
+but its potential is increasingly being recognized.
+Consequentially, there have been a lot of feasibility stud-
+ies and planned or realised projects in recent years that 
+utilise waste heat from data centres to supply district heat-
+ing networks. Huang et al. in 2019 presented an overview 
+on data centre waste heat reuse projects [24] and Wahlroos 
+et al. have done the same for Northern Europe in 2017 [25]. 
+In Odense, Denmark, a single data centre contributes 
+more than 100 GWh/a to the city’s district heating net-
+work by utilising waste heat with a heat pump capacity 
+of 44 MW [26]. In 2020, it was the largest data centre 
+waste heat usage in Denmark. Still, even in summer the 
+total heat generation for the DHN in Odense exceeds 
+50 MW while in winter, it reaches more than 600 MW 
+[27]. So, even though the amount of waste heat is mas-
+sive, it covers only a minority of the total DHN demand.
+Another example is found in Kirkkonummi, Finland, 
+where 20% of the heat generation for the DHN is cov-
+ered with a heat pump using data centre waste heat [28]. 
+Further examples for the utilisation of data centre waste 
+heat in DHN can be found in Stockholm, Sweden [29]; 
+Mäntsäla, Finland [30]; and Val d’Europe, France [31].
+In these examples, but also in all other projects men-
+tioned in [25], the data centre waste heat only accounts 
+for a minority of the heat demand and the network is 
+already existing. No study was found where the DHN 
+heat demand is almost only covered with heat pumps 
+using data centre waste heat. Also, no project on a bigger 
+scale was found where the network is newly built for an 
+existing district to use data centre waste heat.
+The present study focuses on this gap of knowledge 
+with the following research question: How can large 
+quantities of data centre waste heat be used to decarbon-
+ize the heating of existing buildings in the vicinity? This 
+implies that the waste heat shall cover a vast majority of 
+the demand (and not only base load) and that a DHN 
+must be newly built, significantly raising the investment 
+costs, so that it is challenging to develop a concept that 
+is technically and economically feasible.
+In the following, the steps of the feasibility study are 
+presented first. Afterwards the results for every step 
+are shown and discussed in one chapter each. Finally, 
+the findings are summarised and discussed.
+Abbreviations
+COP 	
+coefficient of performance
+sCOP 	
+seasonal coefficient of performance
+DHN 	
+district heating network
+LCoH 	 levelized cost of heat
+
+
+### PAGE 3
+60	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+Covering District Heating Demand with Waste Heat from Data Centres – A Feasibility Study in Frankfurt, Germany 
+2.	Methodology
+The area examined in the feasibility study is shown 
+in Figure 1. It contains a cluster of data centres and 
+two adjacent residential and industrial areas, Frankfurt-
+Sossenheim and Eschborn. Currently, the data centre 
+waste heat is emitted unused into the environment and 
+all buildings are heated with individual gas or oil boilers. 
+The feasibility study shows how the waste heat could be 
+used for district heating here, building a totally new 
+DHN and replacing decentralized oil and gas boilers. 
+The DHN is designed as part of the study, but not the 
+focus of this paper. However, all costs for the network 
+are included in the cost evaluation. 
+The study consists of four steps: Estimation of waste 
+heat potential and heat demand, development of a heat-
+ing supply concept and cost evaluation of the concept. 
+The methodology of each step is described in the follow-
+ing, and applied in the subsequent sections. 
+2.1.	Waste heat potential
+To estimate the waste heat potential, the operators of all 
+current and planned data centres in the cluster were con-
+tacted on major technical characteristics like nominal and 
+real IT-load, floor space, temperature requirements and 
+type of cooling system. For the most promising data cen-
+tres, more information on technical properties, especially 
+the detailed structure of the cooling system was collected. 
+It was also investigated which development of IT-load 
+can be expected from existing and newly established data 
+centres in the area. Cumulated electricity consumption 
+data from the grid operator was used for verification and 
+to investigate daily or seasonal variability.
+Combining all the information, the yearly waste heat 
+potential, temperature level and effort of waste heat 
+utilization is estimated for each existing and planned data 
+centre. The waste heat potential is assumed to be 90% of 
+the IT electricity demand according to [32]. Even 97% of 
+the excess heat in server halls is transported via the cool-
+ing system, but the 90% also account for non-stationary 
+operation and other technical constraints.
+2.2.	Heat demand estimation
+The heat demand estimation is separated into two parts: 
+First the annual heat demand must be estimated and 
+second an hourly load profile is generated on that basis. 
+The annual heat demand is mainly estimated based on 
+gas consumption data, adjusted for weather, and aggre-
+gated on street level. Since gas boilers are used in nearly 
+90% of the buildings in the examined area, only a few 
+buildings are missing. For those, the specific demand is 
+estimated with building geometry and by interpolation 
+of heat demands of neighbouring buildings.
+Reductions of the future demand because of refur-
+bishment and climate change are considered as well as a 
+specific connection rate, both assumptions will be 
+shown in the associated chapter. 
+To generate an hourly load profile, the “SigLinDe” 
+standard load profile method is used, which has been 
+developed and successfully applied in the German gas 
+supply sector [33]. Here, the annual demand is divided 
+over the hours of the year based on the daily mean out-
+door temperature, day of the week and time of day. For 
+this study, a synthetic, representative temperature time 
+series for Frankfurt is used (base year 2030, realistic-op-
+timistic climate scenario “IPCC AR4 A1B”), which is 
+generated using the Meteonorm software [34]. To deter-
+mine the peak load and investigate system operation at 
+peak load, a day with a permanent outside temperature 
+of –10 °C is artificially inserted.
+Figure 1: Examined area with data centre cluster and industrial/residential areas.
+Source: Imagery © 2024 Google, Map data © 2024 GeoBasis-DE/BKG (© 2009), Google
+
+
+### PAGE 4
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024	
+61
+Bjarne Jürgens, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, Klaus Vajen
+2.3.	Development of the heating supply concept 
+Based on potential and demand, the heating supply con-
+cept is developed, including the central heating system 
+and the network. The network planning was conducted 
+in collaboration with an engineering office, especially to 
+yield a realisable network route and cost estimation that 
+takes existing infrastructure into account and considers 
+critical points such as the highway crossings.
+The operation of the heating supply concept is simu-
+lated for one year in hourly resolution using the heat 
+producer simulation gentool, a Python-based tool devel-
+oped at the Department of Solar and Systems Engineering 
+at the University of Kassel. The simulation results are 
+used both for optimizing and verifying the supply con-
+cept and for the last step, its evaluation.
+2.4.	Cost evaluation
+In the cost evaluation, the heat generation costs are cal-
+culated using the Levelized Cost of Heat (LCoH), as 
+seen in Equation 1 [35]. Here, the LCoH are calculated 
+for a period of T years using the investment costs I, 
+the operating costs Ct on year t, the subsidies St on year 
+t, the residual value RV, internal rate of return r, and the 
+energy Et generated on year t. 
+LCOH
+I
+C
+S
+RV
+r
+E
+r
+t
+t
+t
+t
+T
+t
+t
+t
+T
+
+
+
+
+
+
+
+
+
+
+(
+)
+(
+)
+1
+1
+1
+1
+Equation 1: LCoH calculation
+Then the LCoH for the centralised heat pump with DHN 
+are compared to the costs for individual heat pumps cal-
+culated with the same method. This cost comparison was 
+chosen instead of comparing with costs for gas or oil 
+boilers because heat pumps, centralized or decentralized, 
+will probably be the most common option for renewable 
+heat supply in Germany [36], whereas existing oil or gas 
+boilers are non-renewable heating systems. Furthermore, 
+the effect of installed heat pump capacity and storage size 
+on costs is examined by parameter variation.
+3.	Waste Heat Potential
+The information about the data centre’s waste heat poten-
+tial is summarised in Table 1. There are ten data centres 
+currently in operation in the study area which have a 
+combined waste heat potential of 44 MWth in January 
+2023. The electricity demand of the data centres and 
+therefore the waste heat potential is only subject to minor 
+seasonal and daily fluctuations, primarily due to the 
+power requirements of the cooling systems depending on 
+the outside temperature. The available waste heat output 
+can therefore be regarded as continuous.
+With the expected expansion of the existing data cen-
+tres and considering the known information on three 
+planned data centres, the total waste heat potential of the 
+data centres will increase to approximately 112 MWth by 
+2028, as seen in Figure 2. The data centre owners were 
+also asked about waste heat temperature levels. 
+Table 1: Waste heat potential characteristics
+Year
+2023
+2028
+Number of data centres
+10
+13
+IT-capacity in MW
+49
+124
+Waste heat potential in MWth
+44
+112
+Waste heat temperature level in °C
+25
+25
+Figure 2: Data centre waste heat potential in the examined area between 2022 and 2028, classified by utilisation effort.
+
+
+### PAGE 5
+62	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+Covering District Heating Demand with Waste Heat from Data Centres – A Feasibility Study in Frankfurt, Germany 
+According to them, all data centres can provide waste 
+heat at 25 °C. This is in good agreement with literature 
+[12,13], so a waste heat temperature level of 25/15 °C 
+was assumed.
+The technical and therefore economical effort for 
+waste heat extraction differs heavily for each data centre 
+depending on the cooling system. To account for that, a 
+classification for the heat extraction effort is introduced:
+•	
+Low effort: heat extraction was considered in 
+planning and construction; waste heat can be ex-
+tracted at a single point and either an adequately 
+dimensioned heat exchanger is installed, or it can 
+be easily integrated. 
+	•
+Medium effort: moderate hydraulic changes in 
+the cooling system are necessary; either one or 
+only a few points for heat extraction; sufficient 
+space.
+	•
+High effort: extensive hydraulic changes in the 
+cooling system are necessary; decentralised 
+cooling system so that many heat exchangers or 
+collection pipes are needed.
+•	
+Very high effort: impossible: total replacement 
+or severe changes of the cooling system are nec-
+essary; new operation mode for the cooling sys-
+tem is needed.
+This classification is applied for each data centre in 
+Figure 2. In 2028, approximately 50 MWth of waste heat 
+potential can be used with low effort. For all existing 
+data centres in the examined cluster, the waste heat 
+extraction effort is at least medium. More precisely, 
+20 MWth of the current waste heat potential is almost 
+impossible to use (very high effort), for example because 
+the current cooling system is air cooling. However, new 
+possibilities open up when the cooling system used 
+reaches the end of its life cycle.
+10 MWth more can only be used with high effort, 
+because the current cooling system is highly decen-
+tralised. Some of the data centres use more than a hun-
+dred individual cooling loops. Overall, none of the 
+existing data centres is prepared for waste heat recovery, 
+which locks a huge decarbonisation potential. 
+Furthermore, the data centre owners are reluctant or 
+even unwilling to make changes to the cooling system 
+since it is a critical component and from their point of 
+view, the rewards of waste heat extraction are small 
+compared to the risks.
+However, new data centres in Germany must reuse at 
+least 10% of the waste heat if taken into operation in 
+2026 or later, according to a recent law [3]. This is why 
+the waste heat extraction effort is rated low for all new 
+data centres. So, a key finding of this study is that legal 
+regulations are necessary for large-scale waste heat 
+extraction from data centres. 
+4.	Heat Demand
+The total annual heat demand of both districts, Frankfurt-
+Sossenheim and Eschborn, is approximately 213 GWh/a 
+in 2020. This is derived from data for gas consumption 
+and building geometries, as described in section 2.2. A 
+significant change in the heat demand of the connected 
+buildings is expected over the service life of the heating 
+network.
+To estimate this development, the influence of 
+refurbishments, the increase in outdoor temperatures 
+due to global warming and the development of the 
+heated area are considered. The influencing 
+factors are very different for residential and commer-
+cial buildings, meaning that they are analysed 
+separately.
+For residential buildings, a constant demand reduc-
+tion of 0.75%/a (related to the initial value) is assumed 
+due to refurbishments and an additional reduction of 
+0.5%/a due to climate change [37–39]. Since the resi-
+dential areas are already densely populated, the change 
+of heated area is neglected.
+For commercial buildings, the total demand reduction 
+due to refurbishment and climate change is derived from 
+[40,41]. The refurbishment rate is much higher, resulting 
+in a mean reduction rate of 2.35%/a. On the other hand, 
+the change of heated area in commercial buildings is 
+supposed to increase by 1%/a.
+Overall, there is a moderate reduction in heat 
+demand of 24% for residential buildings over the 
+period under consideration (2025 to 2045), while a 
+very significant reduction of 43% is forecast for com-
+mercial buildings.
+With that, the annual heat demand in 2025, which 
+is used as start year for the heating supply concept 
+evaluation, will be 192 GWh/a. A connection rate of 
+75% is assumed, resulting in 144  GWh/a of annual 
+demand which must be covered by the DHN. The heat 
+demand reduction is supposed to be compensated by 
+connecting more buildings and, if a connection rate of 
+90% is reached, connecting new areas. This means 
+that DHN pipes are designed for the final state in 
+2045, which is reasonable. Also, it is convenient for 
+
+
+### PAGE 6
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024	
+63
+Bjarne Jürgens, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, Klaus Vajen
+the calculations since the heat demand remains con-
+stant. All information about the planned DHN is sum-
+marized in Table 2.
+The heat losses in the network were approximated 
+based on route length (including house lead-in pipes), 
+mean diameters, pipe properties (insulation series 3) 
+and network temperatures and amount to 5.2% of the 
+network’s heat input, which is low but realistic due to 
+a high linear heat density of 2.9  MWh/(mroute·a). 
+Eventually, the annual heat supply for the DHN must 
+be 152 GWh/a.
+The corresponding hourly load profile is shown in 
+Figure 3. The profile is obtained as described in section 
+2.1. It has a typical winter peak load of 55 MW and a 
+summer heat load of 6  MW. The peak load for the 
+design case at an outside temperature of –10 °C is 
+75 MW. 
+5.	Heat Supply Concept
+The main characteristics of the heating supply concept 
+are summarised in Table 3, as well as the main simula-
+tion results. Based on the previous sections, 50 MWth of 
+waste heat potential will be available in 2028, whereas 
+the typical winter peak load is 55 MWth. So, considering 
+the electricity needed for the heat pumps and a storage 
+for peak-shaving, the heat demand can be totally cov-
+ered with data centre waste heat.
+Table 2: Overview of the planned DHN characteristics for 2025
+Route length in km
+50
+Connection rate in %
+75
+Annual heat demand in GWh/a
+144
+Annual heat input in GWh/a
+152
+Heat losses in % of input
+5.2
+Design peak load in MWth
+75
+Typical winter load in MWth
+55
+Typical summer load in MWth
+6
+Linear heat density in MWh/(mroute·a)
+2.9
+Figure 3: Load profile for the examined area including heat losses; light blue = hourly values, dark blue = daily mean.
+Table 3: Overview of the heating supply concept and simulation 
+results for the operation
+Heat pumps
+Thermal capacity in MWth
+37 (3 × 12,3)
+Heat source temperatures in °C
+25/15
+Heat sink temperatures in °C
+70/55 to 80/55
+Heat output in GWh/a
+148
+Full utilisation hours per year
+4,011
+Fraction of heat generation in %
+97.5
+COP
+3.76 to 3.9
+Gas boilers
+Thermal capacity in MWth
+20 (2 × 10)
+Heat output in GWh/a
+4
+Fraction of heat generation in %
+2.5
+Full utilisation hours per year
+207
+Heat storage
+Capacity in MWh
+82
+Volume in m3
+2,400
+
+
+### PAGE 7
+64	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+Covering District Heating Demand with Waste Heat from Data Centres – A Feasibility Study in Frankfurt, Germany 
+However, since specific investment costs for gas boil-
+ers are much smaller than for heat pumps [42], it will be 
+economically favourable to cover the peak loads with 
+gas boilers. That is why gas boilers are also inserted in 
+the heating supply concept. Additionally, they provide 
+backup capacity. Now, the heating supply concept is 
+proposed to find the optimum design parameters and 
+evaluate it in the next section.
+The heating supply concept consists of the central 
+heating system, the collection network, and the distribu-
+tion network, as seen in Figure 4. In the collection net-
+work with a length of less than 1 km, flow/return 
+temperatures are 25/15 °C. For the 50 km distribution 
+network, the supply/return temperatures are set to 
+70/50 °C to 80°C/50°C, with the supply temperature 
+depending on the ambient temperature.
+In the central heating system, three heat pumps with 
+a total thermal capacity of 37 MWth are installed, raising 
+the waste heat temperature level, and covering base and 
+medium load. The COP of the heat pumps is an 
+extremely sensitive parameter because the electricity 
+demand of the heat pumps is directly dependent on it, 
+which in turn accounts for most of the total costs and 
+CO2 emissions.
+Here, it was derived from a manufacturer’s offer with 
+COPmax  =  3.9 at ∆T  =  45 K and COPmin  =  3.76 at 
+∆T = 55 K. As the temperature range is small, the COP 
+characteristic curve is assumed to be linear for simplifi-
+cation purposes, so the COP varies linearly between 3.9 
+and 3.67, depending on the flow temperature.
+Gas boilers with a total capacity of 20 MWth are used 
+for peak load and redundancy. Additionally, a heat stor-
+age is installed to compensate the daily load variations. It 
+is designed for the maximum daily load variation, which 
+is 82 MWh, transferring to a volume of 2,400 m3 at the 
+given temperatures. The maximum daily load variation is 
+calculated with the deviation between load and rolling 
+24-hour-mean of the load. For each day, all positive and 
+negative deviations are summed up, respectively. The 
+design heat capacity of the storage is the maximum of all 
+these sums. This ensures that the 24-hour-mean of the 
+load can be achieved with peak shaving.
+This concept is simulated as described in section 2.3. 
+The annual generation profile resulting from the simula-
+tion is shown in Figure 5. It is evident that the heat 
+pumps provide almost all the heat, and the gas boilers 
+Figure 4: Scheme of the heating supply concept with design parame-
+ters and temperatures.
+Figure 5: Simulated annual heat generation profile.
+
+
+### PAGE 8
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024	
+65
+Bjarne Jürgens, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, Klaus Vajen
+are only required on a few days in the winter months. In 
+total, 76.5% of the heat generation is waste heat and 
+21% is electricity for the heat pumps. So, the heat pumps 
+account for 97.5% of the heat generated, while the gas 
+boilers only provide the remaining 2.5%.
+The average heat output of the heat pumps is 
+16.9 MWth, which means they achieve 4,011 full util-
+isation hours per year. Despite the high proportion of 
+generation, the heat pumps are therefore not over-
+sized. This is mainly due to the storage tank for peak 
+load smoothing, which balances out the fluctuations 
+in heat demand over the course of a day. The gas boil-
+ers, on the other hand, are utilised at 207 full load 
+hours per year, which is not unusual for peak load 
+generators.  
+The waste heat utilisation with this concept would 
+reduce the CO2-emissions of the connected buildings by 
+61% compared to the current situation in 2025. As the 
+proportion of renewable energies in the electricity mix 
+increases, emissions will continue to fall, meaning that 
+the DHN will produce 78% less CO2-emissions than the 
+current situation over the 20-year period under consider-
+ation. The underlying CO2-factors for this calculation 
+are 201 kg/MWh for gas, 266 kg/MWh for oil, 
+293 kg/MWh for electricity in 2025, and 0 kg/MWh for 
+electricity in 2045 [43]. 
+6.	Cost Evaluation
+In addition to technical feasibility, the project must 
+be economically viable for it to be realised. To calculate 
+the LCoH as the main measure for economic feasibility, 
+the following assumptions are made:
+•	
+Observation period 2025–2044
+	•
+Only the full expansion is considered, i.e., 75% 
+connection rate in 2025
+	•
+Heat demand is the same in all years because the 
+reduction in heat demand is compensated by 
+densification and grid expansion
+	•
+Price change rate r = 3% p.a. for all costs
+	•
+Internal rate of return q = 3% p.a. without 
+adjusting for inflation
+	•
+all costs in net terms, meaning that the German 
+VAT of 19% is not included
+	•
+calculated with German subsidy, as described in 
+the following two paragraphs
+•	
+Waste heat is provided free of charge, but the 
+equipment and installation costs to integrate the 
+waste heat are included in the investment
+The capital costs are mainly given by recent manufactur-
+ers offers, whereas the lifetime and maintenance costs 
+are taken from [42]. All capital costs except of the gas 
+boilers and the house connection station are subsidised 
+with 40% [44], and the subsidy for house connection 
+stations is 30% [45]. In total, the capital costs are 87 M€, 
+in which piping is the main part with 50 M€, followed 
+by the central heating system including heat pumps and 
+gas boilers with 28 M€. The capital costs for waste heat 
+utilisation are approximately 2  M€, which is almost 
+neglectable compared to the total investment.
+Regarding energy costs, the prices for large consumers 
+from 2022 in Germany are used [46]. For all subsequent 
+years, a continuous price increase of 3% is assumed, as 
+for all other costs. This leads to 199 €/MWh for electric-
+ity in 2025 and 80 €/MWh for gas. Regarding electricity, 
+the German subsidy grants 145 €/MWh for the first ten 
+years of operation, which makes up for approximately 
+55% of the electricity costs in this period [44].
+For the gas price, the CO2 price is also considered, as 
+it is a significant part in later years. For the sake of sim-
+plicity, the CO2 prices specified in German law are used 
+until 2026 [47]. According to [48], an increase of 15 € 
+per year is assumed until 2040, so that the CO2 price in 
+2040 is 275 €/t and then, accounts for around a third of 
+the gas price.
+With these assumptions, the LCoH are 105 €/MWh 
+with subsidies and 138 €/MWh without. The shares of 
+LCoH are shown in Figure 6. A key finding is that, even 
+with 55% of the electricity costs being subsidised for the 
+first ten years, the electricity for the heat pump accounts 
+for 55% of the total costs. This means that electricity 
+costs and COP are the most sensitive parameters and 
+when selecting the heat pump, a high COP should be 
+chosen, even if the investment costs are significantly 
+higher. The shares of capital costs mentioned previously 
+can also be seen here.
+To further derive transferable findings from this 
+study, a parameter variation is done for the heat pump 
+capacity and the heat storage volume. In the presented 
+design (called ‘reference’ from now on), three heat 
+pumps, each with a capacity of 12.3 MW, are used and 
+they account for 97.5% of the heat generation. Since gas 
+boilers are much cheaper than heat pumps regarding 
+capital costs, an increase of the gas fraction might be 
+economically favourable.
+To examine this, the heating supply is simulated for 
+five different heat pump capacities: 24.6 MW (called ‘2 
+HP’), 30.9 MW (called ‘2 ½ HP’), 37 MW (called ‘3 
+
+
+### PAGE 9
+66	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+Covering District Heating Demand with Waste Heat from Data Centres – A Feasibility Study in Frankfurt, Germany 
+HP’ or ‘reference’), 49.2  MW (called ‘4 HP’), and 
+57 MW (called ‘only HP’). In each case, the gas boiler 
+capacity is varied so that the total thermal capacity of 
+57 MW remains constant. The resulting LCoH are pre-
+sented in Figure 7.
+For the case with the least heat pump capacity, the 
+costs are much higher because the share of gas for the 
+heat generation exceeds 10% and then the German sub-
+sidy is not granted. But for the case ‘2½ HP’, where gas 
+boilers account for 8.5% of the heat generation, the costs 
+are increased by 5% compared to the reference case. For 
+the variations with higher heat pump capacity, the costs 
+almost remain the same.
+Therefore, the economic optimum seems to be at a 
+heat pump capacity between 65% and 100% of the total 
+installed capacity and, in turn, at a gas share on the total 
+generation between 2.5% and 0%. This is because 
+energy costs and not capital costs are dominating 
+the LCoH. The higher the internal rate of return, the 
+more relevant are the capital costs. For 9% internal rate 
+of return instead of 3%, the difference between LCoH is 
+smaller, but the finding remains the same, as seen in 
+Figure 7.
+The heat storage capacity of 82 MWh is also varied 
+to check the design. There are two variants with a 
+smaller storage tank (0.5 or 0.75 × 82 MWh) and two 
+Figure 6: Distribution of the LCoH into capital, energy, and maintenance costs for each component.
+Figure 7: LCoH under variation of the installed heat pump capacity.
+
+
+### PAGE 10
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024	
+67
+Bjarne Jürgens, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, Klaus Vajen
+with a larger storage tank (2  or  4 × 82  MWh). The 
+LCoH of all variants are shown in Figure 8. The cost 
+optimum is still the main variant, even if the costs only 
+differ by 0.5 €/MWh.
+This is plausible if one considers the amount of heat 
+stored in the variants: If the capacity is less than 
+82 MWh, not all daily peaks can be balanced anymore 
+and accordingly the peak load gas boiler must be used 
+more often, which causes higher running costs. If the 
+capacity is greater than 82 MWh, then no more heat is 
+stored, and only higher investment costs are required. 
+A key finding is that the heat storage is always recom-
+mended, since it lowers the gas fraction and required 
+total capacity at small investment costs of only 
+0.6 M€.
+7.	Comparison with Individual Heat Pumps
+Comparative values must be used to interpret the heat 
+generation costs of the heating network. For this pur-
+pose, the heat production costs of individual heat pumps 
+for each building were calculated for 5 building types 
+that are frequently found in Eschborn/Sossenheim. 
+Individual heat pumps were chosen over other heating 
+technologies like biomass, gas or oil boilers, because 
+they fulfil the emission reduction goals unlike gas or oil 
+boilers and there is no fuel shortage as it might be for 
+biomass boilers when they are installed more 
+frequently.
+An air/water heat pump is assumed for the sin-
+gle-family house building type (SFH) and geothermal 
+heat pumps for the multi-family (MFH) and commer-
+cial buildings due to the better seasonal performance 
+factor. The seasonal COPs (sCOP) are taken from an 
+evaluation of heat pump operation in existing build-
+ings: For air/water heat pumps, it is sCOP = 3.1; for 
+geothermal heat pumps, it is sCOP  =  3.9 [49]. Any 
+additional costs for necessary refurbishment measures 
+are not considered.
+For single and multi-family homes, the specific 
+investment costs of 2018 from the evaluation of the 
+German market incentive programme are used and 
+extrapolated to the price level of 2025 using the con-
+struction price index [50]. Based on discussions 
+with manufacturers, a surcharge of 10% is added to 
+reflect the market situation for heat pumps in 
+particular.
+Heat pumps of a completely different order of magni-
+tude are required for commercial buildings. The cost 
+function from [42] is used here and extrapolated to the 
+beginning of 2025 using the same method. The heat 
+generation costs are calculated using the same economic 
+efficiency parameters as for the heating network. All 
+other economic assumptions are the same as for the 
+DHN, and the German subsidy for the individual heat 
+pumps is taken into account as well.
+The results are shown in Figure 9. According to this, 
+a connection to the heating network makes sense for all 
+building types. For commercial buildings, it is even 
+questionable whether individual heat pumps are even 
+possible because the area is densely built-up, and it may 
+be impossible to tap into a heat source.
+Figure 8: LCoH and annually stored heat under variation of the storage capacity.
+
+
+### PAGE 11
+68	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+Covering District Heating Demand with Waste Heat from Data Centres – A Feasibility Study in Frankfurt, Germany 
+A connection to the heating network is significantly 
+cheaper because the electricity costs are much lower 
+than for an individual heat pump. This is largely due to 
+the operating cost subsidy in the first 10 years, which 
+totals 55 M€. In addition, the sCOP of centralised heat 
+pumps is significantly higher than that of individual air/
+water heat pumps.
+The disadvantage of the heating network compared 
+to individual solutions is the investment costs for the 
+DHN (especially pipes). However, due to the high heat 
+density in the area under consideration, the grid invest-
+ment costs account for less than 20% of the heat gener-
+ation costs. And the specific investment for the heat 
+pumps is significantly lower because the load peaks in 
+the DHN are smoothened and there is a storage tank to 
+level out daily load peaks. This means that the heat 
+pump capacity for the DHN is smaller than the total 
+capacity of individual heat pumps that would be 
+necessary.
+8.	Conclusion & Discussion
+In this case study, covering the heat demand of 
+144 GWh/a with data centre waste heat is possible 
+and with LCoH of 105 €/MWh economically favour-
+able compared to decentralised heat pumps. The heat 
+pumps account for 97.5% of the total heat generation 
+and the CO2– emissions can be reduced by 78% or 
+rather 25,000 t/a. The exact numbers are only valid 
+for this case, however, the following general find-
+ings on data centre waste heat utilisation in DHN 
+were found.
+First, it can be difficult to utilise waste heat from 
+existing data centres due to the decentralisation of the 
+cooling system, a lack of space or a lack of incentives 
+for the data centre owners. With legal regulations, it is 
+much easier to plan those projects, therefore novel laws 
+as the one in Germany obliging for at least 10% data 
+centre energy reuse are highly recommended.
+Second, data centre clusters provide a huge potential 
+for decarbonisation of the heat supply for existing build-
+ings in the adjacent districts and using this potential 
+often is the economically favourable option for end cus-
+tomers. As seen for the examined cluster, the potential 
+will strongly increase in the future.
+Third, the costs for waste heat extraction are neglect-
+able compared to the costs for the central heating system 
+and the DHN.
+And fourth, a very high share of heat pumps on the 
+total generation must be considered, because in this 
+project, a heat pump share of 97.5% or more is the most 
+economical option.
+A main weakness of the study is the dependency of 
+the LCoH on electricity costs. As seen in Figure 6, elec-
+tricity costs make up for around 50% of the LCoH, so 
+for example a change of 10% in electricity costs will 
+result in a 5% change of LCOH. Also, the internal rate 
+of return was set to 3% p.a., resulting in no return when 
+taking the inflation rate of 3% p.a. into account. This 
+was discussed with the person responsible from the city 
+of Frankfurt for this feasibility study, but most likely a 
+company will implement such a project with a much 
+higher internal rate of return. In this example, the LCoH 
+rise by 13 to 15 €/MWh when the internal rate of return 
+is set to 9% p.a., as seen in Figure 8.
+Another simplification is the period in which the 
+heating network is built. For the cost calculation, it is 
+assumed that the complete network is built in one year. 
+But really, it would be built in different steps, so the 
+investment costs would be split up over a long period of 
+time. Also, the amount of sold heat per year would 
+slowly grow. It was too much effort to represent this in 
+the cost calculation, but the LCoH would change 
+because of this.
+Eventually, this very area is particularly favourable 
+for a DHN because of a very high linear heat density of 
+2.9 MWh/(mroute·a). This is due to large office buildings 
+in one part of the area. So, the DHN share of LCOH is 
+around 20% as seen in Figure 6. This is unusually small 
+for such a project. In other areas, the costs for the DHN 
+itself will probably be higher.
+Figure 9: LCoH for individual heat pumps and different building 
+types compared to the DHN.
+
+
+### PAGE 12
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024	
+69
+Bjarne Jürgens, Johannes Zipplies, Christian Sauer, Oleg Kusyy, Janybek Orozaliev, Ulrike Jordan, Klaus Vajen
+Acknowledgements
+This paper is based on a conference paper first presented 
+at the ‘9th International Conference on Smart Energy 
+Systems’ in Copenhagen from 12 to 13 September 2023. 
+The work presented in this paper is supported by LEA 
+LandesEnergieAgentur Hessen GmbH through the proj-
+ect ‘Scientific support for projects in the context of the 
+energy transition’ under Grant No. 92020-V-011 Lot 2.
+References
+[1]	
+United Nations Framework Convention on Climate Change. 
+The Paris Agreement; 2016.
+[2]	
+Bundesrat. Entwurf eines Gesetzes zur Änderung des 
+Gebäudeenergiegesetzes, zur Änderung der Heizkostenverord-
+nung und zur Änderung der Kehr-und Überprüfungsordnung: 
+GEG; 2023.
+[3]	
+Bundesrat. Entwurf eines Gesetzes zur Steigerung der 
+Energieeffizienz und zur Änderung des Energiedienstleistu-
+ngsgesetzes; 2023.
+[4]	
+Lund H, Østergaard PA, Connolly D, Mathiesen BV. Smart 
+energy and smart energy systems. Energy 2017;137:556–65. 
+https://doi.org/10.1016/j.energy.2017.05.123.
+[5]	
+Chittum A, Østergaard PA. How Danish communal heat 
+planning empowers municipalities and benefits individual 
+consumers. Energy Policy 2014;74:465–74. https://doi.
+org/10.1016/j.enpol.2014.08.001.
+[6]	
+Lund H, Mathiesen BV, Collony D, Østergaard PA. Renewable 
+Energy Systems - A Smart Energy Systems Approach to the 
+Choice and Modelling of 100% Renewable Solutions. Chemical 
+Engineering 
+Transactions 
+2014(39):1–6. 
+https://doi.
+org/10.3303/CET1439001
+[7]	
+Lund H, Østergaard PA, Connolly D, Ridjan I, Mathiesen BV, 
+Hvelplund F et al. Energy Storage and Smart Energy Systems. 
+International Journal of Sustainable Energy Planning and 
+Management 
+2016;11:3–14. 
+https://doi.org/10.5278/
+IJSEPM.2016.11.2.
+[8]	
+Manz P, Kermeli K, Persson U, Neuwirth M, Fleiter T, Crijns-
+Graus W. Decarbonizing District Heating in EU-27 + UK: How 
+Much Excess Heat Is Available from Industrial Sites? Sustainability 
+2021;13(3):1439. https://doi.org/10.3390/su13031439.
+[9]	
+Frederiksen S, Werner S. District Heating and Cooling. Lund: 
+Studentlitteratur; 2013.
+[10]	 Nielsen S, Hansen K, Lund R, Moreno D. Unconventional 
+Excess Heat Sources for District Heating in a National Energy 
+System Context. Energies 2020;13(19):5068. https://doi.
+org/10.3390/en13195068.
+[11]	 Rohde D, Andresen T, Nord N. Interaction Between a Building 
+Complex with an Integrated Thermal Energy System and a 
+District Heating System. Aalborg University, Department of 
+Civil Engineering; 2016.
+[12]	 Sorknæs P, Nielsen S, Lund H, Mathiesen BV, Moreno D, 
+Thellufsen JZ. The benefits of 4th generation district heating 
+and energy efficient datacentres. Energy 2022;260:125215. 
+https://doi.org/10.1016/j.energy.2022.125215.
+[13]	 Oltmanns J, Sauerwein D, Dammel F, Stephan P, Kuhn C. 
+Potential for waste heat utilization of hot-water-cooled data 
+centers: A case study. Energy Science & Engineering 
+2020;8(5):1793–810. https://doi.org/10.1002/ese3.633.
+[14]	 Lund H, Østergaard PA, Chang M, Werner S, Svendsen S, 
+Sorknæs P et al. The status of 4th generation district heating: 
+Research and results. Energy 2018;164:147–59. https://doi.
+org/10.1016/j.energy.2018.08.206.
+[15]	 Lund R, Østergaard DS, Yang X, Mathiesen BV. Comparison of 
+Low-temperature District Heating Concepts in a Long-Term 
+Energy System Perspective. 5-18 Pages / International Journal 
+of Sustainable Energy Planning and Management, Vol 12 
+(2017) 2017. https://doi.org/10.5278/IJSEPM.2017.12.2.
+[16]	 Münster M, Morthorst PE, Larsen HV, Bregnbæk L, Werling J, 
+Lindboe HH et al. The role of district heating in the future 
+Danish energy system. Energy 2012;48(1):47–55. https://doi.
+org/10.1016/j.energy.2012.06.011.
+[17]	 David A, Mathiesen BV, Averfalk H, Werner S, Lund H. Heat 
+Roadmap Europe: Large-Scale Electric Heat Pumps in District 
+Heating Systems. Energies 2017;10(4):578. https://doi.
+org/10.3390/en10040578.
+[18]	 Lund, Rasmus, Persson, Urban. Mapping of potential heat 
+sources for heat pumps for district heating in Denmark. Energy 
+2016(110). https://doi.org/10.1016/j.energy.2015.12.127.
+[19]	 Pieper H, Lepiksaar K, Volkova A. GIS-based approach to 
+identifying potential heat sources for heat pumps and chillers 
+providing district heating and cooling. IJSEPM 2022;34:29–44. 
+https://doi.org/10.54337/ijsepm.7021.
+[20]	 Moreno D, Nielsen S, Sorknæs P, Lund H, Thellufsen JZ, 
+Mathiesen BV. Exploring the location and use of baseload 
+district heating supply. What can current heat sources tell us 
+about future opportunities? Energy 2024;288:129642. https://
+doi.org/10.1016/j.energy.2023.129642.
+[21]	 Ahrendts F, Drechsler B, Hendricks J, Küpper J, Lang S, Peil T 
+et al. Roll-out von Großwärmepumpen in Deutschland. 
+Fraunhofer-Gesellschaft; 2023.
+[22]	 Monsalves JJ, Bergaenztlé C, Keles D. Economic feasibility of 
+data center waste-heat integration into district heating: what 
+does it require? Proceeedings of the 2023 19th International 
+Conference on the European Energy Market (EEM) 2023:1–6. 
+https://doi.org/10.1109/EEM58374.2023.10161985.
+[23]	 Ülkü U, Karadeniz ZH, Akkurt GG. Waste Heat Recovery from 
+Cooling Systems of Data Centers. In: Sogut MZ, Karakoc TH, 
+
+
+### PAGE 13
+70	
+International Journal of Sustainable Energy Planning and Management Vol. 41 2024
+Covering District Heating Demand with Waste Heat from Data Centres – A Feasibility Study in Frankfurt, Germany 
+Secgin O, Dalkiran A, editors. Proceedings of the 2022 
+International Symposium on Energy Management and 
+Sustainability: ISEMAS 2022, 1st ed. Cham: Springer 
+International Publishing; Springer; 2023, p. 381–390.
+[24]	 Huang P, Copertaro B, Zhang X, Shen J, Löfgren I, Rönnelid M 
+et al. A review of data centers as prosumers in district energy 
+systems: Renewable energy integration and waste heat reuse 
+for district heating. Applied Energy 2020;258:114109. https://
+doi.org/10.1016/j.apenergy.2019.114109.
+[25]	 Wahlroos M, Pärssinen M, Rinne S, Syri S, Manner J. Future 
+views on waste heat utilization – Case of data centers in 
+Northern Europe. Renewable and Sustainable Energy Reviews 
+2018;82:1749–64. https://doi.org/10.1016/j.rser.2017.10.058.
+[26]	 Nguyen C. Utilizing Facebook Data Center Surplus heat for 
+District heating in Odense – Denmark; Available from: https://
+www.ca-eed.eu/wp-content/uploads/2021/10/2_IS6.6_
+Facebook_DK_Chan-Nguyen.pdf.
+[27]	 Copenhagen Centre on Energy Efficiency. District Heating in 
+Denmark, the case of Fjernvarme Fyn. [February 21, 2024]; 
+Available from: https://c2e2.unepccc.org/kms_object/district-
+heating-in-denmark-the-case-of-fjernvarme-fyn/.
+[28]	 Fortum Corporation. Fortum and Ericsson sign collab­o­ration 
+agreement on utilising data centre’s waste heat for district 
+heating: Press release. [February 21, 2024]; Available from: 
+https://www.fortum.com/media/2016/11/fortum-and-ericsson-
+sign-collaboration-agreement-utilising-data-centres-waste-
+heat-district-heating.
+[29]	 Stockholm Exergi. Heat recovery with Open District 
+Heating; Available from: https://www.stockholmexergi.se/
+varmeatervinning/.
+[30]	 Sitra. District heating from data centre waste heat - Mäntsälä; 
+Available from: https://www.sitra.fi/en/cases/district-heating-
+from-data-centre-waste-heat-mantsala/.
+[31]	 Boye Petersen A. ReUseHeat Experiences from other urban 
+waste heat recovery investments: Handbook. 25 cases of urban 
+waste heat recovery. Kolding, Denmark; 2018.
+[32]	 Huang F, Lu J, Zheng J, Baleynaud JM. Feasibility of heat 
+recovery for district heating based on Cloud Computing 
+Industrial Park 2015(International Conference on Renewable 
+Energy Research and Applications (ICRERA)):287–91. https://
+doi.org/10.1109/ICRERA.2015.7418711.
+[33]	 BDEW/VKU/GEODE. 
+Leitfaden 
+Abwicklung 
+von 
+Standardlastprofilen Gas. Berlin; 2020.
+[34]	 Meteonorm. Bern: Meteotest AG; 2018.
+[35]	 Baez MJ, Larriba Martinez T. Technical Report on the 
+Elaboration of a Cost Estimation Methodology: Work Package 
+3 - Estimating RHC energy costs. Madrid, Spain; 2015.
+[36]	 Deutsche Energie-Agentur GmbH. dena-Leitstudie Aufbruch 
+Klimaneutralität: Eine gesamtgesellschaftliche Aufgabe 2021.
+[37]	 Bürger V, Hesse T, Palzer A, Köhler B, Herkel S, 
+Engelmann P et al. Klimaneutraler Gebäudebestand 2050 - 
+Energieeffizienzpotenziale und die Auswirkungen des 
+Klimawandels auf den Gebäudebestand. Dessau-Roßlau; 2017.
+[38]	 Matzarakis A, Thomsen F, Mayer H. Klimawandel und 
+Heizgradtage in Freiburg im Breisgau, Südwestdeutschland. 
+Gefahrstoffe- Reinhaltung der Luft 2009(7/8):319–24.
+[39]	 Cischinsky 
+H, 
+Diefenbach 
+N. 
+Datenerhebung 
+Wohngebäudebestand 
+2016: 
+Datenerhebung 
+zu 
+den 
+energetischen Merkmalen und Modernisierungsraten im 
+deutschen und hessischen Wohngebäudebestand. Darmstadt; 
+2018.
+[40]	 Herrmann A, Mädlow A, Gross U, Krause H. Auswirkungen 
+des Klimawandels auf den Energiebedarf von Gebäuden und 
+den Ertrag erneuerbarer Energien. In: 14. Symposium 
+Energieinnovation; 2016.
+[41]	 Schlesinger M, Hofer P, Kemmler A, Kirchner A, Strassburg S, 
+Lindenberger D et al. Energieszenarien für ein Energiekonzept 
+der Bundesregierung. Basel, Köln, Osnabrück; 2010.
+[42]	 Große R, Christopher B, Stefan W, Geyer R, Robbi S. Long 
+term (2050) projections of techno-economic performance of 
+large-scale heating and cooling in the EU: External study 
+performed by ILF Consulting Engineers Austria GmbH, and 
+AIT Austrian Institute of Technology GmbH for the Joint 
+Research Centre; 2017.
+[43]	 BAFA. Informationsblatt CO2-Faktoren: Bundesförderung für 
+Energie- und Ressourceneffizienz in der Wirtschaft - Zuschuss.
+[44]	 BMWK. Richtlinie für die Bundesförderung für effiziente 
+Wärmenetze “BEW“; 2022.
+[45]	 BMWi. Richtlinie für die Bundesförderung für effiziente 
+Gebäude – Einzelmaßnahmen (BEG EM); 2021.
+[46]	 Destatis. Erdgas- und Stromdurchschnittspreise. [March 22, 
+2023]; Available from: https://www.destatis.de/DE/Themen/
+Wirtschaft/Preise/Erdgas-Strom-DurchschnittsPreise/_inhalt.
+html#421260.
+[47]	 Bundesministerium 
+der 
+Justiz. 
+Gesetz 
+über 
+einen 
+nationalen 
+Zertifikatehandel 
+für 
+Brennstoffemissionen 
+(Brennstoffemissionshandelsgesetz - BEHG): BEHG; 2022.
+[48]	 Öko-Institut, Berlin, Fraunhofer ISI, IREES, Thünen-Institut, 
+Braunschweig. Projektionsbericht 2021 für Deutschland; 2022.
+[49]	 Günther et al. Wärmepumpen in Bestandsgebäuden: Ergebnisse 
+aus dem Forschungsprojekt “WPsmart im Bestand“ 
+(Abschlussbericht) 2020.
+[50]	 Destatis. Baupreisindizes: Deutschland, Jahre, Messzahlen mit/
+ohne Umsatzsteuer, Gebäudearten, Bauarbeiten (Hochbau). 
+[March 22, 2023]; Available from: https://www-genesis.destatis.
+de/genesis//online?operation=table&code=61261-0001&by-
+pass=true&levelindex=0&levelid=1679478704219#abread-
+crumb. 

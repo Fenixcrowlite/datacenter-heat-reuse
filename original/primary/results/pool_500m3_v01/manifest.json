@@ -1,0 +1,14 @@
+{
+  "pdfs": [
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_500m3_v01\\Bazen_500m3_SK.pdf",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_500m3_v01\\Bazen_500m3_EN.pdf",
+    "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\pool_500m3_v01\\Bazen_500m3_RU.pdf"
+  ],
+  "timestamp": "2026-10-23T09:30:05.784405+00:00",
+  "validation": {
+    "balance_residual_MWh": 7.149836278586008e-14,
+    "hp_balance_MWh": -1.91402449445377e-13,
+    "dt60_dt300_final_delta_C": 0.2141168829524247,
+    "first_28C_delta_minutes": 0.6066783536459752
+  }
+}

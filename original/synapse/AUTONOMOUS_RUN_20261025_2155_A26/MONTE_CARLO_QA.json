@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "seed": 20261025,
+  "cases": {
+    "independent": {
+      "n": 80000,
+      "empirical_mean_W": 104260.51612904338,
+      "empirical_std_W": 11099.17199520976,
+      "analytic_mean_W": 104236.34999999999,
+      "analytic_std_W": 11134.81901822597,
+      "mean_error_in_sigma": 0.002170320775203242,
+      "relative_std_error": 0.003201401204443622
+    },
+    "shared_temperature_bias_positive_0p9": {
+      "n": 80000,
+      "empirical_mean_W": 104226.43957989545,
+      "empirical_std_W": 6094.682966407443,
+      "analytic_mean_W": 104236.34999999999,
+      "analytic_std_W": 6070.021165106453,
+      "mean_error_in_sigma": 0.0016326829569411087,
+      "relative_std_error": 0.004062885553473632
+    },
+    "anti_correlated_temperature_error_negative_0p9": {
+      "n": 80000,
+      "empirical_mean_W": 104131.5001998699,
+      "empirical_std_W": 14472.61940801102,
+      "analytic_mean_W": 104236.34999999999,
+      "analytic_std_W": 14530.08025416423,
+      "mean_error_in_sigma": 0.007216050998757639,
+      "relative_std_error": 0.00395461313000951
+    }
+  }
+}

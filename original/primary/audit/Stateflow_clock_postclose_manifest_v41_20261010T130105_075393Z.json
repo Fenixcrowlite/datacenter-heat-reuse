@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-10T13:01:05.075460+00:00",
+  "scope": "Completed packaging artifacts only",
+  "files": [
+    {
+      "path": "audit/Stateflow_clock_postclose_v41_20261010T130046_894660Z.json",
+      "bytes": 26039,
+      "sha256": "963af569b76b63c248cf82d9aa0ce8a2087c2306150f602a0a6a347411ff3a13"
+    },
+    {
+      "path": "audit/Stateflow_clock_manifest_v41_20261010T130037_509896Z.json",
+      "bytes": 40519,
+      "sha256": "fca03c146e874002a040eba05020ced549069e8f8a7f17cfe050d6078c91b856"
+    },
+    {
+      "path": "audit/seal_stateflow_clock_v41.py",
+      "bytes": 1715,
+      "sha256": "6e11e7fcba451503f24398fd77df7c2344dcbb4ec63750a21ed0e9c3585a25ce"
+    },
+    {
+      "path": "audit/check_stateflow_clock_checkpoint_v41.py",
+      "bytes": 2675,
+      "sha256": "f9d22ca782e118d2e552e144b8c41dd44f689cf1814d8d4cd695df2e90efd55a"
+    },
+    {
+      "path": "automation/logs/stateflow_clock_v41_finalize_20261010T130037423Z.log",
+      "bytes": 108,
+      "sha256": "e7115beeee9209bea87b5539d9a47a0ef285be33dfc44a9304a7a0c2d21ab57e"
+    },
+    {
+      "path": "automation/logs/stateflow_clock_v41_postclose_20261010T130046780Z.log",
+      "bytes": 100,
+      "sha256": "2332130f0bffb5fafcb18fd6e6ea11c3926eb3010ca546176280cd3c525735b4"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "actor": "chatgpt-dchr-c88-native-matlab-replay-20261030-1254",
+  "event_id": 1448,
+  "evidence_sha256": "f5dd275766336b296cc37fc9d2900b9bca3a6e40f3b69b223e0955431737e56b",
+  "manifest_sha256": null,
+  "schema": "SYNAPSE_IDEMPOTENT_EVIDENCE_RECEIPT_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

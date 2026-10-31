@@ -1,0 +1,24 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.17",
+  "kind": "additive_python_dispatch_stress_checkpoint",
+  "inherits_status": "STATUS_v15.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v15.md",
+  "tested_implementation": "audit/dispatch_reference_v16.py",
+  "evidence": [
+    "audit/test_dispatch_properties_v17.py",
+    "audit/dispatch_properties_v17.json",
+    "audit/run_notes_v17.md"
+  ],
+  "test_result": {
+    "random_cases": 1000,
+    "failures": 0,
+    "max_abs_balance_residual_MWh": 1.4432899320127035e-14,
+    "seed": 17009,
+    "classification": "Python algebraic stress only"
+  },
+  "primary_source_signoffs": 0,
+  "matlab_v16_cross_validation": "NOT_EXECUTED_IN_THIS_CHECKPOINT",
+  "simulink_stateflow_final": "NOT_VALIDATED",
+  "next": "Extend property domains and compare v16 MATLAB and Python deterministic vectors; continue primary-paper audit."
+}

@@ -1,0 +1,508 @@
+{
+  "version": "0.33",
+  "timestamp_utc": "2026-10-10T02:42:41.191702+00:00",
+  "previous_entries_preserved": 941,
+  "mutable_exclusions": [
+    "automation/engineering_progress.md",
+    "automation/STATEFLOW_ACCEPTANCE.md",
+    "active finalizer console",
+    "generated caches"
+  ],
+  "files": [
+    {
+      "path": "audit/finalize_stateflow_fallback_v33.py",
+      "bytes": 17274,
+      "sha256": "ad3bcb81e37f1b013007818789cb427f415422cba2314326e1554264146a5203"
+    },
+    {
+      "path": "audit/run_stateflow_fallback_v33.ps1",
+      "bytes": 937,
+      "sha256": "2a2e08fe1571bcd28950c05f763ac40141ffe5698acfd334847385bfdd37f68e"
+    },
+    {
+      "path": "audit/Stateflow_execution_v33_20261010T023556403Z.json",
+      "bytes": 352,
+      "sha256": "774a13aaf565b3dee292e362d349ef1429ae51d2cfab7b006260690f8d3ac7e7"
+    },
+    {
+      "path": "audit/Stateflow_execution_v33_20261010T023605574Z.json",
+      "bytes": 352,
+      "sha256": "acd38bed8e40260a6fe7d7db612bdf76052d8e8f5a2b4e4e7a375b107d22aec5"
+    },
+    {
+      "path": "audit/Stateflow_fallback_QA_v33_20261010T023838_807159Z.json",
+      "bytes": 6914135,
+      "sha256": "615eb9d2b28873cdd30c035ff95c7a98facc05a989eec7503b75023596dbd41d"
+    },
+    {
+      "path": "audit/Stateflow_fallback_sources_v33_20261010T024241_191718Z.json",
+      "bytes": 1585,
+      "sha256": "77db61d2b6f0518b8ac19b97558c52d260b40bcb3a3bdf96f1824d08449f1772"
+    },
+    {
+      "path": "audit/stateflow_fallback_spec_v33_20261010T023551_628086Z/cases.json",
+      "bytes": 45017,
+      "sha256": "5b8a5c3b02c2016233fecdf86a5221e3797d3f3cb62c6ee51f364f72b4f3fd3d"
+    },
+    {
+      "path": "audit/stateflow_fallback_spec_v33_20261010T023551_628086Z/dwell_example.json",
+      "bytes": 494,
+      "sha256": "316e9264cb62e744cc40bf25faa10a448654302fcd108f6a0cff4fd23d8638a0"
+    },
+    {
+      "path": "audit/stateflow_fallback_spec_v33_20261010T023551_628086Z/equation_qa.json",
+      "bytes": 63080,
+      "sha256": "acdcfc578ecd1bb9e4c9c889c103530fee9cd93112e4d9d0a3438ad32521449e"
+    },
+    {
+      "path": "audit/stateflow_fallback_spec_v33_20261010T023551_628086Z/preservation.json",
+      "bytes": 194579,
+      "sha256": "c39f0a33b2713ecf09fa38b5e5e2b01a16e89c4a5635763aa68f7410540bea41"
+    },
+    {
+      "path": "audit/stateflow_fallback_spec_v33_20261010T023551_628086Z/segments.csv",
+      "bytes": 145572,
+      "sha256": "c5e0550b7efbf662f5b13ced5608ab18cf36b340e9bcdcedc1699630ad013151"
+    },
+    {
+      "path": "audit/stateflow_fallback_spec_v33_20261010T023551_628086Z/vectors.csv",
+      "bytes": 109512,
+      "sha256": "b0d945b2519d3be73326544bdd59d9556f428da253d3c821d2d99782650d792e"
+    },
+    {
+      "path": "audit/stateflow_fallback_v33.py",
+      "bytes": 6628,
+      "sha256": "21073f536c1ead9d88ffb3daffb54852afcfdb3ae4e66cd5767c1a71d70fabda"
+    },
+    {
+      "path": "audit/TES_capacity_fallback_derivation_v33.md",
+      "bytes": 8428,
+      "sha256": "2d5a6cbb39228c3eac0e126358270d058258e5099cf9b38e48233fb9d1545c6f"
+    },
+    {
+      "path": "audit/TES_capacity_fallback_results_v33.md",
+      "bytes": 5665,
+      "sha256": "c5da7891866f1731cd21cf120298f1f9a87b79670ff27b290a7f3fde5adcf26e"
+    },
+    {
+      "path": "audit/verify_stateflow_fallback_v33.py",
+      "bytes": 9974,
+      "sha256": "a31e113d3c44a447d880241a1199199a60daa33c75260b0fd5cdd0725dc2fd0d"
+    },
+    {
+      "path": "automation/logs/stateflow_fallback_QA_v33_20261010T023755668Z.log",
+      "bytes": 659,
+      "sha256": "08742278dd44d46830e14529aa0778149f2d440fbc20ec80bad23857de68fc39"
+    },
+    {
+      "path": "automation/logs/stateflow_fallback_QA_v33_20261010T023825363Z.log",
+      "bytes": 905,
+      "sha256": "3bbc6beea5ed1664bebabb4062734b4a0dbaa3f34333a47e333e0d475c9675c0"
+    },
+    {
+      "path": "automation/logs/stateflow_fallback_QA_v33_20261010T023837996Z.log",
+      "bytes": 399,
+      "sha256": "9a2c7c6cd7c80edc992ebab6587cffaec55e39842cfc288e045951181fb919f2"
+    },
+    {
+      "path": "automation/logs/stateflow_fallback_spec_v33_20261010T023551366Z.log",
+      "bytes": 163,
+      "sha256": "cced69a62ba51f8e370c95b3bb9653f996b5f416c7cbb9a9b0229095037fdc07"
+    },
+    {
+      "path": "automation/logs/stateflow_fallback_v33_console_20261010T023556403Z.log",
+      "bytes": 181,
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4"
+    },
+    {
+      "path": "automation/logs/stateflow_fallback_v33_console_20261010T023605574Z.log",
+      "bytes": 2268,
+      "sha256": "5bc5b445836dbaf6d5317e80bc4cad5e4fe105a0c59e7cd6f2652e6bb9d307d0"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_stateflow_v33.md",
+      "bytes": 1604,
+      "sha256": "75bc34b357f4b77eaa4b4cac97e76a0c2bba82c0a3b8b82866714f49f641fca1"
+    },
+    {
+      "path": "matlab/simulink/export_stateflow_fallback_mat_v33.m",
+      "bytes": 1300,
+      "sha256": "a1cb90938e620d37219daec4d42aa53308ed92ff91e59af4552b25a6cb82a584"
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_fallback_v33.m",
+      "bytes": 5614,
+      "sha256": "594085c0fc18b0d005ce16842f237ec4eee1bcbf0cb12773e47bc93685233cd8"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/assertions_v33.csv",
+      "bytes": 842403,
+      "sha256": "c11aba8e4ee2afb32f5f84a9232511c1b7791eb757292d8f1d7a57090407609f"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/fallback_sensitivity_v33.csv",
+      "bytes": 3507,
+      "sha256": "e6d4e22d98dcc1eae86176adb39e6a483b5f7e74fa6660d3ed4a6d3e540cccc1"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/feasible_hold_h_0.125_simulation.mat",
+      "bytes": 5238,
+      "sha256": "c544b89d6743a6941fdd2d9abd7efa262ebfc4c4a7ece9484e290dda893e9f15"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/feasible_hold_h_0.25_simulation.mat",
+      "bytes": 4599,
+      "sha256": "277c21924cab1e19228d9b2538d865af98fd00c406217cec1d10726d55055bd7"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/feasible_hold_h_0.5_simulation.mat",
+      "bytes": 4307,
+      "sha256": "08605a001f47c1d37eeb422318803ad253b424e5aaddcbf262b4ca490cd8584d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/feasible_hold_h_1_simulation.mat",
+      "bytes": 4128,
+      "sha256": "102ec0212e3cb206bb0b3d11d972d374c5d31427c0e416f5c234390dc803ed6d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/feasible_hold_h_2_simulation.mat",
+      "bytes": 4062,
+      "sha256": "01f01ef98525e6dfa326f9ce9a9259f8ac1c139c475aaa75de089d7f3fa54e80"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/mat_audit_v33.json",
+      "bytes": 481989,
+      "sha256": "726dea2157280e1b7fbe99d148d323502f07e4322d74ea64046d6ecaee2b77a8"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/matlab_diary.log",
+      "bytes": 2102,
+      "sha256": "d9ec52c963c2712da19f470de2621c2972a634bc96bdd417cf4075a19d5fbb41"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/passive_capacity_h_0.125_simulation.mat",
+      "bytes": 7917,
+      "sha256": "38bbaf8fb2550a6d536ff020218c5f5d8a6ebd275c82e9aa7e8a957623be6426"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/passive_capacity_h_0.25_simulation.mat",
+      "bytes": 5760,
+      "sha256": "2b51462ca1196a2b6831ecd16fcda21aa479994c8cc32eb4fe9856f3d2f9c932"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/passive_capacity_h_0.5_simulation.mat",
+      "bytes": 4671,
+      "sha256": "3d47b5bd05eae8c3a9f78a6c9e52933d4e89ba3119afcfad3dc6dad9a1641190"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/passive_capacity_h_1_simulation.mat",
+      "bytes": 4125,
+      "sha256": "7077a8c3ae29c1b4f95a8f1b4f41faecf3907cc6753ce0b720f8c75fcfe4af1e"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/passive_capacity_h_2_simulation.mat",
+      "bytes": 3843,
+      "sha256": "61261f1d5d6df07aae6469f7b05a0feb0415731a0be5a7f9156db6335cb29f79"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z/stateflow_fallback_v33.py",
+      "bytes": 6628,
+      "sha256": "21073f536c1ead9d88ffb3daffb54852afcfdb3ae4e66cd5767c1a71d70fabda"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z/stateflow_reference_v32.py",
+      "bytes": 8756,
+      "sha256": "0b1973056070cfc05936cccb54f7dd878b67a6f74020ba65475c8f1b34cb966d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z/TES_event_reference_v31.py",
+      "bytes": 9586,
+      "sha256": "c8700cf8be38145ac9f35cac1aa5a94d313612a9a6d7bbf1b40ae8ecb735e858"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z/verify_stateflow_completion_v32.py",
+      "bytes": 17609,
+      "sha256": "c7b84293a6750eef5afa873f12515117f27390b0ecb401919b7a54b44b356fdb"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023825_496831Z/verify_stateflow_fallback_v33.py",
+      "bytes": 9713,
+      "sha256": "ada8213a82c8653651eb7826ed577e92ac437d06c4e9738e397ee1cd83b29161"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z/stateflow_fallback_v33.py",
+      "bytes": 6628,
+      "sha256": "21073f536c1ead9d88ffb3daffb54852afcfdb3ae4e66cd5767c1a71d70fabda"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z/stateflow_reference_v32.py",
+      "bytes": 8756,
+      "sha256": "0b1973056070cfc05936cccb54f7dd878b67a6f74020ba65475c8f1b34cb966d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z/TES_event_reference_v31.py",
+      "bytes": 9586,
+      "sha256": "c8700cf8be38145ac9f35cac1aa5a94d313612a9a6d7bbf1b40ae8ecb735e858"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z/verify_stateflow_completion_v32.py",
+      "bytes": 17609,
+      "sha256": "c7b84293a6750eef5afa873f12515117f27390b0ecb401919b7a54b44b356fdb"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/qa_source_20261010T023838_113871Z/verify_stateflow_fallback_v33.py",
+      "bytes": 9974,
+      "sha256": "a31e113d3c44a447d880241a1199199a60daa33c75260b0fd5cdd0725dc2fd0d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_limited_initial_capacity_h_0.125_simulation.mat",
+      "bytes": 8395,
+      "sha256": "ddab79ae2f119b9ea01dffdb4a3ba9ce367d6e2efc1851f022e8f9e5c3bf1272"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_limited_initial_capacity_h_0.25_simulation.mat",
+      "bytes": 6011,
+      "sha256": "091251b5168909f7ee60093aa13be23c9ea689c4b386613ff4ada3438f29df3c"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_limited_initial_capacity_h_0.5_simulation.mat",
+      "bytes": 4826,
+      "sha256": "387ec3a2131eaff4b49df266df64bf20ee1e19cc43c644a3da96344574b72aee"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_limited_initial_capacity_h_1_simulation.mat",
+      "bytes": 4235,
+      "sha256": "bc2bed1d521a59b7b785d9afa98200b5f7fc4b8d765bc9933a9ea9f79eda8d03"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_limited_initial_capacity_h_2_simulation.mat",
+      "bytes": 3942,
+      "sha256": "0a27309bad0ce9bdbf8b0647f0c72ff047bb6f4fa1b84161c51ac9d7f6d0ddef"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/build_dispatch_stateflow_v32.m",
+      "bytes": 7919,
+      "sha256": "3bc203d66ed02afb48850e6848a29cb373707c2b51bcb0d85132df26cdeb565a"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/DCHR_Dispatch_Stateflow_v32.slx",
+      "bytes": 140917,
+      "sha256": "bc9b1f1befb7a58863f7d79a121856ba2d8c73a387fe2b88537c8c9bd0c84a87"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/dchr_segment_plan_v32.m",
+      "bytes": 2286,
+      "sha256": "5d073681c8486ca128ec77e45ad1840c3966eaf0649be4c67ac49d99d892eac3"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/dchr_stateflow_hp_v30.m",
+      "bytes": 2543,
+      "sha256": "62633b49633966a552d53cc97a8353cf8b16f78d30200e1456f5110b0b63d0a2"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/export_stateflow_fallback_mat_v33.m",
+      "bytes": 1300,
+      "sha256": "a1cb90938e620d37219daec4d42aa53308ed92ff91e59af4552b25a6cb82a584"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/export_stateflow_mat_audit_v32.m",
+      "bytes": 3020,
+      "sha256": "80bbf05e1f196914d415b0ffbe756e7a1dd6f194fe2050bae20b3936aae014d6"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/heat_pump_step_v14.m",
+      "bytes": 4282,
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/run_stateflow_acceptance_v32.m",
+      "bytes": 8785,
+      "sha256": "4f6c26a7d0bcbe6040f03648108a7858c933b67fc9e800092370bea73997a5b6"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/run_stateflow_fallback_v33.m",
+      "bytes": 5614,
+      "sha256": "594085c0fc18b0d005ce16842f237ec4eee1bcbf0cb12773e47bc93685233cd8"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/run_stateflow_faults_v32.m",
+      "bytes": 4062,
+      "sha256": "241c1669c808a63962f7f45ef92d29b3183bdfd70b97a077f318c3499014cc80"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/spec/cases.json",
+      "bytes": 45017,
+      "sha256": "5b8a5c3b02c2016233fecdf86a5221e3797d3f3cb62c6ee51f364f72b4f3fd3d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/spec/dwell_example.json",
+      "bytes": 494,
+      "sha256": "316e9264cb62e744cc40bf25faa10a448654302fcd108f6a0cff4fd23d8638a0"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/spec/equation_qa.json",
+      "bytes": 63080,
+      "sha256": "acdcfc578ecd1bb9e4c9c889c103530fee9cd93112e4d9d0a3438ad32521449e"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/spec/preservation.json",
+      "bytes": 194579,
+      "sha256": "c39f0a33b2713ecf09fa38b5e5e2b01a16e89c4a5635763aa68f7410540bea41"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/spec/segments.csv",
+      "bytes": 145572,
+      "sha256": "c5e0550b7efbf662f5b13ced5608ab18cf36b340e9bcdcedc1699630ad013151"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/spec/vectors.csv",
+      "bytes": 109512,
+      "sha256": "b0d945b2519d3be73326544bdd59d9556f428da253d3c821d2d99782650d792e"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_allocate_v32.m",
+      "bytes": 1327,
+      "sha256": "781c5d74978e7b305270f2f21d730e9d59fbfd9e7067e81dd47e132e33a5df90"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_choose_mode_v32.m",
+      "bytes": 371,
+      "sha256": "bc1ef1eb235ad4ad0795cfd72963867f4b25121ee0ef4b5ac900e435f7b146d6"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_collect_v32.m",
+      "bytes": 310,
+      "sha256": "430694efb37f0ffb20627d05cfd656a1e0a4919effa50c97f45af9757cd15c7e"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_contract_gate_v32.m",
+      "bytes": 4244,
+      "sha256": "e81eb8c8008f02c7a36e386d54143bc6cd4c96b83276e89e754be2dbbe352019"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_fallback_v33.py",
+      "bytes": 6628,
+      "sha256": "21073f536c1ead9d88ffb3daffb54852afcfdb3ae4e66cd5767c1a71d70fabda"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/stateflow_reference_v32.py",
+      "bytes": 8756,
+      "sha256": "0b1973056070cfc05936cccb54f7dd878b67a6f74020ba65475c8f1b34cb966d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/storage_event_kernel_v31.m",
+      "bytes": 3623,
+      "sha256": "a277a4e8ef6bc5b5bf13dc1199c567f64b5848972650e107a67c682c77aecf20"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/storage_kernel_v30.m",
+      "bytes": 3026,
+      "sha256": "8f56a70f5a2ddd7e84c2e458412a3e18edc786a4e9f80d060059f4064bb0a44d"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/storage_parameters_v30.m",
+      "bytes": 2489,
+      "sha256": "14cbdb46fe7cb479d758b7b4e8413c829f4ddab98618fcd19af0a4bb2c0209f9"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/TES_event_reference_v31.py",
+      "bytes": 9586,
+      "sha256": "c8700cf8be38145ac9f35cac1aa5a94d313612a9a6d7bbf1b40ae8ecb735e858"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/verify_stateflow_fallback_v33.py",
+      "bytes": 8689,
+      "sha256": "ff18b843a47d4fa25a9c0766acf51acef112d20cd39a0401bc97c234905d8066"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/source_snapshot/verify_stateflow_v32.py",
+      "bytes": 15630,
+      "sha256": "f5be10b5a4778d45993a64bb1233c31d986b5f9accb7d525b11a229e37bdcc55"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/stateflow_segments_v33.csv",
+      "bytes": 120416,
+      "sha256": "e61a7e0ce29bc41693a70a9023d648cf74db7f19827cbdb0411e027e434faadc"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/stateflow_trace_v33.csv",
+      "bytes": 95663,
+      "sha256": "c1a4542c346a529eea3d4a3f830cd29d8a7e9cd315ba3e586b4ee63f4b3806ad"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/summary_v33.json",
+      "bytes": 389,
+      "sha256": "0262f7d323250beae6e24e933e05968ef1a484bff22d865a9a1c8ce461af2376"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_initial_capacity_h_0.125_simulation.mat",
+      "bytes": 11446,
+      "sha256": "95bc43313ca4c8d93f589a961106fa9fcb05bf773aeb73e2dd85cbf6b599b992"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_initial_capacity_h_0.25_simulation.mat",
+      "bytes": 7616,
+      "sha256": "c5e4bbeaa0a48f364999b9ef73ebf2d64aed56262723a8ffebcb000b01b49a4b"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_initial_capacity_h_0.5_simulation.mat",
+      "bytes": 5582,
+      "sha256": "d93854ace3cffc99bce0a868d6176ea19badba8c5f2c9d929f22ca1fc154a84f"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_initial_capacity_h_1_simulation.mat",
+      "bytes": 4439,
+      "sha256": "f5a2a5800d70ddfee631ae9ee6ea2550fd95345e203d5339c1e35ee23fff8e78"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_initial_capacity_h_2_simulation.mat",
+      "bytes": 4066,
+      "sha256": "b1714b6b42c683f719fc64f07e3347ab01a65434f392c21b7bb158e2eb5bd364"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_tail_h_0.125_simulation.mat",
+      "bytes": 11306,
+      "sha256": "23dd6ceea0cd1e65975b397dc2300c464500f7ea6841a2ab8b98d4abd8d776f4"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_tail_h_0.25_simulation.mat",
+      "bytes": 7761,
+      "sha256": "7c7e948ad030e826faaf829ccbf4a13c019e7be3f02dd8683997eec0d70ce597"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_tail_h_0.5_simulation.mat",
+      "bytes": 5823,
+      "sha256": "807a8f6669123415d42f99f12b1408652017597f3dccf29747dfca31b599b3bb"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_tail_h_1_simulation.mat",
+      "bytes": 4720,
+      "sha256": "0e1a042411448b0055a1a169564be8d2e5b36c51008b774bc4b27b9799780dce"
+    },
+    {
+      "path": "results/stateflow_fallback_v33_20261010T023623898Z/unavailable_tail_h_2_simulation.mat",
+      "bytes": 4206,
+      "sha256": "6de3a451143b2341f02f47a8e3c4801aa6f6c9fb028f339de3ab5c3075c44271"
+    },
+    {
+      "path": "STATUS_stateflow_v33.json",
+      "bytes": 3531,
+      "sha256": "262ff3dad690d760d955e19c0fba5487c7f04c4685f81a5aef62f3d7c3ceee17"
+    }
+  ]
+}

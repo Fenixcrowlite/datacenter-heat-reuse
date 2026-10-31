@@ -1,0 +1,54 @@
+{
+  "version": "0.24",
+  "scope": "Independent v24 executable-domain evidence and saved-model graph audit.\n\nNumerical valid-trace QA explicitly reuses the already independent v22 oracle.\nNo MATLAB production implementation is imported or executed by this script.\nStatic ZIP provenance is distinct from simulation rejection evidence.\n",
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "spec_sha256": "456365fc2634e5aa4f344df41741d95875a706805fc850a8de5a3cb63d722f37",
+  "verifier_sha256": "eb5a1aa3b11cd896aedcc5615fd26dcda03b1622acfe4e191b14b1752f78f930",
+  "reused_valid_trace_oracle": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\audit\\verify_stateflow_trace_v22.py",
+  "reused_valid_trace_oracle_sha256": "70a77ae14527af0e1bf9844510901d68275e96e29ef47733417ca4a058a0cf0f",
+  "self_test": {
+    "checks": 9,
+    "passed": 9,
+    "failed": 0,
+    "assertions": [
+      {
+        "name": "synthetic_complete_negative_schema",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_simulation_attempted",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_rejected",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_accepted_invalid_trace",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_cause_identifiers",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_tick",
+        "passed": true
+      },
+      {
+        "name": "reject_corrupted_expected_identifier",
+        "passed": true
+      },
+      {
+        "name": "reject_missing_case",
+        "passed": true
+      },
+      {
+        "name": "reject_duplicate_case",
+        "passed": true
+      }
+    ]
+  },
+  "failed": 0
+}

@@ -1,0 +1,21 @@
+﻿{
+  "status": "SYNTHETIC_TES_SOC_CORRECTION_ONLY",
+  "physical_release_allowed": false,
+  "source_v04_sha256": "12343eef83ca67a801fe3ffbca06006a4f96a93e7b5c2914d99b7f730cc054e1",
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "source_a36_sha256": "4fefcbd8bffdbedecf1894a8cfecab4ce052d2252e8c669b95394c5aa9fd99a1",
+  "samples": 672,
+  "baseline_replay_max_E_error_J": 5.0067901611328125e-06,
+  "TES_capacity_kWh": 900,
+  "TES_initial_kWh": 450,
+  "clip_intervals": 6,
+  "first_clip_h": 69.0,
+  "charge_curtailed_kWh": 75.68776707720944,
+  "additional_reject_kWh": 61.34616097404003,
+  "compressor_proxy_savings_kWh": 14.341606103169397,
+  "final_TES_SOC": 1.0,
+  "max_TES_SOC": 1.0,
+  "trace_sha256": "0b57a242555398ce72dcfe5f7ce42e21dd794179f4477274ab3483c9f2f05778",
+  "limitations": "TES only: frozen A36 HP COP, unchanged DC demand, no dynamic pool/DH or control reoptimization; no certified equipment",
+  "trace": "TES_SOC_TRACE.csv"
+}

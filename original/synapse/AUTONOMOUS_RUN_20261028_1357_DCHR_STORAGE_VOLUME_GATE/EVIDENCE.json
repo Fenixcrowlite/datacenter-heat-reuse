@@ -1,0 +1,18 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1357_DCHR_STORAGE_VOLUME_GATE",
+  "equipment_validated": false,
+  "incremental_gas_savings_claimed": false,
+  "initial_qa_failure_preserved": true,
+  "manifest_sha256": "f92bbb11627c057c47fa9c5564fe6ef9302d45328f4cf5aeb05bb5a57e64caa6",
+  "next_step": "Add temperature-dependent SOC/stratification and return-temperature dynamics in isolated model; compare against existing 100 MWh Simulink baseline; validate equipment, tariffs and 31 sources.",
+  "primary_source_signoffs": 0,
+  "production_modified": false,
+  "qa": "16/16 unit PASS; 64/64 independent Decimal scenarios; 56 geometry and 3 retention checks PASS",
+  "reference_hot_c": 72,
+  "reference_ideal_volume_m3": 305485.75415340223,
+  "reference_max_supply_c": 61.9518479386581,
+  "scope": "DCHR_WATER_VOLUME_PHYSICAL_FEASIBILITY_GATE",
+  "source_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25",
+  "status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e",
+  "synthetic_not_metered": true
+}

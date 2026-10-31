@@ -1,0 +1,69 @@
+{
+  "version": "0.29",
+  "timestamp_utc": "2026-10-09T20:39:06.272351+00:00",
+  "executions": [
+    {
+      "gate": "temporal",
+      "matlab_batch_exit_code": 0,
+      "exit_observed": true,
+      "process_session_id": 33030,
+      "observation_source": "functions.exec tools.write_stdin completed process exit_code=0; PowerShell wrapper propagates MATLAB LASTEXITCODE",
+      "result_directory": "results/stateflow_temporal_v29_20261009T203631630Z",
+      "log_file": "automation/logs/stateflow_temporal_v29_resume_local_20261009T203623787Z.log",
+      "log_sha256": "92f3a480371c5203c05edef6c78cfbb744af4bf7bca1e1bc0c93e413e05bde0b",
+      "console_file": "automation/logs/stateflow_temporal_v29_resume_local_20261009T203623787Z_console.log",
+      "console_sha256": "72dada1854728055e9afdd7586f05063b4216e5b416072e9fdcc09122bc25f4f",
+      "output_marker": "TEMPORAL_OUTPUT=C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\stateflow_temporal_v29_20261009T203631630Z",
+      "command": "matlab -batch \"addpath('matlab','matlab/simulink'); run_stateflow_temporal_acceptance_v29;\""
+    },
+    {
+      "gate": "monitor",
+      "matlab_batch_exit_code": 0,
+      "exit_observed": true,
+      "process_session_id": 41924,
+      "observation_source": "functions.exec tools.write_stdin completed process exit_code=0; PowerShell wrapper propagates MATLAB LASTEXITCODE",
+      "result_directory": "results/stateflow_monitor_v29_20261009T203631630Z",
+      "log_file": "automation/logs/stateflow_monitor_v29_fixed_local_20261009T203624213Z.log",
+      "log_sha256": "7203eb89bf7892f2153966bf28fb9d3379eda9dc4eca384f79c76a7cff3163fc",
+      "console_file": "automation/logs/stateflow_monitor_v29_fixed_local_20261009T203624213Z_console.log",
+      "console_sha256": "f076f7a986dea1bd123125ea2e60b40c1d06aaec15d82c74d128ddfe1bc89733",
+      "output_marker": "MONITOR_OUTPUT=C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\results\\stateflow_monitor_v29_20261009T203631630Z",
+      "command": "matlab -batch \"addpath('matlab','matlab/simulink'); run_stateflow_monitor_faults_v29;\""
+    }
+  ],
+  "saved_model_modified": false,
+  "prior_attempts": [
+    {
+      "gate": "inherited_temporal_sandbox",
+      "console_file": "automation/logs/stateflow_temporal_v29_sandbox_20261009T154446738Z_console.log",
+      "exit_observed_this_run": false,
+      "matlab_batch_exit_code": null,
+      "result": "fatal startup filesystem inconsistency; no simulation"
+    },
+    {
+      "gate": "inherited_temporal_complete",
+      "result_directory": "results/stateflow_temporal_v29_20261009T154520430Z",
+      "exit_observed_this_run": false,
+      "matlab_batch_exit_code": null,
+      "result": "complete numeric evidence independently verified, replaced by fresh observed-exit acceptance"
+    },
+    {
+      "gate": "inherited_monitor_incomplete",
+      "result_directory": "results/stateflow_monitor_v29_20261009T154831124Z",
+      "exit_observed_this_run": false,
+      "matlab_batch_exit_code": null,
+      "result": "empty result directory; old log ends after version/license; interruption cause unverified"
+    },
+    {
+      "gate": "first_fresh_monitor",
+      "result_directory": "results/stateflow_monitor_v29_20261009T203316008Z",
+      "process_session_id": 41682,
+      "exit_observed_this_run": true,
+      "matlab_batch_exit_code": 0,
+      "log_file": "automation/logs/stateflow_monitor_v29_resume_local_20261009T203300662Z.log",
+      "result": "13 runtime gates passed and exact restored baseline; nonfatal cleanup warning fixed and fresh batch executed"
+    }
+  ],
+  "primary_text_verified": false,
+  "physical_validation": false
+}

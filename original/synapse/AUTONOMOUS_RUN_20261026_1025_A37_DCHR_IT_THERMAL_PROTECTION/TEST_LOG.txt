@@ -1,0 +1,10 @@
+﻿python.exe : ----------------------------------------------------------------------
+строка:1 знак:244
++ ... ROTECTION'; & 'C:\Python314\python.exe' -m unittest -q test_a37.py 2> ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (---------------...---------------:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Ran 16 tests in 0.039s
+
+OK

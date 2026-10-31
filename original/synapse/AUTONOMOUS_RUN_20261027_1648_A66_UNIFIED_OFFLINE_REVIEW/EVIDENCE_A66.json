@@ -1,0 +1,23 @@
+{
+  "a63_sha256": "efbc59a25bd7ad3a331c95c5036b176c620418244c883598d00c5a5bd53ca447",
+  "a64_sha256": "80e133be6792be81c8fa11e49edde6441e6b0aa631496ca3d28dde1eebeec7e7",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1648_A66_UNIFIED_OFFLINE_REVIEW",
+  "browser_scenario_checks": "6/6 PASS",
+  "browser_viewports_px": [
+    320,
+    390,
+    1440
+  ],
+  "external_network_requests": 0,
+  "integration_identity": "10/10 PASS",
+  "next_step": "Independent physical-device mobile review; calibrated SCADA telemetry and certificates required before physical acceptance.",
+  "physical_release": false,
+  "report": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1648_A66_UNIFIED_OFFLINE_REVIEW\\unified_review.html",
+  "scope": "A66_unified_offline_A63_A64_mobile_review",
+  "source_kind": "derived_simulation",
+  "status": "VERIFIED_OFFLINE_INTEGRATED_REPORT",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "9/9 PASS",
+  "upstream_files_modified": false,
+  "upstream_hash_checks": "8/8 PASS"
+}

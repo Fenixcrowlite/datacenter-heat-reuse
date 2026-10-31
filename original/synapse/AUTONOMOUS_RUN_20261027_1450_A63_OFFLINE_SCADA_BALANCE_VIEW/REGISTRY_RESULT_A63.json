@@ -1,0 +1,14 @@
+{
+  "QA": "11/11 unittest; 12102/12102 independent Decimal; Node syntax; Chrome 6 cards/7 curves",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1450_A63_OFFLINE_SCADA_BALANCE_VIEW",
+  "dashboard": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1450_A63_OFFLINE_SCADA_BALANCE_VIEW\\OUTPUT\\dashboard.html",
+  "event_id": 1323,
+  "evidence_sha256": "7198b45b94b7aaebc6f4ba50b45bfbcd7d90feed25ae33e1cada7d579a28b8bc",
+  "handoff_sha256": "0708bce02afa58e2cc65d25535d877fb6066ae1694c2e53ce1ebb79291888d74",
+  "manifest_sha256": "872d4420398d8480a884a02b0ea50de29b5831be671aeb4233a20eac9d544f54",
+  "next_step": "Add an isolated explicit A60 trapezoid vs A62 discrete integration comparison to the offline view; acquire real calibrated telemetry before physical acceptance.",
+  "physical_release": false,
+  "scope": "A63_offline_SCADA_signed_loss_energy_dashboard",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261028_1858_DCHR_C37_V2_REPLAY",
+  "csv_sha256": "bbe8f22ff33fce9b77450967ecd8f8e59a7950ce78c6f16fcec3f2b098b4dbb9",
+  "hours": 8760,
+  "manifest_sha256": "960dcdf68b4c79835fac115a81f8c3a1d3d5e5063f0c2957eb0793e66e265007",
+  "matlab_executed": false,
+  "next_step": "Run a native MATLAB v2 Warm45_Storage100 export to a new isolated CSV, compare 8760 rows against C37 replay, then establish same-boundary Stateflow v85 10 MWh and stratified-tank parity. Do not overwrite original results.",
+  "physical_validation": false,
+  "primary_source_signoffs": 0,
+  "qa": "192720 oracle comparisons; 8760/8760 independent Decimal storage balances; six annual checks PASS",
+  "scope": "DCHR_C37_V2_PYTHON_REPLAY",
+  "stateflow_parity": false,
+  "synthetic": true,
+  "v2_gas_MWh": 10542.548227788948,
+  "v2_hp_electric_MWh": 7969.875645449754,
+  "v2_minus_v1_gas_MWh": 129.1322887198403
+}

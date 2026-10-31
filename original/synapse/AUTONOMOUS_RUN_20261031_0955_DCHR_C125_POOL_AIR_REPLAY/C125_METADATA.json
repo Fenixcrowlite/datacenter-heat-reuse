@@ -1,0 +1,24 @@
+{
+  "data_sha256": "f43c92e3a9bc3ee7ae61952ec7148ab01fc02eed296dc1c8687592779e292173",
+  "field_validated": false,
+  "hours": 8760,
+  "limitations": [
+    "C116 hourly pool heat is replayed exogenously, not re-dispatched.",
+    "C93 hourly loss formula sampled at each quarter, fixed other boundary conditions.",
+    "C124 fixed supply and simplified dehumidifier/HVAC assumptions retained.",
+    "Conservation is bookkeeping, not physical or equipment validation.",
+    "No measured weather, vendor COP, pool instrumentation or primary-source signoff."
+  ],
+  "rows": 70080,
+  "schema": "C125_SYNTHETIC_POOL_AIR_REPLAY_V1",
+  "selftests": 6,
+  "source_sha256": {
+    "air": "998d5da270714a1b84dfecaa774578174e7815fe4178af28920d0a24d4da3b11",
+    "pool": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+    "source": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+  },
+  "source_signoffs_added": 0,
+  "summary_sha256": "29d37b3449e123b8a63348d9063e43be8e8d29d5d97306e30817fb7f062360bc",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

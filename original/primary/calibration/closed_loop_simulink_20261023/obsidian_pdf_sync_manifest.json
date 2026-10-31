@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "ClosedLoop_Report_SK.pdf",
+    "action": "COPIED",
+    "sha256": "a016ce7a2adf4f7c57946ac4aeb93e7d7066b7e35c89545575cdf3fa5ba116b8"
+  },
+  {
+    "filename": "ClosedLoop_Report_RU.pdf",
+    "action": "COPIED",
+    "sha256": "98ed48676c021b0ad62436e1125e505cfa1ed31d15039f76a330982ebb11de7f"
+  },
+  {
+    "filename": "ClosedLoop_Report_EN.pdf",
+    "action": "COPIED",
+    "sha256": "c09855279d64d4f5486ce414544bd34240a6b63a66277ba8abedbdf7c7659803"
+  },
+  {
+    "filename": "ClosedLoop_Report_SK.md",
+    "action": "COPIED",
+    "sha256": "f1ab2ff0223c2b7045331a93fa40319a8a84d322536a36dd9f4bda0f8a9546fa"
+  },
+  {
+    "filename": "ClosedLoop_Report_RU.md",
+    "action": "COPIED",
+    "sha256": "945b6a1be58c1e922dd52d247f5336614b2995ca3916519df8f13f1e6972e414"
+  },
+  {
+    "filename": "ClosedLoop_Report_EN.md",
+    "action": "COPIED",
+    "sha256": "4a7081a5c600e9d7f1fc54e499de5ab4ae2be60601bf016079a57b3498ce8090"
+  },
+  {
+    "filename": "closedloop_pdf_qa.json",
+    "action": "COPIED",
+    "sha256": "6c8ed313941ffc172a5d561d1a637ff566a0288482d5366f31cb3d7bd3764704"
+  },
+  {
+    "filename": "STATUS_CLOSED_LOOP_20261023.json",
+    "action": "COPIED",
+    "sha256": "104592915ade0bedcb2bcbc354a4353682991624524498077f33e3fc0f338ecf"
+  }
+]

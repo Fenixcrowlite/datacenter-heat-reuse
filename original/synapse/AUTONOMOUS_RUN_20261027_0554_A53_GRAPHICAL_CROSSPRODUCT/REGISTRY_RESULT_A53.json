@@ -1,0 +1,18 @@
+{
+  "event_id": 1284,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A53_graphical_sensor_trip_crossproduct",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0554_A53_GRAPHICAL_CROSSPRODUCT",
+  "models": {
+    "DCHR_A53_TripDelay_0.slx": "8d0ead5e1ffb4b23be93c7893c8263f5e9474955f287721585b72192427dc9d9",
+    "DCHR_A53_TripDelay_2.slx": "095c7bf568a0ae5a461a883163ad036e06fb91a995d2c4989a02d3263fb4acec",
+    "DCHR_A53_TripDelay_4.slx": "e679915699677d81c6b33fc4eeb31b77675cbd22841869398e58cee627f9af6c"
+  },
+  "result_sha256": "46d354a92642a172630537bb744a95242a4231c65719c687c7fc09565cbeb606",
+  "evidence_sha256": "2a314f8f0ed6e1089844f6e34822db10e57076d94366ab09bc1f5f721b474ea7",
+  "manifest_sha256": "596ac4413e6ef69ed4a04bb5ebc43137ddd0fe3609ca388a253c06f0473fc222",
+  "handoff_sha256": "db7b07167148176116b8c6b7dc3ae2ed39f3b332c5dd4404915d8319680c604d",
+  "qa": "MATLAB 18x240, 47520/47520 numeric parity; independent Python 10/10 PASS",
+  "physical_release": false,
+  "next_step": "A54: independent sensitivity/uncertainty and protection envelope from A53, primary-source signoffs and physical protection validation remain BLOCKED; do not infer certified safe thresholds."
+}

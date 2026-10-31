@@ -1,0 +1,52 @@
+{
+  "status": "A43_MATLAB_INDEPENDENT_CSV_AUDIT_PASS",
+  "samples": 4704,
+  "max_scaled_balance_error": 2.3436587071046232E-10,
+  "max_thermal_error_C": 0,
+  "matlab_simulink_model_built": false,
+  "physical_release": false,
+  "scenarios": {
+    "both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 2.3436587071046232E-10
+    },
+    "main_only": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 2.3436587071046232E-10
+    },
+    "backup_only": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 2.3436587071046232E-10
+    },
+    "neither": {
+      "samples": 672,
+      "max_temperature_C": 67.804362159375,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 1.1920928955078125E-10
+    },
+    "CF_both": {
+      "samples": 672,
+      "max_temperature_C": 30,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 1.1920928955078125E-10
+    },
+    "CF_backup_only": {
+      "samples": 672,
+      "max_temperature_C": 44.53382819151301,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 1.1920928955078125E-10
+    },
+    "CF_neither": {
+      "samples": 672,
+      "max_temperature_C": 44.53382819151301,
+      "thermal_max_abs_error": 0,
+      "balance_scaled_max_abs_error": 1.1920928955078125E-10
+    }
+  }
+}

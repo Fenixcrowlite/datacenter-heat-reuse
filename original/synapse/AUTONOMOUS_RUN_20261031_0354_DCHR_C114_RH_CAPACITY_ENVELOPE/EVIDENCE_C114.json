@@ -1,0 +1,16 @@
+{
+  "actor": "chatgpt-dchr-c114-rh-capacity-20261031-0354",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE\\C114_ASYMMETRIC_CAPACITY.csv",
+  "artifact_sha256": "fe27a033f3e075ea494bc2b0d1d89a6d79ed40ad2ea6e5b1c2744ac9534df574",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE\\C114_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE\\SHA256_MANIFEST_C114.json",
+  "manifest_sha256": "34fa9d305b5e3d62445240e291dd73b6221c53b056324df04ac3c9a4387006cf",
+  "next": "Two-way RH->evaporation->latent heat->pool temperature coupling, conservation QA, then real equipment curves.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE\\C114_INDEPENDENT_QA.json",
+  "schema": "C114_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "symmetric": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0354_DCHR_C114_RH_CAPACITY_ENVELOPE\\C114_CAPACITY_ENVELOPE.csv",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

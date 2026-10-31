@@ -1,0 +1,15 @@
+{
+  "actor": "chatgpt-dchr-c120-quarter-control-20261031-0653",
+  "artifact": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL\\C120_QUARTER_CONTROL.csv.gz",
+  "artifact_sha256": "8eddd1fcd5d5a456deaf4dd8994c38b063089dd0a405dae1e43761ace19b0f4c",
+  "field_validated": false,
+  "findings": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL\\C120_FINDINGS.md",
+  "manifest": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL\\SHA256_MANIFEST_C120.json",
+  "manifest_sha256": "b42b6b6334b2362192951df518bc4ae1c0c83e30e087820200fddb129781cc28",
+  "next": "Model 15-min air enthalpy/temperature, sensor/actuator lag, multiobjective controller QA.",
+  "qa": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261031_0653_DCHR_C120_QUARTER_CONTROL\\C120_INDEPENDENT_QA.json",
+  "schema": "C120_EVIDENCE_V1",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

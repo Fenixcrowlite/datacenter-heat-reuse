@@ -1,0 +1,15 @@
+test_full_matrix (__main__.A53QA.test_full_matrix) ... ok
+test_independent_decimal_ledgers (__main__.A53QA.test_independent_decimal_ledgers) ... ok
+test_matlab_channel_tolerances (__main__.A53QA.test_matlab_channel_tolerances) ... ok
+test_matlab_serialization (__main__.A53QA.test_matlab_serialization) ... ok
+test_mutations_rejected (__main__.A53QA.test_mutations_rejected) ... ok
+test_reference_csv_against_producer (__main__.A53QA.test_reference_csv_against_producer) ... ok
+test_saved_graphical_models (__main__.A53QA.test_saved_graphical_models) ... ok
+test_source_models_unchanged (__main__.A53QA.test_source_models_unchanged) ... ok
+test_synthetic_scope (__main__.A53QA.test_synthetic_scope) ... ok
+test_trip_indices (__main__.A53QA.test_trip_indices) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.745s
+
+OK

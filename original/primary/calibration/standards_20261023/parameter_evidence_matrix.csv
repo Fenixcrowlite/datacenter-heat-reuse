@@ -1,0 +1,17 @@
+parameter,scenario_value,unit,evidence_value,external_source,assessment,confidence,action
+DC_PUE,1.20,dimensionless,1.52 global survey mean 2026 n=644,Uptime Institute 2026,COMPARABLE_KPI_DIFFERENT_COHORT,D,Run separate PUE=1.52 case; do not relabel scenario as observed
+PUE_method,EDC/EIT,energy ratio,ISO IEC 30134-2:2026,ISO,DEFINITION_AVAILABLE,B,Instrument matched DC/IT annual energy boundaries
+Heat_reuse_factor,not yet measured,energy ratio,ERF=E_REUSE/EDC,EU Regulation 2024/1364,DEFINITION_AVAILABLE,B,Measure energy handed off at DC boundary excluding HP compressor power
+Pool_geometry,25x12.5x1.6,m,public pool design safety STN EN 15288-1+A1 2024,Slovak STN,NOT_CERTIFIED,D,Verify pool type depth lanes design and water-treatment norms
+Pool_thermostat_off,28.2,degC,28 published max swimming pool temperature,Slov-Lex 308/2012,SCREENING_FAIL_DERIVED,D,Revise control to OFF below 28 with margin and verify effective legal version
+Pool_target,28.0,degC,28 published max swimming pool temperature,Slov-Lex 308/2012,AT_LIMIT_NO_MARGIN,D,Design lower operating target with sensor/overshoot margin
+Pool_heat_loss,31.45,kW,evaporation major loss DOE guidance,US DOE Pool Efficiency,NOT_DIRECTLY_COMPARABLE,D,Compare natatorium-wide boundary and hall humidity measurement
+Pool_cover_evap_reduction,0.90,fraction,50 to 70 percent whole-pool heating saving possible,US DOE Pool Efficiency,DIFFERENT_METRIC_DO_NOT_COMPARE,D,Need actual pool-cover evaporation coefficient and HVAC savings
+Heat_pump_COP,4.0,dimensionless,no manufacturer temperature dependent COP map,Manufacturer EN14511 mapping,UNVERIFIED,D,Collect manufacturer performance table for source sink PLR
+DC_source_T,35,degC,no matched cooling loop measurement,selected DC equipment,UNVERIFIED,D,Measure supply return and flow by season
+IT_utilization,0.82,fraction,no facility measurements,operator BMS IT logs,UNVERIFIED,D,Collect time series IT load not just rated capacity
+Pool_room_RH,0.60,fraction,no HVAC measurement,site BMS,UNVERIFIED,D,Measure air humidity activity and natatorium airflow
+Weather_annual_mean,10.5,degC,ERA5 real hourly reanalysis available,ECMWF Copernicus ERA5,DATA_SOURCE_IDENTIFIED_NOT_INGESTED,D,Download 2025 representative hourly Bratislava temperature and compare monthly means and extremes
+Electricity_price,100,EUR/MWh,non-household Slovakia dataset nrg_pc_205,Eurostat,DATA_SOURCE_IDENTIFIED_NOT_INGESTED,D,Select 2025-2026 half-year consumption band and taxes
+Gas_price,50,EUR/MWh,no matched tariff observation,Eurostat nrg_pc_203,UNVERIFIED,D,Match country period taxes and contract type
+CO2_grid_factor,0.2,tCO2/MWh,no year-specific marginal attribution,Slovak grid disclosure / electricity maps,UNVERIFIED,D,State market-versus-location and temporal averaging convention

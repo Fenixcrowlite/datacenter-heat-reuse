@@ -1,0 +1,29 @@
+{
+  "version": "0.22",
+  "primary_paper_replication": false,
+  "equipment_validation": false,
+  "scope": "Independent fixed-COP oracle and actual-trace numerical QA",
+  "self_test": {
+    "vector_intervals": 27,
+    "vector_scenarios": 7,
+    "oracle_trace_checks": 2212,
+    "modes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "randomized_algebraic_cases": 500,
+    "seed": 22009,
+    "corruptions_rejected": [
+      "Mode",
+      "Storage_E_Next_MWh",
+      "HP_Source_Used_MW",
+      "Gas_Heat_MW"
+    ],
+    "max_abs_random_residual_MWh": 7.993605777301127e-15
+  },
+  "verifier_sha256": "dc96dec6b381e77a46195ef7e7d08189a97b4cc304425e04b7180bc7b8413667"
+}

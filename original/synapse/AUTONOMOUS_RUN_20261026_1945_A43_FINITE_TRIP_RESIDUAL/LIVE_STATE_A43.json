@@ -1,0 +1,23 @@
+{
+    "observed_at":  "2026-10-26T19:53:08.3650664+01:00",
+    "host":  "DESKTOP-M9L3I4M",
+    "synapsemcp_web_ping_verified":  "2026-10-26T19:51:28+01:00",
+    "ram_free_gib":  7.776,
+    "ram_total_gib":  15.823,
+    "gpu_raw":  "633, 8188, 0",
+    "matlab_process_count":  0,
+    "jarvice_pid_11572_alive":  true,
+    "jarvice_task_state":  "Running",
+    "worktrees":  361,
+    "stop_flags":  [
+
+                   ],
+    "stop_scopes":  [
+                        "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter",
+                        "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery",
+                        "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1945_A43_FINITE_TRIP_RESIDUAL",
+                        "C:\\Users\\Lysda\\Desktop\\EduMotionPipeline",
+                        "C:\\Users\\Lysda\\Desktop\\temp_coding",
+                        "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_1850_A42_COUPLED_FAILSAFE"
+                    ]
+}

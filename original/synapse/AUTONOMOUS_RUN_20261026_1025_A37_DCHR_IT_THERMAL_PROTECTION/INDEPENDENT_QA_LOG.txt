@@ -1,0 +1,1 @@
+﻿{"status": "PASS", "traces": 12, "rows": 8064, "decimal_invariant_checks": 104832, "legacy_N1_energy_crosschecks": 4, "source_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3", "physical_release_allowed": false}

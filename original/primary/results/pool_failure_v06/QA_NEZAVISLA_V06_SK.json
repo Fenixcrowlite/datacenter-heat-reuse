@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "test_assertions": 84801,
+  "cases": [
+    {
+      "case": "zdravy",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "unsafe_leak_samples": 0,
+      "IT_alarm_samples": 0
+    },
+    {
+      "case": "oneskorene_snimace_bias",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "unsafe_leak_samples": 0,
+      "IT_alarm_samples": 0
+    },
+    {
+      "case": "spolocny_bias_nedetekovany",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "unsafe_leak_samples": 0,
+      "IT_alarm_samples": 0
+    },
+    {
+      "case": "zaseknuty_ventil",
+      "rows": 672,
+      "leak_MWh": 0.4899585832601419,
+      "unhandled_MWh": 0.0,
+      "unsafe_leak_samples": 87,
+      "IT_alarm_samples": 0
+    },
+    {
+      "case": "vypadok_REJECT",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.07966002562175799,
+      "unsafe_leak_samples": 0,
+      "IT_alarm_samples": 6
+    },
+    {
+      "case": "bez_prietoku",
+      "rows": 672,
+      "leak_MWh": 0.0,
+      "unhandled_MWh": 0.0,
+      "unsafe_leak_samples": 0,
+      "IT_alarm_samples": 0
+    },
+    {
+      "case": "kombinovana_porucha",
+      "rows": 672,
+      "leak_MWh": 0.1525880023790723,
+      "unhandled_MWh": 0.05715243616946453,
+      "unsafe_leak_samples": 28,
+      "IT_alarm_samples": 1
+    }
+  ],
+  "model_sha256": {
+    "matlab/simulink/DCHR_Electrical_Dispatch_Stateflow_v85.slx": "2a9de22c0c55e8c4a87f7b0e0cfe9cd97db08c991f09d98361b009de310adde7",
+    "matlab/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx": "0d9a59466a0284ca6bb61d6756222dccafc2ac7aa683ae41de35ce6d72f94ee0",
+    "matlab/pool_safety_v05/DC_Bazen_Bezpecnost_v05_SK.slx": "b4fc4ca430b15174d756ed9fad6d986ab9700c66663c11fc55df49d9171d8d71",
+    "matlab/pool_failure_v06/DC_Bazen_Fyzikalne_Poruchy_v06_SK.slx": "88141f9e16a862695caebf1702423e0b4118f6f375f81bf88264bf83335833c3"
+  },
+  "interpretation": "No physical validation. Actual valve leakage and unhandled IT heat are simulated failures; both can remain dangerous even if software latch trips."
+}

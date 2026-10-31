@@ -1,0 +1,7 @@
+{
+  "log_path": "automation/logs/hp_annual_v47_20261010T181407973Z.log",
+  "exit_code": 0,
+  "evidence_class": "observed_matlab_batch_receipt",
+  "timestamp_utc": "2026-10-10T18:15:13.1216319Z",
+  "command": "addpath('matlab','matlab/simulink'); run_hp_annual_audit_v47('results/hp_annual_v47_20261010T181354_797146Z'); export_hp_annual_v47('results/hp_annual_v47_20261010T181354_797146Z');"
+}

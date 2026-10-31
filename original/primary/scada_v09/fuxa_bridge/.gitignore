@@ -1,0 +1,7 @@
+node_modules/
+.npm-cache/
+.local/
+fuxa/node_modules/
+fuxa/.npm-cache/
+fuxa/.local/
+*.log

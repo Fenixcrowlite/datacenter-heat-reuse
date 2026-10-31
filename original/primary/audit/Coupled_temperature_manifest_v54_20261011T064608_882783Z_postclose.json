@@ -1,0 +1,8 @@
+{
+  "timestamp_utc": "2026-10-11T06:46:08.934724+00:00",
+  "sealed_files": 62,
+  "unchanged_prior_files": 334,
+  "failures": [],
+  "result": "SCOPED_EVIDENCE_SEALED_WITH_12_OPEN_BRANCH_FLAGS",
+  "exact_branch_classification_failures": 12
+}

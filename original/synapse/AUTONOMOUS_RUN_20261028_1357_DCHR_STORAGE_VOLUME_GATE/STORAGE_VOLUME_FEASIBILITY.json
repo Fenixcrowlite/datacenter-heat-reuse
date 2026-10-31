@@ -1,0 +1,965 @@
+{
+  "assumptions": [
+    "This computes ideal sensible heat stored in water between hot and minimum usable temperatures.",
+    "The 2500 MWh in the previous model is a thermal SOC capacity, not a measured tank volume.",
+    "1000 kg/m3 density is optimistic for hot water and gives an optimistic minimum volume.",
+    "A 10 m single-cylinder equivalent is a scale visualization, not a proposed engineering layout.",
+    "Max-supply gate is conservative for year-round temperature usability, not a demand-weighted optimization.",
+    "No stratification, mixing, thermocline, pumping, hydraulic losses, groundworks, UA, or real equipment sizing.",
+    "Fixed-temperature SOC in previous model can release energy without cooling; physical temperature trajectory is NOT validated.",
+    "Loss retention uses only prior model's assumed proportional SOC decay, not a measured tank UA.",
+    "Baseline already has 100 MWh storage; this does not establish incremental energy or financial savings.",
+    "Synthetic hourly weather, no real metering, and 0/31 primary-source signoffs."
+  ],
+  "baseline_storage_mwh": 100,
+  "cases": [
+    {
+      "capacity_mwh": 100,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 39.57939476246468,
+        "footprint_m2": 1230.3485987696515,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 12303.485987696515,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.0
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 60.20583454020384,
+        "footprint_m2": 2846.8661122494104,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 28468.661122494104,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 3.0252354174051987
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 88.50221719717017,
+        "footprint_m2": 6151.742993848257,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 61517.42993848257,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.0
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 134.6243386740006,
+        "footprint_m2": 14234.330561247052,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 142343.30561247052,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 3.0252354174051987
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 197.89697381232338,
+        "footprint_m2": 30758.714969241286,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 307587.1496924129,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.0
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 301.0291727010192,
+        "footprint_m2": 71171.65280623526,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 711716.5280623526,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 3.0252354174051987
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 395.79394762464676,
+        "footprint_m2": 123034.85987696514,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 1230348.5987696515,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.0
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 55,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 602.0583454020384,
+        "footprint_m2": 284686.61122494104,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 2846866.1122494102,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 3.0252354174051987
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 55,
+      "ideal_geometry_10m": null,
+      "ideal_water_volume_m3": null,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": false,
+      "usable_delta_k": 0.0
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 25.39766018442634,
+        "footprint_m2": 506.61412890515055,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 5066.141289051506,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 17.0
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 29.015187279922266,
+        "footprint_m2": 661.211864154028,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 6612.11864154028,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 13.025235417405199
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 49.63701332448321,
+        "footprint_m2": 1935.0899851978818,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 19350.89985197882,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 4.450666510222703
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 477.21130894836665,
+        "footprint_m2": 178859.22121244046,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 1788592.2121244047,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 0.0481520613419093
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 56.79089464181714,
+        "footprint_m2": 2533.070644525753,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 25330.70644525753,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 17.0
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 64.8799311377934,
+        "footprint_m2": 3306.05932077014,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 33060.5932077014,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 13.025235417405199
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 110.99173599360728,
+        "footprint_m2": 9675.44992598941,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 96754.49925989409,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 4.450666510222703
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 1067.0769264402015,
+        "footprint_m2": 894296.1060622024,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 8942961.060622023,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 0.0481520613419093
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 126.9883009221317,
+        "footprint_m2": 12665.353222628764,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 126653.53222628764,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 17.0
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 145.07593639961132,
+        "footprint_m2": 16530.2966038507,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 165302.966038507,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 13.025235417405199
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 248.1850666224161,
+        "footprint_m2": 48377.24962994705,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 483772.4962994705,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 4.450666510222703
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 2386.0565447418335,
+        "footprint_m2": 4471480.530311013,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 44714805.30311012,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 0.0481520613419093
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 253.9766018442634,
+        "footprint_m2": 50661.41289051506,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 506614.1289051506,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 17.0
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 290.15187279922264,
+        "footprint_m2": 66121.1864154028,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 661211.864154028,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 13.025235417405199
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 496.3701332448322,
+        "footprint_m2": 193508.9985197882,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 1935089.985197882,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 4.450666510222703
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 65,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 4772.113089483667,
+        "footprint_m2": 17885922.12124405,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 178859221.2124405,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 0.0481520613419093
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 21.375316204621313,
+        "footprint_m2": 358.85167464114835,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 3588.5167464114834,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 24.0
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 23.40072719419664,
+        "footprint_m2": 430.0793479762013,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 4300.793479762013,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 20.0252354174052
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 30.945876328135913,
+        "footprint_m2": 752.134400534564,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 7521.34400534564,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 11.450666510222703
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 39.44396240447228,
+        "footprint_m2": 1221.943016613609,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 12219.43016613609,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.048152061341909
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 47.796660074086056,
+        "footprint_m2": 1794.2583732057417,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 17942.583732057417,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 24.0
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 52.325616729151605,
+        "footprint_m2": 2150.3967398810064,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 21503.967398810062,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 20.0252354174052
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 69.19708309301349,
+        "footprint_m2": 3760.6720026728194,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 37606.720026728195,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 11.450666510222703
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 88.19938123834609,
+        "footprint_m2": 6109.715083068046,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 61097.15083068045,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.048152061341909
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 106.87658102310655,
+        "footprint_m2": 8971.291866028707,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 89712.91866028708,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 24.0
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 117.0036359709832,
+        "footprint_m2": 10751.983699405031,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 107519.8369940503,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 20.0252354174052
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 154.72938164067958,
+        "footprint_m2": 18803.360013364098,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 188033.60013364098,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 11.450666510222703
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 197.21981202236142,
+        "footprint_m2": 30548.575415340223,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 305485.75415340223,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.048152061341909
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 213.7531620462131,
+        "footprint_m2": 35885.16746411483,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 358851.6746411483,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 24.0
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 234.0072719419664,
+        "footprint_m2": 43007.934797620124,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 430079.3479762012,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 20.0252354174052
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 309.45876328135915,
+        "footprint_m2": 75213.44005345639,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 752134.4005345639,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 11.450666510222703
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 72,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 394.43962404472285,
+        "footprint_m2": 122194.30166136089,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 1221943.016613609,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 7.048152061341909
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 18.511566847127224,
+        "footprint_m2": 269.1387559808612,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 2691.3875598086124,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 32.0
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 19.780785524849495,
+        "footprint_m2": 307.31018180988286,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 3073.1018180988285,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 28.0252354174052
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 23.743838242734977,
+        "footprint_m2": 442.7838083009193,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 4427.838083009193,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 19.450666510222703
+    },
+    {
+      "capacity_mwh": 100,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 26.9945805252193,
+        "footprint_m2": 572.3254361253146,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 5723.254361253145,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 15.04815206134191
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 41.39312184020793,
+        "footprint_m2": 1345.6937799043062,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 13456.937799043062,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 32.0
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 44.23118108190733,
+        "footprint_m2": 1536.5509090494143,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 15365.509090494143,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 28.0252354174052
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 53.092836357514564,
+        "footprint_m2": 2213.9190415045964,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 22139.190415045963,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 19.450666510222703
+    },
+    {
+      "capacity_mwh": 500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 60.36171707848233,
+        "footprint_m2": 2861.627180626573,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 28616.27180626573,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 15.04815206134191
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 92.55783423563612,
+        "footprint_m2": 6728.468899521531,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 67284.68899521531,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 32.0
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 98.90392762424747,
+        "footprint_m2": 7682.754545247071,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 76827.54545247072,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 28.0252354174052
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 118.7191912136749,
+        "footprint_m2": 11069.595207522983,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 110695.95207522983,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 19.450666510222703
+    },
+    {
+      "capacity_mwh": 2500,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 134.9729026260965,
+        "footprint_m2": 14308.135903132865,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 143081.35903132864,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 15.04815206134191
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 185.11566847127224,
+        "footprint_m2": 26913.875598086124,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 269138.75598086126,
+      "min_usable_c": 48.0,
+      "supply_c": 45.0,
+      "supply_statistic": "min",
+      "temperature_feasible": true,
+      "usable_delta_k": 32.0
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 197.80785524849495,
+        "footprint_m2": 30731.018180988285,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 307310.18180988287,
+      "min_usable_c": 51.9747645825948,
+      "supply_c": 48.9747645825948,
+      "supply_statistic": "median",
+      "temperature_feasible": true,
+      "usable_delta_k": 28.0252354174052
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 237.4383824273498,
+        "footprint_m2": 44278.38083009193,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 442783.8083009193,
+      "min_usable_c": 60.5493334897773,
+      "supply_c": 57.5493334897773,
+      "supply_statistic": "p95",
+      "temperature_feasible": true,
+      "usable_delta_k": 19.450666510222703
+    },
+    {
+      "capacity_mwh": 10000,
+      "hot_c": 80,
+      "ideal_geometry_10m": {
+        "equivalent_single_cylinder_diameter_m": 269.945805252193,
+        "footprint_m2": 57232.54361253146,
+        "height_m": 10.0
+      },
+      "ideal_water_volume_m3": 572325.4361253146,
+      "min_usable_c": 64.95184793865809,
+      "supply_c": 61.9518479386581,
+      "supply_statistic": "max",
+      "temperature_feasible": true,
+      "usable_delta_k": 15.04815206134191
+    }
+  ],
+  "classification": "SYNTHETIC_OPTIMISTIC_WATER_VOLUME_LOWER_BOUND_NOT_A_DESIGN",
+  "cp_j_kg_k": 4180.0,
+  "half_life_hours": 2772.2421342071298,
+  "hourly_soc_loss_fraction": 0.00025,
+  "hx_approach_k": 3.0,
+  "primary_source_signoffs": 0,
+  "retention": {
+    "180d": 0.3395496757021419,
+    "30d": 0.8352514149101778,
+    "90d": 0.5827089116378279
+  },
+  "rho_kg_m3": 1000.0,
+  "source": {
+    "max_c": 61.9518479386581,
+    "median_c": 48.9747645825948,
+    "min_c": 45.0,
+    "p95_c": 57.5493334897773,
+    "rows": 8760,
+    "source_sha256": "8125719923bae97901f37cf0f5354df77b46544df0477f863172255748873f25"
+  }
+}

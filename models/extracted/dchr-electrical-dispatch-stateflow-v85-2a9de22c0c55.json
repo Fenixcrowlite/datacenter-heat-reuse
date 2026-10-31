@@ -1833,9 +1833,16 @@
       "xml": "simulink/stateflow/chart_118.xml"
     }
   ],
-  "execution_status": "not_ported",
+  "execution_status": "verified_python_port",
   "file": "extracted/dchr-electrical-dispatch-stateflow-v85-2a9de22c0c55.json",
   "copies": [
     "primary/matlab/simulink/DCHR_Electrical_Dispatch_Stateflow_v85.slx"
-  ]
+  ],
+  "python_model_id": "stateflow-v85",
+  "verification": {
+    "cases": 28,
+    "retained_steps": 87,
+    "numeric_fields_compared": 120060,
+    "absolute_tolerance": 1e-12
+  }
 }

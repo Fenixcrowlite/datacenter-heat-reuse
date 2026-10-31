@@ -1,0 +1,41 @@
+{
+  "field_validated": false,
+  "files": {
+    "C98_FINDINGS.md": {
+      "bytes": 3056,
+      "sha256": "42047ac09b6747f0976754799c36057e88277bf847c0c7dbaceb19acf5ab088a"
+    },
+    "C98_INDEPENDENT_QA.json": {
+      "bytes": 406,
+      "sha256": "5d5341a3f6a56903c4b9068d1686e49e634668cf333c35349e1f89bb7a486da9"
+    },
+    "C98_QA_LOG.txt": {
+      "bytes": 814,
+      "sha256": "728cd0987b9f84738b10b137deea4dee67a80a20f6de9f18c3b6743c32d2a869"
+    },
+    "C98_RUN_LOG.txt": {
+      "bytes": 8104,
+      "sha256": "628d1d37757b7f9b96d034242b41a61ad400c99ca1221ef26f3328aa0b6737c3"
+    },
+    "C98_SWEEP.csv": {
+      "bytes": 19936,
+      "sha256": "d5d4a599dfc11c048cd0152fab8b706b08809a7e24f87a6903bd1afb5a1b6d22"
+    },
+    "C98_THRESHOLDS.json": {
+      "bytes": 4908,
+      "sha256": "6f4bd2156eee5df7e06354d4808428b40a0d0b2455d8f0f181cde2edbc4f9ab2"
+    },
+    "c98_ua_threshold.py": {
+      "bytes": 7047,
+      "sha256": "9782a29bc4d55d2b1a10b4840d6f808df372dea9899d99854f159bc6754d12fd"
+    },
+    "qa_c98_independent.py": {
+      "bytes": 4946,
+      "sha256": "7c1497d4756e48f0e60612e65154fc2248f72bfafa1ef4006c4d0d74c27fa0d0"
+    }
+  },
+  "qa": "820 independent assertions; 127 simulations; 7 pass/fail brackets; 2 negative controls",
+  "schema": "C98_SHA256_MANIFEST_V1",
+  "source_signoffs_added": 0,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,45 @@
+{
+  "QA": "16/16 selftests; 227760/227760 independent rows; 26/26 groups; 12/12 LMTD; negative corruption detected",
+  "files": {
+    "C96_FINDINGS.md": {
+      "bytes": 2443,
+      "sha256": "bcf10cc981819729d9ae65f890ce0a0f5d696e1e5098df7f4f1d85ee4c3727a5"
+    },
+    "C96_HOURLY.csv.gz": {
+      "bytes": 2570255,
+      "sha256": "12adf23a7d8b4c9096ed0a091660e6406ac6ff8088955cb90da764539deb2b88"
+    },
+    "C96_INDEPENDENT_QA.json": {
+      "bytes": 409,
+      "sha256": "d63cbed1d4f017ff7580152caede0d22263bdfbfdc0cc32ed954734675bbea0a"
+    },
+    "C96_METADATA.json": {
+      "bytes": 1665,
+      "sha256": "89127c2d231cd4097f8c8fa4805bac13304f361f9b7c7a7331bf39d8d57f60c7"
+    },
+    "C96_QA_LOG.txt": {
+      "bytes": 412,
+      "sha256": "e8f82fb710ccd4ad98927ec6d9f2a0ed3e2a9d739029bb92ea96c69aac8d3ec2"
+    },
+    "C96_RUN_LOG.txt": {
+      "bytes": 836,
+      "sha256": "07a749b59d2f1484581603536db154e01f8f229d08dee15cd891fa006f5b94ca"
+    },
+    "C96_SUMMARY.csv": {
+      "bytes": 6668,
+      "sha256": "e0cc2cf68bb6e38a627d8b22b00cadf9909bfbb0d54a56d3c9069f9bf982370f"
+    },
+    "c96_ua_ntu_pool.py": {
+      "bytes": 9836,
+      "sha256": "c084e706fc79c635856df6ba6223c1fed1cb9b8c7c72c5aba0e67ae38b8700d9"
+    },
+    "qa_c96_independent.py": {
+      "bytes": 5891,
+      "sha256": "614dc974462b241c1f90fbb9465e74f3dfaa7b2cc3d6d68443b3a54aa80be8b0"
+    }
+  },
+  "new_source_signoffs": 0,
+  "physical_validation": false,
+  "schema": "C96_SHA256_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

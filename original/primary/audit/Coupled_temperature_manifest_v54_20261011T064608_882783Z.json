@@ -1,0 +1,316 @@
+{
+  "timestamp_utc": "2026-10-11T06:46:08.797227+00:00",
+  "files": [
+    {
+      "path": "audit/Coupled_temperature_derivation_v54.md",
+      "sha256": "6a8988a5ee4767650545dbb602cf2ef902bdbe5206e1ced7b3b5ab48fe2f9ab8",
+      "size": 6079
+    },
+    {
+      "path": "audit/Coupled_temperature_results_v54.md",
+      "sha256": "593c1a9c64167f21553fbca775ad822c23147d7ba7c16da59acdf4a93bb33fcf",
+      "size": 5617
+    },
+    {
+      "path": "audit/finalize_coupled_interface_v54.py",
+      "sha256": "7ad76800439e3b531733e066f35376d9d4d9224f1240839ce95a7d772ca395ca",
+      "size": 13703
+    },
+    {
+      "path": "audit/prepare_coupled_interface_v54.py",
+      "sha256": "9f0558961e45d53407514343b4a21d446c110e1d1753fcceea5342a3b5b1b3c3",
+      "size": 3299
+    },
+    {
+      "path": "audit/run_coupled_interface_v54.ps1",
+      "sha256": "9f1ef50c4b3bbf3d6a5a0dc51482bb2aae5e2d36d34319bb4c8da5418dbf4e96",
+      "size": 782
+    },
+    {
+      "path": "audit/verify_coupled_interface_v54.py",
+      "sha256": "ca1c9d44cefe56f59d2d3e272cf97222b0f443768e1748a0db13c3a410cfd066",
+      "size": 15038
+    },
+    {
+      "path": "automation/engineering_progress.md",
+      "sha256": "8f9d474e33387f408dfef5a44cc022dad0d1a91accd4103083f6d8267e5b73a2",
+      "size": 146073
+    },
+    {
+      "path": "automation/STATEFLOW_ACCEPTANCE.md",
+      "sha256": "06a404e0b8433b83075c27c391946a65726f4274ca856dcf9b9338691ff0d11d",
+      "size": 20092
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v54.md",
+      "sha256": "593c1a9c64167f21553fbca775ad822c23147d7ba7c16da59acdf4a93bb33fcf",
+      "size": 5617
+    },
+    {
+      "path": "matlab/+dchr/+components/coupled_temperature_boundary_v54.m",
+      "sha256": "80f43018305275b878ae97bca8793c5fa4572f8aeb07d1edce340c4295149f05",
+      "size": 2992
+    },
+    {
+      "path": "matlab/+dchr/+components/source_affine_charge_step_v54.m",
+      "sha256": "8605192f99b68ef53df963b3fd9f053cdb42bcafd402689a8e4d999a7482eaf9",
+      "size": 2314
+    },
+    {
+      "path": "matlab/run_coupled_interface_v54.m",
+      "sha256": "28d8c56b611ff3ab191959d91d0ef90ac2a87809c6754c076f3b577869dc111a",
+      "size": 10453
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/cold_tank_rejection_simulation.mat",
+      "sha256": "2b0b7092bcf76e5d1b29c13e83fd70bd86d95ec915305a54070e373ddbcab37f",
+      "size": 548528
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/coupled_interface_v54.mat",
+      "sha256": "3516c1a105ca1f52ea109a717f2767fb7a2399c275d2fd58a61444d69e2ff3fe",
+      "size": 5474288
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/execution_20261011T064250244Z.json",
+      "sha256": "528ba0574bd8771029b011e85ed7d9e6b2e3a2baef304e2fe8ea42b5b3fc6af9",
+      "size": 300
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/execution_20261011T064257335Z.json",
+      "sha256": "86709ae7c823249e7d4f5b6caab662cf9742dc652c1d1df49f149e44ae69564a",
+      "size": 300
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/independent_20261011T064349227Z.log",
+      "sha256": "c227f44f29160b01c788b37d25fa58d51eb1cfce14f2434245fb24190808342c",
+      "size": 628
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/independent_20261011T064407793Z.log",
+      "sha256": "00f54e3d2e1954bf62839f5a764cc77fb7c3e5243e92ba51e444dc0296cb6bdf",
+      "size": 1241
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/independent_20261011T064501305Z.log",
+      "sha256": "f682faa8067f0820f918b19b61c89a6c2bd491acf0769a0db45fcc9651d391f2",
+      "size": 4800
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/independent_QA_v54_20261011T064408_171846Z.json",
+      "sha256": "d9f94369d64683adf40f9b5aebbd140e9e58ab011a777343124249ce19066f45",
+      "size": 552524
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/independent_QA_v54_20261011T064501_582852Z.json",
+      "sha256": "62f147100bb6c31c847461f9da7d3fafe5f1d0a040d44b890e9b5f755985a99c",
+      "size": 557057
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/mat_reopen.json",
+      "sha256": "e376665281586025a1afbaf5d16c61ee037d1f5912c8fe3b418bb1c61afcd2f2",
+      "size": 1304682
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/matlab_20261011T064250244Z.log",
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4",
+      "size": 181
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/matlab_20261011T064257335Z.log",
+      "sha256": "bc82b832e66f93d0b945dcdbe729d433c2e69a80f0895ebcbc7f32d774dbf4fd",
+      "size": 86595
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/original_simulation_reopen.json",
+      "sha256": "e9aa33c797ba8b213d4a157654d71fe904bee3506570d1c873fdd190c042ea10",
+      "size": 632929
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/preservation.json",
+      "sha256": "609932b1b7b41b682af8165c7c6db053116a06628a29942e139223fbaf038353",
+      "size": 55242
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/primary_evidence/page_08.png",
+      "sha256": "d21cbc1893f9c92d68df50cc3ca93461f18e3c8000a1eaed8ef79e782151120d",
+      "size": 237752
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/primary_evidence/page_08.txt",
+      "sha256": "3091811c02836e979b855466fbf37ee0f06bc06192d5d6f3ee4aed817f617d35",
+      "size": 2779
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/report.json",
+      "sha256": "e376665281586025a1afbaf5d16c61ee037d1f5912c8fe3b418bb1c61afcd2f2",
+      "size": 1304682
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/reviewer_corrected_v54.py",
+      "sha256": "f52c88954c4a4c00d23695c48bfbfba59dc4e8b71d22b3c9f9f2e6510c6ca781",
+      "size": 13945
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/reviewer_revision.json",
+      "sha256": "17685f060ab4f29c1318bc2bd807a33c949d7237086e7763271b130caadd76f2",
+      "size": 402
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/reviewer_revision_2.json",
+      "sha256": "a3e3a1938e72ae7ef02cf7a387c22ce72ccefc7f950aafd5490d9272c92bcb65",
+      "size": 454
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/reviewer_scoped_v54.py",
+      "sha256": "ca1c9d44cefe56f59d2d3e272cf97222b0f443768e1748a0db13c3a410cfd066",
+      "size": 15038
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_1_1_simulation.mat",
+      "sha256": "681aae229920532254546c7d0d29e8e801773d4ed5a26e104321fdd25b732c6e",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_2_1_simulation.mat",
+      "sha256": "b0824f2f6466d70cb47b127ff1815a4cfc8f329f6885a29cafad7c400e6c5c6c",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_2_2_simulation.mat",
+      "sha256": "3520d530c874c15a07bf6d1620db9505043fa612d360d9ae0e7d0841011941f7",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_4_1_simulation.mat",
+      "sha256": "a294d76d6717b0deaa44962e99fdc23ddcaf0c2c5ca365524e5c1a2c50dff19a",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_4_2_simulation.mat",
+      "sha256": "ce88ccefc571657cdac325e8f1f24438fd4acbfcb885fbb151c81287df26860d",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_4_3_simulation.mat",
+      "sha256": "78005cd3d267cc5493565d7c557fdc3e7fd7ea50d0fed42bec26c53e4c7bacbc",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_4_4_simulation.mat",
+      "sha256": "6ac441645cac3fb3087ea9adea2c8e8c416276310a000ab05fc6813e03a3e222",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_1_simulation.mat",
+      "sha256": "257b0e6bd1e189a50065a5d13dbb983f652252850f1e39dff609e0e5509d3b5a",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_2_simulation.mat",
+      "sha256": "0e16564e156af0e584350eb6822d6964b6daf126b29b236dbf2bae49e8508fba",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_3_simulation.mat",
+      "sha256": "8a66c85413085277a207a3c409671a2949c4013e30fa66153ad45100f389be35",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_4_simulation.mat",
+      "sha256": "efa039e8397ebf1909dc86efee3c5acafffe11bdb97a62efaa3d58f102e9e74e",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_5_simulation.mat",
+      "sha256": "f587d8f4cb257ba7a8d3049062344338ba48d30268203175985e3b2b1831700b",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_6_simulation.mat",
+      "sha256": "bfc7b8d128b29ee6cb98b4d368bbaa43b843c4b537b6a3a59083336ebb778e88",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_7_simulation.mat",
+      "sha256": "779f0ec2b4cfaff695fb6d851909690b0acfe7b7d17084a6fc1d4d921e900abd",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/sampled_8_8_simulation.mat",
+      "sha256": "56711b09fa30dc04efbaa3fa384926184f89c610533268961cfd2d1124ba0d34",
+      "size": 309000
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_hashes.json",
+      "sha256": "487a696db7e8b4e9249b0c99cfe493714a04a90aec851cc379c691077fe1c0e3",
+      "size": 1550
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_observations.json",
+      "sha256": "53f56e690f35a977220bdfb7e6e0a221911f191010cacde19ec0e4fe0022db6c",
+      "size": 809
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/audit/Coupled_temperature_derivation_v54.md",
+      "sha256": "6a8988a5ee4767650545dbb602cf2ef902bdbe5206e1ced7b3b5ab48fe2f9ab8",
+      "size": 6079
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/audit/verify_coupled_interface_v54.py",
+      "sha256": "9acbb48640614528a095331127c8c8acbb239d782671ea4e312fa55edf20a2de",
+      "size": 13480
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/+dchr/+components/coupled_temperature_boundary_v54.m",
+      "sha256": "80f43018305275b878ae97bca8793c5fa4572f8aeb07d1edce340c4295149f05",
+      "size": 2992
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/+dchr/+components/source_affine_charge_step_v54.m",
+      "sha256": "8605192f99b68ef53df963b3fd9f053cdb42bcafd402689a8e4d999a7482eaf9",
+      "size": 2314
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/run_coupled_interface_v54.m",
+      "sha256": "28d8c56b611ff3ab191959d91d0ef90ac2a87809c6754c076f3b577869dc111a",
+      "size": 10453
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/simulink/build_dispatch_stateflow_v52.m",
+      "sha256": "25460e82ef0e9ef95e8db471c6b82659a96b2a72dc462f49dbdebfe11ba9b33a",
+      "size": 12298
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/simulink/DCHR_Dispatch_Stateflow_v52.slx",
+      "sha256": "3d12602aeebcb80585ecfd16e13b0e9ea9cffe091348883b620923e468954e12",
+      "size": 203411
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/simulink/dchr_segment_plan_v52.m",
+      "sha256": "fa79e78481ce175d7bdca05c6ebfd466ffd39fcdf778a265e118e070b750cecc",
+      "size": 4927
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/simulink/dchr_stateflow_hp_v52.m",
+      "sha256": "85400a87bd871a44de7ca74c6b8b9b5355633ada31a3d9f0fad31f07286163e0",
+      "size": 2584
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/source_snapshot/matlab/simulink/stateflow_contract_gate_v52.m",
+      "sha256": "6520478cc4e0baa92b392b50e9fbd1e0b304774299e709c1aa79044940df7eed",
+      "size": 8648
+    },
+    {
+      "path": "results/coupled_interface_v54_20261011T064243_962223Z/spec.json",
+      "sha256": "161f0ba5df17ba497041ee2b43298dd325f68db9ead5d2e114daca32730f8dbd",
+      "size": 1040
+    },
+    {
+      "path": "STATUS_v54.json",
+      "sha256": "d0632e40b170ad93da5987a16f44b12bdaaea9f79addf355c2ff92057cc4bf35",
+      "size": 5059
+    }
+  ],
+  "excludes": "local_build disposable cache; no deletion performed"
+}

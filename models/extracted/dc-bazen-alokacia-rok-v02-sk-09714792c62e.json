@@ -372,6 +372,7 @@
   "execution_status": "not_ported",
   "file": "extracted/dc-bazen-alokacia-rok-v02-sk-09714792c62e.json",
   "copies": [
+    "obsidian/pool_500m3/pool_dc_integration_v02/DC_Bazen_Alokacia_Rok_v02_SK.slx",
     "primary/matlab/pool_dc_integration_v02/DC_Bazen_Alokacia_Rok_v02_SK.slx"
   ]
 }

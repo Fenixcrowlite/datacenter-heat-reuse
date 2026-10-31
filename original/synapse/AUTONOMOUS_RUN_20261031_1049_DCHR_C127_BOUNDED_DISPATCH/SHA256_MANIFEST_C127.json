@@ -1,0 +1,39 @@
+{
+  "files": {
+    "C127_BOUNDED_QUARTER.csv.gz": {
+      "bytes": 4279134,
+      "sha256": "428c52fb8c2749cb2769632cb317e0d6c2e6268225b9e9f04e624ad48c4a056a"
+    },
+    "C127_FINDINGS.md": {
+      "bytes": 2366,
+      "sha256": "f72113d3ddd3d00b734249deb56af78440f8ec2fdf9a6252280ba35f24fa8d98"
+    },
+    "C127_INDEPENDENT_QA.json": {
+      "bytes": 767,
+      "sha256": "969b1f339254fe6d7243f1db7beec09d93c478a4d94e609ae7e0962f916e89e2"
+    },
+    "C127_METADATA.json": {
+      "bytes": 977,
+      "sha256": "9f216c46c519f2d2216cc2871bf41ba4c145d96b37beb1285f5bc7a851b59ffe"
+    },
+    "C127_SUMMARY.json": {
+      "bytes": 1740,
+      "sha256": "55ba9431fa3be899f6284502b72294de0d4e2e755683b965ccba1b14abb873c9"
+    },
+    "c127_bounded_dispatch.py": {
+      "bytes": 7838,
+      "sha256": "60cbdeeb79e42e03b5a4e89bd0f41697c34472e4bb70108243d81a6c53d8aeed"
+    },
+    "finalize_c127.py": {
+      "bytes": 8125,
+      "sha256": "0e308e7349ad1d355972c523e0c0c4312b307fb2d6601be4eae54d557558b6f0"
+    },
+    "qa_c127_independent.py": {
+      "bytes": 5839,
+      "sha256": "632f1955df7a243918477e52940290d7a10911fce2cc371d4065dae3abd71261"
+    }
+  },
+  "qa": "PASS",
+  "schema": "C127_MANIFEST_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

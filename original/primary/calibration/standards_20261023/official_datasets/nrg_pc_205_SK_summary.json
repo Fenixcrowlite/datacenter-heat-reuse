@@ -1,0 +1,105 @@
+{
+  "dataset": "nrg_pc_205",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_pc_205?geo=SK&sinceTimePeriod=2025-S1&currency=EUR&unit=KWH",
+  "raw": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\official_datasets\\nrg_pc_205_SK_2025_2026_raw.json",
+  "csv": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\official_datasets\\nrg_pc_205_SK_2025_2026_series.csv",
+  "rows": 72,
+  "dimension_keys": [
+    "time",
+    "geo",
+    "currency",
+    "tax",
+    "unit",
+    "nrg_cons",
+    "siec",
+    "freq",
+    "value",
+    "flag"
+  ],
+  "consumption_bands": [
+    "MWH20-499",
+    "MWH2000-19999",
+    "MWH20000-69999",
+    "MWH500-1999",
+    "MWH70000-149999",
+    "MWH_GE150000",
+    "MWH_LT20",
+    "TOT_KWH"
+  ],
+  "status_flags": [],
+  "latest_timestamp": "2026-10-19T11:00:00+0200",
+  "selected_2026_sample": [
+    {
+      "time": "2026-S1",
+      "geo": "SK",
+      "currency": "EUR",
+      "tax": "I_TAX",
+      "unit": "KWH",
+      "nrg_cons": "MWH20-499",
+      "siec": "E7000",
+      "freq": "S",
+      "value": 0.2531,
+      "flag": null
+    },
+    {
+      "time": "2026-S1",
+      "geo": "SK",
+      "currency": "EUR",
+      "tax": "X_TAX",
+      "unit": "KWH",
+      "nrg_cons": "MWH20-499",
+      "siec": "E7000",
+      "freq": "S",
+      "value": 0.1831,
+      "flag": null
+    },
+    {
+      "time": "2026-S1",
+      "geo": "SK",
+      "currency": "EUR",
+      "tax": "X_VAT",
+      "unit": "KWH",
+      "nrg_cons": "MWH20-499",
+      "siec": "E7000",
+      "freq": "S",
+      "value": 0.2127,
+      "flag": null
+    },
+    {
+      "time": "2026-S1",
+      "geo": "SK",
+      "currency": "EUR",
+      "tax": "I_TAX",
+      "unit": "KWH",
+      "nrg_cons": "MWH2000-19999",
+      "siec": "E7000",
+      "freq": "S",
+      "value": 0.211,
+      "flag": null
+    },
+    {
+      "time": "2026-S1",
+      "geo": "SK",
+      "currency": "EUR",
+      "tax": "X_TAX",
+      "unit": "KWH",
+      "nrg_cons": "MWH2000-19999",
+      "siec": "E7000",
+      "freq": "S",
+      "value": 0.1565,
+      "flag": null
+    },
+    {
+      "time": "2026-S1",
+      "geo": "SK",
+      "currency": "EUR",
+      "tax": "X_VAT",
+      "unit": "KWH",
+      "nrg_cons": "MWH2000-19999",
+      "siec": "E7000",
+      "freq": "S",
+      "value": 0.1773,
+      "flag": null
+    }
+  ]
+}

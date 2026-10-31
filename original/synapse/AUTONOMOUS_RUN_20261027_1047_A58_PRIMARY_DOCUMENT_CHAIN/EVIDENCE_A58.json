@@ -1,0 +1,22 @@
+{
+  "QA": {
+    "ast_parse": "4/4 PASS",
+    "document_sha256": "6/6 PASS",
+    "independent_issuer_authentication": false,
+    "known_gap": "A57 did not require referenced certificate bytes; A58 now does",
+    "physical_release": false,
+    "real_primary_documents": false,
+    "source_kind": "synthetic_test",
+    "tests": "25/25 PASS",
+    "upstream_a57_sha256": "309fdf0ab614a0c2f858cde0066cafae5d3f9039fab2eeab85b080d30e19ec1f"
+  },
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1047_A58_PRIMARY_DOCUMENT_CHAIN",
+  "issuer_authenticity_verified": false,
+  "next_step": "Obtain asset-specific original calibration certificates, UTC sync records, vendor map and telemetry; independently authenticate issuers and instrument IDs, then run A55+A56+A57+A58 on immutable real inputs before isolated Stateflow testing.",
+  "physical_release": false,
+  "scope": "A58_primary_document_chain_integrity_gate",
+  "source_files_untouched": true,
+  "status": "VERIFIED_SYNTHETIC_QA_PHYSICAL_DOCUMENTS_BLOCKED",
+  "synthetic_only": true,
+  "task_id": "scc-3d9d172beb6e1b"
+}

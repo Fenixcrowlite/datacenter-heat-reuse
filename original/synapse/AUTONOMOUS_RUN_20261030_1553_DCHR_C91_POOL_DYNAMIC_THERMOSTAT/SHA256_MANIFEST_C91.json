@@ -1,0 +1,54 @@
+{
+  "files": {
+    "C91_ADVERSARIAL_QA.json": {
+      "bytes": 289,
+      "sha256": "a3517fdeff30852624aeb7fca6bb82c10018f928371f811f70bbadd07a2c74bd"
+    },
+    "C91_DYNAMIC_HOURLY.csv": {
+      "bytes": 7735220,
+      "sha256": "c9ea5be5d5cd654f204bdd5eb6a30377fb740e0eeee66f73b6bc1e5b7af5ad80"
+    },
+    "C91_DYNAMIC_MONTHLY.csv": {
+      "bytes": 8928,
+      "sha256": "32c7b04a8c2b1ef29d5d22bad1f516585c7dae3c928fb828342e7e49f93e4075"
+    },
+    "C91_DYNAMIC_SUMMARY.json": {
+      "bytes": 4080,
+      "sha256": "72c6a15a377cf15c38cd7d6ae0215a515a6c543164c296bb7daf7be0301d4b38"
+    },
+    "C91_FINDINGS.md": {
+      "bytes": 4438,
+      "sha256": "dc534431e3a1c78e642290a2e80d7a0ba463a83f9c547abfa2a22c9b82a60cae"
+    },
+    "C91_INDEPENDENT_QA.json": {
+      "bytes": 1360,
+      "sha256": "2e4272af08d80c921dcfd070380f5806d4db0756e85b2e2527d501db24374646"
+    },
+    "C91_TEMPERATURE_YEAR.png": {
+      "bytes": 104086,
+      "sha256": "5981d28c101df06b8f1cee75e7343026024341ed9b6981bc24fc1bf3a5c68422"
+    },
+    "c91_pool_dynamic.py": {
+      "bytes": 8798,
+      "sha256": "964cb181227db7c5af93e8632e352919ab28b030de69c934412dc798bb7264b4"
+    },
+    "plot_c91.py": {
+      "bytes": 1047,
+      "sha256": "64e704f1be7ce7c75b2f4b770f3ac6cbf591eac37747f5390e9049feadfbaba4"
+    },
+    "qa_c91_adversarial.py": {
+      "bytes": 1863,
+      "sha256": "2ff3a839b16715606f7d250ff2b83bf8b11c9d35771c52eada92ffdef52c5707"
+    },
+    "qa_c91_independent.py": {
+      "bytes": 5895,
+      "sha256": "4f26b42c2c5c94056b59e5b342a63f00c36475d21d8619de3044fd047c22d85f"
+    }
+  },
+  "input_c90_sha256": "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+  "physical_validated": false,
+  "qa": "11/11 self, 28/28 independent, 8/8 adversarial, 6x8760 rows, plot PASS",
+  "schema": "C91_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

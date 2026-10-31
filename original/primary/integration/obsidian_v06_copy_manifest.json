@@ -1,0 +1,140 @@
+{
+  "updated": "2026-10-08T18:27:09.572573+00:00",
+  "source": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse",
+  "destination": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse",
+  "files": [
+    {
+      "path": "MASTER_STAGEBOARD_v06.md",
+      "status": "COPIED",
+      "sha256": "0ebce71cbe8b19da13c77ccc8eb5795bbdf0f756eb5b0c4622d6b1dd0ea9c98c",
+      "bytes": 8642
+    },
+    {
+      "path": "STATUS_v06.json",
+      "status": "COPIED",
+      "sha256": "5e183e49aef91baf2ba34a8058389a3c70dd3fa8fa9b0aba4ec58cfdd18fa796",
+      "bytes": 2504
+    },
+    {
+      "path": "audit/Ebrahimi_source_audit_v06_RU.md",
+      "status": "COPIED",
+      "sha256": "b328f9ef720d58e1c62da1e5578472bb958a8d446c6f3d9906a729b6c9aa60b5",
+      "bytes": 5042
+    },
+    {
+      "path": "audit/Hiltunen_Espoo_2020_primary_source_audit_v06_RU.md",
+      "status": "COPIED",
+      "sha256": "71721b74a590fe012da9a19a5b7096d0aa073b3994887b3e0fe45943db504799",
+      "bytes": 4049
+    },
+    {
+      "path": "audit/Sintong_2023_primary_source_audit_v06_RU.md",
+      "status": "COPIED",
+      "sha256": "3ab891f0d086950783af86f0f29317d7d98e9ffe258d5707821743a070d8eb7d",
+      "bytes": 7296
+    },
+    {
+      "path": "audit/analytical_preflight_v06.py",
+      "status": "COPIED",
+      "sha256": "332d2988d13b3506982910d4380bb8c95b90c4dc40146c3543f03ea80ee63d77",
+      "bytes": 6440
+    },
+    {
+      "path": "audit/analytical_preflight_v06.json",
+      "status": "COPIED",
+      "sha256": "b1821c504e35c9785954590071c492797a9346239a02815a7978e5d75a2fa430",
+      "bytes": 224
+    },
+    {
+      "path": "audit/sintong_consistency_v06.py",
+      "status": "COPIED",
+      "sha256": "ab4b2ea2d455528262cfd519cdb4f5870257d824adb39eba444d09b24c79d94b",
+      "bytes": 3408
+    },
+    {
+      "path": "audit/sintong_consistency_v06.json",
+      "status": "COPIED",
+      "sha256": "0a1475a342c47d05573a11c8e847451a96738e060af30c0961258fb8c4ab5f99",
+      "bytes": 651
+    },
+    {
+      "path": "audit/literature_traceability_v06.csv",
+      "status": "COPIED",
+      "sha256": "e066463c79874981556b7208ce9fca3f19be4f245b5d8fe9bb43bfeba8a7d6bc",
+      "bytes": 11576
+    },
+    {
+      "path": "audit/literature_traceability_v06.json",
+      "status": "COPIED",
+      "sha256": "d161441210b4522a353e9f24cf5cca112fc0a0e858acc79720e95138b14667a9",
+      "bytes": 22891
+    },
+    {
+      "path": "audit/metadata_crossref_v06.csv",
+      "status": "COPIED",
+      "sha256": "2b59e0f8ee83143941d417b1c4dbb45af5f7ff8a490c598bbb96da46ff7b8bcb",
+      "bytes": 5959
+    },
+    {
+      "path": "audit/metadata_crossref_v06.json",
+      "status": "COPIED",
+      "sha256": "f958cf4ba61ba22a680199d65ac4dd28eaa497879bbbd9f83248ba95866755f6",
+      "bytes": 25756
+    },
+    {
+      "path": "audit/source_acquisition_v06.json",
+      "status": "COPIED",
+      "sha256": "094bfa344e5ba22a0d824b178406b4059186af029f1031ec15313cb7472a3e72",
+      "bytes": 1151
+    },
+    {
+      "path": "audit/openalex_acquisition_v06.json",
+      "status": "COPIED",
+      "sha256": "bc69a021a837afd43203d2255c3ed8787821566cef62a1900f5c3fe055fbcc91",
+      "bytes": 4124
+    },
+    {
+      "path": "audit/stockholm_theses_fetch_v06.json",
+      "status": "COPIED",
+      "sha256": "a08c1135e9c35293fedd0e8482a38ce037bda58209b1825f527d6774052cb18f",
+      "bytes": 484
+    },
+    {
+      "path": "sources/original/Datacentra_teplo_vedecke_prace.pdf",
+      "status": "COPIED",
+      "sha256": "eaad88a930a6364872940c88806efc1ee278d9238064890dfef1715a53cc23bd",
+      "bytes": 163472
+    },
+    {
+      "path": "sources/papers/04_Hiltunen_Espoo_2020.pdf",
+      "status": "COPIED",
+      "sha256": "e05f77bfe17ae2f11e7c1d3b3c4dfa283f2e16a2208e602bc5fa8edeb215359f",
+      "bytes": 3292816
+    },
+    {
+      "path": "sources/papers/08_Tofani_Stockholm_2022.pdf",
+      "status": "COPIED",
+      "sha256": "e1e6ed5f5701e09a6c19f1b4c8287a832684e1113eaf289a9936a5d021c74df8",
+      "bytes": 1696221
+    },
+    {
+      "path": "sources/papers/09_Sintong_Stockholm_2023.pdf",
+      "status": "COPIED",
+      "sha256": "8149370d2df0c5899c844095f3890fea112c3d81eaff6671cb3cf0f3da9185f5",
+      "bytes": 2567616
+    },
+    {
+      "path": "sources/papers/21_Ebrahimi_2014.pdf",
+      "status": "COPIED",
+      "sha256": "4aaffa92f30b0d5aa9c7a7e58e5ff8cad3eb05c9f8969b079d6127aab1600a40",
+      "bytes": 968091
+    }
+  ],
+  "summary": {
+    "COPIED": 21,
+    "ALREADY_IDENTICAL": 0,
+    "CONFLICT_SKIPPED": 0,
+    "CHECKSUM_MISMATCH": 0,
+    "SOURCE_MISSING": 0
+  }
+}

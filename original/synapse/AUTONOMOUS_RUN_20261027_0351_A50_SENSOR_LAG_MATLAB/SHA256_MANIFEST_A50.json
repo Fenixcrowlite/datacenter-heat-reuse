@@ -1,0 +1,16 @@
+{
+  "make_references.py": "2986d749317e4e100c04ada28ef0a07f7cff73c1fdb507b5b3eb700255215db3",
+  "run_a50.m": "aa3734412e67c561dbaa4027389c312091e4afc3002cf4b4f159edbc4ce3f65d",
+  "test_a50.py": "48e21dde639e03880171bd2a7e36cb5f2950b5e815eaa36f96147c7ef71c8428",
+  "MATLAB_A50_RESULT.json": "2ad339d11a0f23a2bbd3b44ab790d437e5087fb874619dad98d12d2e7965b85a",
+  "REFERENCE_MANIFEST.json": "9c5233c89692941c033d9e7878eb47c3c19a51e2ebb04ec7b33217a4f0a0ffb4",
+  "QA_LOG.txt": "d1be48db93bd074b6030ba5d14b4653af39e02766fddf980b97096f9a9726c8f",
+  "DCHR_A50_Sensor_Lag.slx": "8edb7f64b9fe27c54be4c5d1223e242feb6f733cde97dce4c044b25729dc5cbe",
+  "EVIDENCE_A50.json": "8eac779de927eb8ae102b350d4faacde58fb60ac3bc5a88fbb1fac01b65116c8",
+  "REF_neither_lag0.csv": "07ac19daf6b7d5c53a2af4d2d999e3af494c7ff42368bb67fb1521940876bb3b",
+  "REF_neither_lag1.csv": "07ac19daf6b7d5c53a2af4d2d999e3af494c7ff42368bb67fb1521940876bb3b",
+  "REF_neither_lag4.csv": "07ac19daf6b7d5c53a2af4d2d999e3af494c7ff42368bb67fb1521940876bb3b",
+  "REF_backup_only_lag0.csv": "214a5073e38de6999365c1018e93eb0df2708d34896aaf8861bd9f226c589312",
+  "REF_backup_only_lag1.csv": "649a2c9913532c27869be13c8018c9acf6fb82e386af9bf8959a8a1b8b3e32c0",
+  "REF_backup_only_lag4.csv": "b948207bbe6e005c471cef78390b63f992d818501b013fa5a83f8711a71ab133"
+}

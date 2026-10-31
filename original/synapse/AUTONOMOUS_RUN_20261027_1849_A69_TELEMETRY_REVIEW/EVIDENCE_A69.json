@@ -1,0 +1,16 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1849_A69_TELEMETRY_REVIEW",
+  "browser_QA": "PASS; actual CSS viewports 320/390/1440",
+  "checkpoint_created_at_utc": "2026-10-27T17:56:11+00:00",
+  "independent_numeric_QA": "PASS; 4 exact Decimal energy channels",
+  "next_step": "Use A59 channel mapping on a verified SCADA export, produce A69 review; obtain calibration/timebase evidence for A57/A58 before physical acceptance.",
+  "physical_release": false,
+  "product": "offline standalone HTML review + JSON summary + receipt",
+  "provenance_sha256": "PASS; 3 input and 2 output",
+  "scope": "A69_offline_A59_telemetry_review",
+  "source_kind": "synthetic_test",
+  "source_sha256": "a55822ebf66da26f98afd4980bdbaf057c0619ed6c07fe133192d9d453855c3e",
+  "status": "VERIFIED_SOFTWARE_NOT_PHYSICAL",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "18 PASS, 1 SKIP (Windows symlink privilege)"
+}

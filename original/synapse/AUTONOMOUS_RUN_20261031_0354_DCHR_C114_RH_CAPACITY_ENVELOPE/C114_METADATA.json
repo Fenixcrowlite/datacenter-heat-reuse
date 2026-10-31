@@ -1,0 +1,51 @@
+{
+  "RH_band": [
+    0.45,
+    0.65
+  ],
+  "baseline_selftests": 21,
+  "cap_tolerance_kg_h": 0.01,
+  "envelope_sha256": "47ac8ff94c319ecdd4c9b5bfd6b34f30d79303e3e65919268de7a5ca74af426d",
+  "field_validated": false,
+  "hours_per_policy": 8760,
+  "limitations": [
+    "Symmetric identical maximum dehumidification and humidification rates; not a vendor unit specification.",
+    "Hourly endpoint RH only; transient within-hour excursions are not evaluated.",
+    "One-way C111 evaporation forcing, no RH-to-evaporation feedback.",
+    "Coil pre-drying remains idealized and unconstrained; dry-air inventory and ventilation are assumed.",
+    "No measured climate, pool geometry, HVAC performance curves or primary-source signoffs."
+  ],
+  "policies": [
+    "water_first",
+    "air_first"
+  ],
+  "results": [
+    {
+      "lower_failing_cap_kg_h": 45.64453125,
+      "policy": "water_first",
+      "search_iterations": 16,
+      "upper_max_RH": 0.6499593662432898,
+      "upper_min_RH": 0.5499999999999998,
+      "upper_passing_cap_kg_h": 45.654296875
+    },
+    {
+      "lower_failing_cap_kg_h": 45.64453125,
+      "policy": "air_first",
+      "search_iterations": 16,
+      "upper_max_RH": 0.6499593662432898,
+      "upper_min_RH": 0.5499999999999998,
+      "upper_passing_cap_kg_h": 45.654296875
+    }
+  ],
+  "schema": "C114_RH_CAPACITY_ENVELOPE_V1",
+  "source_sha256": {
+    "C104": "1bbe6dbbf18f04c5bc0ef7b407efdbbebbf60ec496a1b5178ee66ab3bf7a1600",
+    "C106": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+    "C111": "a803e82edd355be9f35dc9208173650ccd8dbbbdf39c7333c54e493a89677c1e",
+    "C112": "6dc6c77adc479f9bdbfcc2c5937aee6b8f31b6b02764d93b0ffefab95b84ebc8",
+    "C112_SUMMARY": "8104d9e18c0debc630c61bcbe926a76bfa1cdc2935af9c71c8ce8455fd7bb72f"
+  },
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

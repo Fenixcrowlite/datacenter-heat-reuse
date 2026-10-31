@@ -1,0 +1,11 @@
+{
+  "model": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\pool_500m3\\Bazen_DC_Ohrev_500m3_SK.slx",
+  "cas_28_h": 47.31666666666667,
+  "konecna_teplota_C": 27.868080746054112,
+  "dodane_teplo_MWh": 10.76875,
+  "straty_MWh": 3.8973134390927866,
+  "ulozene_teplo_MWh": 6.8726967692997638,
+  "relativna_bilancna_odchylka": 0.00011702457504818577,
+  "casovy_krok_s": 60,
+  "koniec_simulacie_s": 604800
+}

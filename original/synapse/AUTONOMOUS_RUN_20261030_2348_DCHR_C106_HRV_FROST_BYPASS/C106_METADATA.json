@@ -1,0 +1,26 @@
+{
+  "assumptions": {
+    "exhaust_proxy": "T_exhaust = T_indoor - eta*(T_indoor - T_outdoor)",
+    "indoor_C": 29.0,
+    "minimum_bypass_dwell_hours": 3,
+    "release_exhaust_C": 4.0,
+    "trigger_exhaust_C": 2.0
+  },
+  "boundary": "C104 source rows reused verbatim. Bypass selects the C104 HRV0 case for same RH/time; no added energy terms.",
+  "field_validated": false,
+  "hourly_sha256": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf",
+  "limitations": [
+    "Frost threshold and exhaust proxy are hypothetical, not measured manufacturer frost curve.",
+    "Bypass is frost-risk protection, not an energy-saving optimizer; increased heating is possible.",
+    "No defrost cycle, damper transient, fan pressure change or real weather/flows.",
+    "No real plant validation or new primary-source signoffs."
+  ],
+  "rows": 78840,
+  "scenarios": 9,
+  "schema": "C106_FROST_BYPASS_V1",
+  "source_C104_sha256": "15547bfd196152440ec1870af182ef20a79ab1004790cf71d1de9869b447228d",
+  "source_signoffs_added": 0,
+  "summary_sha256": "83f27727ca080ece530ec645a0ba8b59180c0a1434d52d1866590ce9d71b3a5e",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

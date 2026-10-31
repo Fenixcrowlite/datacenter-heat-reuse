@@ -1,0 +1,97 @@
+{
+  "provider": "NASA POWER",
+  "type": "gridded meteorological reanalysis (NOT on-site measurements)",
+  "dataset_year": 2025,
+  "start": "2025-01-01T00:00:00Z",
+  "end": "2025-12-31T23:00:00Z",
+  "coordinates": [
+    48.1702,
+    17.2127
+  ],
+  "time_basis": "UTC (hourly)",
+  "URL": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=T2M%2CRH2M%2CWS2M&community=SB&longitude=17.2127&latitude=48.1702&start=20250101&end=20251231&format=JSON&time-standard=UTC",
+  "raw_source": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\official_datasets\\NASA_POWER_Bratislava_2025_hourly_raw.json",
+  "parsed_CSV": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\calibration\\standards_20261023\\official_datasets\\weather_2025_BRATISLAVA_NASA_POWER_hourly_UTC.csv",
+  "rows": 8760,
+  "valid_air_temp_rows": 8760,
+  "coverage": 1.0,
+  "air_temp_annual_mean_C": 12.0918,
+  "min_C": -8.32,
+  "max_C": 38.39,
+  "monthly": {
+    "01": {
+      "n": 744,
+      "mean_C": 1.439,
+      "minimum_C": -4.57,
+      "maximum_C": 15.89
+    },
+    "02": {
+      "n": 672,
+      "mean_C": 0.628,
+      "minimum_C": -8.32,
+      "maximum_C": 10.97
+    },
+    "03": {
+      "n": 744,
+      "mean_C": 7.895,
+      "minimum_C": -5.16,
+      "maximum_C": 19.79
+    },
+    "04": {
+      "n": 720,
+      "mean_C": 12.929,
+      "minimum_C": -1.38,
+      "maximum_C": 26.76
+    },
+    "05": {
+      "n": 744,
+      "mean_C": 14.985,
+      "minimum_C": 3.11,
+      "maximum_C": 30.08
+    },
+    "06": {
+      "n": 720,
+      "mean_C": 23.418,
+      "minimum_C": 10.63,
+      "maximum_C": 37.84
+    },
+    "07": {
+      "n": 744,
+      "mean_C": 23.243,
+      "minimum_C": 13.13,
+      "maximum_C": 38.39
+    },
+    "08": {
+      "n": 744,
+      "mean_C": 23.065,
+      "minimum_C": 10.03,
+      "maximum_C": 36.87
+    },
+    "09": {
+      "n": 720,
+      "mean_C": 18.766,
+      "minimum_C": 5.46,
+      "maximum_C": 31.38
+    },
+    "10": {
+      "n": 744,
+      "mean_C": 10.952,
+      "minimum_C": 0.68,
+      "maximum_C": 22.54
+    },
+    "11": {
+      "n": 720,
+      "mean_C": 5.014,
+      "minimum_C": -4.48,
+      "maximum_C": 21.07
+    },
+    "12": {
+      "n": 744,
+      "mean_C": 2.039,
+      "minimum_C": -4.73,
+      "maximum_C": 10.92
+    }
+  },
+  "model_heat_demand_annual_MWh_from_source_weather": 56793.7,
+  "model_heat_demand_thermal_peak_MW_from_source_weather": 18.7599
+}

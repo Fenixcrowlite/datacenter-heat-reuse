@@ -1,0 +1,19 @@
+{
+  "compressor_a45.py": "7fcd880fc1b4bb4da66d8213c9cb1aaeee2e2ac2ff023a6677b662d719b6690f",
+  "finite_trip_a45.py": "4060cc5943197c6241d41a888a1709095e573225ce9b08c99a7435077a956944",
+  "prepare_a45.py": "b2f253e1c816e0d7f010377da54dcacec0eabf570c4058c3bfbffe9d9a80f6cf",
+  "test_a45.py": "3d80e77dbad9acb9fd6aa266b84bd05184288f80eb36c3b1f97d8f499f44975b",
+  "verify_a45.py": "1d64666eb1b8c561c706850c2980cde3a92f1cbc360cf79a44aadf8ad535a053",
+  "finalize_a45.py": "f9e294639001f4c03ede5950e81598512436abe8da6b37915f6e414a2efd7b92",
+  "RESULTS_A45.json": "4f64841f03223e2bdfa911fab4879ccdb3d731387c6e424771d3f2e379a28ef8",
+  "DECIMAL_AUDIT_A45.json": "5a0849eff5ade0bd79245438ceabf73bbbd9a828dc5c147482851301931cc5d9",
+  "ENGINEERING_REPORT_RU.md": "8f1a75814a504b851cec200c0f0e5fe12b99f11bfbd02f41a9cb7a6481fe8b3a",
+  "EVIDENCE.json": "df4ba4b87256157d175ff8481b9cad7a2c1dadd7425ef09874ec97f0c4293f9f",
+  "TRACE_A45_both.csv": "dd553966b4e214688296e8beb0879f442ea6ef0331c4d34f6cfa8a6dcfcf556b",
+  "TRACE_A45_main_only.csv": "b146a344425ddd62bb58db9355572a23ca12bf148b34ae0d5779f724ca336c31",
+  "TRACE_A45_backup_only.csv": "4746f80ca48dc76c1b752957e6361e99854729aa3ba3696b9c57b558a951b0bb",
+  "TRACE_A45_neither.csv": "7aaf8d08a8364c660050bc82c22d75f093af0457a51e821119976621f5da90c2",
+  "TRACE_A45_CF_both.csv": "e4e63d07d4fcdcf499a04d0d64ee8c03d254ca451f530ccdbdf3e7cd5fc3e6d4",
+  "TRACE_A45_CF_backup_only.csv": "84b227b56b8e438e6e1f26a7ba6caaaa58d6d2d96951c140e63c7914c851e31c",
+  "TRACE_A45_CF_neither.csv": "bafbf8d771590dbc3e86348008e070e62b813d12bcecfefd302ab469db886792"
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-10-08T22:00:43.794544+00:00",
+  "version": "0.15",
+  "category": "mathematical_domain_audit_not_author_simulation",
+  "tests_run": 15,
+  "passed": 15,
+  "failed": 0,
+  "errors": 0,
+  "failure_details": [],
+  "random_seed": 15026,
+  "random_reference_cases": 2000,
+  "random_diagnostic_cases": 1000,
+  "exact_primary_interpretation_cases": 1342,
+  "exact_alternative_cases": 671,
+  "comparison_vectors": 66,
+  "source_coefficient_values_are_scenarios": true,
+  "alternative_interpretation_is_primary_verified": false,
+  "paper_replication": false,
+  "matlab_executed": false,
+  "simulink_executed": false,
+  "stateflow_executed": false,
+  "source_sha256": {
+    "audit/test_sintong_iase_domain_v15.py": "a051730cccb28c94f2f79baf3cec1256491f84552fc201a364cb5b04250e9200",
+    "audit/sintong_iase_domain_v15.py": "642a57683d2ee3e48b5dd8c8a18a9c6979a17ce98d6b801dd9433e46143d6e67"
+  },
+  "log": "automation/logs/Sintong_IASE_tests_v15_20261008T220043_794544Z.log",
+  "comparison": "audit/Sintong_IASE_domain_comparison_v15_20261008T220043_794544Z.csv",
+  "equations": {
+    "alpha_flow_function": "epsilon*(1+r)/2",
+    "two_outlet_bound": "0<=alpha<=min(1,r)",
+    "epsilon_bound": "2*min(1,r)/(1+r)",
+    "fixed_epsilon_interval": "epsilon/(2-epsilon)<=r<=(2-epsilon)/epsilon for 0<epsilon<=1",
+    "independent_reference": "Q=epsilon_Q*min(C_RA,C_OA)*(T_RA-T_OA)"
+  },
+  "limitations": [
+    "Thesis notation and epsilon normalization need author-code/upstream provenance resolution",
+    "No UA, geometry, moist-air, fan work, leakage, frost or calibrated controller",
+    "Reference uses a different defined normalization; it is not a source correction"
+  ]
+}

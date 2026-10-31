@@ -1,0 +1,19 @@
+ID,subsystem,failure_mode,consequence,safeguard_required,simulation_status,physical_validation,priority
+F01,IT,reuse_district_stops,all IT heat must still be rejected,independent full IT rated coolant heat sink,ENERGY_MODEL_VERIFIED,NOT_DONE,P0
+F02,IT,pool_heat_demand_disappears,unused pool energy must be rejected,bypass and independent rejection branch,ENERGY_MODEL_VERIFIED,NOT_DONE,P0
+F03,IT,one_recooler_outage,capacity drops N-1,N+1 effective duty at peak ambient,STATIC_SCENARIOS_TESTED,NOT_DONE,P0
+F04,IT,heat_rejection_fan_derating,post-failure capacity below 10MW,OEM summer ambient performance certification,DERATE_0_10_20_SCENARIOS,NOT_DONE,P0
+F05,IT,coolant_pump_failure,server cold plate loss of flow,UPS-fed independent redundant pumps and check valves,UNMODELED_HYDRAULICS,NOT_DONE,P0
+F06,IT,grid_failure,recooler power and pumping lost,UPS ride-through plus generator startup test,TRANSIENT_BUFFER_SCREEN,NOT_DONE,P0
+F07,IT,coolant_outlet_high_temperature,server intake temperature exceeds specification,hardware temperature safety relay plus independent sensors,UNMODELED,NOT_DONE,P0
+F08,IT,control_network_or_BMS_failure,heat recovery valve freezes state,fail-open recooler bypass local PLC independent trip,UNMODELED,NOT_DONE,P0
+F09,IT,coolant_leak_or_low_pressure,fluid unavailable for cold plates,leak detection and isolation redundancy,UNMODELED,NOT_DONE,P0
+F10,IT,loss_of_pool_and_district_simultaneously,100 percent IT heat routed to emergency cooling,independent cooling complete mechanical and electrical routes,STATIC_DESIGN_10MW,NOT_DONE,P0
+F11,POOL,thermostat_sensor_offset,actual water can exceed 28C,independent overtemperature hard trip with uncertainty margin,MODEL_LIMIT_27P8,NOT_DONE,P0
+F12,POOL,source_hot_side_drops_below_terminal,plate HX cannot deliver power,thermal interlock and HP or gas bypass,SCREENED_ONLY,NOT_DONE,P1
+F13,POOL,chlorine_dosing_before_heat_exchanger,pitting and corrosion,downstream chemical dosing and titanium selection,OEM_REFERENCED,NOT_DONE,P1
+F14,HEATPUMP,COP_and_capacity_differ_from_nominal,incorrect sizing and OPEX,OEM point rating and PLR surface,NOT_AVAILABLE,NOT_DONE,P0
+F15,HEATPUMP,large_unit_failure_and_30min_restart,extra district gas and TES discharge,dynamic N+1 switching logic in v2 Simulink,SIMULINK_VERIFIED_SCENARIO,NOT_DONE,P1
+F16,DISTRICT,gas_backup_unavailable,unmet heating load,boiler capacity and redundancy plus storage,UNMODELED,NOT_DONE,P1
+F17,ENERGY_METER,heat_meter_boundary_wrong,ERF misreported,qualified meter at reused heat transfer boundary,NOT_MODELED,NOT_DONE,P1
+F18,REGULATION,incorrect_legal_edition,pool design noncompliant,obtain current Slov-Lex consolidated text and licensed STN,PARTIAL_PUBLICATION_CHECK,NOT_DONE,P0

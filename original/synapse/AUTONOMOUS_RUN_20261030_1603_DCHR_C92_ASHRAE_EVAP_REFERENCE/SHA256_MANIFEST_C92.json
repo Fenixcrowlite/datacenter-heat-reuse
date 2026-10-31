@@ -1,0 +1,30 @@
+{
+  "files": {
+    "C92_FINDINGS.md": {
+      "bytes": 3408,
+      "sha256": "97064fff181aa91372fc2aba24eb5e97de318fad1af1e5d9ae216ac9814710c3"
+    },
+    "C92_INDEPENDENT_QA.json": {
+      "bytes": 1318,
+      "sha256": "476b3adbec2385c8c9f40e2ca281694c32569c527849341b89f92e69683189ec"
+    },
+    "C92_REFERENCE_COMPARISON.json": {
+      "bytes": 2718,
+      "sha256": "319c78a11b3ea7c3c86fb7096c48094f8ed95f44e68afa324f7b7d3695ff30a1"
+    },
+    "c92_ashrae_evap_compare.py": {
+      "bytes": 5489,
+      "sha256": "242554e2f5f4cd3c08d31d340630a0cad20d505420b29662c21bea7464dd5990"
+    },
+    "qa_c92_reference.py": {
+      "bytes": 2957,
+      "sha256": "528eb340988c51568db29807625e60e4cf0ca6009925fa26a8e5c32c4e30f07b"
+    }
+  },
+  "primary_signoffs_added": 0,
+  "qa": "7/7 self, 29/29 independent PASS",
+  "reference": "ASHRAE Handbook 2023 HVAC Applications Ch6 official publisher",
+  "schema": "C92_SHA256_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,40 @@
+{
+  "files": {
+    "C106_BYPASS_HOURLY.csv.gz": {
+      "bytes": 3819619,
+      "sha256": "e0dd2fbe552861d635e51797a85a50ccb6ca36408928910ac45122ce46b0a8cf"
+    },
+    "C106_FINDINGS.md": {
+      "bytes": 4161,
+      "sha256": "d94ce80b8ab40b8dee22548a00588f7c6c193fdc968353bb8242406bd1fe8426"
+    },
+    "C106_INDEPENDENT_QA.json": {
+      "bytes": 718,
+      "sha256": "5dcd65716e9d891f79c6b90e769477068bbd4ac92fa200e1bdf768057a16d76c"
+    },
+    "C106_METADATA.json": {
+      "bytes": 1197,
+      "sha256": "25f03c7f426542fc9cc9bd3ff5d52a5f5a67b13c135987874fc268aea8e41bff"
+    },
+    "C106_SUMMARY.csv": {
+      "bytes": 1495,
+      "sha256": "83f27727ca080ece530ec645a0ba8b59180c0a1434d52d1866590ce9d71b3a5e"
+    },
+    "c106_bypass.py": {
+      "bytes": 7007,
+      "sha256": "53037892c9964329206528372c9cd32d68906e1a031a0c72072a0b2e5ae3473d"
+    },
+    "qa_c106_independent.py": {
+      "bytes": 5772,
+      "sha256": "52a6a0779b6f1ac857ec7f3811a60940db1b69bc2c805d3ee027018c1eb2c3dc"
+    },
+    "register_c106_evidence.py": {
+      "bytes": 4169,
+      "sha256": "51967169372fb979206a6a10c20915783d84fa85964596fc7db48c47c9feb50a"
+    }
+  },
+  "qa": "8/8 selftests; 1971000 independent hourly assertions; 117 annual comparisons; 2/2 negative controls",
+  "schema": "C106_MANIFEST_V1",
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0"
+}

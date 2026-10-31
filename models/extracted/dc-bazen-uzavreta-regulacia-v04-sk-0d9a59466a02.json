@@ -1605,7 +1605,9 @@
   "execution_status": "verified_python_port",
   "file": "extracted/dc-bazen-uzavreta-regulacia-v04-sk-0d9a59466a02.json",
   "copies": [
-    "primary/matlab/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx"
+    "obsidian/pool_500m3/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx",
+    "primary/matlab/pool_feedback_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx",
+    "primary/results/pool_feedback_v04/deliverables_v04/DC_Bazen_Uzavreta_Regulacia_v04_SK.slx"
   ],
   "python_model_id": "pool-v04"
 }

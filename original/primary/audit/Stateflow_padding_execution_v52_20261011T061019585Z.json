@@ -1,0 +1,7 @@
+{
+  "log_path": "automation/logs/stateflow_padding_v52_20261011T061019585Z.log",
+  "timestamp_utc": "2026-10-11T06:15:04.9991926Z",
+  "evidence_class": "observed_matlab_batch_receipt",
+  "exit_code": 0,
+  "command": "addpath('matlab','matlab/simulink'); run_annual_sensitivity_v52('results/stateflow_protocol_v52_resume_20261011T060454_763418Z'); export_annual_sensitivity_v52('results/stateflow_protocol_v52_resume_20261011T060454_763418Z'); export_annual_sensitivity_binary_v52('results/stateflow_protocol_v52_resume_20261011T060454_763418Z'); export_padding_identity_v52('results/stateflow_protocol_v52_resume_20261011T060454_763418Z'); export_endpoint_protocol_exact_v52('results/stateflow_protocol_v52_resume_20261011T060454_763418Z');"
+}

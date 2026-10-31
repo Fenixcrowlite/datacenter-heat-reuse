@@ -1,0 +1,64 @@
+{
+  "C91_coefficient": 0.12,
+  "C91_multiplier_occupied": 1.5,
+  "C91_multiplier_unoccupied": 1.0,
+  "C91_occupied_effective": 0.18,
+  "C91_unoccupied_effective": 0.12,
+  "cover_multiplier_still_assumed": 0.15,
+  "notes": [
+    "ASHRAE equation and activity factors are source-informed, but actual facility classification and air speed are unmeasured.",
+    "Cover reduction 0.15, heat exchanger recoverability, COP, indoor humidity and ground coefficients remain assumed.",
+    "No claim of validated energy use or actual pool operating comfort."
+  ],
+  "physical_field_validation": false,
+  "reference_activity_public_occupied": 1.0,
+  "reference_activity_unoccupied": 0.5,
+  "reference_coefficient_at_28C": 0.14314885424076304,
+  "reference_public_occupied_effective_at_28C": 0.14314885424076304,
+  "reference_unoccupied_effective_at_28C": 0.07157442712038152,
+  "reference_url": "https://handbook.ashrae.org/Handbooks/A23/SI/A23_Ch06/a23_ch06_si.aspx",
+  "reference_velocity_m_s": 0.1,
+  "reference_year": 2023,
+  "reviewed_local_date": "2026-10-30",
+  "schema": "C92_ASHRAE_REFERENCE_SENSITIVITY_V1",
+  "simulations": {
+    "ASHRAE2023_reference_10pct": {
+      "HP_heat_MWh": 197.35702559835445,
+      "HX_source_used_MWh": 148.01776919876565,
+      "final_temp_C": 27.860087985707572,
+      "hours_below_27p5": 0,
+      "max_abs_energy_residual_MWh": 1.0304257447302234e-15,
+      "min_temp_C": 27.65293054158347
+    },
+    "ASHRAE2023_reference_25pct": {
+      "HP_heat_MWh": 201.75554346543828,
+      "HX_source_used_MWh": 151.31665759907844,
+      "final_temp_C": 28.025227803987775,
+      "hours_below_27p5": 0,
+      "max_abs_energy_residual_MWh": 1.033895191682177e-15,
+      "min_temp_C": 27.796002412252385
+    },
+    "C91_assumed_10pct": {
+      "HP_heat_MWh": 252.75527006310102,
+      "HX_source_used_MWh": 189.5664525473261,
+      "final_temp_C": 27.747877230427193,
+      "hours_below_27p5": 2,
+      "max_abs_energy_residual_MWh": 1.0304257447302234e-15,
+      "min_temp_C": 27.467917188907403
+    },
+    "C91_assumed_25pct": {
+      "HP_heat_MWh": 258.6321893381806,
+      "HX_source_used_MWh": 193.97414200363548,
+      "final_temp_C": 28.026581102256525,
+      "hours_below_27p5": 0,
+      "max_abs_energy_residual_MWh": 1.0304257447302234e-15,
+      "min_temp_C": 27.78229090358753
+    }
+  },
+  "source_C91_script_sha256": "964cb181227db7c5af93e8632e352919ab28b030de69c934412dc798bb7264b4",
+  "source_input_sha256": "0a5e674d316e1d4e223861f1e728ff095a84485b0a4b99da6e38b67af81be8e7",
+  "source_signoffs_added": 0,
+  "synthetic": true,
+  "task_id": "scc-2aab24704c2bd0",
+  "units": "kg/(m2 h kPa) for mass transfer coefficient"
+}

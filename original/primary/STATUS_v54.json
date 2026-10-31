@@ -1,0 +1,63 @@
+{
+  "version": "0.54",
+  "timestamp_utc": "2026-10-11T06:46:08.797227+00:00",
+  "inherits": "STATUS_v53.json",
+  "result": "SCOPED_COUPLED_EQUATIONS_PASS_STATEFLOW_INTEGRATION_AND_EXACT_BRANCH_GUARDS_OPEN",
+  "model_version": "0.52",
+  "new_model": false,
+  "saved_model": "matlab/simulink/DCHR_Dispatch_Stateflow_v52.slx",
+  "model_sha256": "3d12602aeebcb80585ecfd16e13b0e9ea9cffe091348883b620923e468954e12",
+  "model_executed_this_run": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "stateflow_license_observed": true,
+  "stateflow_version": [],
+  "chart_count": 2,
+  "component_vectors": 168,
+  "analytic_regime_vectors": 12,
+  "matlab_passed": 621,
+  "matlab_failed": 0,
+  "component_domain_rejections": 14,
+  "saved_model_successful_intervals": 15,
+  "saved_model_expected_unsupported_rejections": 1,
+  "actual_modes_this_run": [
+    2
+  ],
+  "prior_six_mode_acceptance": "STATUS_stateflow_v52.json",
+  "scoped_independent_passed": 5326,
+  "scoped_independent_failed": 0,
+  "exact_branch_classification_failures": 12,
+  "exact_branch_defect_status": "OPEN",
+  "reviewer_selfchecks_passed": 5,
+  "reviewer_selfchecks_failed": 0,
+  "sampled_end_energy_error_MWh": [
+    "0.000653370972974676969482430258791981527930033762733635540716801761434",
+    "0.000327206584566631344881357627015648672705424387733635540716801761434",
+    "0.000163733909667718971416803078752098868017924387733635540716801761434",
+    "0.000081899652176410067607690116416750738745463450233635540716801761434"
+  ],
+  "sampled_compressor_error_MWh": [
+    "0.00072657266839913689602129509632801533711525352928342939188859807245136",
+    "0.00036394124215612164250247517822869018686386497947874189188859807245136",
+    "0.00018213479704519472499472088140761376393410118553342939188859807245136",
+    "0.00009110849882430824373417110957531155121895225975217939188859807245136"
+  ],
+  "coupled_stateflow_acceptance": false,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "result_directory": "results/coupled_interface_v54_20261011T064243_962223Z",
+  "independent_qa": "results/coupled_interface_v54_20261011T064243_962223Z/independent_QA_v54_20261011T064501_582852Z.json",
+  "limitations": [
+    "No new SLX and no accepted coupled Stateflow model. Saved v52 remains accepted only within its previous fixed-temperature scope; fresh v54 successes cover 15 charge-only intervals, not all six modes or an annual run.",
+    "Twelve exact-input branch classifications disagree at roundoff-scale kink: mathematical tank-branch gap -1.3877787807814456e-15K versus nominal rounded zero. Continuous powers pass tolerance; discrete branch/crossing certification remains OPEN.",
+    "New analytic component supports one source-limited charging regime with no demand/discharge/capacity/limiter event. Its nominal endpoint branch test is not a certified general guard at unresolved kinks.",
+    "Variable-flow tank-return topology is a synthetic engineering assumption distinct from v53 fixed return; no UA, hydraulics, pump/minimum-flow law, calibrated equipment map or physical validation.",
+    "Exact affine derivation uses constant source/factor/ambient and no HP clips/part-load penalty. General charge/hot/request regimes, direct/discharge service and complete coupled controller remain unimplemented.",
+    "Primary source20 local p8 definitions visually verified; upstream62 accessible record is metadata/abstract only and provides no primary equipment equations. Full primary signoffs0/31; no article replication.",
+    "Independent QA is 70-digit equations and separately programmed min-envelope RK4/actual trace review by the same agent, not independent personnel or universal floating-point proof.",
+    "Inherited v52 64-slot host-planner, normal-mode deployment and shadow warnings remain. Stateflow license/charts/execution observed; ver(Stateflow) empty is not an installed-version claim.",
+    "Sandbox startup failure, initial reviewer singleton-struct exception and 5314-pass/12-fail exact-branch QA retained. Final scoped QA retains those 12 flags as OPEN; no MATLAB model/guard/tolerance was relaxed."
+  ],
+  "next_actionable_task": "Implement an additive conservative tank/outlet branch domain gate, reproduce the exact-binary E=5MWh,C=0.2MWh/K,Ta=20C kink and reject or explicitly resolve uncertainty. Then derive/verify all charge-side limiter regimes and their earliest event times before integrating energy-linked condenser/COP/flow and variable-power integrals into a new versioned Stateflow planner/allocation/contract. Keep demand service, cutoff/restart/dwell memory and exact padding/handoff strict; execute required six modes, fault tests and independent equation/MAT QA before any new SLX acceptance. Preserve accepted v52 and fixed-temperature v53; do not rerun unchanged annual policies or claim continuous coupling from sampled restarts. Primary equipment calibration remains OPEN."
+}

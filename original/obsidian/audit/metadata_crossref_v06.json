@@ -1,0 +1,681 @@
+{
+  "generated": "2026-10-08T18:18:06.568520+00:00",
+  "qualification": "Crossref candidates must still be manually verified; reports/policy sources 25–31 not included.",
+  "papers": [
+    {
+      "nr": 1,
+      "author_year": "Wahlroos, Pärssinen, Manner, Syri (2017)",
+      "title": "Utilizing data center waste heat in district heating – Impacts on energy efficiency and prospects for low-temperature district heating networks",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Utilizing data center waste heat in district heating – Impacts on energy efficiency and prospects for low-temperature district heating networks",
+          "doi": "10.1016/j.energy.2017.08.078",
+          "year": 2017,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Data center waste heat for district heating networks: A review",
+          "doi": "10.1016/j.rser.2025.115863",
+          "year": 2025,
+          "similarity": 0.5174,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "District heating utilizing waste heat of a data center: High-temperature heat pumps",
+          "doi": "10.1016/j.enbuild.2024.114327",
+          "year": 2024,
+          "similarity": 0.4163,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "author_year": "Wahlroos, Pärssinen, Rinne, Syri, Manner (2018)",
+      "title": "Future views on waste heat utilization – Case of data centers in Northern Europe",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Future views on waste heat utilization – Case of data centers in Northern Europe",
+          "doi": "10.1016/j.rser.2017.10.058",
+          "year": 2018,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Utilization of Data Center Waste Heat in Northern Ostrobothnia",
+          "doi": "10.31803/tg-20200706172649",
+          "year": 2020,
+          "similarity": 0.6,
+          "publisher": "University North"
+        },
+        {
+          "title": "Potential of solar photovoltaics and waste heat utilization in cold climate data centers. Case study: Finland and northern Japan",
+          "doi": "10.1016/j.rser.2024.114619",
+          "year": 2024,
+          "similarity": 0.598,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "author_year": "Pärssinen, Wahlroos, Manner, Syri (2019)",
+      "title": "Waste heat from data centers: An investment analysis",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Waste heat from data centers: An investment analysis",
+          "doi": "10.1016/j.scs.2018.10.023",
+          "year": 2019,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Data Center Waste Heat Reuse: An Investment Analysis",
+          "doi": "10.1115/1.4067444",
+          "year": 2025,
+          "similarity": 0.7255,
+          "publisher": "ASME International"
+        },
+        {
+          "title": "Efficient Use of Waste Heat from Data Centers",
+          "doi": "10.1134/s0040601523100117",
+          "year": 2023,
+          "similarity": 0.5833,
+          "publisher": "Pleiades Publishing Ltd"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "author_year": "Hiltunen, Syri (2020)",
+      "title": "Highly Renewable District Heat for Espoo Utilizing Waste Heat Sources",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Highly Renewable District Heat for Espoo Utilizing Waste Heat Sources",
+          "doi": "10.3390/en13143551",
+          "year": 2020,
+          "similarity": 1.0,
+          "publisher": "MDPI AG"
+        },
+        {
+          "title": "Utilizing Waste Heat",
+          "doi": "10.1038/scientificamerican04011903-86pbuild",
+          "year": 1903,
+          "similarity": 0.4494,
+          "publisher": "Springer Science and Business Media LLC"
+        },
+        {
+          "title": "Low-temperature waste heat enabling abandoning coal in Espoo district heating system",
+          "doi": "10.1016/j.energy.2021.120916",
+          "year": 2021,
+          "similarity": 0.3816,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "author_year": "Hiltunen, Syri (2021)",
+      "title": "Low-temperature waste heat enabling abandoning coal in Espoo district heating system",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Low-temperature waste heat enabling abandoning coal in Espoo district heating system",
+          "doi": "10.1016/j.energy.2021.120916",
+          "year": 2021,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Assessment of Low-Temperature Waste Heat Utilization in District Heating Sector",
+          "doi": "10.1007/978-3-031-97333-8_4",
+          "year": 2025,
+          "similarity": 0.6708,
+          "publisher": "Springer Nature Switzerland"
+        },
+        {
+          "title": "Industrial waste heat utilization for low temperature district heating",
+          "doi": "10.1016/j.enpol.2013.06.104",
+          "year": 2013,
+          "similarity": 0.5098,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "author_year": "Khosravi, Laukkanen, Vuorinen, Syri (2021)",
+      "title": "Waste heat recovery from a data centre and 5G smart poles for low-temperature district heating network",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Waste heat recovery from a data centre and 5G smart poles for low-temperature district heating network",
+          "doi": "10.1016/j.energy.2020.119468",
+          "year": 2021,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "WASTE HEAT RECOVERY FROM DATA CENTER COOLING SYSTEM FOR DISTRICT HEATING",
+          "doi": "10.63044/w24jan126",
+          "year": 2024,
+          "similarity": 0.7168,
+          "publisher": "ASHRAE"
+        },
+        {
+          "title": "Optimization of data centre waste heat integration into the low-temperature district heating networks",
+          "doi": "10.1007/s11081-023-09837-5",
+          "year": 2023,
+          "similarity": 0.6567,
+          "publisher": "Springer Science and Business Media LLC"
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "author_year": "Huang et al. (2020)",
+      "title": "A review of data centers as prosumers in district energy systems",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Data Centers as Prosumers in Urban Energy Systems",
+          "doi": "10.1007/978-981-99-1222-3_4",
+          "year": 2023,
+          "similarity": 0.7965,
+          "publisher": "Springer Nature Singapore"
+        },
+        {
+          "title": "A review of data centers as prosumers in district energy systems: Renewable energy integration and waste heat reuse for district heating",
+          "doi": "10.1016/j.apenergy.2019.114109",
+          "year": 2020,
+          "similarity": 0.6432,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Multiregional Geo-Distributed Data Centers as Energy Prosumers for Computing-Energy-Carbon Collaborative Management",
+          "doi": "10.1109/tcc.2026.3731358",
+          "year": 2026,
+          "similarity": 0.5,
+          "publisher": "Institute of Electrical and Electronics Engineers (IEEE)"
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "author_year": "Tofani (2022)",
+      "title": "Integration of excess heat from Data Centres in Stockholm district heating system",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Strategic integration of urban excess heat sources in a district heating system: A Spatio-temporal optimisation methodology",
+          "doi": "10.1016/j.apenergy.2025.126236",
+          "year": 2025,
+          "similarity": 0.5842,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "High-temperature heat pump integration into district heating system",
+          "doi": "10.22616/erdev.2021.20.tf289",
+          "year": 2021,
+          "similarity": 0.5306,
+          "publisher": "Latvia University of Life Sciences and Technologies, Faculty of Engineering"
+        },
+        {
+          "title": "Covering District Heating Demand with Waste Heat from Data Centres",
+          "doi": "10.54337/ijsepm.8149",
+          "year": 2024,
+          "similarity": 0.4626,
+          "publisher": "Aalborg University"
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "author_year": "Sintong (2023)",
+      "title": "Data Centres as Prosumers: A Techno-Economic Analysis",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Solar PV for Swedish Prosumers – a Comprehensive Techno-Economic Analysis",
+          "doi": "10.18086/eurosun.2016.08.01",
+          "year": 2016,
+          "similarity": 0.6281,
+          "publisher": "International Solar Energy Society"
+        },
+        {
+          "title": "A Techno-Economic Analysis of Current Cooling Techniques in Irish Data Centres",
+          "doi": "10.1109/therminic.2019.8923482",
+          "year": 2019,
+          "similarity": 0.3906,
+          "publisher": "IEEE"
+        },
+        {
+          "title": "Techno-Economic and Sustainability Analysis of Potential Cooling Methods in Irish Data Centres",
+          "doi": "10.4236/jectc.2021.103003",
+          "year": 2021,
+          "similarity": 0.3194,
+          "publisher": "Scientific Research Publishing, Inc."
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "author_year": "Lind, Rundgren (2017)",
+      "title": "Industrial Symbiosis in Heat Recovery Collaborations between Data Centers and District Heating and Cooling Companies",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Comparative study for waste heat recovery in immersion cooling data centers with district heating and organic Rankine cycle (ORC)",
+          "doi": "10.1016/j.applthermaleng.2024.122479",
+          "year": 2024,
+          "similarity": 0.5679,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Environmental and economic assessment of industrial excess heat recovery collaborations through 4th generation district heating systems",
+          "doi": "10.1016/j.energy.2024.132630",
+          "year": 2024,
+          "similarity": 0.5498,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "WASTE HEAT RECOVERY FROM DATA CENTER COOLING SYSTEM FOR DISTRICT HEATING",
+          "doi": "10.63044/w24jan126",
+          "year": 2024,
+          "similarity": 0.5213,
+          "publisher": "ASHRAE"
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "author_year": "Petrović et al. (2020)",
+      "title": "The role of data centres in the future Danish energy system",
+      "status": "NETWORK_ERROR",
+      "candidates": [],
+      "error": "<HTTPError 429: 'Too Many Requests'>"
+    },
+    {
+      "nr": 12,
+      "author_year": "Sorknæs et al. (2022)",
+      "title": "The benefits of 4th generation district heating and energy efficient datacentres",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "The benefits of 4th generation district heating and energy efficient datacentres",
+          "doi": "10.1016/j.energy.2022.125215",
+          "year": 2022,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "The benefits of 4th generation district heating in a 100% renewable energy system",
+          "doi": "10.1016/j.energy.2020.119030",
+          "year": 2020,
+          "similarity": 0.7375,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Smart energy systems and 4th generation district heating",
+          "doi": "10.1016/j.energy.2016.07.105",
+          "year": 2016,
+          "similarity": 0.5882,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "author_year": "Jerez Monsalves, Bergaentzlé, Keles (2023)",
+      "title": "Impacts of flexible-cooling and waste-heat recovery from data centres on energy systems",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Impacts of Flexible-Cooling and Waste-Heat Recovery from Data Centres on Energy Systems: A Danish Case Study",
+          "doi": "10.2139/ssrn.4393502",
+          "year": 2023,
+          "similarity": 0.8947,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Impacts of flexible-cooling and waste-heat recovery from data centres on energy systems: A Danish case study",
+          "doi": "10.1016/j.energy.2023.128112",
+          "year": 2023,
+          "similarity": 0.8947,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Waste Heat Recovery from Cooling Systems of Data Centers",
+          "doi": "10.1007/978-3-031-30171-1_41",
+          "year": 2023,
+          "similarity": 0.5106,
+          "publisher": "Springer International Publishing"
+        }
+      ]
+    },
+    {
+      "nr": 14,
+      "author_year": "Davies, Maidment, Tozer (2016)",
+      "title": "Using data centres for combined heating and cooling: An investigation for London",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Using data centres for combined heating and cooling: An investigation for London",
+          "doi": "10.1016/j.applthermaleng.2015.09.111",
+          "year": 2016,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Solar Façade for a Combined Heating and Cooling System in London",
+          "doi": "10.4028/www.scientific.net/amm.284-287.1409",
+          "year": 2013,
+          "similarity": 0.6713,
+          "publisher": "Trans Tech Publications, Ltd."
+        },
+        {
+          "title": "Impingement Cooling Experimental Investigation Using Different Heating Elements",
+          "doi": "10.1016/j.egypro.2016.11.003",
+          "year": 2016,
+          "similarity": 0.4557,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 15,
+      "author_year": "Davies et al. (2023)",
+      "title": "Evaluation of low temperature waste heat as a low carbon heat resource in the UK",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Evaluation of low temperature waste heat as a low carbon heat resource in the UK",
+          "doi": "10.1016/j.applthermaleng.2023.121283",
+          "year": 2023,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Evaluation of Low Temperature Waste Heat as a Low Carbon Heat Resource",
+          "doi": "10.2139/ssrn.4240393",
+          "year": 2022,
+          "similarity": 0.9333,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Decarbonisation of heat: Analysis of the potential of low temperature waste heat in UK industries",
+          "doi": "10.1016/j.jclepro.2022.133759",
+          "year": 2022,
+          "similarity": 0.5227,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 16,
+      "author_year": "Marques, Tozer, Revesz et al. (2020)",
+      "title": "GreenSCIES – Integration with Data Centres",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Semantic Data Model for Energy Efficient Integration of Data Centres in Energy Grids",
+          "doi": "10.1201/9780367814397-3",
+          "year": 2021,
+          "similarity": 0.5161,
+          "publisher": "CRC Press"
+        },
+        {
+          "title": "Data Centres",
+          "doi": "10.1002/9781119990048.ch12",
+          "year": 2012,
+          "similarity": 0.4615,
+          "publisher": "Wiley"
+        },
+        {
+          "title": "Data Centres",
+          "doi": "10.1201/9780429287817-9",
+          "year": 2021,
+          "similarity": 0.4615,
+          "publisher": "CRC Press"
+        }
+      ]
+    },
+    {
+      "nr": 17,
+      "author_year": "Jürgens et al. (2024)",
+      "title": "Covering District Heating Demand with Waste Heat from Data Centres: A Feasibility Study in Frankfurt, Germany",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Covering District Heating Demand with Waste Heat from Data Centres",
+          "doi": "10.54337/ijsepm.8149",
+          "year": 2024,
+          "similarity": 0.763,
+          "publisher": "Aalborg University"
+        },
+        {
+          "title": "Assessing Demand Response in District Heating with Waste-Heat Utilization",
+          "doi": "10.2139/ssrn.4984233",
+          "year": 2024,
+          "similarity": 0.4916,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Waste heat recovery from urban air cooled data centres to increase energy efficiency of district heating networks",
+          "doi": "10.1016/j.scs.2018.12.012",
+          "year": 2019,
+          "similarity": 0.2636,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 18,
+      "author_year": "Oró, Taddeo, Salom (2019)",
+      "title": "Waste heat recovery from urban air cooled data centres to increase energy efficiency of district heating networks",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Waste heat recovery from urban air cooled data centres to increase energy efficiency of district heating networks",
+          "doi": "10.1016/j.scs.2018.12.012",
+          "year": 2019,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Energy Efficiency Through Waste-Heat Recovery: Hybrid Data-Centre Cooling in District Heating Applications",
+          "doi": "10.3390/app16010323",
+          "year": 2025,
+          "similarity": 0.3611,
+          "publisher": "MDPI AG"
+        },
+        {
+          "title": "Covering District Heating Demand with Waste Heat from Data Centres",
+          "doi": "10.54337/ijsepm.8149",
+          "year": 2024,
+          "similarity": 0.3575,
+          "publisher": "Aalborg University"
+        }
+      ]
+    },
+    {
+      "nr": 19,
+      "author_year": "Socci, Rocchetti, Verzino, Zini, Talluri (2025)",
+      "title": "Enhancing third-generation district heating networks with data centre waste heat recovery",
+      "status": "AMBIGUOUS_REVIEW_REQUIRED",
+      "candidates": [
+        {
+          "title": "Enhancing third-generation district heating networks with data centre waste heat recovery: analysis of a case study in Italy",
+          "doi": "10.1016/j.energy.2024.134013",
+          "year": 2024,
+          "similarity": 0.8381,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Energy Efficiency Through Waste-Heat Recovery: Hybrid Data-Centre Cooling in District Heating Applications",
+          "doi": "10.3390/app16010323",
+          "year": 2025,
+          "similarity": 0.3455,
+          "publisher": "MDPI AG"
+        },
+        {
+          "title": "Waste heat recovery for district heating",
+          "doi": "10.1016/b978-0-443-31576-3.00017-8",
+          "year": 2026,
+          "similarity": 0.2969,
+          "publisher": "Elsevier"
+        }
+      ]
+    },
+    {
+      "nr": 20,
+      "author_year": "Verzino, Talluri, Rocchetti, Socci (2026)",
+      "title": "Smart Reuse of Waste Heat from Data Centres: Energy and Exergy Analysis for a District-Heating Network in Bulgaria",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Smart Reuse of Waste Heat from Data Centres: Energy and Exergy Analysis for a District-Heating Network in Bulgaria",
+          "doi": "10.3390/en19030800",
+          "year": 2026,
+          "similarity": 1.0,
+          "publisher": "MDPI AG"
+        },
+        {
+          "title": "Exergy Analysis for District Heating Network",
+          "doi": "10.1016/j.egypro.2017.04.053",
+          "year": 2017,
+          "similarity": 0.5513,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Covering District Heating Demand with Waste Heat from Data Centres",
+          "doi": "10.54337/ijsepm.8149",
+          "year": 2024,
+          "similarity": 0.3708,
+          "publisher": "Aalborg University"
+        }
+      ]
+    },
+    {
+      "nr": 21,
+      "author_year": "Ebrahimi, Jones, Fleischer (2014)",
+      "title": "Review of data center cooling technology, operating conditions and low-grade waste heat recovery opportunities",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "A review of data center cooling technology, operating conditions and the corresponding low-grade waste heat recovery opportunities",
+          "doi": "10.1016/j.rser.2013.12.007",
+          "year": 2014,
+          "similarity": 0.9153,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "WASTE HEAT RECOVERY FROM DATA CENTER COOLING SYSTEM FOR DISTRICT HEATING",
+          "doi": "10.63044/w24jan126",
+          "year": 2024,
+          "similarity": 0.4111,
+          "publisher": "ASHRAE"
+        },
+        {
+          "title": "LOW GRADE HEAT RECOVERY FROM COOLING TOWER",
+          "doi": "10.46647/ijetms.2023.v07i05.061",
+          "year": 2023,
+          "similarity": 0.3467,
+          "publisher": "Mallikarjuna Infosys"
+        }
+      ]
+    },
+    {
+      "nr": 22,
+      "author_year": "Yuan et al. (2023)",
+      "title": "Waste heat recoveries in data centers: A review",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Waste heat recoveries in data centers: A review",
+          "doi": "10.1016/j.rser.2023.113777",
+          "year": 2023,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Waste heat from data centers: An investment analysis",
+          "doi": "10.1016/j.scs.2018.10.023",
+          "year": 2019,
+          "similarity": 0.6392,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Data centers waste heat recovery technologies: Review and evaluation",
+          "doi": "10.1016/j.apenergy.2025.125489",
+          "year": 2025,
+          "similarity": 0.4956,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 23,
+      "author_year": "Yuan et al. (2025)",
+      "title": "Data center waste heat for district heating networks: A review",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Data center waste heat for district heating networks: A review",
+          "doi": "10.1016/j.rser.2025.115863",
+          "year": 2025,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "WASTE HEAT RECOVERY FROM DATA CENTER COOLING SYSTEM FOR DISTRICT HEATING",
+          "doi": "10.63044/w24jan126",
+          "year": 2024,
+          "similarity": 0.5414,
+          "publisher": "ASHRAE"
+        },
+        {
+          "title": "Utilizing data center waste heat in district heating – Impacts on energy efficiency and prospects for low-temperature district heating networks",
+          "doi": "10.1016/j.energy.2017.08.078",
+          "year": 2017,
+          "similarity": 0.5174,
+          "publisher": "Elsevier BV"
+        }
+      ]
+    },
+    {
+      "nr": 24,
+      "author_year": "He, Ding, Liu, Li (2018)",
+      "title": "Analysis of a district heating system using waste heat in a distributed cooling data center",
+      "status": "HIGH_TITLE_MATCH_REVIEW_AUTHOR_YEAR",
+      "candidates": [
+        {
+          "title": "Analysis of a district heating system using waste heat in a distributed cooling data center",
+          "doi": "10.1016/j.applthermaleng.2018.06.036",
+          "year": 2018,
+          "similarity": 1.0,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "Data center waste heat for district heating networks: A review",
+          "doi": "10.1016/j.rser.2025.115863",
+          "year": 2025,
+          "similarity": 0.3947,
+          "publisher": "Elsevier BV"
+        },
+        {
+          "title": "WASTE HEAT RECOVERY FROM DATA CENTER COOLING SYSTEM FOR DISTRICT HEATING",
+          "doi": "10.63044/w24jan126",
+          "year": 2024,
+          "similarity": 0.2945,
+          "publisher": "ASHRAE"
+        }
+      ]
+    }
+  ]
+}

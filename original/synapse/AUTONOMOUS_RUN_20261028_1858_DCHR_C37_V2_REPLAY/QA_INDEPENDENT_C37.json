@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "hours": 8760,
+  "decimal_storage_balances": 8760,
+  "max_storage_balance_error_MWh": "2.40475E-14",
+  "independent_annual_checks": 6,
+  "source_oracle_comparisons": 192720,
+  "qa_type": "independent Decimal CSV/energy balance + MATLAB summary parity",
+  "no_matlab_run": true,
+  "no_simulink_parity": true
+}

@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "rows": 8064,
+  "decimal_invariant_checks": 225792
+}

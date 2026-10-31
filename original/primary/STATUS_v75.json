@@ -1,0 +1,79 @@
+{
+  "version": "0.75",
+  "timestamp_utc": "2026-10-12T08:17:12.957594+00:00",
+  "inherits": "STATUS_v74.json",
+  "result": "SAVED_STATEFLOW_REPORTING_PROVENANCE_REPAIR_ACCEPTED_QA_PASS",
+  "new_model": true,
+  "saved_model": "matlab/simulink/DCHR_Earliest_Dispatch_Stateflow_v75.slx",
+  "saved_model_version": "0.75",
+  "model_executed_this_run": true,
+  "corrected_model_accepted": true,
+  "correction_scope": "Input provenance and production reporting consistency; thermal dispatch unchanged",
+  "model_sha256": "d394da93637334bf4be55ed8b31b2660a74b8970a96a11d1fd8aa172032defb5",
+  "inherited_model_acceptance_preserved": true,
+  "matlab_passed": 298,
+  "matlab_failed": 0,
+  "independent_passed": 12049,
+  "independent_failed": 0,
+  "reviewer_selfchecks": 6,
+  "actual_corruption_rejections": 17,
+  "legacy_report_acceptance_counterexamples": 17,
+  "complete_saved_model_runs": 10,
+  "actual_saved_v73r2_comparisons": 9,
+  "completed_held_intervals": 125,
+  "positive_event_segments": 129,
+  "interior_events": 4,
+  "required_actual_final_mode_coverage": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "matlab_metadata": {
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "license_observed": 1,
+    "stateflow_ver": [],
+    "chart_count": 1,
+    "action_language": "MATLAB",
+    "simulation_mode": "normal",
+    "states": [
+      "IDLE",
+      "HEAT_RECOVERY",
+      "STORAGE_CHARGE",
+      "STORAGE_DISCHARGE",
+      "BACKUP",
+      "UNMET_DEMAND"
+    ]
+  },
+  "result_directory": "results/reporting_provenance_v75_20261012T081420_308048Z",
+  "independent_qa": "results/reporting_provenance_v75_20261012T081420_308048Z/independent_QA_v75_20261012T081654_744292Z.json",
+  "derivation": "audit/Reporting_provenance_derivation_v75.md",
+  "results": "audit/Reporting_provenance_results_v75.md",
+  "source_code": [
+    "audit/scaffold_reporting_v75.py",
+    "audit/reporting_provenance_v75.py",
+    "audit/run_reporting_provenance_v75.ps1",
+    "matlab/run_reporting_provenance_v75.m",
+    "matlab/simulink/earliest_dispatch_kernel_v75.m",
+    "matlab/simulink/build_earliest_dispatch_v75.m",
+    "matlab/+dchr/report_held_schedule_v75.m",
+    "matlab/+dchr/validate_reporting_trace_v75.m"
+  ],
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "development_failures_preserved": [
+    "results/reporting_provenance_v75_20261012T081216_110192Z"
+  ],
+  "limitations": [
+    "Synthetic bounded schedules; no annual representation, calibration, article replication or measured physical validation. Full primary signoffs remain 0/31.",
+    "Same-agent algorithmic independence at 120/160 digits; MATLAB MAT reopening and binary export, not an independent HDF5 reader or independent personnel.",
+    "v75 adds input provenance and reporting consistency only. Thermal policy is unchanged and bitwise compared with saved v73r2 outside schema/provenance fields. Macro analytic segments, no solver-clock event firing or generated-code claim.",
+    "Consistency checks reject demonstrated single faults. Coordinated replacement of provenance, segments, headers and inputs is not authenticated. Independent physical-equation QA remains required.",
+    "Inherited finite engineering arithmetic, span, event-order, dwell, clock and segment-budget restrictions remain. Production reporter does not independently recompute all nonlinear thermal trajectories."
+  ],
+  "next_actionable_task": "Resume primary equipment-map evidence and boundary audit using audit/HP_upstream_boundary_results_v44.md. Seek a new accessible route to source20 upstream [62] primary text and performance-correlation supplement, DOI 10.1016/j.tsep.2025.103513; distinguish verified text/coefficients/domains from metadata and document any access blocker. Trace refrigerant versus water axes and compressor/auxiliary power before a separate calibrated backend. Preserve accepted v57/v66/v73r2/v75 and all v74/v75 evidence; no annual or calibrated performance inference."
+}

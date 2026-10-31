@@ -1,0 +1,8 @@
+{
+  "source": 20,
+  "tests": 8,
+  "status": "PASS",
+  "errors": [],
+  "failures": [],
+  "scope": "Publisher printed-equation unit sanity only; source replicability not established"
+}

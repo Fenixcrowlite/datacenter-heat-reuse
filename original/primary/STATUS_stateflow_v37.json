@@ -1,0 +1,88 @@
+{
+  "version": "0.37",
+  "inherits": "STATUS_stateflow_v36.json",
+  "research_inherits": "STATUS_v25.json",
+  "timestamp_utc": "2026-10-10T08:01:23.118491+00:00",
+  "checkpoint": "Fresh saved-Stateflow numerical-domain defect audit",
+  "stateflow_acceptance": "PASS_DEFECT_REPRODUCTION_ONLY",
+  "model_version": "0.36",
+  "new_model": false,
+  "generated_model": "matlab\\simulink\\DCHR_Dispatch_Stateflow_v36.slx",
+  "model_sha256": "af24d0c3b06f08bf7a12066cbf5bc81b1f968b9917bcb1871550504b6d4396aa",
+  "controller_defect": "OPEN: cumulative clock accuracy, unresolved bands, HP slope overflow",
+  "result_directory": "results\\stateflow_resolution_v37_20261010T075607048Z",
+  "independent_qa": "results\\stateflow_resolution_v37_20261010T075607048Z\\independent_QA_v37_20261010T075836_225950Z.json",
+  "matlab_batch_receipts": [
+    "audit\\Stateflow_execution_v37_20261010T075603382Z.json",
+    "audit\\Stateflow_execution_v37_20261010T075700550Z.json",
+    "audit\\Stateflow_execution_v37_20261010T075753048Z.json"
+  ],
+  "matlab_batch_exit_code": 0,
+  "scenarios": 24,
+  "completed_scenarios": 19,
+  "completed_intervals": 3382,
+  "runtime_rejections": 5,
+  "component_probes": 4,
+  "harness_checks_passed": 3,
+  "harness_checks_failed": 0,
+  "independent_checks_passed": 15924,
+  "independent_checks_failed": 0,
+  "independent_check_breakdown": {
+    "artifact": {
+      "passed": 300,
+      "failed": 0
+    },
+    "baseline": {
+      "passed": 337,
+      "failed": 0
+    },
+    "clock": {
+      "passed": 6742,
+      "failed": 0
+    },
+    "equation": {
+      "passed": 6730,
+      "failed": 0
+    },
+    "resolution": {
+      "passed": 1,
+      "failed": 0
+    },
+    "band": {
+      "passed": 12,
+      "failed": 0
+    },
+    "HP": {
+      "passed": 16,
+      "failed": 0
+    },
+    "defect": {
+      "passed": 3,
+      "failed": 0
+    },
+    "archive": {
+      "passed": 2,
+      "failed": 0
+    },
+    "preservation": {
+      "passed": 1781,
+      "failed": 0
+    }
+  },
+  "equation_checks_passed": 6730,
+  "previous_immutable_entries_preserved": 1781,
+  "full_primary_signoffs": 0,
+  "total_sources": 31,
+  "primary_article_replication": false,
+  "independent_physical_validation": "NOT_TESTED",
+  "limitations": [
+    "Defect reproduction only; no new SLX or corrected-controller acceptance. Prior v36 fixture acceptance remains preserved.",
+    "Clock bias is a cumulative-accuracy gap; v36 local tolerance checks pass. No observed early clean dwell transition is claimed.",
+    "Aged-clock, near-ulp bands and subnormal HP powers are numerical stress fixtures, not plausible equipment specifications.",
+    "HP component returns Inf but actual saved-model runtime COP gate rejects it; no invalid successful plant output is claimed.",
+    "Stateflow license test is true and saved charts execute; ver(Stateflow) returned empty and the full installed-product list lacks a Stateflow entry. No standalone product version is fabricated.",
+    "Independent QA is algorithm/artifact QA in the same agent, not a separate human/agent or physical validation.",
+    "Normal-mode host planning and macro-time analytic segments remain; standalone code generation, solver-clock events, calibrated hydraulics/stratification/startup losses and article replication remain untested."
+  ],
+  "next": "Implement additive saved Stateflow v38: reject unresolved capacity/restart/cutoff bands before planning; replace overflow-prone HP slope arithmetic with a finite normalized-load component; implement compensated persistent physical-hour clocks with declared cumulative accuracy and reset/guard semantics. Execute six modes, v36 changing-input references, preserved v37 stress/counterexamples, clock partitions, cutoff overlap and source/request-limited HP cases; independently export MAT and compare exact-input Decimal clocks and normalized/analytic HP laws. Preserve every prior model/evidence; do not claim physical calibration."
+}

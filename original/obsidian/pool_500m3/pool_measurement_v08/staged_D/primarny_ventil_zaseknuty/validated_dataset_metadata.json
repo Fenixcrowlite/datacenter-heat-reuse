@@ -1,0 +1,26 @@
+{
+  "status": "ACCEPTED_AS_INGEST_NOT_AS_MODEL_VALIDATION",
+  "dataset_id": "synthetic_replay_v07_primarny_ventil_zaseknuty",
+  "provenance": "D",
+  "raw_SHA256": "46ca7a6e62bbefbadfd3c340360ce5943b654e24428db1fb8a0979a0f3a862d1",
+  "records": 672,
+  "time_start_utc": "2026-10-23T00:00:00+00:00",
+  "time_end_utc": "2026-10-29T23:45:00+00:00",
+  "step_s": 900,
+  "source_uri": "synthetic:v07_20261023/primarny_ventil_zaseknuty",
+  "units": {
+    "Q_DC_available_W": "W",
+    "T_DC_C": "C",
+    "Q_DH_request_W": "W",
+    "T_air_C": "C",
+    "RH": "1",
+    "T_pool_sensor1_C": "C",
+    "T_pool_sensor2_C": "C",
+    "pool_flow_m3h": "m3/h",
+    "P_IT_W": "W",
+    "Q_REJECT_measured_W": "W",
+    "main_reject_ok": "1",
+    "backup_reject_ok": "1"
+  },
+  "limitations": "These data are staged and independently checked. They are NOT yet inputs to the current virtual-sensor Stateflow v07 closed loop."
+}

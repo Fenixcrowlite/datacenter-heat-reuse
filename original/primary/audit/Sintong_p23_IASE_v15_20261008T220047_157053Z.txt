@@ -1,0 +1,19 @@
+ 
+23
+ 
+ 
+Figure 6. System Configuration A1 
+ 
+The exhaust air coming out from the server racks located in the hot aisle is 
+called return air (RA). This RA is brought back to the CRAH system before 
+being utilized again as supply air (TSA) to cool down the server racks. Return 
+air temperature (TRA) depends on server utilization and thus its values vary 
+accordingly with hourly server operation. 
+3.1.2 System Configuration A2: DC without WHR & with FC 
+In this configuration, FC is added to the data centre cooling system from con-
+figuration A1. Indirect Air-Side Economizer is chosen for this FC model as 
+developed by Park, S. [38]. This type of FC model is chosen due to its ability 
+to avoid condensation problems by not directly supplying outdoor air to server 
+racks. System configuration A2 can be depicted in figure 7. 
+ 
+Figure 7. System Configuration A2 

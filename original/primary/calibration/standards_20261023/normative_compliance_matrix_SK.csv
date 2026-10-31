@@ -1,0 +1,21 @@
+oblast;parameter;predpis_alebo_norma;oficialny_odkaz;pozadovana_kontrola;stav;priorita;dalsi_krok;zodpovednost
+DC;PUE;ISO IEC 30134-2 2026;https://www.iso.org/standard/30134-2;merane E_DC delene E_IT za rovnake obdobie;DEFINITION_ONLY;P1;zaviest meranie a kalendarny interval;calibration
+DC;ERF;EU 2024/1364 Annex II III EN 50600-4-6;https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj;E_REUSE priamo pri predani mimo hranice DC delene E_DC;MODEL_REPORT_DEFECT;P0;pridat energeticky merac a hranice DC;calibration
+DC;PUE benchmark;Uptime 2026;https://intelligence.uptimeinstitute.com/resource/growing-pue-advantage-larger-data-centers;1.52 priemer 1.36 kapacitne vazeny benchmark;BENCHMARK_VERIFIED_NOT_FACILITY;P2;spustat citlivost 1.20 1.36 1.52;calibration
+DC;Chladenie IT;EN 50600 series guidance;https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj;nezavisle zalohovane chladenie pri vypadku odberu tepla;UNVERIFIED;P0;validovat fail safe a teplotne limity;pool_workstream
+POOL;typ bazena;STN EN 15288-1+A1;https://normy.normoff.gov.sk/norma/139372/?lang=en;verejny sportovy alebo rekreacny;CLASS_NOT_CERTIFIED;P0;dokumentovat klasifikaciu a plny text normy;pool_workstream
+POOL;prevadzka;STN EN 15288-2;https://normy.normoff.gov.sk/norma/128828/?lang=en;bezpecnost prevadzky dohliadanie a predpisy;UNVERIFIED;P1;ziskat plny text a riadiaci plan;pool_workstream
+POOL;vybavenie;STN EN 13451-1+A1 2024;https://normy.normoff.gov.sk/norma/139373/;bezpecnost bazenoveho vybavenia;UNVERIFIED;P1;overit katalog plneho znenia;pool_workstream
+POOL;max teplota plavecky bazen;Vyhlaska 308/2012 §8 7;https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2012/308/20121015.html;max 28 C podla publikovaneho textu;FAIL_OFF_28_2_C;P0;T_off plus meracia chyba plus dobeh pod 28 a potvrdit aktualne znenie;pool_workstream
+POOL;pravidla sutaze;World Aquatics February 2026;https://www.worldaquatics.com/rules/competition-regulations;geometria podla konkretnej sutaznej triedy;NOT_SPORT_CERTIFIED;P2;neoznacovat 25x12.5x1.6 ako certifikovany sutazny;pool_workstream
+POOL;vyspar;ASHRAE Handbook HVAC Applications pools;https://handbook.ashrae.org/;kalibracia odparovania RH aktivita plachta;SCENARIO_ONLY;P1;zabezpecit prevadzkove merania;pool_workstream
+POOL;vnutorne prostredie;STN EN 16798-1;https://normy.normoff.gov.sk/norma/129426/;parametre tepla a kvality vzduchu v hale;UNMODELED_NATATORIUM;P1;pridat VZT a odvlhcenie oddelene;pool_workstream
+HP;vykon a COP;STN EN 14511-2 2022;https://normy.normoff.gov.sk/norma/135891/;katalogove COP pri certifikovanych podmienkach;FIXED_COP_SCENARIO;P1;ziskat datovu mapu COP a PLR;calibration
+HP;bezpecnost chladiva;STN EN 378-1+A1;https://normy.normoff.gov.sk/norma/134104/;klasifikacia chladiv a bezpečnost;UNVERIFIED;P1;urcit druh chladiva a podmienky umiestnenia;pool_workstream
+HP;F gas;EU 2024/573;https://eur-lex.europa.eu/eli/reg/2024/573/oj;aplikovatelne podla chladiva a zariadenia;NOT_SELECTED;P1;vybrat zariadenie a skontrolovat F gas;pool_workstream
+DH;navrh teplovodnych systemov;STN EN 12828+A1;https://normy.normoff.gov.sk/norma/119367/;tlak prietok expanzia poistna ochrana;UNVERIFIED;P1;hydraulika a tlakove ztraty;calibration
+DATA;pocasie;NASA POWER 2025 hourly;https://power.larc.nasa.gov/docs/services/api/temporal/hourly/;8760 hodnot Bratislava modelovane reanalýzou;REAL_DATA_INGESTED_8760;P0;doplnit stanicove merania pre bias;calibration
+DATA;elektrina;Eurostat nrg_pc_205;https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_205/default/table?lang=en;SK MWH70000 149999 bez DPH a rok 2025;REAL_DATA_INGESTED;P0;prejst ku kontraktu DC ak dostupny;calibration
+DATA;plyn;Eurostat nrg_pc_203;https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_203/default/table?lang=en;SK GJ100000 999999 bez DPH a rok 2025;REAL_DATA_INGESTED;P0;verifikovat ročnú spotrebu zmluvu a distribuciu;calibration
+DATA;zatazenie IT;meranie konkretneho DC;none;8760 skutocnych elektrickych odberov;SYNTHETIC_ONLY;P0;poziadat skutocne data alebo deklarovat simulacny scenar;calibration
+DATA;emise;metodika krajina rok;none;emisny faktor 2025 s uvedenim scope market location;SYNTHETIC_ONLY;P2;vybrat a verifikovat faktor;calibration

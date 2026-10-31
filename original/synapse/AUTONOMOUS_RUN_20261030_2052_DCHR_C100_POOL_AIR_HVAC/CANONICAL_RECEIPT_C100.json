@@ -1,0 +1,7 @@
+{
+  "actor": "chatgpt-dchr-c100-air-hvac-20261030-2052",
+  "event_id": 1460,
+  "evidence_sha256": "60bf63c6970eec14bf0eb0bd55e56867d8615e4d0e73188d882df07ed53a156c",
+  "manifest_sha256": "8502c3d9c30768bc500220bfeb82e71b7c5bb19350e5760e9aa7fa6b29d08016",
+  "task_id": "scc-2aab24704c2bd0"
+}

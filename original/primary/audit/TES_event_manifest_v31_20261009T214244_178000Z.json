@@ -1,0 +1,934 @@
+{
+  "version": "0.31",
+  "timestamp_utc": "2026-10-09T21:42:44.178000+00:00",
+  "model_release": "0.30",
+  "previous_immutable_entries_preserved": 413,
+  "mutable_exclusions": [
+    "automation/engineering_progress.md",
+    "automation/STATEFLOW_ACCEPTANCE.md",
+    "active closure log",
+    "cache/codegen"
+  ],
+  "files": [
+    {
+      "path": "audit/finalize_TES_event_v31.py",
+      "bytes": 16437,
+      "sha256": "6be42f7a5ca266be0a7a685b64438cbc5839b5fb14f6abb40501a8becb82b322"
+    },
+    {
+      "path": "audit/TES_boundary_event_derivation_v31.md",
+      "bytes": 6314,
+      "sha256": "ab677a457c8e3d48375da15931d688f2716c3768dff0ba065b67b567681be455"
+    },
+    {
+      "path": "audit/TES_event_execution_receipt_v31_20261009T213724568Z.json",
+      "bytes": 388,
+      "sha256": "4cebb98f6acd14f934df9d2e23ca6f6409e9ba20c3e24df9d6cd4381f8474a11"
+    },
+    {
+      "path": "audit/TES_event_execution_receipt_v31_local_20261009T213737973Z.json",
+      "bytes": 394,
+      "sha256": "12413c7fdd47c04edca0445cbeae387997bc569f3a574268a975e8ae3946d5ec"
+    },
+    {
+      "path": "audit/TES_event_execution_receipt_v31_local_20261009T214001224Z.json",
+      "bytes": 394,
+      "sha256": "8b63c4675bfc713861f5c7cbb4479aeb703844d43327dae1789c881f8dd6b124"
+    },
+    {
+      "path": "audit/TES_event_independent_QA_v31_20261009T214221_956636Z.json",
+      "bytes": 3591001,
+      "sha256": "4a5e126831d83ef71941feb40e6b45009a94312e437ce2957586e6c21d903fd8"
+    },
+    {
+      "path": "audit/TES_event_reference_v31.py",
+      "bytes": 9586,
+      "sha256": "c8700cf8be38145ac9f35cac1aa5a94d313612a9a6d7bbf1b40ae8ecb735e858"
+    },
+    {
+      "path": "audit/TES_event_results_v31.md",
+      "bytes": 6662,
+      "sha256": "798ba862f1b4b91704a4c610b09aa90b1b8075bccb53e016b5e7d38453351d80"
+    },
+    {
+      "path": "audit/TES_event_spec_v31_20261009T213548_041033Z/cases.json",
+      "bytes": 102697,
+      "sha256": "180f1969f6692dab44e568ca5a424603d50192022dc304f295e1c89b4c4857cf"
+    },
+    {
+      "path": "audit/TES_event_spec_v31_20261009T213548_041033Z/component_vectors.csv",
+      "bytes": 33543,
+      "sha256": "5b9e7993e8434f24013744e6ee6d85b663d88cd4199274c6c03ead83aaad8512"
+    },
+    {
+      "path": "audit/TES_event_spec_v31_20261009T213548_041033Z/equation_qa.json",
+      "bytes": 46382,
+      "sha256": "aea6f3bd2fd1dacd683f506e6e22d74213df0c31ed76265738f1fc94ae331720"
+    },
+    {
+      "path": "audit/TES_event_spec_v31_20261009T213713_266234Z/cases.json",
+      "bytes": 116020,
+      "sha256": "1946bea6dff111b4e185b225aeb3ffaa6e845af5507d1b0acfa581901d451052"
+    },
+    {
+      "path": "audit/TES_event_spec_v31_20261009T213713_266234Z/component_vectors.csv",
+      "bytes": 33543,
+      "sha256": "5b9e7993e8434f24013744e6ee6d85b663d88cd4199274c6c03ead83aaad8512"
+    },
+    {
+      "path": "audit/TES_event_spec_v31_20261009T213713_266234Z/equation_qa.json",
+      "bytes": 46382,
+      "sha256": "b91475da9fa0ba232c38a9fbd6722136683df8ce5dbdccb7c368e971084dcc8e"
+    },
+    {
+      "path": "audit/verify_TES_event_v31.py",
+      "bytes": 13248,
+      "sha256": "f2c3c8c1b81bce789d52a681b25ba4976d3b43f3b59df65a5cae571aa5cabc12"
+    },
+    {
+      "path": "automation/logs/TES_event_equations_v31_20261009T213547865Z.log",
+      "bytes": 185,
+      "sha256": "8836577aa195f1efab3648f79d7058faf0783942acca1980035ab9afb990e509"
+    },
+    {
+      "path": "automation/logs/TES_event_equations_v31_20261009T213713116Z.log",
+      "bytes": 185,
+      "sha256": "4d3d2f8b4a9d8911022f219ed41cb59efa77001eecfa3971244cf56fb7d07e5d"
+    },
+    {
+      "path": "automation/logs/TES_event_independent_QA_v31_20261009T214220584Z.log",
+      "bytes": 361,
+      "sha256": "584d79de6232f0c22a8250dc4d2bef778cb008d2ebfc405eade38a4b0a7d4741"
+    },
+    {
+      "path": "automation/logs/TES_event_matlab_v31_20261009T213724568Z.log",
+      "bytes": 194,
+      "sha256": "f8b9a08e114d5a97ade5f54b9afd53077ad0dceb5341be7908959fb388cecd54"
+    },
+    {
+      "path": "automation/logs/TES_event_matlab_v31_local_20261009T213737973Z.log",
+      "bytes": 62807,
+      "sha256": "adcd97c0348e960404741d50e07263008efa16fd0f01f12ff02cae1c9402c66a"
+    },
+    {
+      "path": "automation/logs/TES_event_matlab_v31_local_20261009T214001224Z.log",
+      "bytes": 62301,
+      "sha256": "d1d809dd0fc851d9add048acd9e39d9c2834c233a574fb80668e67f4e693484e"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_stateflow_v31.md",
+      "bytes": 1198,
+      "sha256": "0012fcea73d42ff30054392240f7592a6a8e63a69e64a69fb52c7b9d57f8c5a2"
+    },
+    {
+      "path": "matlab/+dchr/+components/storage_event_kernel_v31.m",
+      "bytes": 3623,
+      "sha256": "a277a4e8ef6bc5b5bf13dc1199c567f64b5848972650e107a67c682c77aecf20"
+    },
+    {
+      "path": "matlab/simulink/export_TES_event_mat_audit_v31.m",
+      "bytes": 1663,
+      "sha256": "3bc70eeb281758c775ae9a98836ddfdcd767da25e29aaf4a34c74cc7b72fde7a"
+    },
+    {
+      "path": "matlab/simulink/run_TES_event_comparison_v31.m",
+      "bytes": 10172,
+      "sha256": "2252726b5af395a4959af2d88ad61177bc0ae679d6801366d7d195a1904ddd96"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/assertions_v31.csv",
+      "bytes": 108950,
+      "sha256": "f111493f298eb58212f3fa74c82d7af81bc7266c39aeb200cc1b0844b121a1a8"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/backup_only_dt_0p125_simulation.mat",
+      "bytes": 4657,
+      "sha256": "1f8daab45ff0569b66937c744920230f5f85086e93c51f0d87f96db8c22d1664"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/backup_only_dt_0p25_simulation.mat",
+      "bytes": 4773,
+      "sha256": "23397d2e412b82c6140bbc03e6660de800e5072274a1ea2d997d26007ff5f1bd"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/backup_only_dt_0p5_simulation.mat",
+      "bytes": 4569,
+      "sha256": "96e79784f03859dddd2ff1d4555b77be299fa613f73cda60dd9ae626d094f9d4"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/backup_only_dt_1p0_simulation.mat",
+      "bytes": 4358,
+      "sha256": "17f407e2f5c0ba31ede23d5c0eed8b4b331405ea91116983a2b5dc1b3171e07e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/backup_only_dt_2p0_simulation.mat",
+      "bytes": 4271,
+      "sha256": "c8d93331e4794beab9a66234b20acaa4fef0a0be174f0a3f7e9d338411ac76f9"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/capacity_dt_0p125_simulation.mat",
+      "bytes": 5090,
+      "sha256": "d9fc02e4f3eb852181e6b6cd6187e19065937b78bd94f7db2f0d890d2710d866"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/capacity_dt_0p25_simulation.mat",
+      "bytes": 5083,
+      "sha256": "fe86f1c3d13d8dceec8a1a1e34fa14d6d60f329803a933ec236415519e66324c"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/capacity_dt_0p5_simulation.mat",
+      "bytes": 4821,
+      "sha256": "071f5c97223eb15a908904567372a7b4bddd6bf8a164ce48c7c4396a8096f74f"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/capacity_dt_1p0_simulation.mat",
+      "bytes": 4518,
+      "sha256": "a21784be07946a57b24a93a94c0e050bad7af13448c3e8457f805078d110d358"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/capacity_dt_2p0_simulation.mat",
+      "bytes": 5654,
+      "sha256": "7a46e0a6e68c18833d3b24e5d8da3bcb963dae6f1ccb2cb7a3337d0dde0ee3d8"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/component_domain_v31.json",
+      "bytes": 1726,
+      "sha256": "fe80623455ed6655b13dfc3741551fd6646ee8c03c15a1cfc917ec3d66db1c1b"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/component_trace_v31.csv",
+      "bytes": 28522,
+      "sha256": "12f0b9fc48daee89603e1571a998b54303918423466f881e29df9905b6ebd723"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/cutoff_dt_0p125_simulation.mat",
+      "bytes": 5490,
+      "sha256": "e3ca2b7fa575cc531e8e48b8669d01f174a388db8791cf8e9a156c589a8b6515"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/cutoff_dt_0p25_simulation.mat",
+      "bytes": 5177,
+      "sha256": "15f8ca8fcff5b1238de674a75ede61a25dd12b2061dbb1884349fac49564bc9f"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/cutoff_dt_0p5_simulation.mat",
+      "bytes": 4781,
+      "sha256": "ed180c28147f0894b6e489f22ab47398907cbb492184e411d000b424b4087bbc"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/cutoff_dt_1p0_simulation.mat",
+      "bytes": 4473,
+      "sha256": "5508f986b7defadbdfcf0963e36a19019f3865b799fadf253e1dc72f0bfaa4d3"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/cutoff_dt_2p0_simulation.mat",
+      "bytes": 4352,
+      "sha256": "b7580470e11ad7a0f4dc6ddc30f35aec72d6f4599bf4c1edacc399ea693bbc50"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/event_trace_v31.csv",
+      "bytes": 51335,
+      "sha256": "31bb0016d885f8a101e2d3847d682e827499f28971f243acccd20a536f0a4993"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_0p125_simulation.mat",
+      "bytes": 5297,
+      "sha256": "e6011d942984a9d0710673f7ed83e35da35bd365645762c72b70a0857ebb0bf6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_0p25_simulation.mat",
+      "bytes": 5062,
+      "sha256": "1b5fa1261f827cdd9dca4bbe3073f23a032bef70aaa2e542872e4da651405115"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_0p5_simulation.mat",
+      "bytes": 4736,
+      "sha256": "340ca66f298f96a5ac66a21828639c2ad8f225459f85a720c8d4a84d26493212"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_1p0_simulation.mat",
+      "bytes": 4439,
+      "sha256": "4da2bf9de658425db4ddedf7e14abf856db54fb06b2b50170f78730eed2542e5"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/high_rate_cutoff_dt_2p0_simulation.mat",
+      "bytes": 4316,
+      "sha256": "642b403fc70ededf44ee535c50a48aecbe5a4b81cd3799f1ace3fe92308bf6e9"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/hp_only_dt_0p125_simulation.mat",
+      "bytes": 4645,
+      "sha256": "813360acc0c755e0faed1ae7ee73132b84f95a18200371d3e6cd98355b215c11"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/hp_only_dt_0p25_simulation.mat",
+      "bytes": 4768,
+      "sha256": "fc71a7b7f47fe8fe2dfedf4efc5cdc9267d472cde3958e95fc1a488691c6dca3"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/hp_only_dt_0p5_simulation.mat",
+      "bytes": 4567,
+      "sha256": "5dbbced81bd839975137d98d9e4935efc0a84e04f6576b4b369acdb557984c89"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/hp_only_dt_1p0_simulation.mat",
+      "bytes": 4351,
+      "sha256": "76d21d7612f7dcf6dc4583377b96eebe00eb50d0729ff0a87b8279894c0dad67"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/hp_only_dt_2p0_simulation.mat",
+      "bytes": 4265,
+      "sha256": "f7e874da76dceef10b0e411931d32fe085b265a194a60791dd5e52f0c8eaf51c"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_0p125_simulation.mat",
+      "bytes": 5318,
+      "sha256": "4c073a3f83d445c69bf415344f32e83146fc928779e03a700e632946c9eff6be"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_0p25_simulation.mat",
+      "bytes": 5092,
+      "sha256": "2629dd465d6ab85590ba8f58b3b66ad957354bdc980bb0aca9d1d28596fd0fe5"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_0p5_simulation.mat",
+      "bytes": 4728,
+      "sha256": "e930709a91e19b084d221d5f837c2026c5570c2a8e91de87be9cd6c007a0ff3f"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_1p0_simulation.mat",
+      "bytes": 4445,
+      "sha256": "4c501f4a3f8c4e8cca0a2080715992af1867a221533f26e8002181005863d9a6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/near_cutoff_dt_2p0_simulation.mat",
+      "bytes": 4333,
+      "sha256": "b1be563541ddef88917d662d3e0f63986968d99430db3230d88476cdbc613247"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_0p125_simulation.mat",
+      "bytes": 5434,
+      "sha256": "2182b2f627591f7464fd9f4285360100a13ff3f1a9de6aa3af36776826ee51cb"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_0p25_simulation.mat",
+      "bytes": 5111,
+      "sha256": "46c7712f333e8473ef3a136580e48884686f86433e509601ac8447bf864442af"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_0p5_simulation.mat",
+      "bytes": 4762,
+      "sha256": "6bdd0d4e8cf78bc8101683593fe3b4dc4db4bd5bcbe243f403a18bc0df77aeba"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_1p0_simulation.mat",
+      "bytes": 4458,
+      "sha256": "8cc70e6580da0034c9f9bfa33bc541ed462d9cdfa1ebdda7ca05d6bff77d5110"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_charge_dt_2p0_simulation.mat",
+      "bytes": 4315,
+      "sha256": "678ac9fa3ab7e4def0ebee2407a40daa5b2ad27df0c63133dcbe16494a2dfbef"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_0p125_simulation.mat",
+      "bytes": 5612,
+      "sha256": "257d1994277c4c453d12cb27ea6751aca041da90cb3c446693dc869e2948ead5"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_0p25_simulation.mat",
+      "bytes": 5236,
+      "sha256": "d4e42eeabf3e1e56d4c82a1134cbef68435a3ec1b5bc4fe7e739e657c35c02b0"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_0p5_simulation.mat",
+      "bytes": 4840,
+      "sha256": "2e044b46f21e5f6956ec2126e7f80305a9c53c2b6e74b0bf5804fe03c035f253"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_1p0_simulation.mat",
+      "bytes": 4514,
+      "sha256": "98deb7b2dbac9eb811016d96e3b311da438a458f0f239ac9a08e9759d7b2cef3"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/no_bound_discharge_dt_2p0_simulation.mat",
+      "bytes": 4355,
+      "sha256": "27f84a8de8e06a34102afb4333fd0fe7aa40d069519b56cfb5340b3f03b69ef6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_0p125_simulation.mat",
+      "bytes": 5327,
+      "sha256": "dfbb8d978dc9866c4dd7516db3cc73f89d0b1fb2bef7afe7c58f5b52f15562f8"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_0p25_simulation.mat",
+      "bytes": 5056,
+      "sha256": "0b6925183f9321a88e58cfdd797cd2753e922fbf76ce1f95fcc375b61f132218"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_0p5_simulation.mat",
+      "bytes": 4724,
+      "sha256": "029087b0c40789860090d31fa03d8ccc819cdbdbc3c48a72bce4084ad052f4a7"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_1p0_simulation.mat",
+      "bytes": 4436,
+      "sha256": "9eda9a610b2bcf105c07e7f15cac1c4439c959d889573ee079b8d04b5e076dac"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/passive_crossing_dt_2p0_simulation.mat",
+      "bytes": 4316,
+      "sha256": "3d0784b81c9500fd55ee0e00011ae0f350d5724fcfe3b8dcf76efcab80ee65af"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/policy_comparison_v31.csv",
+      "bytes": 6468,
+      "sha256": "9125a406f7a9f0ec1b53ceefdf9c5da1d4384dbe167de625776019b7276cebf5"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/saved_v30_trace.csv",
+      "bytes": 54140,
+      "sha256": "8d48d60059d08ef7f11918d769f635ab8d79198d879688a2d512c45480b45565"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/build_dispatch_stateflow_v30.m",
+      "bytes": 7242,
+      "sha256": "1251067fb4fae1cb177c78d0e5dc3240fff74e95a57da3604ea214b97752e406"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/DCHR_Dispatch_Stateflow_v30.slx",
+      "bytes": 129541,
+      "sha256": "a940a1380f265feaa1426bfb0bda92ecf0514a9497453734e3a95830154e18fe"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/dchr_stateflow_hp_v30.m",
+      "bytes": 2543,
+      "sha256": "62633b49633966a552d53cc97a8353cf8b16f78d30200e1456f5110b0b63d0a2"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/export_stateflow_mat_audit_v30.m",
+      "bytes": 3192,
+      "sha256": "678aefd122cd89d72a5ac3b3e028546f9e0895a1051d501e4f5194cced794a1e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/heat_pump_step_v14.m",
+      "bytes": 4282,
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/run_stateflow_acceptance_v30.m",
+      "bytes": 11211,
+      "sha256": "0f85a370e0efc24b875af7922a908ccb45467a95751cfd38be2f3a44d3067d43"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/run_stateflow_faults_v30.m",
+      "bytes": 5156,
+      "sha256": "545eea7759251533574318c746353d4e31bd209fc167e02493fa2939ecbc274c"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/run_TES_event_comparison_v31.m",
+      "bytes": 10158,
+      "sha256": "e245b5a15d926ef802cbb4321dce6742748172dc29f04fbbb3351e6a5c71f2cf"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/simulate_dispatch_v30.m",
+      "bytes": 2714,
+      "sha256": "3900eebd27c34100a254fe309e0ecf7c13068b1c69b1a58db6dedfcca76c3bcf"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/spec/cases.json",
+      "bytes": 116020,
+      "sha256": "1946bea6dff111b4e185b225aeb3ffaa6e845af5507d1b0acfa581901d451052"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/spec/component_vectors.csv",
+      "bytes": 33543,
+      "sha256": "5b9e7993e8434f24013744e6ee6d85b663d88cd4199274c6c03ead83aaad8512"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/spec/equation_qa.json",
+      "bytes": 46382,
+      "sha256": "b91475da9fa0ba232c38a9fbd6722136683df8ce5dbdccb7c368e971084dcc8e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_allocate_v30.m",
+      "bytes": 816,
+      "sha256": "467f7a034652c862568e55eaaf2c05bb1125d9cd89e7316e092cf9e3150a5157"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_choose_mode_v30.m",
+      "bytes": 490,
+      "sha256": "28b7038f55e2d85c7385ee0e4bd916a1d8f6a5bba064d0323210c6fe3d0b0ea6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_contract_gate_v30.m",
+      "bytes": 3337,
+      "sha256": "d4b0702ae6256b55180a0a37f913754d6ea3a3e0f6897af815159434717c5fb3"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_event_kernel_v31.m",
+      "bytes": 3623,
+      "sha256": "a277a4e8ef6bc5b5bf13dc1199c567f64b5848972650e107a67c682c77aecf20"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_kernel_v30.m",
+      "bytes": 3026,
+      "sha256": "8f56a70f5a2ddd7e84c2e458412a3e18edc786a4e9f80d060059f4064bb0a44d"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_parameters_v30.m",
+      "bytes": 2489,
+      "sha256": "14cbdb46fe7cb479d758b7b4e8413c829f4ddab98618fcd19af0a4bb2c0209f9"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/storage_step_v30.m",
+      "bytes": 1731,
+      "sha256": "0959576e2d2a1ddd5334841e04ffacedc8080b14d3ef683f9bc005e42fcbce09"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/source_snapshot/TES_event_reference_v31.py",
+      "bytes": 9586,
+      "sha256": "c8700cf8be38145ac9f35cac1aa5a94d313612a9a6d7bbf1b40ae8ecb735e858"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/summary_v31.json",
+      "bytes": 760,
+      "sha256": "03f6b1a56b9409c2640998d55013b529123e0f364368b439dae4f6c562a3b471"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_0p125_simulation.mat",
+      "bytes": 4880,
+      "sha256": "1f70ffbc6c78a11e2c4a89d7c443da7cc3b99275461a8e0019b0881f98ea0b11"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_0p25_simulation.mat",
+      "bytes": 4908,
+      "sha256": "456e50a96d9ea97a89be754b9ffbeffecadde8b25c161d7cfdd9d3b705d8b1b9"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_0p5_simulation.mat",
+      "bytes": 4660,
+      "sha256": "24f6e83260615e9a6fba7a71a28fc027c605c5980761a67b8f234d97be8287d6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_1p0_simulation.mat",
+      "bytes": 4413,
+      "sha256": "c91f2d32ea4b9956b4058b5eb9b63f3e48912e911d3437bfd49d9c748c194993"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T213754583Z/zero_rate_cutoff_dt_2p0_simulation.mat",
+      "bytes": 4303,
+      "sha256": "cf8ec14d2cb439d3dc3994d4c04285c5fc876c434716ef314c4dec0dcda559ff"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/assertions_v31.csv",
+      "bytes": 108950,
+      "sha256": "fe88b44c77d9026820f75b790676e64b59cfd5273f9d208d5a49da4c31cbcd2f"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/backup_only_dt_0p125_simulation.mat",
+      "bytes": 4653,
+      "sha256": "b7191beefe175254de156e9b5c7054cb5f327e9ab93a19b462161ea96cdce498"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/backup_only_dt_0p25_simulation.mat",
+      "bytes": 4777,
+      "sha256": "6479897ed8aedf6e68f9421de8c6de9003c15be8e6c5f2c9b946e18450380d32"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/backup_only_dt_0p5_simulation.mat",
+      "bytes": 4578,
+      "sha256": "61f3394c1c71bad1f5548b4094aaa999cca6aefa59b207ae031e44d58598b5a2"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/backup_only_dt_1p0_simulation.mat",
+      "bytes": 4358,
+      "sha256": "ebbe98ea43235b1c9865afd645929e420ba6d9f742611dec47f4345e08a0286f"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/backup_only_dt_2p0_simulation.mat",
+      "bytes": 4269,
+      "sha256": "afcfe31faab1445cadd52c78c8f62b13bc674375051071d38307c84db27b1992"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/capacity_dt_0p125_simulation.mat",
+      "bytes": 5091,
+      "sha256": "3ca783fa06ce1aa0a0249f01af2e89efbb09036a7d7a64301578d623a5033e79"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/capacity_dt_0p25_simulation.mat",
+      "bytes": 5077,
+      "sha256": "558e50e14458b288ae543ad6e45a0a10ab2696d212efa16e0c0f2d2f1a137dae"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/capacity_dt_0p5_simulation.mat",
+      "bytes": 4824,
+      "sha256": "a2c19de3b46e7b009d6308bf8a62f92ec2b2158b070b65220418e9a85e5bf074"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/capacity_dt_1p0_simulation.mat",
+      "bytes": 4514,
+      "sha256": "b5166e61540c8917313c32ada8134ce826a6df09a89a37e425d0237cef76895b"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/capacity_dt_2p0_simulation.mat",
+      "bytes": 5657,
+      "sha256": "94a1a3847cc27376b757fc7156cd4f282aea4ec8712e3455a22f5af35971a23c"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/component_domain_v31.json",
+      "bytes": 1726,
+      "sha256": "fe80623455ed6655b13dfc3741551fd6646ee8c03c15a1cfc917ec3d66db1c1b"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/component_trace_v31.csv",
+      "bytes": 28522,
+      "sha256": "12f0b9fc48daee89603e1571a998b54303918423466f881e29df9905b6ebd723"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/cutoff_dt_0p125_simulation.mat",
+      "bytes": 5494,
+      "sha256": "a6c75f2aa6767c7246d914c0360c50de7f4ac9897f8058a5d5868dab72d3d95a"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/cutoff_dt_0p25_simulation.mat",
+      "bytes": 5177,
+      "sha256": "16cd2cf4c3991fc02a02452aae22d50043da7217a9ae08a0cf043ad1ec4c55f6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/cutoff_dt_0p5_simulation.mat",
+      "bytes": 4778,
+      "sha256": "f6728ab9cbc90727a014d9feb3be30f4768a5c4fbac882f3636d8c86e7855916"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/cutoff_dt_1p0_simulation.mat",
+      "bytes": 4472,
+      "sha256": "8515c70ee871b0ffb1e632bcb49f60c1afd1159144fb35dae1f98de95f69d795"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/cutoff_dt_2p0_simulation.mat",
+      "bytes": 4352,
+      "sha256": "0d781447c78da101fa0ad8e303332a21804c96fe043e586f911ce64e58c2bb74"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/event_trace_v31.csv",
+      "bytes": 51335,
+      "sha256": "31bb0016d885f8a101e2d3847d682e827499f28971f243acccd20a536f0a4993"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_0p125_simulation.mat",
+      "bytes": 5300,
+      "sha256": "915bcb85a56ac5d157d9348cb56996e417f78fe8cb54b7db77912bb77f0906af"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_0p25_simulation.mat",
+      "bytes": 5060,
+      "sha256": "cb4c2d2b50836ba944de9e7e77efadc0c856387e9a75d47f1c57493988d666f8"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_0p5_simulation.mat",
+      "bytes": 4732,
+      "sha256": "6bca3d46df5ec476d22cca71f9aef253037c4b8670d4d42d401871ea0bffd46b"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_1p0_simulation.mat",
+      "bytes": 4440,
+      "sha256": "4187190320242c72c5f1a30423b2ae974fddc65f427b3785ed2d48009fe20646"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/high_rate_cutoff_dt_2p0_simulation.mat",
+      "bytes": 4322,
+      "sha256": "73a686e3943d46de3941ecc9cfe370cfcd94be41f3e48e99374c11b0815296e7"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/hp_only_dt_0p125_simulation.mat",
+      "bytes": 4643,
+      "sha256": "5c2a5265a4f4bc2e7ec899958b2bb500e44eeabe58037d198090076593465ea1"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/hp_only_dt_0p25_simulation.mat",
+      "bytes": 4768,
+      "sha256": "dd373a81cbfb9e5f5ee0ed955e28484dd3339eb3784e9e6c404211b43c39be5b"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/hp_only_dt_0p5_simulation.mat",
+      "bytes": 4568,
+      "sha256": "5b645141d05ec8af495759b4f2844d4944b25b854eb6f70ddf06ac2c983ed605"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/hp_only_dt_1p0_simulation.mat",
+      "bytes": 4352,
+      "sha256": "287d52fadecb43f26d982157858e8521d85d24ff3324728581ca10bc8620435b"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/hp_only_dt_2p0_simulation.mat",
+      "bytes": 4268,
+      "sha256": "0ca1819e67d05ac5a76c470464cf345fac05146ed520b41b34cea317a10d7106"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/mat_audit_source/export_TES_event_mat_audit_v31.m",
+      "bytes": 1663,
+      "sha256": "3bc70eeb281758c775ae9a98836ddfdcd767da25e29aaf4a34c74cc7b72fde7a"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/mat_audit_v31.json",
+      "bytes": 207330,
+      "sha256": "7d31598a938cbcdea1e3e31e4e585e24748e82e0017516ae51996a8beafd73b4"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_0p125_simulation.mat",
+      "bytes": 5320,
+      "sha256": "833a9bf9b5936d2e0457517a9033ec62305e64149b3f0a24a270ab320450ff70"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_0p25_simulation.mat",
+      "bytes": 5089,
+      "sha256": "26bc308afde6da40c16dc5a89c1346b1801d974e70296bd2fc3cb2fb49400127"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_0p5_simulation.mat",
+      "bytes": 4732,
+      "sha256": "111a9f25765cd0be7c2e2a0b7a696882dcfe20a9f59721082b83ba523adf7c56"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_1p0_simulation.mat",
+      "bytes": 4451,
+      "sha256": "3c31fa75efc9550cd70e213485a82162bf4c30b565524168aa787f86eebeafcd"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/near_cutoff_dt_2p0_simulation.mat",
+      "bytes": 4331,
+      "sha256": "56cba3959fb3e63c19c33e96bcd96cf28b3e57ed7bfd06ba2bf11420904c45a9"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_0p125_simulation.mat",
+      "bytes": 5431,
+      "sha256": "3889ac684a476c69debeca07086c72b3c62d773b11498dc53ec4cfbb23318817"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_0p25_simulation.mat",
+      "bytes": 5114,
+      "sha256": "d3e66d33b050fdc5fe22718a606e4aaab8491103163b38beaaaaaa58adf74f11"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_0p5_simulation.mat",
+      "bytes": 4765,
+      "sha256": "363b6e3f6654d0be7a4c4d83a9db6da6fefa801764413341ab0a620c3fed4256"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_1p0_simulation.mat",
+      "bytes": 4456,
+      "sha256": "0a2272f670311c9553ad8e8f17133cc5a75d259c26c4b49a2ee0999e24549c2e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_charge_dt_2p0_simulation.mat",
+      "bytes": 4313,
+      "sha256": "31c9648224c93e05bdc8ca19891dad38d7859c8773ef514a473a59d018259883"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_0p125_simulation.mat",
+      "bytes": 5615,
+      "sha256": "bd5a3ef00a067a7397508cf7b0542a67e629953699e82011ea6e8cde902a9cee"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_0p25_simulation.mat",
+      "bytes": 5230,
+      "sha256": "12b75e8c75e84050677590f33729bce17c7e8113823f6641dec59705c30c04eb"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_0p5_simulation.mat",
+      "bytes": 4838,
+      "sha256": "c18700cc4b3345bee419a064db968e226f24e413bdf47e2479fc5d64a2b9e399"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_1p0_simulation.mat",
+      "bytes": 4513,
+      "sha256": "c0ddff063b03f8b461e332f20c757fb9f8e214915ff116869a1ebd61daed3146"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/no_bound_discharge_dt_2p0_simulation.mat",
+      "bytes": 4358,
+      "sha256": "a3c49f29efa98f6b2e4e51c8e2d36bd5cdbbe8577448a58c387e6d20cb58fa94"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_0p125_simulation.mat",
+      "bytes": 5329,
+      "sha256": "c6bb50ff5acca9c031d49d4d2f714af40e92b034226bb50419c8ab6f8806f643"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_0p25_simulation.mat",
+      "bytes": 5052,
+      "sha256": "9bf743b98b0443342ae4ab8b761b945d2447827ca68533b6945c508cb1354c83"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_0p5_simulation.mat",
+      "bytes": 4722,
+      "sha256": "ee7628c42c86432e3b955050f6791efc0d18a5fa1ea58fa246effa679641a69f"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_1p0_simulation.mat",
+      "bytes": 4433,
+      "sha256": "b7edff1e0a80864417d026c10055e11b6abc42de986befa7520dcb8ee689deda"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/passive_crossing_dt_2p0_simulation.mat",
+      "bytes": 4316,
+      "sha256": "c4effe3230c124009aefb77330ae5fdd9223d193984c8d4a8fe9bef2111cfd52"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/policy_comparison_v31.csv",
+      "bytes": 6468,
+      "sha256": "9125a406f7a9f0ec1b53ceefdf9c5da1d4384dbe167de625776019b7276cebf5"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/saved_v30_trace.csv",
+      "bytes": 54140,
+      "sha256": "8d48d60059d08ef7f11918d769f635ab8d79198d879688a2d512c45480b45565"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/build_dispatch_stateflow_v30.m",
+      "bytes": 7242,
+      "sha256": "1251067fb4fae1cb177c78d0e5dc3240fff74e95a57da3604ea214b97752e406"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/DCHR_Dispatch_Stateflow_v30.slx",
+      "bytes": 129541,
+      "sha256": "a940a1380f265feaa1426bfb0bda92ecf0514a9497453734e3a95830154e18fe"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/dchr_stateflow_hp_v30.m",
+      "bytes": 2543,
+      "sha256": "62633b49633966a552d53cc97a8353cf8b16f78d30200e1456f5110b0b63d0a2"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/export_stateflow_mat_audit_v30.m",
+      "bytes": 3192,
+      "sha256": "678aefd122cd89d72a5ac3b3e028546f9e0895a1051d501e4f5194cced794a1e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/heat_pump_step_v14.m",
+      "bytes": 4282,
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/run_stateflow_acceptance_v30.m",
+      "bytes": 11211,
+      "sha256": "0f85a370e0efc24b875af7922a908ccb45467a95751cfd38be2f3a44d3067d43"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/run_stateflow_faults_v30.m",
+      "bytes": 5156,
+      "sha256": "545eea7759251533574318c746353d4e31bd209fc167e02493fa2939ecbc274c"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/run_TES_event_comparison_v31.m",
+      "bytes": 10172,
+      "sha256": "2252726b5af395a4959af2d88ad61177bc0ae679d6801366d7d195a1904ddd96"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/simulate_dispatch_v30.m",
+      "bytes": 2714,
+      "sha256": "3900eebd27c34100a254fe309e0ecf7c13068b1c69b1a58db6dedfcca76c3bcf"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/spec/cases.json",
+      "bytes": 116020,
+      "sha256": "1946bea6dff111b4e185b225aeb3ffaa6e845af5507d1b0acfa581901d451052"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/spec/component_vectors.csv",
+      "bytes": 33543,
+      "sha256": "5b9e7993e8434f24013744e6ee6d85b663d88cd4199274c6c03ead83aaad8512"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/spec/equation_qa.json",
+      "bytes": 46382,
+      "sha256": "b91475da9fa0ba232c38a9fbd6722136683df8ce5dbdccb7c368e971084dcc8e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_allocate_v30.m",
+      "bytes": 816,
+      "sha256": "467f7a034652c862568e55eaaf2c05bb1125d9cd89e7316e092cf9e3150a5157"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_choose_mode_v30.m",
+      "bytes": 490,
+      "sha256": "28b7038f55e2d85c7385ee0e4bd916a1d8f6a5bba064d0323210c6fe3d0b0ea6"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_contract_gate_v30.m",
+      "bytes": 3337,
+      "sha256": "d4b0702ae6256b55180a0a37f913754d6ea3a3e0f6897af815159434717c5fb3"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/stateflow_reference_v30.py",
+      "bytes": 8703,
+      "sha256": "582709f9826c97838e8feebda962c14ce1fc2072d614d14d7ef0301d809e2119"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_event_kernel_v31.m",
+      "bytes": 3623,
+      "sha256": "a277a4e8ef6bc5b5bf13dc1199c567f64b5848972650e107a67c682c77aecf20"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_kernel_v30.m",
+      "bytes": 3026,
+      "sha256": "8f56a70f5a2ddd7e84c2e458412a3e18edc786a4e9f80d060059f4064bb0a44d"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_parameters_v30.m",
+      "bytes": 2489,
+      "sha256": "14cbdb46fe7cb479d758b7b4e8413c829f4ddab98618fcd19af0a4bb2c0209f9"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/storage_step_v30.m",
+      "bytes": 1731,
+      "sha256": "0959576e2d2a1ddd5334841e04ffacedc8080b14d3ef683f9bc005e42fcbce09"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/source_snapshot/TES_event_reference_v31.py",
+      "bytes": 9586,
+      "sha256": "c8700cf8be38145ac9f35cac1aa5a94d313612a9a6d7bbf1b40ae8ecb735e858"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/summary_v31.json",
+      "bytes": 759,
+      "sha256": "28a62b15ed22c05b85cd095af6fdea35a264b35d0a3cc2f5dc14681a18391e88"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_0p125_simulation.mat",
+      "bytes": 4881,
+      "sha256": "1b521f1eef8ea70a9d53b492fe5c40da810c4e4e6f2600d693ee681aeb8cab62"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_0p25_simulation.mat",
+      "bytes": 4914,
+      "sha256": "ae5be4262fa13cb81cb159ef87db1ef2d65f964a0aedc2836b3fa14397c45397"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_0p5_simulation.mat",
+      "bytes": 4660,
+      "sha256": "b4b465ca4136e6d182025e83a3e8aeb2f74544bd8fb711e052c9af9fa5d05d3e"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_1p0_simulation.mat",
+      "bytes": 4414,
+      "sha256": "aaeb8e479af105959d886c3b6d27ba88a368a8d01410812a0a939bc9ff24e87c"
+    },
+    {
+      "path": "results/TES_event_v31_20261009T214008841Z/zero_rate_cutoff_dt_2p0_simulation.mat",
+      "bytes": 4300,
+      "sha256": "3a78dc1a3916f61e41f3f31b93617d0ec3fca79d75b12a385df86bbf3d3fa9cf"
+    },
+    {
+      "path": "STATUS_stateflow_v31.json",
+      "bytes": 3581,
+      "sha256": "11bbf50e923202114eb6434f6e24d5b90fa49b1a3d026f0da94a0c72b682716e"
+    }
+  ]
+}

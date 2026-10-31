@@ -1,0 +1,8 @@
+{
+  "actor": "chatgpt-dchr-c92-ashrae-evap-20261030-1603",
+  "event_id": 1452,
+  "evidence_sha256": "4127fc29f68982c5f50b786c9c8521b46bdd2861276c089602495c2c6729d4ba",
+  "manifest_sha256": "d576b8e70f2b4bc8863489a7ea850f872c8776880e41474538dcc9153ce20fc7",
+  "schema": "SYNAPSE_IDEMPOTENT_EVIDENCE_RECEIPT_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

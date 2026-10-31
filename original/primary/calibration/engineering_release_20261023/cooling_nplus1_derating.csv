@@ -1,0 +1,13 @@
+﻿installed_units,thermal_nominal_per_unit_MW,design_ambient_derating_fraction,capacity_after_any_one_outage_MW,full_IT_10MW_survives_single_failure_after_failover,remaining_deficit_MW,efficiency_and_vendor_data
+5,2,0,8,False,2,not known; hypothetical net capacity after ambient derate
+5,2,0.1,7.2,False,2.8,not known; hypothetical net capacity after ambient derate
+5,2,0.2,6.4,False,3.6,not known; hypothetical net capacity after ambient derate
+6,2,0,10,True,0,not known; hypothetical net capacity after ambient derate
+6,2,0.1,9.0,False,1.0,not known; hypothetical net capacity after ambient derate
+6,2,0.2,8.0,False,2.0,not known; hypothetical net capacity after ambient derate
+7,2,0,12,True,0,not known; hypothetical net capacity after ambient derate
+7,2,0.1,10.8,True,0,not known; hypothetical net capacity after ambient derate
+7,2,0.2,9.6,False,0.4,not known; hypothetical net capacity after ambient derate
+8,2,0,14,True,0,not known; hypothetical net capacity after ambient derate
+8,2,0.1,12.6,True,0,not known; hypothetical net capacity after ambient derate
+8,2,0.2,11.2,True,0,not known; hypothetical net capacity after ambient derate

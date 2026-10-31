@@ -1,0 +1,15 @@
+{
+  "archive_filename": "heat-reuse-source-2026-10-30.zip",
+  "archive_sha256": "3eecbe7e2c7bae487d3c9d083e23520566ae863edac060130aaab424a07c9880",
+  "archive_bytes": 464100930,
+  "source_files": 98321,
+  "unique_objects": 14946,
+  "logical_bytes": 3805473851,
+  "source_roots": 74,
+  "excluded_entries": 408,
+  "errors": [],
+  "restore_status": "PASS",
+  "github_publication": "pending",
+  "verified_restored_files": 98321,
+  "verified_objects": 14946
+}

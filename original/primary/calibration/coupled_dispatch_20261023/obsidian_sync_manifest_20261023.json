@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-23",
+  "owner": "calibration_coupled_dispatch",
+  "vault_target": "C:\\Users\\Lysda\\Documents\\Bimba\\02_PROJECTS\\02_Automation\\DataCenter_Heat_Reuse\\calibration\\coupled_dispatch_20261023",
+  "hub": "COPIED",
+  "copied": 11,
+  "conflicts": [],
+  "verified_identical": 11,
+  "files": [
+    {
+      "name": "Annual_Coupled_Study_SK.md",
+      "status": "COPIED",
+      "hash_sha256": "2d2ec7a744725474f910746407c229267a5bf28dc1aaa36a70b2def7b0605d27",
+      "identical": true
+    },
+    {
+      "name": "Annual_Coupled_Study_RU.md",
+      "status": "COPIED",
+      "hash_sha256": "6c168d4ab85d355d3e57c61c1662491179ac3695cca609017cfebf42e1dce029",
+      "identical": true
+    },
+    {
+      "name": "Annual_Coupled_Study_EN.md",
+      "status": "COPIED",
+      "hash_sha256": "286a637f421d6cb4e4a8321472e34b96d85ba5184a4d1435a6b74fd98fe62f07",
+      "identical": true
+    },
+    {
+      "name": "Annual_Coupled_Study_SK.pdf",
+      "status": "COPIED",
+      "hash_sha256": "a9f1726badf96c5d7573420961c843dcb37b07f48d384f67004d9e2d136e027a",
+      "identical": true
+    },
+    {
+      "name": "Annual_Coupled_Study_RU.pdf",
+      "status": "COPIED",
+      "hash_sha256": "d8a5fc02e9da2fc1a9b593a62254b20104ae3d121aa34bf230e409d0bce72f24",
+      "identical": true
+    },
+    {
+      "name": "Annual_Coupled_Study_EN.pdf",
+      "status": "COPIED",
+      "hash_sha256": "715c28023d4e925716e34dfd705b50721458b8dcc61b879fa74d5ff08a97d480",
+      "identical": true
+    },
+    {
+      "name": "Integracia_matematika_rocna_SK.md",
+      "status": "COPIED",
+      "hash_sha256": "7556d86b4a6fb233fba0c6c3ac20219914f44d7a3f54d42c448a4db29f3b5046",
+      "identical": true
+    },
+    {
+      "name": "coupled_annual_SK.png",
+      "status": "COPIED",
+      "hash_sha256": "aca3189ed40657fac8f73257e4a32baebe37fc5e7c730d35fb44c3e98482f768",
+      "identical": true
+    },
+    {
+      "name": "coupled_scenarios_2025.csv",
+      "status": "COPIED",
+      "hash_sha256": "53fd192825612e6050a03a0bcf7b45ee8897f5505eb0fe6e119ae44e6c14e2c9",
+      "identical": true
+    },
+    {
+      "name": "pool_volume_cover_sensitivity_2025.csv",
+      "status": "COPIED",
+      "hash_sha256": "fc8453402563b2f8ea8bd825806e9d1407aa26d7b2035b0e8ebb122231f96085",
+      "identical": true
+    },
+    {
+      "name": "coupled_results_2025.json",
+      "status": "COPIED",
+      "hash_sha256": "07ff99beb239220e1a57ba24819a71a74eca52b23a5873055766c0c748d1ba5a",
+      "identical": true
+    }
+  ]
+}

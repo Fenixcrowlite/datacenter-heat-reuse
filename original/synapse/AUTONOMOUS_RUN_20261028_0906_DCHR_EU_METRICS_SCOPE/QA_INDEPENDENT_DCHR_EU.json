@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "rational_identity_checks": 4002,
+  "unittest_passed": 25,
+  "source_status_v86_sha256": "45c6d925e1b808795819e64b7549b33f946f9d618b4bade20baf51b2ed93494e",
+  "source_literature_v44_sha256": "4fccdd639d40c0c4818340e241542a72d007d5ff136654b63e076bb6c1a3e96b",
+  "source_files_unchanged": true,
+  "full_primary_signoff": false,
+  "synthetic_fixture_only": true,
+  "production_modified": false
+}

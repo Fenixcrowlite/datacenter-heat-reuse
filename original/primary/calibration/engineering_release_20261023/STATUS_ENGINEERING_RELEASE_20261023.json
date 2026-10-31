@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-10-23",
+  "status": "NUMERICALLY_VERIFIED_ENGINEERING_STUDY",
+  "real_world_certification": false,
+  "device": "DESKTOP-M9L3I4M",
+  "highlights": {
+    "annual_simulink_reuse_data_points": 105120,
+    "source_it_MWh": 71832.833,
+    "source_reused_MWh": 38274.674,
+    "source_rejected_MWh": 33558.16,
+    "rated_independent_cooling_MW": 10,
+    "flow_water_10MW_5K_m3h": 1726.8,
+    "one_2MW_fault_30s_5K_minimum_buffer_m3": 2.878,
+    "matlab_simulink_independent_IT_failure_scenarios": 6,
+    "unsafe_trips_detected": 4,
+    "independent_cooling_model": "IT_Independent_HeatRejection_20261023_SK.slx",
+    "pool_tmax_C": 27.62,
+    "standard_pool_water_ceiling_from_published_decree_C": 28
+  },
+  "vendors": {
+    "carrier": "61XWH-ZE17 catalog 1570kW at W20/15 W70/75 ONLY; not verified target duty",
+    "oilon": "ChillHeat P30–P450 30-450kW B0/W35; S series to 2MW in DIFFERENT conditions",
+    "HX": "Alfa Laval gaskets/titanium custom low-grade sizing RFQ required",
+    "ITrecool": "Guntner V-shape VARIO and Kelvion candidate only"
+  },
+  "outputs": [
+    "Engineering_Release_SK.pdf",
+    "Engineering_Release_RU.pdf",
+    "Engineering_Release_EN.pdf",
+    "RFQ_Carrier_EN.md",
+    "RFQ_Oilon_EN.md",
+    "RFQ_AlfaLaval_EN.md",
+    "RFQ_DryCooler_EN.md",
+    "FMEA_engineering_gaps.csv",
+    "cooling_resilience_calculator.html",
+    "QA_ENGINEERING_RELEASE_20261023.json",
+    "OBSIDIAN_Engineering_Release_manifest.json"
+  ],
+  "not_done": [
+    "Signed manufacturer performance selection report for actual operating points and design ambient",
+    "Real site IT thermal and coolant measurements",
+    "Actual commercial quotes and procurement",
+    "Independent UPS/pump electrical and hydraulic design and functional validation",
+    "Real boundary-metered ERF",
+    "Licensed STN text + legally effective consolidated decree review",
+    "Site operator safety sign-off and commissioning"
+  ],
+  "RFQs_sent": false,
+  "purchased": false,
+  "source_authority": "NASA POWER + Eurostat + Carrier/Oilon/Alfa Laval/Guntner/Kelvion/ASHRAE public data with source links in reports",
+  "ownership": "Isolated calibration/engineering_release_20261023, no original SLX overwritten"
+}

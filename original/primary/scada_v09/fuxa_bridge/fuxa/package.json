@@ -1,0 +1,8 @@
+{
+  "name": "dchr-fuxa-local-readonly",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "@frangoteam/fuxa-min": "1.3.1"
+  }
+}

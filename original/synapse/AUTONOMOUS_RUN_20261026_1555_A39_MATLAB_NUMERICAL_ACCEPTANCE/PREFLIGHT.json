@@ -1,0 +1,19 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "checked_at_epoch": 1793026576.6720977,
+  "task_id": "scc-3d9d172beb6e1b",
+  "task_state": [
+    "review",
+    "planned",
+    null,
+    "MATLAB/Stateflow QA"
+  ],
+  "prior_a39_events": 0,
+  "source_v08_sha256": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+  "source_a36_sha256": "4fefcbd8bffdbedecf1894a8cfecab4ce052d2252e8c669b95394c5aa9fd99a1",
+  "a38_step_sha256": "a1a593c4764e2e05d0ffa6f1289f2caa4b14f7b37455b61f9b2c8e50d5944f1a",
+  "a38_acceptance_sha256": "e63e298f49c131df16194b2ccdc8bd76f3cf2ab30b5b57a39cb871e92ea358a6",
+  "cases": 12,
+  "samples_per_case": 672,
+  "expected_comparisons": 80640
+}

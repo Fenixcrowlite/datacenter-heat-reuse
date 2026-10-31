@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-10T08:20:26.448507+00:00",
+  "evidence_class": "postclose_packaging_only",
+  "files": [
+    {
+      "path": "audit\\check_stateflow_checkpoint_v38a.py",
+      "bytes": 3524,
+      "sha256": "f70a5e5afe14542153bc9518b67066f8f998847952c3b9e4edd612c005cd2cce"
+    },
+    {
+      "path": "audit\\seal_stateflow_postclose_v38.py",
+      "bytes": 2025,
+      "sha256": "a9e9d0f0faadc9387a7e0f643338c1486ac5b1bebe73886cb8a38cdeeb28ea48"
+    },
+    {
+      "path": "audit\\Stateflow_postclose_v38_20261010T081954_887411Z.json",
+      "bytes": 30793,
+      "sha256": "91b19492f85b4ad64835d922eedd2f72d8b5f4bb1642513abf096ecb391ca3b2"
+    },
+    {
+      "path": "automation\\logs\\stateflow_v38_finalize_console_20261010T081930604Z.log",
+      "bytes": 120,
+      "sha256": "47e969d40753b1ebe82009ded380847ae28d4225eee4de0840117ab79e2572d3"
+    },
+    {
+      "path": "automation\\logs\\stateflow_v38_postclose_20261010T081938972Z.log",
+      "bytes": 998,
+      "sha256": "05696ea82333cf9036aa7ae8dfb251b7aa12725d9054170084e3d44d377a12b4"
+    },
+    {
+      "path": "automation\\logs\\stateflow_v38_postclose_20261010T081954683Z.log",
+      "bytes": 100,
+      "sha256": "1e507fa9a276526496464687c7c998591bd6a6cfaf271d7bb9e8b78a523d43ec"
+    }
+  ]
+}

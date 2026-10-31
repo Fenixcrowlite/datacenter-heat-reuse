@@ -1,0 +1,25 @@
+<!doctype html><html lang="sk"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A64 | Integrácia energie: dve definície</title>
+<style>body{font:16px system-ui;background:#101827;color:#edf2fa;max-width:1100px;margin:auto;padding:24px}h1{color:#7fe6da}table{border-collapse:collapse;width:100%;margin:18px 0}td,th{padding:10px;border:1px solid #42516c;text-align:right}th:first-child,td:first-child{text-align:left}small{color:#bac6da}.warn{background:#49331c;padding:14px;border-radius:8px}.bar{background:#67c5e2;height:12px;display:inline-block}</style>
+<h1>A64: porovnanie integrácie energie</h1>
+<p class="warn">DERIVED SIMULATION. Nie sú to merania ani fyzikálna certifikácia. A60: lichobežníkové pravidlo nad N-1 intervalmi. A62: N diskrétnych krokov.</p>
+<p><b>Matematika:</b> E<sub>A60</sub> = Σ(Pᵢ+Pᵢ₊₁)Δt/2; E<sub>A62</sub> = ΣPᵢΔt. Rozdiel = P<sub>last</sub>Δt + Σ(Pᵢ−Pᵢ₊₁)Δt/2 = (P<sub>first</sub>+P<sub>last</sub>)Δt/2 pri konštantnom kroku.</p>
+<h2>V08: 672 vzoriek, A60 167.75 h, A62 168 h</h2>
+<table><thead><tr><th>Kanál</th><th>A60 [MWh]</th><th>A62 [MWh]</th><th>A62 − A60 [kWh]</th><th>Posledný krok [kWh]</th><th>Korekcia sklonu [kWh]</th></tr></thead><tbody>
+<tr><td>Q_DC_W</td><td>28.510164</td><td>28.560000</td><td>49.836329</td><td>49.672658</td><td>0.163671</td></tr>
+<tr><td>Q_reject_W</td><td>6.231802</td><td>6.245687</td><td>13.884791</td><td>27.769583</td><td>-13.884791</td></tr>
+<tr><td>Q_pool_W</td><td>10.373084</td><td>10.393084</td><td>20.000398</td><td>2.500795</td><td>17.499602</td></tr>
+<tr><td>Q_DH_W</td><td>16.076132</td><td>16.101132</td><td>24.999932</td><td>24.999864</td><td>0.000068</td></tr>
+<tr><td>P_HP_W</td><td>4.756319</td><td>4.763525</td><td>7.206293</td><td>5.637906</td><td>1.568386</td></tr>
+</tbody></table>
+<p>Rozdiel tepla bazéna: <span class="bar" style="width:60.00%"></span> 20.000398 kWh</p>
+<h2>V09: 672 vzoriek, A60 167.75 h, A62 168 h</h2>
+<table><thead><tr><th>Kanál</th><th>A60 [MWh]</th><th>A62 [MWh]</th><th>A62 − A60 [kWh]</th><th>Posledný krok [kWh]</th><th>Korekcia sklonu [kWh]</th></tr></thead><tbody>
+<tr><td>Q_DC_W</td><td>28.510164</td><td>28.560000</td><td>49.836328</td><td>49.672657</td><td>0.163672</td></tr>
+<tr><td>Q_reject_W</td><td>6.231802</td><td>6.245687</td><td>13.884791</td><td>27.769582</td><td>-13.884791</td></tr>
+<tr><td>Q_pool_W</td><td>10.373084</td><td>10.393084</td><td>20.000398</td><td>2.500795</td><td>17.499602</td></tr>
+<tr><td>Q_DH_W</td><td>16.076132</td><td>16.101132</td><td>24.999932</td><td>24.999863</td><td>0.000068</td></tr>
+<tr><td>P_HP_W</td><td>4.756319</td><td>4.763525</td><td>7.206292</td><td>5.637906</td><td>1.568386</td></tr>
+</tbody></table>
+<p>Rozdiel tepla bazéna: <span class="bar" style="width:60.00%"></span> 20.000398 kWh</p>
+<small>Obe metódy sú správne pre rozdielne časové konvencie. Nezamieňať bez uvedenia horizontu. Vstupy overené SHA256; originálne A60/A62 zostali nezmenené.</small></html>

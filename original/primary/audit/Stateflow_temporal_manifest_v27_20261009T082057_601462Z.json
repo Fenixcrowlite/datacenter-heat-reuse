@@ -1,0 +1,1378 @@
+{
+  "version": "0.27",
+  "timestamp_utc": "2026-10-09T08:20:57.601462+00:00",
+  "stateflow_temporal_acceptance": "PASS",
+  "inherited_acceptance_checkpoint": "STATUS_stateflow_v26.json",
+  "preserved_prior_source_files": 17,
+  "mutable_files_excluded": [
+    "automation/engineering_progress.md",
+    "automation/STATEFLOW_ACCEPTANCE.md"
+  ],
+  "files": [
+    {
+      "path": "audit/finalize_stateflow_checkpoint_v27.py",
+      "sha256": "dea71394891d0d3f26d796a986b12a7c0480bcc2c7a7fcb71ef93191026544d9",
+      "bytes": 14459
+    },
+    {
+      "path": "audit/stateflow_temporal_cases_v27.json",
+      "sha256": "cb3c3fc6cf741dd142551791c60118a8a344686db2f927a8dbac4358103db2ec",
+      "bytes": 6852
+    },
+    {
+      "path": "audit/stateflow_temporal_execution_receipt_v27_20261009T081921277Z.json",
+      "sha256": "c917513c3f5a6ac3d368311d4497a3afb4167b4bd93d0a3042275f7f50a90ce0",
+      "bytes": 1510
+    },
+    {
+      "path": "audit/Stateflow_temporal_independent_QA_v27.md",
+      "sha256": "bdc6db124cff04b4a91ad75b4041cbd1c719b956355a94759734af87b4b84bd3",
+      "bytes": 9827
+    },
+    {
+      "path": "audit/stateflow_temporal_qa_selftest_v27_20261009T081625343Z.json",
+      "sha256": "a6e8c4c3887d3d73e57457d3fa194df5e34511f566ea35814dd4df1329f81ac9",
+      "bytes": 15538
+    },
+    {
+      "path": "audit/verify_stateflow_temporal_v27.py",
+      "sha256": "368997e04266bac94b559004fca3598bf72839c496620f9af27570e39621ef4a",
+      "bytes": 28611
+    },
+    {
+      "path": "automation/logs/stateflow_independent_temporal_qa_v27_20261009T081939137Z.log",
+      "sha256": "2f99060a11d0167204aeadb532d191d71835dc1ac82f15990571817d74d1a93a",
+      "bytes": 1383
+    },
+    {
+      "path": "automation/logs/stateflow_temporal_qa_selftest_v27_20261009T081625343Z.log",
+      "sha256": "63129c56f1e698bd45159a7f8ae19c8d06795e501a9a4d09537779a8ab58efa8",
+      "bytes": 925
+    },
+    {
+      "path": "automation/logs/stateflow_temporal_v27_local_20261009T081048363Z.log",
+      "sha256": "d75c97184554424adba8f6e1a362bd1cb126fadd646ece61c8a99889bc5aae67",
+      "bytes": 2276
+    },
+    {
+      "path": "automation/logs/stateflow_temporal_v27_local_20261009T081244188Z.log",
+      "sha256": "a7ec6584812cc990109dacd39639658c8c334e9d1c016367f4083703f7d9d027",
+      "bytes": 24463
+    },
+    {
+      "path": "automation/logs/stateflow_temporal_v27_local_20261009T081632948Z.log",
+      "sha256": "6d4bbc58f22ac763dc3312d6e61f39264bd20656d8108129112ab254d9230df7",
+      "bytes": 298
+    },
+    {
+      "path": "automation/logs/stateflow_temporal_v27_local_20261009T081736272Z.log",
+      "sha256": "8dbffbac7baf1fd2ea965e6aa0ec428461deb5a0ad61e0488f231654b64842b7",
+      "bytes": 23710
+    },
+    {
+      "path": "automation/logs/stateflow_temporal_v27_sandbox_20261009T081029187Z.log",
+      "sha256": "6209099b519276e457c744c5006881a228f9b63a9d4ea809c49cdb38a3a6cf00",
+      "bytes": 295
+    },
+    {
+      "path": "MASTER_STAGEBOARD_stateflow_v27.md",
+      "sha256": "41c7090cd02c996acf378941c6fd9be4a25a08a0fca2c3594497a00b9268a4ef",
+      "bytes": 3446
+    },
+    {
+      "path": "matlab/+dchr/+components/heat_pump_step_v14.m",
+      "sha256": "0ed2f6c545df207729cf919f6d0fd342703d60f2079c26c9584e56385d424f12",
+      "bytes": 4282
+    },
+    {
+      "path": "matlab/+dchr/+components/storage_step_v16.m",
+      "sha256": "8244c928d73d975521c854bcf2e42566c7a65eaa0172ee6d29c626bc65aecee9",
+      "bytes": 2759
+    },
+    {
+      "path": "matlab/+dchr/simulate_dispatch_v16.m",
+      "sha256": "4f33930c582d8b841d7c70025db485fc4252d4d740099efcbceccfd7e84c2318",
+      "bytes": 4424
+    },
+    {
+      "path": "matlab/simulink/build_dispatch_stateflow_v24.m",
+      "sha256": "fe27ca93d240a691cca14cdaf6040c800239ff3c9881fa6be3509f47a7b73324",
+      "bytes": 6939
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v14.slx",
+      "sha256": "5968f6eda92110830a1dddab1112dc860b1b86d4b51f97df2157bf8ee2177cfc",
+      "bytes": 56327
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v22.slx",
+      "sha256": "e1d3c1fe69597cd35a8c93a0706bcf81e7ffe8ed7edb0f9e05d9c359afc4f909",
+      "bytes": 107363
+    },
+    {
+      "path": "matlab/simulink/DCHR_Dispatch_Stateflow_v24.slx",
+      "sha256": "1f1c826f0f61d04bea58c2ab39d607268ac273bad9564e69bec89e361c461389",
+      "bytes": 122385
+    },
+    {
+      "path": "matlab/simulink/dchr_stateflow_hp_v22.m",
+      "sha256": "08931800592a820c65a07eb6c6f15ea33765e36ba4d10600c8f62c1408c0506f",
+      "bytes": 1418
+    },
+    {
+      "path": "matlab/simulink/dchr_stateflow_hp_v24.m",
+      "sha256": "09aeabd1b3ac0858155726518f65e4355886cf3c1a766595629a0059adc9e011",
+      "bytes": 919
+    },
+    {
+      "path": "matlab/simulink/probe_stateflow_clock_v24.m",
+      "sha256": "11362c2233c1a535b7a356d0e8b13e35aea0751d30c6f0c60f30cae9a57d5a6d",
+      "bytes": 2466
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_acceptance_v24.m",
+      "sha256": "8b389529a83471fb42eb0a1bb872abb1c316377ad86512722bbc03fcad7ce699",
+      "bytes": 12684
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_gate_faults_v24.m",
+      "sha256": "c3295a45d2da1a6437bc547b71a8ba4ce9959ae5a133daa552d6e7ec982db8e2",
+      "bytes": 5540
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_monitor_faults_v26.m",
+      "sha256": "d5a0e8f21d52fe97ad99d5917a769e0577ffb58b3164b48ab4ff734c49779ce5",
+      "bytes": 8593
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_rejections_v24.m",
+      "sha256": "923d07f741483b5f44647bb9d4718c15e1efca564456842e9b7bf1c7e6b4dfca",
+      "bytes": 3478
+    },
+    {
+      "path": "matlab/simulink/run_stateflow_temporal_acceptance_v27.m",
+      "sha256": "ba4b8d534383e983dd898564cc214cf3e84ad6b2caa5e0ee60bc05622d14fc44",
+      "bytes": 15888
+    },
+    {
+      "path": "matlab/simulink/stateflow_allocate_v24.m",
+      "sha256": "dbaacfb51b33aa0953d570e3e911527820cd4510994507643e6fa7229e839031",
+      "bytes": 1156
+    },
+    {
+      "path": "matlab/simulink/stateflow_choose_mode_v24.m",
+      "sha256": "bd3d5fab4a1b201943f9c95101b8cc7771d57de496dfd8453805ef534151fb8b",
+      "bytes": 738
+    },
+    {
+      "path": "matlab/simulink/stateflow_contract_gate_v24.m",
+      "sha256": "dfbef66ddc289afd770211fda94665439edaed0c4538dd03b3479aee6d321ad8",
+      "bytes": 3082
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_clean_simulation.mat",
+      "sha256": "618b46c0acf2d612113203786933f765ce185d254e0f707953340636194faf9d",
+      "bytes": 4997
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_clean_trace.csv",
+      "sha256": "e676a367a2f1ae6506f6ca30339de8d6d434803108d25e62682c693636c9e007",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_diagnostic.json",
+      "sha256": "3825cbb3941b67fa41509ea45648c31154f5326b584b3b8a856f8d9482de164e",
+      "bytes": 2201
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_partial_simulation.mat",
+      "sha256": "34171dc0a433cfb264cdfdeb3c78f6222303a779d19d81e65a6488600372ab96",
+      "bytes": 4529
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_partial_trace.csv",
+      "sha256": "2821442b661447c0cd80665dcadf66e755df6000fd1092b8a1947bcf07018e16",
+      "bytes": 522
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081053865Z/source_tick1_dt025_reference_trace.csv",
+      "sha256": "2869b4118ff429a1358ac99afaf021447ee8b623ef1e0b8a1ed983e7cc209069",
+      "bytes": 906
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_clean_simulation.mat",
+      "sha256": "9ffc082708b05216e6a728b12abb0b5ac04f25d12a87d86ff4b7a0cb8e162580",
+      "bytes": 4211
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_clean_trace.csv",
+      "sha256": "13ce3e924996e7d6afc06bec4cbe5b3c9e3e077ff097719eb1d3b57adc39fa57",
+      "bytes": 1443
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_configured_input.csv",
+      "sha256": "244dd9405321634e42cf2d42c4ca765538bb762e217091e1d35057ad6f6d0a5d",
+      "bytes": 85
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_diagnostic.json",
+      "sha256": "516782f6ec72ff31da9a0c3d0e9022242862013e4f23c305d2c7a305aa76b376",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_exception_report.txt",
+      "sha256": "a3c109504ffb3af4889d8136deefc224840daa323968c0d4a4e52ab4b17120e9",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_partial_simulation.mat",
+      "sha256": "0b84295bb895f1e57be99069bccbe07a3e8d51f8ad242eaf89f31bb250537459",
+      "bytes": 7228
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_partial_trace.csv",
+      "sha256": "902d1e5eb37de929f56b8078d30190bbbf87de47f32ba3d66d06ab7963ca37a1",
+      "bytes": 836
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_raw_trace_times.json",
+      "sha256": "9b940c2199337da430bef1679bb93a95db20ec24e56b4a72eb8b4f4fd8bdb5ca",
+      "bytes": 166
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/absolute_zero_tick3_dt2_reference_trace.csv",
+      "sha256": "8576a7cf7e5339f7d9448fdfda8f11393a3f78418d3125ba35b4ef062dcb7c45",
+      "bytes": 1426
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_clean_simulation.mat",
+      "sha256": "e32fa5c116d3dc23121604017e25664f637d9ebf42a33e217d9407ea5eaf7ebf",
+      "bytes": 4126
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_clean_trace.csv",
+      "sha256": "24c5a3210c891f58d5e5e9083a2478980c0cfb54f02622c497a0bca865559c60",
+      "bytes": 1008
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_configured_input.csv",
+      "sha256": "c82078645c7daf2023bb31cea5d936b55c727da77dadbabb1d77244c26df1e47",
+      "bytes": 85
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_diagnostic.json",
+      "sha256": "e1a89b19ae2567150d5086dc56ef4b66420626885fecedc46791e3040b342b31",
+      "bytes": 2264
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_exception_report.txt",
+      "sha256": "0d272f496a38e23ecb2da693b151bc8c1ba68f67d0d49ba1bce6050603ca94d0",
+      "bytes": 691
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_partial_simulation.mat",
+      "sha256": "3230ffd69375aad5efecadedd36f5e085717c1a5fbca9617431ad6f85f2b0a8f",
+      "bytes": 7115
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_partial_trace.csv",
+      "sha256": "b04c8465a8d92616ce2c1a3b1613876e5b537536fef8f0fb64fc5042b55c12a7",
+      "bytes": 619
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_raw_trace_times.json",
+      "sha256": "1b8f961e4a930187d393d98b8cc85ea72f44dbecd4a7fed5836a93b251b024ea",
+      "bytes": 151
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_after_boundary_dt05_reference_trace.csv",
+      "sha256": "d0e3be8ad0aa3d96688b7b70f33ecf90eb5bace296fcc549a154ca5abaf50a1f",
+      "bytes": 993
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_clean_simulation.mat",
+      "sha256": "92a5d823ecd96768dba6241c869c9452581249298c563552329b80fa760d087a",
+      "bytes": 4066
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_clean_trace.csv",
+      "sha256": "ea469787aa61121fdad828d50ca40fa77504d32f000b583be4b4f0c0775a8315",
+      "bytes": 872
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_configured_input.csv",
+      "sha256": "0d127af662ba6d1339139678418357b2437c6fcfdce4afdc0fa392f58dd888ab",
+      "bytes": 83
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_diagnostic.json",
+      "sha256": "9fe861b3bec8da9d1f3b2cdcd03a72f8b582a2243d787906a2683fa313eb97ee",
+      "bytes": 2268
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_exception_report.txt",
+      "sha256": "0d272f496a38e23ecb2da693b151bc8c1ba68f67d0d49ba1bce6050603ca94d0",
+      "bytes": 691
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_partial_simulation.mat",
+      "sha256": "4955f11fb599745e374ed63b5c0ccf5bbba9e7c53f67d3c286be9fe66fd943ab",
+      "bytes": 7040
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_partial_trace.csv",
+      "sha256": "12b862584d55c2ec949a5f6fbbf6bc242492ed735e8ea39803314e87fbcc415a",
+      "bytes": 505
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick1_dt05_reference_trace.csv",
+      "sha256": "a967c353165c0692cdd5a9f8deda7fc09f0acab12f00a5d49583c9f694fd4f9d",
+      "bytes": 859
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_clean_simulation.mat",
+      "sha256": "225894d1d0f5b0a6fb773ff6f33200f35224adbbaa4b678988727bae416993d5",
+      "bytes": 4195
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_clean_trace.csv",
+      "sha256": "7b2e11f9d5844ba500be4626e991c340398b49275064ec3ca78844531e2c4c95",
+      "bytes": 1148
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_configured_input.csv",
+      "sha256": "3b42e6585a02d1b5077b6e28967d561faef248c61c259ea5c93074ac32e1a1f9",
+      "bytes": 83
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_diagnostic.json",
+      "sha256": "19dccf9690877e6e54045d5114fea44824286eec684eb027e0245e6e6bf1131a",
+      "bytes": 2268
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_exception_report.txt",
+      "sha256": "0d272f496a38e23ecb2da693b151bc8c1ba68f67d0d49ba1bce6050603ca94d0",
+      "bytes": 691
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_partial_simulation.mat",
+      "sha256": "9a9590938cd1671d89d5d241b0e4f0b8cfd81ef3c5aafa38c8c269f9edf0116c",
+      "bytes": 7231
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_partial_trace.csv",
+      "sha256": "ead03c841de550db8ff968a7d0abc9de0c3ff06ddaa36f56953cfff1f159a2b8",
+      "bytes": 740
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_raw_trace_times.json",
+      "sha256": "12a5e7d34de65164dc3f35bd387454799e97f71bba4eea18a6b626cae89e9436",
+      "bytes": 172
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/demand_tick3_dt05_reference_trace.csv",
+      "sha256": "81f24715939d9688fbc82711ac614895ac0f2b0eda6188effc3d520ab5690df6",
+      "bytes": 1131
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/final_clean_simulation.mat",
+      "sha256": "6d842feaee4a3ed1255b3ca2c13442e4430653cf4d2208b08cffa33911a040fd",
+      "bytes": 3993
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/final_clean_trace.csv",
+      "sha256": "ed731b877a30a1fc2e989e72a63a2c7a5d905c1c35206eab7b6de78b357d75d0",
+      "bytes": 643
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_clean_simulation.mat",
+      "sha256": "2da9c545c7d47ab8dae63de04337e9d77625bb4339ff9c6709893baa97bbe78d",
+      "bytes": 3991
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_clean_trace.csv",
+      "sha256": "ed731b877a30a1fc2e989e72a63a2c7a5d905c1c35206eab7b6de78b357d75d0",
+      "bytes": 643
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_configured_input.csv",
+      "sha256": "0d127af662ba6d1339139678418357b2437c6fcfdce4afdc0fa392f58dd888ab",
+      "bytes": 83
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_diagnostic.json",
+      "sha256": "a92633763e3afc8cf309f989deac45fff182dd439e8c567cfce00b161e88818f",
+      "bytes": 242
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_partial_simulation.mat",
+      "sha256": "e5967ca7b6e838603f176b3e2f84a34ca896c5d7f3e78cd96f02f1eac8a34b3f",
+      "bytes": 6820
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_partial_trace.csv",
+      "sha256": "ed731b877a30a1fc2e989e72a63a2c7a5d905c1c35206eab7b6de78b357d75d0",
+      "bytes": 643
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_raw_trace_times.json",
+      "sha256": "53df6050d5daf36735b5ff241ec29d61d019f91d447ad5fcf0394c3bf04dac79",
+      "bytes": 154
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_after_stop_dt025_reference_trace.csv",
+      "sha256": "feada47c73a6c80f64ccafd65d1f283b46fba2eb27ebac614826ab9716c8956f",
+      "bytes": 634
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_clean_simulation.mat",
+      "sha256": "4661cfdccdbb08943aadefd1da823541ad3d8d403c1e19ee75ee5376bf7feb24",
+      "bytes": 3895
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_clean_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_configured_input.csv",
+      "sha256": "c517d81e8db8b44252895df07631387fb81fafc103be80341c483277bcf0cca7",
+      "bytes": 81
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_diagnostic.json",
+      "sha256": "0bd7d31a6fb866493fbc22610214d06ba586a6e7409fbbcd48598316b1e0f6b0",
+      "bytes": 236
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_partial_simulation.mat",
+      "sha256": "cf9d1f6dd69c860dadc55ded820ffe1fdd54b1b7344b36ece50a050d6ae2044d",
+      "bytes": 6754
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_partial_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/future_invalid_stop_zero_dt1_reference_trace.csv",
+      "sha256": "77b1c5b23ac6f9202a8fb356542330f91c123105698917f82deab98aa389b9be",
+      "bytes": 494
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_clean_simulation.mat",
+      "sha256": "b53a6525f6ddcdee0c5cc84b9672a2cf7ceddd31f7e8c0190e099e6948b7b1ae",
+      "bytes": 4144
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_clean_trace.csv",
+      "sha256": "6925b91d5f15d96cc6a53edaf866e09f37d97ae476cd9d0fdec49111b93f1a6b",
+      "bytes": 1038
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_configured_input.csv",
+      "sha256": "211222540d734cc3de07ef1fc5ee6cf02b89604e78e6eb54a718972dae478aa7",
+      "bytes": 80
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_diagnostic.json",
+      "sha256": "a0f2c5b885eed2b6d997db182a83d37cb613d31383a0905f45cc6e446f36361b",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_exception_report.txt",
+      "sha256": "156ec0fcb247354927f5bb81af51fb991352804575ca76074bb4fed84d114c91",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_partial_simulation.mat",
+      "sha256": "be8d927bc6fee62e7b06ec2f9e3e52b05bf31238cbd10762361cf48d8714314c",
+      "bytes": 6992
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_partial_trace.csv",
+      "sha256": "3b808519942c36ec04bfdf6069dae218cd7d12144f8b7aa89ea27721a5dd977b",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/negative_lift_tick1_dt2_reference_trace.csv",
+      "sha256": "648a0c25465fd3a885280633fffb60de82203c88500be6a181d898da81f8f9d1",
+      "bytes": 1025
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/runner_attempt_v27.m",
+      "sha256": "ac886de48ed7652faa4152ee723de871b988b5ba4337a823db44e8b5f3559d66",
+      "bytes": 14358
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_clean_simulation.mat",
+      "sha256": "802d3f20738ca008f078067f94c0b0611cb7a3215ef06cbfa2d82e1d8927798d",
+      "bytes": 4120
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_clean_trace.csv",
+      "sha256": "df8b2fd8a78ea34153bb479d0d60b366712b693c0ff0ce14f6994613ce4d57db",
+      "bytes": 932
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_configured_input.csv",
+      "sha256": "69d611fc22229bdbe3b28781a4f1b5927de47d5b0d8d00510a4180f06e6d904d",
+      "bytes": 84
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_diagnostic.json",
+      "sha256": "8c32e7630ab43502e0c8bcc9cb19e36089755d660351a2a43e94748a879b2c77",
+      "bytes": 2195
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_exception_report.txt",
+      "sha256": "3d431a42d0a487f93f4a089b0202559bbc5112128e327d6ba8ce1f3ab27239e0",
+      "bytes": 668
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_partial_simulation.mat",
+      "sha256": "1f7178ea761fd3c7eb04a8def1c7adac32921731cef4fc2956153e8d303bf870",
+      "bytes": 6997
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_partial_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_before_boundary_dt1_reference_trace.csv",
+      "sha256": "bd88843eec218b8438c4ac717dcdcd78c5f4536d65e9da66e5a4f446fab9d58c",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_clean_simulation.mat",
+      "sha256": "d7e37d39880475cda3bb1c0b16ab9304f102a04eff86e57babd90ba9143f65ce",
+      "bytes": 5000
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_clean_trace.csv",
+      "sha256": "e676a367a2f1ae6506f6ca30339de8d6d434803108d25e62682c693636c9e007",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_configured_input.csv",
+      "sha256": "ab327e70cb9f18f0addfc6242e32a1546bb64c116fb9efde4c793c3d50502fbd",
+      "bytes": 84
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_diagnostic.json",
+      "sha256": "8b9388154898e582b5af5fe10df898e7491751861277a389d6b76f91bd853258",
+      "bytes": 2201
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_exception_report.txt",
+      "sha256": "3d431a42d0a487f93f4a089b0202559bbc5112128e327d6ba8ce1f3ab27239e0",
+      "bytes": 668
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_partial_simulation.mat",
+      "sha256": "2782bd8132245303b2e3703aaf0ef16cef2df36813c46dc63154607fc1b613d1",
+      "bytes": 7008
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_partial_trace.csv",
+      "sha256": "2821442b661447c0cd80665dcadf66e755df6000fd1092b8a1947bcf07018e16",
+      "bytes": 522
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick1_dt025_reference_trace.csv",
+      "sha256": "2869b4118ff429a1358ac99afaf021447ee8b623ef1e0b8a1ed983e7cc209069",
+      "bytes": 906
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_clean_simulation.mat",
+      "sha256": "293ec8d6c8d1e46027b8076a80db2020b3e8035599aba8b84e7fe7d99ea1c3ed",
+      "bytes": 4202
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_clean_trace.csv",
+      "sha256": "c653062ef1475e7eece746692397fabe7fdb9842ad74b6a8d2af4dff1880d713",
+      "bytes": 1203
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_configured_input.csv",
+      "sha256": "69d611fc22229bdbe3b28781a4f1b5927de47d5b0d8d00510a4180f06e6d904d",
+      "bytes": 84
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_diagnostic.json",
+      "sha256": "9dd68dc101675ee8624b6453d7fa31adff62d45b24797bc27f15b01d71c45e04",
+      "bytes": 2201
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_exception_report.txt",
+      "sha256": "3d431a42d0a487f93f4a089b0202559bbc5112128e327d6ba8ce1f3ab27239e0",
+      "bytes": 668
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_partial_simulation.mat",
+      "sha256": "c13b0b7ef92c8440160ce0c318db28d45cd36fd2f04028ace749ff7e04e9279f",
+      "bytes": 7163
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_partial_trace.csv",
+      "sha256": "0ee4c838d82610b96f694b617eebff1560cefc890789029bdf03c3d82b1aa6be",
+      "bytes": 777
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_raw_trace_times.json",
+      "sha256": "d2ae316c0163de95c6ea8ecc923c3ca66c2bac4111e378f0059c2d7bc1a92141",
+      "bytes": 181
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/source_tick3_dt025_reference_trace.csv",
+      "sha256": "bedd722f0f5cdb8f2ffd6c2a79c631d0d9271d00771fb0888bb5a8e87d98f699",
+      "bytes": 1186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/spec_attempt_v27.json",
+      "sha256": "87edfd47dd8298bd2b4179be3c944744f7d6a4a1862616ef5c8bede617833f82",
+      "bytes": 5798
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/temporal_assertions_v27.csv",
+      "sha256": "c8e9812aac52b10c49757a099c885693bfa493d86d878401190a41ce58d146cd",
+      "bytes": 8250
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/temporal_summary_v27.json",
+      "sha256": "a2c29805fb8208b52573f8b3cf9b39942930b81931327f5c198f668a722f6f6b",
+      "bytes": 69022
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_clean_simulation.mat",
+      "sha256": "d257c56b29188a1d6b468015a93aba9a5e39ca0e9d47115aef0694715cac06f4",
+      "bytes": 4122
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_clean_trace.csv",
+      "sha256": "df8b2fd8a78ea34153bb479d0d60b366712b693c0ff0ce14f6994613ce4d57db",
+      "bytes": 932
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_configured_input.csv",
+      "sha256": "6dfde09f279e260afeb9a3089f4d109e69f2154a93b2d64370778448eb4df56b",
+      "bytes": 80
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_diagnostic.json",
+      "sha256": "20636695635f97bcd4f74c6f257be2fe9315f3946acd9610a257994498d5862f",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_exception_report.txt",
+      "sha256": "156ec0fcb247354927f5bb81af51fb991352804575ca76074bb4fed84d114c91",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_partial_simulation.mat",
+      "sha256": "95b56fc193b519e8288691740413b15c7b548d39b8efeb36cffcd295f6405e0f",
+      "bytes": 6996
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_partial_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick1_dt1_reference_trace.csv",
+      "sha256": "bd88843eec218b8438c4ac717dcdcd78c5f4536d65e9da66e5a4f446fab9d58c",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_clean_simulation.mat",
+      "sha256": "f8b5ee342f33bb222ae441704570875dea2c8d547135a6ba22f595d719cd4f22",
+      "bytes": 4253
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_clean_trace.csv",
+      "sha256": "81fc19281c6db3f1c04d5b83901e9c3e3f8a5e8c41eb1654833a3a75f455fc54",
+      "bytes": 1338
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_configured_input.csv",
+      "sha256": "4e91481de1bdc810767da11a07486f057764a8cd8c48d345abc38b4cedf4a28a",
+      "bytes": 80
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_diagnostic.json",
+      "sha256": "3b1f02f787ec1d313bd5a44cf20d578700b0f5584951a523971f090a4cae2a05",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_exception_report.txt",
+      "sha256": "156ec0fcb247354927f5bb81af51fb991352804575ca76074bb4fed84d114c91",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_partial_simulation.mat",
+      "sha256": "526ffb56ef523de37cd0acbc1540380087f653387509451d85a2bda5686f88e0",
+      "bytes": 7143
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_partial_trace.csv",
+      "sha256": "119dcd8c819b2e91f5fc3d8f2f1aa750ccc53ab33b9ad13b323f369aef6a7a3a",
+      "bytes": 718
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_raw_trace_times.json",
+      "sha256": "26e9bdfbe67fef4f8a868c236760f2a7910a2d5baf41081b6c358c09cfd30fef",
+      "bytes": 166
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081249839Z/zero_lift_tick3_dt1_reference_trace.csv",
+      "sha256": "e2c079fc49d25b16e6ce569b5d449a95eb32afcda6e2be2676772705fa8b2d7d",
+      "bytes": 1321
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_clean_simulation.mat",
+      "sha256": "74996ac2f4b262f66ccc29400da0be8ffa68fb125b1a96c37707e5e560466deb",
+      "bytes": 4215
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_clean_trace.csv",
+      "sha256": "13ce3e924996e7d6afc06bec4cbe5b3c9e3e077ff097719eb1d3b57adc39fa57",
+      "bytes": 1443
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_configured_input.csv",
+      "sha256": "244dd9405321634e42cf2d42c4ca765538bb762e217091e1d35057ad6f6d0a5d",
+      "bytes": 85
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_diagnostic.json",
+      "sha256": "6c901a3659f135c071c3327ab92afd63377f6a387cfef6ea5aede1c4ed66d4e8",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_exception_report.txt",
+      "sha256": "b1317485f7429a58bafe98f7783f46805505bb9d71052fade22e7560f35ebdfb",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_host_adapter_report.txt",
+      "sha256": "cee7f42f1d5c284390fc40161fce78120cfcea8d390b5688655b2b75c19b4865",
+      "bytes": 496
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_partial_simulation.mat",
+      "sha256": "4fdef32e9d7f710c53f940c51346e009efa7a75063cfe5355df38766b44d0d1d",
+      "bytes": 7227
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_partial_trace.csv",
+      "sha256": "902d1e5eb37de929f56b8078d30190bbbf87de47f32ba3d66d06ab7963ca37a1",
+      "bytes": 836
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_raw_trace_times.json",
+      "sha256": "9b940c2199337da430bef1679bb93a95db20ec24e56b4a72eb8b4f4fd8bdb5ca",
+      "bytes": 166
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/absolute_zero_tick3_dt2_reference_trace.csv",
+      "sha256": "8576a7cf7e5339f7d9448fdfda8f11393a3f78418d3125ba35b4ef062dcb7c45",
+      "bytes": 1426
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_clean_simulation.mat",
+      "sha256": "44853bceaaf0cadc6ea449838ea766a285c729914802d8b5757984fb4baaa96f",
+      "bytes": 4129
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_clean_trace.csv",
+      "sha256": "24c5a3210c891f58d5e5e9083a2478980c0cfb54f02622c497a0bca865559c60",
+      "bytes": 1008
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_configured_input.csv",
+      "sha256": "c82078645c7daf2023bb31cea5d936b55c727da77dadbabb1d77244c26df1e47",
+      "bytes": 85
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_diagnostic.json",
+      "sha256": "93dcacd2d8c5ffb5bdaeeae6e9537eb98b75df0ca948da17d81e83ac12f376f8",
+      "bytes": 2264
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_exception_report.txt",
+      "sha256": "f6af9f298c7da2c24790e0f95cd83fa042652bd0521d3c8598cb7d7758a0ce78",
+      "bytes": 691
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_host_adapter_report.txt",
+      "sha256": "ab5c771d0fded48d06b18a49dcc92fa9e67d258303e295e2f7d536f9f929f54a",
+      "bytes": 521
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_partial_simulation.mat",
+      "sha256": "386f82f80446b781b757deaabd4cff86ca0729241ac2dae684101e68ea071928",
+      "bytes": 7120
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_partial_trace.csv",
+      "sha256": "b04c8465a8d92616ce2c1a3b1613876e5b537536fef8f0fb64fc5042b55c12a7",
+      "bytes": 619
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_raw_trace_times.json",
+      "sha256": "1b8f961e4a930187d393d98b8cc85ea72f44dbecd4a7fed5836a93b251b024ea",
+      "bytes": 151
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_after_boundary_dt05_reference_trace.csv",
+      "sha256": "d0e3be8ad0aa3d96688b7b70f33ecf90eb5bace296fcc549a154ca5abaf50a1f",
+      "bytes": 993
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_clean_simulation.mat",
+      "sha256": "b34726452461e6cf95d628feb2e4596327f724b7470886f1b64638e7714592c3",
+      "bytes": 4064
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_clean_trace.csv",
+      "sha256": "ea469787aa61121fdad828d50ca40fa77504d32f000b583be4b4f0c0775a8315",
+      "bytes": 872
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_configured_input.csv",
+      "sha256": "0d127af662ba6d1339139678418357b2437c6fcfdce4afdc0fa392f58dd888ab",
+      "bytes": 83
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_diagnostic.json",
+      "sha256": "f98ca7fb990e8b4df4e471e186f35eb3683e3211dd49c77b17612e3e6842fbf2",
+      "bytes": 2268
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_exception_report.txt",
+      "sha256": "f6af9f298c7da2c24790e0f95cd83fa042652bd0521d3c8598cb7d7758a0ce78",
+      "bytes": 691
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_host_adapter_report.txt",
+      "sha256": "ab5c771d0fded48d06b18a49dcc92fa9e67d258303e295e2f7d536f9f929f54a",
+      "bytes": 521
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_partial_simulation.mat",
+      "sha256": "bb01e0c2929097513f4c3b4126a97ed996f3ae0ad4e0c51cfc0ad4459695da1c",
+      "bytes": 7041
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_partial_trace.csv",
+      "sha256": "12b862584d55c2ec949a5f6fbbf6bc242492ed735e8ea39803314e87fbcc415a",
+      "bytes": 505
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick1_dt05_reference_trace.csv",
+      "sha256": "a967c353165c0692cdd5a9f8deda7fc09f0acab12f00a5d49583c9f694fd4f9d",
+      "bytes": 859
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_clean_simulation.mat",
+      "sha256": "16b7200b7c367779f6d11baed4dcbf5e6dfd8f5d286d121d72932f6ef6dd1b4b",
+      "bytes": 4198
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_clean_trace.csv",
+      "sha256": "7b2e11f9d5844ba500be4626e991c340398b49275064ec3ca78844531e2c4c95",
+      "bytes": 1148
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_configured_input.csv",
+      "sha256": "3b42e6585a02d1b5077b6e28967d561faef248c61c259ea5c93074ac32e1a1f9",
+      "bytes": 83
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_diagnostic.json",
+      "sha256": "b8464ae5c459e111baa6cc2f96cd99e8141e2ecf89f6473cf143a3c362df305b",
+      "bytes": 2268
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_exception_report.txt",
+      "sha256": "f6af9f298c7da2c24790e0f95cd83fa042652bd0521d3c8598cb7d7758a0ce78",
+      "bytes": 691
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_host_adapter_report.txt",
+      "sha256": "ab5c771d0fded48d06b18a49dcc92fa9e67d258303e295e2f7d536f9f929f54a",
+      "bytes": 521
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_partial_simulation.mat",
+      "sha256": "513c52c589eac48983678cc018d9c523287fbb6a568444b3ae1d0840b538ba71",
+      "bytes": 7230
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_partial_trace.csv",
+      "sha256": "ead03c841de550db8ff968a7d0abc9de0c3ff06ddaa36f56953cfff1f159a2b8",
+      "bytes": 740
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_raw_trace_times.json",
+      "sha256": "12a5e7d34de65164dc3f35bd387454799e97f71bba4eea18a6b626cae89e9436",
+      "bytes": 172
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/demand_tick3_dt05_reference_trace.csv",
+      "sha256": "81f24715939d9688fbc82711ac614895ac0f2b0eda6188effc3d520ab5690df6",
+      "bytes": 1131
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/final_clean_simulation.mat",
+      "sha256": "76414736dfd11912d16d37bfb7cb789b81818b3565ef0265cb334480862f208e",
+      "bytes": 3989
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/final_clean_trace.csv",
+      "sha256": "ed731b877a30a1fc2e989e72a63a2c7a5d905c1c35206eab7b6de78b357d75d0",
+      "bytes": 643
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_clean_simulation.mat",
+      "sha256": "53cadeb1a70d0c930630c9784d12ced3df5acac4b043ce121d2b399241d709be",
+      "bytes": 3993
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_clean_trace.csv",
+      "sha256": "ed731b877a30a1fc2e989e72a63a2c7a5d905c1c35206eab7b6de78b357d75d0",
+      "bytes": 643
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_configured_input.csv",
+      "sha256": "0d127af662ba6d1339139678418357b2437c6fcfdce4afdc0fa392f58dd888ab",
+      "bytes": 83
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_diagnostic.json",
+      "sha256": "a92633763e3afc8cf309f989deac45fff182dd439e8c567cfce00b161e88818f",
+      "bytes": 242
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_partial_simulation.mat",
+      "sha256": "cd951d9d54da4bea9c9c3a328cb86b66f5add61547a2aa1022e908626846e58d",
+      "bytes": 6827
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_partial_trace.csv",
+      "sha256": "ed731b877a30a1fc2e989e72a63a2c7a5d905c1c35206eab7b6de78b357d75d0",
+      "bytes": 643
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_raw_trace_times.json",
+      "sha256": "53df6050d5daf36735b5ff241ec29d61d019f91d447ad5fcf0394c3bf04dac79",
+      "bytes": 154
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_after_stop_dt025_reference_trace.csv",
+      "sha256": "feada47c73a6c80f64ccafd65d1f283b46fba2eb27ebac614826ab9716c8956f",
+      "bytes": 634
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_clean_simulation.mat",
+      "sha256": "b5a11e3d12e9f1201c174e0b8d3cccb0b032a92d2ecd372fa73158808f981ac9",
+      "bytes": 3900
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_clean_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_configured_input.csv",
+      "sha256": "c517d81e8db8b44252895df07631387fb81fafc103be80341c483277bcf0cca7",
+      "bytes": 81
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_diagnostic.json",
+      "sha256": "0bd7d31a6fb866493fbc22610214d06ba586a6e7409fbbcd48598316b1e0f6b0",
+      "bytes": 236
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_partial_simulation.mat",
+      "sha256": "10e35ba3a7f676a35014404707678d17e3381cded5ddef0520322dc0663504db",
+      "bytes": 6752
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_partial_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/future_invalid_stop_zero_dt1_reference_trace.csv",
+      "sha256": "77b1c5b23ac6f9202a8fb356542330f91c123105698917f82deab98aa389b9be",
+      "bytes": 494
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/independent_temporal_qa_v27_20261009T081939137Z.json",
+      "sha256": "ea877b9b940099fd5f64a2974ddc1b29bcef0d87a034d8f9c434d1167e62c5d2",
+      "bytes": 626953
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_clean_simulation.mat",
+      "sha256": "5157c8092a470c68c5355e466a40923e068deb30007684705d14aa700866e43c",
+      "bytes": 4145
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_clean_trace.csv",
+      "sha256": "6925b91d5f15d96cc6a53edaf866e09f37d97ae476cd9d0fdec49111b93f1a6b",
+      "bytes": 1038
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_configured_input.csv",
+      "sha256": "211222540d734cc3de07ef1fc5ee6cf02b89604e78e6eb54a718972dae478aa7",
+      "bytes": 80
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_diagnostic.json",
+      "sha256": "30b30c3224e786f154a3a53867b261637a4503946f4e8d8003ec6bc6d36f41b9",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_exception_report.txt",
+      "sha256": "f41f6cc8dd1dc6ff6ca51a5a23757d0a4aa2bc2e0c50bc38bdb5a9b8d460be57",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_host_adapter_report.txt",
+      "sha256": "49740f0ce74f86222e5a7d370433850e31e8993a654d4e57945e19e20d42090d",
+      "bytes": 483
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_partial_simulation.mat",
+      "sha256": "5cc4e80d0e007434ed1412feaa06a989928b9936d252086f92800ac78aac3979",
+      "bytes": 7003
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_partial_trace.csv",
+      "sha256": "3b808519942c36ec04bfdf6069dae218cd7d12144f8b7aa89ea27721a5dd977b",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/negative_lift_tick1_dt2_reference_trace.csv",
+      "sha256": "648a0c25465fd3a885280633fffb60de82203c88500be6a181d898da81f8f9d1",
+      "bytes": 1025
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_clean_simulation.mat",
+      "sha256": "f215a28bad70c555cb29c71e3ce46f75f6b14f2712bb41f0b2bbe617f0332119",
+      "bytes": 4123
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_clean_trace.csv",
+      "sha256": "df8b2fd8a78ea34153bb479d0d60b366712b693c0ff0ce14f6994613ce4d57db",
+      "bytes": 932
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_configured_input.csv",
+      "sha256": "69d611fc22229bdbe3b28781a4f1b5927de47d5b0d8d00510a4180f06e6d904d",
+      "bytes": 84
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_diagnostic.json",
+      "sha256": "059182492499d6ff0a6c87a8b537467127fb72640a40f9495d3dc16d2ca533a5",
+      "bytes": 2195
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_exception_report.txt",
+      "sha256": "bee9af77a2e61f7c07e52503b4dcbfedd025b2e60e166579b067ad6e7195e0ad",
+      "bytes": 668
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_host_adapter_report.txt",
+      "sha256": "1ecc7b8c0d68312555bb27f82e7ef8cd0e1235b82850da4ff41c5601d5da0504",
+      "bytes": 502
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_partial_simulation.mat",
+      "sha256": "f07f5db63ab4c7ba80ac03d9c8b5415b7f96d52d9486dff092dde270e858c1f2",
+      "bytes": 6995
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_partial_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_before_boundary_dt1_reference_trace.csv",
+      "sha256": "bd88843eec218b8438c4ac717dcdcd78c5f4536d65e9da66e5a4f446fab9d58c",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_clean_simulation.mat",
+      "sha256": "ed1500effd6d85043c7a70c65e43317e1c78342def75e19747246b645a5c9236",
+      "bytes": 5000
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_clean_trace.csv",
+      "sha256": "e676a367a2f1ae6506f6ca30339de8d6d434803108d25e62682c693636c9e007",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_configured_input.csv",
+      "sha256": "ab327e70cb9f18f0addfc6242e32a1546bb64c116fb9efde4c793c3d50502fbd",
+      "bytes": 84
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_diagnostic.json",
+      "sha256": "5963403fd62c733ba38433211ab4763f7f8a15cc540b2e8e30594b4553874a13",
+      "bytes": 2201
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_exception_report.txt",
+      "sha256": "bee9af77a2e61f7c07e52503b4dcbfedd025b2e60e166579b067ad6e7195e0ad",
+      "bytes": 668
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_host_adapter_report.txt",
+      "sha256": "1ecc7b8c0d68312555bb27f82e7ef8cd0e1235b82850da4ff41c5601d5da0504",
+      "bytes": 502
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_partial_simulation.mat",
+      "sha256": "2babb922f27dfd74fedf979394252946e4ff7757e247606e614dc5535e1c3622",
+      "bytes": 7015
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_partial_trace.csv",
+      "sha256": "2821442b661447c0cd80665dcadf66e755df6000fd1092b8a1947bcf07018e16",
+      "bytes": 522
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick1_dt025_reference_trace.csv",
+      "sha256": "2869b4118ff429a1358ac99afaf021447ee8b623ef1e0b8a1ed983e7cc209069",
+      "bytes": 906
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_clean_simulation.mat",
+      "sha256": "95b9562cde36a7c4468695849462fee0cb0146041fab03b170f77f25518e331b",
+      "bytes": 4203
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_clean_trace.csv",
+      "sha256": "c653062ef1475e7eece746692397fabe7fdb9842ad74b6a8d2af4dff1880d713",
+      "bytes": 1203
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_configured_input.csv",
+      "sha256": "69d611fc22229bdbe3b28781a4f1b5927de47d5b0d8d00510a4180f06e6d904d",
+      "bytes": 84
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_diagnostic.json",
+      "sha256": "7726b30d117dd418802e0214c3ff2a489ca9433b14f6f0be5ae4989060099568",
+      "bytes": 2201
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_exception_report.txt",
+      "sha256": "bee9af77a2e61f7c07e52503b4dcbfedd025b2e60e166579b067ad6e7195e0ad",
+      "bytes": 668
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_host_adapter_report.txt",
+      "sha256": "1ecc7b8c0d68312555bb27f82e7ef8cd0e1235b82850da4ff41c5601d5da0504",
+      "bytes": 502
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_partial_simulation.mat",
+      "sha256": "54dd2b29313a23ea9b239f7c7e96f5ca46fe1584d9149636ad05c360d34ba584",
+      "bytes": 7161
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_partial_trace.csv",
+      "sha256": "0ee4c838d82610b96f694b617eebff1560cefc890789029bdf03c3d82b1aa6be",
+      "bytes": 777
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_raw_trace_times.json",
+      "sha256": "d2ae316c0163de95c6ea8ecc923c3ca66c2bac4111e378f0059c2d7bc1a92141",
+      "bytes": 181
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/source_tick3_dt025_reference_trace.csv",
+      "sha256": "bedd722f0f5cdb8f2ffd6c2a79c631d0d9271d00771fb0888bb5a8e87d98f699",
+      "bytes": 1186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/temporal_assertions_v27.csv",
+      "sha256": "0c8d07a3625c73f8dd6ffa3ea3535c5d872d8f54f7115efdc6355ca5dfa03278",
+      "bytes": 9486
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/temporal_summary_v27.json",
+      "sha256": "6181aa2ea777d8abd36ab52e83161b6540a675f740ffe36f6c68e3349cb32f2c",
+      "bytes": 75560
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_clean_simulation.mat",
+      "sha256": "c6f6810632b945b36de5f6a996902793de4cba1d7b75f6da2c5332ac2b3af17b",
+      "bytes": 4124
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_clean_trace.csv",
+      "sha256": "df8b2fd8a78ea34153bb479d0d60b366712b693c0ff0ce14f6994613ce4d57db",
+      "bytes": 932
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_configured_input.csv",
+      "sha256": "6dfde09f279e260afeb9a3089f4d109e69f2154a93b2d64370778448eb4df56b",
+      "bytes": 80
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_diagnostic.json",
+      "sha256": "7dd376f79fcec0a1838908b4056c1e9dde1ea0d7e7bc875d644217e63a167774",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_exception_report.txt",
+      "sha256": "f41f6cc8dd1dc6ff6ca51a5a23757d0a4aa2bc2e0c50bc38bdb5a9b8d460be57",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_host_adapter_report.txt",
+      "sha256": "49740f0ce74f86222e5a7d370433850e31e8993a654d4e57945e19e20d42090d",
+      "bytes": 483
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_partial_simulation.mat",
+      "sha256": "b635ef9458843009cf6082eb368cf3ae04e859411b39409a5f7b0f0fbe925015",
+      "bytes": 6994
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_partial_trace.csv",
+      "sha256": "47b413c04570c1510a8756129472c66ea80eb4d11fcdd56aede01581661bf502",
+      "bytes": 501
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_raw_trace_times.json",
+      "sha256": "669fd6933c2464b1ef2d55182bc76791a99b279440c660dfcf7a760524764fd2",
+      "bytes": 94
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick1_dt1_reference_trace.csv",
+      "sha256": "bd88843eec218b8438c4ac717dcdcd78c5f4536d65e9da66e5a4f446fab9d58c",
+      "bytes": 919
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_clean_simulation.mat",
+      "sha256": "5759c367639e71c17898fd7021b7bbacb28fe163587c84823b20dcd345e015ff",
+      "bytes": 4251
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_clean_trace.csv",
+      "sha256": "81fc19281c6db3f1c04d5b83901e9c3e3f8a5e8c41eb1654833a3a75f455fc54",
+      "bytes": 1338
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_configured_input.csv",
+      "sha256": "4e91481de1bdc810767da11a07486f057764a8cd8c48d345abc38b4cedf4a28a",
+      "bytes": 80
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_diagnostic.json",
+      "sha256": "3b01b849329eca30cdfd3b0f7a792f9868c2a3f92be4367beeb4505ff0f44b27",
+      "bytes": 2186
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_exception_report.txt",
+      "sha256": "f41f6cc8dd1dc6ff6ca51a5a23757d0a4aa2bc2e0c50bc38bdb5a9b8d460be57",
+      "bytes": 665
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_host_adapter_report.txt",
+      "sha256": "49740f0ce74f86222e5a7d370433850e31e8993a654d4e57945e19e20d42090d",
+      "bytes": 483
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_partial_simulation.mat",
+      "sha256": "a1fbad7348365a871c4076c5754204a53b73dd687efcaa523ce6c15dd6f8d753",
+      "bytes": 7147
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_partial_trace.csv",
+      "sha256": "119dcd8c819b2e91f5fc3d8f2f1aa750ccc53ab33b9ad13b323f369aef6a7a3a",
+      "bytes": 718
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_raw_trace_times.json",
+      "sha256": "26e9bdfbe67fef4f8a868c236760f2a7910a2d5baf41081b6c358c09cfd30fef",
+      "bytes": 166
+    },
+    {
+      "path": "results/stateflow_temporal_v27_20261009T081740297Z/zero_lift_tick3_dt1_reference_trace.csv",
+      "sha256": "e2c079fc49d25b16e6ce569b5d449a95eb32afcda6e2be2676772705fa8b2d7d",
+      "bytes": 1321
+    },
+    {
+      "path": "STATUS_stateflow_v27.json",
+      "sha256": "91cfbf5a0a701958a3192126c77c4e7e07f9b99b8e33d9ec5eb4e664edfe5850",
+      "bytes": 3116
+    }
+  ]
+}

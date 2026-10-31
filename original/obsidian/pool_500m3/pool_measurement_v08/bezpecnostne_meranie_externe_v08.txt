@@ -1,0 +1,29 @@
+function [safe,latched,flags] = bezpecnostne_meranie_v06(T1lag,T2lag,prev,raw)
+%#codegen
+% v08: T1lag/T2lag = EXTERNE kalibrovane meracie hodnoty s uz aplikovanym
+% bias/senzorickym oneskorenim. NEVER add raw(12/13) again!
+% raw 1:11 BMS, 14 flowOK, 15 ESTOP, 16 manual reset.
+safe=zeros(1,11);
+for k=1:11,safe(k)=raw(k);end
+t1=T1lag;t2=T2lag;
+valid=isfinite(t1)&&isfinite(t2);
+mismatch=valid&&(abs(t1-t2)>0.35);
+hot=valid&&((t1>=27.70)||(t2>=27.70));
+flowFault=raw(14)<0.5;
+estop=raw(15)>0.5;
+fault=(~valid)||mismatch||hot||flowFault||estop;
+latched=double(prev>0.5);
+resetOK=0;
+if fault
+    latched=1;
+elseif raw(16)>0.5 && latched>0.5 && max(t1,t2)<=27.65
+    latched=0;resetOK=1;
+end
+if latched>0.5,safe(9)=0;end
+flags=zeros(1,10);
+flags(1)=latched;flags(2)=double(mismatch);
+flags(3)=double(hot);flags(4)=double(flowFault);
+flags(5)=double(estop);flags(6)=double(~valid);
+flags(7)=resetOK;flags(8)=t1;flags(9)=t2;
+flags(10)=safe(9);
+end

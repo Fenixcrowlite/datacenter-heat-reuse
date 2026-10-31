@@ -1,0 +1,8 @@
+{
+  "actor": "chatgpt-dchr-c93-pool-uncertainty-20261030-1649",
+  "event_id": 1453,
+  "evidence_sha256": "b6ae679d65ffb8a2aaabd6fffbf2115a425c8a42236a782a11b9df55df7fcd0e",
+  "manifest_sha256": "5c385bc41d4ccd7dcdfe30b65e73ec307ecd1e75400e019cc0ff5e945d6b7717",
+  "schema": "SYNAPSE_IDEMPOTENT_EVIDENCE_RECEIPT_V1",
+  "task_id": "scc-2aab24704c2bd0"
+}

@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-08T22:09:57.381390+00:00",
+  "suite": "TES_domain_review_check_v16",
+  "qualifier": "Independent Fraction algebra only; MATLAB not executed by this reviewer; no physical or article replication validation.",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "negative_charge_limit",
+      "passed": true,
+      "classification": "LEGACY_DOMAIN_DEFECT_ANALYTICAL",
+      "actual": {
+        "charge_MW": -2.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 8.2
+      },
+      "expected": {
+        "charge_MW": -2.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 8.2
+      }
+    },
+    {
+      "name": "negative_discharge_limit",
+      "passed": true,
+      "classification": "LEGACY_DOMAIN_DEFECT_ANALYTICAL",
+      "actual": {
+        "charge_MW": 0.0,
+        "discharge_MW": -2.0,
+        "energy_next_MWh": 12.5
+      },
+      "expected": {
+        "charge_MW": 0.0,
+        "discharge_MW": -2.0,
+        "energy_next_MWh": 12.5
+      }
+    },
+    {
+      "name": "overfilled_state_idle",
+      "passed": true,
+      "classification": "DIRECT_COMPONENT_DOMAIN_DEFECT_ANALYTICAL",
+      "actual": {
+        "charge_MW": 0.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 25.0
+      },
+      "expected": {
+        "charge_MW": 0.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 25.0
+      }
+    },
+    {
+      "name": "zero_capacity_nonzero_state",
+      "passed": true,
+      "classification": "DIRECT_COMPONENT_DOMAIN_DEFECT_ANALYTICAL",
+      "actual": {
+        "charge_MW": 0.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 1.0
+      },
+      "expected": {
+        "charge_MW": 0.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 1.0
+      }
+    },
+    {
+      "name": "excessive_decay_clamp",
+      "passed": true,
+      "classification": "DIRECT_COMPONENT_HIDES_INVALID_DECAY_ANALYTICAL",
+      "actual": {
+        "charge_MW": 0.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 0.0
+      },
+      "expected": {
+        "charge_MW": 0.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 0.0
+      }
+    },
+    {
+      "name": "simultaneous_requests",
+      "passed": true,
+      "classification": "DIRECT_COMPONENT_SILENT_CHARGE_PRIORITY_ANALYTICAL",
+      "actual": {
+        "charge_MW": 5.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 14.5
+      },
+      "expected": {
+        "charge_MW": 5.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 14.5
+      }
+    },
+    {
+      "name": "empty_store_charge_room_bound",
+      "passed": true,
+      "classification": "VALID_DOMAIN_BOUNDARY",
+      "actual": {
+        "charge_MW": 22.22222222222222,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 20.0
+      },
+      "expected": {
+        "charge_MW": 22.22222222222222,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 20.0
+      }
+    },
+    {
+      "name": "full_store_discharge_bound",
+      "passed": true,
+      "classification": "VALID_DOMAIN_BOUNDARY",
+      "actual": {
+        "charge_MW": 0.0,
+        "discharge_MW": 16.0,
+        "energy_next_MWh": 0.0
+      },
+      "expected": {
+        "charge_MW": 0.0,
+        "discharge_MW": 16.0,
+        "energy_next_MWh": 0.0
+      }
+    },
+    {
+      "name": "complete_linear_loss_then_charge",
+      "passed": true,
+      "classification": "VALID_SPLIT_ENDPOINT_NOT_CONTINUOUS_LEAKAGE",
+      "actual": {
+        "charge_MW": 5.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 4.5
+      },
+      "expected": {
+        "charge_MW": 5.0,
+        "discharge_MW": 0.0,
+        "energy_next_MWh": 4.5
+      }
+    },
+    {
+      "name": "linear_decay_timestep_sensitivity",
+      "passed": true,
+      "classification": "DECLARED_NUMERICAL_POLICY_LIMITATION",
+      "actual": {
+        "single": 6.0,
+        "split": 6.4
+      },
+      "expected": {
+        "single": 6.0,
+        "split": 6.4
+      }
+    }
+  ],
+  "continuous_rate_comparison_MWh": 6.703200460356394,
+  "source_hashes": {
+    "audit/TES_domain_review_check_v16.py": "d5e0fe7e862f062134d0c5634638f3d1828850b6dd3adf0fb34697d5350244c4",
+    "matlab/+dchr/+components/storage_step.m": "62077ab766b7974ac091b27db05d947898ce637c7e478d7c44007178e6cf2c68",
+    "matlab/+dchr/simulate_system_v13.m": "aa821849e445eee6381338b4dc9ef38bef14452d1fab48d615bb62ad8bdb57d3",
+    "sources/papers/17_Jurgens_Frankfurt_2024.extracted.txt": "2b32bedfcedf0cde7bd7bbf6b2c878c63bc7fb3d3fa75757725a70554b1d4d0d"
+  }
+}

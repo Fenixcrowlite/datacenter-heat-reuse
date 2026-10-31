@@ -1,0 +1,427 @@
+{
+  "version": "0.43",
+  "timestamp_utc": "2026-10-10T13:19:12.453065+00:00",
+  "excludes": "Mutable ledgers, local caches/codegen, this manifest and still-writing finalizer log",
+  "files": [
+    {
+      "path": "audit/finalize_hp_traceability_v43.py",
+      "bytes": 14926,
+      "sha256": "b488a73922351ea2e712ee79a835f23d03de2ce884262e42555ea8709889a35c"
+    },
+    {
+      "path": "audit/HP_primary_boundary_derivation_v43.md",
+      "bytes": 7482,
+      "sha256": "619c21e1b239ce0881ea9ca61e60d386f810cea832b97999f8f7d5dcc805b1fe"
+    },
+    {
+      "path": "audit/HP_primary_boundary_results_v43.md",
+      "bytes": 4921,
+      "sha256": "98b8bdc835b03dfa1508776402c13f1356a74bb9022058d6ea73a3b6d9768bdd"
+    },
+    {
+      "path": "audit/hp_traceability_current_v43.txt",
+      "bytes": 53,
+      "sha256": "17f9ce472e8a7031898caed2d51b7aedab14d5da664806abc7e3597a759d5392"
+    },
+    {
+      "path": "audit/HP_traceability_execution_v43_20261010T131438913Z.json",
+      "bytes": 341,
+      "sha256": "e1096aa27deff19e890877cee79429cdb1d6299c687b1121a0ece2eff5f40f99"
+    },
+    {
+      "path": "audit/HP_traceability_execution_v43_20261010T131446828Z.json",
+      "bytes": 341,
+      "sha256": "3b3a8ee3fab9089c4672dfee0c242656001e3c40e0ce4da7c9247217e8886435"
+    },
+    {
+      "path": "audit/HP_traceability_execution_v43_20261010T131624346Z.json",
+      "bytes": 341,
+      "sha256": "a656c7e6c30c113a7cdf493e7c7f191ca5c79d3fc1a3b55ebce18003e66ac293"
+    },
+    {
+      "path": "audit/HP_traceability_execution_v43_20261010T131744788Z.json",
+      "bytes": 344,
+      "sha256": "71ec9dd63f0f01400fe770728863e7cddf954001442281f6dd11759196a02591"
+    },
+    {
+      "path": "audit/literature_traceability_v43.csv",
+      "bytes": 12850,
+      "sha256": "dafaae8dcdda9e77fef7cf01a0576dff6cdf95b4b5212f20c69fc94f3a3f8143"
+    },
+    {
+      "path": "audit/prepare_hp_traceability_v43.py",
+      "bytes": 3896,
+      "sha256": "79eb1938b6753912650e93dca7f27125c0ec53a5a2e81677c2f6a68f2eab095c"
+    },
+    {
+      "path": "audit/run_hp_traceability_v43.ps1",
+      "bytes": 925,
+      "sha256": "2905f21cc4c7d1d5e9f76fe930a4aad351245fe1d788ad409ad0288cd79a65f8"
+    },
+    {
+      "path": "audit/verify_hp_traceability_v43.py",
+      "bytes": 8937,
+      "sha256": "6f42a5e75b396830b89a28cbddf4105bdbe9ed89190f2b58dc5d68fec9b2053f"
+    },
+    {
+      "path": "automation/logs/hp_traceability_independent_QA_v43_20261010T131754048Z.log",
+      "bytes": 393,
+      "sha256": "4d91282906eed5da98cc192dfe755d72fda37b82fbcf96035e89358f7a5a15b9"
+    },
+    {
+      "path": "automation/logs/hp_traceability_prepare_v43_20261010T131349057Z.log",
+      "bytes": 87,
+      "sha256": "d0fc92a05f5ff762e28d8749e40603ed5c0f706f738b3f3f208e452c785bf858"
+    },
+    {
+      "path": "automation/logs/hp_traceability_prepare_v43_20261010T131612235Z.log",
+      "bytes": 87,
+      "sha256": "b9ea116dd053819dc89dbc130892778261d0a10c7f3512745ebe94deb3729808"
+    },
+    {
+      "path": "automation/logs/hp_traceability_v43_console_20261010T131438913Z.log",
+      "bytes": 181,
+      "sha256": "818cceefb1610cbb44fa18c830f9ed776d34dd838889a1f24c04c80f687cefc4"
+    },
+    {
+      "path": "automation/logs/hp_traceability_v43_console_20261010T131446828Z.log",
+      "bytes": 26110,
+      "sha256": "99b3fdf346c2780a4c4104514588f00eb59db4e554fdd9d016c2f142861c8c02"
+    },
+    {
+      "path": "automation/logs/hp_traceability_v43_console_20261010T131624346Z.log",
+      "bytes": 25813,
+      "sha256": "0b821748c8ea3459d525860dbd51af642ee84ec4cfd8b05a92efc92c292586e8"
+    },
+    {
+      "path": "automation/logs/hp_traceability_v43_console_20261010T131744788Z.log",
+      "bytes": 48,
+      "sha256": "1f887a59e1d9ab59bedd188efb24ca44ef60df3f080f62c46cee66a13ba027c8"
+    },
+    {
+      "path": "MASTER_STAGEBOARD_v43.md",
+      "bytes": 1694,
+      "sha256": "185f2c100d3eddad1194177923277299ba48c12eb581f17c7a8f5dd4152865a8"
+    },
+    {
+      "path": "matlab/simulink/export_hp_traceability_v43.m",
+      "bytes": 1031,
+      "sha256": "95e801271412d2299ef0e296ac521aa15160d7b9e2eee3be9183939197e15c4f"
+    },
+    {
+      "path": "matlab/simulink/run_hp_traceability_v43.m",
+      "bytes": 5820,
+      "sha256": "9f2d9a016796720ba3e6bd782c40ac8a8a12593356334fef85120f0d486344e2"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/assertions_v43.json",
+      "bytes": 95495,
+      "sha256": "ce1234a85193de0b596e6e4bfc8e9b506d2f239bbb5a524b1f3ccd6f0fef5baf"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/component_vectors_v43.json",
+      "bytes": 116442,
+      "sha256": "444dcb2aad89a8f99d2c59bd993b6a83f904182e1436d03de340ec5086a6a9fe"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/component_vectors_v43.mat",
+      "bytes": 16268,
+      "sha256": "2a4ca2cb68d398a1b244b5e48e5522c725bbf6628850c9c90ece383b12c255f5"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/converted_refrigerant_simulation.mat",
+      "bytes": 8119,
+      "sha256": "5aab4aaae944e1b01bd1add71dee9dad2e6dfbcec9e2b7773e0e98ad1758e6d6"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/converted_water_proxy_simulation.mat",
+      "bytes": 8121,
+      "sha256": "e542fb73edcc1b78c2d1e1528b3a2eccac1fdeb7d0fe8ae0e4683caf8ef506b1"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/converted_with_assumed_partload_simulation.mat",
+      "bytes": 8121,
+      "sha256": "3147d2085abae47ef7a7b2f8266b5d03df1b365f870260998376776eb241f508"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/preservation.json",
+      "bytes": 36271,
+      "sha256": "336f6ab52364cfbbfe942b7a5adb42c2a015393d910214086a10f4be6415ea76"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_01.txt",
+      "bytes": 3581,
+      "sha256": "24cb20353e6772943d014410247c8fe47aef8c71818e5ee9833a1835b293cfb3"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_06.txt",
+      "bytes": 4119,
+      "sha256": "4168a3742941a65aa8183c6cff7f3d9caa76f91ec67d962cc721b7f6b61877d1"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_08.png",
+      "bytes": 237752,
+      "sha256": "d21cbc1893f9c92d68df50cc3ca93461f18e3c8000a1eaed8ef79e782151120d"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_08.txt",
+      "bytes": 2779,
+      "sha256": "3091811c02836e979b855466fbf37ee0f06bc06192d5d6f3ee4aed817f617d35"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_09.txt",
+      "bytes": 2670,
+      "sha256": "9ed3e1d43f5133c2f17a0c27f871949ca07a06b1ac4bd361822259fc2dd14549"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_10.png",
+      "bytes": 261284,
+      "sha256": "d82c56719b46ad91e144e6026a186104fb831966e60abf8f30d3d85de0710d0f"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_10.txt",
+      "bytes": 2857,
+      "sha256": "b1dceb120ae7a90b495c4b851b3b8dd1a8e7c186cd8f18ad52a75ab2edb5bf24"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_23.png",
+      "bytes": 211361,
+      "sha256": "38230de968c937067eba79eb7f3f819fe96fafda9b19dc34eedd88b17e36cdcc"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_23.txt",
+      "bytes": 2547,
+      "sha256": "9dfd95d3d7dfd991d9cbd909e924f64756741246f8ee40e0d6bf29cb9b7e6649"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_27.png",
+      "bytes": 117817,
+      "sha256": "a53e1ab39dbc010e5e8a1894436846e1588344632c42caef2f6ecb803a12b5ef"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/primary_evidence/page_27.txt",
+      "bytes": 1588,
+      "sha256": "e3ea7c032a2b6c788b5dc1a9cbaec3e665e60cb749081355af0efefcedde9db6"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/same_factor_refrigerant_simulation.mat",
+      "bytes": 13071,
+      "sha256": "669ad1081cae517e079d84316c7806de5a86b7e99c3b5e7c9716d0bd2c76be4e"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_evidence.json",
+      "bytes": 769,
+      "sha256": "0ca3fbf9b3e9aa09c7bccbfdd0cef07921281933cd04e5c807df7fc2c538cf88"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_snapshot/DCHR_Dispatch_Stateflow_v42.slx",
+      "bytes": 196626,
+      "sha256": "db9777f73cbe9c6e56f0e9900d2c7b6c915588768b68b2464809802109b69a9c"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_snapshot/dchr_stateflow_hp_v42.m",
+      "bytes": 2584,
+      "sha256": "67a395160c14b7074e2b57f068c42f9245b9a7957dd6d5116fa4cd656df9aa55"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_snapshot/export_hp_traceability_v43.m",
+      "bytes": 1031,
+      "sha256": "95e801271412d2299ef0e296ac521aa15160d7b9e2eee3be9183939197e15c4f"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_snapshot/heat_pump_step_v40.m",
+      "bytes": 5895,
+      "sha256": "6b8a3145b2d8a66089dfd49d3eb6b73724beeb8f9dfc1145bd5a298c059a9ed2"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_snapshot/run_hp_traceability_v43.m",
+      "bytes": 5820,
+      "sha256": "5089683dfcd0894cb09bd71a6d901ce2ef9a59cb7d9c9e23f74ff38d9f8b881e"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/source_snapshot/spec.json",
+      "bytes": 26818,
+      "sha256": "f1ef7fba95b232885fe299f163c96a9e30f4e53f082231a45d871d873ff01a5d"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/spec.json",
+      "bytes": 26818,
+      "sha256": "f1ef7fba95b232885fe299f163c96a9e30f4e53f082231a45d871d873ff01a5d"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/stateflow_cases_v43.json",
+      "bytes": 88820,
+      "sha256": "eab3f5523e1fd0383825a012039ab6f806fa48a27f93955408e0711012f6dcf0"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131349_238222Z/summary_v43.json",
+      "bytes": 3584,
+      "sha256": "83563f1e0b2a6d7228ce7c8129dca1707592d3d5de0d50170831bad4403e85b5"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/assertions_v43.json",
+      "bytes": 95487,
+      "sha256": "7a134c8dce4f38fc0858c2931946595bd32599f64be58c3e5e2c9b44f37a0f44"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/component_vectors_v43.json",
+      "bytes": 116442,
+      "sha256": "444dcb2aad89a8f99d2c59bd993b6a83f904182e1436d03de340ec5086a6a9fe"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/component_vectors_v43.mat",
+      "bytes": 16268,
+      "sha256": "3db8eb966e3bd19f2ded6d95eea4798bf17760d7d0f36d6b745360d0dfcaf894"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/converted_refrigerant_simulation.mat",
+      "bytes": 8120,
+      "sha256": "07759c1acdd0f714edceaab5cadf46efa4042540321129a60a126a7ad939d932"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/converted_water_proxy_simulation.mat",
+      "bytes": 8118,
+      "sha256": "d88336cac23c9ed3862953955737e03cfd8be6d3809256073b1b6ef367eec94c"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/converted_with_assumed_partload_simulation.mat",
+      "bytes": 8125,
+      "sha256": "ff0c837af323b9b531e461ad3aba721482e7e3a453910e1d9e5b008fd27f7de3"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/independent_QA_v43_20261010T131754_326049Z.json",
+      "bytes": 632015,
+      "sha256": "aaf8db415b73c6cb46a0562171f8e7db1ce652893cef32b1c22b3517540bbbce"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/mat_reexport_v43.json",
+      "bytes": 218978,
+      "sha256": "cb5bdb3155c33122e630cf9810acc6d8e1b3e354a9cb004604639002da1416ba"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/preservation.json",
+      "bytes": 36271,
+      "sha256": "336f6ab52364cfbbfe942b7a5adb42c2a015393d910214086a10f4be6415ea76"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_01.txt",
+      "bytes": 3581,
+      "sha256": "24cb20353e6772943d014410247c8fe47aef8c71818e5ee9833a1835b293cfb3"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_06.txt",
+      "bytes": 4119,
+      "sha256": "4168a3742941a65aa8183c6cff7f3d9caa76f91ec67d962cc721b7f6b61877d1"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_08.png",
+      "bytes": 237752,
+      "sha256": "d21cbc1893f9c92d68df50cc3ca93461f18e3c8000a1eaed8ef79e782151120d"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_08.txt",
+      "bytes": 2779,
+      "sha256": "3091811c02836e979b855466fbf37ee0f06bc06192d5d6f3ee4aed817f617d35"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_09.txt",
+      "bytes": 2670,
+      "sha256": "9ed3e1d43f5133c2f17a0c27f871949ca07a06b1ac4bd361822259fc2dd14549"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_10.png",
+      "bytes": 261284,
+      "sha256": "d82c56719b46ad91e144e6026a186104fb831966e60abf8f30d3d85de0710d0f"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_10.txt",
+      "bytes": 2857,
+      "sha256": "b1dceb120ae7a90b495c4b851b3b8dd1a8e7c186cd8f18ad52a75ab2edb5bf24"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_23.png",
+      "bytes": 211361,
+      "sha256": "38230de968c937067eba79eb7f3f819fe96fafda9b19dc34eedd88b17e36cdcc"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_23.txt",
+      "bytes": 2547,
+      "sha256": "9dfd95d3d7dfd991d9cbd909e924f64756741246f8ee40e0d6bf29cb9b7e6649"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_27.png",
+      "bytes": 117817,
+      "sha256": "a53e1ab39dbc010e5e8a1894436846e1588344632c42caef2f6ecb803a12b5ef"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/primary_evidence/page_27.txt",
+      "bytes": 1588,
+      "sha256": "e3ea7c032a2b6c788b5dc1a9cbaec3e665e60cb749081355af0efefcedde9db6"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/same_factor_refrigerant_simulation.mat",
+      "bytes": 13076,
+      "sha256": "befae1f1fa623bd11738f3f5339d67d8e3f88dee8f2d9ebf1f21b1bc2091ba8b"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_evidence.json",
+      "bytes": 769,
+      "sha256": "0ca3fbf9b3e9aa09c7bccbfdd0cef07921281933cd04e5c807df7fc2c538cf88"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_snapshot/DCHR_Dispatch_Stateflow_v42.slx",
+      "bytes": 196626,
+      "sha256": "db9777f73cbe9c6e56f0e9900d2c7b6c915588768b68b2464809802109b69a9c"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_snapshot/dchr_stateflow_hp_v42.m",
+      "bytes": 2584,
+      "sha256": "67a395160c14b7074e2b57f068c42f9245b9a7957dd6d5116fa4cd656df9aa55"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_snapshot/export_hp_traceability_v43.m",
+      "bytes": 1031,
+      "sha256": "95e801271412d2299ef0e296ac521aa15160d7b9e2eee3be9183939197e15c4f"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_snapshot/heat_pump_step_v40.m",
+      "bytes": 5895,
+      "sha256": "6b8a3145b2d8a66089dfd49d3eb6b73724beeb8f9dfc1145bd5a298c059a9ed2"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_snapshot/run_hp_traceability_v43.m",
+      "bytes": 5820,
+      "sha256": "9f2d9a016796720ba3e6bd782c40ac8a8a12593356334fef85120f0d486344e2"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/source_snapshot/spec.json",
+      "bytes": 26818,
+      "sha256": "f1ef7fba95b232885fe299f163c96a9e30f4e53f082231a45d871d873ff01a5d"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/spec.json",
+      "bytes": 26818,
+      "sha256": "f1ef7fba95b232885fe299f163c96a9e30f4e53f082231a45d871d873ff01a5d"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/stateflow_cases_v43.json",
+      "bytes": 88820,
+      "sha256": "eab3f5523e1fd0383825a012039ab6f806fa48a27f93955408e0711012f6dcf0"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/summary_v43.json",
+      "bytes": 3584,
+      "sha256": "34d53c28d2ed6fc14700a13a50d69cbcaee4b30099cae201b350b79493a9b4de"
+    },
+    {
+      "path": "results/hp_traceability_v43_20261010T131612_418934Z/visual_review_v43.json",
+      "bytes": 746,
+      "sha256": "4bdf8f9b1d9f1f38724536909f71f00c0b11f78a016bd4c18a87f8354c80d476"
+    },
+    {
+      "path": "STATUS_v43.json",
+      "bytes": 3257,
+      "sha256": "d0afcbd1b5f02ca6c9c1ea5116d15b402b896360d9f3cf5847bfdb24d543f564"
+    }
+  ]
+}

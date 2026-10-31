@@ -1,0 +1,17 @@
+{
+  "a62_v08_sha256": "3917ad808fffee01d792fee91fa9f177c71063ca7f5054352bdfeaf25fcdaf6e",
+  "a62_v09_sha256": "82b3164014e04964eb80d256b1f9439d2ebcfd583972b1258330e04bee97dde1",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1450_A63_OFFLINE_SCADA_BALANCE_VIEW",
+  "dashboard": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1450_A63_OFFLINE_SCADA_BALANCE_VIEW\\OUTPUT\\dashboard.html",
+  "headless_chrome": "6 cards, 7 SVG polylines PASS",
+  "independent_decimal_checks": "12102/12102 PASS",
+  "next_step": "Add an isolated explicit A60 trapezoid vs A62 discrete integration comparison to the offline view; acquire real calibrated telemetry before physical acceptance.",
+  "node_js_syntax": "PASS",
+  "physical_release": false,
+  "scope": "A63_offline_SCADA_signed_loss_energy_dashboard",
+  "source_kind": "derived_simulation",
+  "status": "VERIFIED_SYNTHETIC_OFFLINE_VIEW",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "11/11 PASS",
+  "upstream_files_modified": false
+}

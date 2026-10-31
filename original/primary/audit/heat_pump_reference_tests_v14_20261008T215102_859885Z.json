@@ -1,0 +1,39 @@
+{
+  "version": "0.14",
+  "timestamp_utc": "20261008T215102_859885Z",
+  "category": "independent_analytical_heat_pump_reference",
+  "not_matlab_runtime_validation": true,
+  "not_primary_paper_replication": true,
+  "tests_run": 15,
+  "passed": 15,
+  "failed": 0,
+  "errors": 0,
+  "random_seed": 14026,
+  "comparison_vectors": 517,
+  "available_vectors": 180,
+  "unavailable_vectors": 337,
+  "log": "automation\\logs\\hp_reference_v14_20261008T215102_859885Z.log",
+  "vectors": "audit\\heat_pump_vectors_v14_20261008T215102_859885Z.csv",
+  "source_sha256": {
+    "audit\\test_heat_pump_reference_v14.py": "5021ea7a162ee0c11bab51b0bd41b7509a114655ef6621500e331d8ac5bcee63",
+    "audit\\heat_pump_reference_v14.py": "e9df6b28e3387780d311cf8573f2bb523a9ca30877d26383ae17e218723c29a6"
+  },
+  "equations": {
+    "COP_Carnot": "Th/(Th-Tc)",
+    "COP_operating": "a+b*Qh",
+    "source_boundary": "b*Qh^2+(a-1-S*b)*Qh-S*a=0",
+    "entropy_generation": "Qh/Th-Qe/Tc >= 0"
+  },
+  "assumptions": [
+    "isothermal reservoir temperature proxy",
+    "constant fractional Carnot efficiency",
+    "linear part-load COP penalty",
+    "minimum COP as continuous-operation cutoff",
+    "zero-source and below-cutoff points unavailable; no cycling or resistance model"
+  ],
+  "limitations": [
+    "no measurement calibration",
+    "no primary-paper equation match",
+    "no annual dispatch integration or Simulink/Stateflow execution"
+  ]
+}

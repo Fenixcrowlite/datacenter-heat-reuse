@@ -1,0 +1,7 @@
+﻿{
+    "timestamp_utc":  "2026-10-10T13:03:16.6984607Z",
+    "log_path":  "automation/logs/stateflow_clock_v42_console_20261010T130315167Z.log",
+    "command":  "addpath(\u0027matlab\u0027,\u0027matlab/simulink\u0027); w=fullfile(pwd,\u0027results\u0027,\u0027stateflow_build_v42\u0027); mkdir(w); Simulink.fileGenControl(\u0027set\u0027,\u0027CacheFolder\u0027,fullfile(w,\u0027cache\u0027),\u0027CodeGenFolder\u0027,fullfile(w,\u0027codegen\u0027),\u0027createDir\u0027,true); disp(version); disp(ver(\u0027Stateflow\u0027)); build_dispatch_stateflow_v42; run_stateflow_clock_v42(\u0027audit/stateflow_clock_spec_v42_20261010T130308_826777Z\u0027);",
+    "evidence_class":  "observed_matlab_batch_receipt",
+    "exit_code":  1
+}

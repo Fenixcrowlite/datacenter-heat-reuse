@@ -1,0 +1,16 @@
+{
+  "capacity_MWh": 10.0,
+  "cutoff_MWh": 5.0,
+  "on_internal_MW": 2.7,
+  "off_internal_MW": -3.75,
+  "assumed_min_on_h": 0.25,
+  "assumed_min_off_h": 0.25,
+  "off_dwell_restart_upper_MWh": 8.827220821345797,
+  "on_dwell_restart_upper_MWh": 9.56964295108471,
+  "proposed_restart_MWh": 8.827220821345797,
+  "on_duration_h": 0.6671148090179697,
+  "off_duration_h": 0.2500000000000001,
+  "feasible": true,
+  "engineering_example_only": true,
+  "executed_stateflow_policy": false
+}

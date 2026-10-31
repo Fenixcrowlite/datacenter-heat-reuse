@@ -1,0 +1,15 @@
+{
+  "annual_hours_above_29C": 0,
+  "assertions": 1025013,
+  "caveat": "Validates synthetic arithmetic and no-double-counting conventions, not HVAC physical performance.",
+  "cooling_branch_annual_exercised": false,
+  "corruption_controls": 2,
+  "hot_hour_control": true,
+  "hourly_sha256": "7758cda64fb64840d249cceb9d9fa59d63fc17310d7a4c1a9a32fde46e5f275f",
+  "max_outdoor_C": 27.54415922,
+  "rows_checked": 78840,
+  "scenarios": 9,
+  "schema": "C102_INDEPENDENT_QA_V1",
+  "status": "PASS",
+  "summary_sha256": "92dcd27810df2a5c22626f9f2173dd7fa2b60134723031edaa85a705d5b0ca43"
+}

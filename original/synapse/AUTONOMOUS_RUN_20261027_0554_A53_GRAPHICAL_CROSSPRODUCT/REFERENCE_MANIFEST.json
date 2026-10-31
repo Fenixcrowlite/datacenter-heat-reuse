@@ -1,0 +1,149 @@
+{
+  "cases": [
+    {
+      "scenario": "neither",
+      "lag": 0,
+      "trip": 0,
+      "file": "REF_neither_lag0_trip0.csv",
+      "samples": 240,
+      "first_trip": 96
+    },
+    {
+      "scenario": "neither",
+      "lag": 0,
+      "trip": 2,
+      "file": "REF_neither_lag0_trip2.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "neither",
+      "lag": 0,
+      "trip": 4,
+      "file": "REF_neither_lag0_trip4.csv",
+      "samples": 240,
+      "first_trip": 100
+    },
+    {
+      "scenario": "neither",
+      "lag": 1,
+      "trip": 0,
+      "file": "REF_neither_lag1_trip0.csv",
+      "samples": 240,
+      "first_trip": 96
+    },
+    {
+      "scenario": "neither",
+      "lag": 1,
+      "trip": 2,
+      "file": "REF_neither_lag1_trip2.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "neither",
+      "lag": 1,
+      "trip": 4,
+      "file": "REF_neither_lag1_trip4.csv",
+      "samples": 240,
+      "first_trip": 100
+    },
+    {
+      "scenario": "neither",
+      "lag": 4,
+      "trip": 0,
+      "file": "REF_neither_lag4_trip0.csv",
+      "samples": 240,
+      "first_trip": 96
+    },
+    {
+      "scenario": "neither",
+      "lag": 4,
+      "trip": 2,
+      "file": "REF_neither_lag4_trip2.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "neither",
+      "lag": 4,
+      "trip": 4,
+      "file": "REF_neither_lag4_trip4.csv",
+      "samples": 240,
+      "first_trip": 100
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 0,
+      "trip": 0,
+      "file": "REF_backup_only_lag0_trip0.csv",
+      "samples": 240,
+      "first_trip": 96
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 0,
+      "trip": 2,
+      "file": "REF_backup_only_lag0_trip2.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 0,
+      "trip": 4,
+      "file": "REF_backup_only_lag0_trip4.csv",
+      "samples": 240,
+      "first_trip": 100
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 1,
+      "trip": 0,
+      "file": "REF_backup_only_lag1_trip0.csv",
+      "samples": 240,
+      "first_trip": 96
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 1,
+      "trip": 2,
+      "file": "REF_backup_only_lag1_trip2.csv",
+      "samples": 240,
+      "first_trip": 98
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 1,
+      "trip": 4,
+      "file": "REF_backup_only_lag1_trip4.csv",
+      "samples": 240,
+      "first_trip": 100
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 4,
+      "trip": 0,
+      "file": "REF_backup_only_lag4_trip0.csv",
+      "samples": 240,
+      "first_trip": 96
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 4,
+      "trip": 2,
+      "file": "REF_backup_only_lag4_trip2.csv",
+      "samples": 240,
+      "first_trip": 103
+    },
+    {
+      "scenario": "backup_only",
+      "lag": 4,
+      "trip": 4,
+      "file": "REF_backup_only_lag4_trip4.csv",
+      "samples": 240,
+      "first_trip": 105
+    }
+  ],
+  "synthetic": true
+}

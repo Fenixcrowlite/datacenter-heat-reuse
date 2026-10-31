@@ -1,0 +1,50 @@
+function y=fyzikalne_ochrany_v07(core,Tpool,raw,Tit)
+%#codegen
+% Separatne dve uzatvaracie vetvy HX: fyzicky unik len pri dvoch poruchach.
+% REJECT A =180 kW, REJECT B=150 kW; oba su scenarove hodnoty.
+% raw 17 primary stuck, 19 secondary stuck, 18 main reject availability,
+% 20 backup reject availability. raw 22 = Q_IT_load_avoided (W).
+dt=900; Cw=997*500*4182; Cit=8e6;
+Qcmd=max(0,core(4));
+QrejectCmd=max(0,core(17));
+Qdc=max(0,core(18));
+primaryFault=raw(17)>0.5;
+backupFault=raw(19)>0.5;
+leak=0;
+if primaryFault && backupFault && Qcmd<=1e-7
+    drive=max(0,raw(2)-Tpool-3);
+    leak=min([25000,QrejectCmd,4500*drive]);
+end
+Qremaining=max(0,QrejectCmd-leak);
+mainCap=180000*min(1,max(0,raw(18)));
+backupCap=150000*min(1,max(0,raw(20)));
+QrejectA=min(Qremaining,mainCap);
+QrejectB=min(max(0,Qremaining-QrejectA),backupCap);
+Qreject=QrejectA+QrejectB;
+Qunhandled=max(0,Qremaining-Qreject);
+passive=max(0,2000*(Tit-30));
+TitNext=max(30,Tit+dt*(Qunhandled-passive)/Cit);
+y=zeros(1,39);
+for k=1:25,y(k)=core(k);end
+y(1)=core(1)+dt*leak/Cw;
+y(4)=Qcmd+leak;
+y(6)=core(6)+leak;
+y(17)=Qreject;
+% Include accumulated, not-dissipated heat explicitly in closure
+y(22)=Qdc-(y(6)+core(14)+Qreject+Qunhandled);
+y(24)=y(4)-(y(6)+core(7));
+y(26)=leak;
+y(27)=Qunhandled;
+y(28)=TitNext;
+y(29)=double(TitNext>=42); 
+y(30)=QrejectCmd;
+y(31)=Qreject;
+y(32)=double((Qcmd<=1e-7)&&(leak>0));
+y(33)=y(22);
+y(34)=QrejectA;
+y(35)=QrejectB;
+y(36)=max(0,raw(22)); % avoided modeled waste heat
+y(37)=double(primaryFault);
+y(38)=double(backupFault);
+y(39)=Qremaining-(QrejectA+QrejectB+Qunhandled);
+end

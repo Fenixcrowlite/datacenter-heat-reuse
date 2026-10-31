@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-10-26T16:03:00+01:00",
+  "host": "DESKTOP-M9L3I4M",
+  "primary_mcp": "ONLINE",
+  "primary_control_enabled": true,
+  "free_ram_gib": 7.232,
+  "gpu_vram_mib_used": 576,
+  "gpu_vram_mib_total": 8188,
+  "gpu_util_percent": 0,
+  "matlab_processes_after_batch": 0,
+  "jarvice_daemon": {
+    "pid": 11572,
+    "state": "idle",
+    "heartbeat_age_s": 39.7,
+    "process_alive": true,
+    "scheduler_state": "Running",
+    "scheduler_last_result": 267009,
+    "stop_file": false
+  },
+  "stop_checked": {
+    "synapse_root": false,
+    "jarvice_logs": false
+  },
+  "git_worktrees_count": 361,
+  "scope_note": "Root and selected task-scoped STOP checks, not exhaustive global recursive search",
+  "source": "Live SynapseMCP Web read-only PowerShell + process API"
+}

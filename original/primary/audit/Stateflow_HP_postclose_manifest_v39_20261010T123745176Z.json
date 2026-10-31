@@ -1,0 +1,21 @@
+{
+  "evidence_class": "postclose_packaging_only",
+  "files": [
+    {
+      "sha256": "943e65e6111fb848d399a1e3262607edbbfd2e6d25822d5e6dafc107db457814",
+      "bytes": 5824,
+      "path": "audit\\check_stateflow_hp_checkpoint_v39.py"
+    },
+    {
+      "sha256": "1abbd95cb2e2180840e93b1b608d073914aaabc126490e676236e36a11720562",
+      "bytes": 28179,
+      "path": "audit\\Stateflow_HP_postclose_v39_20261010T123729_112718Z.json"
+    },
+    {
+      "sha256": "3ca3bf2c47785f5d36d26c0d4ef5828456813b193f87643b10d5b79c6f1f6eba",
+      "bytes": 180,
+      "path": "automation\\logs\\stateflow_hp_v39_postclose_20261010T123728993Z.log"
+    }
+  ],
+  "timestamp_utc": "2026-10-10T12:37:45.2693057Z"
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.20",
+  "inherits": "STATUS_v19.json",
+  "checkpoint": "Source01 partial primary audit",
+  "checks_passed": 11,
+  "primary_signoffs": 0,
+  "total_sources": 31,
+  "validation": "NOT_TESTED",
+  "next": "Source01 Table1 price traceability"
+}

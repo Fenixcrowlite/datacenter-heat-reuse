@@ -1,0 +1,13 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1209,
+  "scope": "isolated_DCHR_A36_conservative_instantaneous_redispatch",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_0744_A36_DCHR_REDISPATCH_REFERENCE",
+  "evidence_sha256": "ea34ef6226bd1256220bea0cea9d803b24a173915fd1978743c9d93b0b7424f0",
+  "manifest_sha256": "d5f115f0a032342ecaaba933ddaf73653faf474f0799f5b1f5c59fcdec39bcdd",
+  "qa": "17/17 unit PASS; 20833 independent CSV checks PASS across 4032 intervals",
+  "decision": "ISOLATED_REFERENCE_VERIFIED_PHYSICAL_RELEASE_BLOCKED",
+  "key_finding": "both branches OFF at hour 24: required REJECT max 213.6295 kW; illustrative assumed 150 kW reject limit produces 358 unsafe intervals and 2543.427491 kWh unhandled",
+  "limitations": "not TES/Stateflow dynamic, reject rating unverified, HP COP proxy, no real field data",
+  "next_step": "Model owner to integrate energy-balanced redispatch with TES SOC, reject hardware limits, HP part-load curves and IT safety in owned Simulink/Stateflow copy; validate against 672 reference samples"
+}

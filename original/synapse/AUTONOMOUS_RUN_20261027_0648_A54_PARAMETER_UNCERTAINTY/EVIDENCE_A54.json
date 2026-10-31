@@ -1,0 +1,27 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A54_synthetic_parameter_uncertainty",
+  "status": "A54_SYNTHETIC_PARAMETER_UNCERTAINTY_VERIFIED",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0648_A54_PARAMETER_UNCERTAINTY",
+  "parameter_grid": "2 scenarios x 2 sensor delays x 2 trip delays x 3 heat capacities x 3 residual fractions x 2 compressor taus",
+  "cases": 144,
+  "baseline_A52_anchors": 18,
+  "steps_per_case": 240,
+  "independent_decimal_ledger": true,
+  "python_tests": "8/8 PASS",
+  "source_A52_sha256": "b2ae3e27162c8d9f3193995b6e965831d4f7024c3a6922382487ffb279ace7ea",
+  "max_temperature_C": {
+    "neither": 102.4915171905,
+    "backup_only": 83.42902741500001
+  },
+  "source_A53_model_sha256": {
+    "DCHR_A53_TripDelay_0.slx": "8d0ead5e1ffb4b23be93c7893c8263f5e9474955f287721585b72192427dc9d9",
+    "DCHR_A53_TripDelay_2.slx": "095c7bf568a0ae5a461a883163ad036e06fb91a995d2c4989a02d3263fb4acec",
+    "DCHR_A53_TripDelay_4.slx": "e679915699677d81c6b33fc4eeb31b77675cbd22841869398e58cee627f9af6c"
+  },
+  "synthetic_only": true,
+  "matlab_A54_executed": false,
+  "physical_release": false,
+  "limitations": "Hypothetical parameter bounds, not uncertainty confidence intervals or validated physical safety envelope. No A54 MATLAB run.",
+  "next_step": "A55: select measured thermal mass, compressor dynamics and residual heat bounds from primary equipment data; then test interval robustness in graphical Stateflow. Do not approve hardware or certify temperature limits from synthetic sweeps."
+}

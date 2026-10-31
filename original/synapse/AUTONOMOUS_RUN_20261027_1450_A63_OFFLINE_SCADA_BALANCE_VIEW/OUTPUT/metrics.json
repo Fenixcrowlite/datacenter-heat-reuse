@@ -1,0 +1,38 @@
+{
+  "v08": {
+    "ambient_gain_MWh": 0.2996360473976279,
+    "closure_J": -4.55338809e-05,
+    "duration_discrete_h": 168.0,
+    "final_temperature_C": 27.58,
+    "input_MWh": 10.393084303276646,
+    "max_residual_W": 2.226176666666667e-07,
+    "negative_loss_rows": 91,
+    "physical_release": false,
+    "rows": 672,
+    "signed_loss_MWh": 3.6872124532766586,
+    "source_csv_sha256": "3917ad808fffee01d792fee91fa9f177c71063ca7f5054352bdfeaf25fcdaf6e",
+    "source_kind": "derived_simulation",
+    "source_meta_sha256": "01993998f98709e88c27424a6129f8d0494e8912ff3b1bdda4930a444b15345c",
+    "source_schema": "scada_v08",
+    "stored_MWh": 6.70587185,
+    "timestamp_span_h": 167.75
+  },
+  "v09": {
+    "ambient_gain_MWh": 0.2996360485227648,
+    "closure_J": 3.52985391e-05,
+    "duration_discrete_h": 168.0,
+    "final_temperature_C": 27.58,
+    "input_MWh": 10.393084301954044,
+    "max_residual_W": 2.180486666666667e-07,
+    "negative_loss_rows": 91,
+    "physical_release": false,
+    "rows": 672,
+    "signed_loss_MWh": 3.6872124519540344,
+    "source_csv_sha256": "82b3164014e04964eb80d256b1f9439d2ebcfd583972b1258330e04bee97dde1",
+    "source_kind": "derived_simulation",
+    "source_meta_sha256": "c0d6528695a1b596572119d08dca5bba1bf78182e95e2932eb0daced4cee310a",
+    "source_schema": "scada_v09_matlab",
+    "stored_MWh": 6.70587185,
+    "timestamp_span_h": 167.75
+  }
+}

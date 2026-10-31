@@ -1,0 +1,189 @@
+{
+  "status": "A52_SYNTHETIC_CROSSPRODUCT_REFERENCE_PASS",
+  "synthetic_only": true,
+  "matlab_crossproduct_executed": false,
+  "physical_release": false,
+  "step_seconds": 900,
+  "cases": [
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 0,
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "max_temperature_C": 34.75072828258556,
+      "unhandled_heat_kWh": 25.445177322631523,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 0,
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "max_temperature_C": 67.804362159375,
+      "unhandled_heat_kWh": 120.36483590841983,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 0,
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "max_temperature_C": 90.94141546884961,
+      "unhandled_heat_kWh": 216.35992172844252,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 1,
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "max_temperature_C": 34.75072828258556,
+      "unhandled_heat_kWh": 25.445177322631523,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 1,
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "max_temperature_C": 67.804362159375,
+      "unhandled_heat_kWh": 120.36483590841983,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 1,
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "max_temperature_C": 90.94141546884961,
+      "unhandled_heat_kWh": 216.35992172844252,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 4,
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "max_temperature_C": 34.75072828258556,
+      "unhandled_heat_kWh": 25.445177322631523,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 4,
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "max_temperature_C": 67.804362159375,
+      "unhandled_heat_kWh": 120.36483590841983,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "neither",
+      "sensor_lag_steps": 4,
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "max_temperature_C": 90.94141546884961,
+      "unhandled_heat_kWh": 216.35992172844252,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 0,
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "max_temperature_C": 42.891420632300694,
+      "unhandled_heat_kWh": 92.05316264386882,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 0,
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "max_temperature_C": 67.804362159375,
+      "unhandled_heat_kWh": 180.14055344592092,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 0,
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "max_temperature_C": 74.02163479851562,
+      "unhandled_heat_kWh": 245.458386200925,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 1,
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "max_temperature_C": 44.221151075355515,
+      "unhandled_heat_kWh": 88.31180884282445,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 1,
+      "trip_delay_steps": 2,
+      "first_trip_index": 98,
+      "max_temperature_C": 67.804362159375,
+      "unhandled_heat_kWh": 179.670158723314,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 1,
+      "trip_delay_steps": 4,
+      "first_trip_index": 100,
+      "max_temperature_C": 74.02163479851562,
+      "unhandled_heat_kWh": 250.4780913303455,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 4,
+      "trip_delay_steps": 0,
+      "first_trip_index": 96,
+      "max_temperature_C": 44.221151075355515,
+      "unhandled_heat_kWh": 91.8458654474119,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 4,
+      "trip_delay_steps": 2,
+      "first_trip_index": 103,
+      "max_temperature_C": 72.33413479851562,
+      "unhandled_heat_kWh": 229.43135020941446,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    },
+    {
+      "scenario": "backup_only",
+      "sensor_lag_steps": 4,
+      "trip_delay_steps": 4,
+      "first_trip_index": 105,
+      "max_temperature_C": 72.33413479851562,
+      "unhandled_heat_kWh": 267.373690300414,
+      "unmet_heat_kWh": 102.77710188939439,
+      "max_flow_residual_W": 2.9103830456733704e-11
+    }
+  ]
+}

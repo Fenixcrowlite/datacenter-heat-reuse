@@ -1,0 +1,14 @@
+{
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1753_A68_STABLE_FINALIZER",
+  "checkpoint_created_at_utc": "2026-10-27T16:54:39+00:00",
+  "next_step": "Use this module in the next isolated finalizer; never rewrite A66/A67 evidence.",
+  "physical_release": false,
+  "python_compile": "PASS",
+  "regression": "timestamp and event replay",
+  "scope": "A68_stable_finalizer_replay",
+  "source_kind": "derived_simulation",
+  "source_sha256": "e8e00dbc7d1a48619a965cd9d357673f3ae274ab70b7ba9a68accfe9850b86a5",
+  "status": "VERIFIED_STABLE_CHECKPOINT",
+  "task_id": "scc-3d9d172beb6e1b",
+  "unit_tests": "13/13 PASS"
+}

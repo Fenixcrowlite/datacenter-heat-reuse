@@ -1,0 +1,27 @@
+{Error using build_a44 (line 71)
+Error due to multiple causes.
+
+Error in run (line 100)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - Show complete stack trace
+Caused by:
+    Error using build_a44 (line 71)
+    Invalid configuration for block 'DCHR_A44_Graphical_Supervisor/In1'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a44 (line 71)
+    Invalid configuration for block 'DCHR_A44_Graphical_Supervisor/In2'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+    Error using build_a44 (line 71)
+    Invalid configuration for block 'DCHR_A44_Graphical_Supervisor/In3'. Unable to extrapolate output values after final workspace data value because interpolation is not
+    enabled.
+    Suggested Actions:
+         Enable interpolation. - Fix
+     - Show complete stack trace
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

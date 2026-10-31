@@ -1,0 +1,28 @@
+{
+  "checks": [
+    "dispatch_priority",
+    "source_cap",
+    "thermostat",
+    "pool_energy",
+    "air_energy",
+    "air_mass",
+    "state_continuity",
+    "scenario_regression"
+  ],
+  "counts": {
+    "air_150kW": 35040,
+    "noheat_7d": 672,
+    "water_10kW_7d": 672,
+    "water_150kW": 35040
+  },
+  "data_sha256": "428c52fb8c2749cb2769632cb317e0d6c2e6268225b9e9f04e624ad48c4a056a",
+  "independent": true,
+  "negative_controls": 6,
+  "rows": 71424,
+  "source_sha256": {
+    "air": "998d5da270714a1b84dfecaa774578174e7815fe4178af28920d0a24d4da3b11",
+    "pool": "0686860f25ac42735bdecf9b896278e093177dc8062426f7cd232d232e48d923",
+    "source": "6f8fa6a7c8d6927811e02b3c8d3a970a3f6216022a7d03ed012e26da3b14e6bf"
+  },
+  "status": "PASS"
+}

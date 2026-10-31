@@ -1,0 +1,15 @@
+{
+  "event_id": 1261,
+  "task_id": "scc-3d9d172beb6e1b",
+  "scope": "A48_graphical_coupling_build_source_candidate",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_0048_A48_GRAPHICAL_COUPLING_CANDIDATE",
+  "build_sha256": "24a38b3052c02ac76fe8f928c3ab917fd6b7c3f09301c858ac10dde898194762",
+  "evidence_sha256": "578b20d439c40c70bb886dd14054476862d544e5f46b84cab9cbbba1b8956de6",
+  "manifest_sha256": "f78107e48aaae698d7da69d251126ecfd954e73cf1844eff69da0c0667e7daa9",
+  "handoff_sha256": "7092a7778176b35211f64d61f0c182f0bb612baa50ab2c481684e059c09025a6",
+  "qa": "7/7 Python tests; 4704/4704 A47 FSM reference; MATLAB NOT RUN",
+  "model_slx_exists": false,
+  "actual_graphical_stateflow_connected": false,
+  "physical_release": false,
+  "next_step": "When RAM headroom and GPU owner permit: run build_a48.m in MATLAB R2026a, fix compilation/timing issues, verify 7x672 full numerical and transition parity, update this task."
+}

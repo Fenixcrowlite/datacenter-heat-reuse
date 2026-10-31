@@ -1,0 +1,13 @@
+{
+  "QA": "16/16 unittest; 4/4 AST; 1344/1344 Decimal state updates",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1400_A61_POOL_DISCRETE_CLOSURE",
+  "event_id": 1318,
+  "evidence_sha256": "a36aa0abf7dc622ba1635e02322f35e2714735a80836cc5c2d35a4e9060b8c1b",
+  "handoff_sha256": "783a78af45811498a4b719ac2cce806f455bd5bacf68b7885d5ba43e796631e2",
+  "manifest_sha256": "89bccdfc3110582ad88252ba62748e75b501782f5b0fbae31d2ef168f521ba6f",
+  "next_step": "Add explicit signed Q_pool_loss and discrete-step energy accounting to a future isolated A60 schema revision; keep A60 original immutable. Obtain authenticated real telemetry for A55-A59.",
+  "physical_release": false,
+  "scope": "A61_discrete_pool_first_law_v08_v09",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

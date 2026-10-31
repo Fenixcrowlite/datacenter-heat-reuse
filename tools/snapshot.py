@@ -23,6 +23,7 @@ PRUNE = {'.git', 'node_modules', '__pycache__', 'slprj', '.angular', 'Cache',
          'Code Cache', 'GPUCache', 'Crashpad', 'python_deps', '.venv'}
 SECRET_NAME = re.compile(r'(^\.env($|\.)|passwords?$|credentials?|cookies?$|Login Data|Web Data)', re.I)
 SECRET_BYTES = re.compile(rb'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----)')
+RESERVED = re.compile(r'^(?:CON|PRN|AUX|NUL|COM[1-9¹²³]|LPT[1-9¹²³])(?:\.|$)',re.I)
 
 
 def safe_relative(value):
@@ -31,7 +32,14 @@ def safe_relative(value):
     path = PurePosixPath(value)
     if path.is_absolute() or any(p in ('..', '.') for p in path.parts):
         raise ValueError('Unsafe archive path')
+    if any(RESERVED.match(p) or p.endswith(('.', ' ')) or any(ord(c)<32 or c in '<>"|?*' for c in p) for p in path.parts):
+        raise ValueError('Nonportable or reserved Windows archive path')
     return path
+
+
+def browser_profile(path):
+    path=Path(path)
+    return (path/'Local State').is_file() and (path/'Default').is_dir()
 
 
 def exclusion(name):
@@ -69,7 +77,7 @@ def snapshot(roots, archive, destination=None, progress=None):
                 dirs.sort()
                 for name in dirs[:]:
                     path = Path(base) / name
-                    if name in PRUNE or name.startswith('qa_') or path.is_symlink():
+                    if name in PRUNE or browser_profile(path) or path.is_symlink():
                         dirs.remove(name)
                         manifest['excluded'].append({'root': alias, 'path': path.relative_to(root).as_posix(),
                                                      'reason': 'installed dependency, generated cache, browser profile or symlink'})

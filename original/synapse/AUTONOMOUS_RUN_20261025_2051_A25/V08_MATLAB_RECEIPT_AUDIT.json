@@ -1,0 +1,24 @@
+{
+  "schema": "dchr.v08.receipt_audit.v1",
+  "checked_at_utc": "2026-10-25T19:55:33.671749+00:00",
+  "project": "C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse",
+  "source_class": "D_SYNTHETIC",
+  "current_sha256": {
+    "matlab/pool_measurement_v08/DC_Bazen_Externe_Merania_v08_SK.slx": "55add54b3181982ba878776493db2dba8879a583a35fb179f9c3a9c05d560e82",
+    "matlab/pool_measurement_v08/spusti_merania_replay_v08_sk.m": "e225953ff5372887b62e47f59a8eeddee7d4553db9bf8ef44fefd0168c50e25e",
+    "results/pool_measurement_v08/D_REPLAY_INPUT_MANIFEST.json": "183548157e89e99eab4d4afc056087a3b2b07cf253fe612af4d0a15e30dc7fa9",
+    "results/pool_measurement_v08/QA_NEZAVISLA_V08_SK.json": "c5f957006993b99b9783e0ec585696f3886a59e011fa96b662375fba4bc2a083",
+    "results/pool_measurement_v08/vysledky_v08_SK.json": "8db2fdac9219a6fb79d9cb7ab3f29ae9d0b1807ce5ef1efb67a1d70b1d4fd556",
+    "results/pool_measurement_v08/sim_v08_zdravy_SK.csv": "5a976573e27d52e25c74e056ece807c7fdc13a8884c130117b1a8ab426f69bf3",
+    "results/pool_measurement_v08/sim_v08_primarny_ventil_zaseknuty_SK.csv": "040913b5f798a38379b49ddd1a2065da27688b3844e090898097d85975ce4f26",
+    "results/pool_measurement_v08/sim_v08_oba_ventily_zaseknute_SK.csv": "722928f106561f0646ebd00bca4717a48d5999fa5ef6998e658320c7497e7c51",
+    "results/pool_measurement_v08/sim_v08_hlavny_REJECT_off_zalozny_ok_SK.csv": "415cd088f27a5284265be43105241986329e1548e8eccd0e290a1d9c20013c6a",
+    "results/pool_measurement_v08/sim_v08_oba_REJECT_off_bez_shedding_SK.csv": "7cf5c842076a235e8b61275a2593c48234600efc84496d6482a19d401ec1f2ce",
+    "results/pool_measurement_v08/sim_v08_oba_REJECT_off_so_shedding_SK.csv": "fa38f052bd766f4616755444f0b8ece43ba26b4348edea6b150e37e7ba1714ca",
+    "results/pool_measurement_v08/sim_v08_spolocny_bias_senzorov_SK.csv": "52f1bfcd80666550c2bf1f7881a54f742efff18ace16bcd5321794883c3cf088",
+    "results/pool_measurement_v08/sim_v08_kombinovana_havaria_so_shedding_SK.csv": "971b3c0167040b75d928806004201b77f224972b438125af75bed2887947b674"
+  },
+  "discovered_receipt_candidates": [],
+  "status": "BLOCKED_MATLAB_EXECUTION_RECEIPT_MISSING",
+  "limit": "Static hashes and historical QA do not independently prove a MATLAB execution."
+}

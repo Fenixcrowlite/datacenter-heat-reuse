@@ -1,0 +1,27 @@
+﻿{
+    "time":  "2026-10-26T10:33:53.4481364+01:00",
+    "host":  "DESKTOP-M9L3I4M",
+    "ram_free_gib":  2.43,
+    "gpu":  "1850, 8188, 0",
+    "stop":  [
+
+             ],
+    "processes":  [
+                      {
+                          "pid":  5264,
+                          "name":  "python",
+                          "alive":  true
+                      },
+                      {
+                          "pid":  16288,
+                          "name":  "node",
+                          "alive":  true
+                      },
+                      {
+                          "pid":  6124,
+                          "name":  "python",
+                          "alive":  true
+                      }
+                  ],
+    "primary_web":  "ping verified at start; refresh pending"
+}

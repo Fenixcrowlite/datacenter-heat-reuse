@@ -1,0 +1,12 @@
+{
+  "task_id": "scc-3d9d172beb6e1b",
+  "event_id": 1205,
+  "scope": "isolated_live_SCADA_v09_headless_cascade_whatif_acceptance",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261026_A35B_SCADA_CASCADE_ACCEPTANCE",
+  "evidence_sha256": "a32ae6723d52102878c1227f70633fc826e8a31da449cc5aaae66915e9212e1d",
+  "manifest_sha256": "02db283628ff670b5ad066e8b48205345ab0e981bd905434bfb4ab3f9cef0d0d",
+  "qa": "28/28 PASS Chrome+Edge; pool/DH OFF; pre-onset baseline; poll stability; GET only; backend unchanged",
+  "decision": "SCADA_CASCADE_WHATIF_UI_VERIFIED",
+  "limits": "Synthetic scenario overlay, no recalculation of DC/HP/TES/REJECT or physical validation",
+  "next_step": "Model owner to implement energy-balanced Simulink/Stateflow what-if recalculation if full physics needed; keep production GUI unchanged"
+}

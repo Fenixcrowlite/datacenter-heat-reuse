@@ -1,0 +1,26 @@
+test_ambient_loss (test_stratified_tank.TankTests.test_ambient_loss) ... ok
+test_bad_profile (test_stratified_tank.TankTests.test_bad_profile) ... ok
+test_bad_source (test_stratified_tank.TankTests.test_bad_source) ... ok
+test_charge_without_discharge (test_stratified_tank.TankTests.test_charge_without_discharge) ... ok
+test_discharge_energy (test_stratified_tank.TankTests.test_discharge_energy) ... ok
+test_empty (test_stratified_tank.TankTests.test_empty) ... ok
+test_gas_temperature_gate (test_stratified_tank.TankTests.test_gas_temperature_gate) ... ok
+test_geometry (test_stratified_tank.TankTests.test_geometry) ... ok
+test_geometry_ua_scaling (test_stratified_tank.TankTests.test_geometry_ua_scaling) ... ok
+test_layer_count (test_stratified_tank.TankTests.test_layer_count) ... ok
+test_lossless_baseline_ua (test_stratified_tank.TankTests.test_lossless_baseline_ua) ... ok
+test_mixing_energy_conserves (test_stratified_tank.TankTests.test_mixing_energy_conserves) ... ok
+test_negative_ua (test_stratified_tank.TankTests.test_negative_ua) ... ok
+test_no_overheat (test_stratified_tank.TankTests.test_no_overheat) ... ok
+test_power_cap (test_stratified_tank.TankTests.test_power_cap) ... ok
+test_simultaneous_balance (test_stratified_tank.TankTests.test_simultaneous_balance) ... ok
+test_site_electric_gate (test_stratified_tank.TankTests.test_site_electric_gate) ... ok
+test_source_hash (test_stratified_tank.TankTests.test_source_hash) ... ok
+test_source_headroom_gate (test_stratified_tank.TankTests.test_source_headroom_gate) ... ok
+test_temperature_order (test_stratified_tank.TankTests.test_temperature_order) ... ok
+test_toy_year (test_stratified_tank.TankTests.test_toy_year) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.293s
+
+OK

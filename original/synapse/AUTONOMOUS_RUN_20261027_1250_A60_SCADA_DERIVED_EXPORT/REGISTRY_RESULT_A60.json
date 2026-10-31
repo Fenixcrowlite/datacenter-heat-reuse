@@ -1,0 +1,13 @@
+{
+  "QA": "15/15 unittest; 4/4 AST; 5376/5376 cross-version; 10/10 Decimal integrals",
+  "artifact_directory": "C:\\Users\\Lysda\\Desktop\\SynapseControlCenter\\recovery\\AUTONOMOUS_RUN_20261027_1250_A60_SCADA_DERIVED_EXPORT",
+  "event_id": 1314,
+  "evidence_sha256": "88caeefe17779a497cfce6e88f71817856f7889551d2d0eb470d48e9223cbd86",
+  "handoff_sha256": "798e455d4cac240a3fcb4fbef4c8053706270277663111a8acab83d2c3d80e80",
+  "manifest_sha256": "fe9bed03c2016bdd2724fb0b4367996ff9e5540405c97d029c74026fdd06d5bf",
+  "next_step": "Acquire actual instrumented SCADA CSV with A59 channels and authenticated documents, then A55-A58; physical validation BLOCKED.",
+  "physical_release": false,
+  "scope": "A60_existing_SCADA_v08_v09_derived_export",
+  "source_kind": "derived_simulation",
+  "task_id": "scc-3d9d172beb6e1b"
+}

@@ -1,0 +1,57 @@
+{
+  "run_utc": "2026-10-08T19:07:54.107913+00:00",
+  "files": [
+    {
+      "file": "MASTER_STAGEBOARD_v08.md",
+      "status": "COPIED"
+    },
+    {
+      "file": "STATUS_v08.json",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/literature_traceability_v08.csv",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/Varna_Verzino_2026_primary_source_audit_v07_RU.md",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/Varna_unit_discrepancy_v07_RU.md",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/varna_source_preflight_v07.py",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/varna_source_tests_v07.json",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/varna_unit_sanity_v07.py",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/varna_unit_sanity_v07.json",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/Varna_p16_gas_table_visual_v08.png",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/fetch_varna_source_v08.py",
+      "status": "COPIED"
+    },
+    {
+      "file": "audit/varna_pdf_acquisition_v08.json",
+      "status": "COPIED"
+    },
+    {
+      "file": "sources/papers/20_Verzino_Varna_2026.pdf",
+      "status": "COPIED"
+    }
+  ]
+}

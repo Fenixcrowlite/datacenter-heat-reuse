@@ -1,0 +1,53 @@
+{
+  "project": "DataCenter_Heat_Reuse",
+  "version": "0.12",
+  "updated_local": "2026-10-08",
+  "kind": "additive_checkpoint_status",
+  "inherits_status": "STATUS_v11.json",
+  "inherits_stageboard": "MASTER_STAGEBOARD_v11.md",
+  "literature_matrix": "audit/literature_traceability_v10.csv",
+  "milestone": "M3_PARTIAL_REFERENCE_PROPERTY_GATE",
+  "evidence": [
+    "audit/test_component_contract_v12.py",
+    "audit/component_contract_reference_tests_v12.json",
+    "audit/Component_contract_audit_v12_RU.md",
+    "matlab/run_component_contract_v12.m"
+  ],
+  "tests": {
+    "independent_python_checks_passed": 12,
+    "failed": 0,
+    "randomized_vectors": 3000,
+    "matlab_runtime": "NOT_EXECUTED_TOOL_BLOCKED",
+    "primary_source_match": "NOT_TESTED_IN_V12",
+    "independent_paper_validation": "NOT_PERFORMED"
+  },
+  "findings": [
+    {
+      "id": "F12-01",
+      "severity": "HIGH",
+      "topic": "MATLAB dispatch has unlimited backup gas capacity"
+    },
+    {
+      "id": "F12-02",
+      "severity": "MEDIUM",
+      "topic": "Storage input validation missing for dt and efficiencies"
+    },
+    {
+      "id": "F12-03",
+      "severity": "MEDIUM",
+      "topic": "HP temperature lift silently clamped to 1 K"
+    }
+  ],
+  "research_status": {
+    "original_pdfs_local": 7,
+    "source_count": 31,
+    "full_primary_signoffs": 0
+  },
+  "next": [
+    "Add finite boiler capacity and unmet demand to new MATLAB v13 without altering existing versions",
+    "Introduce explicit physical-domain input validation for storage and heat pump",
+    "Run MATLAB component contract and cross-check against independent reference",
+    "Continue source-by-source primary audits"
+  ],
+  "notes": "v12 checks independent reference physics plus static MATLAB source. NOT MATLAB runtime, primary-source replication or independent experimental validation."
+}

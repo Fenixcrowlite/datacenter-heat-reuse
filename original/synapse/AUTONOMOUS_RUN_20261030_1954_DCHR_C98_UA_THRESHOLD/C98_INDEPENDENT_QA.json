@@ -1,0 +1,12 @@
+{
+  "bracketed": 7,
+  "case_groups": 8,
+  "independent_assertions": 820,
+  "negative_energy_detected": true,
+  "negative_feasibility_detected": true,
+  "no_feasible_grid": 1,
+  "rows_checked": 127,
+  "status": "PASS",
+  "sweep_sha256": "d5d4a599dfc11c048cd0152fab8b706b08809a7e24f87a6903bd1afb5a1b6d22",
+  "upstream_sha256": "c084e706fc79c635856df6ba6223c1fed1cb9b8c7c72c5aba0e67ae38b8700d9"
+}

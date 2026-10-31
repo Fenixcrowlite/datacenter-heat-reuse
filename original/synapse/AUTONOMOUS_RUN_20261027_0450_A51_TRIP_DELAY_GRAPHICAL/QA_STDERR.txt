@@ -1,0 +1,14 @@
+test_invalid_delay_fails_closed (__main__.A51Tests.test_invalid_delay_fails_closed) ... ok
+test_matlab_numeric_acceptance (__main__.A51Tests.test_matlab_numeric_acceptance) ... ok
+test_mutation_detected (__main__.A51Tests.test_mutation_detected) ... ok
+test_reference_columns_match_model (__main__.A51Tests.test_reference_columns_match_model) ... ok
+test_reject_zero_interlock (__main__.A51Tests.test_reject_zero_interlock) ... ok
+test_saved_graphical_models (__main__.A51Tests.test_saved_graphical_models) ... ok
+test_six_references_and_independent_energy_ledgers (__main__.A51Tests.test_six_references_and_independent_energy_ledgers) ... ok
+test_source_integrity (__main__.A51Tests.test_source_integrity) ... ok
+test_trip_delay_exact_steps (__main__.A51Tests.test_trip_delay_exact_steps) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.434s
+
+OK
