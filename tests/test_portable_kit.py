@@ -23,7 +23,9 @@ class PortableKitTests(unittest.TestCase):
                                   check=True, capture_output=True)
         run("init", "-b", "codex/offline-kit-test")
         (repo / "README.md").write_text("Code only; no credentials.", encoding="utf-8")
-        run("add", "README.md")
+        (repo / "original/synapse/browser/Default/Network").mkdir(parents=True)
+        (repo / "original/synapse/browser/Default/Network/Cookies-journal").write_bytes(b"secret-sentinel")
+        run("add", "README.md", "original/synapse")
         run("-c", "user.name=Kit Test", "-c", "user.email=kit@test.invalid",
             "commit", "-m", "synthetic kit candidate")
         fixtures = {}
@@ -41,6 +43,9 @@ class PortableKitTests(unittest.TestCase):
             root = Path(tmp)
             bundle, fixtures, result = self.make_kit(root)
             self.assertEqual(4, result["assets_verified"])
+            with zipfile.ZipFile(bundle) as z:
+                with zipfile.ZipFile(io.BytesIO(z.read("code/repository.zip"))) as code:
+                    self.assertEqual(["README.md"], code.namelist())
             self.assertEqual((root / "verify_portable_kit.py").read_bytes(),
                              (Path(__file__).resolve().parents[1] / "tools/portable_kit.py").read_bytes())
             with mock.patch.dict(ASSETS, fixtures, clear=True):
@@ -68,6 +73,23 @@ class PortableKitTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "size mismatch|hash mismatch"):
                     unpack(fake, root / "recipient")
             self.assertFalse((root / "recipient").exists())
+
+    def test_rejects_credential_path_inside_allowed_code_directory(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            bundle, fixtures, _=self.make_kit(root)
+            repo=root/"git"
+            (repo/"tools").mkdir()
+            (repo/"tools/Cookies-journal").write_bytes(b"no-personal-secrets-ever")
+            subprocess.run(["git","-C",str(repo),"add","tools/Cookies-journal"],
+                           check=True,capture_output=True)
+            subprocess.run(["git","-C",str(repo),"-c","user.name=Kit Test",
+                "-c","user.email=kit@test.invalid","commit","-m","should be refused"],
+                check=True,capture_output=True)
+            with mock.patch.dict(ASSETS,fixtures,clear=True):
+                with self.assertRaisesRegex(ValueError,"Browser/credential artifact"):
+                    build(repo,root/"sources",root/"refused.zip")
+            self.assertFalse((root/"refused.zip").exists())
 
     def test_duplicate_member_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:

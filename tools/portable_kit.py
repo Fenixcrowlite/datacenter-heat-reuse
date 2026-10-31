@@ -25,6 +25,37 @@ ASSETS = {
 }
 CODE_MEMBER = "code/repository.zip"
 MANIFEST_MEMBER = "kit-manifest.json"
+# Only the runnable application, tests, documentation and the MATLAB source
+# needed for numerical source-backed tests. The historical research sources
+# are supplied separately as the three immutable C130 archives.
+CODE_PATHS = (
+    ".dockerignore", ".gitattributes", ".github", ".gitignore",
+    "Dockerfile", "README.md", "compose.yaml", "datasets",
+    "docs", "heat_reuse", "manifests", "models", "original/primary/matlab",
+    "pyproject.toml", "tests", "tools", "web",
+)
+FORBIDDEN_PARTS = {
+    ".git", ".env", ".venv", "cookies", "cookies-journal",
+    "local state", "login data", "web data", "chrome_qa_isolated",
+    "browser-profile", "credentials", "id_rsa",
+}
+def review_source_archive(path):
+    with zipfile.ZipFile(path) as source:
+        names = source.namelist()
+        if len(names) != len(set(names)):
+            raise ValueError("Duplicate application archive entries")
+        for name in names:
+            parts = name.rstrip("/").split("/")
+            if (name.startswith("/") or "\\" in name or
+                    any(part in ("", ".", "..") for part in parts)):
+                raise ValueError("Unsafe application archive path: " + name)
+            lowered = [part.casefold() for part in parts]
+            if any(part in FORBIDDEN_PARTS or part.startswith(".env.") for part in lowered):
+                if not name.endswith(".env.example"):
+                    raise ValueError("Browser/credential artifact in application: " + name)
+            if not any(name == allowed or name.startswith(allowed + "/") for allowed in CODE_PATHS):
+                raise ValueError("Unexpected source outside application allowlist: " + name)
+    return len(names)
 
 def digest_stream(file):
     sha = hashlib.sha256()
@@ -55,8 +86,17 @@ def build(checkout, archives, destination):
         raise ValueError("Kit must be built from an explicit review branch commit")
     with tempfile.TemporaryDirectory(prefix="dchr-kit-") as td:
         code = Path(td) / "repository.zip"
+        # Never archive the whole Git tree: legacy research history includes
+        # QA browser directories that must not be shipped as application files.
+        tracked = subprocess.run(["git", "-C", str(checkout), "ls-tree",
+            "-r", "--name-only", sha], capture_output=True, text=True, check=True).stdout.splitlines()
+        include = [allowed for allowed in CODE_PATHS if any(
+            item == allowed or item.startswith(allowed + "/") for item in tracked)]
+        if not include or "README.md" not in include:
+            raise ValueError("Application tree lacks README")
         subprocess.run(["git", "-C", str(checkout), "archive",
-            "--format=zip", "-o", str(code), sha], check=True)
+            "--format=zip", "-o", str(code), sha, "--", *include], check=True)
+        selected_files = review_source_archive(code)
         code_size, code_sha = digest(code)
         if not zipfile.is_zipfile(code):
             raise ValueError("Git source snapshot is not a ZIP")
@@ -66,6 +106,8 @@ def build(checkout, archives, destination):
             "branch": branch,
             "source_cutoff": "2026-10-31 C130",
             "application_member": CODE_MEMBER,
+            "application_tracked_paths": selected_files,
+            "application_allowlist": list(CODE_PATHS),
             "assets": [{"member": CODE_MEMBER, "bytes": code_size,
                         "sha256": code_sha, "role": "current-review-code"}],
             "notes": "Private review candidate; source C130 archives are immutable and separate from review-branch code. No Docker image is included.",

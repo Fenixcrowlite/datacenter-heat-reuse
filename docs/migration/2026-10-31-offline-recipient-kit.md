@@ -14,7 +14,7 @@ unported historical projects, and not approval to operate the live SCADA.
 First independently verify the three original archive assets. Build from a
 committed review branch, not the local working tree. The builder uses
 `git archive <commit>`, so local untracked caches, working copies, logs and
-credentials are not packed into the code snapshot.
+credentials are not packed into the code snapshot. The code snapshot is built from an explicit allowlist of runnable project paths; archived browser QA profiles under the older research trees are not included. The archive builder also rejects browser/credential filenames inside the allowed code directories.
 
 ```powershell
 python -m tools.portable_kit build --checkout . --archives C:\path\to\downloads --out C:\path\to\DCHR-offline-review-kit.zip
