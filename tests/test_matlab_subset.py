@@ -167,4 +167,70 @@ end''')['unsafe']()
             program['hp_adapter'](x,5.,p,h,.5)
 
 
+    def test_cell_braces_and_dynamic_struct_fields_are_value_safe(self):
+        src="""function y=f(x)
+keys={'alpha','beta'};
+s=struct('alpha',x,'beta',3);
+for j=1:numel(keys)
+    s.(keys{j})=s.(keys{j})+1;
+end
+y=s.alpha+s.beta;
+end"""
+        f=compile_functions(src)['f']
+        self.assertEqual(9.,f(4.))
+        self.assertEqual(9.,f(4.))
+
+    def test_dynamic_field_rejects_invalid_keys_and_out_of_range_cells(self):
+        f=compile_functions("""function y=f(s,key)
+y=s.(key);
+end""")['f']
+        self.assertEqual(3,f({'a':3},'a'))
+        with self.assertRaisesRegex(UnsupportedMatlab,'Invalid dynamic struct field'):
+            f({'a':3},42)
+        with self.assertRaisesRegex(UnsupportedMatlab,'Unknown struct field'):
+            f({'a':3},'missing')
+        with self.assertRaisesRegex(UnsupportedMatlab,'requires a struct'):
+            f(10,'a')
+        g=compile_functions("""function y=g()
+names={'a','b'};
+y=names{3};
+end""")['g']
+        with self.assertRaisesRegex(ValueError,'out of bounds'):
+            g()
+
+    def test_v30_original_storage_parameters_fail_on_missing_named_field(self):
+        root=Path(__file__).resolve().parents[1]
+        path=root/'original/primary/matlab/+dchr/+components/storage_parameters_v30.m'
+        fn=compile_functions(path.read_text(encoding='utf-8-sig'))['storage_parameters_v30']
+        storage=dict(heat_capacity_MWh_per_K=2.,ambient_C=20.,delivery_cutoff_C=28.,
+                     max_temperature_C=50.,initial_temperature_C=35.,charge_limit_MW=1.,
+                     discharge_limit_MW=1.,eta_charge=.9,continuous_loss_rate_per_h=.1)
+        with self.assertRaisesRegex(ValueError,'storage.eta_discharge'):
+            fn({'sim':{'dt_h':1.},'storage':storage})
+
+
+
+    def test_v30_original_storage_parameters_valid_numeric_vector(self):
+        root=Path(__file__).resolve().parents[1]/'original/primary/matlab'
+        src=(root/'+dchr/+components/storage_parameters_v30.m').read_text(encoding='utf-8-sig')
+        program=compile_model(
+            {'functions':[{'source':src,'names':['storage_parameters_v30']}]},
+            source_root=root,
+        )
+        storage=dict(heat_capacity_MWh_per_K=2.,ambient_C=20.,delivery_cutoff_C=28.,
+                     max_temperature_C=50.,initial_temperature_C=35.,charge_limit_MW=1.,
+                     discharge_limit_MW=1.,eta_charge=.9,eta_discharge=.9,
+                     continuous_loss_rate_per_h=.1)
+        config={'sim':{'dt_h':1.},'storage':storage}
+        self.assertEqual(
+            [1.,60.,1.,1.,.9,.9,.1,16.,2.,20.],
+            program['storage_parameters_v30'](config).flat(),
+        )
+        with self.assertRaisesRegex(ValueError,'DCHR:v30:StorageDomain'):
+            program['storage_parameters_v30'](
+                {'sim':{'dt_h':1.},'storage':{**storage,'eta_discharge':0.}},
+            )
+
+
+
 if __name__=='__main__':unittest.main()
