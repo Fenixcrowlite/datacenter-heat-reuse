@@ -52,6 +52,66 @@ class ReleaseComplianceTests(unittest.TestCase):
             self.assertEqual([],report["findings"])
             self.assertEqual(["LICENSE"],report["project_license_files"])
 
+    def test_incorporates_redacted_full_and_nested_scan_evidence(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            archive=self.source_archive(root/"research.zip",["model.slx"])
+            full=root/"full.json"
+            nested=root/"nested.json"
+            full.write_text(json.dumps({
+                "schema":"dchr-c130-full-content-classification-v1",
+                "distribution_status":"BLOCKED_EXTERNAL_DISTRIBUTION",
+                "source_archives":["research.zip"],
+                "aggregate":{"manifest_paths":1,"paths_with_high_risk_flag":1},
+                "verified_unique_object_digests_across_assets":1,
+                "risk_flag_path_counts":{"user_home_path":1,"credential_assignment":1}
+            }))
+            nested.write_text(json.dumps({
+                "schema":"dchr-c130-nested-container-risk-v1",
+                "distribution_status":"BLOCKED_EXTERNAL_DISTRIBUTION",
+                "per_archive":[{"asset":"research.zip"}],
+                "nested_flag_logical_path_counts":{"nested_creator_metadata":1}
+            }))
+            result=audit(root,[archive],full_content=full,nested_content=nested)
+            self.assertIn("CONTENT_IDENTITY_REVIEW_REQUIRED",result["findings"])
+            self.assertIn("CREDENTIAL_STYLE_CONTENT_REVIEW_REQUIRED",result["findings"])
+            self.assertIn("NESTED_CREATOR_METADATA_REVIEW_REQUIRED",result["findings"])
+            self.assertEqual(1,result["full_content_attestation"]["verified_object_digests"])
+            self.assertNotIn("model.slx",json.dumps(result))
+
+    def test_pinned_release_with_replaced_bytes_rejected(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            name="heat-reuse-source-2026-10-30.zip"
+            archive=self.source_archive(root/name,["model.m"])
+            full=root/"full.json"
+            full.write_text(json.dumps({
+                "schema":"dchr-c130-full-content-classification-v1",
+                "distribution_status":"BLOCKED_EXTERNAL_DISTRIBUTION",
+                "source_archives":[name],
+                "aggregate":{"manifest_paths":1},
+                "verified_unique_object_digests_across_assets":1,
+                "risk_flag_path_counts":{}
+            }))
+            with self.assertRaisesRegex(ValueError,"pinned original"):
+                audit(root,[archive],full_content=full)
+
+    def test_wrong_full_report_file_count_rejected(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            archive=self.source_archive(root/"research.zip",["model.m"])
+            full=root/"full.json"
+            full.write_text(json.dumps({
+                "schema":"dchr-c130-full-content-classification-v1",
+                "distribution_status":"BLOCKED_EXTERNAL_DISTRIBUTION",
+                "source_archives":["research.zip"],
+                "aggregate":{"manifest_paths":500},
+                "verified_unique_object_digests_across_assets":1,
+                "risk_flag_path_counts":{}
+            }))
+            with self.assertRaisesRegex(ValueError,"does not match"):
+                audit(root,[archive],full_content=full)
+
     def test_archive_format_is_checked(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
