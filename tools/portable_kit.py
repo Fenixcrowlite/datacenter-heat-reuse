@@ -53,7 +53,12 @@ def review_source_archive(path):
             if any(part in FORBIDDEN_PARTS or part.startswith(".env.") for part in lowered):
                 if not name.endswith(".env.example"):
                     raise ValueError("Browser/credential artifact in application: " + name)
-            if not any(name == allowed or name.startswith(allowed + "/") for allowed in CODE_PATHS):
+            in_scope = any(name == allowed or name.startswith(allowed + "/")
+                           for allowed in CODE_PATHS)
+            # git archive emits parent directory entries for a selected nested path.
+            parent_marker = name.endswith("/") and any(
+                allowed.startswith(name) for allowed in CODE_PATHS)
+            if not (in_scope or parent_marker):
                 raise ValueError("Unexpected source outside application allowlist: " + name)
     return len(names)
 
