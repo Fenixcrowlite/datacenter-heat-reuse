@@ -3,6 +3,7 @@ import hashlib
 import io
 import json
 from pathlib import Path
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -12,6 +13,8 @@ import zipfile
 from tools.portable_kit import ASSETS, build, verify, unpack, MANIFEST_MEMBER
 
 
+@unittest.skipUnless(shutil.which("git"),
+    "Git executable is required for producer-side packaging, not recipient verification")
 class PortableKitTests(unittest.TestCase):
     def make_kit(self, root):
         repo = root / "git"
@@ -122,6 +125,58 @@ class PortableKitTests(unittest.TestCase):
             with mock.patch.dict(ASSETS, fixtures, clear=True):
                 with self.assertRaisesRegex(ValueError, "Duplicate"):
                     verify(bad)
+
+
+class GitFreeRecipientTests(unittest.TestCase):
+    @staticmethod
+    def synthetic_bundle(root, corrupt=False):
+        # Generate an ordinary valid nested ZIP directly: no Git executable.
+        codefile=io.BytesIO()
+        with zipfile.ZipFile(codefile,"w") as z:
+            z.writestr("README.md","portable Python only")
+        code=codefile.getvalue()
+        parts={"code/repository.zip":code}
+        fake={}
+        for name in ("a.zip","b.zip","c.zip"):
+            payload=(name*5).encode("ascii")
+            parts["sources/"+name]=payload
+            fake[name]=(len(payload),hashlib.sha256(payload).hexdigest())
+        items=[{"member":name,"bytes":len(payload),
+                "sha256":hashlib.sha256(payload).hexdigest()}
+               for name,payload in parts.items()]
+        manifest={"format":"dchr-offline-kit-v1",
+                  "commit":"a"*40,"branch":"codex/synthetic",
+                  "application_member":"code/repository.zip",
+                  "assets":items}
+        target=root/"synthetic-kit.zip"
+        with zipfile.ZipFile(target,"w") as z:
+            z.writestr(MANIFEST_MEMBER,json.dumps(manifest))
+            for name,payload in parts.items():
+                z.writestr(name,b"corrupted" if corrupt and name=="sources/c.zip"
+                           else payload)
+        return target,fake
+
+    def test_recipient_verifies_and_unpacks_without_git(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            bundle,assets=self.synthetic_bundle(root)
+            with mock.patch.dict(ASSETS,assets,clear=True):
+                self.assertEqual(4,verify(bundle)["assets_verified"])
+                restored=unpack(bundle,root/"recipient")
+            self.assertEqual("a"*40,restored["commit"])
+            self.assertEqual((root/"recipient/sources/a.zip").read_bytes(),
+                             b"a.zip"*5)
+            self.assertTrue((root/"recipient/code/repository.zip").is_file())
+
+    def test_recipient_rejects_tampered_asset_without_git_or_writes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            bundle,assets=self.synthetic_bundle(root,corrupt=True)
+            with mock.patch.dict(ASSETS,assets,clear=True):
+                with self.assertRaisesRegex(ValueError,"hash mismatch|size mismatch"):
+                    unpack(bundle,root/"recipient")
+            self.assertFalse((root/"recipient").exists())
+
 
 
 if __name__ == "__main__":
