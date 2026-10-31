@@ -98,7 +98,15 @@ def digest(path):
     with Path(path).open("rb") as handle:
         return digest_stream(handle)
 
-def build(checkout, archives, destination):
+def build(checkout, archives, destination, *, internal_only=False):
+    # C130 explicitly includes browser QA state and a runtime secrets.json
+    # path. Never silently build a distribution candidate from those assets.
+    if "heat-reuse-source-2026-10-30.zip" in ASSETS and not internal_only:
+        raise PermissionError(
+            "C130 contains sensitive research paths and has no verified "
+            "redistribution license. Use --internal-only for local forensic "
+            "reproducibility; do not share that bundle externally."
+        )
     checkout, archives, destination = map(Path, (checkout, archives, destination))
     destination.parent.mkdir(parents=True, exist_ok=True)
     if destination.exists() or destination.with_suffix(destination.suffix + ".partial").exists():
@@ -139,6 +147,8 @@ def build(checkout, archives, destination):
             "commit": sha,
             "branch": branch,
             "source_cutoff": "2026-10-31 C130",
+            "distribution_status": "PRIVATE_LOCAL_ONLY",
+            "distribution_warning": "C130 has unresolved browser-state/privacy and licensing risks; no external sharing",
             "application_member": CODE_MEMBER,
             "application_tracked_paths": selected_files,
             "application_allowlist": list(CODE_PATHS),
@@ -184,6 +194,8 @@ def verify(bundle):
         manifest = json.loads(z.read(MANIFEST_MEMBER))
         if manifest.get("format") != FORMAT:
             raise ValueError("Unsupported bundle format")
+        if manifest.get("distribution_status") != "PRIVATE_LOCAL_ONLY":
+            raise ValueError("Missing private-only distribution restriction")
         expected_members = {MANIFEST_MEMBER}
         records = manifest.get("assets")
         if not isinstance(records, list) or len(records) != 4:
@@ -257,6 +269,8 @@ def main():
     b.add_argument("--checkout", required=True)
     b.add_argument("--archives", required=True)
     b.add_argument("--out", required=True)
+    b.add_argument("--internal-only", action="store_true",
+        help="Explicitly permit LOCAL forensic packaging of restricted C130 assets; NEVER share")
     v = sub.add_parser("verify")
     v.add_argument("bundle")
     u = sub.add_parser("unpack")
@@ -264,7 +278,8 @@ def main():
     u.add_argument("target")
     args = parser.parse_args()
     if args.cmd == "build":
-        result = build(args.checkout, args.archives, args.out)
+        result = build(args.checkout, args.archives, args.out,
+                       internal_only=args.internal_only)
     elif args.cmd == "verify":
         result = verify(args.bundle)
     else:

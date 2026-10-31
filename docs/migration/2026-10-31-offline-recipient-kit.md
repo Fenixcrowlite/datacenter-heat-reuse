@@ -1,5 +1,15 @@
 # Private offline recipient kit (post-C130 review candidate)
 
+**Distribution hold, verified 2026-10-31:** the immutable C130 source
+archives contain browser QA profile/state files and a historical
+\`runtime/secrets.json\` path; this does **not** prove valid credentials
+exist, but these artifacts must not be sent to external recipients.
+No explicit project \`LICENSE\` or clearances for supplied PDF/PPTX content
+were found in the archive manifest audit. The build command now requires
+\`--internal-only\` and marks the output \`PRIVATE_LOCAL_ONLY\`. Do not
+promote an internal evidence ZIP to an externally shareable package.
+Read \`docs/migration/2026-10-31-distribution-hold.md\` first.
+
 This optional **review kit** combines an exact Git tree snapshot of PR #1 with
 the **three immutable C130 research source ZIPs**. It is intended for
 collaboration and handoff without requiring Git, internet access, MATLAB,
@@ -17,7 +27,7 @@ committed review branch, not the local working tree. The builder uses
 credentials are not packed into the code snapshot. The code snapshot is built from an explicit allowlist of runnable project paths; archived browser QA profiles under the older research trees are not included. The archive builder also rejects browser/credential filenames inside the allowed code directories and scans their contents for high-confidence GitHub token/private-key signatures.
 
 ```powershell
-python -m tools.portable_kit build --checkout . --archives C:\path\to\downloads --out C:\path\to\DCHR-offline-review-kit.zip
+python -m tools.portable_kit build --checkout . --archives C:\path\to\downloads --out C:\path\to\DCHR-internal-forensics-only.zip --internal-only
 ```
 
 The output is a single ZIP with `kit-manifest.json`,

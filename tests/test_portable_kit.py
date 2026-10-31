@@ -195,6 +195,7 @@ class GitFreeRecipientTests(unittest.TestCase):
         manifest={"format":"dchr-offline-kit-v1",
                   "commit":"a"*40,"branch":"codex/synthetic",
                   "application_member":"code/repository.zip",
+                  "distribution_status":"PRIVATE_LOCAL_ONLY",
                   "assets":items}
         target=root/"synthetic-kit.zip"
         with zipfile.ZipFile(target,"w") as z:
@@ -215,6 +216,32 @@ class GitFreeRecipientTests(unittest.TestCase):
             self.assertEqual((root/"recipient/sources/a.zip").read_bytes(),
                              b"a.zip"*5)
             self.assertTrue((root/"recipient/code/repository.zip").is_file())
+
+    def test_research_c130_build_requires_explicit_local_only_acknowledgement(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            with mock.patch.dict(ASSETS,{"heat-reuse-source-2026-10-30.zip":(1,"a"*64)}):
+                with self.assertRaisesRegex(PermissionError,"--internal-only"):
+                    build(root,root,root/"forbidden.zip")
+            self.assertFalse((root/"forbidden.zip").exists())
+
+    def test_missing_private_only_marker_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            bundle,assets=self.synthetic_bundle(root)
+            with zipfile.ZipFile(bundle) as original:
+                payloads={name:original.read(name) for name in original.namelist()}
+            manifest=json.loads(payloads[MANIFEST_MEMBER])
+            manifest.pop("distribution_status")
+            payloads[MANIFEST_MEMBER]=json.dumps(manifest).encode()
+            bad=root/"unmarked.zip"
+            with zipfile.ZipFile(bad,"w") as z:
+                for name,payload in payloads.items():
+                    z.writestr(name,payload)
+            with mock.patch.dict(ASSETS,assets,clear=True):
+                with self.assertRaisesRegex(ValueError,"private-only"):
+                    unpack(bad,root/"recipient")
+            self.assertFalse((root/"recipient").exists())
 
     def test_recipient_rejects_tampered_asset_without_git_or_writes(self):
         with tempfile.TemporaryDirectory() as tmp:

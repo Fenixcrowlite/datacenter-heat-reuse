@@ -1,3 +1,11 @@
+> **Release distribution hold (2026-10-31):** The historical C130 ZIPs and
+> earlier local offline kit candidates include unreviewed browser-state paths
+> and a \`secrets.json\` path. Do not share them externally. Project licensing
+> and third-party source-media rights are not documented. The private archive
+> audit and fail-closed release gate are at
+> \`docs/migration/2026-10-31-distribution-hold.md\`. Internal testing remains
+> permitted without public distribution.
+
 # DataCenter Heat Reuse
 
 A transferable research project for recovering data-centre heat into a swimming pool, thermal storage and district heating. Original MATLAB, Simulink, Stateflow, Python, Slovak and English documents are preserved separately from the portable application.
