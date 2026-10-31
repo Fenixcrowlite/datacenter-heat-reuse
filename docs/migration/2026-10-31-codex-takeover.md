@@ -49,3 +49,12 @@ remain unmerged pending CI and independent source review.
   (idle); each matched the independent analytic exponential solution.
   Simultaneous charging/discharging was rejected. This is component-chain
   parity with its source equations, **not** a native Stateflow model trace.
+
+
+- Independent bounded subset execution on Ubuntu 24.04 via WSL:
+  **17/17 PASS**; source chain includes parameter checks, charge, discharge,
+  idle and mutual-exclusion rejection. Log SHA256:
+  `8a7fe97d0d7e01b41a039e0ecc3c4075b8b274416fc584c97d22f10b05aaa0d7`.
+  Windows rerun: **17/17 PASS**, three legacy model fixture cases deselected.
+  Neither run substitutes for full 33-case repository CI or native v30
+  MATLAB/Stateflow trace comparison.
