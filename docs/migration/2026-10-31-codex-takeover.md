@@ -20,3 +20,24 @@ Original Codex thread: `01a18289-f4aa-7af1-b117-c6d6ac2ba7f4`. Continuation afte
 2. Expand genuine golden fixtures for v22–v30 and later historical models; mark source-smoke separately from MATLAB parity.
 3. Re-run GitHub Actions native and container checks on the new commit and test a clean recipient checkout.
 4. Publish a final release only when historical migration coverage, QA and container start are independently verified.
+
+## Follow-up: scoped v30 dynamic field support (31 October)
+
+In review branch `codex/v30-dynamic-fields-20261031`, the MATLAB subset gained strict dynamic struct-field reads/writes
+(`s.(names{j})`), scalar cell-brace indexing (`names{j}`) and accurate `numel`/`length`/`isempty`
+for literal cell arrays. Dynamic names must be scalar MATLAB identifiers and the target must be
+a struct; unknown symbols and non-struct access fail closed. There is no Python `getattr`, eval,
+file-system access, or arbitrary attribute invocation.
+
+Observed local QA in an isolated Windows project directory:
+- 16 non-legacy subset tests pass, 3 legacy fixture tests deselected (fixtures not copied).
+- Original MATLAB `+dchr/+components/storage_parameters_v30.m` was executed with the
+  original linked `storage_kernel_v30.m` and returned
+  `[1,60,1,1,0.9,0.9,0.1,16,2,20]` for explicit synthetic physical input.
+- Missing `eta_discharge` and nonphysical zero discharge efficiency were rejected.
+- These are original-source contract tests. The v30 Simulink/Stateflow trace has **not**
+  been compared against the original native-MATLAB golden record. No release approval.
+
+Full-repo Linux and Windows verification for this new branch remains pending. The previous
+commit `85297c1` retains its separately documented 33/33 tests per OS. The branch should
+remain unmerged pending CI and independent source review.
