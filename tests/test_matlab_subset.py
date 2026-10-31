@@ -233,4 +233,35 @@ end""")['g']
 
 
 
+    def test_v30_original_storage_step_charge_discharge_and_idle(self):
+        import math
+        root=Path(__file__).resolve().parents[1]/'original/primary/matlab'
+        src=(root/'+dchr/+components/storage_step_v30.m').read_text(encoding='utf-8-sig')
+        fn=compile_model(
+            {'functions':[{'source':src,'names':['storage_step_v30']}]},
+            source_root=root,
+        )['storage_step_v30']
+        cfg={'sim':{'dt_h':1.},'storage':dict(
+            heat_capacity_MWh_per_K=2.,ambient_C=20.,delivery_cutoff_C=28.,
+            max_temperature_C=50.,initial_temperature_C=35.,
+            charge_limit_MW=1.,discharge_limit_MW=1.,eta_charge=.9,
+            eta_discharge=.9,continuous_loss_rate_per_h=.1,
+        )}
+        passive=30.*math.exp(-.1)
+        phi=-math.expm1(-.1)/.1
+        for requested_charge,requested_discharge,net_power in (
+            (1.,0.,.9),(0.,1.,-1./.9),(0.,0.,0.),
+        ):
+            st=fn(30.,requested_charge,requested_discharge,cfg)
+            expected=passive+net_power*phi
+            self.assertAlmostEqual(st['energy_after_loss_MWh'],passive,places=12)
+            self.assertAlmostEqual(st['energy_next_MWh'],expected,places=12)
+            self.assertAlmostEqual(st['temperature_next_C'],20.+expected/2.,places=12)
+            self.assertEqual(st['charge_MW'],requested_charge)
+            self.assertEqual(st['discharge_MW'],requested_discharge)
+        with self.assertRaisesRegex(ValueError,'DCHR:v30:SimultaneousStorageRequests'):
+            fn(30.,1.,1.,cfg)
+
+
+
 if __name__=='__main__':unittest.main()
