@@ -9,6 +9,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -39,6 +40,10 @@ FORBIDDEN_PARTS = {
     "local state", "login data", "web data", "chrome_qa_isolated",
     "browser-profile", "credentials", "id_rsa",
 }
+SECRET_BYTES = re.compile(
+    rb"(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|"
+    rb"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----)"
+)
 def review_source_archive(path):
     with zipfile.ZipFile(path) as source:
         names = source.namelist()
@@ -60,6 +65,13 @@ def review_source_archive(path):
                 allowed.startswith(name) for allowed in CODE_PATHS)
             if not (in_scope or parent_marker):
                 raise ValueError("Unexpected source outside application allowlist: " + name)
+            if not name.endswith("/"):
+                with source.open(name) as contents:
+                    tail = b""
+                    while chunk := contents.read(1024 * 1024):
+                        if SECRET_BYTES.search(tail + chunk):
+                            raise ValueError("High-confidence secret signature: " + name)
+                        tail = chunk[-256:]
     return len(names)
 
 def digest_stream(file):

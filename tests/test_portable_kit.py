@@ -91,6 +91,24 @@ class PortableKitTests(unittest.TestCase):
                     build(repo,root/"sources",root/"refused.zip")
             self.assertFalse((root/"refused.zip").exists())
 
+    def test_rejects_high_confidence_secret_in_allowed_content(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            _, fixtures, _=self.make_kit(root)
+            repo=root/"git"
+            (repo/"docs").mkdir()
+            (repo/"docs/project_notes.txt").write_text(
+                "token=github_pat_"+"X"*46,encoding="utf-8")
+            subprocess.run(["git","-C",str(repo),"add","docs/project_notes.txt"],
+                           check=True,capture_output=True)
+            subprocess.run(["git","-C",str(repo),"-c","user.name=Kit Test",
+                "-c","user.email=kit@test.invalid","commit","-m","secret test"],
+                check=True,capture_output=True)
+            with mock.patch.dict(ASSETS,fixtures,clear=True):
+                with self.assertRaisesRegex(ValueError,"secret signature"):
+                    build(repo,root/"sources",root/"refused.zip")
+            self.assertFalse((root/"refused.zip").exists())
+
     def test_duplicate_member_is_refused(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
