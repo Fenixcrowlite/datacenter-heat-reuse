@@ -1,3 +1,11 @@
+> **Release distribution hold (2026-10-31):** The historical C130 ZIPs and
+> earlier local offline kit candidates include unreviewed browser-state paths
+> and a \`secrets.json\` path. Do not share them externally. Project licensing
+> and third-party source-media rights are not documented. The private archive
+> audit and fail-closed release gate are at
+> \`docs/migration/2026-10-31-distribution-hold.md\`. Internal testing remains
+> permitted without public distribution.
+
 # DataCenter Heat Reuse
 
 A transferable research project for recovering data-centre heat into a swimming pool, thermal storage and district heating. Original MATLAB, Simulink, Stateflow, Python, Slovak and English documents are preserved separately from the portable application.
@@ -12,7 +20,7 @@ With Docker Desktop or Docker Engine running:
 docker compose up --build
 ```
 
-Open **http://localhost:8080**. The application includes English/Slovak UI, parameter changes, new calculations, an interactive heat-flow diagram, time-series charts, original model diagrams, source documents, saved experiments and CSV/JSON export. Change the host port with `HEAT_REUSE_PORT=8085` if necessary.
+Open **http://localhost:8080**. The application includes English/Slovak UI, parameter changes, new calculations, an interactive heat-flow diagram, time-series charts, original model diagrams, source documents, saved experiments and CSV/JSON export. Change the host port with `HEAT_REUSE_PORT=8085` if necessary. The native Python server and Docker Compose bind locally by default. HTTP Host-header validation blocks DNS rebinding, including forged remote Host names. To intentionally use a trusted hostname through a private authenticated reverse proxy, explicitly add it with `HEAT_REUSE_ALLOWED_HOSTS=my.private.hostname`. This is **not** an authentication mechanism and must not be exposed directly to the public internet.
 
 Without Docker, use Python 3.11 or newer from the repository directory:
 
@@ -32,7 +40,7 @@ python -m heat_reuse run stateflow-v85 --scenario HP_only --output runtime/dispa
 python -m heat_reuse verify
 ```
 
-The annual test compares 8,760 hours × 22 numerical fields against a native MATLAB C88 fixture, plus a separate v2 oracle and all five original scenario summaries. The pool test compares all eight original 672-step Simulink v04 scenarios, every exported numerical field and exact dispatcher modes. Stateflow v85 additionally passes 28 native cases, 87 retained-state steps and 120,060 full-trace comparisons across all six modes. These are numerical equivalence tests of synthetic scenarios, not measured physical validation. Legacy v22/v24/v28 MATLAB helper functions have separate executable smoke/contract checks, but are not claimed to have complete historical golden-trace parity. Legacy v30 dynamic structure indexing remains unsupported.
+The annual test compares 8,760 hours × 22 numerical fields against a native MATLAB C88 fixture, plus a separate v2 oracle and all five original scenario summaries. The pool test compares all eight original 672-step Simulink v04 scenarios, every exported numerical field and exact dispatcher modes. Stateflow v85 additionally passes 28 native cases, 87 retained-state steps and 120,060 full-trace comparisons across all six modes. These are numerical equivalence tests of synthetic scenarios, not measured physical validation. Legacy v22/v24/v28 MATLAB helper functions have separate executable smoke/contract checks, but are not claimed to have complete historical golden-trace parity. For v30, the original MATLAB source interpreter now matches the 23 saved native Stateflow acceptance scenarios (69 intervals, 1,863 numerical comparisons, all six modes), and reproduces 18 saved fault cases. This validates those source-defined acceptance traces, not arbitrary Stateflow engine behavior or physical equipment. See [v30 native evidence](docs/migration/2026-10-31-v30-native-parity.md).
 
 MATLAB and Python random generators are not assumed identical. The annual model uses preserved source input records. The pool uses a packaged, source-equation-generated binary64 input profile for its first 672 intervals, with all outputs recalculated independently. This prevents platform-dependent sin/cos roundoff from spuriously switching an auxiliary 250 W pump at an analytically depleted TES state. After interval 672, inputs are generated from the original formulas and may retain libm-dependent last-bit differences. The original rounded CSV inputs are not used as simulation forcing, because their quantization also changes exact-zero branches. Input provenance and limitations remain explicit.
 

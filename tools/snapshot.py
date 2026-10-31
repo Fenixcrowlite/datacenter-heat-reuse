@@ -29,8 +29,11 @@ RESERVED = re.compile(r'^(?:CON|PRN|AUX|NUL|COM[1-9¹²³]|LPT[1-9¹²³])(?:\.|
 def safe_relative(value):
     if not isinstance(value, str) or not value or '\\' in value or ':' in value or '\x00' in value:
         raise ValueError('Unsafe archive path')
+    # Reject normalization aliases before PurePosixPath erases them.
+    if any(part in ('', '.', '..') for part in value.split('/')):
+        raise ValueError('Noncanonical archive path')
     path = PurePosixPath(value)
-    if path.is_absolute() or any(p in ('..', '.') for p in path.parts):
+    if path.is_absolute():
         raise ValueError('Unsafe archive path')
     if any(RESERVED.match(p) or p.endswith(('.', ' ')) or any(ord(c)<32 or c in '<>"|?*' for c in p) for p in path.parts):
         raise ValueError('Nonportable or reserved Windows archive path')
@@ -178,19 +181,27 @@ def restore(archive, target, prefix=None):
             raise ValueError('Unknown archive format')
         paths = []
         seen_paths = set()
+        # Segment boundary must match; a prefix is not a string substring.
+        requested = safe_relative(prefix[:-1] if prefix.endswith('/') else prefix).parts if prefix is not None else ()
         for entry in manifest['files']:
             rel = safe_relative(entry['root']) / safe_relative(entry['path'])
-            if prefix and not str(rel).startswith(prefix):
+            if requested and rel.parts[:len(requested)] != requested:
                 continue
             path = (target / str(rel)).resolve()
-            if not path.is_relative_to(target) or path in seen_paths:
+            # Reject Windows case-insensitive aliases even on Linux.
+            portable_key = tuple(part.casefold() for part in rel.parts)
+            if not path.is_relative_to(target) or portable_key in seen_paths:
                 raise ValueError('Unsafe or duplicate restore path')
-            seen_paths.add(path)
+            seen_paths.add(portable_key)
             if not re.fullmatch(r'[0-9a-f]{64}', entry['sha256']):
                 raise ValueError('Invalid object digest')
             if path.exists():
                 raise FileExistsError(path)
             paths.append((entry, path))
+        # Detect file-as-parent collisions before any data has been restored.
+        for key in seen_paths:
+            if any(key[:length] in seen_paths for length in range(1, len(key))):
+                raise ValueError('Restore file/directory path collision')
         checked = set()
         for entry, path in paths:
             sha = entry['sha256']

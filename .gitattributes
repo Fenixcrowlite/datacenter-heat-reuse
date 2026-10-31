@@ -14,3 +14,4 @@ Dockerfile text eol=lf
 *.png binary
 *.zip binary
 original/** -text
+datasets/reference/v30_native_* -text -diff

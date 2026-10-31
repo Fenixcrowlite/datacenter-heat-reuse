@@ -89,5 +89,56 @@ class SnapshotTests(unittest.TestCase):
                 self.assertEqual(42, restored.execute('SELECT value FROM events').fetchone()[0])
 
 
+    @staticmethod
+    def _adversarial_archive(root, names):
+        body=b'content'
+        sha=hashlib.sha256(body).hexdigest()
+        file=root/'bad.zip'
+        with zipfile.ZipFile(file,'w') as z:
+            manifest={'format':'dchr-source-archive-v1','files':[
+                {'root':'primary','path':name,'sha256':sha,'bytes':len(body)}
+                for name in names]}
+            z.writestr('manifest.json',json.dumps(manifest))
+            z.writestr('objects/'+sha,body)
+        return file
+
+    def test_restore_prefix_matches_path_segments_not_similar_names(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            archive=self._adversarial_archive(root,['results/keep.txt','results_fake/private.txt'])
+            report=restore(archive,root/'out',prefix='primary/results')
+            self.assertEqual(1,report['verified_files'])
+            self.assertEqual(b'content',(root/'out/primary/results/keep.txt').read_bytes())
+            self.assertFalse((root/'out/primary/results_fake/private.txt').exists())
+
+    def test_restore_file_directory_collision_rejected_before_writes(self):
+        for names in (['a','a/b.txt'],['a/b.txt','a']):
+            with self.subTest(names=names),tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp)
+                archive=self._adversarial_archive(root,names)
+                with self.assertRaisesRegex(ValueError,'collision'):
+                    restore(archive,root/'out')
+                self.assertFalse((root/'out/primary/a').exists())
+
+    def test_restore_portable_windows_casefold_collisions_fail_preflight(self):
+        for names in (['A.txt','a.TXT'],['A/b.txt','a/B.TXT']):
+            with self.subTest(names=names),tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp)
+                archive=self._adversarial_archive(root,names)
+                with self.assertRaisesRegex(ValueError,'duplicate'):
+                    restore(archive,root/'out')
+                self.assertFalse((root/'out/primary').exists())
+
+    def test_restore_refuses_noncanonical_segments_before_writing(self):
+        for name in ('a//b','a/./b','a/../b','a/','./a','//a'):
+            with self.subTest(name=name),tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp)
+                archive=self._adversarial_archive(root,[name])
+                with self.assertRaises(ValueError):
+                    restore(archive,root/'out')
+                self.assertFalse((root/'out').exists())
+
+
+
 if __name__ == '__main__':
     unittest.main()

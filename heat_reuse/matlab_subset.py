@@ -151,7 +151,7 @@ def put(matrix,args,value):
     return matrix
 
 
-TOKEN=re.compile(r'(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?|[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*|&&|\|\||~=|<=|>=|==|\.\*|\./|\.\^|\.\x27|[+\-*/^<>=~&|:()\[\]{},;@\x27]')
+TOKEN=re.compile(r'(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?|[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*|&&|\|\||~=|<=|>=|==|\.\*|\./|\.\^|\.\x27|[+\-*/^<>=~&|:()\[\]{},;@.\x27]')
 def tokenize(source):
     tokens=[];i=0;previous=''
     while i<len(source):
@@ -223,6 +223,17 @@ class Parser:
                     if self.is_(','):self.take()
                     else:break
                 self.take(')');left=('call',left,args);continue
+            if op=='{':
+                self.take();args=[]
+                while not self.is_('}'):
+                    args.append(self.expression())
+                    if self.is_(','):self.take()
+                    else:break
+                self.take('}');left=('cell_index',left,args);continue
+            if op=='.':
+                self.take();self.take('(')
+                field=self.expression();self.take(')')
+                left=('dynamic_field',left,field);continue
             if op in ("'",".'"):
                 self.take();left=('transpose',left);continue
             if op not in PRECEDENCE or PRECEDENCE[op]<minimum:break
@@ -377,12 +388,12 @@ def builtin(name,args):
         if len(dims)==1:dims*=2
         if len(dims)!=2 or min(dims)<0 or math.prod(dims)>2000000:raise ValueError('Invalid matrix allocation')
         return M([0. if name=='zeros' else 1.]*math.prod(dims),*dims)
-    if name=='numel':return len(flat(args[0]))
-    if name=='length':return max(args[0].rows,args[0].cols) if isinstance(args[0],M) else 1
+    if name=='numel':return len(args[0]) if isinstance(args[0],list) else len(flat(args[0]))
+    if name=='length':return max(args[0].rows,args[0].cols) if isinstance(args[0],M) else len(args[0]) if isinstance(args[0],list) else 1
     if name=='size':
         dims=[args[0].rows,args[0].cols] if isinstance(args[0],M) else [1,1]
         return dims[integer(args[1])-1] if len(args)>1 else M(dims)
-    if name=='isempty':return not flat(args[0])
+    if name=='isempty':return not args[0] if isinstance(args[0],list) else not flat(args[0])
     if name=='ismember':return unary(lambda x:x in flat(args[1]),args[0])
     if name=='mod':return elementwise(operator.mod,*args)
     if name in ('bitand','bitor','bitxor','bitshift'):
@@ -422,6 +433,13 @@ def _value_copy(value):
     if isinstance(value,M):return value.clone()
     if isinstance(value,tuple):return tuple(_value_copy(v) for v in value)
     return copy.deepcopy(value)
+
+
+def _dynamic_field_name(value):
+    # MATLAB dynamic field names must be scalar identifiers, never Python attributes.
+    if not isinstance(value,str) or re.fullmatch(r'[A-Za-z]\w*',value) is None:
+        raise UnsupportedMatlab('Invalid dynamic struct field name')
+    return value
 
 
 class Function:
@@ -464,6 +482,19 @@ class Function:
             raise UnsupportedMatlab('Unknown symbol '+node[1])
         if kind=='matrix':return concatenate([[self.eval(p,env) for p in row] for row in node[1]])
         if kind=='cell':return [self.eval(p,env) for row in node[1] for p in row]
+        if kind=='cell_index':
+            values=self.eval(node[1],env)
+            if not isinstance(values,list) or len(node[2])!=1:
+                raise UnsupportedMatlab('Only single-element cell brace indexing supported')
+            selected=indices(self.eval(node[2][0],env|{'end':len(values)}),len(values))
+            if len(selected)!=1:raise UnsupportedMatlab('Cell brace indexing must select one element')
+            return _value_copy(values[selected[0]])
+        if kind=='dynamic_field':
+            value=self.eval(node[1],env)
+            field=_dynamic_field_name(self.eval(node[2],env))
+            if not isinstance(value,dict):raise UnsupportedMatlab('Dynamic field access requires a struct')
+            if field not in value:raise UnsupportedMatlab('Unknown struct field '+field)
+            return value[field]
         if kind=='transpose':
             value=self.eval(node[1],env);return value.transpose() if isinstance(value,M) else value
         if kind=='unary':return unary({'+':operator.pos,'-':operator.neg,'~':operator.not_}[node[1]],self.eval(node[2],env))
@@ -499,6 +530,13 @@ class Function:
         return [self.eval(node,env|{'end':dims[i]}) for i,node in enumerate(nodes)]
     def assign(self,target,value,env):
         if target[0]=='discard':return
+        if target[0]=='dynamic_field':
+            destination=self.eval(target[1],env)
+            field=_dynamic_field_name(self.eval(target[2],env))
+            if not isinstance(destination,dict):
+                raise UnsupportedMatlab('Dynamic field assignment requires a struct')
+            destination[field]=_value_copy(value)
+            return
         if target[0]=='name':
             pieces=target[1].split('.');destination=env
             for piece in pieces[:-1]:

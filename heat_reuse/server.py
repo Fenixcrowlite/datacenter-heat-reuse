@@ -62,9 +62,32 @@ def document_index():
 def make_server(host='127.0.0.1',port=8080,runtime=None):
     store=Store(runtime or os.environ.get('HEAT_REUSE_RUNTIME',ROOT/'runtime'))
     calculation_lock=threading.Lock()
+    # Host-header validation prevents DNS rebinding to a loopback laboratory.
+    # Binding to 0.0.0.0 for Docker does NOT implicitly authorize LAN names.
+    allowed_hosts={'localhost','127.0.0.1','::1'}
+    if host not in {'0.0.0.0','::',''}:
+        allowed_hosts.add(host.lower())
+    allowed_hosts.update(part.strip().lower() for part in
+        os.environ.get('HEAT_REUSE_ALLOWED_HOSTS','').split(',') if part.strip())
 
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,*args):pass
+
+        def trusted_host(self):
+            values=self.headers.get_all('Host',[])
+            if len(values)!=1:
+                return False
+            raw=values[0].strip()
+            if not raw or any(c in raw for c in ('/','?','#','@','\\')):
+                return False
+            try:
+                parsed=urlsplit('http://'+raw)
+                name=parsed.hostname
+                port_number=parsed.port
+            except ValueError:
+                return False
+            return (name in allowed_hosts
+                and (port_number is None or port_number==self.server.server_port))
 
         def send(self,body,status=200,content_type='application/json; charset=utf-8',filename=None):
             if isinstance(body,(dict,list)):body=json.dumps(body,ensure_ascii=False,allow_nan=False,separators=(',',':')).encode()
@@ -76,6 +99,8 @@ def make_server(host='127.0.0.1',port=8080,runtime=None):
             self.end_headers();self.wfile.write(body)
 
         def do_GET(self):
+            if not self.trusted_host():
+                return self.send({'error':'Untrusted Host'},403)
             path=unquote(urlsplit(self.path).path)
             try:
                 if path=='/api/health':return self.send({'status':'ok','mode':'SIMULATION','matlab_required':False})
@@ -111,6 +136,8 @@ def make_server(host='127.0.0.1',port=8080,runtime=None):
             except (ValueError,KeyError):self.send({'error':'Invalid request'},400)
 
         def do_POST(self):
+            if not self.trusted_host():
+                return self.send({'error':'Untrusted Host'},403)
             if self.path!='/api/run':return self.send({'error':'Not found'},404)
             if self.headers.get('Content-Type','').split(';')[0]!='application/json':return self.send({'error':'JSON required'},415)
             origin=self.headers.get('Origin')

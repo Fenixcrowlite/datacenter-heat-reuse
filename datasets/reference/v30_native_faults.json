@@ -1,0 +1,974 @@
+[
+  {
+    "id": "negative_source",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: q_source_MW is outside its physical domain.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          -1,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "negative_demand",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Nonnegative demand/boiler and defined HP backend required.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          -1,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "delivery_above_cutoff",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Condenser must support tank maximum; delivery must not exceed cutoff.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          51
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "condenser_below_tank_max",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Condenser must support tank maximum; delivery must not exceed cutoff.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          69,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "cutoff_above_capacity",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: TES dimensional parameters violate their physical domain.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        11,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "negative_rate",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: TES dimensional parameters violate their physical domain.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        -0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "invalid_efficiency",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: TES dimensional parameters violate their physical domain.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "zero_heat_capacity",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: delivery_cutoff_C must be a finite real numeric scalar.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "above_capacity_state",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: TES dimensional parameters violate their physical domain.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 11,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "negative_boiler",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Nonnegative demand/boiler and defined HP backend required.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        -1
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "invalid_hp_backend",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Nonnegative demand/boiler and defined HP backend required.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        2,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "invalid_heating_lift",
+    "kind": "domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Heating mode requires sink_C > source_C.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          80,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "delayed_negative_source",
+    "kind": "delayed_domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 1,
+    "actual_prefix_samples": 1,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: q_source_MW is outside its physical domain.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          -1,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "delayed_delivery_fault",
+    "kind": "delayed_domain",
+    "expected_diagnostic": "Runtime physical-domain rejection",
+    "expected_prefix_samples": 1,
+    "actual_prefix_samples": 1,
+    "passed": true,
+    "diagnostic": "Runtime physical-domain rejection: Condenser must support tank maximum; delivery must not exceed cutoff.\n\tError in SimulationInput.sim.p\n\tError in run_stateflow_faults_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_faults_v30.m', 45)\">line 45</a>)\n\tError in run_stateflow_acceptance_v30.m (<a href=\"matlab: opentoline('C:\\Users\\Lysda\\OneDrive\\Projects\\DataCenter_Heat_Reuse\\matlab\\simulink\\run_stateflow_acceptance_v30.m', 112)\">line 112</a>)\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Verified_HP_Component')\">DCHR_Dispatch_Stateflow_v30/Verified_HP_Component</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Verified_HP_Component'), 4, -2);\">line 5</a>)",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          51
+        ]
+      ]
+    },
+    "mutation": ""
+  },
+  {
+    "id": "corrupt_temperature",
+    "kind": "monitor",
+    "expected_diagnostic": "Temperature/usable-energy mismatch.",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Temperature/usable-energy mismatch.\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate')\">DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate'), 25, -2);\">line 26</a>)\n\t\tassert(abs(raw(14)-(Ta+energyStart/C))&lt;=tol/C &amp;&amp; abs(raw(15)-(Ta+raw(8)/C))&lt;=tol/C &amp;&amp; ...",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": "y(15)=y(15)+1;"
+  },
+  {
+    "id": "corrupt_usable_inventory",
+    "kind": "monitor",
+    "expected_diagnostic": "Temperature/usable-energy mismatch.",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Temperature/usable-energy mismatch.\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate')\">DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate'), 25, -2);\">line 26</a>)\n\t\tassert(abs(raw(14)-(Ta+energyStart/C))&lt;=tol/C &amp;&amp; abs(raw(15)-(Ta+raw(8)/C))&lt;=tol/C &amp;&amp; ...",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": "y(17)=y(17)+1;"
+  },
+  {
+    "id": "corrupt_next_energy",
+    "kind": "monitor",
+    "expected_diagnostic": "Exact constant-power solution mismatch.",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "Exact constant-power solution mismatch.\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate')\">DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate'), 21, -2);\">line 22</a>)\n\t\tassert(abs(raw(7)-energyStart*r)&lt;=tol &amp;&amp; abs(raw(8)-(energyStart*r+P*phi))&lt;=tol, 'Exact constant-power solution mismatch.');",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": "y(8)=y(8)+1;"
+  },
+  {
+    "id": "corrupt_standing_loss",
+    "kind": "monitor",
+    "expected_diagnostic": "TES loss mismatch.",
+    "expected_prefix_samples": 0,
+    "actual_prefix_samples": 0,
+    "passed": true,
+    "diagnostic": "TES loss mismatch.\n\tError in '<a href=\"matlab:hilite_system('DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate')\">DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate</a>' (<a href=\"matlab:sf('Open', sfprivate('block2chart', 'DCHR_Dispatch_Stateflow_v30/Runtime_Contract_Gate'), 23, -2);\">line 24</a>)\n\t\tassert(abs(raw(9)-(energyStart+P*dt-raw(8)))&lt;=tol &amp;&amp; ...",
+    "configured_case": {
+      "id": "zero_demand",
+      "initial_energy_MWh": 0,
+      "p": [
+        1,
+        10,
+        3,
+        4,
+        0.9,
+        0.8,
+        0.1,
+        5,
+        0.2,
+        20,
+        2
+      ],
+      "h": [
+        8,
+        0.45,
+        1.2,
+        8,
+        0,
+        1,
+        4,
+        0,
+        0
+      ],
+      "inputs": [
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ],
+        [
+          0,
+          35,
+          75,
+          0,
+          45
+        ]
+      ]
+    },
+    "mutation": "y(9)=y(9)+1;"
+  }
+]

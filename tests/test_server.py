@@ -38,6 +38,41 @@ class ServerTests(unittest.TestCase):
             self.assertIn('T_bazen_C',r.read().decode())
         self.assertTrue((Path(self.temp.name)/(result['id']+'.json')).exists())
 
+    def test_untrusted_host_rejected_before_read_or_calculation(self):
+        port=self.server.server_port
+        for host in ('evil.example:'+str(port),
+                     'localhost.evil.example:'+str(port),
+                     '127.0.0.1.evil.example:'+str(port),
+                     'localhost:'+str(port+1)):
+            with self.subTest(host=host):
+                req=Request(self.url+'/api/models',headers={'Host':host})
+                with self.assertRaises(HTTPError) as error:
+                    urlopen(req)
+                self.assertEqual(error.exception.code,403)
+                error.exception.close()
+                body=json.dumps({'model_id':'annual-v2','steps':1}).encode()
+                req=Request(self.url+'/api/run',body,headers={
+                    'Host':host,'Origin':'http://'+host,
+                    'Content-Type':'application/json'})
+                with self.assertRaises(HTTPError) as error:
+                    urlopen(req)
+                self.assertEqual(error.exception.code,403)
+                error.exception.close()
+        self.assertEqual([],self.get('/api/results'))
+
+    def test_localhost_host_and_matching_origin_work(self):
+        port=self.server.server_port
+        req=Request(self.url+'/api/models',headers={'Host':'localhost:'+str(port)})
+        with urlopen(req) as response:
+            self.assertIn('models',json.load(response))
+        req=Request(self.url+'/api/run',
+                    json.dumps({'model_id':'annual-v2','steps':1}).encode(),
+                    headers={'Host':'localhost:'+str(port),
+                             'Origin':'http://localhost:'+str(port),
+                             'Content-Type':'application/json'})
+        with urlopen(req) as response:
+            self.assertEqual('PYTHON_COMPUTED',json.load(response)['source_kind'])
+
     def test_invalid_requests_cannot_replace_saved_result(self):
         good=self.run_model({'model_id':'annual-v2','steps':4})
         for body in ({'model_id':'not-real'},{'model_id':'annual-v2','steps':True},
